@@ -1,0 +1,86 @@
+const destinations = [
+  {
+    name: "シーギリヤ",
+    desc: "世界遺産の天空の宮殿。スリランカを代表する絶景スポット",
+    image: "/manus-storage/sigiriya_aerial_4b7c8182.jpg",
+    size: "large",
+  },
+  {
+    name: "キャンディ仏歯寺",
+    desc: "世界遺産の聖地",
+    image: "/manus-storage/kandy_temple_4e952919.jpg",
+    size: "small",
+  },
+  {
+    name: "ヌワラエリヤ高原",
+    desc: "緑広がる高原の絶景",
+    image: "/manus-storage/tea_plantation_db379c4a.jpg",
+    size: "small",
+  },
+  {
+    name: "ゴール旧市街",
+    desc: "世界遺産の要塞都市",
+    image: "/manus-storage/beach_sunset_9cf1f63f.jpg",
+    size: "medium",
+  },
+  {
+    name: "ヤラ国立公園",
+    desc: "野生のヒョウに出会える",
+    image: "/manus-storage/safari_jeep_03fec05c.jpg",
+    size: "medium",
+  },
+  {
+    name: "紅茶列車（エッラ）",
+    desc: "九連アーチ橋と茶畑の絶景列車の旅",
+    image: "/manus-storage/hero_train_c3ddf617.jpg",
+    size: "medium",
+  },
+];
+
+export default function DestinationsSection() {
+  return (
+    <section className="py-20 lg:py-28 bg-white">
+      <div className="container">
+        <div className="text-center mb-12">
+          <span className="section-label">DESTINATIONS</span>
+          <h2 className="text-3xl lg:text-4xl font-black text-[oklch(0.15_0.01_60)] mt-2" style={{ fontFamily: "'Noto Serif JP', serif" }}>
+            スリランカの魅力的な<br />観光スポット
+          </h2>
+          <p className="text-[oklch(0.5_0.02_155)] mt-3">世界遺産から絶景ビーチまで、多彩な魅力が凝縮された島国</p>
+        </div>
+
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
+          {/* Large card */}
+          <div className="col-span-2 lg:col-span-2 row-span-2 relative rounded-2xl overflow-hidden group h-64 lg:h-96">
+            <img
+              src={destinations[0].image}
+              alt={destinations[0].name}
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+            <div className="absolute bottom-0 left-0 p-5">
+              <h3 className="text-white font-bold text-xl">{destinations[0].name}</h3>
+              <p className="text-white/70 text-sm">{destinations[0].desc}</p>
+            </div>
+          </div>
+
+          {/* Small cards */}
+          {destinations.slice(1).map((d, i) => (
+            <div key={i} className="relative rounded-2xl overflow-hidden group h-44 lg:h-44">
+              <img
+                src={d.image}
+                alt={d.name}
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+              <div className="absolute bottom-0 left-0 p-4">
+                <h3 className="text-white font-bold text-sm">{d.name}</h3>
+                <p className="text-white/70 text-xs">{d.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
