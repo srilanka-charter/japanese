@@ -7,7 +7,7 @@ export default function WorriesSection() {
     { icon: "📍", text: "観光地への行き方がわからない" },
     { icon: "⏰", text: "時間通りに動けるか心配" },
     { icon: "👨‍👩‍👧", text: "子連れ・高齢者同伴で不安" },
-    { icon: "🏨", text: "ホテルの手配も大変" },
+    { icon: "🗺️", text: "観光地の説明が欲しい" },
   ];
 
   return (
