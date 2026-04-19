@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Send, CheckCircle, Loader2 } from "lucide-react";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
+import { useLocation } from "wouter";
 
 export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
@@ -11,9 +12,11 @@ export default function ContactSection() {
     adults: "", children: "0名", carType: "", course: ""
   });
 
+  const [, navigate] = useLocation();
+
   const sendMutation = trpc.contact.send.useMutation({
     onSuccess: () => {
-      setSubmitted(true);
+      navigate("/thanks");
     },
     onError: (err) => {
       toast.error(err.message || "送信に失敗しました。しばらくしてから再度お試しください。");
