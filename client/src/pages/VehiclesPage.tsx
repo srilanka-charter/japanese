@@ -115,13 +115,12 @@ export default function VehiclesPage() {
                   </div>
                 )}
                 <div className={`grid lg:grid-cols-2 ${i % 2 === 1 ? "" : ""}`}>
-                  <div className="relative h-64 lg:h-auto min-h-[280px]">
+                  <div className="relative bg-[oklch(0.95_0.005_155)] flex items-center justify-center p-4 min-h-[280px] lg:min-h-[360px]">
                     <img
                       src={v.image}
                       alt={v.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain max-h-[340px]"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent" />
                     <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-sm text-white px-3 py-1.5 rounded-full">
                       <span className="font-black text-lg">{v.name}</span>
                       <span className="text-white/70 text-sm ml-2">{v.subtitle}</span>
