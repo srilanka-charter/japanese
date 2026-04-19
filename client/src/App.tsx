@@ -10,8 +10,8 @@ import VehiclesPage from "./pages/VehiclesPage";
 import Course45Page from "./pages/Course45Page";
 import Course56Page from "./pages/Course56Page";
 import Course67Page from "./pages/Course67Page";
-
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path="/" component={Home} />

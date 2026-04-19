@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { Send, CheckCircle } from "lucide-react";
+import { Send, CheckCircle, Loader2 } from "lucide-react";
+import { trpc } from "@/lib/trpc";
+import { toast } from "sonner";
 
 export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
@@ -9,13 +11,39 @@ export default function ContactSection() {
     adults: "", children: "0名", carType: "", course: ""
   });
 
+  const sendMutation = trpc.contact.send.useMutation({
+    onSuccess: () => {
+      setSubmitted(true);
+    },
+    onError: (err) => {
+      toast.error(err.message || "送信に失敗しました。しばらくしてから再度お試しください。");
+    },
+  });
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+
+    const travelers = `大人${form.adults}・子供${form.children}`;
+    const days = form.startDate && form.endDate ? `${form.startDate} 〜 ${form.endDate}` : undefined;
+    const messageLines = [
+      form.startLocation ? `出発地：${form.startLocation}` : "",
+      form.carType ? `車種：${form.carType}` : "",
+      form.course ? `コース・備考：${form.course}` : "",
+    ].filter(Boolean).join("\n");
+
+    sendMutation.mutate({
+      name: form.name,
+      email: form.email,
+      phone: form.phone || undefined,
+      travelers,
+      days,
+      plan: form.carType || undefined,
+      message: messageLines || undefined,
+    });
   };
 
   return (
@@ -39,6 +67,7 @@ export default function ContactSection() {
                 <CheckCircle className="mx-auto mb-4 text-[oklch(0.35_0.12_155)]" size={48} />
                 <h3 className="text-xl font-bold text-[oklch(0.15_0.01_60)] mb-2">送信が完了しました</h3>
                 <p className="text-[oklch(0.5_0.02_155)]">通常24時間以内にご返信いたします。</p>
+                <p className="text-sm text-[oklch(0.5_0.02_155)] mt-2">ご入力のメールアドレスに確認メールをお送りしました。</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -165,8 +194,8 @@ export default function ContactSection() {
                   >
                     <option value="">選択してください</option>
                     <option value="セダン（〜3名）">セダン（〜3名）</option>
-                    <option value="ミニバン（〜8名）">ミニバン（〜8名）</option>
-                    <option value="ラージバン（〜20名）">ラージバン（〜20名）</option>
+                    <option value="バン（〜6名）">バン（〜6名）</option>
+                    <option value="ビッグバン（〜10名）">ビッグバン（〜10名）</option>
                     <option value="おまかせ">おまかせ</option>
                   </select>
                 </div>
@@ -186,10 +215,20 @@ export default function ContactSection() {
 
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2 bg-[oklch(0.55_0.15_155)] hover:bg-[oklch(0.45_0.12_155)] text-white py-4 rounded-xl font-bold text-base tracking-wide transition-all duration-200 shadow-lg hover:shadow-xl"
+                  disabled={sendMutation.isPending}
+                  className="w-full flex items-center justify-center gap-2 bg-[oklch(0.55_0.15_155)] hover:bg-[oklch(0.45_0.12_155)] disabled:opacity-60 disabled:cursor-not-allowed text-white py-4 rounded-xl font-bold text-base tracking-wide transition-all duration-200 shadow-lg hover:shadow-xl"
                 >
-                  <Send size={18} />
-                  送信する
+                  {sendMutation.isPending ? (
+                    <>
+                      <Loader2 size={18} className="animate-spin" />
+                      送信中...
+                    </>
+                  ) : (
+                    <>
+                      <Send size={18} />
+                      送信する
+                    </>
+                  )}
                 </button>
                 <p className="text-xs text-[oklch(0.6_0.02_155)] text-center">
                   上記送信ボタンを押すことでプライバシーポリシーへの同意となります。
@@ -232,7 +271,7 @@ export default function ContactSection() {
                 {
                   icon: "🚌",
                   title: "人数に合わせた最適な車両",
-                  desc: "2名様のカップルから20名様の大型グループまで、ご人数に合わせた最適な車両で、長距離移動も快適にご案内します。"
+                  desc: "2名様のカップルから10名様の大型グループまで、ご人数に合わせた最適な車両で、長距離移動も快適にご案内します。"
                 }
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 p-4 rounded-xl border border-[oklch(0.9_0.01_155)] hover:border-[oklch(0.35_0.12_155)]/30 hover:bg-[oklch(0.35_0.12_155)]/5 transition-all duration-200">
