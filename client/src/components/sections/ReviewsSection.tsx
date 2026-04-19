@@ -57,35 +57,36 @@ export default function ReviewsSection() {
           <p className="text-[oklch(0.5_0.02_155)] mt-3">実際にSLTCSをご利用いただいたお客様からのリアルな声をご紹介します</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-8">
           {reviews.map((r) => (
             <div key={r.id} className="bg-white rounded-2xl border border-[oklch(0.9_0.01_155)] overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+              {/* 画像：アスペクト比を保ちながら全体を表示 */}
+              <div className="w-full overflow-hidden bg-[oklch(0.95_0_0)]">
+                <img
+                  src={r.image}
+                  alt={r.name}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
               <div className="p-6">
-                <div className="flex items-start gap-4 mb-4">
-                  <img
-                    src={r.image}
-                    alt={r.name}
-                    className="w-16 h-16 rounded-xl object-cover flex-shrink-0"
-                  />
-                  <div>
-                    <div className="font-bold text-[oklch(0.15_0.01_60)]">{r.name}（{r.country}）</div>
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      <span className="bg-[oklch(0.35_0.12_155)]/10 text-[oklch(0.35_0.12_155)] text-xs px-2 py-0.5 rounded-full font-medium">
-                        ご利用人数 {r.count}
-                      </span>
-                      <span className="bg-[oklch(0.35_0.12_155)]/10 text-[oklch(0.35_0.12_155)] text-xs px-2 py-0.5 rounded-full font-medium">
-                        {r.date}
-                      </span>
-                      <span className="bg-[oklch(0.75_0.12_75)]/20 text-[oklch(0.5_0.08_75)] text-xs px-2 py-0.5 rounded-full font-medium">
-                        ドライバー：{r.driver}
-                      </span>
-                    </div>
+                <div className="mb-4">
+                  <div className="font-bold text-[oklch(0.15_0.01_60)] text-base">{r.name}（{r.country}）</div>
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    <span className="bg-[oklch(0.35_0.12_155)]/10 text-[oklch(0.35_0.12_155)] text-xs px-2 py-0.5 rounded-full font-medium">
+                      ご利用人数 {r.count}
+                    </span>
+                    <span className="bg-[oklch(0.35_0.12_155)]/10 text-[oklch(0.35_0.12_155)] text-xs px-2 py-0.5 rounded-full font-medium">
+                      {r.date}
+                    </span>
+                    <span className="bg-[oklch(0.75_0.12_75)]/20 text-[oklch(0.5_0.08_75)] text-xs px-2 py-0.5 rounded-full font-medium">
+                      ドライバー：{r.driver}
+                    </span>
                   </div>
                 </div>
                 <h3 className="font-black text-[oklch(0.15_0.01_60)] text-base mb-3 leading-snug" style={{ fontFamily: "'Noto Serif JP', serif" }}>
                   {r.headline}
                 </h3>
-                <p className="text-sm text-[oklch(0.4_0.02_155)] leading-relaxed line-clamp-5">
+                <p className="text-sm text-[oklch(0.4_0.02_155)] leading-relaxed">
                   {r.body}
                 </p>
               </div>
