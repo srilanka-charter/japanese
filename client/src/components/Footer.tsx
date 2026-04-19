@@ -71,6 +71,14 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-white/10 pt-6 text-center text-xs text-white/30">
+          <div className="flex flex-wrap justify-center gap-4 mb-3">
+            <Link href="/privacy" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">
+              プライバシーポリシー
+            </Link>
+            <Link href="/terms" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">
+              利用規約および免責事項
+            </Link>
+          </div>
           Copyright © スリランカタクシーチャーターサービス All Rights Reserved.
         </div>
       </div>
