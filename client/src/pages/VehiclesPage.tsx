@@ -6,58 +6,77 @@ import { Users, Briefcase, Check } from "lucide-react";
 const vehicles = [
   {
     id: "sedan",
-    name: "セダン",
-    subtitle: "Toyota Allion / Premio",
-    image: "/manus-storage/car_sedan_0d7a34cc.jpg",
-    capacity: "〜3名",
-    luggage: "スーツケース2個",
+    name: "Sedan",
+    subtitle: "〜大人3人",
+    image: "/manus-storage/vehicle_sedan_ee212661.webp",
+    capacity: "最大 大人3人",
+    comfortCapacity: "快適 大人2人＋子供1人",
+    luggage: "大きなスーツケース2個＋小さなスーツケース1個",
     color: "oklch(0.35_0.12_155)",
+    popular: false,
+    specs: [
+      { label: "最大乗車人数", value: "大人3人" },
+      { label: "快適に過ごせる最大人数", value: "大人2人＋子供1人" },
+      { label: "最大積載荷物量", value: "大きなスーツケース2個＋小さなスーツケース1個" },
+    ],
+    desc: "セダンの最大乗車人数は3名です。ただし、トランクに積めるスーツケースは2個と小さなスーツケース1個までとなります。そのため、セダンは大人2名と子ども1名までのご利用をおすすめします。大人3名で移動し、より快適な旅をご希望の場合は、Vanをおすすめします。",
+    bestFor: "カップル・少人数旅行（2〜3名）",
     features: [
       "エアコン完備",
-      "USB充電ポート",
-      "Wi-Fi対応（オプション）",
+      "コンパクトで取り回し良好",
+      "市街地・短距離移動に最適",
       "ミネラルウォーター完備",
-      "清潔な内装",
     ],
-    desc: "カップルや少人数のグループに最適。快適な乗り心地で、スリランカの観光地を効率よく巡ることができます。",
-    bestFor: "2〜3名のカップル・友人旅行",
   },
   {
-    id: "minivan",
-    name: "ミニバン",
-    subtitle: "Toyota KDH / Hiace",
-    image: "/manus-storage/car_van_117a1299.jpg",
-    capacity: "〜8名",
-    luggage: "スーツケース5個",
-    color: "oklch(0.55_0.12_155)",
+    id: "van",
+    name: "Van",
+    subtitle: "〜大人6人",
+    image: "/manus-storage/vehicle_van_de904967.webp",
+    capacity: "最大 大人6人",
+    comfortCapacity: "快適 大人4人＋子供2人",
+    luggage: "大きなスーツケース8個",
+    color: "oklch(0.35_0.12_155)",
     popular: true,
+    specs: [
+      { label: "最大乗車人数", value: "大人6人" },
+      { label: "快適に過ごせる最大人数", value: "大人4人＋子供2人" },
+      { label: "最大積載荷物量", value: "大きなスーツケース8個" },
+    ],
+    desc: "最大乗車人数は6名までです。ただし、3人掛け×2列の座席配置のため、大人6名ですとやや窮屈に感じる場合があります。より快適にご利用いただくためには、大人4名＋子ども2名でのご利用をおすすめします。大人5名以上でご旅行される場合は、Big Vanのご利用をご検討ください。",
+    bestFor: "ファミリー・グループ旅行（4〜6名）",
     features: [
       "エアコン完備",
-      "USB充電ポート",
       "広々とした室内空間",
-      "ミネラルウォーター完備",
       "荷物収納スペース充実",
+      "ミネラルウォーター完備",
+      "長距離移動も快適",
     ],
-    desc: "家族旅行や小グループに最も人気の車種。広い室内で長距離移動も快適。スリランカ観光の定番車両です。",
-    bestFor: "4〜8名のファミリー・グループ旅行",
   },
   {
     id: "bigvan",
-    name: "ラージバン",
-    subtitle: "Rosa Bus / Coaster",
-    image: "/manus-storage/car_bigvan_a488c4dd.jpg",
-    capacity: "〜20名",
-    luggage: "大型荷物対応",
-    color: "oklch(0.65_0.1_75)",
+    name: "Big Van",
+    subtitle: "〜大人10人",
+    image: "/manus-storage/vehicle_bigvan_7c49b85f.webp",
+    capacity: "最大 大人10人",
+    comfortCapacity: "快適 大人9人",
+    luggage: "大きなスーツケース10個",
+    color: "oklch(0.55_0.1_75)",
+    popular: false,
+    specs: [
+      { label: "最大乗車人数", value: "大人10人" },
+      { label: "快適に過ごせる最大人数", value: "大人9人" },
+      { label: "最大積載荷物量", value: "大きなスーツケース10個" },
+    ],
+    desc: "大型バン（Big Van）は独立した座席が9席あり、大人9名まで快適にご乗車いただけます。助手席（前方の乗客席）も使用すれば、最大10名まで乗車可能です。グループが10名以上の場合は、ミニバスなど、さらに大きな車両をご検討ください。",
+    bestFor: "大型グループ・企業旅行（7〜10名）",
     features: [
       "エアコン完備",
-      "大型荷物スペース",
-      "マイクロバス仕様",
-      "グループ向け設備",
+      "独立シート9席",
+      "大型荷物スペース完備",
+      "ミネラルウォーター完備",
       "長距離移動対応",
     ],
-    desc: "大型グループや企業視察に対応。20名まで乗車可能な大型バスで、グループ全員が一緒に移動できます。",
-    bestFor: "9〜20名の大型グループ・企業旅行",
   },
 ];
 
@@ -95,34 +114,41 @@ export default function VehiclesPage() {
                     ★ 最も人気の車種です
                   </div>
                 )}
-                <div className={`grid lg:grid-cols-2 ${i % 2 === 1 ? "lg:flex-row-reverse" : ""}`}>
-                  <div className="relative h-56 lg:h-auto">
+                <div className={`grid lg:grid-cols-2 ${i % 2 === 1 ? "" : ""}`}>
+                  <div className="relative h-64 lg:h-auto min-h-[280px]">
                     <img
                       src={v.image}
                       alt={v.name}
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent" />
+                    <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-sm text-white px-3 py-1.5 rounded-full">
+                      <span className="font-black text-lg">{v.name}</span>
+                      <span className="text-white/70 text-sm ml-2">{v.subtitle}</span>
+                    </div>
                   </div>
                   <div className="p-8 lg:p-10">
-                    <div className="flex items-start justify-between mb-4">
+                    <div className="flex items-start justify-between mb-5">
                       <div>
                         <h2 className="text-2xl lg:text-3xl font-black text-[oklch(0.15_0.01_60)]" style={{ fontFamily: "'Noto Serif JP', serif" }}>
                           {v.name}
+                          <span className="text-base font-medium text-[oklch(0.5_0.02_155)] ml-2">{v.subtitle}</span>
                         </h2>
-                        <p className="text-sm text-[oklch(0.5_0.02_155)]">{v.subtitle}</p>
                       </div>
                     </div>
 
-                    <div className="flex gap-4 mb-4">
-                      <div className="flex items-center gap-1.5 text-sm text-[oklch(0.35_0.02_155)]">
-                        <Users size={14} style={{ color: v.color }} />
-                        {v.capacity}
-                      </div>
-                      <div className="flex items-center gap-1.5 text-sm text-[oklch(0.35_0.02_155)]">
-                        <Briefcase size={14} style={{ color: v.color }} />
-                        {v.luggage}
-                      </div>
+                    {/* Specs table */}
+                    <div className="bg-[oklch(0.97_0.005_155)] rounded-xl p-4 mb-5">
+                      <table className="w-full text-sm">
+                        <tbody>
+                          {v.specs.map((s, si) => (
+                            <tr key={si} className={si < v.specs.length - 1 ? "border-b border-[oklch(0.9_0.005_155)]" : ""}>
+                              <td className="py-2 pr-3 text-[oklch(0.5_0.02_155)] font-medium whitespace-nowrap">{s.label}</td>
+                              <td className="py-2 text-[oklch(0.2_0.01_60)] font-bold">{s.value}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
                     </div>
 
                     <p className="text-sm text-[oklch(0.4_0.02_155)] leading-relaxed mb-4">{v.desc}</p>
@@ -143,7 +169,7 @@ export default function VehiclesPage() {
 
                     <button
                       onClick={scrollToContact}
-                      className="w-full py-3 rounded-xl font-bold text-sm text-white transition-all duration-200"
+                      className="w-full py-3 rounded-xl font-bold text-sm text-white transition-all duration-200 hover:opacity-90"
                       style={{ backgroundColor: v.color }}
                     >
                       この車両で予約する
@@ -154,7 +180,13 @@ export default function VehiclesPage() {
             ))}
           </div>
 
-          <div className="mt-12 bg-[oklch(0.12_0.02_155)] rounded-2xl p-8 text-center">
+          {/* Note */}
+          <div className="mt-8 bg-[oklch(0.97_0.005_155)] border border-[oklch(0.9_0.01_155)] rounded-xl p-5 text-sm text-[oklch(0.4_0.02_155)]">
+            <p className="font-bold text-[oklch(0.2_0.01_60)] mb-1">10名以上のグループの方へ</p>
+            <p>ミニバス・バスなど、さらに大きな車両もご手配可能です。お問い合わせフォームの自由記入欄にご希望の人数をご記載ください。</p>
+          </div>
+
+          <div className="mt-8 bg-[oklch(0.12_0.02_155)] rounded-2xl p-8 text-center">
             <h3 className="text-xl font-black text-white mb-3" style={{ fontFamily: "'Noto Serif JP', serif" }}>
               どの車両が最適かわからない場合は
             </h3>
