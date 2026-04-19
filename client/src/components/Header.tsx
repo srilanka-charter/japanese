@@ -42,9 +42,9 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="flex flex-col leading-none">
-              <span className="text-[oklch(0.75_0.12_75)] font-black text-xl tracking-widest font-sans">SLTCS</span>
-              <span className="text-white/80 text-[9px] tracking-[0.15em] font-light hidden sm:block">スリランカタクシーチャーターサービス</span>
+            <div className="flex flex-col leading-none gap-0.5">
+              <span className="text-white font-bold text-base sm:text-lg tracking-wide leading-tight">スリランカタクシーチャーターサービス</span>
+              <span className="text-[oklch(0.75_0.12_75)] text-xs tracking-[0.2em] font-semibold">SLTCS</span>
             </div>
           </Link>
 
