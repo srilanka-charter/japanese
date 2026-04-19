@@ -2,37 +2,37 @@ const destinations = [
   {
     name: "シーギリヤ",
     desc: "世界遺産の天空の宮殿。スリランカを代表する絶景スポット",
-    image: "/manus-storage/sigiriya_aerial_4b7c8182.jpg",
+    image: "/manus-storage/sigiriya_44803162.jpg",
     size: "large",
   },
   {
     name: "キャンディ仏歯寺",
     desc: "世界遺産の聖地",
-    image: "/manus-storage/kandy_temple_4e952919.jpg",
+    image: "/manus-storage/kandy_temple_bfd62ffc.jpg",
     size: "small",
   },
   {
     name: "ヌワラエリヤ高原",
     desc: "緑広がる高原の絶景",
-    image: "/manus-storage/tea_plantation_db379c4a.jpg",
+    image: "/manus-storage/tea_plantation_e512c982.jpg",
     size: "small",
   },
   {
     name: "ゴール旧市街",
     desc: "世界遺産の要塞都市",
-    image: "/manus-storage/beach_sunset_9cf1f63f.jpg",
+    image: "/manus-storage/galle_fort_0f5575ef.jpg",
     size: "medium",
   },
   {
     name: "ヤラ国立公園",
     desc: "野生のヒョウに出会える",
-    image: "/manus-storage/safari_jeep_03fec05c.jpg",
+    image: "/manus-storage/yala_leopard_769d6ffa.jpg",
     size: "medium",
   },
   {
     name: "紅茶列車（エッラ）",
     desc: "九連アーチ橋と茶畑の絶景列車の旅",
-    image: "/manus-storage/hero_train_c3ddf617.jpg",
+    image: "/manus-storage/ella_nine_arch_8f10f348.webp",
     size: "medium",
   },
 ];

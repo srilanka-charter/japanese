@@ -63,7 +63,7 @@ export default function HeroSection() {
   useEffect(() => {
     const timer = setInterval(() => {
       next();
-    }, 7000);
+    }, 5000);
     return () => clearInterval(timer);
   }, [next]);
 
