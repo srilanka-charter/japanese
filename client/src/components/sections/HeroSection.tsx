@@ -3,6 +3,14 @@ import { ChevronDown, MessageCircle, ChevronLeft, ChevronRight } from "lucide-re
 
 const slides = [
   {
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/BHJpmNEJeYmvs6JETpsBKm/hero_sigiriya-ZeDHtHYKtDzHRVw7Kf5mNK.webp",
+    label: "TAXI CHARTER",
+    title: "スリランカを\nタクシーチャーターで\n駆け抜ける",
+    subtitle: "日本語対応の専用車・カーチャーターで、スリランカを自由に旅しよう",
+    badge: "スリランカ全土",
+    isH1: true,
+  },
+  {
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/BHJpmNEJeYmvs6JETpsBKm/hero_train-e4cT44tSVSFMse7HoCf8pK.webp",
     label: "TEA TRAIN",
     title: "紅茶列車で\n駆け抜ける\n高原の絶景",
@@ -141,16 +149,29 @@ export default function HeroSection() {
             transition: "opacity 0.6s ease 0.15s, transform 0.6s ease 0.15s",
           }}
         >
-          <h1
-            className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black text-white leading-[1.05] mb-6"
-            style={{
-              fontFamily: "'Noto Serif JP', serif",
-              textShadow: "0 4px 32px rgba(0,0,0,0.5)",
-              whiteSpace: "pre-line",
-            }}
-          >
-            {slide.title}
-          </h1>
+          {slide.isH1 ? (
+            <h1
+              className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black text-white leading-[1.05] mb-6"
+              style={{
+                fontFamily: "'Noto Serif JP', serif",
+                textShadow: "0 4px 32px rgba(0,0,0,0.5)",
+                whiteSpace: "pre-line",
+              }}
+            >
+              {slide.title}
+            </h1>
+          ) : (
+            <h2
+              className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black text-white leading-[1.05] mb-6"
+              style={{
+                fontFamily: "'Noto Serif JP', serif",
+                textShadow: "0 4px 32px rgba(0,0,0,0.5)",
+                whiteSpace: "pre-line",
+              }}
+            >
+              {slide.title}
+            </h2>
+          )}
         </div>
 
         {/* Subtitle */}
