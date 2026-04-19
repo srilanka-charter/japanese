@@ -254,7 +254,7 @@ export default function ContactSection() {
                 {
                   icon: "🛡️",
                   title: "政府公認ドライバーの安心感",
-                  desc: "スリランカ政府公認のTourist Driver・Chauffeur Guide Driverのみを厳選。安全運転と高い接客スキルを両立したプロフェッショナルが対応します。"
+                  desc: "スリランカ政府公認のTourist Driver・Chauffeur Guide Driverを厳選。安全運転と高い接客スキルを両立したプロフェッショナルが対応します。"
                 },
                 {
                   icon: "💬",
