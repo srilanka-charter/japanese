@@ -11,8 +11,18 @@ export default function Footer() {
       <div className="container">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
           <div className="lg:col-span-2">
-            <div className="text-[oklch(0.75_0.12_75)] font-black text-2xl tracking-widest mb-2">SLTCS</div>
-            <div className="text-white/50 text-sm mb-4">スリランカタクシーチャーターサービス</div>
+            <div
+              className="text-white text-xl mb-0.5 tracking-wider leading-tight"
+              style={{ fontFamily: "'Shippori Mincho', serif", fontWeight: 700 }}
+            >
+              スリランカタクシーチャーターサービス
+            </div>
+            <div
+              className="text-[oklch(0.75_0.12_75)] text-sm tracking-[0.25em] mb-4"
+              style={{ fontFamily: "'Shippori Mincho', serif", fontWeight: 500 }}
+            >
+              SLTCS
+            </div>
             <p className="text-white/40 text-xs leading-relaxed max-w-xs">
               スリランカ全土を日本語対応の専属ドライバーと巡る完全プライベートチャーターサービス。
             </p>

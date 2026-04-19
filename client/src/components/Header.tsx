@@ -43,8 +43,18 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className="flex flex-col leading-none gap-0.5">
-              <span className="text-white font-bold text-base sm:text-lg tracking-wide leading-tight">スリランカタクシーチャーターサービス</span>
-              <span className="text-[oklch(0.75_0.12_75)] text-xs tracking-[0.2em] font-semibold">SLTCS</span>
+              <span
+                className="text-white text-base sm:text-lg tracking-wider leading-tight"
+                style={{ fontFamily: "'Shippori Mincho', serif", fontWeight: 700 }}
+              >
+                スリランカタクシーチャーターサービス
+              </span>
+              <span
+                className="text-[oklch(0.75_0.12_75)] text-[11px] tracking-[0.25em]"
+                style={{ fontFamily: "'Shippori Mincho', serif", fontWeight: 500 }}
+              >
+                SLTCS
+              </span>
             </div>
           </Link>
 
