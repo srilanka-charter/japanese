@@ -3,9 +3,9 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, ChevronDown, MessageCircle } from "lucide-react";
 
 const modelCourses = [
-  { label: "4泊5日スリランカモデルコース", href: "https://srilanka-charter.com/4-5days.pdf" },
-  { label: "5泊6日スリランカモデルコース", href: "https://srilanka-charter.com/5-6days.pdf" },
-  { label: "6泊7日スリランカモデルコース", href: "https://srilanka-charter.com/6-7days.pdf" },
+  { label: "4泊5日スリランカモデルコース", href: "/course/4-5days", internal: true },
+  { label: "5泊6日スリランカモデルコース", href: "/course/5-6days", internal: true },
+  { label: "6泊7日スリランカモデルコース", href: "/course/6-7days", internal: true },
 ];
 
 export default function Header() {
@@ -70,15 +70,14 @@ export default function Header() {
               {courseOpen && (
                 <div className="absolute top-full left-0 mt-1 w-64 bg-[oklch(0.12_0.02_155)] border border-white/10 rounded-lg shadow-2xl overflow-hidden">
                   {modelCourses.map((c) => (
-                    <a
+                    <Link
                       key={c.href}
                       href={c.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      onClick={() => setCourseOpen(false)}
                       className="block px-4 py-3 text-sm text-white/80 hover:bg-[oklch(0.35_0.12_155)] hover:text-[oklch(0.75_0.12_75)] transition-colors duration-150 border-b border-white/5 last:border-0"
                     >
                       {c.label}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
@@ -154,16 +153,14 @@ export default function Header() {
               {courseOpen && (
                 <div className="pl-4 bg-black/20">
                   {modelCourses.map((c) => (
-                    <a
+                    <Link
                       key={c.href}
                       href={c.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() => setMobileOpen(false)}
+                      onClick={() => { setMobileOpen(false); setCourseOpen(false); }}
                       className="block text-white/70 px-3 py-2.5 text-sm border-b border-white/5 last:border-0"
                     >
                       {c.label}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
