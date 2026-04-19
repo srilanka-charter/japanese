@@ -1,7 +1,7 @@
 const reviews = [
   {
     id: 1,
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/review1_priyantha-XvpCXsHjb4yR84fN7akYx5.webp",
+    image: "/manus-storage/review_T_family_3fb7a7a4.jpg",
     name: "T様ご家族",
     country: "日本",
     count: 4,
@@ -12,7 +12,7 @@ const reviews = [
   },
   {
     id: 2,
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/review2_aruna-cNSgCAS9vgLtFdNyXNNjhW.webp",
+    image: "/manus-storage/review_K_family_2313b7bf.png",
     name: "K様ご家族",
     country: "日本",
     count: 6,
@@ -23,7 +23,7 @@ const reviews = [
   },
   {
     id: 3,
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/review3_thalinda-Gg7oHviLt878WES8nPKqvi.webp",
+    image: "/manus-storage/review_S_family_38517451.png",
     name: "S様ご夫婦",
     country: "日本",
     count: 2,
@@ -34,7 +34,7 @@ const reviews = [
   },
   {
     id: 4,
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/review4_thashminda-8D5i65dyhmkGVcJc9gp6nr.webp",
+    image: "/manus-storage/review_H_family_1e95cc38.png",
     name: "H様お二人連れ",
     country: "日本",
     count: 2,
