@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# サンクスページ・エラーページはインデックス対象外
+Disallow: /thanks
+Disallow: /404
+
+# サイトマップ
+Sitemap: https://sltcs.srilanka-charter.com/sitemap.xml
