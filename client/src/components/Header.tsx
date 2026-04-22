@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, ChevronDown, MessageCircle } from "lucide-react";
+import { Menu, X, ChevronDown, MessageCircle, Globe } from "lucide-react";
 
 const modelCourses = [
   { label: "4泊5日スリランカモデルコース", href: "/course/4-5days", internal: true },
@@ -8,16 +8,37 @@ const modelCourses = [
   { label: "6泊7日スリランカモデルコース", href: "/course/6-7days", internal: true },
 ];
 
+const languages = [
+  { label: "English", href: "https://en.srilanka-charter.com/" },
+  { label: "French", href: "https://fr.srilanka-charter.com/" },
+  { label: "Spanish", href: "https://es.srilanka-charter.com/" },
+  { label: "German", href: "https://de.srilanka-charter.com/" },
+  { label: "Dutch", href: "https://nl.srilanka-charter.com/" },
+  { label: "Russian", href: "https://ru.srilanka-charter.com/" },
+];
+
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [courseOpen, setCourseOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
   const [location] = useLocation();
+  const langRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setLangOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const scrollToContact = (e: React.MouseEvent) => {
@@ -120,10 +141,34 @@ export default function Header() {
               お問い合わせ
             </a>
 
+            {/* Language Switcher */}
+            <div className="relative" ref={langRef}>
+              <button
+                onClick={() => setLangOpen(!langOpen)}
+                className="flex items-center gap-1.5 text-white/90 hover:text-[oklch(0.75_0.12_75)] px-3 py-2 text-sm font-medium tracking-wide transition-colors duration-200"
+              >
+                <Globe size={15} />
+                <ChevronDown size={13} className={`transition-transform duration-200 ${langOpen ? "rotate-180" : ""}`} />
+              </button>
+              {langOpen && (
+                <div className="absolute right-0 top-full mt-1 w-36 bg-[oklch(0.12_0.02_155)] border border-white/10 rounded-lg shadow-xl overflow-hidden z-50">
+                  {languages.map((lang) => (
+                    <a
+                      key={lang.href}
+                      href={lang.href}
+                      className="block px-4 py-2.5 text-sm text-white/80 hover:bg-[oklch(0.35_0.12_155)] hover:text-[oklch(0.75_0.12_75)] transition-colors duration-150 border-b border-white/5 last:border-0"
+                    >
+                      {lang.label}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+
             <a
               href="#contact"
               onClick={scrollToContact}
-              className="ml-4 flex items-center gap-2 bg-[oklch(0.75_0.12_75)] hover:bg-[oklch(0.65_0.1_75)] text-[oklch(0.12_0.02_155)] px-5 py-2.5 rounded-full text-sm font-bold tracking-wide transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
+              className="ml-2 flex items-center gap-2 bg-[oklch(0.75_0.12_75)] hover:bg-[oklch(0.65_0.1_75)] text-[oklch(0.12_0.02_155)] px-5 py-2.5 rounded-full text-sm font-bold tracking-wide transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
             >
               <MessageCircle size={14} />
               無料で相談する
@@ -212,6 +257,23 @@ export default function Header() {
             >
               無料で相談する
             </a>
+
+            {/* Mobile Language Switcher */}
+            <div className="pt-3 border-t border-white/10">
+              <div className="flex items-center gap-2 px-3 py-2 text-white/50 text-xs tracking-wider uppercase">
+                <Globe size={13} />
+                Other Languages
+              </div>
+              {languages.map((lang) => (
+                <a
+                  key={lang.href}
+                  href={lang.href}
+                  className="block text-white/70 px-3 py-2.5 text-sm border-b border-white/5 last:border-0 hover:text-[oklch(0.75_0.12_75)] transition-colors"
+                >
+                  {lang.label}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       )}
