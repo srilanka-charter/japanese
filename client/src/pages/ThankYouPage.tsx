@@ -1,7 +1,20 @@
+import { useEffect } from "react";
 import { CheckCircle, Home, MessageCircle } from "lucide-react";
 import { Link } from "wouter";
 
 export default function ThankYouPage() {
+  useEffect(() => {
+    // Google Ads コンバージョントラッキング: SLTCS 予約完了
+    if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
+      (window as any).gtag("event", "conversion", {
+        send_to: "AW-17541144373/uFanCMfMgqEcELW-oqxB",
+        value: 1.0,
+        currency: "JPY",
+        transaction_id: "",
+      });
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-[oklch(0.97_0.01_155)] flex flex-col items-center justify-center px-4">
       <div className="bg-white rounded-3xl shadow-xl max-w-lg w-full p-10 text-center">
