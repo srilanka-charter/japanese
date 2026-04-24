@@ -28,8 +28,6 @@ export async function sendOwnerNotification(data: ContactFormData): Promise<void
   const transporter = createTransporter();
 
   const body = `
-新しいお問い合わせが届きました。
-
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 お名前：${data.name}
 メールアドレス：${data.email}
