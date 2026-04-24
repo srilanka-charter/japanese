@@ -43,13 +43,13 @@ export async function sendOwnerNotification(data: ContactFormData): Promise<void
 ${data.message || "（内容なし）"}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-このメールはウェブサイトのお問い合わせフォームから自動送信されました。
   `.trim();
 
   await transporter.sendMail({
     from: `"SLTCS お問い合わせ" <${process.env.GMAIL_USER}>`,
     to: "srilanka.41032@gmail.com",
-    subject: `【SLTCS】新規お問い合わせ：${data.name}様`,
+    replyTo: data.email,
+    subject: `【SLTCS】お問い合わせありがとうございます`,
     text: body,
   });
 }
