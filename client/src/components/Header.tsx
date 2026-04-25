@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, ChevronDown, MessageCircle, Globe } from "lucide-react";
+import { Menu, X, ChevronDown, Globe } from "lucide-react";
 
 const modelCourses = [
   { label: "4泊5日スリランカモデルコース", href: "/course/4-5days", internal: true },
@@ -172,14 +172,7 @@ export default function Header() {
               )}
             </div>
 
-            <a
-              href="#contact"
-              onClick={scrollToContact}
-              className="ml-2 flex items-center gap-2 bg-[oklch(0.75_0.12_75)] hover:bg-[oklch(0.65_0.1_75)] text-[oklch(0.12_0.02_155)] px-5 py-2.5 rounded-full text-sm font-bold tracking-wide transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
-            >
-              <MessageCircle size={14} />
-              無料で相談する
-            </a>
+
           </nav>
 
           {/* Mobile menu button */}
@@ -265,13 +258,7 @@ export default function Header() {
               お問い合わせ
             </a>
 
-            <a
-              href="#contact"
-              onClick={scrollToContact}
-              className="block mt-3 text-center bg-[oklch(0.75_0.12_75)] text-[oklch(0.12_0.02_155)] px-5 py-3 rounded-full text-base font-bold"
-            >
-              無料で相談する
-            </a>
+
 
             {/* Mobile Language Switcher */}
             <div className="pt-3 border-t border-white/10">
