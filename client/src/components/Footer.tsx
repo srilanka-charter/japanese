@@ -32,17 +32,17 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/plan" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">プラン</Link></li>
               <li>
-                <a href="https://srilanka-charter.com/4-5days.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">
+                <a href="https://sltcs.srilanka-charter.com/course/4-5days" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">
                   4泊5日モデルコース
                 </a>
               </li>
               <li>
-                <a href="https://srilanka-charter.com/5-6days.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">
+                <a href="https://sltcs.srilanka-charter.com/course/5-6days" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">
                   5泊6日モデルコース
                 </a>
               </li>
               <li>
-                <a href="https://srilanka-charter.com/6-7days.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">
+                <a href="https://sltcs.srilanka-charter.com/course/6-7days" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">
                   6泊7日モデルコース
                 </a>
               </li>
