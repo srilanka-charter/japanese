@@ -213,6 +213,13 @@ export default function PricingPage() {
       <section className="py-16 bg-[#0a1a12]">
         <div className="container max-w-5xl">
 
+          {/* Plan overview intro */}
+          <div className="mb-10 text-center">
+            <p className="text-white/75 text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
+              SLTCSではお客様の趣向に合わせて3つのプランをご用意しております。価格の説明に移る前に、まずは各プランの早見表をご確認ください。
+            </p>
+          </div>
+
           {/* Plan overview cards */}
           <div className="grid md:grid-cols-3 gap-6 mb-16">
             {plans.map((plan) => (
@@ -253,13 +260,7 @@ export default function PricingPage() {
                     </li>
                   ))}
                 </ul>
-                <Link
-                  href="/plan"
-                  className="block text-center text-sm font-bold py-2.5 rounded-full transition-all duration-200 text-[#0a1a12]"
-                  style={{ backgroundColor: plan.accentColor }}
-                >
-                  プラン詳細を見る
-                </Link>
+
               </div>
             ))}
           </div>
