@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
 import { Link } from "wouter";
 
-const PRICING_TITLE = "スリランカ タクシーチャーター 料金・価格｜SLTCS";
+const PRICING_TITLE = "スリランカタクシーチャーターサービスの料金(価格)とは？";
 const PRICING_DESCRIPTION = "スリランカタクシーチャーターサービス（SLTCS）の料金・価格一覧。Bronze・Silver・Goldの3プラン、Sedan・Van・Big Van対応。日本語対応の専用車カーチャーターを業界最安水準でご提供。";
 
 const plans = [
