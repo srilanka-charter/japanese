@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Check, AlertTriangle, MessageCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
 import { Link } from "wouter";
+
+const PRICING_TITLE = "スリランカ タクシーチャーター 料金・価格｜SLTCS";
+const PRICING_DESCRIPTION = "スリランカタクシーチャーターサービス（SLTCS）の料金・価格一覧。Bronze・Silver・Goldの3プラン、Sedan・Van・Big Van対応。日本語対応の専用車カーチャーターを業界最安水準でご提供。";
 
 const plans = [
   {
@@ -107,6 +110,29 @@ function PlanPricingTable({ plan }: { plan: typeof plans[0] }) {
 }
 
 export default function PricingPage() {
+  useEffect(() => {
+    // ページタイトルを設定
+    const prevTitle = document.title;
+    document.title = PRICING_TITLE;
+
+    // meta description を設定
+    let metaDesc = document.querySelector<HTMLMetaElement>('meta[name="description"]');
+    const prevDesc = metaDesc?.getAttribute("content") ?? "";
+    if (metaDesc) {
+      metaDesc.setAttribute("content", PRICING_DESCRIPTION);
+    } else {
+      metaDesc = document.createElement("meta");
+      metaDesc.setAttribute("name", "description");
+      metaDesc.setAttribute("content", PRICING_DESCRIPTION);
+      document.head.appendChild(metaDesc);
+    }
+
+    return () => {
+      document.title = prevTitle;
+      if (metaDesc) metaDesc.setAttribute("content", prevDesc);
+    };
+  }, []);
+
   const scrollToContact = () => {
     if (window.location.pathname !== "/") {
       window.location.href = "/#contact";
