@@ -103,7 +103,7 @@ function PlanPriceCard({ plan }: { plan: typeof pricingData[0] }) {
           <span className="text-xs font-bold px-3 py-1 rounded-full bg-[#1a9e6e] text-white">人気 No.1</span>
         )}
       </div>
-      <p className="text-xs text-gray-500 mb-4">{plan.desc}</p>
+
 
       {/* Vehicle tabs */}
       <div className="flex gap-2 mb-4 flex-wrap">
@@ -225,21 +225,21 @@ export default function PlansSection() {
             以下はすべて税込価格です。業界最安水準の料金となっています。距離やドライバーの言語によって金額が変わりますので、お気軽にお問い合わせください。以下は英語ドライバーの価格です。日本語ドライバーをご希望の場合の料金についても、お見積もり時にご案内いたします。
           </p>
 
+          {/* プランカード */}
+          <div className="grid md:grid-cols-3 gap-6">
+            {pricingData.map((plan) => (
+              <PlanPriceCard key={plan.id} plan={plan} />
+            ))}
+          </div>
+
           {/* 詳細はこちらボタン */}
-          <div className="text-center mb-10">
+          <div className="text-center mt-8">
             <a
               href="https://sltcs.srilanka-charter.com/pricing"
               className="inline-block bg-[oklch(0.35_0.12_155)] hover:bg-[oklch(0.28_0.12_155)] text-white px-8 py-3 rounded-full font-bold text-sm tracking-wide transition-all duration-200 shadow-sm"
             >
               詳細はこちら
             </a>
-          </div>
-
-          {/* プランカード */}
-          <div className="grid md:grid-cols-3 gap-6">
-            {pricingData.map((plan) => (
-              <PlanPriceCard key={plan.id} plan={plan} />
-            ))}
           </div>
         </div>
         {/* ===== /価格テーブルセクション ===== */}
