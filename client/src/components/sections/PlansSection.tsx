@@ -220,6 +220,11 @@ export default function PlansSection() {
 
         {/* ===== 価格テーブルセクション ===== */}
         <div className="mt-16 max-w-5xl mx-auto">
+          {/* 価格セクション見出し */}
+          <h2 className="text-2xl lg:text-3xl font-black text-[oklch(0.15_0.01_60)] text-center mb-4" style={{ fontFamily: "'Noto Serif JP', serif" }}>
+            スリランカタクシーチャーターサービスの価格体系
+          </h2>
+
           {/* 説明文 */}
           <p className="text-sm text-gray-600 leading-relaxed text-center mb-4 max-w-2xl mx-auto">
             以下はすべて税込価格です。業界最安水準の料金となっています。距離やドライバーの言語によって金額が変わりますので、お気軽にお問い合わせください。以下は英語ドライバーの価格です。日本語ドライバーをご希望の場合の料金についても、お見積もり時にご案内いたします。
