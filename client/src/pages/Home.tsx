@@ -7,6 +7,7 @@ import ContactSection from "@/components/sections/ContactSection";
 import FeaturesSection from "@/components/sections/FeaturesSection";
 import WorriesSection from "@/components/sections/WorriesSection";
 import PlansSection from "@/components/sections/PlansSection";
+import VehiclesPreviewSection from "@/components/sections/VehiclesPreviewSection";
 import DestinationsSection from "@/components/sections/DestinationsSection";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import HowItWorksSection from "@/components/sections/HowItWorksSection";
@@ -22,6 +23,7 @@ export default function Home() {
       <ContactSection />
       <FeaturesSection />
       <WorriesSection />
+      <VehiclesPreviewSection />
       <PlansSection />
       <DestinationsSection />
       <ReviewsSection />
