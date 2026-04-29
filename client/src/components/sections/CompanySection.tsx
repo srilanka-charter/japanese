@@ -1,6 +1,6 @@
 const companyInfo = [
   { label: "サービス名", value: "スリランカタクシーチャーターサービス（商標登録第7034996）" },
-  { label: "英語名", value: "Sri Lanka Taxi Charter Service (SLTCS)" },
+  { label: "英語名", value: "SLTCS Int Ltd" },
   { label: "事業内容", value: "オンライン地上輸送の仲介サービス" },
   { label: "対応エリア", value: "スリランカ全土（コロンボ・ネゴンボ・キャンディ・シーギリヤ・ヌワラエリヤ・ゴール・ヤラ 他）" },
   { label: "対応言語", value: "日本語・英語" },
