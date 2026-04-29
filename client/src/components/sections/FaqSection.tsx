@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { Link } from "wouter";
 
 const faqs = [
   {
@@ -57,6 +58,14 @@ export default function FaqSection() {
               )}
             </div>
           ))}
+        </div>
+        <div className="text-center mt-10">
+          <Link
+            href="/faq"
+            className="inline-flex items-center gap-2 border border-[oklch(0.35_0.12_155)] text-[oklch(0.35_0.12_155)] hover:bg-[oklch(0.35_0.12_155)] hover:text-white px-7 py-3 rounded-full font-semibold text-sm transition-all duration-200"
+          >
+            FAQ記事をすべて見る
+          </Link>
         </div>
       </div>
     </section>
