@@ -108,8 +108,13 @@ const faqs: { q: string; a: React.ReactNode }[] = [
           スリランカには、乗客輸送を担う「Tourist Driver」と、案内・解説まで対応できる上位資格「Chauffeur Guide Driver」の2種類があります。
         </p>
         <p className="mt-2">
-          <strong>シルバープラン以上</strong>では、Chauffeur Guide Driver資格を持つドライバーが観光地での同行・解説に対応します。
-          ただし、専門ガイドとは異なりますので、より詳細な解説が必要な場合はお客様ご自身で専門ガイドを手配いただくことをおすすめします。
+          シルバープランでは<strong>Tourist Driver以上</strong>、ゴールドプランでは<strong>Chauffeur Guide Driver</strong>がアテンドします。シルバープラン以上であれば観光地での同行・解説に対応します。
+        </p>
+        <p className="mt-2">
+          ただ、繁忙期でシルバープランにてTourist Driverがアテンドする場合は、シーギリヤロック・アヌラーダプラ・ポロンナルワはドライバーが同行することができません。この場合は観光地の現地で追加費用なしで現地ガイドを手配させていただきます。
+        </p>
+        <p className="mt-2">
+          また、ドライバーは専門ガイドとは異なりますので、より詳細な解説が必要な場合はお客様ご自身で専門ガイドを手配いただくことをおすすめします。
         </p>
         <p className="mt-2 text-sm text-gray-500">
           ※当社は専門ガイドの予約・販売・手配（代行）は行いません。
