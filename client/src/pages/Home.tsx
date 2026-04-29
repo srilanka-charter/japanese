@@ -11,7 +11,6 @@ import VehiclesPreviewSection from "@/components/sections/VehiclesPreviewSection
 import DestinationsSection from "@/components/sections/DestinationsSection";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import HowItWorksSection from "@/components/sections/HowItWorksSection";
-import FaqSection from "@/components/sections/FaqSection";
 import CompanySection from "@/components/sections/CompanySection";
 
 export default function Home() {
@@ -28,7 +27,6 @@ export default function Home() {
       <DestinationsSection />
       <ReviewsSection />
       <HowItWorksSection />
-      <FaqSection />
       <CompanySection />
       <Footer />
       <FloatingCTA />
