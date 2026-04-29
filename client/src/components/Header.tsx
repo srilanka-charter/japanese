@@ -121,17 +121,12 @@ export default function Header() {
               車両
             </Link>
 
-            <a
-              href="#faq"
-              onClick={(e) => {
-                e.preventDefault();
-                if (location !== "/") { window.location.href = "/#faq"; return; }
-                document.getElementById("faq")?.scrollIntoView({ behavior: "smooth" });
-              }}
+            <Link
+              href="/faq"
               className="text-white/90 hover:text-[oklch(0.75_0.12_75)] px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200"
             >
               FAQ
-            </a>
+            </Link>
 
             <Link
               href="/pricing"
@@ -229,18 +224,13 @@ export default function Header() {
               車両
             </Link>
 
-            <a
-              href="#faq"
-              onClick={(e) => {
-                e.preventDefault();
-                setMobileOpen(false);
-                if (location !== "/") { window.location.href = "/#faq"; return; }
-                document.getElementById("faq")?.scrollIntoView({ behavior: "smooth" });
-              }}
+            <Link
+              href="/faq"
+              onClick={() => setMobileOpen(false)}
               className="block text-white/90 px-3 py-3 text-base font-medium border-b border-white/10"
             >
               FAQ
-            </a>
+            </Link>
 
             <Link
               href="/pricing"
