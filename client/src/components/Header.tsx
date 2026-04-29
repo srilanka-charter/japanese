@@ -122,13 +122,6 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/faq"
-              className="text-white/90 hover:text-[oklch(0.75_0.12_75)] px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200"
-            >
-              FAQ
-            </Link>
-
-            <Link
               href="/pricing"
               className="text-white/90 hover:text-[oklch(0.75_0.12_75)] px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200"
             >
@@ -142,6 +135,13 @@ export default function Header() {
             >
               お問い合わせ
             </a>
+
+            <Link
+              href="/faq"
+              className="text-white/90 hover:text-[oklch(0.75_0.12_75)] px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200"
+            >
+              FAQ
+            </Link>
 
             {/* Language Switcher */}
             <div className="relative" ref={langRef}>
@@ -225,14 +225,6 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/faq"
-              onClick={() => setMobileOpen(false)}
-              className="block text-white/90 px-3 py-3 text-base font-medium border-b border-white/10"
-            >
-              FAQ
-            </Link>
-
-            <Link
               href="/pricing"
               onClick={() => setMobileOpen(false)}
               className="block text-white/90 px-3 py-3 text-base font-medium border-b border-white/10"
@@ -247,6 +239,14 @@ export default function Header() {
             >
               お問い合わせ
             </a>
+
+            <Link
+              href="/faq"
+              onClick={() => setMobileOpen(false)}
+              className="block text-white/90 px-3 py-3 text-base font-medium border-b border-white/10"
+            >
+              FAQ
+            </Link>
 
 
 
