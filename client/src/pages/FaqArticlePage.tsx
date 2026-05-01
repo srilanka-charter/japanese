@@ -293,6 +293,8 @@ export default function FaqArticlePage() {
       })),
     };
 
+    // 既存のJSON-LDスクリプトを削除してから挿入（重複防止）
+    document.getElementById("faq-jsonld")?.remove();
     const script = document.createElement("script");
     script.id = "faq-jsonld";
     script.type = "application/ld+json";
