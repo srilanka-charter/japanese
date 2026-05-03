@@ -47,11 +47,7 @@ export default function Footer() {
                 </a>
               </li>
               <li><Link href="/vehicles" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">車両</Link></li>
-              <li>
-                <a href="#faq" onClick={(e) => { e.preventDefault(); document.getElementById("faq")?.scrollIntoView({ behavior: "smooth" }); }} className="hover:text-[oklch(0.75_0.12_75)] transition-colors">
-                  FAQ
-                </a>
-              </li>
+              <li><Link href="/faq" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">FAQ</Link></li>
               <li>
                 <a href="#contact" onClick={scrollToContact} className="hover:text-[oklch(0.75_0.12_75)] transition-colors">
                   お問い合わせ
