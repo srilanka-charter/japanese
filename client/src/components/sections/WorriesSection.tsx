@@ -101,6 +101,40 @@ export default function WorriesSection() {
         {/* ===== 不安カード + 中央タイトル ===== */}
         <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-4 mb-12">
 
+          {/* 中央タイトル（スマホ版：最上部表示） */}
+          <div className="flex lg:hidden w-full flex-col items-center justify-center text-center px-4 py-6">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-[oklch(0.72_0.12_85)] text-xs">◆</span>
+              <span className="text-xs font-bold tracking-[0.35em] text-[oklch(0.72_0.12_85)] uppercase">YOUR WORRIES</span>
+              <span className="text-[oklch(0.72_0.12_85)] text-xs">◆</span>
+            </div>
+            <div
+              className="relative flex items-center justify-center p-8"
+              style={{
+                background: 'radial-gradient(ellipse at center, oklch(0.18 0.08 155) 0%, oklch(0.10 0.04 155) 70%)',
+                clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)',
+                border: '1px solid oklch(0.72 0.12 85 / 0.4)',
+                minWidth: '220px',
+              }}
+            >
+              <div className="absolute top-2 left-2 w-4 h-4 border-t-2 border-l-2 border-[oklch(0.72_0.12_85)]" />
+              <div className="absolute top-2 right-2 w-4 h-4 border-t-2 border-r-2 border-[oklch(0.72_0.12_85)]" />
+              <div className="absolute bottom-2 left-2 w-4 h-4 border-b-2 border-l-2 border-[oklch(0.72_0.12_85)]" />
+              <div className="absolute bottom-2 right-2 w-4 h-4 border-b-2 border-r-2 border-[oklch(0.72_0.12_85)]" />
+              <h2
+                className="text-2xl font-black text-white leading-snug"
+                style={{ fontFamily: "'Noto Serif JP', serif", textShadow: '0 0 30px oklch(0.72 0.12 85 / 0.3)' }}
+              >
+                スリランカ旅行<br />こんな不安、<br />ありませんか？
+              </h2>
+            </div>
+            <div className="mt-4">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 0L10 6H16L11 9L13 16L8 12L3 16L5 9L0 6H6L8 0Z" fill="oklch(0.72 0.12 85)" fillOpacity="0.5" />
+              </svg>
+            </div>
+          </div>
+
           {/* 左カード群 */}
           <div className="flex flex-col gap-3 w-full lg:w-[30%]">
             {leftWorries.map((w, i) => (
@@ -117,8 +151,8 @@ export default function WorriesSection() {
             ))}
           </div>
 
-          {/* 中央タイトル */}
-          <div className="flex-1 flex flex-col items-center justify-center text-center px-4 lg:px-8 py-8">
+          {/* 中央タイトル（PC版のみ表示） */}
+          <div className="hidden lg:flex flex-1 flex-col items-center justify-center text-center px-4 lg:px-8 py-8">
             {/* 上部デコレーション */}
             <div className="flex items-center gap-2 mb-4">
               <span className="text-[oklch(0.72_0.12_85)] text-xs">◆</span>
@@ -144,7 +178,7 @@ export default function WorriesSection() {
                 className="text-2xl lg:text-3xl font-black text-white leading-snug"
                 style={{ fontFamily: "'Noto Serif JP', serif", textShadow: '0 0 30px oklch(0.72 0.12 85 / 0.3)' }}
               >
-                スリランカ旅行で<br />こんな不安、<br />ありませんか?
+                スリランカ旅行<br />こんな不安、<br />ありませんか？
               </h2>
             </div>
             {/* 下部デコレーション */}
