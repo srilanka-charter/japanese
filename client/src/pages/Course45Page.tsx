@@ -5,6 +5,7 @@
  * Minimal imagery, typography-driven design
  */
 
+import { useEffect } from "react";
 import { Link } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -279,6 +280,30 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 export default function Course45Page() {
+  useEffect(() => {
+    const prevTitle = document.title;
+    document.title = "スリランカ 4泊5日 モデルコース｜タクシーチャーターで巡る観光ルート";
+
+    let meta = document.querySelector<HTMLMetaElement>('meta[name="description"]');
+    const created = !meta;
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.name = "description";
+      document.head.appendChild(meta);
+    }
+    const prevDesc = meta.content;
+    meta.content = "スリランカ4泊5日のモデルコースをご紹介。シーギリヤ・キャンディ・コロンボなど主要観光地を専用タクシーチャーターで効率よく周遊。日本語対応ドライバーが旅をサポートします。";
+
+    return () => {
+      document.title = prevTitle;
+      if (created) {
+        meta?.parentNode?.removeChild(meta);
+      } else if (meta) {
+        meta.content = prevDesc;
+      }
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-[oklch(0.97_0.005_155)]">
       <Header />

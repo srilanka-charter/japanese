@@ -4,6 +4,7 @@
  * Clean timeline layout with day-by-day breakdown
  */
 
+import { useEffect } from "react";
 import { Link } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -365,6 +366,30 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 export default function Course67Page() {
+  useEffect(() => {
+    const prevTitle = document.title;
+    document.title = "スリランカ 6泊7日 モデルコース｜タクシーチャーターでゆったり周遊する旅";
+
+    let meta = document.querySelector<HTMLMetaElement>('meta[name="description"]');
+    const created = !meta;
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.name = "description";
+      document.head.appendChild(meta);
+    }
+    const prevDesc = meta.content;
+    meta.content = "スリランカ6泊7日のモデルコースをご紹介。シーギリヤ・キャンディ・エッラ・コロンボなどをゆったり巡る専用タクシーチャーターの旅。日本語対応ドライバーが全行程をサポートします。";
+
+    return () => {
+      document.title = prevTitle;
+      if (created) {
+        meta?.parentNode?.removeChild(meta);
+      } else if (meta) {
+        meta.content = prevDesc;
+      }
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-[oklch(0.97_0.005_155)]">
       <Header />
