@@ -240,50 +240,105 @@ export default function ContactSection() {
             )}
           </div>
 
-          {/* Right: Features */}
+          {/* Right: Features - リッチデザイン */}
           <div>
-            <div className="mb-8">
-              <span className="section-label">WHY SLTCS</span>
-              <h2 className="text-3xl lg:text-4xl font-black text-[oklch(0.15_0.01_60)] mt-2 leading-tight" style={{ fontFamily: "'Noto Serif JP', serif" }}>
+            {/* セクションヘッダー */}
+            <div className="mb-8 text-center">
+              <div className="flex items-center justify-center gap-3 mb-2">
+                <div className="h-px w-12 bg-gradient-to-r from-transparent to-[oklch(0.72_0.12_85)]" />
+                <span className="text-xs font-bold tracking-[0.3em] text-[oklch(0.72_0.12_85)] uppercase">WHY SLTCS</span>
+                <div className="h-px w-12 bg-gradient-to-l from-transparent to-[oklch(0.72_0.12_85)]" />
+              </div>
+              {/* 装飾ダイヤモンド */}
+              <div className="flex justify-center mb-3">
+                <svg width="24" height="16" viewBox="0 0 24 16" fill="none">
+                  <path d="M12 0L14 6H24L16 10L18 16L12 12L6 16L8 10L0 6H10L12 0Z" fill="oklch(0.72 0.12 85)" fillOpacity="0.6" />
+                </svg>
+              </div>
+              <h2 className="text-3xl lg:text-4xl font-black text-[oklch(0.15_0.01_60)] leading-tight" style={{ fontFamily: "'Noto Serif JP', serif" }}>
                 選ばれる5つの理由
               </h2>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3">
               {[
                 {
-                  icon: "🛡️",
+                  svgIcon: (
+                    <svg viewBox="0 0 40 40" fill="none" className="w-7 h-7">
+                      <path d="M20 4L8 9v10c0 7.18 5.16 13.9 12 15.5C27.84 32.9 33 26.18 33 19V9L20 4z" fill="oklch(0.25 0.08 155)" />
+                      <path d="M16 20l3 3 6-6" stroke="oklch(0.72 0.12 85)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  ),
+                  num: "01",
                   title: "政府公認ドライバーの安心感",
                   desc: "スリランカ政府公認のTourist Driver・Chauffeur Guide Driverを厳選。安全運転と高い接客スキルを両立したプロフェッショナルが対応します。"
                 },
                 {
-                  icon: "💬",
+                  svgIcon: (
+                    <svg viewBox="0 0 40 40" fill="none" className="w-7 h-7">
+                      <circle cx="20" cy="20" r="14" fill="oklch(0.25 0.08 155)" />
+                      <text x="13" y="22" fontSize="11" fontWeight="bold" fill="oklch(0.72 0.12 85)" fontFamily="serif">あ</text>
+                      <text x="21" y="26" fontSize="9" fontWeight="bold" fill="white" fontFamily="sans-serif">A</text>
+                    </svg>
+                  ),
+                  num: "02",
                   title: "日本語で安心のフルサポート",
                   desc: "予約から旅行終了まで、日本語に堪能なスタッフが一貫してサポート。言語の壁を感じることなく、安心して旅を楽しめます。"
                 },
                 {
-                  icon: "🚗",
+                  svgIcon: (
+                    <svg viewBox="0 0 40 40" fill="none" className="w-7 h-7">
+                      <rect x="6" y="16" width="28" height="14" rx="4" fill="oklch(0.25 0.08 155)" />
+                      <rect x="10" y="12" width="20" height="8" rx="3" fill="oklch(0.35 0.08 155)" />
+                      <circle cx="12" cy="30" r="3" fill="oklch(0.72 0.12 85)" />
+                      <circle cx="28" cy="30" r="3" fill="oklch(0.72 0.12 85)" />
+                    </svg>
+                  ),
+                  num: "03",
                   title: "完全プライベートの自由な旅",
                   desc: "ツアーバスと違い、あなただけの専属チャーター。出発時間・訪問地・滞在時間すべてを自由にカスタマイズできます。"
                 },
                 {
-                  icon: "🗺️",
+                  svgIcon: (
+                    <svg viewBox="0 0 40 40" fill="none" className="w-7 h-7">
+                      <rect x="6" y="8" width="28" height="22" rx="2" fill="oklch(0.25 0.08 155)" />
+                      <path d="M14 18l4 4 8-8" stroke="oklch(0.72 0.12 85)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                      <circle cx="26" cy="28" r="3" fill="oklch(0.72 0.12 85)" />
+                    </svg>
+                  ),
+                  num: "04",
                   title: "観光地の深い知識と案内",
                   desc: "Chauffeur Guide Driverは歴史・文化・グルメに精通したガイドでもあります。教科書には載っていない現地の魅力を余すことなく伝えてくれます。"
                 },
                 {
-                  icon: "🚌",
+                  svgIcon: (
+                    <svg viewBox="0 0 40 40" fill="none" className="w-7 h-7">
+                      <rect x="4" y="16" width="32" height="14" rx="4" fill="oklch(0.25 0.08 155)" />
+                      <rect x="8" y="12" width="24" height="8" rx="3" fill="oklch(0.35 0.08 155)" />
+                      <circle cx="11" cy="30" r="3" fill="oklch(0.72 0.12 85)" />
+                      <circle cx="20" cy="30" r="3" fill="oklch(0.72 0.12 85)" />
+                      <circle cx="29" cy="30" r="3" fill="oklch(0.72 0.12 85)" />
+                    </svg>
+                  ),
+                  num: "05",
                   title: "人数に合わせた最適な車両",
                   desc: "2名様のカップルから10名様の大型グループまで、ご人数に合わせた最適な車両で、長距離移動も快適にご案内します。"
                 }
               ].map((item, i) => (
-                <div key={i} className="flex gap-4 p-4 rounded-xl border border-[oklch(0.9_0.01_155)] hover:border-[oklch(0.35_0.12_155)]/30 hover:bg-[oklch(0.35_0.12_155)]/5 transition-all duration-200">
-                  <div className="w-12 h-12 rounded-xl bg-[oklch(0.35_0.12_155)]/10 flex items-center justify-center text-2xl flex-shrink-0">
-                    {item.icon}
+                <div key={i} className="flex items-center gap-4 p-4 rounded-xl bg-white border border-[oklch(0.9_0.02_85)] shadow-sm hover:shadow-md hover:border-[oklch(0.72_0.12_85)]/40 transition-all duration-200"
+                  style={{ boxShadow: '2px 2px 0 oklch(0.72 0.12 85 / 0.15), 0 1px 3px rgba(0,0,0,0.08)' }}>
+                  {/* アイコン円 */}
+                  <div className="w-14 h-14 rounded-full border-2 border-[oklch(0.72_0.12_85)]/40 bg-[oklch(0.97_0.02_85)] flex items-center justify-center flex-shrink-0">
+                    {item.svgIcon}
                   </div>
-                  <div>
-                    <h3 className="font-bold text-[oklch(0.15_0.01_60)] mb-1">{item.title}</h3>
-                    <p className="text-sm text-[oklch(0.5_0.02_155)] leading-relaxed">{item.desc}</p>
+                  {/* 番号 */}
+                  <div className="text-2xl font-black text-[oklch(0.72_0.12_85)] flex-shrink-0 w-8 text-center" style={{ fontFamily: "'Georgia', serif" }}>
+                    {item.num}
+                  </div>
+                  {/* テキスト */}
+                  <div className="flex-1 border-l border-[oklch(0.9_0.02_85)] pl-4">
+                    <h3 className="font-bold text-[oklch(0.15_0.01_60)] mb-1 text-base">{item.title}</h3>
+                    <p className="text-sm text-[oklch(0.45_0.02_155)] leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
