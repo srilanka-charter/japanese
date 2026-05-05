@@ -150,16 +150,21 @@ export default function HeroSection() {
           }}
         >
           {slide.isH1 ? (
-            <h1
-              className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black text-white leading-[1.05] mb-6"
-              style={{
-                fontFamily: "'Noto Serif JP', serif",
-                textShadow: "0 4px 32px rgba(0,0,0,0.5)",
-                whiteSpace: "pre-line",
-              }}
-            >
-              {slide.title}
-            </h1>
+            <>
+              {/* SEO用H1（視覚的に非表示・検索エンジンには認識される） */}
+              <h1 className="sr-only">スリランカタクシーチャーターならSLTCS｜日本語対応の専用車で自由に周遊</h1>
+              {/* ビジュアル用テキスト（divに変更・見た目は同じ） */}
+              <div
+                className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black text-white leading-[1.05] mb-6"
+                style={{
+                  fontFamily: "'Noto Serif JP', serif",
+                  textShadow: "0 4px 32px rgba(0,0,0,0.5)",
+                  whiteSpace: "pre-line",
+                }}
+              >
+                {slide.title}
+              </div>
+            </>
           ) : (
             <h2
               className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black text-white leading-[1.05] mb-6"
