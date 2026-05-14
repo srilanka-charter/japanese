@@ -5,8 +5,9 @@ import Footer from "@/components/Footer";
 
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_rock_hero-WvSdEsM6SGKw7D3K9DXp8D.webp";
 const TAXI_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_taxi_charter-jbGez2ndeLZJLBsvWSRKhH.webp";
+const KANDALAMA_IMG = "/manus-storage/heritance_kandalama_5d3649d9.jpg";
 
-// 見どころ（修正②：H3 + 写真）
+// 見どころ（H3 + 写真）
 const highlights = [
   {
     id: "lion-gate",
@@ -45,7 +46,7 @@ const highlights = [
   },
 ];
 
-// レストラン（修正③：表形式）
+// レストラン（表形式）
 const restaurants = [
   {
     name: "Hela Bojun Hala Sigiriya",
@@ -73,7 +74,7 @@ const restaurants = [
   },
 ];
 
-// 周辺観光地（修正④：H3 + 写真）
+// 周辺観光地（H3 + 写真）— ポロンナルワ遺跡に実際の写真を使用
 const nearbyAttractions = [
   {
     name: "ダンブッラ石窟寺院",
@@ -105,14 +106,14 @@ const nearbyAttractions = [
   },
   {
     name: "ポロンナルワ遺跡",
-    image: "",
+    image: "/manus-storage/polonnaruwa_ruins_50133a2d.jpg",  // ← 実際の写真に差し替え
     distance: "シーギリヤから約40km（車で約50分）",
     badge: "世界遺産",
     desc: "11〜13世紀に栄えたスリランカ王朝の古都。広大な遺跡群には仏塔・宮殿・沐浴池などが点在し、世界遺産にも登録されています。自転車でのんびり巡るのがおすすめです。",
   },
 ];
 
-// ホテル（修正⑤：表形式、ヘリタンスカンダラマを先頭に）
+// ホテル（表形式、ヘリタンスカンダラマ先頭）
 const hotels = [
   {
     name: "Heritance Kandalama",
@@ -164,15 +165,113 @@ const hotels = [
   },
 ];
 
+// JSON-LD 構造化データ（FAQ + Article）
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "シーギリヤロックへの行き方は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "シーギリヤロックへはタクシーチャーターが最もおすすめです。コロンボから約4〜5時間で到着します。公共交通機関（バス・鉄道）は直通がなく、ダンブッラなどで乗り換えが必要なため不便です。SLTCSの日本語対応タクシーチャーターなら、ホテルから直接シーギリヤロック入口まで送迎します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "シーギリヤロックの入場料はいくらですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "シーギリヤロックの外国人向け入場料は約USD 30（約4,500円）です。SLTCSのシルバープラン以上では、ドライバーが自己負担で同行し各スポットを日本語で解説します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "シーギリヤロックの登山にかかる時間は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "シーギリヤロックの登山は往復で約2〜3時間が目安です。頂上までは約1,200段の階段があり、体力に応じて所要時間が変わります。早朝（開園直後の7時頃）の訪問が涼しく混雑も少なくおすすめです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "シーギリヤロック周辺のおすすめホテルは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "シーギリヤ周辺のおすすめホテルは、ジェフリー・バワ設計のHeritance Kandalama（ラグジュアリー）、湿地帯のエコロッジJetwing Vil Uyana（ラグジュアリー）、コスパ重視ならSigiriya Village Hotelがあります。"
+      }
+    }
+  ]
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "シーギリヤロックの見所とは？行き方や周辺のホテルやレストランを含めて徹底解説！",
+  "description": "シーギリヤロックへの行き方（タクシーチャーター・バス・鉄道の比較）、見どころ5選、周辺レストラン、観光地、おすすめホテルを徹底解説。日本語対応タクシーチャーターSLTCSのご利用がおすすめです。",
+  "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_rock_hero-WvSdEsM6SGKw7D3K9DXp8D.webp",
+  "author": { "@type": "Organization", "name": "SLTCS スリランカタクシーチャーターサービス" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "SLTCS スリランカタクシーチャーターサービス",
+    "url": "https://sltcs.srilanka-charter.com"
+  },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sltcs.srilanka-charter.com/sigiriya" },
+  "keywords": "シーギリヤロック 行き方, シーギリヤ アクセス, シーギリヤ タクシー, シーギリヤ 観光, スリランカ 世界遺産, シーギリヤ ホテル, シーギリヤ レストラン"
+};
+
 export default function SigiriyaPage() {
   useEffect(() => {
-    document.title = "シーギリヤロックの見所とは？行き方や周辺のホテルやレストランを含めて徹底解説！｜SLTCS";
+    // SEO: titleタグ — ターゲットキーワード「シーギリヤロック 行き方」を前方に配置
+    document.title = "シーギリヤロックの行き方・見どころ完全ガイド｜タクシーチャーターで快適アクセス【SLTCS】";
+
+    // SEO: descriptionタグ — 155文字以内でキーワードを自然に含める
     const desc = document.querySelector('meta[name="description"]');
     if (desc) {
-      desc.setAttribute("content", "シーギリヤロックの行き方・見どころ・周辺レストラン・観光地・おすすめホテルを徹底解説。公共交通機関は不便なためタクシーチャーター（SLTCS）がおすすめ。日本語対応の専用車で快適にアクセス。");
+      desc.setAttribute("content", "シーギリヤロックへの行き方を徹底解説。コロンボからタクシーチャーター（約4〜5時間）・バス・鉄道を比較。日本語対応SLTCSなら直行でアクセス可能。見どころ・周辺レストラン・ホテルも網羅。");
     }
+
+    // SEO: OGP
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute("content", "シーギリヤロックの行き方・見どころ完全ガイド｜SLTCS");
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute("content", "シーギリヤロックへの行き方を徹底解説。タクシーチャーター・バス・鉄道を比較。日本語対応SLTCSで快適アクセス。見どころ・レストラン・ホテルも網羅。");
+    const ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) ogUrl.setAttribute("content", "https://sltcs.srilanka-charter.com/sigiriya");
+    const ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogImage) ogImage.setAttribute("content", "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_rock_hero-WvSdEsM6SGKw7D3K9DXp8D.webp");
+
+    // SEO: canonical
+    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      document.head.appendChild(canonical);
+    }
+    canonical.href = "https://sltcs.srilanka-charter.com/sigiriya";
+
+    // SEO: JSON-LD 構造化データ（FAQ + Article）
+    const faqScript = document.createElement("script");
+    faqScript.type = "application/ld+json";
+    faqScript.id = "faq-jsonld";
+    faqScript.textContent = JSON.stringify(faqJsonLd);
+    document.head.appendChild(faqScript);
+
+    const articleScript = document.createElement("script");
+    articleScript.type = "application/ld+json";
+    articleScript.id = "article-jsonld";
+    articleScript.textContent = JSON.stringify(articleJsonLd);
+    document.head.appendChild(articleScript);
+
     return () => {
       document.title = "スリランカタクシーチャーターならSLTCS｜日本語対応の専用車で自由に周遊";
+      const descEl = document.querySelector('meta[name="description"]');
+      if (descEl) descEl.setAttribute("content", "スリランカタクシーチャーターならSLTCS。日本語対応の専用車・カーチャーターで、シーギリヤ・キャンディ・ヤラなどスリランカ全土を自由に周遊。政府公認ドライバーによる完全プライベートチャーターをご提供します。");
+      document.getElementById("faq-jsonld")?.remove();
+      document.getElementById("article-jsonld")?.remove();
+      const canonicalEl = document.querySelector('link[rel="canonical"]');
+      if (canonicalEl) canonicalEl.remove();
     };
   }, []);
 
@@ -182,51 +281,64 @@ export default function SigiriyaPage() {
 
       {/* Hero */}
       <div className="relative h-[60vh] min-h-[400px] overflow-hidden">
-        <img src={HERO_IMG} alt="シーギリヤロック" className="w-full h-full object-cover" />
+        <img src={HERO_IMG} alt="シーギリヤロック スリランカ世界遺産" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/60" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
           <span className="inline-block bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4 tracking-widest uppercase">世界遺産</span>
           <h1 className="text-white text-3xl md:text-5xl font-bold leading-tight drop-shadow-lg max-w-4xl">
-            シーギリヤロックの見所とは？<br className="hidden md:block" />
-            行き方や周辺のホテルやレストランを<br className="hidden md:block" />
-            含めて徹底解説！
+            シーギリヤロックの行き方・見どころ<br className="hidden md:block" />
+            完全ガイド
           </h1>
+          <p className="text-white/90 mt-4 text-base md:text-lg max-w-2xl">
+            タクシーチャーターで快適アクセス｜周辺ホテル・レストランも徹底解説
+          </p>
         </div>
       </div>
 
       {/* Article */}
       <article className="max-w-4xl mx-auto px-4 py-12">
 
+        {/* パンくずリスト（SEO強化） */}
+        <nav aria-label="パンくずリスト" className="text-xs text-gray-500 mb-6 flex items-center gap-1 flex-wrap">
+          <Link href="/" className="hover:text-amber-600 hover:underline">トップ</Link>
+          <span>›</span>
+          <span className="text-gray-400">観光スポット</span>
+          <span>›</span>
+          <span className="text-gray-700 font-medium">シーギリヤロック</span>
+        </nav>
+
         {/* 目次 */}
-        <nav className="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-10">
+        <nav aria-label="目次" className="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-10">
           <p className="font-bold text-amber-800 mb-3 text-sm tracking-wide uppercase">目次</p>
           <ol className="space-y-1 text-sm text-amber-700 list-decimal list-inside">
-            <li><a href="#access" className="hover:underline">シーギリヤロックへの行き方</a></li>
-            <li><a href="#highlights" className="hover:underline">シーギリヤロックの見どころ</a></li>
+            <li><a href="#access" className="hover:underline">シーギリヤロックへの行き方（アクセス方法比較）</a></li>
+            <li><a href="#highlights" className="hover:underline">シーギリヤロックの見どころ5選</a></li>
             <li><a href="#restaurants" className="hover:underline">周辺のランチに便利なレストラン</a></li>
             <li><a href="#attractions" className="hover:underline">シーギリヤロック周辺の観光地</a></li>
             <li><a href="#hotels" className="hover:underline">シーギリヤ地域のおすすめホテル</a></li>
+            <li><a href="#faq" className="hover:underline">よくある質問（FAQ）</a></li>
           </ol>
         </nav>
 
         {/* イントロ */}
         <p className="text-gray-700 leading-relaxed text-lg mb-10">
-          スリランカ中央部のジャングルにそびえる巨岩「シーギリヤロック（Sigiriya Rock）」は、標高約200mの断崖頂上に1500年以上前の宮殿遺跡が広がる、まさに"天空の宮殿"です。ユネスコ世界遺産にも登録されており、スリランカを訪れたなら絶対に外せない観光スポットです。本記事では行き方から見どころ、周辺グルメ・観光地・ホテルまで徹底解説します。
+          スリランカ中央部のジャングルにそびえる巨岩「シーギリヤロック（Sigiriya Rock）」は、標高約200mの断崖頂上に1500年以上前の宮殿遺跡が広がる、まさに"天空の宮殿"です。ユネスコ世界遺産にも登録されており、スリランカを訪れたなら絶対に外せない観光スポットです。本記事では<strong>シーギリヤロックへの行き方</strong>から見どころ、周辺グルメ・観光地・ホテルまで徹底解説します。
         </p>
 
-        {/* ① 行き方 */}
+        {/* ① 行き方（SEO最重要セクション） */}
         <section id="access" className="mb-14">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 border-l-4 border-amber-500 pl-4 mb-6">
-            シーギリヤロックへの行き方
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 border-l-4 border-amber-500 pl-4 mb-2">
+            シーギリヤロックへの行き方・アクセス方法
           </h2>
+          <p className="text-gray-500 text-sm mb-6">コロンボ・キャンディ・ダンブッラからのアクセスを徹底比較</p>
 
           <p className="text-gray-700 leading-relaxed mb-6">
-            シーギリヤへのアクセスは、首都コロンボから約170km内陸に位置しています。主な移動手段は以下の4つです。
+            シーギリヤロックへのアクセスは、首都コロンボから約170km内陸に位置しています。主な移動手段は以下の4つです。<strong>公共交通機関は直通がなく乗り換えが複数回必要</strong>なため、初めての方や快適な旅を求める方にはタクシーチャーターが圧倒的におすすめです。
           </p>
 
           {/* 比較表 */}
           <div className="overflow-x-auto mb-8">
-            <table className="w-full text-sm border-collapse">
+            <table className="w-full text-sm border-collapse min-w-[500px]">
               <thead>
                 <tr className="bg-gray-800 text-white">
                   <th className="px-4 py-3 text-left">移動手段</th>
@@ -271,7 +383,7 @@ export default function SigiriyaPage() {
             </p>
           </div>
 
-          <img src={TAXI_IMG} alt="シーギリヤへのタクシーチャーター" className="w-full rounded-2xl mb-8 shadow-lg" />
+          <img src={TAXI_IMG} alt="シーギリヤロックへのタクシーチャーター SLTCS" className="w-full rounded-2xl mb-8 shadow-lg" />
 
           <div className="bg-gradient-to-r from-green-800 to-green-700 rounded-2xl p-6 text-white mb-6">
             <p className="font-bold text-xl mb-3">✅ SLTCSのタクシーチャーターがおすすめ！</p>
@@ -292,13 +404,13 @@ export default function SigiriyaPage() {
           </div>
         </section>
 
-        {/* ② 見どころ（修正①②） */}
+        {/* ② 見どころ */}
         <section id="highlights" className="mb-14">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 border-l-4 border-amber-500 pl-4 mb-6">
-            シーギリヤロックの見どころ
+            シーギリヤロックの見どころ5選
           </h2>
 
-          {/* 修正①：シルバープラン以上の説明をH2直下に */}
+          {/* シルバープラン以上の説明 */}
           <div className="bg-gradient-to-r from-slate-700 to-slate-800 rounded-2xl p-6 text-white mb-10">
             <div className="flex items-center gap-3 mb-3">
               <span className="bg-amber-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full">SLTCS シルバープラン以上</span>
@@ -322,14 +434,13 @@ export default function SigiriyaPage() {
             シーギリヤロックは単なる「岩山」ではありません。5世紀に建設された古代宮殿の遺跡が頂上に広がり、登山途中にも見どころが満載です。
           </p>
 
-          {/* 修正②：各見どころをH3 + 写真で表示 */}
           <div className="space-y-12">
             {highlights.map((spot, index) => (
               <div key={spot.id} className={`flex flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"} gap-6 items-start`}>
                 <div className="w-full lg:w-1/2">
                   <img
                     src={spot.image}
-                    alt={spot.title}
+                    alt={`シーギリヤロック ${spot.title}`}
                     className="w-full h-56 lg:h-64 object-cover rounded-xl shadow-md"
                   />
                 </div>
@@ -344,7 +455,7 @@ export default function SigiriyaPage() {
           </div>
         </section>
 
-        {/* ③ レストラン（修正③：表形式・スクロール対応） */}
+        {/* ③ レストラン */}
         <section id="restaurants" className="mb-14">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 border-l-4 border-amber-500 pl-4 mb-6">
             シーギリヤロック周辺のランチに便利なレストラン
@@ -383,7 +494,7 @@ export default function SigiriyaPage() {
           <p className="text-xs text-gray-500 mt-2">※ TripAdvisor評価は参考値です。最新情報は公式サイトでご確認ください。</p>
         </section>
 
-        {/* ④ 周辺観光地（修正④：H3 + 写真） */}
+        {/* ④ 周辺観光地 */}
         <section id="attractions" className="mb-14">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 border-l-4 border-amber-500 pl-4 mb-6">
             シーギリヤロック周辺の観光地
@@ -396,19 +507,13 @@ export default function SigiriyaPage() {
           <div className="space-y-10">
             {nearbyAttractions.map((spot, index) => (
               <div key={index} className={`flex flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"} gap-6 items-start`}>
-                {spot.image ? (
-                  <div className="w-full lg:w-2/5 flex-shrink-0">
-                    <img
-                      src={spot.image}
-                      alt={spot.name}
-                      className="w-full h-52 object-cover rounded-xl shadow-md"
-                    />
-                  </div>
-                ) : (
-                  <div className="w-full lg:w-2/5 flex-shrink-0 h-52 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 text-4xl">
-                    🏛️
-                  </div>
-                )}
+                <div className="w-full lg:w-2/5 flex-shrink-0">
+                  <img
+                    src={spot.image}
+                    alt={`${spot.name} スリランカ観光`}
+                    className="w-full h-52 object-cover rounded-xl shadow-md"
+                  />
+                </div>
                 <div className="w-full lg:w-3/5">
                   <div className="flex items-center gap-2 mb-2 flex-wrap">
                     <h3 className="text-xl font-bold text-gray-900 border-l-4 border-amber-400 pl-3">
@@ -424,7 +529,7 @@ export default function SigiriyaPage() {
           </div>
         </section>
 
-        {/* ⑤ ホテル（修正⑤：表形式、ヘリタンスカンダラマ先頭） */}
+        {/* ⑤ ホテル */}
         <section id="hotels" className="mb-14">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 border-l-4 border-amber-500 pl-4 mb-6">
             シーギリヤ地域のおすすめホテル
@@ -433,6 +538,19 @@ export default function SigiriyaPage() {
           <p className="text-gray-700 leading-relaxed mb-6">
             シーギリヤ周辺には、ジャングルの中のエコロッジから豪華リゾートまで、個性豊かなホテルが揃っています。早朝のシーギリヤロック登山を楽しむなら、現地泊がおすすめです。
           </p>
+
+          {/* ヘリタンスカンダラマの写真（表の上に掲載） */}
+          <div className="relative mb-8 rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src={KANDALAMA_IMG}
+              alt="Heritance Kandalama ヘリタンスカンダラマ シーギリヤ ホテル"
+              className="w-full h-64 md:h-80 object-cover"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+              <p className="text-white text-sm font-bold">Heritance Kandalama（ヘリタンスカンダラマ）</p>
+              <p className="text-white/80 text-xs">ジェフリー・バワ設計の名建築ホテル｜シーギリヤから約20km</p>
+            </div>
+          </div>
 
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse min-w-[640px]">
@@ -466,6 +584,44 @@ export default function SigiriyaPage() {
             </table>
           </div>
           <p className="text-xs text-gray-500 mt-2">※ 料金は目安です（¥=〜5,000円、¥¥=5,000〜15,000円、¥¥¥=15,000〜30,000円、¥¥¥¥=30,000円〜）。シーズンや予約時期により変動します。</p>
+        </section>
+
+        {/* ⑥ FAQ（SEO強化：構造化データと連動） */}
+        <section id="faq" className="mb-14">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 border-l-4 border-amber-500 pl-4 mb-6">
+            よくある質問（FAQ）
+          </h2>
+
+          <div className="space-y-4">
+            {[
+              {
+                q: "シーギリヤロックへの行き方は？",
+                a: "シーギリヤロックへはタクシーチャーターが最もおすすめです。コロンボから約4〜5時間で到着します。公共交通機関（バス・鉄道）は直通がなく、ダンブッラなどで乗り換えが必要なため不便です。SLTCSの日本語対応タクシーチャーターなら、ホテルから直接シーギリヤロック入口まで送迎します。"
+              },
+              {
+                q: "シーギリヤロックの入場料はいくらですか？",
+                a: "シーギリヤロックの外国人向け入場料は約USD 30（約4,500円）です。SLTCSのシルバープラン以上では、ドライバーが自己負担で同行し各スポットを日本語で解説します。"
+              },
+              {
+                q: "シーギリヤロックの登山にかかる時間は？",
+                a: "シーギリヤロックの登山は往復で約2〜3時間が目安です。頂上までは約1,200段の階段があり、体力に応じて所要時間が変わります。早朝（開園直後の7時頃）の訪問が涼しく混雑も少なくおすすめです。"
+              },
+              {
+                q: "シーギリヤロック周辺のおすすめホテルは？",
+                a: "シーギリヤ周辺のおすすめホテルは、ジェフリー・バワ設計のHeritance Kandalama（ラグジュアリー）、湿地帯のエコロッジJetwing Vil Uyana（ラグジュアリー）、コスパ重視ならSigiriya Village Hotelがあります。"
+              }
+            ].map((item, i) => (
+              <details key={i} className="border border-gray-200 rounded-xl overflow-hidden group">
+                <summary className="flex items-center justify-between px-5 py-4 cursor-pointer bg-white hover:bg-amber-50 transition-colors font-semibold text-gray-800 text-sm">
+                  <span>Q. {item.q}</span>
+                  <span className="text-amber-500 text-lg group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div className="px-5 py-4 bg-gray-50 text-gray-700 text-sm leading-relaxed border-t border-gray-100">
+                  <p>A. {item.a}</p>
+                </div>
+              </details>
+            ))}
+          </div>
         </section>
 
         {/* CTA */}
