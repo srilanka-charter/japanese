@@ -87,6 +87,12 @@ function PlanPriceCard({ plan }: { plan: typeof pricingData[0] }) {
   const prices = plan.pricing[activeVehicle];
 
   return (
+    <div className="relative">
+      {plan.popular && (
+        <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
+          <span className="text-xs font-bold px-4 py-1.5 rounded-full bg-[#1a9e6e] text-white shadow-md whitespace-nowrap">人気 No.1</span>
+        </div>
+      )}
     <div className={`rounded-2xl border bg-white p-6 shadow-sm ${plan.popular ? "border-[#1a9e6e] shadow-md ring-1 ring-[#1a9e6e]/20" : "border-gray-200"}`}>
       {/* Header */}
       <div className="flex items-center gap-3 mb-1 flex-wrap">
@@ -99,9 +105,6 @@ function PlanPriceCard({ plan }: { plan: typeof pricingData[0] }) {
         <h3 className="text-lg font-black text-gray-800" style={{ fontFamily: "'Noto Serif JP', serif" }}>
           {plan.name}
         </h3>
-        {plan.popular && (
-          <span className="text-xs font-bold px-3 py-1 rounded-full bg-[#1a9e6e] text-white">人気 No.1</span>
-        )}
       </div>
 
 
@@ -141,6 +144,7 @@ function PlanPriceCard({ plan }: { plan: typeof pricingData[0] }) {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }
