@@ -34,7 +34,7 @@ const reviews = [
   },
   {
     id: 4,
-    image: "/manus-storage/review_H_family_1e95cc38.png",
+    image: "/manus-storage/review_h_couple_new_9b3b04db.png",
     name: "H様お二人連れ",
     country: "日本",
     count: 2,
