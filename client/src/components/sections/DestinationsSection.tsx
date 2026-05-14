@@ -1,39 +1,47 @@
+import { Link } from "wouter";
+
 const destinations = [
   {
     name: "シーギリヤ",
     desc: "世界遺産の天空の宮殿。スリランカを代表する絶景スポット",
     image: "/manus-storage/sigiriya_44803162.jpg",
     size: "large",
+    href: "/sigiriya",
   },
   {
     name: "キャンディ仏歯寺",
     desc: "世界遺産の聖地",
     image: "/manus-storage/kandy_temple_bfd62ffc.jpg",
     size: "small",
+    href: null,
   },
   {
     name: "ヌワラエリヤ高原",
     desc: "緑広がる高原の絶景",
     image: "/manus-storage/tea_plantation_e512c982.jpg",
     size: "small",
+    href: null,
   },
   {
     name: "ゴール旧市街",
     desc: "世界遺産の要塞都市",
     image: "/manus-storage/galle_fort_0f5575ef.jpg",
     size: "medium",
+    href: null,
   },
   {
     name: "ヤラ国立公園",
     desc: "野生のヒョウに出会える",
     image: "/manus-storage/yala_leopard_769d6ffa.jpg",
     size: "medium",
+    href: null,
   },
   {
     name: "紅茶列車（エッラ）",
     desc: "九連アーチ橋と茶畑の絶景列車の旅",
     image: "/manus-storage/ella_nine_arch_8f10f348.webp",
     size: "medium",
+    href: null,
   },
 ];
 
@@ -50,8 +58,11 @@ export default function DestinationsSection() {
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
-          {/* Large card */}
-          <div className="col-span-2 lg:col-span-2 row-span-2 relative rounded-2xl overflow-hidden group h-64 lg:h-96">
+          {/* Large card - Sigiriya (clickable) */}
+          <Link
+            href="/sigiriya"
+            className="col-span-2 lg:col-span-2 row-span-2 relative rounded-2xl overflow-hidden group h-64 lg:h-96 block cursor-pointer"
+          >
             <img
               src={destinations[0].image}
               alt={destinations[0].name}
@@ -61,8 +72,9 @@ export default function DestinationsSection() {
             <div className="absolute bottom-0 left-0 p-5">
               <h3 className="text-white font-bold text-xl">{destinations[0].name}</h3>
               <p className="text-white/70 text-sm">{destinations[0].desc}</p>
+              <span className="inline-block mt-2 text-xs text-amber-300 font-semibold">詳しく見る →</span>
             </div>
-          </div>
+          </Link>
 
           {/* Small cards */}
           {destinations.slice(1).map((d, i) => (

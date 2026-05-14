@@ -15,6 +15,7 @@ import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import TermsPage from "./pages/TermsPage";
 import PricingPage from "./pages/PricingPage";
 import FaqArticlePage from "./pages/FaqArticlePage";
+import SigiriyaPage from "./pages/SigiriyaPage";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -30,6 +31,7 @@ function Router() {
       <Route path="/terms" component={TermsPage} />
       <Route path="/pricing" component={PricingPage} />
       <Route path="/faq" component={FaqArticlePage} />
+      <Route path="/sigiriya" component={SigiriyaPage} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
