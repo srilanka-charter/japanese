@@ -216,6 +216,9 @@ const articleJsonLd = {
 
 export default function KandyPage() {
   useEffect(() => {
+    // ページ先頭へスクロール（SPA遷移時のスクロール位置リセット）
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+
     // SEO: titleタグ — ターゲットキーワード「キャンディ 仏歯寺 行き方」を前方に配置
     document.title = "キャンディ仏歯寺の行き方・見どころ完全ガイド｜タクシーチャーターで快適アクセス【SLTCS】";
 
