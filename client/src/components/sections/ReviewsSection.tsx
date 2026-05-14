@@ -1,8 +1,8 @@
 const reviews = [
   {
     id: 1,
-    image: "/manus-storage/review_T_family_3fb7a7a4.jpg",
-    name: "T様ご家族",
+    image: "/manus-storage/review_tk_couple_07b5bba1.png",
+    name: "T様&K様",
     country: "日本",
     count: 4,
     date: "2025年8月",
