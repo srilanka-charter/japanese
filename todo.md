@@ -1,0 +1,35 @@
+# Project TODO
+
+- [x] ホームページ（Home.tsx）の基本構成
+- [x] ヘッダー・フッター・フローティングCTAコンポーネント
+- [x] ヒーローセクション（スライダー）
+- [x] 統計セクション
+- [x] お問い合わせセクション
+- [x] 特徴セクション
+- [x] 不安解消セクション
+- [x] プランセクション
+- [x] 観光地セクション（DestinationsSection）
+- [x] レビューセクション
+- [x] 行き方セクション
+- [x] FAQセクション
+- [x] 会社概要セクション
+- [x] プランページ（PlanPage.tsx）
+- [x] 車両ページ（VehiclesPage.tsx）
+- [x] モデルコースページ（Course45/56/67Page.tsx）
+- [x] 価格ページ（PricingPage.tsx）
+- [x] FAQページ（FaqArticlePage.tsx）
+- [x] プライバシーポリシー・利用規約ページ
+- [x] シーギリヤ記事ページ（SigiriyaPage.tsx / /sigiriya）
+- [x] キャンディ仏歯寺記事ページ（KandyPage.tsx / /kandy）
+  - [x] ヒーロー画像・タクシー画像・ホテル画像のAI生成
+  - [x] 見どころ5箇所の画像AI生成
+  - [x] 周辺観光地4箇所の画像AI生成
+  - [x] SEO対策（title/description/OGP/canonical/JSON-LD）
+  - [x] アクセス方法比較表
+  - [x] 見どころ5選セクション
+  - [x] レストラン一覧表
+  - [x] 周辺観光地セクション
+  - [x] ホテル一覧表
+  - [x] FAQ（アコーディオン）
+  - [x] App.tsxへのルーティング追加（/kandy）
+  - [x] DestinationsSectionのキャンディカードにリンク追加

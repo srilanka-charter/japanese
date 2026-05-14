@@ -13,7 +13,7 @@ const destinations = [
     desc: "世界遺産の聖地",
     image: "/manus-storage/kandy_temple_bfd62ffc.jpg",
     size: "small",
-    href: null,
+    href: "/kandy",
   },
   {
     name: "ヌワラエリヤ高原",
@@ -77,20 +77,39 @@ export default function DestinationsSection() {
           </Link>
 
           {/* Small cards */}
-          {destinations.slice(1).map((d, i) => (
-            <div key={i} className="relative rounded-2xl overflow-hidden group h-44 lg:h-44">
-              <img
-                src={d.image}
-                alt={d.name}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-              <div className="absolute bottom-0 left-0 p-4">
-                <h3 className="text-white font-bold text-sm">{d.name}</h3>
-                <p className="text-white/70 text-xs">{d.desc}</p>
+          {destinations.slice(1).map((d, i) => {
+            const cardContent = (
+              <>
+                <img
+                  src={d.image}
+                  alt={d.name}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 p-4">
+                  <h3 className="text-white font-bold text-sm">{d.name}</h3>
+                  <p className="text-white/70 text-xs">{d.desc}</p>
+                  {d.href && (
+                    <span className="inline-block mt-1 text-xs text-amber-300 font-semibold">詳しく見る →</span>
+                  )}
+                </div>
+              </>
+            );
+
+            return d.href ? (
+              <Link
+                key={i}
+                href={d.href}
+                className="relative rounded-2xl overflow-hidden group h-44 lg:h-44 block cursor-pointer"
+              >
+                {cardContent}
+              </Link>
+            ) : (
+              <div key={i} className="relative rounded-2xl overflow-hidden group h-44 lg:h-44">
+                {cardContent}
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
