@@ -12,7 +12,7 @@ const reviews = [
   },
   {
     id: 2,
-    image: "/manus-storage/review_K_family_2313b7bf.png",
+    image: "/manus-storage/review_k_family_new_2b2c81ce.png",
     name: "K様ご家族",
     country: "日本",
     count: 6,
