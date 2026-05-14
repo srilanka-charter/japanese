@@ -3,9 +3,9 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, ChevronDown, Globe } from "lucide-react";
 
 const modelCourses = [
+  { label: "3泊4日スリランカモデルコース", href: "/course/3-4days", internal: true },
   { label: "4泊5日スリランカモデルコース", href: "/course/4-5days", internal: true },
   { label: "5泊6日スリランカモデルコース", href: "/course/5-6days", internal: true },
-  { label: "6泊7日スリランカモデルコース", href: "/course/6-7days", internal: true },
 ];
 
 const languages = [

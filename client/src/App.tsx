@@ -22,9 +22,9 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/plan" component={PlanPage} />
       <Route path="/vehicles" component={VehiclesPage} />
-      <Route path="/course/4-5days" component={Course45Page} />
-      <Route path="/course/5-6days" component={Course56Page} />
-      <Route path="/course/6-7days" component={Course67Page} />
+      <Route path="/course/3-4days" component={Course45Page} />
+      <Route path="/course/4-5days" component={Course56Page} />
+      <Route path="/course/5-6days" component={Course67Page} />
       <Route path="/thanks" component={ThankYouPage} />
       <Route path="/privacy" component={PrivacyPolicyPage} />
       <Route path="/terms" component={TermsPage} />

@@ -3,7 +3,6 @@
  * Dark forest green (#0D2B1E) base, gold (#C9A84C) accents
  * Clean timeline layout with day-by-day breakdown
  */
-
 import { useEffect } from "react";
 import { Link } from "wouter";
 import Header from "@/components/Header";
@@ -13,351 +12,118 @@ import { MessageCircle, ArrowLeft, Clock, MapPin, Utensils, Hotel } from "lucide
 const plans = [
   {
     id: 1,
-    title: "世界遺産を巡るプラン",
-    subtitle: "アヌラーダプラ・シーギリヤ・キャンディ・コロンボ",
-    tags: ["世界遺産", "文化遺産", "歴史"],
+    title: "世界遺産・紅茶列車・サファリを楽しむ王道プラン",
+    subtitle: "シーギリヤ・キャンディ・エッラ・ウダワラウェ・ゴール",
+    tags: ["世界遺産", "紅茶列車", "サファリ"],
     days: [
       {
         day: 1,
-        title: "成田 → ネゴンボ",
+        title: "空港 → シーギリヤ地域へ移動",
         items: [
-          { type: "flight", text: "成田 11:15発 → コロンボ 17:05着（スリランカ航空直行便）" },
-          { type: "hotel", text: "ネゴンボ泊｜Heritance Negombo / Jetwing Blue / Jetwing Lagoon" },
+          { type: "spot", text: "ネゴンボ・コロンボ・空港からシーギリヤ地域まで車で約4時間" },
+          { type: "food", text: "ランチ｜Fika The Outlet / Ahinsa Restaurant / Soul Food Café / Cafe De Sky Lark（シーギリヤ周辺）" },
+          { type: "spot", text: "ダンブッラ石窟寺院 観光（約1時間）｜400段の階段を登り5つの洞窟に仏像・壁画が並ぶ世界遺産" },
+          { type: "hotel", text: "ヘリタンスカンダラマ泊｜バワ建築の名宿。カンダラマ湖と一体となったインフィニティプール。アーユルヴェーダ体験も可（要予約・約70USD）" },
         ],
       },
       {
         day: 2,
-        title: "アヌラーダプラ観光 → ヘリタンスカンダラマ",
+        title: "シーギリヤロック観光後にキャンディへ移動",
         items: [
-          { type: "spot", text: "世界遺産アヌラーダプラへ（約3.5時間）・観光（2〜3時間）" },
-          { type: "food", text: "ランチ｜Seedevi Family Restaurant または Ceylan Lodge Restaurant" },
-          { type: "hotel", text: "ヘリタンスカンダラマ泊｜アーユルヴェーダ体験も可（要予約・約70USD）" },
-        ],
-      },
-      {
-        day: 3,
-        title: "シーギリヤロック → ダンブッラ石窟寺院",
-        items: [
-          { type: "spot", text: "シーギリヤロック観光（約2時間）" },
-          { type: "food", text: "ランチ｜Ahinsa Restaurant または Soul Food Café" },
-          { type: "spot", text: "ダンブッラ石窟寺院 観光（約1時間）" },
-          { type: "hotel", text: "ヘリタンスカンダラマ 連泊" },
-        ],
-      },
-      {
-        day: 4,
-        title: "紅茶工場 or 紅茶列車体験 → キャンディ仏歯寺",
-        items: [
-          { type: "spot", text: "①紅茶工場 Giragama Tea Factory 見学、または②キャンディ駅 11:15発 → Hatton 13:31着（紅茶列車）" },
-          { type: "food", text: "ランチ｜Devon Restaurant & Bakery または Slightly Chilled Lounge" },
-          { type: "spot", text: "キャンディ仏歯寺 観光" },
-          { type: "hotel", text: "キャンディ泊｜The Golden Crown Hotel / Cinnamon Citadel Kandy / Earl's Regent Hotel" },
-        ],
-      },
-      {
-        day: 5,
-        title: "コロンボ観光 → 帰国フライト",
-        items: [
-          { type: "spot", text: "コロンボへ移動（約3時間）・市内観光・お土産購入" },
-          { type: "food", text: "アフタヌーンティー｜Galle Face Hotel または Shangri‑La Colombo" },
-          { type: "flight", text: "コロンボ 19:50発" },
-        ],
-      },
-      {
-        day: 6,
-        title: "成田空港到着",
-        items: [
-          { type: "flight", text: "成田 8:10着" },
-        ],
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "アーユルヴェーダを満喫するプラン",
-    subtitle: "シーギリヤ・ネゴンボ・コロンボ",
-    tags: ["アーユルヴェーダ", "癒し", "リゾート"],
-    days: [
-      {
-        day: 1,
-        title: "成田 → ネゴンボ",
-        items: [
-          { type: "flight", text: "成田 11:15発 → コロンボ 17:05着" },
-          { type: "hotel", text: "ネゴンボ泊" },
-        ],
-      },
-      {
-        day: 2,
-        title: "シーギリヤ → アーユルヴェーダリゾート",
-        items: [
-          { type: "spot", text: "シーギリヤロック観光（約3時間）" },
-          { type: "hotel", text: "Ayugiri Ayurveda Wellness Resort Sigiriya 泊（施術込みプランを事前予約推奨）" },
-        ],
-      },
-      {
-        day: 3,
-        title: "アーユルヴェーダ三昧",
-        items: [
-          { type: "spot", text: "終日アーユルヴェーダ体験（医師の問診・食事・トリートメント）" },
-          { type: "spot", text: "余裕があればピドゥランガラ・ロックからシーギリヤの絶景を" },
-          { type: "hotel", text: "Ayugiri 連泊" },
-        ],
-      },
-      {
-        day: 4,
-        title: "ネゴンボ・Jetwing Ayurveda Pavilionsへ",
-        items: [
-          { type: "spot", text: "ダンブッラ石窟寺院 観光（約1時間）" },
-          { type: "spot", text: "Jetwing Ayurveda Pavilions へ移動（約3時間）" },
-          { type: "hotel", text: "Jetwing Ayurveda Pavilions 泊（Booking.comでトリートメント付きプランを予約推奨）" },
-        ],
-      },
-      {
-        day: 5,
-        title: "アーユルヴェーダ → コロンボへ",
-        items: [
-          { type: "spot", text: "ホテルでトリートメントを受ける" },
-          { type: "spot", text: "コロンボへ移動（約40分）・市内観光" },
-          { type: "flight", text: "コロンボ 19:50発" },
-        ],
-      },
-      {
-        day: 6,
-        title: "成田空港到着",
-        items: [
-          { type: "flight", text: "成田 8:10着" },
-        ],
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "紅茶列車を満喫するプラン",
-    subtitle: "キャンディ・エッラ・コロンボ",
-    tags: ["紅茶列車", "絶景", "世界遺産"],
-    days: [
-      {
-        day: 1,
-        title: "成田 → ネゴンボ",
-        items: [
-          { type: "flight", text: "成田 11:15発 → コロンボ 17:05着" },
-          { type: "hotel", text: "ネゴンボ泊" },
-        ],
-      },
-      {
-        day: 2,
-        title: "キャンディ → 仏歯寺",
-        items: [
-          { type: "spot", text: "キャンディへ移動（約3時間）" },
-          { type: "spot", text: "Giragama Tea Factory 見学" },
-          { type: "spot", text: "キャンディ仏歯寺 観光" },
-          { type: "hotel", text: "キャンディ泊" },
+          { type: "spot", text: "シーギリヤ・ロック観光（約3時間）｜高さ200mの岩山要塞。シーギリヤ・レディの壁画が見どころ" },
+          { type: "food", text: "ランチ｜ダンブッラ周辺のおすすめレストランを参考に" },
+          { type: "spot", text: "キャンディへ移動（約3時間）｜途中マータレーのSpice Ceylonに立ち寄り可" },
+          { type: "spot", text: "キャンディ仏歯寺 観光｜夕方18:30のプージャに合わせて参詣がおすすめ" },
+          { type: "hotel", text: "キャンディ泊｜Queen's Hotel Kandy / Earl's Regency Kandy / Cinnamon Citadel Kandy" },
         ],
       },
       {
         day: 3,
         title: "紅茶列車でエッラへ",
         items: [
-          { type: "spot", text: "キャンディ駅 8:55発 → エッラ 15:38着（世界一美しい鉄道の旅）" },
-          { type: "food", text: "ランチボックス持参｜Buono または Cafe Secret Alley で調達" },
-          { type: "hotel", text: "エッラ泊｜98 Acres Resort & Spa / HIDE ELLA HOTEL & RESORT" },
+          { type: "spot", text: "キャンディ駅 8:55発 → エッラ 15:38着（世界一美しい鉄道の旅）｜茶畑・滝・トンネルが続く絶景ルート" },
+          { type: "spot", text: "ナインアーチブリッジ観光｜EllaとDemodaraの間。Demodaraまで乗車してピックアップ後にEllaへ" },
+          { type: "food", text: "ディナー｜AK Ristoro / MozzarElla / The Barn by Starbeans（エッラ）" },
+          { type: "hotel", text: "エッラ泊｜98 Acres Resort & Spa（高級）/ EKHO Ella / Zion View Ella Green Retreat" },
         ],
       },
       {
         day: 4,
-        title: "エッラ観光 → ゴール要塞",
+        title: "エッラ → ウダワラウェ国立公園 → ゴール",
         items: [
-          { type: "spot", text: "エッラ・ロック、ナインアーチブリッジ観光" },
-          { type: "spot", text: "南部の世界遺産都市ゴールへ（約3.5時間）" },
-          { type: "hotel", text: "ゴール近郊泊｜アマンガラ など" },
+          { type: "spot", text: "エッラからウダワラウェ国立公園へ（車で約2時間）" },
+          { type: "spot", text: "ウダワラウェ国立公園でジープサファリ体験｜象を年間を通じて安定して見られる国立公園" },
+          { type: "spot", text: "ゴール近郊へ移動（車で約2.5時間）" },
+          { type: "hotel", text: "ゴール近郊泊｜Jetwing Lighthouse（バワ建築）/ Le Grand Galle / Galle Fort Hotel" },
         ],
       },
       {
         day: 5,
-        title: "コロンボ観光 → 帰国フライト",
+        title: "ゴール観光 → コロンボ経由で空港へ",
         items: [
-          { type: "spot", text: "コロンボへ移動（約2.5時間）・市内観光・お土産購入" },
-          { type: "food", text: "アフタヌーンティー｜Galle Face Hotel または Shangri‑La Colombo" },
-          { type: "flight", text: "コロンボ 19:50発" },
-        ],
-      },
-      {
-        day: 6,
-        title: "成田空港到着",
-        items: [
-          { type: "flight", text: "成田 8:10着" },
+          { type: "spot", text: "ゴール要塞（世界遺産）観光（約2時間）｜オランダ・イギリス植民地時代の城壁・灯台を散策" },
+          { type: "spot", text: "コロンボへ移動（約2.5時間）" },
+          { type: "spot", text: "コロンボ市内観光｜ガンガラーマ寺院・ペター地区・お土産購入" },
+          { type: "food", text: "アフタヌーンティー｜Galle Face Hotel または Shangri-La Colombo" },
+          { type: "spot", text: "空港へ移動（市内から約30分）" },
         ],
       },
     ],
   },
   {
-    id: 4,
-    title: "アーユルヴェーダ体験プラン",
-    subtitle: "ネゴンボ・コロンボ（ゆったり癒し旅）",
-    tags: ["アーユルヴェーダ", "癒し", "ビーチ"],
+    id: 2,
+    title: "世界遺産を中心に巡るプラン",
+    subtitle: "アヌラーダプラ・シーギリヤ・キャンディ・ゴール",
+    tags: ["世界遺産", "古代都市", "文化遺産"],
     days: [
       {
         day: 1,
-        title: "成田 → ネゴンボ",
+        title: "空港 → アヌラーダプラ → ヘリタンスカンダラマ",
         items: [
-          { type: "flight", text: "成田 11:15発 → コロンボ 17:05着" },
-          { type: "hotel", text: "ネゴンボ泊" },
+          { type: "spot", text: "アヌラーダプラへ（ネゴンボから車で約3.5時間）｜スリランカ初代の都・世界遺産の古都" },
+          { type: "food", text: "ランチ｜Palhena Restaurant / Little Paradise Anuradhapura / Stargate Restaurant" },
+          { type: "spot", text: "アヌラーダプラ観光（2〜3時間）｜ルワンウェリサーヤ大塔・スリー・マハー菩提樹など" },
+          { type: "hotel", text: "ヘリタンスカンダラマ泊｜バワ建築の名宿（アヌラーダプラから車で約1.5時間）。アーユルヴェーダ体験も可（要予約・約70USD）" },
         ],
       },
       {
         day: 2,
-        title: "Jetwing Ayurveda Pavilionsでアーユルヴェーダ",
+        title: "シーギリヤロック → ダンブッラ石窟寺院",
         items: [
-          { type: "spot", text: "Jetwing Ayurveda Pavilions へ（Booking.comでトリートメント付きプランを予約推奨）" },
-          { type: "hotel", text: "Jetwing Ayurveda Pavilions 泊" },
+          { type: "spot", text: "シーギリヤ・ロック観光（約3時間）｜高さ200mの岩山要塞・シーギリヤ・レディの壁画" },
+          { type: "food", text: "ランチ｜Ahinsa Restaurant / Soul Food Café（シーギリヤ周辺）" },
+          { type: "spot", text: "ダンブッラ石窟寺院 観光（約1時間）｜5つの洞窟に仏像・壁画が並ぶ世界遺産" },
+          { type: "hotel", text: "ヘリタンスカンダラマ連泊" },
         ],
       },
       {
         day: 3,
-        title: "アーユルヴェーダ 2日目",
+        title: "ポロンナルワ観光 → ミンネリヤ国立公園でサファリ",
         items: [
-          { type: "spot", text: "終日アーユルヴェーダ体験" },
-          { type: "hotel", text: "連泊" },
+          { type: "spot", text: "ポロンナルワ観光（約2時間）｜12世紀の古都・世界遺産。ガルヴィハーラの巨大仏像群が見どころ" },
+          { type: "food", text: "ランチ｜Dinemore Polonnaruwa / Sudu Araliya Hotel Restaurant" },
+          { type: "spot", text: "ミンネリヤ国立公園でサファリ体験（夕方）｜象の群れに遭遇できる可能性大" },
+          { type: "hotel", text: "ヘリタンスカンダラマ 3泊目" },
         ],
       },
       {
         day: 4,
-        title: "ピンナワラ象の孤児院 or ゆっくり過ごす",
+        title: "キャンディ仏歯寺を観光",
         items: [
-          { type: "spot", text: "ピンナワラ象の孤児院（片道約2時間）または近郊観光" },
-          { type: "hotel", text: "連泊" },
+          { type: "spot", text: "キャンディへ移動（約3時間）" },
+          { type: "food", text: "ランチ｜Devon Restaurant & Bakery または Slightly Chilled Lounge" },
+          { type: "spot", text: "キャンディ仏歯寺 観光｜夕方18:30のプージャに合わせて参詣がおすすめ" },
+          { type: "hotel", text: "キャンディ泊｜Queen's Hotel Kandy / Earl's Regency Kandy / Cinnamon Citadel Kandy" },
         ],
       },
       {
         day: 5,
-        title: "コロンボ観光 → 帰国フライト",
+        title: "コロンボ経由で空港へ",
         items: [
-          { type: "spot", text: "ホテルでトリートメント後、コロンボへ（約40分）・市内観光" },
-          { type: "food", text: "アフタヌーンティー｜Galle Face Hotel または Shangri‑La Colombo" },
-          { type: "flight", text: "コロンボ 19:50発" },
-        ],
-      },
-      {
-        day: 6,
-        title: "成田空港到着",
-        items: [
-          { type: "flight", text: "成田 8:10着" },
-        ],
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "世界遺産とアーユルヴェーダ体験プラン",
-    subtitle: "シーギリヤ・ネゴンボ・コロンボ",
-    tags: ["世界遺産", "アーユルヴェーダ", "癒し"],
-    days: [
-      {
-        day: 1,
-        title: "成田 → ネゴンボ",
-        items: [
-          { type: "flight", text: "成田 11:15発 → コロンボ 17:05着" },
-          { type: "hotel", text: "ネゴンボ泊" },
-        ],
-      },
-      {
-        day: 2,
-        title: "シーギリヤロック観光",
-        items: [
-          { type: "spot", text: "シーギリヤロック観光（約3時間）" },
-          { type: "hotel", text: "Ayugiri Ayurveda Wellness Resort Sigiriya 泊（施術込みプランを事前予約推奨）" },
-        ],
-      },
-      {
-        day: 3,
-        title: "アーユルヴェーダ三昧",
-        items: [
-          { type: "spot", text: "終日アーユルヴェーダ体験" },
-          { type: "hotel", text: "Ayugiri 連泊" },
-        ],
-      },
-      {
-        day: 4,
-        title: "Jetwing Ayurveda Pavilionsへ移動",
-        items: [
-          { type: "spot", text: "ダンブッラ石窟寺院 観光（約1時間）" },
-          { type: "spot", text: "Jetwing Ayurveda Pavilions へ移動（約3時間）" },
-          { type: "hotel", text: "Jetwing Ayurveda Pavilions 泊" },
-        ],
-      },
-      {
-        day: 5,
-        title: "アーユルヴェーダ → コロンボへ",
-        items: [
-          { type: "spot", text: "ホテルでトリートメントを受ける" },
-          { type: "spot", text: "コロンボへ移動（約40分）・市内観光" },
-          { type: "flight", text: "コロンボ 19:50発" },
-        ],
-      },
-      {
-        day: 6,
-        title: "成田空港到着",
-        items: [
-          { type: "flight", text: "成田 8:10着" },
-        ],
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "サファリ体験とビーチリゾートプラン",
-    subtitle: "シーギリヤ・ミンネリヤ・ベントータ・ゴール",
-    tags: ["サファリ", "ビーチ", "世界遺産"],
-    days: [
-      {
-        day: 1,
-        title: "成田 → ネゴンボ",
-        items: [
-          { type: "flight", text: "成田 11:15発 → コロンボ 17:05着" },
-          { type: "hotel", text: "ネゴンボ泊" },
-        ],
-      },
-      {
-        day: 2,
-        title: "シーギリヤロック → ヘリタンスカンダラマ",
-        items: [
-          { type: "spot", text: "シーギリヤロック観光（約2時間）" },
-          { type: "hotel", text: "ヘリタンスカンダラマ泊" },
-        ],
-      },
-      {
-        day: 3,
-        title: "ミンネリヤ国立公園 サファリ → キャンディ",
-        items: [
-          { type: "spot", text: "Minneriya National Park でサファリ体験" },
-          { type: "food", text: "ランチ｜The Wadiya または Alo‑Ha Coffee Habarana" },
-          { type: "spot", text: "キャンディへ移動（約2.5時間）" },
-          { type: "hotel", text: "キャンディ泊" },
-        ],
-      },
-      {
-        day: 4,
-        title: "ゴール要塞 → ベントータ",
-        items: [
-          { type: "spot", text: "南部の世界遺産都市ゴールへ（約3.5時間）・観光" },
-          { type: "spot", text: "ベントータのビーチリゾートへ移動（約1時間）" },
-          { type: "hotel", text: "ベントータ泊｜Jetwing Saman Villas / Taj Bentota Resort & Spa" },
-        ],
-      },
-      {
-        day: 5,
-        title: "コロンボ観光 → 帰国フライト",
-        items: [
-          { type: "spot", text: "コロンボへ移動（約1.5時間）・市内観光・お土産購入" },
-          { type: "food", text: "アフタヌーンティー｜Galle Face Hotel または Shangri‑La Colombo" },
-          { type: "flight", text: "コロンボ 19:50発" },
-        ],
-      },
-      {
-        day: 6,
-        title: "成田空港到着",
-        items: [
-          { type: "flight", text: "成田 8:10着" },
+          { type: "spot", text: "コロンボへ移動（約3.5時間）" },
+          { type: "spot", text: "コロンボ市内観光｜ガンガラーマ寺院・ペター地区・お土産購入" },
+          { type: "food", text: "アフタヌーンティー｜Galle Face Hotel または Shangri-La Colombo" },
+          { type: "spot", text: "空港へ移動（市内から約30分）" },
         ],
       },
     ],
@@ -374,7 +140,7 @@ const iconMap: Record<string, React.ReactNode> = {
 export default function Course56Page() {
   useEffect(() => {
     const prevTitle = document.title;
-    document.title = "スリランカ 5泊6日 モデルコース｜タクシーチャーターで巡る完全プライベート旅行";
+    document.title = "スリランカ 4泊5日 モデルコース｜タクシーチャーターで巡る王道周遊プラン";
 
     let meta = document.querySelector<HTMLMetaElement>('meta[name="description"]');
     const created = !meta;
@@ -384,7 +150,7 @@ export default function Course56Page() {
       document.head.appendChild(meta);
     }
     const prevDesc = meta.content;
-    meta.content = "スリランカ5泊6日のモデルコースをご紹介。シーギリヤ・ダンブッラ・ティッサマハーラ・コロンボなどを専用タクシーチャーターでゆったり巡る完全プライベート旅行プラン。日本語対応ドライバーがサポート。";
+    meta.content = "スリランカ4泊5日のモデルコースをご紹介。シーギリヤ・キャンディ・エッラ・ウダワラウェ・ゴールなど主要観光地を専用タクシーチャーターで周遊。日本語対応ドライバーが旅をサポートします。";
 
     return () => {
       document.title = prevTitle;
@@ -411,19 +177,19 @@ export default function Course56Page() {
             トップへ戻る
           </Link>
           <div className="flex items-center gap-3 mb-4">
-            <span className="bg-[oklch(0.75_0.12_75)] text-[oklch(0.12_0.02_155)] text-xs font-black px-3 py-1 rounded-full tracking-widest">5泊6日</span>
-            <span className="text-white/40 text-sm">6プラン収録</span>
+            <span className="bg-[oklch(0.75_0.12_75)] text-[oklch(0.12_0.02_155)] text-xs font-black px-3 py-1 rounded-full tracking-widest">4泊5日</span>
+            <span className="text-white/40 text-sm">2プラン収録</span>
           </div>
           <h1 className="text-3xl lg:text-5xl font-black text-white leading-tight mb-4" style={{ fontFamily: "'Noto Serif JP', serif" }}>
-            5泊6日<br />スリランカモデルコース
+            4泊5日<br />スリランカモデルコース
           </h1>
           <p className="text-white/60 max-w-xl leading-relaxed">
-            世界遺産・紅茶列車・アーユルヴェーダ・サファリ・ビーチリゾートを目的別に6プランをご用意。成田発着、タクシーチャーターで快適に巡るモデルコースです。
+            世界遺産・紅茶列車・サファリ・ビーチを目的別に2プランをご用意。タクシーチャーターで快適に巡るモデルコースです。
           </p>
           <div className="flex items-center gap-4 mt-6">
             <div className="flex items-center gap-2 text-white/50 text-sm">
               <Clock size={14} />
-              <span>5泊6日（成田発着）</span>
+              <span>4泊5日（スリランカ国内）</span>
             </div>
           </div>
         </div>
@@ -435,25 +201,30 @@ export default function Course56Page() {
           <div className="space-y-16">
             {plans.map((plan) => (
               <div key={plan.id} className="bg-white rounded-2xl shadow-sm border border-[oklch(0.92_0.005_155)] overflow-hidden">
-                <div className="bg-[oklch(0.12_0.02_155)] px-6 py-5">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-[oklch(0.75_0.12_75)] font-black text-sm">PLAN {plan.id}</span>
-                    <div className="flex flex-wrap gap-1.5">
-                      {plan.tags.map((tag) => (
-                        <span key={tag} className="bg-white/10 text-white/70 text-xs px-2 py-0.5 rounded-full">{tag}</span>
-                      ))}
+                {/* Plan Header */}
+                <div className="bg-[oklch(0.12_0.02_155)] px-6 py-5 flex items-start justify-between gap-4">
+                  <div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-[oklch(0.75_0.12_75)] font-black text-sm">PLAN {plan.id}</span>
+                      <div className="flex flex-wrap gap-1.5">
+                        {plan.tags.map((tag) => (
+                          <span key={tag} className="bg-white/10 text-white/70 text-xs px-2 py-0.5 rounded-full">{tag}</span>
+                        ))}
+                      </div>
                     </div>
+                    <h2 className="text-white font-black text-lg lg:text-xl" style={{ fontFamily: "'Noto Serif JP', serif" }}>
+                      {plan.title}
+                    </h2>
+                    <p className="text-white/50 text-sm mt-1">{plan.subtitle}</p>
                   </div>
-                  <h2 className="text-white font-black text-lg lg:text-xl" style={{ fontFamily: "'Noto Serif JP', serif" }}>
-                    {plan.title}
-                  </h2>
-                  <p className="text-white/50 text-sm mt-1">{plan.subtitle}</p>
                 </div>
 
+                {/* Timeline */}
                 <div className="p-6">
                   <div className="space-y-0">
                     {plan.days.map((day, idx) => (
                       <div key={day.day} className="flex gap-4">
+                        {/* Day indicator */}
                         <div className="flex flex-col items-center">
                           <div className="w-10 h-10 rounded-full bg-[oklch(0.12_0.02_155)] flex items-center justify-center flex-shrink-0">
                             <span className="text-[oklch(0.75_0.12_75)] font-black text-xs">DAY{day.day}</span>
@@ -462,7 +233,8 @@ export default function Course56Page() {
                             <div className="w-px flex-1 bg-[oklch(0.9_0.005_155)] my-1" />
                           )}
                         </div>
-                        <div className="pb-6 flex-1">
+                        {/* Content */}
+                        <div className={`pb-6 flex-1`}>
                           <h3 className="font-bold text-[oklch(0.15_0.01_60)] text-base mb-2 leading-snug">{day.title}</h3>
                           <ul className="space-y-1.5">
                             {day.items.map((item, i) => (
@@ -481,6 +253,7 @@ export default function Course56Page() {
             ))}
           </div>
 
+          {/* CTA */}
           <div className="mt-16 bg-[oklch(0.12_0.02_155)] rounded-2xl p-8 text-center">
             <h3 className="text-white font-black text-xl mb-2" style={{ fontFamily: "'Noto Serif JP', serif" }}>
               このコースで旅を計画しませんか？

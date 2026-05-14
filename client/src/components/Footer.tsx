@@ -32,19 +32,19 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/plan" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">プラン</Link></li>
               <li>
-                <a href="https://sltcs.srilanka-charter.com/course/4-5days" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">
+                <Link href="/course/3-4days" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">
+                  3泊4日モデルコース
+                </Link>
+              </li>
+              <li>
+                <Link href="/course/4-5days" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">
                   4泊5日モデルコース
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://sltcs.srilanka-charter.com/course/5-6days" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">
+                <Link href="/course/5-6days" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">
                   5泊6日モデルコース
-                </a>
-              </li>
-              <li>
-                <a href="https://sltcs.srilanka-charter.com/course/6-7days" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">
-                  6泊7日モデルコース
-                </a>
+                </Link>
               </li>
               <li><Link href="/vehicles" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">車両</Link></li>
               <li><Link href="/faq" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">FAQ</Link></li>
