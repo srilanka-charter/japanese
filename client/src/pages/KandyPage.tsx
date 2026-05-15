@@ -412,9 +412,9 @@ export default function KandyPage() {
               <span className="bg-amber-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full">SLTCS シルバープラン以上</span>
               <span className="text-amber-300 font-bold text-sm">特別サービス</span>
             </div>
-            <h3 className="text-lg font-bold text-white mb-3">ドライバーが仏歯寺に一緒に入場し、各スポットを日本語で解説します</h3>
+            <h3 className="text-lg font-bold text-white mb-3">ドライバーが仏歯寺に一緒に入場し、各スポットを詳しく解説します</h3>
             <p className="text-white/85 text-sm leading-relaxed mb-3">
-              SLTCSのシルバープラン以上をご利用のお客様には、担当ドライバーが仏歯寺の入場料を自己負担で同行し、奉安室・法要の意味・建築様式・歴史的背景など各見どころを日本語で詳しく解説するサービスをご提供しています。
+              SLTCSのシルバープラン以上をご利用のお客様には、担当ドライバーが仏歯寺の入場を含めて同行し、奉安室・法要の意味・建築様式・歴史的背景など各見どころを詳しく解説するサービスをご提供しています。日本語ドライバーを選択していれば日本語での説明を受けることができます。
             </p>
             <p className="text-white/85 text-sm leading-relaxed mb-4">
               法要（プージャ）の時間に合わせた訪問スケジュールの調整や、参拝作法のアドバイスも受けられます。初めてのキャンディ訪問をより深く、より楽しく体験していただけます。ブロンズプランはドライバーが外でお待ちします。

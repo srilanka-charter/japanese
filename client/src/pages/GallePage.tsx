@@ -396,7 +396,7 @@ export default function GallePage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-amber-500 mt-0.5">✓</span>
-                    <span><strong>日本語対応ドライバー</strong>（シルバープラン以上）が見どころを丁寧に解説</span>
+                    <span><strong>日本語対応ドライバー選択可能</strong>（シルバープラン以上）が見どころを詳しく解説</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-amber-500 mt-0.5">✓</span>
