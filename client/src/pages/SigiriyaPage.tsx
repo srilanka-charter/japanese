@@ -416,7 +416,7 @@ export default function SigiriyaPage() {
               <span className="bg-amber-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full">SLTCS シルバープラン以上</span>
               <span className="text-amber-300 font-bold text-sm">特別サービス</span>
             </div>
-            <h3 className="text-lg font-bold text-white mb-3">ドライバーがシーギリヤロックに一緒に登り、各スポットを日本語で解説します</h3>
+            <h3 className="text-lg font-bold text-white mb-3">ドライバーがシーギリヤロックに一緒に登り、各スポットを詳しく解説します（日本語ドライバー選択時）</h3>
             <p className="text-white/85 text-sm leading-relaxed mb-3">
               SLTCSのシルバープラン以上をご利用のお客様には、担当ドライバーがシーギリヤロックの入場料を自己負担で登山に同行し、フレスコ画・ライオンゲート・頂上宮殿遺跡など各見どころを詳しく解説するサービスをご提供しています。日本語ドライバーを選択していれば日本語での説明を受けることができます。
             </p>
