@@ -150,6 +150,15 @@ export default function NuwaraEliyaPage() {
   }, []);
 
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [accessSlide, setAccessSlide] = useState(0);
+  const [restaurantSlide, setRestaurantSlide] = useState(0);
+  const [hotelSlide, setHotelSlide] = useState(0);
+
+  const accessRows = [
+    { method: "タクシーチャーター（SLTCS）", time: "約5〜6時間", price: "USD 80〜120", desc: "ホテルから直接送迎。途中の観光地（ランボダ滝・茶園）に自由に立ち寄り可能。荷物の多い方・グループ旅行に最適。" },
+    { method: "公共バス", time: "約6〜7時間", price: "USD 2〜5", desc: "コロンボのバスターミナルから出発。乗り換えが必要な場合あり。荷物が多いと不便。" },
+    { method: "列車（キャンディ経由）", time: "約6〜8時間", price: "USD 5〜15", desc: "キャンディで乗り換えてナヌオヤ駅まで。高原列車の車窓は絶景だが時間がかかる。" },
+  ];
 
   return (
     <div className="min-h-screen bg-white">
@@ -253,7 +262,8 @@ export default function NuwaraEliyaPage() {
           <p className="text-gray-700 leading-relaxed mb-6">
             コロンボからヌワラエリヤへのアクセス方法は主に3つあります。それぞれの特徴を比較して、旅のスタイルに合った方法を選びましょう。
           </p>
-          <div className="overflow-x-auto mb-8">
+          {/* PC: テーブル表示 */}
+          <div className="hidden md:block overflow-x-auto mb-8">
             <table className="w-full border-collapse text-sm" style={{ tableLayout: "fixed" }}>
               <colgroup>
                 <col style={{ width: "18%" }} />
@@ -270,11 +280,7 @@ export default function NuwaraEliyaPage() {
                 </tr>
               </thead>
               <tbody>
-                {[
-                  { method: "タクシーチャーター（SLTCS）", time: "約5〜6時間", price: "USD 80〜120", desc: "ホテルから直接送迎。途中の観光地（ランボダ滝・茶園）に自由に立ち寄り可能。荷物の多い方・グループ旅行に最適。" },
-                  { method: "公共バス", time: "約6〜7時間", price: "USD 2〜5", desc: "コロンボのバスターミナルから出発。乗り換えが必要な場合あり。荷物が多いと不便。" },
-                  { method: "列車（キャンディ経由）", time: "約6〜8時間", price: "USD 5〜15", desc: "キャンディで乗り換えてナヌオヤ駅まで。高原列車の車窓は絶景だが時間がかかる。" },
-                ].map((row, i) => (
+                {accessRows.map((row, i) => (
                   <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                     <td className="p-3 border-b border-gray-200 font-medium text-gray-800">{row.method}</td>
                     <td className="p-3 border-b border-gray-200 text-gray-600">{row.time}</td>
@@ -284,6 +290,57 @@ export default function NuwaraEliyaPage() {
                 ))}
               </tbody>
             </table>
+          </div>
+          {/* スマホ: カードスライダー */}
+          <div className="md:hidden mb-8">
+            <div className="relative">
+              <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+                <div className="bg-emerald-700 text-white px-4 py-2 text-xs font-semibold flex justify-between items-center">
+                  <span>{accessSlide + 1} / {accessRows.length}</span>
+                  <span>移動手段の比較</span>
+                </div>
+                <div className="p-4">
+                  <p className="font-bold text-gray-800 text-base mb-3">{accessRows[accessSlide].method}</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="bg-gray-50 rounded-lg p-2">
+                      <p className="text-xs text-gray-500 mb-0.5">所要時間</p>
+                      <p className="text-sm font-medium text-gray-800">{accessRows[accessSlide].time}</p>
+                    </div>
+                    <div className="bg-gray-50 rounded-lg p-2">
+                      <p className="text-xs text-gray-500 mb-0.5">料金目安</p>
+                      <p className="text-sm font-medium text-gray-800">{accessRows[accessSlide].price}</p>
+                    </div>
+                  </div>
+                  <div className="bg-emerald-50 rounded-lg p-3">
+                    <p className="text-xs text-gray-500 mb-1">特徴</p>
+                    <p className="text-sm text-gray-700 leading-relaxed">{accessRows[accessSlide].desc}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-between mt-3">
+                <button
+                  onClick={() => setAccessSlide(i => Math.max(0, i - 1))}
+                  disabled={accessSlide === 0}
+                  className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-gray-100 text-gray-600 text-sm disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-200 transition-colors"
+                >
+                  ◀ 前へ
+                </button>
+                <div className="flex gap-1.5">
+                  {accessRows.map((_, i) => (
+                    <button key={i} onClick={() => setAccessSlide(i)}
+                      className={`w-2 h-2 rounded-full transition-colors ${i === accessSlide ? 'bg-emerald-600' : 'bg-gray-300'}`}
+                    />
+                  ))}
+                </div>
+                <button
+                  onClick={() => setAccessSlide(i => Math.min(accessRows.length - 1, i + 1))}
+                  disabled={accessSlide === accessRows.length - 1}
+                  className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-gray-100 text-gray-600 text-sm disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-200 transition-colors"
+                >
+                  次へ ▶
+                </button>
+              </div>
+            </div>
           </div>
 
           {/* SLTCSタクシーチャーター */}
@@ -381,7 +438,8 @@ export default function NuwaraEliyaPage() {
           <p className="text-gray-700 mb-6 leading-relaxed">
             ヌワラエリヤでは英国コロニアル料理からスリランカ本格カレーまで、多彩なグルメが楽しめます。
           </p>
-          <div className="overflow-x-auto">
+          {/* PC: テーブル表示 */}
+          <div className="hidden md:block overflow-x-auto">
             <table className="w-full border-collapse text-sm" style={{ tableLayout: "fixed" }}>
               <colgroup>
                 <col style={{ width: "20%" }} />
@@ -412,7 +470,59 @@ export default function NuwaraEliyaPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-gray-400 mt-2">※ 評価はTripAdvisor参考値。価格帯：$＝〜USD 5、$$＝USD 5〜15、$$$＝USD 15〜</p>
+          {/* スマホ: カードスライダー */}
+          <div className="md:hidden">
+            <div className="relative">
+              <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+                <div className="bg-emerald-700 text-white px-4 py-2 text-xs font-semibold flex justify-between items-center">
+                  <span>{restaurantSlide + 1} / {restaurants.length}</span>
+                  <span>レストラン</span>
+                </div>
+                <div className="p-4">
+                  <p className="font-bold text-gray-800 text-base mb-1">{restaurants[restaurantSlide].name}</p>
+                  <p className="text-xs text-gray-500 mb-3">{restaurants[restaurantSlide].type}</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="bg-gray-50 rounded-lg p-2">
+                      <p className="text-xs text-gray-500 mb-0.5">評価</p>
+                      <p className="text-sm font-medium text-gray-800">⭐ {restaurants[restaurantSlide].rating}</p>
+                    </div>
+                    <div className="bg-gray-50 rounded-lg p-2">
+                      <p className="text-xs text-gray-500 mb-0.5">価格帯</p>
+                      <p className="text-sm font-medium text-gray-800">{restaurants[restaurantSlide].price}</p>
+                    </div>
+                  </div>
+                  <div className="bg-emerald-50 rounded-lg p-3">
+                    <p className="text-xs text-gray-500 mb-1">特徴</p>
+                    <p className="text-sm text-gray-700 leading-relaxed">{restaurants[restaurantSlide].desc}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-between mt-3">
+                <button
+                  onClick={() => setRestaurantSlide(i => Math.max(0, i - 1))}
+                  disabled={restaurantSlide === 0}
+                  className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-gray-100 text-gray-600 text-sm disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-200 transition-colors"
+                >
+                  ◀ 前へ
+                </button>
+                <div className="flex gap-1.5">
+                  {restaurants.map((_, i) => (
+                    <button key={i} onClick={() => setRestaurantSlide(i)}
+                      className={`w-2 h-2 rounded-full transition-colors ${i === restaurantSlide ? 'bg-emerald-600' : 'bg-gray-300'}`}
+                    />
+                  ))}
+                </div>
+                <button
+                  onClick={() => setRestaurantSlide(i => Math.min(restaurants.length - 1, i + 1))}
+                  disabled={restaurantSlide === restaurants.length - 1}
+                  className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-gray-100 text-gray-600 text-sm disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-200 transition-colors"
+                >
+                  次へ ▶
+                </button>
+              </div>
+            </div>
+          </div>
+          <p className="text-xs text-gray-400 mt-2">※ 評価はTripAdvisor参考値。価格帯：$＝～usd 5、$$＝usd 5～15、$$$＝usd 15～</p>
         </section>
 
         {/* 周辺観光地 */}
@@ -448,7 +558,8 @@ export default function NuwaraEliyaPage() {
               ヌワラエリヤには英国植民地時代の歴史的建物を活かした高級ホテルから、コストパフォーマンスの高い中級ホテルまで揃っています。茶畑の中に建つ「Heritance Tea Factory」は廃工場を改装したユニークな高級ホテルとして特に人気です。
             </p>
           </div>
-          <div className="overflow-x-auto">
+          {/* PC: テーブル表示 */}
+          <div className="hidden md:block overflow-x-auto">
             <table className="w-full border-collapse text-sm" style={{ tableLayout: "fixed" }}>
               <colgroup>
                 <col style={{ width: "20%" }} />
@@ -478,6 +589,58 @@ export default function NuwaraEliyaPage() {
                 ))}
               </tbody>
             </table>
+          </div>
+          {/* スマホ: カードスライダー */}
+          <div className="md:hidden">
+            <div className="relative">
+              <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+                <div className="bg-emerald-700 text-white px-4 py-2 text-xs font-semibold flex justify-between items-center">
+                  <span>{hotelSlide + 1} / {hotels.length}</span>
+                  <span>ホテル</span>
+                </div>
+                <div className="p-4">
+                  <p className="font-bold text-gray-800 text-base mb-1">{hotels[hotelSlide].name}</p>
+                  <p className="text-xs text-gray-500 mb-3">{hotels[hotelSlide].cat}</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="bg-gray-50 rounded-lg p-2">
+                      <p className="text-xs text-gray-500 mb-0.5">料金目安</p>
+                      <p className="text-sm font-medium text-gray-800">{hotels[hotelSlide].price}</p>
+                    </div>
+                    <div className="bg-gray-50 rounded-lg p-2">
+                      <p className="text-xs text-gray-500 mb-0.5">市街からの距離</p>
+                      <p className="text-sm font-medium text-gray-800">{hotels[hotelSlide].dist}</p>
+                    </div>
+                  </div>
+                  <div className="bg-emerald-50 rounded-lg p-3">
+                    <p className="text-xs text-gray-500 mb-1">特徴</p>
+                    <p className="text-sm text-gray-700 leading-relaxed">{hotels[hotelSlide].desc}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-between mt-3">
+                <button
+                  onClick={() => setHotelSlide(i => Math.max(0, i - 1))}
+                  disabled={hotelSlide === 0}
+                  className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-gray-100 text-gray-600 text-sm disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-200 transition-colors"
+                >
+                  ◀ 前へ
+                </button>
+                <div className="flex gap-1.5">
+                  {hotels.map((_, i) => (
+                    <button key={i} onClick={() => setHotelSlide(i)}
+                      className={`w-2 h-2 rounded-full transition-colors ${i === hotelSlide ? 'bg-emerald-600' : 'bg-gray-300'}`}
+                    />
+                  ))}
+                </div>
+                <button
+                  onClick={() => setHotelSlide(i => Math.min(hotels.length - 1, i + 1))}
+                  disabled={hotelSlide === hotels.length - 1}
+                  className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-gray-100 text-gray-600 text-sm disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-200 transition-colors"
+                >
+                  次へ ▶
+                </button>
+              </div>
+            </div>
           </div>
           <p className="text-xs text-gray-400 mt-2">※ 料金はシーズンにより変動します。</p>
         </section>
