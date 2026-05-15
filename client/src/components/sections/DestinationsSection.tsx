@@ -27,7 +27,7 @@ const destinations = [
     desc: "世界遺産の要塞都市",
     image: "/manus-storage/galle_fort_0f5575ef.jpg",
     size: "medium",
-    href: null,
+    href: "/galle",
   },
   {
     name: "ヤラ国立公園",

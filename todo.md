@@ -33,3 +33,16 @@
   - [x] FAQ（アコーディオン）
   - [x] App.tsxへのルーティング追加（/kandy）
   - [x] DestinationsSectionのキャンディカードにリンク追加
+- [x] ゴール旧市街記事ページ（GallePage.tsx / /galle）
+  - [x] ヒーロー画像・タクシー画像・ホテル画像のAI生成
+  - [x] 見どころ5箇所の画像AI生成
+  - [x] 周辺観光地4箇所の画像AI生成
+  - [x] SEO対策（title/description/OGP/canonical/JSON-LD）
+  - [x] アクセス方法比較表
+  - [x] 見どころ5選セクション
+  - [x] レストラン一覧表
+  - [x] 周辺観光地セクション
+  - [x] ホテル一覧表
+  - [x] FAQ（アコーディオン）
+  - [x] App.tsxへのルーティング追加（/galle）
+  - [x] DestinationsSectionのゴールカードにリンク追加

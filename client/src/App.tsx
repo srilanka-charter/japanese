@@ -17,6 +17,7 @@ import PricingPage from "./pages/PricingPage";
 import FaqArticlePage from "./pages/FaqArticlePage";
 import SigiriyaPage from "./pages/SigiriyaPage";
 import KandyPage from "./pages/KandyPage";
+import GallePage from "./pages/GallePage";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -34,6 +35,7 @@ function Router() {
       <Route path="/faq" component={FaqArticlePage} />
       <Route path="/sigiriya" component={SigiriyaPage} />
       <Route path="/kandy" component={KandyPage} />
+      <Route path="/galle" component={GallePage} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
