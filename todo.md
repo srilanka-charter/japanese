@@ -46,3 +46,16 @@
   - [x] FAQ（アコーディオン）
   - [x] App.tsxへのルーティング追加（/galle）
   - [x] DestinationsSectionのゴールカードにリンク追加
+- [ ] ヌワラエリヤ高原記事ページ（NuwaraEliyaPage.tsx / /nuwara-eliya）
+  - [ ] ヒーロー画像・タクシー画像・ホテル画像のAI生成
+  - [ ] 見どころ5箇所の画像AI生成
+  - [ ] 周辺観光地4箇所の画像AI生成
+  - [ ] SEO対策（title/description/OGP/canonical/JSON-LD）
+  - [ ] アクセス方法比較表
+  - [ ] 見どころ5選セクション
+  - [ ] レストラン一覧表
+  - [ ] 周辺観光地セクション
+  - [ ] ホテル一覧表
+  - [ ] FAQ（アコーディオン）
+  - [ ] App.tsxへのルーティング追加（/nuwara-eliya）
+  - [ ] DestinationsSectionのヌワラエリヤカードにリンク追加

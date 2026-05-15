@@ -20,7 +20,7 @@ const destinations = [
     desc: "緑広がる高原の絶景",
     image: "/manus-storage/tea_plantation_e512c982.jpg",
     size: "small",
-    href: null,
+    href: "/nuwara-eliya",
   },
   {
     name: "ゴール旧市街",
