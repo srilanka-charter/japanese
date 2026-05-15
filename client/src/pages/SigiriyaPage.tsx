@@ -391,7 +391,7 @@ export default function SigiriyaPage() {
               SLTCSは日本語対応の政府公認タクシーチャーターサービスです。ホテルまでお迎えに上がり、シーギリヤロックの入口まで直接お連れします。途中でダンブッラ石窟寺院などに立ち寄ることも自由自在。複数人でのご利用なら一人あたりの費用も大幅に抑えられます。
             </p>
             <ul className="text-green-100 text-sm space-y-1 mb-5">
-              <li>✓ 日本語対応ドライバー</li>
+              <li>✓ 日本語対応ドライバー選択可能</li>
               <li>✓ 政府公認・安心の品質</li>
               <li>✓ 追加料金なしの明朗会計</li>
               <li>✓ 旅程に合わせた柔軟なルート設定</li>
@@ -418,7 +418,7 @@ export default function SigiriyaPage() {
             </div>
             <h3 className="text-lg font-bold text-white mb-3">ドライバーがシーギリヤロックに一緒に登り、各スポットを日本語で解説します</h3>
             <p className="text-white/85 text-sm leading-relaxed mb-3">
-              SLTCSのシルバープラン以上をご利用のお客様には、担当ドライバーがシーギリヤロックの入場料を自己負担で登山に同行し、フレスコ画・ライオンゲート・頂上宮殿遺跡など各見どころを日本語で詳しく解説するサービスをご提供しています。
+              SLTCSのシルバープラン以上をご利用のお客様には、担当ドライバーがシーギリヤロックの入場料を自己負担で登山に同行し、フレスコ画・ライオンゲート・頂上宮殿遺跡など各見どころを詳しく解説するサービスをご提供しています。日本語ドライバーを選択していれば日本語での説明を受けることができます。
             </p>
             <p className="text-white/85 text-sm leading-relaxed mb-4">
               ガイドブックには載っていない地元ならではのエピソードや、最高の撮影スポットのアドバイスも受けられます。初めてのシーギリヤ訪問をより深く、より楽しく体験していただけます。ブロンズプランはドライバーが麓でお待ちします。
@@ -641,7 +641,7 @@ export default function SigiriyaPage() {
         <div className="bg-gradient-to-r from-green-900 to-green-700 rounded-2xl p-8 text-center text-white">
           <h2 className="text-2xl font-bold mb-3">シーギリヤをSLTCSで快適に！</h2>
           <p className="text-green-100 leading-relaxed mb-6 max-w-xl mx-auto">
-            日本語対応の政府公認ドライバーが、シーギリヤロックへの移動から観光ガイドまでサポートします。シルバープラン以上では一緒に登山し、各スポットを丁寧に解説します。まずはお気軽にご相談ください。
+政府公認ドライバーが、シーギリヤロックへの移動から観光ガイドまでサポートします。シルバープラン以上では一緒に登山し、各スポットを丁寧に解説。まずはお気軽にご相談ください。
           </p>
           <Link href="/">
             <button className="bg-amber-500 hover:bg-amber-400 text-white font-bold px-8 py-4 rounded-full text-lg transition-colors shadow-lg">
