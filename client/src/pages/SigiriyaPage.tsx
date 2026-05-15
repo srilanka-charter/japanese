@@ -466,26 +466,32 @@ export default function SigiriyaPage() {
           </p>
 
           <div className="overflow-x-auto">
-            <table className="w-full text-sm border-collapse min-w-[600px]">
+            <table className="w-full text-sm border-collapse" style={{ minWidth: "480px", tableLayout: "fixed" }}>
+              <colgroup>
+                <col style={{ width: "22%" }} />
+                <col style={{ width: "16%" }} />
+                <col style={{ width: "10%" }} />
+                <col style={{ width: "52%" }} />
+              </colgroup>
               <thead>
                 <tr className="bg-gray-800 text-white">
-                  <th className="px-4 py-3 text-left whitespace-nowrap">店名</th>
-                  <th className="px-4 py-3 text-left whitespace-nowrap">料理の種類</th>
-                  <th className="px-4 py-3 text-center whitespace-nowrap">TripAdvisor評価</th>
-                  <th className="px-4 py-3 text-left">特徴</th>
+                  <th className="px-3 py-3 text-left text-xs">店名</th>
+                  <th className="px-3 py-3 text-left text-xs">料理の種類</th>
+                  <th className="px-2 py-3 text-center text-xs">評価</th>
+                  <th className="px-3 py-3 text-left text-xs">特徴</th>
                 </tr>
               </thead>
               <tbody>
                 {restaurants.map((r, i) => (
                   <tr key={i} className={`border-b ${i % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
-                    <td className="px-4 py-3 font-semibold text-gray-900 whitespace-nowrap">{r.name}</td>
-                    <td className="px-4 py-3 text-gray-700 whitespace-nowrap">{r.type}</td>
-                    <td className="px-4 py-3 text-center">
-                      <span className="inline-flex items-center gap-1 bg-green-100 text-green-800 font-bold px-2 py-0.5 rounded text-xs">
+                    <td className="px-3 py-3 font-semibold text-gray-900 text-xs leading-snug">{r.name}</td>
+                    <td className="px-3 py-3 text-gray-700 text-xs leading-snug">{r.type}</td>
+                    <td className="px-2 py-3 text-center">
+                      <span className="inline-flex items-center gap-0.5 bg-green-100 text-green-800 font-bold px-1.5 py-0.5 rounded text-xs">
                         ★ {r.rating}
                       </span>
                     </td>
-                    <td className="px-4 py-3 text-gray-600 text-xs leading-relaxed">{r.feature}</td>
+                    <td className="px-3 py-3 text-gray-600 text-xs leading-relaxed">{r.feature}</td>
                   </tr>
                 ))}
               </tbody>
@@ -553,31 +559,38 @@ export default function SigiriyaPage() {
           </div>
 
           <div className="overflow-x-auto">
-            <table className="w-full text-sm border-collapse min-w-[640px]">
+            <table className="w-full text-sm border-collapse" style={{ minWidth: "480px", tableLayout: "fixed" }}>
+              <colgroup>
+                <col style={{ width: "22%" }} />
+                <col style={{ width: "11%" }} />
+                <col style={{ width: "10%" }} />
+                <col style={{ width: "12%" }} />
+                <col style={{ width: "45%" }} />
+              </colgroup>
               <thead>
                 <tr className="bg-gray-800 text-white">
-                  <th className="px-4 py-3 text-left whitespace-nowrap">ホテル名</th>
-                  <th className="px-4 py-3 text-center whitespace-nowrap">カテゴリ</th>
-                  <th className="px-4 py-3 text-center whitespace-nowrap">料金目安</th>
-                  <th className="px-4 py-3 text-left whitespace-nowrap">アクセス</th>
-                  <th className="px-4 py-3 text-left">特徴</th>
+                  <th className="px-3 py-3 text-left text-xs">ホテル名</th>
+                  <th className="px-2 py-3 text-center text-xs">カテゴリ</th>
+                  <th className="px-2 py-3 text-center text-xs">料金</th>
+                  <th className="px-2 py-3 text-left text-xs">距離</th>
+                  <th className="px-3 py-3 text-left text-xs">特徴</th>
                 </tr>
               </thead>
               <tbody>
                 {hotels.map((h, i) => (
                   <tr key={i} className={`border-b ${h.highlight ? "bg-amber-50" : i % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
-                    <td className="px-4 py-3 whitespace-nowrap">
+                    <td className="px-3 py-3">
                       {h.highlight && <span className="block text-xs text-amber-600 font-bold mb-0.5">★ イチオシ</span>}
-                      <span className="font-semibold text-gray-900">{h.name}</span>
+                      <span className="font-semibold text-gray-900 text-xs leading-snug">{h.name}</span>
                     </td>
-                    <td className="px-4 py-3 text-center whitespace-nowrap">
-                      <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">{h.category}</span>
+                    <td className="px-2 py-3 text-center">
+                      <span className="text-xs bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded-full leading-snug">{h.category}</span>
                     </td>
-                    <td className="px-4 py-3 text-center whitespace-nowrap">
-                      <span className="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full font-bold">{h.price}</span>
+                    <td className="px-2 py-3 text-center">
+                      <span className="text-xs bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded-full font-bold">{h.price}</span>
                     </td>
-                    <td className="px-4 py-3 text-gray-600 text-xs whitespace-nowrap">{h.access}</td>
-                    <td className="px-4 py-3 text-gray-600 text-xs leading-relaxed">{h.desc}</td>
+                    <td className="px-2 py-3 text-gray-600 text-xs leading-snug">{h.access}</td>
+                    <td className="px-3 py-3 text-gray-600 text-xs leading-relaxed">{h.desc}</td>
                   </tr>
                 ))}
               </tbody>
