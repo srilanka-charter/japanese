@@ -460,26 +460,32 @@ export default function GallePage() {
             ゴール要塞内にはコロニアル建築を活かしたおしゃれなレストランやカフェが多数あります。新鮮なシーフードとスリランカ料理を楽しめます。
           </p>
           <div className="overflow-x-auto">
-            <table className="w-full text-sm border-collapse">
+            <table className="w-full text-sm border-collapse" style={{ minWidth: "480px", tableLayout: "fixed" }}>
+              <colgroup>
+                <col style={{ width: "22%" }} />
+                <col style={{ width: "16%" }} />
+                <col style={{ width: "10%" }} />
+                <col style={{ width: "52%" }} />
+              </colgroup>
               <thead>
                 <tr className="bg-[oklch(0.15_0.01_60)] text-white">
-                  <th className="px-4 py-3 text-left font-semibold">店名</th>
-                  <th className="px-4 py-3 text-left font-semibold">ジャンル</th>
-                  <th className="px-4 py-3 text-left font-semibold">評価</th>
-                  <th className="px-4 py-3 text-left font-semibold hidden md:table-cell">特徴</th>
+                  <th className="px-3 py-3 text-left text-xs">店名</th>
+                  <th className="px-3 py-3 text-left text-xs">ジャンル</th>
+                  <th className="px-2 py-3 text-center text-xs">評価</th>
+                  <th className="px-3 py-3 text-left text-xs">特徴</th>
                 </tr>
               </thead>
               <tbody>
                 {restaurants.map((r, i) => (
                   <tr key={i} className={`border-b border-gray-100 ${i % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
-                    <td className="px-4 py-3 font-medium text-[oklch(0.15_0.01_60)]">{r.name}</td>
-                    <td className="px-4 py-3 text-[oklch(0.4_0.02_60)]">{r.type}</td>
-                    <td className="px-4 py-3">
-                      <span className="inline-flex items-center gap-1 text-amber-600 font-bold">
+                    <td className="px-3 py-3 font-medium text-[oklch(0.15_0.01_60)] text-xs leading-snug">{r.name}</td>
+                    <td className="px-3 py-3 text-[oklch(0.4_0.02_60)] text-xs leading-snug">{r.type}</td>
+                    <td className="px-2 py-3 text-center">
+                      <span className="inline-flex items-center gap-0.5 text-amber-600 font-bold text-xs">
                         ★ {r.rating}
                       </span>
                     </td>
-                    <td className="px-4 py-3 text-[oklch(0.4_0.02_60)] hidden md:table-cell">{r.feature}</td>
+                    <td className="px-3 py-3 text-[oklch(0.4_0.02_60)] text-xs leading-relaxed">{r.feature}</td>
                   </tr>
                 ))}
               </tbody>
@@ -540,22 +546,38 @@ export default function GallePage() {
 
           {/* ホテル一覧表 */}
           <div className="overflow-x-auto">
-            <table className="w-full text-sm border-collapse">
+            <table className="w-full text-sm border-collapse" style={{ minWidth: "480px", tableLayout: "fixed" }}>
+              <colgroup>
+                <col style={{ width: "22%" }} />
+                <col style={{ width: "11%" }} />
+                <col style={{ width: "10%" }} />
+                <col style={{ width: "12%" }} />
+                <col style={{ width: "45%" }} />
+              </colgroup>
               <thead>
                 <tr className="bg-[oklch(0.15_0.01_60)] text-white">
-                  <th className="px-4 py-3 text-left font-semibold">ホテル名</th>
-                  <th className="px-4 py-3 text-left font-semibold">カテゴリ</th>
-                  <th className="px-4 py-3 text-left font-semibold">価格帯</th>
-                  <th className="px-4 py-3 text-left font-semibold hidden md:table-cell">アクセス</th>
+                  <th className="px-3 py-3 text-left text-xs">ホテル名</th>
+                  <th className="px-2 py-3 text-center text-xs">カテゴリ</th>
+                  <th className="px-2 py-3 text-center text-xs">料金</th>
+                  <th className="px-2 py-3 text-left text-xs">距離</th>
+                  <th className="px-3 py-3 text-left text-xs">特徴</th>
                 </tr>
               </thead>
               <tbody>
                 {hotels.map((h, i) => (
                   <tr key={i} className={`border-b border-gray-100 ${i % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
-                    <td className="px-4 py-3 font-medium text-[oklch(0.15_0.01_60)]">{h.name}</td>
-                    <td className="px-4 py-3 text-[oklch(0.4_0.02_60)]">{h.category}</td>
-                    <td className="px-4 py-3 text-amber-600 font-bold">{h.price}</td>
-                    <td className="px-4 py-3 text-[oklch(0.4_0.02_60)] hidden md:table-cell">{h.access}</td>
+                    <td className="px-3 py-3">
+                      {h.highlight && <span className="block text-xs text-amber-600 font-bold mb-0.5">★ イチオシ</span>}
+                      <span className="font-medium text-[oklch(0.15_0.01_60)] text-xs leading-snug">{h.name}</span>
+                    </td>
+                    <td className="px-2 py-3 text-center">
+                      <span className="text-xs bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded-full leading-snug">{h.category}</span>
+                    </td>
+                    <td className="px-2 py-3 text-center">
+                      <span className="text-xs bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded-full font-bold">{h.price}</span>
+                    </td>
+                    <td className="px-2 py-3 text-[oklch(0.4_0.02_60)] text-xs leading-snug">{h.access}</td>
+                    <td className="px-3 py-3 text-[oklch(0.4_0.02_60)] text-xs leading-relaxed">{h.desc}</td>
                   </tr>
                 ))}
               </tbody>
