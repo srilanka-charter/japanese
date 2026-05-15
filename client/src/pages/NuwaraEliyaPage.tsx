@@ -299,7 +299,7 @@ export default function NuwaraEliyaPage() {
             <p className="text-white/85 text-sm leading-relaxed mb-4">
               ランボダ滝・ハクガラ植物園など移動途中の観光地への立ち寄りスケジュールの調整も柔軟に対応します。ブロンズプランはドライバーが外でお待ちします。
             </p>
-            <Link href="/">
+            <Link href="/plan">
               <button className="bg-amber-400 hover:bg-amber-300 text-gray-900 font-bold px-5 py-2 rounded-lg text-sm transition-colors">
                 シルバープランの詳細を見る →
               </button>
