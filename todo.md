@@ -59,3 +59,4 @@
   - [x] FAQ（アコーディオン）
   - [x] App.tsxへのルーティング追加（/nuwara-eliya）
   - [x] DestinationsSectionのヌワラエリヤカードにリンク追加
+- [x] NuwaraEliyaPage.tsxのスマホ向けテーブルを横スクロール形式に変更（行き方・レストラン・ホテルの3表のカードスライダーを廃止）
