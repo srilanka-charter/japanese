@@ -60,3 +60,6 @@
   - [x] App.tsxへのルーティング追加（/nuwara-eliya）
   - [x] DestinationsSectionのヌワラエリヤカードにリンク追加
 - [x] NuwaraEliyaPage.tsxのスマホ向けテーブルを横スクロール形式に変更（行き方・レストラン・ホテルの3表のカードスライダーを廃止）
+- [x] T-01: sitemap.xmlに記事4ページ（/sigiriya・/kandy・/galle・/nuwara-eliya）を追加
+- [x] T-02: NuwaraEliyaPageのJSON-LDにFAQPageとBreadcrumbListスキーマを追加（他ページ水準に統一）→確認の結果すでに@graph形式で実装済み
+- [x] T-05: トップページ（Home.tsx）にLocalBusinessスキーマ（JSON-LD）を追加（AggregateRatingは含めない）
