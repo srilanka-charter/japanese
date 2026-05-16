@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: 399, suffix: "+", label: "累計チャーター実績" },
+  { value: 400, suffix: "+", label: "累計チャーター実績" },
   { value: 4.9, suffix: "", label: "平均顧客満足度", decimal: true },
-  { value: 20, suffix: "名", label: "ドライバー数" },
+  { value: 30, suffix: "名", label: "ドライバー数" },
   { value: 5, suffix: "名", label: "日本語ドライバー" },
 ];
 
