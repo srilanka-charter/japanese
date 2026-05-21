@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 // ── 画像URL ──────────────────────────────────────────────
 const SAFARI_MAP = "/manus-storage/safari_map_12bb9538.png";
-const SAFARI_JEEP = "/manus-storage/safari_jeep_composite2_c1e88757.jpg";
+const SAFARI_JEEP = "/manus-storage/safari_jeep_collage_783df316.png";
 const SAFARI_MINNERIYA =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/safari_minneriya-DFmuXZWM85cLvqifNNGpak.webp";
 const SAFARI_WILPATTU =
