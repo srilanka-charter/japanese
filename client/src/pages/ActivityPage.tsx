@@ -4,7 +4,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 // ── 画像URL ──────────────────────────────────────────────
-const SAFARI_IMG        = "/manus-storage/activity_safari_9657e01e.jpg";
+const SAFARI_IMG        = "/manus-storage/safari_real1_3eddd966.jpg";
+const SAFARI_IMG2       = "/manus-storage/safari_real2_86df263a.jpg";
 const VILLAGE_BULLOCK   = "/manus-storage/village_bullock_new_1fbf411d.jpg";
 const VILLAGE_COOKING_NEW = "/manus-storage/village_cooking_new_4278495b.jpg";
 const ELEPHANT_RIDE_IMG = "/manus-storage/elephant_ride_new_42c3de4f.jpg";
@@ -112,7 +113,7 @@ export default function ActivityPage() {
       {/* ── Hero ── */}
       <div className="relative h-[60vh] min-h-[400px] overflow-hidden">
         <img
-          src={SAFARI_IMG}
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/activity_hero_new-E6uaXMWkZJRfDhMFSNXWYq.webp"
           alt="スリランカ サファリ アクティビティ"
           className="w-full h-full object-cover object-center"
         />
@@ -175,12 +176,21 @@ export default function ActivityPage() {
           </h2>
           <p className="text-gray-500 text-sm mb-6">スリランカヒョウや象の群れに出会える秘境体験</p>
 
-          <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
-            <img
-              src={SAFARI_IMG}
-              alt="スリランカ サファリ ジープ 象"
-              className="w-full h-72 md:h-96 object-cover"
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src={SAFARI_IMG}
+                alt="スリランカ サファリ 象の群れ ジープ"
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src={SAFARI_IMG2}
+                alt="スリランカ サファリ ジープ車両"
+                className="w-full h-auto"
+              />
+            </div>
           </div>
 
           <div className="space-y-4 text-gray-700 leading-relaxed mb-6">
