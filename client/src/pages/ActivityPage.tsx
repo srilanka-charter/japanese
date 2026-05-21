@@ -204,13 +204,23 @@ export default function ActivityPage() {
             </ul>
           </div>
 
-          <div className="text-center">
-            <a
-              href="/#contact"
-              className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-3 rounded-full transition-colors shadow-md"
-            >
-              サファリについて問い合わせる →
-            </a>
+          <div className="text-center space-y-3">
+            <div>
+              <a
+                href="/safari"
+                className="inline-block bg-stone-800 hover:bg-stone-900 text-white font-semibold px-8 py-3 rounded-full transition-colors shadow-md"
+              >
+                もっと詳しく →
+              </a>
+            </div>
+            <div>
+              <a
+                href="/#contact"
+                className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-3 rounded-full transition-colors shadow-md"
+              >
+                サファリについて問い合わせる →
+              </a>
+            </div>
           </div>
         </section>
 

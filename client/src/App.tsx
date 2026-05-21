@@ -20,6 +20,7 @@ import KandyPage from "./pages/KandyPage";
 import GallePage from "./pages/GallePage";
 import NuwaraEliyaPage from "./pages/NuwaraEliyaPage";
 import ActivityPage from "./pages/ActivityPage";
+import SafariPage from "./pages/SafariPage";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -40,6 +41,7 @@ function Router() {
       <Route path="/galle" component={GallePage} />
       <Route path="/nuwara-eliya" component={NuwaraEliyaPage} />
       <Route path="/activity" component={ActivityPage} />
+      <Route path="/safari" component={SafariPage} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
