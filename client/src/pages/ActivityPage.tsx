@@ -5,14 +5,13 @@ import Footer from "@/components/Footer";
 
 // ── 画像URL ──────────────────────────────────────────────
 const SAFARI_IMG        = "/manus-storage/activity_safari_9657e01e.jpg";
-const VILLAGE_BULLOCK   = "/manus-storage/activity_village_bullock_7fd1a12d.jpg";
-const VILLAGE_FACILITY  = "/manus-storage/activity_village_facility_c2290f87.png";
-const ELEPHANT_RIDE_IMG = "/manus-storage/activity_elephant_ride_3b321b55.jpg";
+const VILLAGE_BULLOCK   = "/manus-storage/village_bullock_new_1fbf411d.jpg";
+const VILLAGE_COOKING_NEW = "/manus-storage/village_cooking_new_4278495b.jpg";
+const ELEPHANT_RIDE_IMG = "/manus-storage/elephant_ride_new_42c3de4f.jpg";
 const WHALE_BOAT_IMG    = "/manus-storage/activity_whale_boat_eeb7b1f7.jpg";
 const WHALE_GEN_IMG     = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/whale_watching-QwGwMP6VHzQRs7q2TrnBXD.webp";
 const ASTROLOGY_CARD    = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/astrology_card-HYddtQKCFTeuVS6kD3XBXW.webp";
-const AYURVEDA_IMG1     = "/manus-storage/ayurveda_athreya_57cea0c9.png";
-const AYURVEDA_IMG2     = "/manus-storage/ayurveda_athreya2_46162927.png";
+const AYURVEDA_IMG1     = "/manus-storage/ayurveda_new_50ef3ed6.png";
 
 // ── 構造化データ ──────────────────────────────────────────
 const articleJsonLd = {
@@ -222,21 +221,12 @@ export default function ActivityPage() {
           </h2>
           <p className="text-gray-500 text-sm mb-6">シーギリヤ近郊で受けられる本格アーユルヴェーダ施術</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img
-                src={AYURVEDA_IMG1}
-                alt="Athreya アーユルヴェーダ シーギリヤ 施術"
-                className="w-full h-64 object-cover"
-              />
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img
-                src={AYURVEDA_IMG2}
-                alt="Athreya アーユルヴェーダ スリランカ 癒し"
-                className="w-full h-64 object-cover"
-              />
-            </div>
+          <div className="rounded-2xl overflow-hidden shadow-lg mb-8">
+            <img
+              src={AYURVEDA_IMG1}
+              alt="Athreya アーユルヴェーダ シーギリヤ 施術"
+              className="w-full h-auto"
+            />
           </div>
 
           <div className="space-y-4 text-gray-700 leading-relaxed mb-6">
@@ -277,20 +267,20 @@ export default function ActivityPage() {
           </h2>
           <p className="text-gray-500 text-sm mb-6">牛車・水上ボート・料理体験の3時間コース</p>
 
-          {/* 写真2枚（VILLAGE_BULLOCKとVILLAGE_FACILITYをgrid-cols-2で並べる） */}
+          {/* 写真2枚（VILLAGE_BULLOCKとVILLAGE_COOKING_NEWをgrid-cols-2で並べる） */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img
                 src={VILLAGE_BULLOCK}
                 alt="シーギリヤ村 牛車 ビレッジツアー"
-                className="w-full h-64 object-cover"
+                className="w-full h-auto"
               />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img
-                src={VILLAGE_FACILITY}
-                alt="シーギリヤ村 施設 伝統的な建物"
-                className="w-full h-64 object-cover"
+                src={VILLAGE_COOKING_NEW}
+                alt="シーギリヤ村 料理体験 スリランカ料理"
+                className="w-full h-auto"
               />
             </div>
           </div>
@@ -331,7 +321,7 @@ export default function ActivityPage() {
             <img
               src={ELEPHANT_RIDE_IMG}
               alt="シーギリヤ エレファントライド 象乗り体験"
-              className="w-full h-72 md:h-96 object-cover object-top"
+              className="w-full h-auto"
             />
           </div>
 
