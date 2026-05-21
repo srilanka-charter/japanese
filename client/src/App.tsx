@@ -19,6 +19,7 @@ import SigiriyaPage from "./pages/SigiriyaPage";
 import KandyPage from "./pages/KandyPage";
 import GallePage from "./pages/GallePage";
 import NuwaraEliyaPage from "./pages/NuwaraEliyaPage";
+import ActivityPage from "./pages/ActivityPage";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -38,6 +39,7 @@ function Router() {
       <Route path="/kandy" component={KandyPage} />
       <Route path="/galle" component={GallePage} />
       <Route path="/nuwara-eliya" component={NuwaraEliyaPage} />
+      <Route path="/activity" component={ActivityPage} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

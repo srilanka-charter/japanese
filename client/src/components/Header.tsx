@@ -128,6 +128,13 @@ export default function Header() {
               価格
             </Link>
 
+            <Link
+              href="/activity"
+              className="text-white/90 hover:text-[oklch(0.75_0.12_75)] px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200"
+            >
+              アクティビティ
+            </Link>
+
             <a
               href="#contact"
               onClick={scrollToContact}
@@ -230,6 +237,14 @@ export default function Header() {
               className="block text-white/90 px-3 py-3 text-base font-medium border-b border-white/10"
             >
               価格
+            </Link>
+
+            <Link
+              href="/activity"
+              onClick={() => setMobileOpen(false)}
+              className="block text-white/90 px-3 py-3 text-base font-medium border-b border-white/10"
+            >
+              アクティビティ
             </Link>
 
             <a
