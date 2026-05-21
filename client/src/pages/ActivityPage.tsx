@@ -6,19 +6,20 @@ import Footer from "@/components/Footer";
 // ── 画像URL ──────────────────────────────────────────────
 const SAFARI_IMG        = "/manus-storage/activity_safari_9657e01e.jpg";
 const VILLAGE_BULLOCK   = "/manus-storage/activity_village_bullock_7fd1a12d.jpg";
-const VILLAGE_COOKING   = "/manus-storage/activity_village_cooking_e4e08096.jpg";
 const VILLAGE_FACILITY  = "/manus-storage/activity_village_facility_c2290f87.png";
 const ELEPHANT_RIDE_IMG = "/manus-storage/activity_elephant_ride_3b321b55.jpg";
 const WHALE_BOAT_IMG    = "/manus-storage/activity_whale_boat_eeb7b1f7.jpg";
 const WHALE_GEN_IMG     = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/whale_watching-QwGwMP6VHzQRs7q2TrnBXD.webp";
 const ASTROLOGY_CARD    = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/astrology_card-HYddtQKCFTeuVS6kD3XBXW.webp";
+const AYURVEDA_IMG1     = "/manus-storage/ayurveda_athreya_57cea0c9.png";
+const AYURVEDA_IMG2     = "/manus-storage/ayurveda_athreya2_46162927.png";
 
 // ── 構造化データ ──────────────────────────────────────────
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "スリランカのアクティビティ完全ガイド｜サファリ・ビレッジツアー・ホエールウォッチング・占星術",
-  "description": "スリランカで体験できるアクティビティを徹底紹介。サファリ、シーギリヤ村ビレッジツアー、エレファントライド、ホエールウォッチング、占星術まで。SLTCSプラチナプラン限定の手配も可能。",
+  "headline": "スリランカのアクティビティ完全ガイド｜サファリ・アーユルヴェーダ・ビレッジツアー・ホエールウォッチング・占星術",
+  "description": "スリランカで体験できるアクティビティを徹底紹介。サファリ、アーユルヴェーダ、シーギリヤ村ビレッジツアー、エレファントライド、ホエールウォッチング、占星術まで。SLTCSプラチナプラン限定の手配も可能。",
   "image": SAFARI_IMG,
   "author": { "@type": "Organization", "name": "SLTCS スリランカタクシーチャーターサービス" },
   "publisher": {
@@ -27,7 +28,7 @@ const articleJsonLd = {
     "url": "https://sltcs.srilanka-charter.com",
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sltcs.srilanka-charter.com/activity" },
-  "keywords": "スリランカ アクティビティ, スリランカ サファリ, シーギリヤ ビレッジツアー, スリランカ ホエールウォッチング, スリランカ 象乗り, スリランカ 占星術",
+  "keywords": "スリランカ アクティビティ, スリランカ サファリ, スリランカ アーユルヴェーダ, シーギリヤ ビレッジツアー, スリランカ ホエールウォッチング, スリランカ 象乗り, スリランカ 占星術",
 };
 
 const breadcrumbJsonLd = {
@@ -42,6 +43,7 @@ const breadcrumbJsonLd = {
 // ── 目次データ ────────────────────────────────────────────
 const toc = [
   { id: "safari",        label: "大自然をワイルドに楽しむサファリ" },
+  { id: "ayurveda",      label: "アーユルヴェーダ" },
   { id: "village-tour",  label: "シーギリヤ村でのビレッジツアー" },
   { id: "elephant-ride", label: "シーギリヤ村でのエレファントライド" },
   { id: "whale",         label: "ホエールウォッチング" },
@@ -50,20 +52,20 @@ const toc = [
 
 export default function ActivityPage() {
   useEffect(() => {
-    document.title = "スリランカのアクティビティ完全ガイド｜サファリ・ビレッジツアー・ホエールウォッチング【SLTCS】";
+    document.title = "スリランカのアクティビティ完全ガイド｜サファリ・アーユルヴェーダ・ビレッジツアー・ホエールウォッチング【SLTCS】";
 
     const desc = document.querySelector('meta[name="description"]');
     if (desc) {
       desc.setAttribute(
         "content",
-        "スリランカで体験できるアクティビティを徹底紹介。サファリ、シーギリヤ村ビレッジツアー、エレファントライド、ホエールウォッチング、占星術まで。SLTCSプラチナプラン限定の手配も可能。"
+        "スリランカで体験できるアクティビティを徹底紹介。サファリ、アーユルヴェーダ、シーギリヤ村ビレッジツアー、エレファントライド、ホエールウォッチング、占星術まで。SLTCSプラチナプラン限定の手配も可能。"
       );
     }
 
     const ogTitle = document.querySelector('meta[property="og:title"]');
     if (ogTitle) ogTitle.setAttribute("content", "スリランカのアクティビティ完全ガイド｜SLTCS");
     const ogDesc = document.querySelector('meta[property="og:description"]');
-    if (ogDesc) ogDesc.setAttribute("content", "サファリ・ビレッジツアー・エレファントライド・ホエールウォッチング・占星術。SLTCSで手配できるスリランカのアクティビティを一挙紹介。");
+    if (ogDesc) ogDesc.setAttribute("content", "サファリ・アーユルヴェーダ・ビレッジツアー・エレファントライド・ホエールウォッチング・占星術。SLTCSで手配できるスリランカのアクティビティを一挙紹介。");
     const ogUrl = document.querySelector('meta[property="og:url"]');
     if (ogUrl) ogUrl.setAttribute("content", "https://sltcs.srilanka-charter.com/activity");
     const ogImage = document.querySelector('meta[property="og:image"]');
@@ -125,7 +127,7 @@ export default function ActivityPage() {
             完全ガイド
           </h1>
           <p className="text-white/90 mt-4 text-base md:text-lg max-w-2xl">
-            サファリ・ビレッジツアー・ホエールウォッチング・占星術まで
+            サファリ・アーユルヴェーダ・ビレッジツアー・ホエールウォッチング・占星術まで
           </p>
         </div>
       </div>
@@ -140,6 +142,19 @@ export default function ActivityPage() {
           <span className="text-gray-700 font-medium">アクティビティ</span>
         </nav>
 
+        {/* イントロ */}
+        <div className="bg-gray-50 border-l-4 border-emerald-500 rounded-r-xl p-6 mb-10 text-gray-700 leading-relaxed">
+          <p className="mb-3">
+            スリランカには世界遺産以外にも、<strong>サファリ・アーユルヴェーダ・紅茶列車・ホエールウォッチング・占星術</strong>と様々なアクティビティが存在しています。
+          </p>
+          <p className="mb-3">
+            SLTCSの<strong>プラチナプランでは限定で手配ができるもの</strong>もあります。この項目ではSLTCSで手配できるアクティビティを紹介します。
+          </p>
+          <p className="text-sm text-gray-500">
+            気になるアクティビティに関してはお問い合わせ時にお伝えください。担当者から価格を含めてご案内させていただきます。
+          </p>
+        </div>
+
         {/* 目次 */}
         <nav aria-label="目次" className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-10">
           <p className="font-bold text-emerald-800 mb-3 text-sm tracking-wide uppercase">目次</p>
@@ -153,19 +168,6 @@ export default function ActivityPage() {
             ))}
           </ol>
         </nav>
-
-        {/* イントロ */}
-        <div className="bg-gray-50 border-l-4 border-emerald-500 rounded-r-xl p-6 mb-10 text-gray-700 leading-relaxed">
-          <p className="mb-3">
-            スリランカには世界遺産以外にも、<strong>サファリ・紅茶列車・アーユルヴェーダ・ホエールウォッチング・占星術</strong>と様々なアクティビティが存在しています。
-          </p>
-          <p className="mb-3">
-            SLTCSの<strong>プラチナプランでは限定で手配ができるもの</strong>もあります。この項目ではSLTCSで手配できるアクティビティを紹介します。
-          </p>
-          <p className="text-sm text-gray-500">
-            気になるアクティビティに関してはお問い合わせ時にお伝えください。担当者から価格を含めてご案内させていただきます。
-          </p>
-        </div>
 
         {/* ── H2: サファリ ── */}
         <section id="safari" className="mb-16 scroll-mt-24">
@@ -213,6 +215,61 @@ export default function ActivityPage() {
           </div>
         </section>
 
+        {/* ── H2: アーユルヴェーダ ── */}
+        <section id="ayurveda" className="mb-16 scroll-mt-24">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 border-l-4 border-emerald-500 pl-4 mb-2">
+            アーユルヴェーダ
+          </h2>
+          <p className="text-gray-500 text-sm mb-6">シーギリヤ近郊で受けられる本格アーユルヴェーダ施術</p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src={AYURVEDA_IMG1}
+                alt="Athreya アーユルヴェーダ シーギリヤ 施術"
+                className="w-full h-64 object-cover"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src={AYURVEDA_IMG2}
+                alt="Athreya アーユルヴェーダ スリランカ 癒し"
+                className="w-full h-64 object-cover"
+              />
+            </div>
+          </div>
+
+          <div className="space-y-4 text-gray-700 leading-relaxed mb-6">
+            <p>
+              スリランカといえばアーユルヴェーダというほど、スリランカはアーユルヴェーダが盛んな国として世界的に知られています。アーユルヴェーダとは、インド発祥の5,000年以上の歴史を持つ伝統医学で、ハーブオイルを使ったマッサージや薬草療法によって心身のバランスを整えます。スリランカでは独自の発展を遂げており、専用のアーユルヴェーダリゾートホテルに滞在して長期的な施術を受けることもできます。
+            </p>
+            <p>
+              一方、シーギリヤ近郊では<strong>立ち寄り型の施設で気軽にアーユルヴェーダを体験</strong>することができます。SLTCSがご案内できる施設のひとつが、シーギリヤ近郊に位置する<strong><a href="https://athreyasigiriya.com" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline">Athreya（アスレヤ）</a></strong>です。
+            </p>
+            <p>
+              Athreyaは、スリランカの伝統的なアーユルヴェーダの知識と技術を受け継いだ施設です。経験豊富なセラピストによる本格的なオイルマッサージや各種トリートメントを提供しており、シーギリヤ観光の合間に立ち寄ることができます。慌ただしい観光スケジュールの中でも、心身をリセットできる貴重な時間を過ごせます。SLTCSのドライバーが施設まで送迎し、予約のサポートもいたします。
+            </p>
+          </div>
+
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-8">
+            <p className="font-bold text-emerald-800 mb-2 text-sm">✔ ポイントまとめ</p>
+            <ul className="text-sm text-emerald-700 space-y-1">
+              <li>✔ スリランカは世界有数のアーユルヴェーダの聖地</li>
+              <li>✔ シーギリヤ近郊のAthreyaで立ち寄り型の施術が可能</li>
+              <li>✔ SLTCSドライバーが送迎・予約サポートを担当</li>
+            </ul>
+          </div>
+
+          <div className="text-center">
+            <a
+              href="/#contact"
+              className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-3 rounded-full transition-colors shadow-md"
+            >
+              アーユルヴェーダについて問い合わせる →
+            </a>
+          </div>
+        </section>
+
         {/* ── H2: ビレッジツアー ── */}
         <section id="village-tour" className="mb-16 scroll-mt-24">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 border-l-4 border-emerald-500 pl-4 mb-2">
@@ -220,8 +277,8 @@ export default function ActivityPage() {
           </h2>
           <p className="text-gray-500 text-sm mb-6">牛車・水上ボート・料理体験の3時間コース</p>
 
-          {/* 写真2枚 + 施設写真 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          {/* 写真2枚（VILLAGE_BULLOCKとVILLAGE_FACILITYをgrid-cols-2で並べる） */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img
                 src={VILLAGE_BULLOCK}
@@ -231,18 +288,11 @@ export default function ActivityPage() {
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img
-                src={VILLAGE_COOKING}
-                alt="シーギリヤ村 料理体験 スリランカ料理"
+                src={VILLAGE_FACILITY}
+                alt="シーギリヤ村 施設 伝統的な建物"
                 className="w-full h-64 object-cover"
               />
             </div>
-          </div>
-          <div className="rounded-2xl overflow-hidden shadow-lg mb-8">
-            <img
-              src={VILLAGE_FACILITY}
-              alt="シーギリヤ村 施設 伝統的な建物"
-              className="w-full h-64 md:h-80 object-cover"
-            />
           </div>
 
           <div className="space-y-4 text-gray-700 leading-relaxed mb-6">
