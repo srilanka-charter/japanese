@@ -4,8 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 // ── 画像URL ──────────────────────────────────────────────
-const SAFARI_MAP_IMG    = "/manus-storage/safari_map_4354eba3.png";
-const SAFARI_SELFIE_IMG = "/manus-storage/safari_selfie_90ae1e41.png";
+const SAFARI_COMBINED_IMG = "/manus-storage/safari_combined_6037417b.png";
 const VILLAGE_BULLOCK   = "/manus-storage/village_bullock_new_1fbf411d.jpg";
 const VILLAGE_COOKING_NEW = "/manus-storage/village_cooking_new_4278495b.jpg";
 const ELEPHANT_RIDE_IMG = "/manus-storage/elephant_ride_new_42c3de4f.jpg";
@@ -20,7 +19,7 @@ const articleJsonLd = {
   "@type": "Article",
   "headline": "スリランカのアクティビティ完全ガイド｜サファリ・アーユルヴェーダ・ビレッジツアー・ホエールウォッチング・占星術",
   "description": "スリランカで体験できるアクティビティを徹底紹介。サファリ、アーユルヴェーダ、シーギリヤ村ビレッジツアー、エレファントライド、ホエールウォッチング、占星術まで。SLTCSプラチナプラン限定の手配も可能。",
-  "image": SAFARI_SELFIE_IMG,
+  "image": SAFARI_COMBINED_IMG,
   "author": { "@type": "Organization", "name": "SLTCS スリランカタクシーチャーターサービス" },
   "publisher": {
     "@type": "Organization",
@@ -69,7 +68,7 @@ export default function ActivityPage() {
     const ogUrl = document.querySelector('meta[property="og:url"]');
     if (ogUrl) ogUrl.setAttribute("content", "https://sltcs.srilanka-charter.com/activity");
     const ogImage = document.querySelector('meta[property="og:image"]');
-    if (ogImage) ogImage.setAttribute("content", SAFARI_SELFIE_IMG);
+    if (ogImage) ogImage.setAttribute("content", SAFARI_COMBINED_IMG);
 
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!canonical) {
@@ -176,21 +175,12 @@ export default function ActivityPage() {
           </h2>
           <p className="text-gray-500 text-sm mb-6">スリランカヒョウや象の群れに出会える秘境体験</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img
-                src={SAFARI_MAP_IMG}
-                alt="スリランカの6つのサファリマップ"
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img
-                src={SAFARI_SELFIE_IMG}
-                alt="スリランカ サファリ 象の群れ セルフィー"
-                className="w-full h-auto"
-              />
-            </div>
+          <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
+            <img
+              src={SAFARI_COMBINED_IMG}
+              alt="スリランカの6つのサファリマップとサファリ体験"
+              className="w-full h-auto"
+            />
           </div>
 
           <div className="space-y-4 text-gray-700 leading-relaxed mb-6">
