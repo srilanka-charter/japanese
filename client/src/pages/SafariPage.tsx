@@ -5,9 +5,8 @@ import Footer from "@/components/Footer";
 
 // ── 画像URL ──────────────────────────────────────────────
 const SAFARI_MAP = "/manus-storage/safari_map_12bb9538.png";
-const SAFARI_JEEP = "/manus-storage/safari_jeep_group_6ba79b42.jpg";
+const SAFARI_JEEP = "/manus-storage/safari_jeep_composite_5be9ff7a.jpg";
 const SAFARI_SELFIE = "/manus-storage/safari_selfie_acb52209.png";
-const SAFARI_ELEPHANT = "/manus-storage/safari_elephant_c01a6853.jpg";
 const SAFARI_MINNERIYA =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/safari_minneriya-DFmuXZWM85cLvqifNNGpak.webp";
 const SAFARI_WILPATTU =
@@ -380,23 +379,13 @@ export default function SafariPage() {
             </div>
 
             {/* 写真ギャラリー */}
-            <div className="grid md:grid-cols-2 gap-4 mt-8">
-              <div>
-                <img
-                  src={SAFARI_SELFIE}
-                  alt="サファリでの象との遭遇"
-                  className="w-full h-auto rounded-xl shadow-md"
-                />
-                <p className="text-xs text-stone-400 mt-1 text-center">ジープから象の群れを間近に</p>
-              </div>
-              <div>
-                <img
-                  src={SAFARI_ELEPHANT}
-                  alt="サファリでの象との遭遇"
-                  className="w-full h-auto rounded-xl shadow-md"
-                />
-                <p className="text-xs text-stone-400 mt-1 text-center">間近で見る野生の象</p>
-              </div>
+            <div className="mt-8">
+              <img
+                src={SAFARI_SELFIE}
+                alt="サファリでの象との遭遇"
+                className="w-full h-auto rounded-xl shadow-md"
+              />
+              <p className="text-xs text-stone-400 mt-1 text-center">ジープから象の群れを間近に</p>
             </div>
           </section>
 
