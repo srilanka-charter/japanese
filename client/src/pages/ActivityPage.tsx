@@ -4,8 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 // ── 画像URL ──────────────────────────────────────────────
-const SAFARI_IMG        = "/manus-storage/safari_jeep_new_c217f4ac.jpg";
-const SAFARI_IMG2       = "/manus-storage/safari_elephant_selfie_a33386c7.png";
+const SAFARI_IMG        = "/manus-storage/safari_elephant_selfie_a33386c7.png";
 const VILLAGE_BULLOCK   = "/manus-storage/village_bullock_new_1fbf411d.jpg";
 const VILLAGE_COOKING_NEW = "/manus-storage/village_cooking_new_4278495b.jpg";
 const ELEPHANT_RIDE_IMG = "/manus-storage/elephant_ride_new_42c3de4f.jpg";
@@ -176,21 +175,12 @@ export default function ActivityPage() {
           </h2>
           <p className="text-gray-500 text-sm mb-6">スリランカヒョウや象の群れに出会える秘境体験</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img
-                src={SAFARI_IMG}
-                alt="スリランカ サファリ ジープ車両"
-                className="w-full h-72 md:h-80 object-cover object-center"
-              />
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img
-                src={SAFARI_IMG2}
-                alt="スリランカ サファリ 象の群れ セルフィー"
-                className="w-full h-72 md:h-80 object-cover object-top"
-              />
-            </div>
+          <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
+            <img
+              src={SAFARI_IMG}
+              alt="スリランカ サファリ 象の群れ セルフィー"
+              className="w-full h-auto"
+            />
           </div>
 
           <div className="space-y-4 text-gray-700 leading-relaxed mb-6">
