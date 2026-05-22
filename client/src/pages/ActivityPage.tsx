@@ -203,23 +203,19 @@ export default function ActivityPage() {
             </ul>
           </div>
 
-          <div className="text-center space-y-3">
-            <div>
-              <a
-                href="/safari"
-                className="inline-block bg-stone-800 hover:bg-stone-900 text-white font-semibold px-8 py-3 rounded-full transition-colors shadow-md"
-              >
-                もっと詳しく →
-              </a>
-            </div>
-            <div>
-              <a
-                href="/#contact"
-                className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-3 rounded-full transition-colors shadow-md"
-              >
-                サファリについて問い合わせる →
-              </a>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-3 mb-4">
+            <a
+              href="/safari"
+              className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-2.5 rounded-full transition-colors text-sm shadow"
+            >
+              もっと詳しく →
+            </a>
+            <a
+              href="https://sltcs.srilanka-charter.com/contact"
+              className="inline-flex items-center justify-center gap-2 border border-emerald-600 text-emerald-700 hover:bg-emerald-50 font-bold px-6 py-2.5 rounded-full transition-colors text-sm"
+            >
+              サファリについて問い合わせる →
+            </a>
           </div>
         </section>
 
