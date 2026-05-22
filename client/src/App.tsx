@@ -21,6 +21,7 @@ import GallePage from "./pages/GallePage";
 import NuwaraEliyaPage from "./pages/NuwaraEliyaPage";
 import ActivityPage from "./pages/ActivityPage";
 import SafariPage from "./pages/SafariPage";
+import WhaleWatchingPage from "./pages/WhaleWatchingPage";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -42,6 +43,7 @@ function Router() {
       <Route path="/nuwara-eliya" component={NuwaraEliyaPage} />
       <Route path="/activity" component={ActivityPage} />
       <Route path="/safari" component={SafariPage} />
+      <Route path="/whale-watching" component={WhaleWatchingPage} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

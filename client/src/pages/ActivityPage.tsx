@@ -367,6 +367,17 @@ export default function ActivityPage() {
               ツアーは<strong>早朝6〜7時頃に出港</strong>し、沖合でクジラを探します。運が良ければ潮吹きや豪快なジャンプ（ブリーチング）、そして海に潜る際の大きな尾びれを目撃できます。ミリッサはゴールやウナワトゥナからも近く、南部観光と組み合わせて楽しめます。
             </p>
           </div>
+          <div className="flex flex-col sm:flex-row gap-3 mb-4">
+            <Link href="/whale-watching" className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-2.5 rounded-full transition-colors text-sm shadow">
+              もっと詳しく →
+            </Link>
+            <a
+              href="https://sltcs.srilanka-charter.com/contact"
+              className="inline-flex items-center justify-center gap-2 border border-emerald-600 text-emerald-700 hover:bg-emerald-50 font-bold px-6 py-2.5 rounded-full transition-colors text-sm"
+            >
+              ホエールウォッチングについて問い合わせる →
+            </a>
+          </div>
         </section>
 
         {/* ── H2: 占星術 ── */}
