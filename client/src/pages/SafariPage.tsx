@@ -380,7 +380,123 @@ export default function SafariPage() {
 
           </section>
 
-          {/* ── Section 4: お問い合わせ ── */}
+          {/* ── Section 4: モデルコース ── */}
+          <section className="py-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-stone-800 mb-2">
+              スリランカのサファリを巡るモデルコース
+            </h2>
+            <p className="text-stone-500 text-sm mb-8">
+              世界遺産・紅茶列車・ヤーラサファリを組み合わせた6日間の王道ルート
+            </p>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+              {/* 左: 旅程マップ */}
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="/manus-storage/safari_model_course_map_3641f841.png"
+                  alt="スリランカ旅程マップ 6日間 サファリモデルコース"
+                  className="w-full h-auto"
+                />
+              </div>
+
+              {/* 右: モデルコース詳細 */}
+              <div className="space-y-4">
+                {[
+                  {
+                    day: "DAY 1",
+                    color: "bg-red-500",
+                    title: "空港 → シーギリヤ",
+                    items: [
+                      "コロンボ空港からシーギリヤ地域まで車で約4時間",
+                      "途中、ダンブッラ石窟寺院（世界遺産）に立ち寄り",
+                      "シーギリヤ近郊のホテルに宿泊",
+                    ],
+                  },
+                  {
+                    day: "DAY 2",
+                    color: "bg-orange-500",
+                    title: "シーギリヤ → キャンディ",
+                    items: [
+                      "シーギリヤ・ロック観光（高さ200mの岩山要塞）",
+                      "キャンディへ移動（約3時間）",
+                      "キャンディ仏歯寺を夕方のプージャに合わせて参詣",
+                    ],
+                  },
+                  {
+                    day: "DAY 3",
+                    color: "bg-green-600",
+                    title: "キャンディ → ヌワラエリヤ",
+                    items: [
+                      "高原地帯へ車で移動（約3時間）",
+                      "茶畑の車窓を楽しみながらヌワラエリヤへ",
+                      "紅茶工場改装ホテルなどに宿泊",
+                    ],
+                  },
+                  {
+                    day: "DAY 4",
+                    color: "bg-blue-600",
+                    title: "紅茶列車 → ヤーラ前泊",
+                    items: [
+                      "Bandarawelaから紅茶列車に乗車（ナインアーチブリッジ区間）",
+                      "エッラでランチ後、ヤーラ国立公園近郊へ移動",
+                      "翌朝の早朝サファリに備えてヤーラ近郊に宿泊",
+                    ],
+                  },
+                  {
+                    day: "DAY 5",
+                    color: "bg-purple-600",
+                    title: "ヤーラ国立公園 → ゴール",
+                    items: [
+                      "早朝5〜6時からジープサファリ体験（ヒョウに遭遇できる確率が高い）",
+                      "午前中のサファリ終了後、ゴール近郊へ移動（約2時間）",
+                      "インド洋を望むリゾートホテルに宿泊",
+                    ],
+                  },
+                  {
+                    day: "DAY 6",
+                    color: "bg-teal-600",
+                    title: "ゴール観光 → 空港へ",
+                    items: [
+                      "ゴール要塞（世界遺産）を散策",
+                      "コロンボ経由で市内観光・お土産購入",
+                      "バンダラナイケ国際空港から帰国",
+                    ],
+                  },
+                ].map(({ day, color, title, items }) => (
+                  <div key={day} className="flex gap-4">
+                    <div className="flex-shrink-0">
+                      <span className={`inline-flex items-center justify-center w-16 h-7 rounded-full text-white text-xs font-bold ${color}`}>
+                        {day}
+                      </span>
+                    </div>
+                    <div className="flex-1 border-l-2 border-stone-200 pl-4 pb-4">
+                      <h3 className="font-bold text-stone-800 mb-1">{title}</h3>
+                      <ul className="space-y-1">
+                        {items.map((item, i) => (
+                          <li key={i} className="text-sm text-stone-600 flex gap-2">
+                            <span className="text-amber-500 flex-shrink-0 mt-0.5">▸</span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                ))}
+
+                <div className="mt-4 p-4 bg-amber-50 border border-amber-200 rounded-xl text-sm text-stone-700">
+                  <span className="font-semibold text-amber-700">💡 このルートの詳細はこちら：</span>
+                  <a
+                    href="/course/5-6days"
+                    className="ml-1 text-amber-600 hover:text-amber-700 underline"
+                  >
+                    5泊6日モデルコース（世界遺産・紅茶列車・サファリを楽しむ王道プラン）
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* ── Section 5: お問い合わせ ── */}
           <section className="bg-stone-800 text-white rounded-2xl p-8 md:p-12 text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
               サファリをご旅行に組み込みたい方へ
