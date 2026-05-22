@@ -20,15 +20,7 @@ const sltcsMerits = [
   },
   {
     icon: <CheckCircle2 className="w-5 h-5 text-amber-500 mt-0.5 shrink-0" />,
-    text: "日本語ドライバーが同行。ツアー中の注意事項や見どころを日本語で案内します",
-  },
-  {
-    icon: <CheckCircle2 className="w-5 h-5 text-amber-500 mt-0.5 shrink-0" />,
     text: "信頼できる現地ボート会社を厳選。安全性・快適性の高いボートを手配します",
-  },
-  {
-    icon: <CheckCircle2 className="w-5 h-5 text-amber-500 mt-0.5 shrink-0" />,
-    text: "他の旅行客との混載ではなく、グループだけのプライベートな移動が可能です",
   },
 ];
 
@@ -278,13 +270,13 @@ export default function WhaleWatchingPage() {
                     <span className="text-gray-600 font-medium">{m}</span>
                     <div className={`w-full h-6 rounded ${isBest ? "bg-blue-500" : "bg-gray-200"}`} />
                     <span className={`text-[10px] ${isBest ? "text-blue-700 font-bold" : "text-gray-400"}`}>
-                      {isBest ? "◎" : "×"}
+                      {isBest ? "◎" : "△"}
                     </span>
                   </div>
                 );
               })}
             </div>
-            <p className="text-xs text-gray-500 mt-3">◎ = ベストシーズン（遭遇率高）　× = オフシーズン（運休・荒天多）</p>
+            <p className="text-xs text-gray-500 mt-3">◎ = ベストシーズン（遭遇率高）　△ = オフシーズン（運休・荒天多）</p>
           </div>
         </div>
       </section>
