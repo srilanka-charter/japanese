@@ -70,3 +70,11 @@
 - [x] ビレッジツアー用画像（牛車+料理体験の合成）を生成
 - [x] 占星術セクション用画像（先生の写真+紹介テキスト合成）を生成
 - [x] ActivityPageに3点の修正：①アーユルヴェーダセクション追加（Athreya情報・画像2枚）、②VILLAGE_COOKING写真削除（BULLOCK+FACILITYの2枚構成に）、③イントロを目次の上に移動
+- [x] 占星術詳細ページ（AstrologyPage.tsx / /astrology）を新規作成
+  - [x] スリランカ占星術の歴史セクション
+  - [x] シャーミラ先生プロフィールセクション（実績・鑑定内容）
+  - [x] SLTCSが手配できることセクション
+  - [x] 到着後・出発前のおすすめタイミングセクション
+  - [x] SEO対策（title/description/JSON-LD）
+  - [x] App.tsxへのルーティング追加（/astrology）
+- [x] ActivityPageの占星術セクションに「もっと詳しく →」ボタンを追加（/astrologyへ遷移）

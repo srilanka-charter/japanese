@@ -399,6 +399,14 @@ export default function ActivityPage() {
               先生は恋愛・結婚・仕事・健康・家族・運勢など幅広いテーマについて、古代の叡智と直感で人生の道しるべを示してくれます。鑑定は<strong>コロンボ国際空港の近く</strong>で行われるため、帰国前の最後の観光として立ち寄るのが特におすすめです。スリランカ旅行の締めくくりに、自分の未来を占ってもらいましょう。
             </p>
           </div>
+          <div className="flex justify-start">
+            <a
+              href="https://sltcs.srilanka-charter.com/astrology"
+              className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-white font-bold px-6 py-3 rounded-full transition-colors shadow-md text-sm"
+            >
+              もっと詳しく →
+            </a>
+          </div>
         </section>
 
         {/* ── CTA ── */}
