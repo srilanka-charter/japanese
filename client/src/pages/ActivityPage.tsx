@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 // ── 画像URL ──────────────────────────────────────────────
-const SAFARI_COMBINED_IMG = "/manus-storage/safari_combined_6037417b.png";
+const SAFARI_COMBINED_IMG = "/manus-storage/activity_safari_new_441f0bbd.png";
 const VILLAGE_BULLOCK   = "/manus-storage/village_bullock_new_1fbf411d.jpg";
 const VILLAGE_COOKING_NEW = "/manus-storage/village_cooking_new_4278495b.jpg";
 const ELEPHANT_RIDE_IMG = "/manus-storage/elephant_ride_new_42c3de4f.jpg";
