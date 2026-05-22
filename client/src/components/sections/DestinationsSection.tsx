@@ -1,4 +1,3 @@
-import { Link } from "wouter";
 
 const destinations = [
   {
@@ -30,11 +29,11 @@ const destinations = [
     href: "/galle",
   },
   {
-    name: "ヤラ国立公園",
-    desc: "野生のヒョウに出会える",
+    name: "サファリ",
+    desc: "野生のヒョウや象に出会える",
     image: "/manus-storage/yala_leopard_769d6ffa.jpg",
     size: "medium",
-    href: null,
+    href: "/safari",
   },
   {
     name: "紅茶列車（エッラ）",
@@ -59,7 +58,7 @@ export default function DestinationsSection() {
 
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
           {/* Large card - Sigiriya (clickable) */}
-          <Link
+          <a
             href="/sigiriya"
             className="col-span-2 lg:col-span-2 row-span-2 relative rounded-2xl overflow-hidden group h-64 lg:h-96 block cursor-pointer"
           >
@@ -74,7 +73,7 @@ export default function DestinationsSection() {
               <p className="text-white/70 text-sm">{destinations[0].desc}</p>
               <span className="inline-block mt-2 text-xs text-amber-300 font-semibold">詳しく見る →</span>
             </div>
-          </Link>
+          </a>
 
           {/* Small cards */}
           {destinations.slice(1).map((d, i) => {
@@ -97,13 +96,13 @@ export default function DestinationsSection() {
             );
 
             return d.href ? (
-              <Link
+              <a
                 key={i}
                 href={d.href}
                 className="relative rounded-2xl overflow-hidden group h-44 lg:h-44 block cursor-pointer"
               >
                 {cardContent}
-              </Link>
+              </a>
             ) : (
               <div key={i} className="relative rounded-2xl overflow-hidden group h-44 lg:h-44">
                 {cardContent}
