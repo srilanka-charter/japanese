@@ -401,7 +401,7 @@ export default function ActivityPage() {
           </div>
           <div className="flex justify-start">
             <a
-              href="https://sltcs.srilanka-charter.com/astrology"
+              href="/astrology"
               className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-white font-bold px-6 py-3 rounded-full transition-colors shadow-md text-sm"
             >
               もっと詳しく →
