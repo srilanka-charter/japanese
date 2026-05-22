@@ -368,9 +368,9 @@ export default function ActivityPage() {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 mb-4">
-            <Link href="/whale-watching" className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-2.5 rounded-full transition-colors text-sm shadow">
+            <a href="/whale-watching" className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-2.5 rounded-full transition-colors text-sm shadow">
               もっと詳しく →
-            </Link>
+            </a>
             <a
               href="https://sltcs.srilanka-charter.com/contact"
               className="inline-flex items-center justify-center gap-2 border border-emerald-600 text-emerald-700 hover:bg-emerald-50 font-bold px-6 py-2.5 rounded-full transition-colors text-sm"
