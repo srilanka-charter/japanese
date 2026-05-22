@@ -5,8 +5,7 @@ import Footer from "@/components/Footer";
 
 // ── 画像URL ──────────────────────────────────────────────
 const SAFARI_COMBINED_IMG = "/manus-storage/activity_safari_new_441f0bbd.png";
-const VILLAGE_BULLOCK   = "/manus-storage/village_bullock_new_1fbf411d.jpg";
-const VILLAGE_COOKING_NEW = "/manus-storage/village_cooking_new_4278495b.jpg";
+const VILLAGE_TOUR_IMG  = "/manus-storage/village_tour_new_48785d75.png";
 const ELEPHANT_RIDE_IMG = "/manus-storage/elephant_ride_new_42c3de4f.jpg";
 const WHALE_BOAT_IMG    = "/manus-storage/activity_whale_boat_eeb7b1f7.jpg";
 const WHALE_GEN_IMG     = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/whale_watching-QwGwMP6VHzQRs7q2TrnBXD.webp";
@@ -277,22 +276,13 @@ export default function ActivityPage() {
           </h2>
           <p className="text-gray-500 text-sm mb-6">牛車・水上ボート・料理体験の3時間コース</p>
 
-          {/* 写真2枚（VILLAGE_BULLOCKとVILLAGE_COOKING_NEWをgrid-cols-2で並べる） */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img
-                src={VILLAGE_BULLOCK}
-                alt="シーギリヤ村 牛車 ビレッジツアー"
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img
-                src={VILLAGE_COOKING_NEW}
-                alt="シーギリヤ村 料理体験 スリランカ料理"
-                className="w-full h-auto"
-              />
-            </div>
+          {/* ビレッジツアー写真（牛車＋料理体験の合成画像） */}
+          <div className="rounded-2xl overflow-hidden shadow-lg mb-8">
+            <img
+              src={VILLAGE_TOUR_IMG}
+              alt="シーギリヤ村 ビレッジツアー 牛車と料理体験"
+              className="w-full h-auto"
+            />
           </div>
 
           <div className="space-y-4 text-gray-700 leading-relaxed mb-6">
