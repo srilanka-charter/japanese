@@ -15,6 +15,8 @@ const languages = [
   { label: "German", href: "https://de.srilanka-charter.com/" },
   { label: "Dutch", href: "https://nl.srilanka-charter.com/" },
   { label: "Russian", href: "https://ru.srilanka-charter.com/" },
+  { label: "Malay", href: "https://ms.srilanka-charter.com/" },
+  { label: "Swedish", href: "https://sv.srilanka-charter.com/" },
 ];
 
 export default function Header() {
