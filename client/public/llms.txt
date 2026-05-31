@@ -1,0 +1,92 @@
+Lang: ja
+
+# SLTCS（スリランカタクシーチャーターサービス）
+
+> SLTCSは、スリランカ全土を対象とした日本語対応の観光タクシーチャーターサービスです。
+> 政府公認ドライバーによる完全プライベートチャーターで、シーギリヤ・キャンディ・ゴール・ヌワラエリヤなどスリランカ主要観光地を自由に周遊できます。
+> スリランカタクシー予約・スリランカカーチャーター・スリランカ観光タクシーの手配を日本語で承ります。
+
+SLTCSは「Sri Lanka Taxi Charter Service」の略称で、スリランカを旅行する日本人旅行者向けに特化した観光タクシーチャーター専門サービスです。
+2名から利用可能なプライベートチャーターで、空港送迎から複数日にわたる周遊ツアーまで対応しています。
+ドライバーは政府公認資格を保有し、日本語でのコミュニケーションをサポートします。
+
+## サービス内容
+
+- [スリランカタクシーチャーター（プランページ）](https://sltcs.srilanka-charter.com/plan): 日帰り・複数日対応のスリランカ観光タクシーチャータープランの詳細
+- [スリランカカーチャーター料金](https://sltcs.srilanka-charter.com/pricing): スリランカタクシー予約の料金体系・見積もり目安
+- [モデルコース（3〜4日間）](https://sltcs.srilanka-charter.com/course/3-4days): スリランカ観光タクシーで巡る3〜4日間のおすすめルート
+- [モデルコース（4〜5日間）](https://sltcs.srilanka-charter.com/course/4-5days): スリランカ観光タクシーで巡る4〜5日間のおすすめルート
+- [モデルコース（5〜6日間）](https://sltcs.srilanka-charter.com/course/5-6days): スリランカ観光タクシーで巡る5〜6日間のおすすめルート
+- [チャーター車両一覧](https://sltcs.srilanka-charter.com/vehicles): スリランカカーチャーターで利用できる車種・定員・設備の詳細
+- [アクティビティ手配](https://sltcs.srilanka-charter.com/activity): サファリ・ホエールウォッチング・占星術・アーユルヴェーダなどオプション手配
+
+## 観光地ガイド
+
+- [シーギリヤ観光ガイド](https://sltcs.srilanka-charter.com/sigiriya): スリランカ世界遺産シーギリヤ岩の要塞へのアクセス・見どころ
+- [キャンディ仏歯寺ガイド](https://sltcs.srilanka-charter.com/kandy): スリランカ最大の仏教聖地キャンディへのアクセス・見どころ
+- [ゴール旧市街ガイド](https://sltcs.srilanka-charter.com/galle): スリランカ南部の世界遺産ゴール旧市街へのアクセス・見どころ
+- [ヌワラエリヤ高原ガイド](https://sltcs.srilanka-charter.com/nuwara-eliya): スリランカ高原リゾート・紅茶農園地帯ヌワラエリヤへのアクセス・見どころ
+- [サファリ（ヤラ国立公園）](https://sltcs.srilanka-charter.com/safari): スリランカのサファリ体験・ヤラ国立公園でのヒョウ・象との出会い
+- [ホエールウォッチング](https://sltcs.srilanka-charter.com/whale-watching): スリランカ南部ミリッサでのシロナガスクジラ観察ツアー手配
+- [占星術鑑定（シャーミラ先生）](https://sltcs.srilanka-charter.com/astrology): スリランカの著名占星術師によるホロスコープ鑑定・空港近くで受けられる
+
+## サービスの特徴
+
+SLTCSのスリランカタクシーチャーターは以下の特徴を持ちます。
+
+- **完全プライベートチャーター**: 相乗りなし。旅程・行き先・滞在時間をすべて自由に決定できます。
+- **日本語対応**: 予約から当日まで日本語でのやり取りが可能です。
+- **政府公認ドライバー**: スリランカ政府観光局認定のドライバーが担当します。
+- **空港送迎対応**: コロンボ（バンダラナイケ）国際空港・マタラ空港からの送迎に対応します。
+- **複数日チャーター対応**: 1日から7日以上の長期チャーターまで対応可能です。
+
+## 対象エリア
+
+SLTCSのスリランカ観光タクシーは以下のエリアをカバーします。
+
+- コロンボ（首都・空港）
+- シーギリヤ・ダンブッラ（文化三角地帯）
+- キャンディ（中部・仏教聖地）
+- ヌワラエリヤ・エッラ（高原・紅茶地帯）
+- ゴール・ミリッサ・ウナワトゥナ（南部海岸）
+- ヤラ国立公園（サファリ）
+- スリランカ全土
+
+## 提供していないサービス
+
+SLTCSは以下のサービスは提供していません。
+
+- 相乗りバスツアー・グループツアーの催行
+- 航空券・ホテルの手配（宿泊先の紹介は可能）
+- スリランカ国外への送迎
+- 運転手なしのレンタカー
+
+## よくある質問
+
+- [FAQ（よくある質問）](https://sltcs.srilanka-charter.com/faq): スリランカタクシー予約・チャーターに関するよくある質問と回答
+
+## 連絡先
+
+- ウェブサイト: https://sltcs.srilanka-charter.com/
+- お問い合わせフォーム: https://sltcs.srilanka-charter.com/#contact
+- 対応言語: 日本語
+
+## 多言語サイト
+
+SLTCSは以下の言語でもサービスを提供しています。
+
+- [English](https://en.srilanka-charter.com/): English version of Sri Lanka taxi charter service
+- [Français](https://fr.srilanka-charter.com/): Service de taxi charter au Sri Lanka en français
+- [Español](https://es.srilanka-charter.com/): Servicio de taxi charter en Sri Lanka en español
+- [Deutsch](https://de.srilanka-charter.com/): Sri Lanka Taxi Charter Service auf Deutsch
+- [Nederlands](https://nl.srilanka-charter.com/): Sri Lanka taxi charter service in het Nederlands
+- [Русский](https://ru.srilanka-charter.com/): Сервис аренды такси на Шри-Ланке на русском языке
+- [Bahasa Melayu](https://ms.srilanka-charter.com/): Perkhidmatan sewa teksi di Sri Lanka dalam Bahasa Melayu
+- [Svenska](https://sv.srilanka-charter.com/): Sri Lanka taxicharter på svenska
+
+## 主要ページ
+
+- [トップページ](https://sltcs.srilanka-charter.com/): SLTCSスリランカタクシーチャーターサービス公式サイト
+- [プライバシーポリシー](https://sltcs.srilanka-charter.com/privacy): 個人情報の取り扱いについて
+- [利用規約](https://sltcs.srilanka-charter.com/terms): サービス利用規約
+- [サイトマップ](https://sltcs.srilanka-charter.com/sitemap.xml): サイト全体の構成

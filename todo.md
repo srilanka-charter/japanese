@@ -78,3 +78,4 @@
   - [x] SEO対策（title/description/JSON-LD）
   - [x] App.tsxへのルーティング追加（/astrology）
 - [x] ActivityPageの占星術セクションに「もっと詳しく →」ボタンを追加（/astrologyへ遷移）
+- [x] llms.txtを作成してclient/publicに配置（AI引用最適化・スリランカタクシーチャーター関連キーワード対応）
