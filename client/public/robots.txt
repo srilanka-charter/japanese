@@ -7,3 +7,24 @@ Disallow: /404
 
 # サイトマップ
 Sitemap: https://sltcs.srilanka-charter.com/sitemap.xml
+
+# AI Discovery Files
+# llms.txt: AI systems can find structured business identity information here
+LLMs: https://sltcs.srilanka-charter.com/llms.txt
+
+# AIクローラー向け: llms.txtへのアクセスを明示的に許可
+User-agent: GPTBot
+Allow: /llms.txt
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /llms.txt
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /llms.txt
+Allow: /
+
+User-agent: Googlebot
+Allow: /llms.txt
+Allow: /
