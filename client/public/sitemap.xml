@@ -140,7 +140,7 @@
   </url>
   <url>
     <loc>https://sltcs.srilanka-charter.com/theme-travel</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -220,6 +220,12 @@
   <url>
     <loc>https://sltcs.srilanka-charter.com/theme-travel/family-travel-charter</loc>
     <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sltcs.srilanka-charter.com/theme-travel/solo-women-travel-charter</loc>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
