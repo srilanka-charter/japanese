@@ -8,7 +8,6 @@ const blogMenuItems = [
   { label: "観光地ガイド", href: "/blog/sightseeing-guide" },
   { label: "タクシーチャーターの基礎", href: "/blog/taxi-charter-basics" },
   { label: "アクティビティ", href: "/activity" },
-  { label: "属性別旅行", href: "/blog/travel-by-type" },
   { label: "旅行計画・準備", href: "/blog/travel-planning" },
   { label: "テーマ旅行", href: "/blog/theme-travel" },
 ];
