@@ -58,7 +58,7 @@ export default function HoneymoonArticle() {
             className="w-full object-cover max-h-[420px]"
           />
           <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
-            スリランカの民族衣装をまとって夕日の海岸で記念撮影。ドライバーのアルナさんが特別な演出をサポート。
+            スリランカの民族衣装をまとって夕日の海岸で記念撮影。ドライバーが特別な演出をサポート。
           </figcaption>
         </figure>
 
