@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getArticleBySlug, getCategoryBySlug } from "@/data/blogData";
 import Course10DaysArticle from "./articles/Course10DaysArticle";
+import BookingTimingArticle from "./articles/BookingTimingArticle";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 記事コンテンツ（slug 別に分岐）
@@ -14,6 +15,9 @@ function ArticleContent({ slug }: { slug: string }) {
   }
   if (slug === "course-10days") {
     return <Course10DaysArticle />;
+  }
+  if (slug === "when-to-book-charter") {
+    return <BookingTimingArticle />;
   }
   return (
     <p className="text-gray-500 text-center py-12">記事コンテンツを準備中です。</p>
