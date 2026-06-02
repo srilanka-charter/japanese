@@ -72,7 +72,8 @@ function WhyTaxiCharterArticle() {
         </p>
 
         {/* 比較表 */}
-        <div className="overflow-x-auto rounded-xl border border-gray-200 mb-6">
+        <div className="overflow-x-auto rounded-xl border border-gray-200 mb-6 -mx-4 sm:mx-0">
+          <div className="min-w-[520px] sm:min-w-0">
           <table className="w-full text-sm">
             <thead>
               <tr className="bg-[oklch(0.12_0.02_155)] text-white">
@@ -100,6 +101,7 @@ function WhyTaxiCharterArticle() {
               ))}
             </tbody>
           </table>
+          </div>
         </div>
         <p className="text-sm text-gray-500 leading-relaxed">
           費用面では鉄道・バスが優れていますが、自由度・快適さ・日本語対応という観点では、タクシーチャーターが他の手段を大きく上回ります。

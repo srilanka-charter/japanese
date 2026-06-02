@@ -106,7 +106,8 @@ export default function BookingTimingArticle() {
         旅行の時期によって、推奨される予約タイミングは異なります。以下の表を参考にしてください。
       </p>
 
-      <div className="overflow-x-auto mb-10">
+      <div className="overflow-x-auto mb-10 -mx-4 sm:mx-0">
+        <div className="min-w-[480px] sm:min-w-0">
         <table className="w-full text-sm border-collapse">
           <thead>
             <tr className="bg-[oklch(0.35_0.12_155)] text-white">
@@ -130,6 +131,7 @@ export default function BookingTimingArticle() {
             ))}
           </tbody>
         </table>
+        </div>
       </div>
 
       <div className="bg-green-50 border border-green-200 rounded-xl p-5 mb-10">
