@@ -6,11 +6,11 @@ export default function HoneymoonArticle() {
 
       {/* ── リード文 ── */}
       <p className="text-base sm:text-lg leading-[1.9] text-gray-700 mb-10">
-        「新婚旅行はどこに行こう？」と悩んでいるカップルに、いま注目されているのが<strong className="text-gray-900">スリランカ</strong>です。
-        世界遺産・紅茶畑・ビーチ・サファリ・スパ…と多彩な体験が一度に楽しめるうえ、
+        「<strong className="text-gray-900">スリランカ ハネムーン</strong>」「<strong className="text-gray-900">スリランカ 新婚旅行</strong>」で検索しているカップル必見。
+        世界遺産・紅茶畑・ビーチ・サファリ・スパ…と多彩な体験が一度に楽しめるスリランカは、ハワイ・バリ島とは一味違う非日常感あふれるハネムーン先です。
         <strong className="text-gray-900">専用車チャーター（タクシーチャーター）</strong>を使えば、
         二人だけのプライベートな時間を最大限に満喫できます。
-        この記事では、スリランカが新婚旅行に選ばれる理由と、おすすめのモデルコースを詳しくご紹介します。
+        この記事では、スリランカがハネムーン・新婚旅行に選ばれる理由と、おすすめの6泊7日モデルコースを詳しくご紹介します。
       </p>
 
       {/* ── 目次 ── */}
@@ -18,13 +18,13 @@ export default function HoneymoonArticle() {
         <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-3">目次</p>
         <ol className="space-y-1.5 text-sm">
           {[
-            ["1", "スリランカが新婚旅行に選ばれる理由"],
-            ["2", "専用車チャーターがハネムーンに最適な理由"],
-            ["3", "カップルにおすすめの観光スポット"],
-            ["4", "ハネムーン向けモデルコース（6泊7日）"],
-            ["5", "実際のカップルの声"],
-            ["6", "よくある質問"],
-            ["7", "まとめ"],
+            ["1", "スリランカがハネムーン・新婚旅行に選ばれる理由"],
+            ["2", "スリランカハネムーンに専用車チャーターがおすすめな理由"],
+            ["3", "スリランカ新婚旅行で訪れたいカップル向け観光スポット"],
+            ["4", "スリランカハネムーンモデルコース（6泊7日）完全版"],
+            ["5", "スリランカ新婚旅行をしたカップルのリアルな声"],
+            ["6", "スリランカハネムーンよくある質問（FAQ）"],
+            ["7", "スリランカ新婚旅行（ハネムーン）まとめ"],
           ].map(([num, label]) => (
             <li key={num} className="flex items-start gap-2 text-gray-600">
               <span className="text-[oklch(0.35_0.12_155)] font-bold flex-shrink-0">{num}.</span>
@@ -42,7 +42,7 @@ export default function HoneymoonArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          スリランカが新婚旅行に選ばれる理由
+          スリランカがハネムーン・新婚旅行に選ばれる理由
         </h2>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
           スリランカは「インド洋の真珠」とも呼ばれる美しい島国。日本からの直行便はありませんが、
@@ -108,7 +108,7 @@ export default function HoneymoonArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          専用車チャーターがハネムーンに最適な理由
+          スリランカハネムーンに専用車チャーターがおすすめな理由
         </h2>
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
           新婚旅行で最も大切なのは、<strong className="text-gray-900">二人だけの時間をゆっくり過ごすこと</strong>。
@@ -119,32 +119,32 @@ export default function HoneymoonArticle() {
           {[
             {
               icon: "💑",
-              title: "二人だけのプライベート空間",
+              title: "スリランカハネムーンで二人だけのプライベート空間",
               desc: "貸し切りの車内は二人だけの空間。移動中も会話を楽しみながら、ゆったりとした時間を過ごせます。",
             },
             {
               icon: "🗺️",
-              title: "自由な旅程設計",
+              title: "新婚旅行で自由な旅程設計",
               desc: "「夕日が見たい」「もう少しゆっくりしたい」など、その場の気分で行程を変更できます。",
             },
             {
               icon: "🌅",
-              title: "サンセット・ロマンティックスポットへ",
+              title: "スリランカのサンセット・ロマンティックスポットへ",
               desc: "ゴールの城壁や南部のビーチなど、夕日が美しいスポットへの時間調整もドライバーにお任せ。",
             },
             {
               icon: "🎊",
-              title: "特別な演出のサポート",
+              title: "スリランカハネムーンならではの特別演出",
               desc: "民族衣装の手配やサプライズ演出など、ドライバーが現地のコーディネートをサポートします。",
             },
             {
               icon: "🌿",
-              title: "荷物の心配なし",
+              title: "スリランカハネムーン中の荷物の心配なし",
               desc: "大きなスーツケースも車内に積んだまま移動。ホテルのチェックアウト後も荷物を気にせず観光できます。",
             },
             {
               icon: "🛡️",
-              title: "安心・安全な移動",
+              title: "スリランカ新婚旅行で安心・安全な移動",
               desc: "日本語対応の政府公認ドライバーが同行。初めてのスリランカでも安心して旅を楽しめます。",
             },
           ].map((item, i) => (
@@ -165,7 +165,7 @@ export default function HoneymoonArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          カップルにおすすめの観光スポット
+          スリランカ新婚旅行で訪れたいカップル向け観光スポット
         </h2>
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
           スリランカには、カップルで訪れたい絶景スポットが数多くあります。
@@ -251,7 +251,7 @@ export default function HoneymoonArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          ハネムーン向けモデルコース（6泊7日）
+          スリランカハネムーンモデルコース（6泊7日）完全版
         </h2>
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
           スリランカの主要スポットを効率よく巡る6泊7日のハネムーンコースです。
@@ -318,7 +318,7 @@ export default function HoneymoonArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          実際のカップルの声
+          スリランカ新婚旅行をしたカップルのリアルな声
         </h2>
 
         <div className="space-y-5">
@@ -370,7 +370,7 @@ export default function HoneymoonArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          よくある質問
+          スリランカハネムーンよくある質問（FAQ）
         </h2>
 
         <div className="space-y-4">
@@ -417,7 +417,7 @@ export default function HoneymoonArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          まとめ
+          スリランカ新婚旅行（ハネムーン）まとめ
         </h2>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
           スリランカは、世界遺産・ビーチ・サファリ・茶畑・文化体験が一島に凝縮された、
@@ -426,10 +426,10 @@ export default function HoneymoonArticle() {
         </p>
         <ul className="space-y-2 text-base text-gray-700 mb-8">
           {[
-            "二人だけの貸し切り車で、自由なペースで旅できる",
-            "民族衣装・サンセット・サプライズ演出など特別な体験をサポート",
-            "日本語対応の政府公認ドライバーが同行で安心",
-            "ハワイ・バリ島より費用を抑えながら、より多彩な体験が可能",
+            "スリランカハネムーンは二人だけの貸し切り車で、自由なペースで旅できる",
+            "民族衣装・サンセット・サプライズ演出などスリランカ新婚旅行ならではの特別体験をサポート",
+            "日本語対応の政府公認ドライバーが同行で初めてのスリランカハネムーンも安心",
+            "ハワイ・バリ島よりコスパ良好で、スリランカ新婚旅行でより多彩な体験が可能",
           ].map((item, i) => (
             <li key={i} className="flex items-start gap-2">
               <span className="text-[oklch(0.35_0.12_155)] font-bold flex-shrink-0 mt-0.5">✓</span>

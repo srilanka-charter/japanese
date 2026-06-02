@@ -85,6 +85,14 @@
 - [x] 1記事目「スリランカ旅行でタクシーチャーターがおすすめな理由」を作成（タクシーチャーター基礎カテゴリー）
 - [x] App.tsxにブログ関連ルートを追加
 - [x] 全ページのSEO最適化（useSEOフック統一）
+- [x] ハネムーン記事SEO強化
+  - [x] blogData.ts: titleを「スリランカハネムーン・新婚旅行完全ガイド｜タクシーチャーターで行く6泊7日モデルコース」に変更
+  - [x] blogData.ts: excerptに「スリランカ ハネムーン」「スリランカ 新婚旅行」キーワードを自然に含める
+  - [x] HoneymoonArticle.tsx: リード文にキーワードを自然に挿入
+  - [x] HoneymoonArticle.tsx: H2見出しで7箇所すべてに「スリランカハネムーン」「スリランカ新婚旅行」を含める
+  - [x] HoneymoonArticle.tsx: H3カード見出しにキーワードを自然に追加
+  - [x] HoneymoonArticle.tsx: 目次ラベルH2見出しに合わせて更新
+  - [x] HoneymoonArticle.tsx: まとめリストにキーワードを追加
   - [x] BlogArticlePage.tsx: useSEOフック適用確認
   - [x] BlogCategoryPage.tsx: useSEOフック適用
   - [x] WhaleWatchingPage.tsx: JSX内SEOタグ → useSEOフック移行
