@@ -8,6 +8,17 @@ const modelCourses = [
   { label: "5泊6日スリランカモデルコース", href: "/course/5-6days", internal: true },
 ];
 
+const blogCategories = [
+  { label: "タクシーチャーターの基礎", slug: "taxi-charter-basics" },
+  { label: "空港送迎・都市間移動", slug: "airport-transfer" },
+  { label: "モデルコース", slug: "model-course" },
+  { label: "観光地ガイド", slug: "sightseeing-guide" },
+  { label: "サファリ・自然体験", slug: "safari-nature" },
+  { label: "属性別旅行", slug: "travel-by-type" },
+  { label: "旅行計画・準備", slug: "travel-planning" },
+  { label: "テーマ旅行", slug: "theme-travel" },
+];
+
 const languages = [
   { label: "English", href: "https://en.srilanka-charter.com/" },
   { label: "French", href: "https://fr.srilanka-charter.com/" },
@@ -23,9 +34,12 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [courseOpen, setCourseOpen] = useState(false);
+  const [blogOpen, setBlogOpen] = useState(false);
+  const [mobileBlogOpen, setMobileBlogOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [location] = useLocation();
   const langRef = useRef<HTMLDivElement>(null);
+  const blogRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -37,6 +51,9 @@ export default function Header() {
     const handleClickOutside = (e: MouseEvent) => {
       if (langRef.current && !langRef.current.contains(e.target as Node)) {
         setLangOpen(false);
+      }
+      if (blogRef.current && !blogRef.current.contains(e.target as Node)) {
+        setBlogOpen(false);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -137,6 +154,33 @@ export default function Header() {
               アクティビティ
             </Link>
 
+            {/* お役立ち情報 Dropdown */}
+            <div
+              className="relative"
+              ref={blogRef}
+              onMouseEnter={() => setBlogOpen(true)}
+              onMouseLeave={() => setBlogOpen(false)}
+            >
+              <button className="flex items-center gap-1 text-white/90 hover:text-[oklch(0.75_0.12_75)] px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200">
+                お役立ち情報
+                <ChevronDown size={14} className={`transition-transform duration-200 ${blogOpen ? "rotate-180" : ""}`} />
+              </button>
+              {blogOpen && (
+                <div className="absolute top-full left-0 mt-1 w-56 bg-[oklch(0.12_0.02_155)] border border-white/10 rounded-lg shadow-2xl overflow-hidden z-50">
+                  {blogCategories.map((cat) => (
+                    <Link
+                      key={cat.slug}
+                      href={`/blog/${cat.slug}`}
+                      onClick={() => setBlogOpen(false)}
+                      className="block px-4 py-3 text-sm text-white/80 hover:bg-[oklch(0.35_0.12_155)] hover:text-[oklch(0.75_0.12_75)] transition-colors duration-150 border-b border-white/5 last:border-0"
+                    >
+                      {cat.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
             <a
               href="#contact"
               onClick={scrollToContact}
@@ -175,8 +219,6 @@ export default function Header() {
                 </div>
               )}
             </div>
-
-
           </nav>
 
           {/* Mobile menu button */}
@@ -249,6 +291,31 @@ export default function Header() {
               アクティビティ
             </Link>
 
+            {/* Mobile お役立ち情報 */}
+            <div>
+              <button
+                onClick={() => setMobileBlogOpen(!mobileBlogOpen)}
+                className="flex items-center justify-between w-full text-white/90 px-3 py-3 text-base font-medium border-b border-white/10"
+              >
+                お役立ち情報
+                <ChevronDown size={16} className={`transition-transform ${mobileBlogOpen ? "rotate-180" : ""}`} />
+              </button>
+              {mobileBlogOpen && (
+                <div className="pl-4 bg-black/20">
+                  {blogCategories.map((cat) => (
+                    <Link
+                      key={cat.slug}
+                      href={`/blog/${cat.slug}`}
+                      onClick={() => { setMobileOpen(false); setMobileBlogOpen(false); }}
+                      className="block text-white/70 px-3 py-2.5 text-sm border-b border-white/5 last:border-0"
+                    >
+                      {cat.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
             <a
               href="#contact"
               onClick={scrollToContact}
@@ -264,8 +331,6 @@ export default function Header() {
             >
               FAQ
             </Link>
-
-
 
             {/* Mobile Language Switcher */}
             <div className="pt-3 border-t border-white/10">

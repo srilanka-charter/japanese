@@ -23,6 +23,8 @@ import ActivityPage from "./pages/ActivityPage";
 import SafariPage from "./pages/SafariPage";
 import WhaleWatchingPage from "./pages/WhaleWatchingPage";
 import AstrologyPage from "./pages/AstrologyPage";
+import BlogCategoryPage from "./pages/BlogCategoryPage";
+import BlogArticlePage from "./pages/BlogArticlePage";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -46,6 +48,8 @@ function Router() {
       <Route path="/safari" component={SafariPage} />
       <Route path="/whale-watching" component={WhaleWatchingPage} />
       <Route path="/astrology" component={AstrologyPage} />
+      <Route path="/blog/:category/:slug" component={BlogArticlePage} />
+      <Route path="/blog/:category" component={BlogCategoryPage} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
