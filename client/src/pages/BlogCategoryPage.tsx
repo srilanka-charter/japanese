@@ -129,7 +129,7 @@ export default function BlogCategoryPage() {
       <div className="bg-white border-b border-gray-200 sticky top-16 lg:top-20 z-40">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex gap-1 overflow-x-auto py-3 scrollbar-hide">
-            {blogCategories.map((cat) => (
+            {blogCategories.filter((cat) => cat.slug !== "travel-by-type").map((cat) => (
               <Link
                 key={cat.slug}
                 href={`/${cat.slug}`}
