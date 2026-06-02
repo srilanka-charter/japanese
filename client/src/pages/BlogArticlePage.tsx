@@ -284,6 +284,7 @@ function WhyTaxiCharterArticle() {
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <a
             href="/#contact"
+            onClick={(e) => { e.preventDefault(); window.location.href = '/#contact'; }}
             className="inline-block bg-[oklch(0.75_0.12_75)] text-[oklch(0.12_0.02_155)] font-bold px-8 py-3 rounded-full text-sm hover:opacity-90 transition-opacity"
           >
             無料で相談する
