@@ -52,12 +52,12 @@ export default function FamilyTravelArticle() {
         {/* アイキャッチ画像 */}
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-family-travel-hero-MxVNfzXrPpRtNveAS4zeaF.webp"
-            alt="スリランカ・シーギリヤ前で笑顔の日本人家族"
+            src="/manus-storage/family-travel-sigiriya-real_febb1bf2.jpg"
+            alt="スリランカでサファリジープに乗る日本人家族とドライバー"
             className="w-full object-cover max-h-80"
           />
           <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
-            シーギリヤ岩の前で記念撮影。子連れでも安心して楽しめる観光地です。
+            サファリジープの上から笑顔でポーズ。ドライバーのアルナさんと一緒に最高の思い出を。
           </figcaption>
         </figure>
       </section>
