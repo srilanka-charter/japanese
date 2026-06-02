@@ -97,6 +97,20 @@ export const blogArticles: BlogArticle[] = [
     externalHref: "/course/5-6days",
   },
 
+  // ── モデルコース（長期） ───────────────────────────────────────────────────
+  {
+    slug: "course-10days",
+    title: "スリランカを10日間で周遊する大満足モデルコース",
+    excerpt:
+      "スリランカの魅力をすべて詰め込んだ10日間の周遊プラン。世界遺産・サファリ・紅茶列車・ビーチ・ホエールウォッチングまで、専用車チャーターで余裕を持って巡る大満足の旅程をご紹介します。",
+    category: "モデルコース",
+    categorySlug: "model-course",
+    publishedAt: "2026-06-02",
+    thumbnail:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-course-10days-5oo5hk9wkcUpAUQhRGKDKE.webp",
+    readingTime: 12,
+  },
+
   // ── タクシーチャーターの基礎 ──────────────────────────────────────────────
   {
     slug: "why-taxi-charter-is-recommended",
