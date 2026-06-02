@@ -3,30 +3,15 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, ChevronDown, Globe } from "lucide-react";
 
 // ─── お役立ち情報プルダウン構成 ───────────────────────────────────────────────
-// セクション1: モデルコース（記事リスト形式）
-const modelCourseLinks = [
-  { label: "3泊4日スリランカモデルコース", href: "/course/3-4days" },
-  { label: "4泊5日スリランカモデルコース", href: "/course/4-5days" },
-  { label: "5泊6日スリランカモデルコース", href: "/course/5-6days" },
-];
-
-// セクション2: 観光地ガイド（既存ページへのリンク）
-const sightseeingLinks = [
-  { label: "シーギリヤ", href: "/sigiriya" },
-  { label: "キャンディ", href: "/kandy" },
-  { label: "ゴール", href: "/galle" },
-  { label: "サファリ", href: "/safari" },
-  { label: "紅茶列車（エッラ）", href: "/tea-train" },
-];
-
-// セクション3: 記事カテゴリー（「モデルコース」「空港送迎・都市間移動」を除く）
-const blogCategories = [
-  { label: "タクシーチャーターの基礎", slug: "taxi-charter-basics" },
-  { label: "観光地ガイド", slug: "sightseeing-guide" },
-  { label: "サファリ・自然体験", slug: "safari-nature" },
-  { label: "属性別旅行", slug: "travel-by-type" },
-  { label: "旅行計画・準備", slug: "travel-planning" },
-  { label: "テーマ旅行", slug: "theme-travel" },
+// 記事カテゴリー（モデルコース・観光地ガイドは単一リンク、その他はカテゴリーページへ）
+const blogMenuItems = [
+  { label: "モデルコース", href: "/blog/model-course" },
+  { label: "観光地ガイド", href: "/blog/sightseeing-guide" },
+  { label: "タクシーチャーターの基礎", href: "/blog/taxi-charter-basics" },
+  { label: "サファリ・自然体験", href: "/blog/safari-nature" },
+  { label: "属性別旅行", href: "/blog/travel-by-type" },
+  { label: "旅行計画・準備", href: "/blog/travel-planning" },
+  { label: "テーマ旅行", href: "/blog/theme-travel" },
 ];
 
 const languages = [
@@ -78,12 +63,6 @@ export default function Header() {
     }
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
-
-  const itemClass =
-    "block px-4 py-2.5 text-sm text-white/80 hover:bg-[oklch(0.35_0.12_155)] hover:text-[oklch(0.75_0.12_75)] transition-colors duration-150 border-b border-white/5 last:border-0";
-  const sectionLabelClass =
-    "px-4 pt-3 pb-1 text-[10px] text-white/30 font-semibold tracking-widest uppercase";
-  const dividerClass = "border-t border-white/10";
 
   return (
     <header
@@ -143,60 +122,28 @@ export default function Header() {
               アクティビティ
             </Link>
 
-            {/* お役立ち情報 Dropdown */}
+            {/* お役立ち情報 Dropdown（ホバーで開く） */}
             <div
               className="relative"
               ref={blogRef}
               onMouseEnter={() => setBlogOpen(true)}
               onMouseLeave={() => setBlogOpen(false)}
             >
-              <button className="flex items-center gap-1 text-white/90 hover:text-[oklch(0.75_0.12_75)] px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200">
+              {/* ラベル自体はリンクではなくホバートリガー */}
+              <span className="flex items-center gap-1 text-white/90 hover:text-[oklch(0.75_0.12_75)] px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200 cursor-default select-none">
                 お役立ち情報
                 <ChevronDown size={14} className={`transition-transform duration-200 ${blogOpen ? "rotate-180" : ""}`} />
-              </button>
+              </span>
               {blogOpen && (
-                <div className="absolute top-full left-0 mt-1 w-72 bg-[oklch(0.12_0.02_155)] border border-white/10 rounded-lg shadow-2xl overflow-hidden z-50">
-
-                  {/* ── セクション1: モデルコース ── */}
-                  <p className={sectionLabelClass}>モデルコース</p>
-                  {modelCourseLinks.map((c) => (
+                <div className="absolute top-full left-0 mt-1 w-56 bg-[oklch(0.12_0.02_155)] border border-white/10 rounded-lg shadow-2xl overflow-hidden z-50">
+                  {blogMenuItems.map((item) => (
                     <Link
-                      key={c.href}
-                      href={c.href}
+                      key={item.href}
+                      href={item.href}
                       onClick={() => setBlogOpen(false)}
-                      className={itemClass}
+                      className="block px-4 py-3 text-sm text-white/80 hover:bg-[oklch(0.35_0.12_155)] hover:text-[oklch(0.75_0.12_75)] transition-colors duration-150 border-b border-white/5 last:border-0"
                     >
-                      {c.label}
-                    </Link>
-                  ))}
-
-                  {/* ── セクション2: 観光地ガイド ── */}
-                  <div className={dividerClass}>
-                    <p className={sectionLabelClass}>観光地ガイド</p>
-                  </div>
-                  {sightseeingLinks.map((s) => (
-                    <Link
-                      key={s.href}
-                      href={s.href}
-                      onClick={() => setBlogOpen(false)}
-                      className={itemClass}
-                    >
-                      {s.label}
-                    </Link>
-                  ))}
-
-                  {/* ── セクション3: 記事カテゴリー ── */}
-                  <div className={dividerClass}>
-                    <p className={sectionLabelClass}>記事カテゴリー</p>
-                  </div>
-                  {blogCategories.map((cat) => (
-                    <Link
-                      key={cat.slug}
-                      href={`/blog/${cat.slug}`}
-                      onClick={() => setBlogOpen(false)}
-                      className={itemClass}
-                    >
-                      {cat.label}
+                      {item.label}
                     </Link>
                   ))}
                 </div>
@@ -300,40 +247,14 @@ export default function Header() {
               </button>
               {mobileBlogOpen && (
                 <div className="pl-4 bg-black/20">
-                  {/* モデルコース */}
-                  <p className="px-3 pt-2 pb-0.5 text-[10px] text-white/30 font-semibold tracking-widest uppercase">モデルコース</p>
-                  {modelCourseLinks.map((c) => (
+                  {blogMenuItems.map((item) => (
                     <Link
-                      key={c.href}
-                      href={c.href}
+                      key={item.href}
+                      href={item.href}
                       onClick={() => { setMobileOpen(false); setMobileBlogOpen(false); }}
                       className="block text-white/70 px-3 py-2.5 text-sm border-b border-white/5 last:border-0"
                     >
-                      {c.label}
-                    </Link>
-                  ))}
-                  {/* 観光地ガイド */}
-                  <p className="px-3 pt-2 pb-0.5 text-[10px] text-white/30 font-semibold tracking-widest uppercase border-t border-white/10 mt-1">観光地ガイド</p>
-                  {sightseeingLinks.map((s) => (
-                    <Link
-                      key={s.href}
-                      href={s.href}
-                      onClick={() => { setMobileOpen(false); setMobileBlogOpen(false); }}
-                      className="block text-white/70 px-3 py-2.5 text-sm border-b border-white/5 last:border-0"
-                    >
-                      {s.label}
-                    </Link>
-                  ))}
-                  {/* 記事カテゴリー */}
-                  <p className="px-3 pt-2 pb-0.5 text-[10px] text-white/30 font-semibold tracking-widest uppercase border-t border-white/10 mt-1">記事カテゴリー</p>
-                  {blogCategories.map((cat) => (
-                    <Link
-                      key={cat.slug}
-                      href={`/blog/${cat.slug}`}
-                      onClick={() => { setMobileOpen(false); setMobileBlogOpen(false); }}
-                      className="block text-white/70 px-3 py-2.5 text-sm border-b border-white/5 last:border-0"
-                    >
-                      {cat.label}
+                      {item.label}
                     </Link>
                   ))}
                 </div>

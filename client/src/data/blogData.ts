@@ -17,6 +17,11 @@ export interface BlogCategory {
 
 export const blogCategories: BlogCategory[] = [
   {
+    slug: "model-course",
+    label: "モデルコース",
+    description: "3泊4日・4泊5日など日数別のスリランカ観光モデルコースを専用車チャーターで紹介します。",
+  },
+  {
     slug: "taxi-charter-basics",
     label: "タクシーチャーターの基礎",
     description: "スリランカのタクシーチャーターとは何か、料金・予約方法・専用車のメリットをわかりやすく解説します。",
