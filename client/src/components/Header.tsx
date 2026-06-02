@@ -239,14 +239,14 @@ export default function Header() {
                 <ChevronDown size={16} className={`transition-transform ${mobileBlogOpen ? "rotate-180" : ""}`} />
               </button>
               {mobileBlogOpen && (
-                <div className="pl-4 bg-black/20">
+                <div className="pl-4 bg-[oklch(0.08_0.02_155)]">
                   {blogMenuItems.map((item) => (
                     item.href.startsWith("http") ? (
                       <a
                         key={item.href}
                         href={item.href}
                         onClick={() => { setMobileOpen(false); setMobileBlogOpen(false); }}
-                        className="block text-white/70 px-3 py-2.5 text-sm border-b border-white/5 last:border-0"
+                        className="block text-white/90 px-3 py-3 text-sm border-b border-white/10 last:border-0 hover:text-[oklch(0.75_0.12_75)] transition-colors"
                       >
                         {item.label}
                       </a>
@@ -255,7 +255,7 @@ export default function Header() {
                         key={item.href}
                         href={item.href}
                         onClick={() => { setMobileOpen(false); setMobileBlogOpen(false); }}
-                        className="block text-white/70 px-3 py-2.5 text-sm border-b border-white/5 last:border-0"
+                        className="block text-white/90 px-3 py-3 text-sm border-b border-white/10 last:border-0 hover:text-[oklch(0.75_0.12_75)] transition-colors"
                       >
                         {item.label}
                       </Link>
