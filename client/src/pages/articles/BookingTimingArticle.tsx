@@ -223,21 +223,20 @@ export default function BookingTimingArticle() {
         ))}
       </ol>
 
-      {/* ── 2枚目画像 ── */}
-      <figure className="mb-12 rounded-2xl overflow-hidden shadow-md">
-        <img
-          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/review_photo_1-Ub6Xv3Qw8sFqJtNpYmKcAE.webp"
-          alt="SLTCSのドライバーと日本人観光客"
-          className="w-full object-cover"
-          onError={(e) => {
-            (e.target as HTMLImageElement).src =
-              "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80";
+      {/* ── 無料相談CTAボタン ── */}
+      <div className="mb-12 text-center">
+        <a
+          href="/#contact"
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = "/#contact";
           }}
-        />
-        <figcaption className="text-center text-xs text-gray-500 mt-2 pb-2">
-          SLTCSのドライバーは日本語・英語対応。空港から旅行中まで一貫してサポートします
-        </figcaption>
-      </figure>
+          className="inline-block bg-[oklch(0.35_0.12_155)] hover:bg-[oklch(0.30_0.12_155)] text-white font-bold text-lg px-10 py-4 rounded-full shadow-lg transition-colors duration-200"
+        >
+          無料で相談する
+        </a>
+        <p className="text-sm text-gray-500 mt-3">SLTCSは日本語で丁寧に対応。旅程相談からお気軽にどうぞ。</p>
+      </div>
 
       {/* ── H2: 6 まとめ ── */}
       <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-14">
