@@ -230,6 +230,18 @@ export const blogArticles: BlogArticle[] = [
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-women-travel-hero-QvZf6gWCAaZReNfWoUne2Q.webp",
     readingTime: 7,
   },
+  {
+    slug: "honeymoon-sri-lanka",
+    title: "新婚旅行(ハネムーン)にスリランカがおすすめな理由とは？モデルコースも紹介",
+    excerpt:
+      "スリランカへの新婚旅行・ハネムーンを考えているカップル必見。世界遺産・ビーチ・サファリ・茶畑が一島に凝縮されたスリランカで、専用車チャーターを使った二人だけのプライベートな旅を楽しもう。6泊7日のモデルコースも詳しく解説します。",
+    category: "テーマ旅行",
+    categorySlug: "theme-travel",
+    publishedAt: "2026-06-03",
+    thumbnail:
+      "/manus-storage/blog-honeymoon-couple_5fca0963.jpg",
+    readingTime: 8,
+  },
 ];
 
 export function getCategoryBySlug(slug: string): BlogCategory | undefined {

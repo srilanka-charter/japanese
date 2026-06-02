@@ -7,6 +7,7 @@ import Course10DaysArticle from "./articles/Course10DaysArticle";
 import BookingTimingArticle from "./articles/BookingTimingArticle";
 import FamilyTravelArticle from "./articles/FamilyTravelArticle";
 import SoloWomenTravelArticle from "./articles/SoloWomenTravelArticle";
+import HoneymoonArticle from "./articles/HoneymoonArticle";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 記事コンテンツ（slug 別に分岐）
@@ -26,6 +27,9 @@ function ArticleContent({ slug }: { slug: string }) {
   }
   if (slug === "solo-women-travel-charter") {
     return <SoloWomenTravelArticle />;
+  }
+  if (slug === "honeymoon-sri-lanka") {
+    return <HoneymoonArticle />;
   }
   return (
     <p className="text-gray-500 text-center py-12">記事コンテンツを準備中です。</p>
