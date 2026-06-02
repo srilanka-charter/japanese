@@ -201,7 +201,7 @@ export const blogArticles: BlogArticle[] = [
     categorySlug: "sightseeing-guide",
     publishedAt: "2026-04-10",
     thumbnail:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-tea-train-guide-2ddzgbXcNQFiTJrQfuf4it.webp",
     readingTime: 8,
     externalHref: "/tea-train",
   },
