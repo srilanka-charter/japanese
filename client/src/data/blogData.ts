@@ -7,6 +7,8 @@ export interface BlogArticle {
   publishedAt: string;
   thumbnail: string;
   readingTime: number;
+  /** 外部ページへの直接リンク（設定時はブログ記事詳細ではなくこのURLへ遷移） */
+  externalHref?: string;
 }
 
 export interface BlogCategory {
@@ -54,6 +56,48 @@ export const blogCategories: BlogCategory[] = [
 ];
 
 export const blogArticles: BlogArticle[] = [
+  // ── モデルコース ──────────────────────────────────────────────────────────
+  {
+    slug: "course-3-4days",
+    title: "スリランカ 3泊4日 モデルコース｜タクシーチャーターで巡る短期周遊プラン",
+    excerpt:
+      "シーギリヤ・キャンディ・ヌワラエリヤを3泊4日でぎゅっと凝縮。紅茶列車や世界遺産を効率よく楽しむ専用車チャーターのモデルコースをご紹介します。",
+    category: "モデルコース",
+    categorySlug: "model-course",
+    publishedAt: "2026-06-01",
+    thumbnail:
+      "https://images.unsplash.com/photo-1586861203927-800a5acdcc4d?w=800&q=80",
+    readingTime: 6,
+    externalHref: "/course/3-4days",
+  },
+  {
+    slug: "course-4-5days",
+    title: "スリランカ 4泊5日 モデルコース｜タクシーチャーターで巡る王道周遊プラン",
+    excerpt:
+      "スリランカ旅行の王道コース。シーギリヤ・キャンディ・ゴール・ヌワラエリヤを4泊5日でゆったり巡る専用車チャーターのモデルプランです。",
+    category: "モデルコース",
+    categorySlug: "model-course",
+    publishedAt: "2026-06-01",
+    thumbnail:
+      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80",
+    readingTime: 7,
+    externalHref: "/course/4-5days",
+  },
+  {
+    slug: "course-5-6days",
+    title: "スリランカ 5泊6日 モデルコース｜タクシーチャーターでゆったり周遊する旅",
+    excerpt:
+      "時間に余裕を持って楽しむ5泊6日プラン。サファリ・アーユルヴェーダ・世界遺産をすべて盛り込んだ、スリランカの魅力を存分に体験できるコースです。",
+    category: "モデルコース",
+    categorySlug: "model-course",
+    publishedAt: "2026-06-01",
+    thumbnail:
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    readingTime: 8,
+    externalHref: "/course/5-6days",
+  },
+
+  // ── タクシーチャーターの基礎 ──────────────────────────────────────────────
   {
     slug: "why-taxi-charter-is-recommended",
     title: "スリランカ旅行でタクシーチャーターがおすすめな理由｜公共交通との違い",
@@ -65,6 +109,73 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80",
     readingTime: 8,
+  },
+
+  // ── 観光地ガイド ──────────────────────────────────────────────────────────
+  {
+    slug: "sigiriya-guide",
+    title: "シーギリヤロック完全ガイド｜見どころ・登り方・アクセスをわかりやすく解説",
+    excerpt:
+      "スリランカを代表する世界遺産シーギリヤロック。5世紀の岩山宮殿の見どころ・登頂のコツ・ベストシーズン・タクシーチャーターでのアクセス方法を詳しく解説します。",
+    category: "観光地ガイド",
+    categorySlug: "sightseeing-guide",
+    publishedAt: "2026-05-15",
+    thumbnail:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_rock_hero-WvSdEsM6SGKw7D3K9DXp8D.webp",
+    readingTime: 8,
+    externalHref: "/sigiriya",
+  },
+  {
+    slug: "kandy-guide",
+    title: "キャンディ観光完全ガイド｜仏歯寺・ペラヘラ祭・アクセス方法を解説",
+    excerpt:
+      "スリランカの古都キャンディ。世界遺産の仏歯寺、キャンディアンダンス、ペラヘラ祭など見どころ満載の街を専用車チャーターで快適に観光する方法をご紹介します。",
+    category: "観光地ガイド",
+    categorySlug: "sightseeing-guide",
+    publishedAt: "2026-05-10",
+    thumbnail:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/kandy_tooth_relic_temple_hero-H5KPCu2wFYrgvuf3d6Q945.webp",
+    readingTime: 7,
+    externalHref: "/kandy",
+  },
+  {
+    slug: "galle-guide",
+    title: "ゴール旧市街の行き方・見どころ完全ガイド｜タクシーチャーターで快適アクセス",
+    excerpt:
+      "オランダ統治時代の面影を残すゴール要塞は、スリランカ南部を代表する世界遺産。城壁散歩・灯台・コロニアル建築など見どころと、コロンボからの移動方法を詳しく解説します。",
+    category: "観光地ガイド",
+    categorySlug: "sightseeing-guide",
+    publishedAt: "2026-05-05",
+    thumbnail:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/galle_fort_hero-DUKxQjoVyFYYNXeLGiZBub.webp",
+    readingTime: 7,
+    externalHref: "/galle",
+  },
+  {
+    slug: "safari-guide",
+    title: "スリランカサファリ完全ガイド｜ヤーラ国立公園でヒョウに会おう",
+    excerpt:
+      "スリランカ南東部に広がるヤーラ国立公園は、世界最高密度のヒョウの生息地。サファリの見どころ・ベストシーズン・SLTCSのサファリ手配サービスを詳しく紹介します。",
+    category: "観光地ガイド",
+    categorySlug: "sightseeing-guide",
+    publishedAt: "2026-04-20",
+    thumbnail:
+      "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&q=80",
+    readingTime: 9,
+    externalHref: "/safari",
+  },
+  {
+    slug: "tea-train-guide",
+    title: "スリランカ紅茶列車（エッラ）完全ガイド｜キャンディ〜エッラ間の乗り方・予約方法",
+    excerpt:
+      "世界で最も美しい鉄道路線のひとつ、キャンディ〜エッラ間の紅茶列車。九連アーチ橋・茶畑の絶景・列車の予約方法・SLTCSの送迎サービスを詳しく解説します。",
+    category: "観光地ガイド",
+    categorySlug: "sightseeing-guide",
+    publishedAt: "2026-04-10",
+    thumbnail:
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    readingTime: 8,
+    externalHref: "/tea-train",
   },
 ];
 
