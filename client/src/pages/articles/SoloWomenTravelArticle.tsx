@@ -57,8 +57,8 @@ export default function SoloWomenTravelArticle() {
         {/* アイキャッチ画像1 */}
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-women-travel-hero-QvZf6gWCAaZReNfWoUne2Q.webp"
-            alt="シーギリヤ岩の前で笑顔の日本人女性一人旅行者"
+            src="/manus-storage/blog-women-sigiriya-real_53016c07.jpg"
+            alt="シーギリヤ岩の頂上から絶景を眺める日本人女性"
             className="w-full object-cover max-h-80"
           />
           <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
@@ -193,12 +193,12 @@ export default function SoloWomenTravelArticle() {
         {/* 画像2枚目：紅茶農園 */}
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-women-travel-tea-ZK4e63ciHUXTnGoPRfw2yp.webp"
-            alt="ヌワラエリヤの茶畑カフェでお茶を楽しむ日本人女性"
+            src="/manus-storage/blog-women-kandy-real_ceedacfb.jpg"
+            alt="キャンディの仏歯寺前で両手を広げる日本人女性"
             className="w-full object-cover max-h-80"
           />
           <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
-            ヌワラエリヤの茶畑を望むカフェでセイロンティーを。女子旅ならではのゆったりした時間を。
+            キャンディの仏歯寺前で。スリランカの文化と歴史を自分のペースで満喫できます。
           </figcaption>
         </figure>
       </section>
