@@ -22,16 +22,6 @@ export const blogCategories: BlogCategory[] = [
     description: "スリランカのタクシーチャーターとは何か、料金・予約方法・専用車のメリットをわかりやすく解説します。",
   },
   {
-    slug: "airport-transfer",
-    label: "空港送迎・都市間移動",
-    description: "コロンボ空港からの送迎・市内移動・長距離移動の方法を比較・解説します。",
-  },
-  {
-    slug: "model-course",
-    label: "モデルコース",
-    description: "3泊4日・4泊5日など日数別のスリランカ観光モデルコースを専用車チャーターで紹介します。",
-  },
-  {
     slug: "sightseeing-guide",
     label: "観光地ガイド",
     description: "シーギリヤ・キャンディ・ゴール・ヌワラエリヤなどスリランカ主要観光地の見どころ・アクセス・所要時間を解説します。",

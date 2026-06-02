@@ -2,17 +2,26 @@ import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, ChevronDown, Globe } from "lucide-react";
 
-// モデルコース（お役立ち情報プルダウンの先頭に表示）
+// ─── お役立ち情報プルダウン構成 ───────────────────────────────────────────────
+// セクション1: モデルコース（記事リスト形式）
 const modelCourseLinks = [
-  { label: "3泊4日スリランカモデルコース", href: "/course/3-4days", internal: true },
-  { label: "4泊5日スリランカモデルコース", href: "/course/4-5days", internal: true },
-  { label: "5泊6日スリランカモデルコース", href: "/course/5-6days", internal: true },
+  { label: "3泊4日スリランカモデルコース", href: "/course/3-4days" },
+  { label: "4泊5日スリランカモデルコース", href: "/course/4-5days" },
+  { label: "5泊6日スリランカモデルコース", href: "/course/5-6days" },
 ];
 
+// セクション2: 観光地ガイド（既存ページへのリンク）
+const sightseeingLinks = [
+  { label: "シーギリヤ", href: "/sigiriya" },
+  { label: "キャンディ", href: "/kandy" },
+  { label: "ゴール", href: "/galle" },
+  { label: "サファリ", href: "/safari" },
+  { label: "紅茶列車（エッラ）", href: "/tea-train" },
+];
+
+// セクション3: 記事カテゴリー（「モデルコース」「空港送迎・都市間移動」を除く）
 const blogCategories = [
   { label: "タクシーチャーターの基礎", slug: "taxi-charter-basics" },
-  { label: "空港送迎・都市間移動", slug: "airport-transfer" },
-  { label: "モデルコース", slug: "model-course" },
   { label: "観光地ガイド", slug: "sightseeing-guide" },
   { label: "サファリ・自然体験", slug: "safari-nature" },
   { label: "属性別旅行", slug: "travel-by-type" },
@@ -69,6 +78,12 @@ export default function Header() {
     }
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const itemClass =
+    "block px-4 py-2.5 text-sm text-white/80 hover:bg-[oklch(0.35_0.12_155)] hover:text-[oklch(0.75_0.12_75)] transition-colors duration-150 border-b border-white/5 last:border-0";
+  const sectionLabelClass =
+    "px-4 pt-3 pb-1 text-[10px] text-white/30 font-semibold tracking-widest uppercase";
+  const dividerClass = "border-t border-white/10";
 
   return (
     <header
@@ -140,31 +155,46 @@ export default function Header() {
                 <ChevronDown size={14} className={`transition-transform duration-200 ${blogOpen ? "rotate-180" : ""}`} />
               </button>
               {blogOpen && (
-                <div className="absolute top-full left-0 mt-1 w-64 bg-[oklch(0.12_0.02_155)] border border-white/10 rounded-lg shadow-2xl overflow-hidden z-50">
-                  {/* モデルコース（先頭グループ） */}
-                  <div className="px-4 pt-3 pb-1">
-                    <p className="text-[10px] text-white/30 font-semibold tracking-widest uppercase">モデルコース</p>
-                  </div>
+                <div className="absolute top-full left-0 mt-1 w-72 bg-[oklch(0.12_0.02_155)] border border-white/10 rounded-lg shadow-2xl overflow-hidden z-50">
+
+                  {/* ── セクション1: モデルコース ── */}
+                  <p className={sectionLabelClass}>モデルコース</p>
                   {modelCourseLinks.map((c) => (
                     <Link
                       key={c.href}
                       href={c.href}
                       onClick={() => setBlogOpen(false)}
-                      className="block px-4 py-2.5 text-sm text-white/80 hover:bg-[oklch(0.35_0.12_155)] hover:text-[oklch(0.75_0.12_75)] transition-colors duration-150 border-b border-white/5 last:border-0"
+                      className={itemClass}
                     >
                       {c.label}
                     </Link>
                   ))}
-                  {/* 記事カテゴリー */}
-                  <div className="px-4 pt-3 pb-1 border-t border-white/10">
-                    <p className="text-[10px] text-white/30 font-semibold tracking-widest uppercase">記事カテゴリー</p>
+
+                  {/* ── セクション2: 観光地ガイド ── */}
+                  <div className={dividerClass}>
+                    <p className={sectionLabelClass}>観光地ガイド</p>
+                  </div>
+                  {sightseeingLinks.map((s) => (
+                    <Link
+                      key={s.href}
+                      href={s.href}
+                      onClick={() => setBlogOpen(false)}
+                      className={itemClass}
+                    >
+                      {s.label}
+                    </Link>
+                  ))}
+
+                  {/* ── セクション3: 記事カテゴリー ── */}
+                  <div className={dividerClass}>
+                    <p className={sectionLabelClass}>記事カテゴリー</p>
                   </div>
                   {blogCategories.map((cat) => (
                     <Link
                       key={cat.slug}
                       href={`/blog/${cat.slug}`}
                       onClick={() => setBlogOpen(false)}
-                      className="block px-4 py-2.5 text-sm text-white/80 hover:bg-[oklch(0.35_0.12_155)] hover:text-[oklch(0.75_0.12_75)] transition-colors duration-150 border-b border-white/5 last:border-0"
+                      className={itemClass}
                     >
                       {cat.label}
                     </Link>
@@ -270,7 +300,7 @@ export default function Header() {
               </button>
               {mobileBlogOpen && (
                 <div className="pl-4 bg-black/20">
-                  {/* モデルコース先頭グループ */}
+                  {/* モデルコース */}
                   <p className="px-3 pt-2 pb-0.5 text-[10px] text-white/30 font-semibold tracking-widest uppercase">モデルコース</p>
                   {modelCourseLinks.map((c) => (
                     <Link
@@ -280,6 +310,18 @@ export default function Header() {
                       className="block text-white/70 px-3 py-2.5 text-sm border-b border-white/5 last:border-0"
                     >
                       {c.label}
+                    </Link>
+                  ))}
+                  {/* 観光地ガイド */}
+                  <p className="px-3 pt-2 pb-0.5 text-[10px] text-white/30 font-semibold tracking-widest uppercase border-t border-white/10 mt-1">観光地ガイド</p>
+                  {sightseeingLinks.map((s) => (
+                    <Link
+                      key={s.href}
+                      href={s.href}
+                      onClick={() => { setMobileOpen(false); setMobileBlogOpen(false); }}
+                      className="block text-white/70 px-3 py-2.5 text-sm border-b border-white/5 last:border-0"
+                    >
+                      {s.label}
                     </Link>
                   ))}
                   {/* 記事カテゴリー */}
