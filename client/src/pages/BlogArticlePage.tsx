@@ -6,6 +6,7 @@ import { getArticleBySlug, getCategoryBySlug } from "@/data/blogData";
 import Course10DaysArticle from "./articles/Course10DaysArticle";
 import BookingTimingArticle from "./articles/BookingTimingArticle";
 import FamilyTravelArticle from "./articles/FamilyTravelArticle";
+import SoloWomenTravelArticle from "./articles/SoloWomenTravelArticle";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 記事コンテンツ（slug 別に分岐）
@@ -22,6 +23,9 @@ function ArticleContent({ slug }: { slug: string }) {
   }
   if (slug === "family-travel-charter") {
     return <FamilyTravelArticle />;
+  }
+  if (slug === "solo-women-travel-charter") {
+    return <SoloWomenTravelArticle />;
   }
   return (
     <p className="text-gray-500 text-center py-12">記事コンテンツを準備中です。</p>

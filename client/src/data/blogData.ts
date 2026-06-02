@@ -218,6 +218,18 @@ export const blogArticles: BlogArticle[] = [
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-family-travel-hero-MxVNfzXrPpRtNveAS4zeaF.webp",
     readingTime: 8,
   },
+  {
+    slug: "solo-women-travel-charter",
+    title: "女子旅にスリランカはおすすめ？一人旅でも安心なタクシーチャーターで個人旅行をしよう！",
+    excerpt:
+      "スリランカへの女子旅・一人旅を考えている方必見。専用車チャーターなら完全貸し切りで安心・快適に移動できます。日本語対応ドライバーや緊急時のサポート体制など、女性一人旅に専用車が選ばれる5つの理由とモデルコースを詳しく解説します。",
+    category: "テーマ旅行",
+    categorySlug: "theme-travel",
+    publishedAt: "2026-06-03",
+    thumbnail:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-women-travel-hero-QvZf6gWCAaZReNfWoUne2Q.webp",
+    readingTime: 7,
+  },
 ];
 
 export function getCategoryBySlug(slug: string): BlogCategory | undefined {
