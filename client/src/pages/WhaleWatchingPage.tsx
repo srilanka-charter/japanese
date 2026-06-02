@@ -108,7 +108,7 @@ export default function WhaleWatchingPage() {
               Whale Watching
             </span>
             <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-3">
-              スリランカの海で<br />世界最大の動物に出会う
+              スリランカのミリッサで<br />ホエールウォッチングを楽しもう！
             </h1>
             <p className="text-white/90 text-base md:text-lg max-w-2xl">
               ミリッサ沖に集まるシロナガスクジラ・ザトウクジラ・スピナードルフィン。<br className="hidden md:block" />
