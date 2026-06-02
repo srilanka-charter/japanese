@@ -90,7 +90,7 @@ export default function WhaleWatchingPage() {
       />
 
       {/* SEO Meta */}
-      <title>スリランカ ホエールウォッチング｜ミリッサ発・シロナガスクジラに出会う旅 | SLTCS</title>
+      <title>スリランカのミリッサでホエールウォッチングを楽しもう！｜シロナガスクジラに出会う旅 | SLTCS</title>
 
       <Header />
 
