@@ -4,12 +4,12 @@ import { Menu, X, ChevronDown, Globe } from "lucide-react";
 
 // ─── お役立ち情報プルダウン構成 ───────────────────────────────────────────────
 const blogMenuItems = [
-  { label: "モデルコース", href: "/blog/model-course" },
-  { label: "観光地ガイド", href: "/blog/sightseeing-guide" },
-  { label: "タクシーチャーターの基礎", href: "/blog/taxi-charter-basics" },
+  { label: "モデルコース", href: "/model-course" },
+  { label: "観光地ガイド", href: "/sightseeing-guide" },
+  { label: "タクシーチャーターの基礎", href: "/taxi-charter-basics" },
   { label: "アクティビティ", href: "/activity" },
-  { label: "旅行計画・準備", href: "/blog/travel-planning" },
-  { label: "テーマ旅行", href: "/blog/theme-travel" },
+  { label: "旅行計画・準備", href: "/travel-planning" },
+  { label: "テーマ旅行", href: "/theme-travel" },
 ];
 
 const languages = [

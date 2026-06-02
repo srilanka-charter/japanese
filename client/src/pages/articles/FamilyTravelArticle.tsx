@@ -433,7 +433,7 @@ export default function FamilyTravelArticle() {
         <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-4">関連記事</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <a
-            href="/blog/taxi-charter-basics/why-taxi-charter-is-recommended"
+            href="/taxi-charter-basics/why-taxi-charter-is-recommended"
             className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group border border-gray-100"
           >
             <div className="flex-1 min-w-0">

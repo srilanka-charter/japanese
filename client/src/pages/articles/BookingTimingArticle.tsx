@@ -258,8 +258,8 @@ export default function BookingTimingArticle() {
         <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-4">関連記事</p>
         <ul className="space-y-2">
           {[
-            { href: "/blog/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカ旅行でタクシーチャーターがおすすめな理由｜公共交通との違い" },
-            { href: "/blog/model-course/course-10days", label: "スリランカを10日間で周遊する大満足モデルコース" },
+            { href: "/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカ旅行でタクシーチャーターがおすすめな理由｜公共交通との違い" },
+           { href: "/model-course/course-10days", label: "スリランカを 10日間で周游する大満足モデルコース" },
           ].map((link, i) => (
             <li key={i}>
               <a

@@ -405,7 +405,7 @@ export default function BlogArticlePage() {
             <span className="text-white/40">お役立ち情報</span>
             <ChevronRight size={12} />
             <Link
-              href={`/blog/${category.slug}`}
+              href={`/${category.slug}`}
               className="text-[oklch(0.75_0.12_75)] hover:opacity-80 transition-opacity"
             >
               {category.label}
@@ -445,7 +445,7 @@ export default function BlogArticlePage() {
         {/* 戻るリンク */}
         <div className="mt-8">
           <Link
-            href={`/blog/${category.slug}`}
+            href={`/${category.slug}`}
             className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-[oklch(0.35_0.12_155)] transition-colors"
           >
             <ArrowLeft size={15} />

@@ -11,7 +11,7 @@ import {
 
 /** 記事カード：externalHrefがある場合は直接そのページへ遷移 */
 function ArticleCard({ article }: { article: BlogArticle }) {
-  const href = article.externalHref ?? `/blog/${article.categorySlug}/${article.slug}`;
+  const href = article.externalHref ?? `/${article.categorySlug}/${article.slug}`;
   const isExternal = !!article.externalHref;
 
   const inner = (
@@ -132,7 +132,7 @@ export default function BlogCategoryPage() {
             {blogCategories.map((cat) => (
               <Link
                 key={cat.slug}
-                href={`/blog/${cat.slug}`}
+                href={`/${cat.slug}`}
                 className={`flex-shrink-0 px-4 py-1.5 rounded-full text-sm font-medium transition-colors duration-200 ${
                   cat.slug === categorySlug
                     ? "bg-[oklch(0.35_0.12_155)] text-white"
