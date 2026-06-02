@@ -2,8 +2,10 @@ import { ChevronRight } from "lucide-react";
 
 const HERO_IMG =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-course-10days-5oo5hk9wkcUpAUQhRGKDKE.webp";
-const TEA_TRAIN_IMG =
-  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80";
+
+// 口コミセクションの写真（タクシーチャーター顧客とドライバー）
+const CHARTER_IMG = "/manus-storage/review_tk_couple_07b5bba1.png";
+
 const SAFARI_IMG =
   "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=900&q=80";
 
@@ -26,53 +28,67 @@ const H3 = ({ children }: { children: React.ReactNode }) => (
 const itinerary = [
   {
     day: "Day 1", title: "コロンボ到着・市内観光", area: "コロンボ",
-    spots: ["ガンガラーマ寺院", "コロンボ国立博物館", "ネゴンボ地区散策"],
+    spots: ["ガンガラーマ寺院", "コロンボ国立博物館", "ゴール・フェイスグリーン"],
     body: "スリランカの玄関口、バンダラナイケ国際空港に到着後、専用車でコロンボへ。ガンガラーマ寺院では色鮮やかな仏像と象に出会え、国立博物館ではスリランカの歴史を一望できます。夜は海沿いのゴール・フェイスグリーンで夕涼みを楽しみましょう。",
+    link: null,
   },
   {
-    day: "Day 2", title: "コロンボ → ダンブッラ → シーギリヤ", area: "文化三角地帯",
-    spots: ["ダンブッラ石窟寺院（世界遺産）", "シーギリヤ周辺ホテル泊"],
-    body: "専用車で北上し、まずダンブッラ石窟寺院へ。5つの石窟に150体以上の仏像が並ぶ壮観な世界遺産です。午後はシーギリヤへ移動し、翌朝の登山に備えてゆっくり休息します。",
+    day: "Day 2", title: "コロンボ → アヌラーダプラ → シーギリヤ泊", area: "文化三角地帯",
+    spots: ["アヌラーダプラ（世界遺産）", "スリー・マハー菩提樹", "ルワンウェリサーヤ大塔", "シーギリヤ周辺ホテル泊"],
+    body: "専用車で北上し、まずスリランカ最古の都市アヌラーダプラへ。2,000年以上前の仏塔や世界最古の菩提樹（スリー・マハー菩提樹）が今も信仰を集めています。午後はシーギリヤへ移動し、翌朝の登山に備えてゆっくり休息します。",
+    link: null,
   },
   {
-    day: "Day 3", title: "シーギリヤロック登山・ポロンナルワ観光", area: "シーギリヤ・ポロンナルワ",
-    spots: ["シーギリヤロック（世界遺産）", "ポロンナルワ古代都市（世界遺産）"],
-    body: "早朝、シーギリヤロックへ。5世紀に築かれた岩山宮殿の頂上からは360度のパノラマが広がります。午後はポロンナルワへ移動。12世紀の王都跡に残る仏塔や宮殿址を自転車で巡るのもおすすめです。",
+    day: "Day 3", title: "シーギリヤロック → ダンブッラ石窟寺院", area: "シーギリヤ・ダンブッラ",
+    spots: ["シーギリヤロック（世界遺産）", "ダンブッラ石窟寺院（世界遺産）"],
+    body: "早朝、シーギリヤロックへ。5世紀に築かれた岩山宮殿の頂上からは360度のパノラマが広がります。午後はダンブッラ石窟寺院へ移動。5つの石窟に150体以上の仏像が並ぶ壮観な世界遺産です。",
+    link: "/sigiriya",
+    linkLabel: "シーギリヤ詳細ページを見る",
   },
   {
-    day: "Day 4", title: "ミネリヤ国立公園・アヌラーダプラ観光", area: "北中部",
-    spots: ["ミネリヤ国立公園（象の集会）", "アヌラーダプラ（世界遺産）"],
-    body: "ミネリヤ国立公園では、乾季（6〜9月）に数百頭の象が水辺に集まる「ギャザリング」が見られます。午後はスリランカ最古の都市アヌラーダプラへ。2,000年以上前の仏塔や菩提樹が今も信仰を集めています。",
+    day: "Day 4", title: "ポロンナルワ → ミンネリア国立公園", area: "ポロンナルワ・ミンネリア",
+    spots: ["ポロンナルワ古代都市（世界遺産）", "ミンネリア国立公園（象の集会）"],
+    body: "ポロンナルワへ移動し、12世紀の王都跡に残る仏塔や宮殿址を自転車で巡ります。午後はミンネリア国立公園へ。乾季（6〜9月）には数百頭の象が水辺に集まる「ギャザリング」が見られ、スリランカ随一の野生動物体験です。",
+    link: null,
   },
   {
     day: "Day 5", title: "キャンディへ移動・仏歯寺参拝", area: "キャンディ",
     spots: ["仏歯寺（世界遺産）", "キャンディアンダンスショー", "キャンディ湖散策"],
     body: "スリランカの古都キャンディへ。世界遺産の仏歯寺には仏陀の歯が祀られ、夕方のプージャ（礼拝）は荘厳な雰囲気に包まれます。夜はキャンディアンダンスの伝統舞踊ショーを鑑賞しましょう。",
+    link: "/kandy",
+    linkLabel: "キャンディ詳細ページを見る",
   },
   {
     day: "Day 6", title: "紅茶列車でエッラへ・ナインアーチブリッジ", area: "キャンディ〜エッラ",
     spots: ["キャンディ〜エッラ間の紅茶列車", "ナインアーチブリッジ", "リトルアダムスピーク"],
     body: "世界で最も美しい鉄道路線のひとつ、キャンディ〜エッラ間の紅茶列車に乗車。緑の茶畑と霧の山岳地帯を抜ける約7時間の旅は、スリランカ旅行のハイライトのひとつです。エッラ到着後はナインアーチブリッジへ。",
+    link: null,
   },
   {
     day: "Day 7", title: "ヤーラ国立公園サファリ", area: "ヤーラ",
     spots: ["ヤーラ国立公園（サファリ）", "ヒョウ・象・クジャク観察"],
     body: "スリランカ南東部のヤーラ国立公園は、世界最高密度のヒョウの生息地として知られています。早朝と夕方の2回サファリに出かけることで、ヒョウ・象・クジャク・ワニなど多彩な野生動物に出会える確率が高まります。",
+    link: "/safari",
+    linkLabel: "サファリ詳細ページを見る",
   },
   {
     day: "Day 8", title: "ゴール旧市街観光・ビーチリゾート", area: "ゴール・南部海岸",
     spots: ["ゴール要塞（世界遺産）", "灯台・城壁散歩", "ウナワトゥナビーチ"],
     body: "オランダ統治時代の面影を残すゴール要塞は、スリランカ南部を代表する世界遺産。石畳の旧市街を散策し、コロニアル建築のカフェでひと休み。午後はウナワトゥナビーチでインド洋の青い海を満喫しましょう。",
+    link: "/galle",
+    linkLabel: "ゴール詳細ページを見る",
   },
   {
     day: "Day 9", title: "ミリッサ・ホエールウォッチング（11〜4月）", area: "ミリッサ",
     spots: ["ホエールウォッチングボートツアー", "ミリッサビーチ"],
     body: "11〜4月のシーズンに訪れるなら、ミリッサからのホエールウォッチングが絶対おすすめ。ブルーホエール（シロナガスクジラ）に出会える確率が世界トップクラスです。午後はミリッサビーチでのんびり過ごしましょう。",
+    link: null,
   },
   {
     day: "Day 10", title: "コロンボへ移動・帰国", area: "コロンボ",
     spots: ["コロンボ市内ショッピング", "空港送迎"],
     body: "最終日は専用車でコロンボへ。出発前にコロンボのショッピングモールやスパイスマーケットでお土産を購入しましょう。SLTCSの専用車が空港まで確実にお送りします。",
+    link: null,
   },
 ];
 
@@ -166,31 +182,36 @@ export default function Course10DaysArticle() {
                 </div>
                 <h3 className="text-base font-bold text-gray-900 mb-2" style={{ fontFamily: "'Shippori Mincho', serif" }}>{item.title}</h3>
                 <p className="text-sm leading-[1.9] text-gray-600 mb-3">{item.body}</p>
-                <div className="flex flex-wrap gap-1.5">
+                <div className="flex flex-wrap gap-1.5 mb-2">
                   {item.spots.map((spot) => (
                     <span key={spot} className="text-xs bg-gray-50 border border-gray-200 text-gray-600 px-2 py-0.5 rounded-md">{spot}</span>
                   ))}
                 </div>
+                {item.link && (
+                  <a
+                    href={item.link}
+                    className="inline-flex items-center gap-1 text-xs text-[oklch(0.35_0.12_155)] font-semibold hover:underline mt-1"
+                  >
+                    {item.linkLabel}
+                    <ChevronRight size={12} />
+                  </a>
+                )}
               </div>
             </div>
           ))}
         </div>
-        <figure className="mt-8 mb-2">
-          <img src={TEA_TRAIN_IMG} alt="キャンディ〜エッラ間の紅茶列車" className="w-full rounded-xl object-cover max-h-72" />
-          <figcaption className="text-center text-xs text-gray-400 mt-2">Day 6：キャンディ〜エッラ間の紅茶列車。茶畑と霧の山岳地帯を抜ける絶景ルートです。</figcaption>
-        </figure>
       </section>
 
       {/* H2③ 専用車チャーターのメリット */}
       <section className="mb-14">
         <H2>専用車チャーターを使うメリット</H2>
         <figure className="mb-7">
-          <img src={SAFARI_IMG} alt="ヤーラ国立公園のサファリ" className="w-full rounded-xl object-cover max-h-72" />
-          <figcaption className="text-center text-xs text-gray-400 mt-2">Day 7：ヤーラ国立公園のサファリ。専用車なら早朝の開園直後に入場できます。</figcaption>
+          <img src={CHARTER_IMG} alt="SLTCSのタクシーチャーターを利用するお客様とドライバー" className="w-full rounded-xl object-cover max-h-72" />
+          <figcaption className="text-center text-xs text-gray-400 mt-2">SLTCSのタクシーチャーターを利用するお客様とドライバー。日本語でのやり取りで安心の旅を。</figcaption>
         </figure>
         <H3>10日間の移動を一括手配できる</H3>
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
-          10日間の旅程では、コロンボ・シーギリヤ・キャンディ・エッラ・ヤーラ・ゴール・ミリッサと、多くの都市間移動が発生します。
+          10日間の旅程では、コロンボ・アヌラーダプラ・シーギリヤ・キャンディ・エッラ・ヤーラ・ゴール・ミリッサと、多くの都市間移動が発生します。
           専用車チャーターなら、すべての移動を出発前に一括で手配できるため、現地での移動手段探しに時間を取られません。
         </p>
         <H3>荷物を車に置いたまま観光できる</H3>
@@ -199,11 +220,24 @@ export default function Course10DaysArticle() {
           身軽に動けます。特に家族旅行やシニア旅行では、荷物の負担軽減が旅の快適さに直結します。
         </p>
         <H3>日本語で相談しながら旅ができる</H3>
-        <p className="text-base leading-[1.9] text-gray-700">
+        <p className="text-base leading-[1.9] text-gray-700 mb-6">
           SLTCSでは、予約から当日の移動まで日本語でのやり取りが可能です。
           「ヤーラのサファリは早朝と夕方どちらがおすすめ？」「紅茶列車の座席はどこが景色がいい？」といった質問にも、
           経験豊富なスタッフが日本語で丁寧にお答えします。
         </p>
+        <figure className="mb-2">
+          <img src={SAFARI_IMG} alt="ヤーラ国立公園のサファリ" className="w-full rounded-xl object-cover max-h-72" />
+          <figcaption className="text-center text-xs text-gray-400 mt-2">Day 7：ヤーラ国立公園のサファリ。専用車なら早朝の開園直後に入場できます。</figcaption>
+        </figure>
+        <div className="mt-4">
+          <a
+            href="/safari"
+            className="inline-flex items-center gap-1 text-sm text-[oklch(0.35_0.12_155)] font-semibold hover:underline"
+          >
+            サファリ詳細ページを見る
+            <ChevronRight size={14} />
+          </a>
+        </div>
       </section>
 
       {/* H2④ ベストシーズン */}
@@ -239,7 +273,7 @@ export default function Course10DaysArticle() {
           <p className="font-bold mb-2">注意点</p>
           <ul className="space-y-1.5">
             <li className="flex items-start gap-2"><span className="font-bold flex-shrink-0">・</span>ホエールウォッチングは11〜4月がベストシーズン。5〜10月は海が荒れやすく欠航になる場合があります。</li>
-            <li className="flex items-start gap-2"><span className="font-bold flex-shrink-0">・</span>ミネリヤ国立公園の「象の集会」は6〜9月の乾季がピーク。</li>
+            <li className="flex items-start gap-2"><span className="font-bold flex-shrink-0">・</span>ミンネリア国立公園の「象の集会」は6〜9月の乾季がピーク。</li>
             <li className="flex items-start gap-2"><span className="font-bold flex-shrink-0">・</span>紅茶列車は人気が高く、特に1等・2等は早めの予約が必要です（SLTCSで代行手配可）。</li>
           </ul>
         </div>
