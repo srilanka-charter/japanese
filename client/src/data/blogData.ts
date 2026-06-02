@@ -205,6 +205,19 @@ export const blogArticles: BlogArticle[] = [
     readingTime: 8,
     externalHref: "/tea-train",
   },
+  // テーマ旅行
+  {
+    slug: "family-travel-charter",
+    title: "スリランカ家族旅行に専用車が向いている理由｜子連れで安心のモデルコース",
+    excerpt:
+      "子連れスリランカ旅行を考えている方必見。荷物管理・日本語対応・子どものペース対応など、専用車チャーターが家族旅行に適している6つの理由と、子連れ家族向けモデルコースを詳しく解説します。",
+    category: "テーマ旅行",
+    categorySlug: "theme-travel",
+    publishedAt: "2026-06-02",
+    thumbnail:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-family-travel-hero-MxVNfzXrPpRtNveAS4zeaF.webp",
+    readingTime: 8,
+  },
 ];
 
 export function getCategoryBySlug(slug: string): BlogCategory | undefined {
