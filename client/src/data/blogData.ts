@@ -34,9 +34,9 @@ export const blogCategories: BlogCategory[] = [
     description: "シーギリヤ・キャンディ・ゴール・ヌワラエリヤなどスリランカ主要観光地の見どころ・アクセス・所要時間を解説します。",
   },
   {
-    slug: "safari-nature",
-    label: "サファリ・自然体験",
-    description: "ヤーラ国立公園・ミネリヤ国立公園でのサファリ体験や野生動物との出会いを詳しく紹介します。",
+    slug: "activity",
+    label: "アクティビティ",
+    description: "サファリ・ホエールウォッチング・占星術・アーユルヴェーダなど、スリランカで体験できるアクティビティを紹介します。",
   },
   {
     slug: "travel-by-type",
@@ -66,7 +66,7 @@ export const blogArticles: BlogArticle[] = [
     categorySlug: "model-course",
     publishedAt: "2026-06-01",
     thumbnail:
-      "https://images.unsplash.com/photo-1586861203927-800a5acdcc4d?w=800&q=80",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-course-3-4days-QkoH7BFAYewytqQgdFSgNm.webp",
     readingTime: 6,
     externalHref: "/course/3-4days",
   },
@@ -79,7 +79,7 @@ export const blogArticles: BlogArticle[] = [
     categorySlug: "model-course",
     publishedAt: "2026-06-01",
     thumbnail:
-      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-course-4-5days-KXcqn2CWtUmAAGVJ4hdpbL.webp",
     readingTime: 7,
     externalHref: "/course/4-5days",
   },
@@ -92,7 +92,7 @@ export const blogArticles: BlogArticle[] = [
     categorySlug: "model-course",
     publishedAt: "2026-06-01",
     thumbnail:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-course-5-6days-EjXwMbGq2hXDp9w4ZRfuDS.webp",
     readingTime: 8,
     externalHref: "/course/5-6days",
   },

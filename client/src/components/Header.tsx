@@ -3,12 +3,11 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, ChevronDown, Globe } from "lucide-react";
 
 // ─── お役立ち情報プルダウン構成 ───────────────────────────────────────────────
-// 記事カテゴリー（モデルコース・観光地ガイドは単一リンク、その他はカテゴリーページへ）
 const blogMenuItems = [
   { label: "モデルコース", href: "/blog/model-course" },
   { label: "観光地ガイド", href: "/blog/sightseeing-guide" },
   { label: "タクシーチャーターの基礎", href: "/blog/taxi-charter-basics" },
-  { label: "サファリ・自然体験", href: "/blog/safari-nature" },
+  { label: "アクティビティ", href: "/activity" },
   { label: "属性別旅行", href: "/blog/travel-by-type" },
   { label: "旅行計画・準備", href: "/blog/travel-planning" },
   { label: "テーマ旅行", href: "/blog/theme-travel" },
@@ -115,36 +114,39 @@ export default function Header() {
               価格
             </Link>
 
-            <Link
-              href="/activity"
-              className="text-white/90 hover:text-[oklch(0.75_0.12_75)] px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200"
-            >
-              アクティビティ
-            </Link>
-
-            {/* お役立ち情報 Dropdown（ホバーで開く） */}
+            {/* お役立ち情報 Dropdown（ホバーで開閉） */}
             <div
               className="relative"
               ref={blogRef}
               onMouseEnter={() => setBlogOpen(true)}
               onMouseLeave={() => setBlogOpen(false)}
             >
-              {/* ラベル自体はリンクではなくホバートリガー */}
               <span className="flex items-center gap-1 text-white/90 hover:text-[oklch(0.75_0.12_75)] px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200 cursor-default select-none">
                 お役立ち情報
                 <ChevronDown size={14} className={`transition-transform duration-200 ${blogOpen ? "rotate-180" : ""}`} />
               </span>
               {blogOpen && (
-                <div className="absolute top-full left-0 mt-1 w-56 bg-[oklch(0.12_0.02_155)] border border-white/10 rounded-lg shadow-2xl overflow-hidden z-50">
+                <div className="absolute top-full left-0 mt-0 w-56 bg-[oklch(0.12_0.02_155)] border border-white/10 rounded-lg shadow-2xl overflow-hidden z-50">
                   {blogMenuItems.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      onClick={() => setBlogOpen(false)}
-                      className="block px-4 py-3 text-sm text-white/80 hover:bg-[oklch(0.35_0.12_155)] hover:text-[oklch(0.75_0.12_75)] transition-colors duration-150 border-b border-white/5 last:border-0"
-                    >
-                      {item.label}
-                    </Link>
+                    item.href.startsWith("http") ? (
+                      <a
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setBlogOpen(false)}
+                        className="block px-4 py-3 text-sm text-white/80 hover:bg-[oklch(0.35_0.12_155)] hover:text-[oklch(0.75_0.12_75)] transition-colors duration-150 border-b border-white/5 last:border-0"
+                      >
+                        {item.label}
+                      </a>
+                    ) : (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setBlogOpen(false)}
+                        className="block px-4 py-3 text-sm text-white/80 hover:bg-[oklch(0.35_0.12_155)] hover:text-[oklch(0.75_0.12_75)] transition-colors duration-150 border-b border-white/5 last:border-0"
+                      >
+                        {item.label}
+                      </Link>
+                    )
                   ))}
                 </div>
               )}
@@ -228,14 +230,6 @@ export default function Header() {
               価格
             </Link>
 
-            <Link
-              href="/activity"
-              onClick={() => setMobileOpen(false)}
-              className="block text-white/90 px-3 py-3 text-base font-medium border-b border-white/10"
-            >
-              アクティビティ
-            </Link>
-
             {/* Mobile お役立ち情報 */}
             <div>
               <button
@@ -248,14 +242,25 @@ export default function Header() {
               {mobileBlogOpen && (
                 <div className="pl-4 bg-black/20">
                   {blogMenuItems.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      onClick={() => { setMobileOpen(false); setMobileBlogOpen(false); }}
-                      className="block text-white/70 px-3 py-2.5 text-sm border-b border-white/5 last:border-0"
-                    >
-                      {item.label}
-                    </Link>
+                    item.href.startsWith("http") ? (
+                      <a
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => { setMobileOpen(false); setMobileBlogOpen(false); }}
+                        className="block text-white/70 px-3 py-2.5 text-sm border-b border-white/5 last:border-0"
+                      >
+                        {item.label}
+                      </a>
+                    ) : (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => { setMobileOpen(false); setMobileBlogOpen(false); }}
+                        className="block text-white/70 px-3 py-2.5 text-sm border-b border-white/5 last:border-0"
+                      >
+                        {item.label}
+                      </Link>
+                    )
                   ))}
                 </div>
               )}
