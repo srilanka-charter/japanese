@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Check, AlertTriangle, MessageCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
 import { Link } from "wouter";
+import { useSEO } from "@/hooks/useSEO";
 
 const PRICING_TITLE = "スリランカタクシーチャーターサービスの料金(価格)とは？";
 const PRICING_DESCRIPTION = "スリランカタクシーチャーターサービス（SLTCS）の料金・価格一覧。Bronze・Silver・Goldの3プラン、Sedan・Van・Big Van対応。日本語対応の専用車カーチャーターを業界最安水準でご提供。";
@@ -110,28 +111,26 @@ function PlanPricingTable({ plan }: { plan: typeof plans[0] }) {
 }
 
 export default function PricingPage() {
-  useEffect(() => {
-    // ページタイトルを設定
-    const prevTitle = document.title;
-    document.title = PRICING_TITLE;
-
-    // meta description を設定
-    let metaDesc = document.querySelector<HTMLMetaElement>('meta[name="description"]');
-    const prevDesc = metaDesc?.getAttribute("content") ?? "";
-    if (metaDesc) {
-      metaDesc.setAttribute("content", PRICING_DESCRIPTION);
-    } else {
-      metaDesc = document.createElement("meta");
-      metaDesc.setAttribute("name", "description");
-      metaDesc.setAttribute("content", PRICING_DESCRIPTION);
-      document.head.appendChild(metaDesc);
-    }
-
-    return () => {
-      document.title = prevTitle;
-      if (metaDesc) metaDesc.setAttribute("content", prevDesc);
-    };
-  }, []);
+  useSEO({
+    title: PRICING_TITLE + " | SLTCS",
+    description: PRICING_DESCRIPTION,
+    path: "/pricing",
+    jsonLdList: [{
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "SLTCS スリランカタクシーチャーターサービス 料金プラン",
+      "description": PRICING_DESCRIPTION,
+      "provider": { "@type": "Organization", "name": "SLTCS" },
+      "areaServed": { "@type": "Country", "name": "Sri Lanka" },
+      "url": "https://sltcs.srilanka-charter.com/pricing",
+      "offers": [
+        { "@type": "Offer", "name": "ブロンズプラン", "priceCurrency": "JPY", "price": "45000" },
+        { "@type": "Offer", "name": "シルバープラン", "priceCurrency": "JPY", "price": "53000" },
+        { "@type": "Offer", "name": "ゴールドプラン", "priceCurrency": "JPY", "price": "69000" },
+      ],
+    }],
+    jsonLdIdPrefix: "pricing",
+  });
 
   const scrollToContact = () => {
     if (window.location.pathname !== "/") {

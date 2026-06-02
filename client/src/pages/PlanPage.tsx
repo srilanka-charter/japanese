@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
 import { Check } from "lucide-react";
+import { useSEO } from "@/hooks/useSEO";
 
 const plans = [
   {
@@ -59,6 +60,22 @@ const plans = [
 ];
 
 export default function PlanPage() {
+  useSEO({
+    title: "スリランカタクシーチャーターのプラン一覧｜ブロンズ・シルバー・ゴールド | SLTCS",
+    description: "スリランカ専用車チャーターサービスSLTCSのプラン一覧。ブロンズ（移動のみ）・シルバー（政府公認ドライバー）・ゴールド（プレミアム）の3プランからお選びいただけます。日本語対応・政府公認ドライバーで安心のスリランカ旅行を。",
+    path: "/plan",
+    jsonLdList: [{
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "SLTCS スリランカタクシーチャーターサービス",
+      "description": "スリランカ専用車チャーターサービス。ブロンズ・シルバー・ゴールドの3プラン。",
+      "provider": { "@type": "Organization", "name": "SLTCS" },
+      "areaServed": { "@type": "Country", "name": "Sri Lanka" },
+      "url": "https://sltcs.srilanka-charter.com/plan",
+    }],
+    jsonLdIdPrefix: "plan",
+  });
+
   const scrollToContact = () => {
     window.location.href = "/#contact";
   };

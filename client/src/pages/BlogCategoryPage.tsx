@@ -8,6 +8,7 @@ import {
   getArticlesByCategory,
   type BlogArticle,
 } from "@/data/blogData";
+import { useSEO } from "@/hooks/useSEO";
 
 /** 記事カード：externalHrefがある場合は直接そのページへ遷移 */
 function ArticleCard({ article }: { article: BlogArticle }) {
@@ -71,6 +72,31 @@ export default function BlogCategoryPage() {
   const categorySlug = params.category;
   const category = getCategoryBySlug(categorySlug);
   const articles = getArticlesByCategory(categorySlug);
+
+  const SITE_URL = "https://sltcs.srilanka-charter.com";
+
+  // SEO最適化：カテゴリーページのメタデータを動的に設定
+  const breadcrumbJsonLd = category ? {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "トップ", "item": `${SITE_URL}/` },
+      { "@type": "ListItem", "position": 2, "name": "お役立ち情報", "item": `${SITE_URL}/` },
+      { "@type": "ListItem", "position": 3, "name": category.label, "item": `${SITE_URL}/${categorySlug}` },
+    ],
+  } : null;
+
+  useSEO(category ? {
+    title: `${category.label} | SLTCS スリランカタクシーチャーターサービス`,
+    description: `${category.description}スリランカ旅行の専門情報サイトSLTCS。`,
+    path: `/${categorySlug}`,
+    jsonLdList: breadcrumbJsonLd ? [breadcrumbJsonLd] : [],
+    jsonLdIdPrefix: `category-${categorySlug}`,
+  } : {
+    title: "お役立ち情報 | SLTCS スリランカタクシーチャーターサービス",
+    description: "スリランカ旅行に役立つ情報をお届けします。タクシーチャーターの基礎・観光地ガイド・モデルコースなど。",
+    path: "/",
+  });
 
   if (!category) {
     return (

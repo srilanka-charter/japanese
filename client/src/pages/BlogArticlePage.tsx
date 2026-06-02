@@ -8,6 +8,7 @@ import BookingTimingArticle from "./articles/BookingTimingArticle";
 import FamilyTravelArticle from "./articles/FamilyTravelArticle";
 import SoloWomenTravelArticle from "./articles/SoloWomenTravelArticle";
 import HoneymoonArticle from "./articles/HoneymoonArticle";
+import { useSEO } from "@/hooks/useSEO";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 記事コンテンツ（slug 別に分岐）
@@ -380,6 +381,49 @@ export default function BlogArticlePage() {
   const params = useParams<{ category: string; slug: string }>();
   const article = getArticleBySlug(params.slug);
   const category = getCategoryBySlug(params.category);
+
+  const SITE_URL = "https://sltcs.srilanka-charter.com";
+
+  // SEO最適化：記事ごとのメタデータを動的に設定
+  const articleJsonLd = article ? {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": article.title,
+    "description": article.excerpt,
+    "image": article.thumbnail?.startsWith('http') ? article.thumbnail : `${SITE_URL}${article.thumbnail}`,
+    "author": { "@type": "Organization", "name": "SLTCS スリランカタクシーチャーターサービス" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SLTCS スリランカタクシーチャーターサービス",
+      "url": SITE_URL,
+    },
+    "datePublished": article.publishedAt,
+    "mainEntityOfPage": { "@type": "WebPage", "@id": `${SITE_URL}/${params.category}/${params.slug}` },
+  } : null;
+
+  const breadcrumbJsonLd = article && category ? {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "トップ", "item": `${SITE_URL}/` },
+      { "@type": "ListItem", "position": 2, "name": "お役立ち情報", "item": `${SITE_URL}/${params.category}` },
+      { "@type": "ListItem", "position": 3, "name": category.label, "item": `${SITE_URL}/${params.category}` },
+      { "@type": "ListItem", "position": 4, "name": article.title, "item": `${SITE_URL}/${params.category}/${params.slug}` },
+    ],
+  } : null;
+
+  useSEO(article && category ? {
+    title: `${article.title} | SLTCS`,
+    description: article.excerpt,
+    path: `/${params.category}/${params.slug}`,
+    ogImage: article.thumbnail?.startsWith('http') ? article.thumbnail : `${SITE_URL}${article.thumbnail}`,
+    jsonLdList: [articleJsonLd, breadcrumbJsonLd].filter(Boolean) as object[],
+    jsonLdIdPrefix: `article-${params.slug}`,
+  } : {
+    title: "お役立ち情報 | SLTCS スリランカタクシーチャーターサービス",
+    description: "スリランカ旅行に役立つ情報をお届けします。タクシーチャーターの基礎・観光地ガイド・モデルコースなど。",
+    path: "/",
+  });
 
   if (!article || !category) {
     return (

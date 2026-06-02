@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useSEO } from "@/hooks/useSEO";
 
 // ── 画像URL ──────────────────────────────────────────────
 const SAFARI_MAP = "/manus-storage/safari_map_12bb9538.png";
@@ -194,22 +195,25 @@ export default function SafariPage() {
 
   const activepark = PARK_TABS.find((t) => t.id === activeTab)!;
 
+  useSEO({
+    title: "スリランカのサファリ完全ガイド｜6つの国立公園と象・ヒョウの見どころ | SLTCS",
+    description: "スリランカのサファリが有名な理由から、ミンネリア・ヤーラ・ウダワラウェなど６つの国立公園の特徴・ベストシーズン・主な動物まで徹底解説。SLTCSのプラチナプラン以上ではジープ手配も可能です。",
+    path: "/safari",
+    ogImage: SAFARI_MINNERIYA,
+    jsonLdList: [{
+      "@context": "https://schema.org",
+      "@type": "TouristAttraction",
+      "name": "スリランカサファリ",
+      "description": "スリランカの国立公園で象・ヒョウなど野生動物を観察。SLTCSのタクシーチャーターで送迎付きでご案内。",
+      "url": "https://sltcs.srilanka-charter.com/safari",
+      "image": SAFARI_MINNERIYA,
+      "touristType": "Wildlife Tourism",
+    }],
+    jsonLdIdPrefix: "safari",
+  });
+
   return (
     <>
-      {/* SEO */}
-      <title>スリランカのサファリ完全ガイド｜6つの国立公園と象・ヒョウの見どころ | SLTCS</title>
-      <meta
-        name="description"
-        content="スリランカのサファリが有名な理由から、ミンネリア・ヤーラ・ウダワラウェなど6つの国立公園の特徴・ベストシーズン・主な動物まで徹底解説。SLTCSのプラチナプラン以上ではジープ手配も可能です。"
-      />
-      <meta property="og:title" content="スリランカのサファリ完全ガイド | SLTCS" />
-      <meta
-        property="og:description"
-        content="スリランカ6つの国立公園の特徴・ベストシーズン・動物情報を完全解説。SLTCSでジープ手配も可能。"
-      />
-      <meta property="og:image" content={SAFARI_MINNERIYA} />
-      <link rel="canonical" href="https://sltcs.srilanka-charter.com/safari" />
-
       <div className="min-h-screen bg-white">
         <Header />
 

@@ -84,3 +84,15 @@
 - [x] 記事詳細ページを作成（/blog/[category]/[slug]）
 - [x] 1記事目「スリランカ旅行でタクシーチャーターがおすすめな理由」を作成（タクシーチャーター基礎カテゴリー）
 - [x] App.tsxにブログ関連ルートを追加
+- [x] 全ページのSEO最適化（useSEOフック統一）
+  - [x] BlogArticlePage.tsx: useSEOフック適用確認
+  - [x] BlogCategoryPage.tsx: useSEOフック適用
+  - [x] WhaleWatchingPage.tsx: JSX内SEOタグ → useSEOフック移行
+  - [x] NuwaraEliyaPage.tsx: JSX内SEOタグ → useSEOフック移行
+  - [x] SafariPage.tsx: JSX内SEOタグ → useSEOフック移行（JSON-LD追加）
+  - [x] PlanPage.tsx: useSEOフック追加（JSON-LD Service追加）
+  - [x] PricingPage.tsx: useEffect手動SEO → useSEOフック移行（JSON-LD Offers追加）
+  - [x] AstrologyPage.tsx: useEffect手動SEO → useSEOフック移行
+  - [x] Course45Page.tsx: useEffect手動SEO → useSEOフック移行（JSON-LD TouristTrip追加）
+  - [x] Course56Page.tsx: useEffect手動SEO → useSEOフック移行（JSON-LD TouristTrip追加）
+  - [x] Course67Page.tsx: useEffect手動SEO → useSEOフック移行（JSON-LD TouristTrip追加）

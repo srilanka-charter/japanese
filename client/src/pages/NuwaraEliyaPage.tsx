@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useSEO } from "@/hooks/useSEO";
 
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/nuwara_eliya_hero-cUD77pa9iMkhZSpVEdQUpX.webp";
 const TAXI_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/nuwara_eliya_taxi_charter-QT5DS6tZcSfabG2KVMSZ6N.webp";
@@ -149,6 +150,15 @@ export default function NuwaraEliyaPage() {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
 
+  useSEO({
+    title: "ヌワラエリヤ高原の観光ガイド｜紅茶畑・高原列車・ホートンプレインズへの行き方【SLTCS】",
+    description: "スリランカの高原都市ヌワラエリヤへの行き方・見どころ・おすすめホテル・レストランを徹底解説。コロンボからタクシーチャーターで快適にアクセスする方法も紹介。",
+    path: "/nuwara-eliya",
+    ogImage: HERO_IMG,
+    jsonLdList: [structuredData],
+    jsonLdIdPrefix: "nuwara-eliya",
+  });
+
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const accessRows = [
@@ -159,18 +169,6 @@ export default function NuwaraEliyaPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* SEO */}
-      <title>ヌワラエリヤ高原の観光ガイド｜紅茶畑・高原列車・ホートンプレインズへの行き方【SLTCS】</title>
-      <meta name="description" content="スリランカの高原都市ヌワラエリヤへの行き方・見どころ・おすすめホテル・レストランを徹底解説。コロンボからタクシーチャーターで快適にアクセスする方法も紹介。" />
-      <meta name="keywords" content="ヌワラエリヤ 行き方, ヌワラエリヤ 観光, スリランカ 紅茶 茶畑, ホートンプレインズ, 高原列車 エッラ, ヌワラエリヤ ホテル, ヌワラエリヤ タクシー, セイロンティー" />
-      <link rel="canonical" href="https://sltcs.srilanka-charter.com/nuwara-eliya" />
-      <meta property="og:title" content="ヌワラエリヤ高原の観光ガイド｜紅茶畑・高原列車・ホートンプレインズへの行き方" />
-      <meta property="og:description" content="スリランカの高原都市ヌワラエリヤへの行き方・見どころ・おすすめホテル・レストランを徹底解説。" />
-      <meta property="og:image" content={HERO_IMG} />
-      <meta property="og:url" content="https://sltcs.srilanka-charter.com/nuwara-eliya" />
-      <meta property="og:type" content="article" />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-
       <Header />
 
       {/* ヒーローセクション */}

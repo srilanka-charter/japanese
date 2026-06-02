@@ -3,6 +3,7 @@ import { ChevronRight, Home, CheckCircle2, Calendar, Clock, Ship, Waves, Fish, S
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
+import { useSEO } from "@/hooks/useSEO";
 
 // Image URLs
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/whale_hero-acCCARPKjEEpk6DgUTEmGF.webp";
@@ -71,27 +72,26 @@ const highlights = [
 ];
 
 export default function WhaleWatchingPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "TouristAttraction",
-    "name": "スリランカ ホエールウォッチング（ミリッサ）",
-    "description": "スリランカ・ミリッサ発のホエールウォッチング。シロナガスクジラやスピナードルフィンに出会える世界有数のスポット。SLTCSでは送迎付きでご案内します。",
-    "url": "https://sltcs.srilanka-charter.com/whale-watching",
-    "image": HERO_IMG,
-    "touristType": "Wildlife Tourism",
-    "availableSeason": "November to April",
-  };
+  useSEO({
+    title: "スリランカのミリッサでホエールウォッチングを楽しもう！｜シロナガスクジラに出会う旅 | SLTCS",
+    description: "スリランカ・ミリッサ発のホエールウォッチングツアー。世界最大の動物・シロナガスクジラやスピナードルフィンに出会える世界有数のスポット。SLTCSの専用車チャーターで送迎付きでご案内。",
+    path: "/whale-watching",
+    ogImage: HERO_IMG,
+    jsonLdList: [{
+      "@context": "https://schema.org",
+      "@type": "TouristAttraction",
+      "name": "スリランカ ホエールウォッチング（ミリッサ）",
+      "description": "スリランカ・ミリッサ発のホエールウォッチング。シロナガスクジラやスピナードルフィンに出会える世界有数のスポット。SLTCSでは送迎付きでご案内します。",
+      "url": "https://sltcs.srilanka-charter.com/whale-watching",
+      "image": HERO_IMG,
+      "touristType": "Wildlife Tourism",
+      "availableSeason": "November to April",
+    }],
+    jsonLdIdPrefix: "whale-watching",
+  });
 
   return (
     <div className="min-h-screen bg-white">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-
-      {/* SEO Meta */}
-      <title>スリランカのミリッサでホエールウォッチングを楽しもう！｜シロナガスクジラに出会う旅 | SLTCS</title>
-
       <Header />
 
       {/* Hero Section */}

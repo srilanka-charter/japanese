@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useSEO } from "@/hooks/useSEO";
 
 // ── 画像URL ──────────────────────────────────────────────
 const ASTROLOGY_HERO   = "/manus-storage/astrology_hero_bf80b777.jpeg";
@@ -20,22 +21,16 @@ const JSON_LD = {
 export default function AstrologyPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "スリランカで占星術師に貴方のホロスコープを見てもらおう！｜SLTCS";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute(
-        "content",
-        "スリランカの著名な占星術師シャーミラ・ドゥヌシンハ先生によるホロスコープ鑑定。数千年の歴史を持つヴェーダ占星術を、コロンボ国際空港近くで体験。SLTCSが手配します。"
-      );
-    }
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.text = JSON.stringify(JSON_LD);
-    document.head.appendChild(script);
-    return () => {
-      document.head.removeChild(script);
-    };
   }, []);
+
+  useSEO({
+    title: "スリランカで占星術師に貴方のホロスコープを見てもらおう！｜SLTCS",
+    description: "スリランカの著名な占星術師シャーミラ・ドゥヌシンハ先生によるホロスコープ鑑定。数千年の歴史を持つヴェーダ占星術を、コロンボ国際空港近くで体験。SLTCSが手配します。",
+    path: "/astrology",
+    ogImage: ASTROLOGY_HERO,
+    jsonLdList: [JSON_LD],
+    jsonLdIdPrefix: "astrology",
+  });
 
   return (
     <div className="min-h-screen bg-white">

@@ -5,11 +5,11 @@
  * Minimal imagery, typography-driven design
  */
 
-import { useEffect } from "react";
 import { Link } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { MessageCircle, ArrowLeft, Clock, MapPin, Utensils, Hotel } from "lucide-react";
+import { useSEO } from "@/hooks/useSEO";
 
 const plans = [
   {
@@ -119,29 +119,20 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 export default function Course45Page() {
-  useEffect(() => {
-    const prevTitle = document.title;
-    document.title = "スリランカ 3泊4日 モデルコース｜タクシーチャーターで巡る短期周遊プラン";
-
-    let meta = document.querySelector<HTMLMetaElement>('meta[name="description"]');
-    const created = !meta;
-    if (!meta) {
-      meta = document.createElement("meta");
-      meta.name = "description";
-      document.head.appendChild(meta);
-    }
-    const prevDesc = meta.content;
-    meta.content = "スリランカ3泊4日のモデルコースをご紹介。シーギリヤ・キャンディ・ヌワラエリヤなど主要観光地を専用タクシーチャーターで効率よく周遊。日本語対応ドライバーが旅をサポートします。";
-
-    return () => {
-      document.title = prevTitle;
-      if (created) {
-        meta?.parentNode?.removeChild(meta);
-      } else if (meta) {
-        meta.content = prevDesc;
-      }
-    };
-  }, []);
+  useSEO({
+    title: "スリランカ 3泊4日 モデルコース｜タクシーチャーターで巡る短期周遊プラン | SLTCS",
+    description: "スリランカ3泊4日のモデルコースをご紹介。シーギリヤ・キャンディ・ヌワラエリヤなど主要観光地を専用タクシーチャーターで効率よく周遊。日本語対応ドライバーが旅をサポートします。",
+    path: "/course/3-4days",
+    jsonLdList: [{
+      "@context": "https://schema.org",
+      "@type": "TouristTrip",
+      "name": "スリランカ 3泊4日 モデルコース",
+      "description": "シーギリヤ・キャンディ・ヌワラエリヤなど主要観光地を専用タクシーチャーターで周遊。",
+      "url": "https://sltcs.srilanka-charter.com/course/3-4days",
+      "touristType": "日本人旅行者",
+    }],
+    jsonLdIdPrefix: "course-3-4days",
+  });
 
   return (
     <div className="min-h-screen bg-[oklch(0.97_0.005_155)]">
