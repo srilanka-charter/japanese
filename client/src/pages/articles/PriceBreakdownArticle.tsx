@@ -50,9 +50,10 @@ export default function PriceBreakdownArticle() {
         </p>
 
         <h3
-          className="text-lg font-bold text-gray-900 mb-3 mt-8"
+          className="text-base font-bold text-gray-900 mb-3 mt-8 flex items-center gap-2"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
+          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[oklch(0.35_0.12_155)] text-white text-xs font-bold flex-shrink-0">1</span>
           スリランカでは日本車が主流だが、輸入関税が極めて高い
         </h3>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
@@ -89,9 +90,10 @@ export default function PriceBreakdownArticle() {
         </div>
 
         <h3
-          className="text-lg font-bold text-gray-900 mb-3 mt-8"
+          className="text-base font-bold text-gray-900 mb-3 mt-8 flex items-center gap-2"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
+          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[oklch(0.35_0.12_155)] text-white text-xs font-bold flex-shrink-0">2</span>
           近年の円安がさらに負担を増大させている
         </h3>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
@@ -103,9 +105,26 @@ export default function PriceBreakdownArticle() {
         </p>
 
         <h3
-          className="text-lg font-bold text-gray-900 mb-3 mt-8"
+          className="text-base font-bold text-gray-900 mb-3 mt-8 flex items-center gap-2"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
+          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[oklch(0.35_0.12_155)] text-white text-xs font-bold flex-shrink-0">3</span>
+          原油高騰のダイレクトな影響
+        </h3>
+        <p className="text-base leading-[1.9] text-gray-700 mb-5">
+          スリランカは日本と同様に原油のほぼ全量を輸入に依存しています。
+          そのため、近年の「原油高騰」はスリランカのタクシー業界にもダイレクトに影響しています。
+          日本のような政府による備蓄制度や補助金制度は整備されておらず、
+          <strong className="text-gray-900">国際市場の油価変動がそのまま燃料費に反映される</strong>構造になっています。
+          ドライバーにとって燃料費は日々の大きな出費であり、原油高騰が続く現在の状況下では、
+          サービス品質を維持するために一定の料金水準が必要不可欠です。
+        </p>
+
+        <h3
+          className="text-base font-bold text-gray-900 mb-3 mt-8 flex items-center gap-2"
+          style={{ fontFamily: "'Shippori Mincho', serif" }}
+        >
+          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[oklch(0.35_0.12_155)] text-white text-xs font-bold flex-shrink-0">4</span>
           ドライバーは高額なローンを抱えながら働いている
         </h3>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
@@ -270,7 +289,7 @@ export default function PriceBreakdownArticle() {
             <div key={title} className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
               <div className="text-2xl mb-2">{icon}</div>
               <h3
-                className="text-sm font-bold text-gray-900 mb-1"
+                className="text-sm font-bold text-gray-900 mb-1.5 border-b border-gray-100 pb-1.5"
                 style={{ fontFamily: "'Shippori Mincho', serif" }}
               >
                 {title}
@@ -415,7 +434,8 @@ export default function PriceBreakdownArticle() {
           <ul className="space-y-2 text-sm text-gray-700">
             {[
               "日本車に高い輸入関税がかかるため、スリランカでの車両コストは日本の3〜4倍",
-              "近年の円安により、円換算での料金は以前より高く感じられる",
+              "近年の円安により、円换算での料金は以前より高く感じられる",
+              "原油高騰の影響を直接受けるスリランカでは、政府の備蓄・補助金制度が整備されておらず、燃料費の増加がサービス料金に反映される",
               "格安サービスには追加請求・旧型車・サポート不足などのリスクが潜む",
               "ドライバーへの適正な報酬を守ることが、高品質なサービスの継続につながる",
               "SLTCSでは事前確定の明朗会計・政府公認ドライバー・日本語サポートを提供",
