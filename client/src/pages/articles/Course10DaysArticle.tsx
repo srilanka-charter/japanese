@@ -11,19 +11,24 @@ const SAFARI_IMG =
 
 const H2 = ({ children }: { children: React.ReactNode }) => (
   <h2
-    className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+    className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
     style={{ fontFamily: "'Shippori Mincho', serif" }}
   >
     {children}
   </h2>
 );
 
-const H3 = ({ children }: { children: React.ReactNode }) => (
-  <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-    <span className="w-1.5 h-5 bg-[oklch(0.75_0.12_75)] rounded-full inline-block flex-shrink-0" />
-    {children}
-  </h3>
-);
+let _h3Counter = 0;
+const H3 = ({ children, index }: { children: React.ReactNode; index?: number }) => {
+  const nums = ["\u2460","\u2461","\u2462","\u2463","\u2464","\u2465","\u2466","\u2467","\u2468","\u2469"];
+  const badge = index !== undefined ? nums[index] ?? String(index + 1) : "\u2022";
+  return (
+    <h3 className="text-base sm:text-lg font-bold mt-12 mb-4 pb-2 border-b-2 border-[oklch(0.35_0.12_155)] flex items-center gap-2">
+      <span className="w-6 h-6 rounded bg-[oklch(0.35_0.12_155)] text-white text-xs flex items-center justify-center font-bold flex-shrink-0">{badge}</span>
+      <span className="text-[oklch(0.35_0.12_155)]">{children}</span>
+    </h3>
+  );
+};
 
 const itinerary = [
   {
@@ -141,8 +146,10 @@ export default function Course10DaysArticle() {
       {/* H2① 全体像 */}
       <section className="mb-14">
         <H2>10日間コースの全体像</H2>
-        <p className="text-base leading-[1.9] text-gray-700 mb-6">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           このコースは「北部の文化三角地帯」「中部の高原・紅茶列車」「南部のサファリ・ビーチ」という3つのゾーンを専用車で繋ぐ構成です。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-6">
           移動は毎日ありますが、専用車なら荷物を車に置いたまま移動できるため、体力的な負担を最小限に抑えられます。
         </p>
         <div className="flex flex-wrap gap-2 mb-6">
@@ -209,21 +216,26 @@ export default function Course10DaysArticle() {
           <img src={CHARTER_IMG} alt="SLTCSのタクシーチャーターを利用するお客様とドライバー" className="w-full rounded-xl object-cover max-h-72" />
           <figcaption className="text-center text-xs text-gray-400 mt-2">SLTCSのタクシーチャーターを利用するお客様とドライバー。日本語でのやり取りで安心の旅を。</figcaption>
         </figure>
-        <H3>10日間の移動を一括手配できる</H3>
-        <p className="text-base leading-[1.9] text-gray-700 mb-6">
+        <H3 index={0}>10日間の移動を一括手配できる</H3>
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           10日間の旅程では、コロンボ・アヌラーダプラ・シーギリヤ・キャンディ・エッラ・ヤーラ・ゴール・ミリッサと、多くの都市間移動が発生します。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-6">
           専用車チャーターなら、すべての移動を出発前に一括で手配できるため、現地での移動手段探しに時間を取られません。
         </p>
-        <H3>荷物を車に置いたまま観光できる</H3>
-        <p className="text-base leading-[1.9] text-gray-700 mb-6">
-          10日間の旅行では大きなスーツケースを持ち歩く機会が多くなります。専用車があれば荷物を車内に置いたまま観光地を回れるため、
-          身軽に動けます。特に家族旅行やシニア旅行では、荷物の負担軽減が旅の快適さに直結します。
+        <H3 index={1}>荷物を車に置いたまま観光できる</H3>
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
+          10日間の旅行では大きなスーツケースを持ち歩く機会が多くなります。専用車があれば荷物を車内に置いたまま観光地を回れるため、身軽に動けます。
         </p>
-        <H3>日本語で相談しながら旅ができる</H3>
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
+          特に家族旅行やシニア旅行では、荷物の負担軽減が旅の快適さに直結します。
+        </p>
+        <H3 index={2}>日本語で相談しながら旅ができる</H3>
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           SLTCSでは、予約から当日の移動まで日本語でのやり取りが可能です。
-          「ヤーラのサファリは早朝と夕方どちらがおすすめ？」「紅茶列車の座席はどこが景色がいい？」といった質問にも、
-          経験豊富なスタッフが日本語で丁寧にお答えします。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-6">
+          「ヤーラのサファリは早朝と夕方どちらがおすすめ？」「紅茶列車の座席はどこが景色がいい？」といった質問にも、経験豊富なスタッフが日本語で丁寧にお答えします。
         </p>
         <figure className="mb-2">
           <img src={SAFARI_IMG} alt="ヤーラ国立公園のサファリ" className="w-full rounded-xl object-cover max-h-72" />
@@ -307,12 +319,12 @@ export default function Course10DaysArticle() {
         <H2>まとめ</H2>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
           10日間あれば、スリランカの文化・自然・食・アクティビティをほぼすべて体験できます。
-          文化三角地帯の世界遺産めぐり、キャンディ〜エッラの紅茶列車、ヤーラのサファリ、ゴールの旧市街、ミリッサのホエールウォッチングと、
-          どれも一生の思い出になる体験ばかりです。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
+          文化三角地帯の世界遺産めぐり、キャンディ〜エッラの紅茶列車、ヤーラのサファリ、ゴールの旧市街、ミリッサのホエールウォッチングと、どれも一生の思い出になる体験ばかりです。
         </p>
         <p className="text-base leading-[1.9] text-gray-700">
-          SLTCSでは、このコースをベースに日程・人数・ご予算に合わせたカスタマイズプランをご提案しています。
-          まずはお気軽に無料相談からご連絡ください。
+          SLTCSでは、このコースをベースに日程・人数・ご予算に合わせたカスタマイズプランをご提案しています。まずはお気軽に無料相談からご連絡ください。
         </p>
       </section>
 

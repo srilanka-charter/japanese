@@ -116,3 +116,10 @@
   - [x] PriceBreakdownArticle.tsx新規作成（タクシーチャーター基礎カテゴリー）
   - [x] blogData.tsに記事エントリー追加（slug: price-breakdown-risks）
   - [x] BlogArticlePage.tsxにimport・スラグ分岐を追加
+- [x] 全記事への統一デザインルール適用
+  - [x] BlogArticlePage.tsx（WhyTaxiCharterArticle）：H3バッジデザイン・H2/H3余白・段落改行
+  - [x] FamilyTravelArticle.tsx：H3バッジデザイン・H2/H3余白・段落改行
+  - [x] SoloWomenTravelArticle.tsx：H3バッジデザイン・H2/H3余白・段落改行
+  - [x] HoneymoonArticle.tsx：H2余白・段落改行（H3はカード内のみ）
+  - [x] Course10DaysArticle.tsx：H2/H3コンポーネントにmt-4追加・H3バッジデザイン・段落改行
+  - [x] BookingTimingArticle.tsx：H2余白・段落改行

@@ -39,14 +39,15 @@ export default function HoneymoonArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section1">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカがハネムーン・新婚旅行に選ばれる理由
         </h2>
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
+          スリランカは「インド洋の真珠」とも呼ばれる美しい島国。日本からの直行便はありませんが、乗り継ぎ1回で約10〜11時間とアクセスしやすく、ヨーロッパやモルディブと比べてコストパフォーマンスに優れています。
+        </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
-          スリランカは「インド洋の真珠」とも呼ばれる美しい島国。日本からの直行便はありませんが、
-          乗り継ぎ1回で約10〜11時間とアクセスしやすく、ヨーロッパやモルディブと比べてコストパフォーマンスに優れています。
           ハワイやバリ島とは一味違う、<strong className="text-gray-900">非日常感あふれる体験</strong>が二人の特別な旅を演出してくれます。
         </p>
 
@@ -105,13 +106,15 @@ export default function HoneymoonArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section2">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカハネムーンに専用車チャーターがおすすめな理由
         </h2>
-        <p className="text-base leading-[1.9] text-gray-700 mb-6">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           新婚旅行で最も大切なのは、<strong className="text-gray-900">二人だけの時間をゆっくり過ごすこと</strong>。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-6">
           専用車チャーターなら、他の旅行者と時間を合わせる必要がなく、二人のペースで旅程を組めます。
         </p>
 
@@ -162,13 +165,15 @@ export default function HoneymoonArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section3">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカ新婚旅行で訪れたいカップル向け観光スポット
         </h2>
-        <p className="text-base leading-[1.9] text-gray-700 mb-6">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           スリランカには、カップルで訪れたい絶景スポットが数多くあります。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-6">
           専用車チャーターなら、これらのスポットを効率よく、かつ自分たちのペースで巡ることができます。
         </p>
 
@@ -248,13 +253,15 @@ export default function HoneymoonArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section4">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカハネムーンモデルコース（6泊7日）完全版
         </h2>
-        <p className="text-base leading-[1.9] text-gray-700 mb-6">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           スリランカの主要スポットを効率よく巡る6泊7日のハネムーンコースです。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-6">
           専用車チャーターなら、このコースを二人だけのペースで自由に旅できます。
         </p>
 
@@ -315,7 +322,7 @@ export default function HoneymoonArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section5">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカ新婚旅行をしたカップルのリアルな声
@@ -367,7 +374,7 @@ export default function HoneymoonArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section6">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカハネムーンよくある質問（FAQ）
@@ -414,14 +421,15 @@ export default function HoneymoonArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section7">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカ新婚旅行（ハネムーン）まとめ
         </h2>
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
+          スリランカは、世界遣産・ビーチ・サファリ・茶畔・文化体験が一島に凝縮された、<strong className="text-gray-900">コスパ最高の新婚旅行先</strong>です。
+        </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
-          スリランカは、世界遺産・ビーチ・サファリ・茶畑・文化体験が一島に凝縮された、
-          <strong className="text-gray-900">コスパ最高の新婚旅行先</strong>です。
           そして専用車チャーターを使えば、二人だけのプライベートな時間を最大限に楽しめます。
         </p>
         <ul className="space-y-2 text-base text-gray-700 mb-8">

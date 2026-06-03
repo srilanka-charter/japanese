@@ -38,20 +38,19 @@ export default function SoloWomenTravelArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカは女性一人旅・女子旅に向いているか？
         </h2>
-        <p className="text-base leading-[1.9] text-gray-700 mb-5">
-          スリランカは、仏教文化が根付いた穏やかな国民性で知られており、
-          東南アジアの中でも比較的治安が安定しています。
-          世界遺産・ビーチ・紅茶農園・象・サファリなど、女性が喜ぶ体験が凝縮されているのも魅力です。
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
+          スリランカは、仏教文化が根付いた穏やかな国民性で知られており、東南アジアの中でも比較的治安が安定しています。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
+          世界遣産・ビーチ・紅茶農園・象・サファリなど、女性が喜ぶ体験が凝縮されているのも魅力です。
         </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
-          一方で、公共交通機関は時刻が不規則で、バスや列車は混雑することも多く、
-          一人旅の女性にとって移動面の不安は否定できません。
-          だからこそ、<strong className="text-gray-900">移動手段の選択が旅の安心感を大きく左右します。</strong>
+          一方で、公共交通機関は時刻が不規則で、バスや列車は混雑することも多く、一人旅の女性にとって移動面の不安は否定できません。だからこそ、<strong className="text-gray-900">移動手段の選択が旅の安心感を大きく左右します。</strong>
         </p>
 
         {/* アイキャッチ画像1 */}
@@ -83,7 +82,7 @@ export default function SoloWomenTravelArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカ女子旅に専用車チャーターが選ばれる5つの理由
@@ -133,7 +132,7 @@ export default function SoloWomenTravelArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカ女子旅・一人旅で訪れたいおすすめ観光スポット
@@ -208,14 +207,16 @@ export default function SoloWomenTravelArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカ女性一人旅向けモデルコース
         </h2>
 
-        <p className="text-base leading-[1.9] text-gray-700 mb-6">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           女子旅の定番スポットを効率よく巡る5泊6日のモデルコースをご紹介します。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-6">
           専用車チャーターなら移動の心配なく、自分だけのペースで旅を楽しめます。
         </p>
 
@@ -258,7 +259,7 @@ export default function SoloWomenTravelArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカ女子旅をした実際のお客様の声
@@ -320,7 +321,7 @@ export default function SoloWomenTravelArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカ女子旅・一人旅よくある質問（FAQ）
@@ -363,7 +364,7 @@ export default function SoloWomenTravelArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカ女子旅（一人旅）まとめ
@@ -380,10 +381,11 @@ export default function SoloWomenTravelArticle() {
           </ul>
         </div>
 
-        <p className="text-base leading-[1.9] text-gray-700 mb-6">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           スリランカへの女子旅・一人旅を検討されている方は、ぜひ専用車チャーターをご検討ください。
-          SLTCSでは、女性の一人旅でも安心してご利用いただけるよう、丁寧なサポート体制を整えています。
-          まずはお気軽にご相談ください。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-6">
+          SLTCSでは、女性の一人旅でも安心してご利用いただけるよう、丁寧なサポート体制を整えています。まずはお気軽にご相談ください。
         </p>
 
         {/* 関連記事リンク */}

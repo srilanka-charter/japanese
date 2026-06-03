@@ -79,12 +79,14 @@ function WhyTaxiCharterArticle() {
           H2 ① スリランカの主な移動手段と特徴
       ════════════════════════════════════════════════════ */}
       <section className="mb-14">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
             style={{ fontFamily: "'Shippori Mincho', serif" }}>
           スリランカの主な移動手段と特徴
         </h2>
-        <p className="text-base leading-[1.9] text-gray-700 mb-6">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           スリランカには鉄道・バス・配車アプリ（PickMe・Uber）・タクシーチャーターという4つの主な移動手段があります。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-6">
           旅行スタイルに合った選択肢を選ぶために、それぞれの特徴を整理してみましょう。
         </p>
 
@@ -129,7 +131,7 @@ function WhyTaxiCharterArticle() {
           H2 ② 鉄道・バスでは難しいこと
       ════════════════════════════════════════════════════ */}
       <section className="mb-14">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
             style={{ fontFamily: "'Shippori Mincho', serif" }}>
           鉄道・バスでは難しいこと
         </h2>
@@ -146,22 +148,25 @@ function WhyTaxiCharterArticle() {
           </figcaption>
         </figure>
 
-        <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-          <span className="w-1.5 h-5 bg-[oklch(0.75_0.12_75)] rounded-full inline-block flex-shrink-0" />
-          主要観光地へのアクセスに限界がある
+        <h3 className="text-base sm:text-lg font-bold mt-12 mb-4 pb-2 border-b-2 border-[oklch(0.35_0.12_155)] flex items-center gap-2">
+          <span className="w-6 h-6 rounded bg-[oklch(0.35_0.12_155)] text-white text-xs flex items-center justify-center font-bold flex-shrink-0">①</span>
+          <span className="text-[oklch(0.35_0.12_155)]">主要観光地へのアクセスに限界がある</span>
         </h3>
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
+          スリランカの鉄道は、エッラ〜キャンディ間の紅茶列車のような観光路線が有名ですが、シーギリヤ・ヤーラ国立公園・ミネリヤ国立公園など主要観光地の多くは鉄道が通っていません。
+        </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
-          スリランカの鉄道は、エッラ〜キャンディ間の紅茶列車のような観光路線が有名ですが、
-          シーギリヤ・ヤーラ国立公園・ミネリヤ国立公園など主要観光地の多くは鉄道が通っていません。
           バスは路線が多いものの、時刻表が不規則で遅延も多く、荷物が多い旅行者には体力的な負担が大きいです。
         </p>
 
-        <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-          <span className="w-1.5 h-5 bg-[oklch(0.75_0.12_75)] rounded-full inline-block flex-shrink-0" />
-          配車アプリは地方移動に対応していない
+        <h3 className="text-base sm:text-lg font-bold mt-12 mb-4 pb-2 border-b-2 border-[oklch(0.35_0.12_155)] flex items-center gap-2">
+          <span className="w-6 h-6 rounded bg-[oklch(0.35_0.12_155)] text-white text-xs flex items-center justify-center font-bold flex-shrink-0">②</span>
+          <span className="text-[oklch(0.35_0.12_155)]">配車アプリは地方移動に対応していない</span>
         </h3>
-        <p className="text-base leading-[1.9] text-gray-700">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           配車アプリ（PickMe・Uber）はコロンボ市内では便利ですが、地方への長距離移動や観光地間の移動には対応していないことがほとんどです。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700">
           英語でのコミュニケーションが必要になる場面も多く、言語に不安を感じる方には向いていません。
         </p>
       </section>
@@ -170,7 +175,7 @@ function WhyTaxiCharterArticle() {
           H2 ③ タクシーチャーターが選ばれる5つの理由
       ════════════════════════════════════════════════════ */}
       <section className="mb-14">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4"
             style={{ fontFamily: "'Shippori Mincho', serif" }}>
           タクシーチャーターが選ばれる5つの理由
         </h2>
@@ -233,17 +238,15 @@ function WhyTaxiCharterArticle() {
           H2 ④ 費用面の考え方
       ════════════════════════════════════════════════════ */}
       <section className="mb-14">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
             style={{ fontFamily: "'Shippori Mincho', serif" }}>
           費用面の考え方
         </h2>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
           タクシーチャーターは鉄道やバスと比べて費用が高くなります。
-          ただし、2〜4名のグループで利用する場合、1人あたりのコストは配車アプリを複数回使うのと大きく変わらないケースも多いです。
         </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
-          移動時間の短縮・荷物の手間の削減・日本語サポートといった付加価値を考えると、
-          旅行全体の満足度を高める投資として捉えることができます。
+          ただし、2〜4名のグループで利用する場合、1人あたりのコストは配車アプリを複数回使うのと大きく変わらないケースも多いです。移動時間の短縮・荷物の手間の削減・日本語サポートといった付加価値を考えると、旅行全体の満足度を高める投資として捉えることができます。
         </p>
 
         {/* ポイントボックス */}
@@ -270,7 +273,7 @@ function WhyTaxiCharterArticle() {
           H2 ⑤ こんな旅行者におすすめ
       ════════════════════════════════════════════════════ */}
       <section className="mb-14">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
             style={{ fontFamily: "'Shippori Mincho', serif" }}>
           こんな旅行者におすすめ
         </h2>
@@ -329,17 +332,18 @@ function WhyTaxiCharterArticle() {
           H2 ⑥ まとめ
       ════════════════════════════════════════════════════ */}
       <section className="mb-10">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
             style={{ fontFamily: "'Shippori Mincho', serif" }}>
           まとめ
         </h2>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
           スリランカ旅行における移動手段を比較すると、複数の観光地を効率よく巡りたい旅行者には<strong className="text-gray-900">タクシーチャーター（専用車）</strong>が最も適しています。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           鉄道やバスは費用が安い反面、観光地へのアクセスや日本語対応に限界があります。
         </p>
         <p className="text-base leading-[1.9] text-gray-700">
-          SLTCSでは、政府公認ドライバーによる完全プライベートチャーターを日本語でご提供しています。
-          スリランカ旅行を検討している方は、まず無料相談からお気軽にご連絡ください。
+          SLTCSでは、政府公認ドライバーによる完全プライベートチャーターを日本語でご提供しています。スリランカ旅行を検討している方は、まず無料相談からお気軽にご連絡ください。
         </p>
       </section>
 

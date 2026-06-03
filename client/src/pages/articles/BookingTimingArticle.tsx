@@ -31,22 +31,19 @@ export default function BookingTimingArticle() {
       </nav>
 
       {/* ── H2: 1 ── */}
-      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-14">
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4">
         1. スリランカ旅行で専用車チャーターが必要な理由
       </h2>
-      <p className="leading-[1.9] text-gray-700 mb-6">
-        スリランカは公共交通機関が発達しているとはいえず、観光地間の移動は<strong>時間・快適性・安全性</strong>の面で大きな差が生まれます。
-        鉄道は本数が少なく遅延が多い、バスは混雑して荷物の管理が難しい、配車アプリは長距離移動に対応していないケースがほとんどです。
+      <p className="leading-[1.9] text-gray-700 mb-4">
+        スリランカは公共交通機関が発達しているとはいえず、観光地間の移動は<strong>時間・快適性・安全性</strong>の面で大きな差が生まれます。鉄道は本数が少なく遅延が多い、バスは混雑して荷物の管理が難しい、配車アプリは長距離移動に対応していないケースがほとんどです。
       </p>
       <p className="leading-[1.9] text-gray-700 mb-6">
-        一方、専用車チャーターは出発地から目的地まで直行でき、途中の立ち寄りも自由に設定できます。
-        特に<a href="/sigiriya" className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">シーギリヤ</a>・
+        一方、専用車チャーターは出発地から目的地まで直行でき、途中の立ち寄りも自由に設定できます。特に<a href="/sigiriya" className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">シーギリヤ</a>・
         <a href="/kandy" className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">キャンディ</a>・
         <a href="/galle" className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">ゴール</a>など複数の観光地を巡る場合、専用車は「移動手段」ではなく「旅の核心」になります。
       </p>
       <p className="leading-[1.9] text-gray-700 mb-10">
-        だからこそ、専用車チャーターの予約は旅行計画の中でも<strong>最優先で確定させるべき要素</strong>のひとつです。
-        フライトやホテルを先に押さえたとしても、移動手段が未確定では旅程全体が不安定になります。
+        だからこそ、専用車チャーターの予約は旅行計画の中でも<strong>最優先で確定させるべき要素</strong>のひとつです。フライトやホテルを先に押さえたとしても、移動手段が未確定では旅程全体が不安定になります。
       </p>
 
       {/* ── アイキャッチ画像 ── */}
@@ -62,7 +59,7 @@ export default function BookingTimingArticle() {
       </figure>
 
       {/* ── H2: 2 ── */}
-      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-14">
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4">
         2. 予約が遅れると起きること
       </h2>
       <p className="leading-[1.9] text-gray-700 mb-6">
@@ -99,7 +96,7 @@ export default function BookingTimingArticle() {
       </div>
 
       {/* ── H2: 3 ── */}
-      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-14">
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4">
         3. ベストな予約タイミング：時期別ガイド
       </h2>
       <p className="leading-[1.9] text-gray-700 mb-6">
@@ -152,11 +149,13 @@ export default function BookingTimingArticle() {
       </div>
 
       {/* ── H2: 4 ── */}
-      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-14">
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4">
         4. 予約前に決めておくべきこと
       </h2>
-      <p className="leading-[1.9] text-gray-700 mb-6">
+      <p className="leading-[1.9] text-gray-700 mb-4">
         専用車チャーターを予約する前に、以下の項目をある程度決めておくとスムーズに手配が進みます。
+      </p>
+      <p className="leading-[1.9] text-gray-700 mb-6">
         すべてが確定していなくても相談は可能ですが、大枠が決まっているほど精度の高い提案を受けられます。
       </p>
 
@@ -180,11 +179,13 @@ export default function BookingTimingArticle() {
       </div>
 
       {/* ── H2: 5 ── */}
-      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-14">
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4">
         5. SLTCSへの予約の流れ
       </h2>
-      <p className="leading-[1.9] text-gray-700 mb-6">
+      <p className="leading-[1.9] text-gray-700 mb-4">
         SLTCSでは、お問い合わせから出発当日まで一貫して日本語でサポートします。
+      </p>
+      <p className="leading-[1.9] text-gray-700 mb-6">
         予約の流れは以下のとおりです。
       </p>
 
@@ -241,16 +242,14 @@ export default function BookingTimingArticle() {
       </div>
 
       {/* ── H2: 6 まとめ ── */}
-      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-14">
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4">
         6. まとめ
       </h2>
-      <p className="leading-[1.9] text-gray-700 mb-6">
-        スリランカの専用車チャーターは、旅行の快適さと自由度を大きく左右する重要な要素です。
-        予約のベストタイミングは<strong>出発の1〜3ヶ月前</strong>。ハイシーズン（12月〜3月）や年末年始・GWは3ヶ月以上前の予約が安心です。
+      <p className="leading-[1.9] text-gray-700 mb-4">
+        スリランカの専用車チャーターは、旅行の快適さと自由度を大きく左右する重要な要素です。予約のベストタイミングは<strong>出発の1〜3ヶ月前</strong>。ハイシーズン（12月〜3月）や年末年始・GWは3ヶ月以上前の予約が安心です。
       </p>
       <p className="leading-[1.9] text-gray-700 mb-6">
-        「まだ旅程が決まっていない」という段階でも、まずは相談だけでも早めにしておくことをおすすめします。
-        SLTCSでは旅程の相談から予約確定まで、日本語で丁寧にサポートします。
+        「まだ旅程が決まっていない」という段階でも、まずは相談だけでも早めにしておくことをおすすめします。SLTCSでは旅程の相談から予約確定まで、日本語で丁寧にサポートします。
       </p>
 
       {/* ── 関連記事リンク ── */}

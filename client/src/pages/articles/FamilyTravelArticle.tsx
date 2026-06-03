@@ -35,7 +35,7 @@ export default function FamilyTravelArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカは子連れ家族旅行に向いているか？
@@ -67,7 +67,7 @@ export default function FamilyTravelArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカ家族旅行に専用車チャーターが選ばれる6つの理由
@@ -155,7 +155,7 @@ export default function FamilyTravelArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカ子連れ旅行で訪れたいおすすめ観光スポット
@@ -236,13 +236,15 @@ export default function FamilyTravelArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカ子連れ家族向けモデルコース
         </h2>
-        <p className="text-base leading-[1.9] text-gray-700 mb-6">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           以下は、子連れ家族に人気の5泊6日モデルコースです。移動距離と観光のバランスを考慮し、無理のない旅程を組んでいます。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-6">
           詳細なルートは<a href="/plan" className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">プランページ</a>でもご確認いただけます。
         </p>
 
@@ -312,7 +314,7 @@ export default function FamilyTravelArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカ家族旅行をした実際のご家族の声
@@ -413,18 +415,19 @@ export default function FamilyTravelArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-10">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカ家族旅行（子連れ）まとめ
         </h2>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
           スリランカは子連れ家族にとって魅力的な観光地ですが、移動手段の選択が旅の快適さを大きく左右します。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           荷物の管理・子どものペース対応・日本語サポートという観点から、<strong className="text-gray-900">専用車チャーターは家族旅行に最も適した移動手段</strong>といえます。
         </p>
         <p className="text-base leading-[1.9] text-gray-700">
-          SLTCSでは、政府公認ドライバーによる完全プライベートチャーターを日本語でご提供しています。
-          ご家族の旅行を検討している方は、まず<a href="/#contact" onClick={(e) => { e.preventDefault(); window.location.href = "/#contact"; }} className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">無料相談</a>からお気軽にご連絡ください。
+          SLTCSでは、政府公認ドライバーによる完全プライベートチャーターを日本語でご提供しています。ご家族の旅行を検討している方は、まず<a href="/#contact" onClick={(e) => { e.preventDefault(); window.location.href = "/#contact"; }} className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">無料相談</a>からお気軽にご連絡ください。
         </p>
       </section>
 
