@@ -3,10 +3,12 @@ export default function PriceBreakdownArticle() {
     <article className="text-gray-800">
 
       {/* ── リード文 ── */}
-      <p className="text-base sm:text-lg leading-[1.9] text-gray-700 mb-10">
+      <p className="text-base sm:text-lg leading-[1.9] text-gray-700 mb-5">
         「<strong className="text-gray-900">スリランカ タクシーチャーター 料金</strong>」を調べていると、
         1日あたり1万円台から3万円台まで幅広い価格帯のサービスが見つかります。
         「人件費が安い発展途上国なのに、なぜこんなに高いのか？」と感じる方も多いでしょう。
+      </p>
+      <p className="text-base sm:text-lg leading-[1.9] text-gray-700 mb-10">
         また、格安サービスを選んだ結果、旅行中にトラブルが発生したという声も後を絶ちません。
         この記事では、<strong className="text-gray-900">スリランカのタクシーチャーター料金の内訳</strong>と、
         安いサービスに潜むリスクを、SLTCSの実体験をもとにわかりやすく解説します。
@@ -46,7 +48,10 @@ export default function PriceBreakdownArticle() {
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
           スリランカの平均月収は日本の約10分の1程度です。それにもかかわらず、
           タクシーチャーターの料金が「日本の半額程度」にしかならないのはなぜでしょうか。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-8">
           その最大の理由は、<strong className="text-gray-900">車両にかかるコストが日本よりも大幅に高い</strong>ことにあります。
+          以下で、具体的な要因を4つに分けて解説します。
         </p>
 
         <h3
@@ -56,9 +61,11 @@ export default function PriceBreakdownArticle() {
           <span className="inline-flex items-center justify-center w-5 h-5 rounded bg-[oklch(0.35_0.12_155)] text-white text-[10px] font-bold flex-shrink-0">1</span>
           スリランカでは日本車が主流だが、輸入関税が極めて高い
         </h3>
-        <p className="text-base leading-[1.9] text-gray-700 mb-5">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           スリランカでは、信頼性の高さからトヨタやホンダをはじめとする<strong className="text-gray-900">日本車が主に使用</strong>されています。
           しかしスリランカ政府は外貨流出を防ぐため、自動車などの輸入品に非常に高い関税を課しています。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-5">
           その結果、<strong className="text-gray-900">日本で200万円で購入できる車が、スリランカでは700万円以上</strong>になることも珍しくありません。
           これは関税・物品税・付加価値税などが重なり合い、車両価格が3〜4倍に膨れ上がるためです。
         </p>
@@ -96,10 +103,12 @@ export default function PriceBreakdownArticle() {
           <span className="inline-flex items-center justify-center w-5 h-5 rounded bg-[oklch(0.35_0.12_155)] text-white text-[10px] font-bold flex-shrink-0">2</span>
           近年の円安がさらに負担を増大させている
         </h3>
-        <p className="text-base leading-[1.9] text-gray-700 mb-5">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           2022年以降、急速に進んだ<strong className="text-gray-900">円安</strong>も、日本人旅行者にとってのコスト感覚を変えています。
           スリランカルピーや米ドルベースで設定された料金は変わっていなくても、
           円換算すると「以前より割高に感じる」という状況が続いています。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-5">
           1ドル＝110円だった時代と比べ、150円台になった現在では、同じサービスでも約35〜40%高く感じられます。
           これは円安の影響であり、スリランカ側のサービス品質や価格設定が変わったわけではありません。
         </p>
@@ -111,9 +120,11 @@ export default function PriceBreakdownArticle() {
           <span className="inline-flex items-center justify-center w-5 h-5 rounded bg-[oklch(0.35_0.12_155)] text-white text-[10px] font-bold flex-shrink-0">3</span>
           原油高騰のダイレクトな影響
         </h3>
-        <p className="text-base leading-[1.9] text-gray-700 mb-5">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           スリランカは日本と同様に原油のほぼ全量を輸入に依存しています。
           そのため、近年の「原油高騰」はスリランカのタクシー業界にもダイレクトに影響しています。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-5">
           日本のような政府による備蓄制度や補助金制度は整備されておらず、
           <strong className="text-gray-900">国際市場の油価変動がそのまま燃料費に反映される</strong>構造になっています。
           ドライバーにとって燃料費は日々の大きな出費であり、原油高騰が続く現在の状況下では、
@@ -127,9 +138,11 @@ export default function PriceBreakdownArticle() {
           <span className="inline-flex items-center justify-center w-5 h-5 rounded bg-[oklch(0.35_0.12_155)] text-white text-[10px] font-bold flex-shrink-0">4</span>
           ドライバーは高額なローンを抱えながら働いている
         </h3>
-        <p className="text-base leading-[1.9] text-gray-700 mb-5">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           スリランカの平均的な月収は日本円換算で3〜5万円程度です。
           その収入水準で700万円を超える車のローンを返済しながら生活するのは、非常に大きな負担です。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-5">
           新しい車を購入したドライバーは、ローン返済・燃料費・保険・メンテナンス費を賄うために、
           ある程度の料金を受け取らなければ生活が成り立ちません。
           <strong className="text-gray-900">人件費が安いからといって、サービス全体が安くなるわけではない</strong>のはこのためです。
@@ -146,9 +159,11 @@ export default function PriceBreakdownArticle() {
         >
           スリランカの安いタクシーチャーターサービスに潜む5つのリスク
         </h2>
-        <p className="text-base leading-[1.9] text-gray-700 mb-8">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           「とにかく安く旅行したい」という気持ちはよく理解できます。
           しかし、スリランカのタクシーチャーターにおいて、相場より大幅に安い価格には必ず理由があります。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-8">
           以下に、格安サービスを選んだ際に実際に起こりうるトラブルをまとめました。
         </p>
 
@@ -157,29 +172,34 @@ export default function PriceBreakdownArticle() {
           {
             num: "01",
             title: "距離制限による追加請求",
-            body: "格安サービスの多くは「1日150kmまで」などの距離制限が設けられています。スリランカでは1日250km以上移動することも珍しくなく、超過分が1kmあたり100円前後で加算されると、最終的な支払い額が予算を大幅に超えることがあります。SLTCSでは事前に旅程全体の料金を確定するため、追加請求は発生しません。",
+            body1: "格安サービスの多くは「1日150kmまで」などの距離制限が設けられています。スリランカでは1日250km以上移動することも珍しくなく、超過分が1kmあたり100円前後で加算されると、最終的な支払い額が予算を大幅に超えることがあります。",
+            body2: "SLTCSでは事前に旅程全体の料金を確定するため、追加請求は発生しません。",
           },
           {
             num: "02",
             title: "20年以上前の古い車が配車される",
-            body: "前述のとおり、スリランカでは新車の購入が非常に高コストです。低価格を維持するために、20年以上前の旧型車を使い続けているドライバーも少なくありません。エアコンが効かない、シートが劣化している、走行中に異音がするといった状況は、快適な旅行体験を損ないます。",
+            body1: "前述のとおり、スリランカでは新車の購入が非常に高コストです。低価格を維持するために、20年以上前の旧型車を使い続けているドライバーも少なくありません。",
+            body2: "エアコンが効かない、シートが劣化している、走行中に異音がするといった状況は、快適な旅行体験を損ないます。",
           },
           {
             num: "03",
             title: "待ち合わせ場所に現れない・大幅遅刻",
-            body: "格安サービスでは、ドライバーの責任感や管理体制が十分でないケースがあります。空港や宿泊先への迎えに来ない、大幅に遅刻するといったトラブルは、旅の出鼻をくじく最悪の体験です。特に初めてのスリランカ旅行では、現地語でのやり取りが難しく、問題解決に時間がかかります。",
+            body1: "格安サービスでは、ドライバーの責任感や管理体制が十分でないケースがあります。空港や宿泊先への迎えに来ない、大幅に遅刻するといったトラブルは、旅の出鼻をくじく最悪の体験です。",
+            body2: "特に初めてのスリランカ旅行では、現地語でのやり取りが難しく、問題解決に時間がかかります。",
           },
           {
             num: "04",
             title: "キックバック目的で提携店に連れ回される",
-            body: "低い料金しか受け取れないドライバーは、提携しているレストランや土産物店・アーユルヴェーダ店に連れて行くことでキックバックを得ようとします。クオリティが低いのに価格が高い店に誘導されたり、本来の旅程が削られたりするリスクがあります。",
+            body1: "低い料金しか受け取れないドライバーは、提携しているレストランや土産物店・アーユルヴェーダ店に連れて行くことでキックバックを得ようとします。",
+            body2: "クオリティが低いのに価格が高い店に誘導されたり、本来の旅程が削られたりするリスクがあります。",
           },
           {
             num: "05",
             title: "サポート体制が整っていない",
-            body: "格安サービスでは、旅程作成の相談や現地でのトラブル対応といったサポートに人員を割く余裕がありません。「契約後は放置」というケースも存在し、旅行中に問題が発生しても自力で解決しなければならない状況に陥ることがあります。",
+            body1: "格安サービスでは、旅程作成の相談や現地でのトラブル対応といったサポートに人員を割く余裕がありません。",
+            body2: "「契約後は放置」というケースも存在し、旅行中に問題が発生しても自力で解決しなければならない状況に陥ることがあります。",
           },
-        ].map(({ num, title, body }) => (
+        ].map(({ num, title, body1, body2 }) => (
           <div key={num} className="flex gap-4 mb-6 p-5 bg-amber-50 border border-amber-200 rounded-xl">
             <span className="text-2xl font-black text-amber-400 flex-shrink-0 leading-none mt-0.5">{num}</span>
             <div>
@@ -189,7 +209,8 @@ export default function PriceBreakdownArticle() {
               >
                 {title}
               </h3>
-              <p className="text-sm leading-[1.85] text-gray-700">{body}</p>
+              <p className="text-sm leading-[1.85] text-gray-700 mb-2">{body1}</p>
+              <p className="text-sm leading-[1.85] text-gray-700">{body2}</p>
             </div>
           </div>
         ))}
@@ -221,19 +242,23 @@ export default function PriceBreakdownArticle() {
           SLTCSが適正価格にこだわる理由は、単にサービス品質を守るためだけではありません。
           <strong className="text-gray-900">スリランカ人ドライバーとその家族の生活を守る</strong>という視点も大切にしています。
         </p>
-        <p className="text-base leading-[1.9] text-gray-700 mb-5">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           ドライバーたちは、高額な車両ローンを抱えながら、家族を養うために毎日懸命に働いています。
           旅行者が「少しでも安く」と価格を値切ることで、そのしわ寄せがドライバーの生活に直撃します。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-5">
           適正な報酬を受け取れないドライバーは、キックバックを求めて提携店に誘導したり、
           車のメンテナンスを後回しにしたりと、結果的にサービスの質が落ちていきます。
         </p>
 
         {/* 強調ブロック */}
         <div className="bg-[oklch(0.97_0.03_155)] border-l-4 border-[oklch(0.35_0.12_155)] rounded-r-xl p-5 mb-8">
-          <p className="text-base leading-[1.9] text-gray-800">
-            <strong>「安い旅行＝良い旅行」ではありません。</strong><br />
-            適正な対価を払うことで、ドライバーは誇りを持って仕事に取り組み、
+          <p className="text-base leading-[1.9] text-gray-800 mb-3">
+            <strong>「安い旅行＝良い旅行」ではありません。</strong>
+            適正な価格でサービスを利用することで、ドライバーは誇りを持って仕事に臨め、
             旅行者は安心・快適な旅を楽しめます。
+          </p>
+          <p className="text-base leading-[1.9] text-gray-800">
             これはスリランカの観光産業全体を健全に保つことにもつながります。
           </p>
         </div>
@@ -255,9 +280,11 @@ export default function PriceBreakdownArticle() {
         >
           SLTCSが適正価格にこだわる理由
         </h2>
-        <p className="text-base leading-[1.9] text-gray-700 mb-5">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           SLTCSは、スリランカ政府公認ライセンスを持つドライバーのみを採用し、
           厳格な審査と継続的な品質管理を行っています。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-6">
           価格が多少他のサービスより高くなったとしても、
           <strong className="text-gray-900">旅行者が安心して旅を楽しめる環境を整えること</strong>を最優先にしています。
         </p>
@@ -341,9 +368,11 @@ export default function PriceBreakdownArticle() {
           </table>
         </div>
 
-        <p className="text-base leading-[1.9] text-gray-700 mb-5">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           これらのコストを考慮すると、1日あたり2〜3万円程度の料金は、
           品質を維持しながらドライバーに適正な報酬を支払うために必要な水準です。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-5">
           「1日1万円台」という格安サービスでは、上記のどこかが削られているということを意味します。
         </p>
 
@@ -423,9 +452,11 @@ export default function PriceBreakdownArticle() {
           まとめ：スリランカ タクシーチャーターは「価格より信頼」で選ぼう
         </h2>
 
-        <p className="text-base leading-[1.9] text-gray-700 mb-5">
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           スリランカのタクシーチャーター料金が「思ったより安くない」のは、
-          高い輸入関税・円安・ドライバーへの適正な報酬が必要なためです。
+          高い輸入関税・円安・原油高騰・ドライバーへの適正な報酬が必要なためです。
+        </p>
+        <p className="text-base leading-[1.9] text-gray-700 mb-6">
           格安サービスには必ず理由があり、追加請求・古い車・サポート不足といったリスクが伴います。
         </p>
 
@@ -434,7 +465,7 @@ export default function PriceBreakdownArticle() {
           <ul className="space-y-2 text-sm text-gray-700">
             {[
               "日本車に高い輸入関税がかかるため、スリランカでの車両コストは日本の3〜4倍",
-              "近年の円安により、円换算での料金は以前より高く感じられる",
+              "近年の円安により、円換算での料金は以前より高く感じられる",
               "原油高騰の影響を直接受けるスリランカでは、政府の備蓄・補助金制度が整備されておらず、燃料費の増加がサービス料金に反映される",
               "格安サービスには追加請求・旧型車・サポート不足などのリスクが潜む",
               "ドライバーへの適正な報酬を守ることが、高品質なサービスの継続につながる",
