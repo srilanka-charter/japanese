@@ -183,7 +183,7 @@ export default function PriceBreakdownArticle() {
             className="w-full object-cover max-h-[380px]"
           />
           <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
-            SLTCSでは清潔で状態の良い車両と、政府公認ライセンスを持つドライバーを手配します。
+            
           </figcaption>
         </figure>
       </section>
