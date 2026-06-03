@@ -6,10 +6,10 @@ export default function SoloWomenTravelArticle() {
 
       {/* ── リード文 ── */}
       <p className="text-base sm:text-lg leading-[1.9] text-gray-700 mb-10">
-        「スリランカに一人旅したいけど、女性一人でも大丈夫？」「移動が不安…」と感じている方は多いのではないでしょうか。
+        「<strong className="text-gray-900">スリランカ 女子旅</strong>」「<strong className="text-gray-900">スリランカ 一人旅</strong>」で検索している方必見。「女性一人でも大丈夫？」「移動が不安…」と感じている方は多いのではないでしょうか。
         実は、<strong className="text-gray-900">専用車チャーター（タクシーチャーター）</strong>を活用すれば、
-        女性の一人旅でも安心・快適にスリランカを旅することができます。
-        この記事では、女子旅・一人旅にスリランカがおすすめな理由と、専用車チャーターの安心ポイントを詳しく解説します。
+        スリランカ女子旅・一人旅でも安心・快適に旅することができます。
+        この記事では、スリランカ女子旅・一人旅におすすめな理由と、専用車チャーターの安心ポイントを詳しく解説します。
       </p>
 
       {/* ── 目次 ── */}
@@ -17,13 +17,13 @@ export default function SoloWomenTravelArticle() {
         <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-3">目次</p>
         <ol className="space-y-1.5 text-sm">
           {[
-            ["1", "スリランカは女性一人旅に向いているか？"],
-            ["2", "女子旅に専用車チャーターが選ばれる5つの理由"],
-            ["3", "女子旅におすすめの観光スポット"],
-            ["4", "女性一人旅向けモデルコース"],
-            ["5", "実際のお客様の声"],
-            ["6", "よくある質問"],
-            ["7", "まとめ"],
+            ["1", "スリランカは女性一人旅・女子旅に向いているか？"],
+            ["2", "スリランカ女子旅に専用車チャーターが選ばれる5つの理由"],
+            ["3", "スリランカ女子旅・一人旅で訪れたいおすすめ観光スポット"],
+            ["4", "スリランカ女性一人旅向けモデルコース"],
+            ["5", "スリランカ女子旅をした実際のお客様の声"],
+            ["6", "スリランカ女子旅・一人旅よくある質問（FAQ）"],
+            ["7", "スリランカ女子旅（一人旅）まとめ"],
           ].map(([num, label]) => (
             <li key={num} className="flex items-start gap-2 text-gray-600">
               <span className="text-[oklch(0.35_0.12_155)] font-bold flex-shrink-0">{num}.</span>
@@ -41,7 +41,7 @@ export default function SoloWomenTravelArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          スリランカは女性一人旅に向いているか？
+          スリランカは女性一人旅・女子旅に向いているか？
         </h2>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
           スリランカは、仏教文化が根付いた穏やかな国民性で知られており、
@@ -86,7 +86,7 @@ export default function SoloWomenTravelArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          女子旅に専用車チャーターが選ばれる5つの理由
+          スリランカ女子旅に専用車チャーターが選ばれる5つの理由
         </h2>
 
         <div className="space-y-5">
@@ -136,7 +136,7 @@ export default function SoloWomenTravelArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          女子旅におすすめの観光スポット
+          スリランカ女子旅・一人旅で訪れたいおすすめ観光スポット
         </h2>
 
         <div className="grid sm:grid-cols-2 gap-5 mb-8">
@@ -211,7 +211,7 @@ export default function SoloWomenTravelArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          女性一人旅向けモデルコース
+          スリランカ女性一人旅向けモデルコース
         </h2>
 
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
@@ -261,7 +261,7 @@ export default function SoloWomenTravelArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          実際のお客様の声
+          スリランカ女子旅をした実際のお客様の声
         </h2>
 
         <div className="space-y-5">
@@ -323,7 +323,7 @@ export default function SoloWomenTravelArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          よくある質問
+          スリランカ女子旅・一人旅よくある質問（FAQ）
         </h2>
 
         <div className="space-y-4">
@@ -366,7 +366,7 @@ export default function SoloWomenTravelArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          まとめ
+          スリランカ女子旅（一人旅）まとめ
         </h2>
 
         <div className="bg-[oklch(0.97_0.01_155)] border border-[oklch(0.9_0.03_155)] rounded-xl p-6 mb-6">

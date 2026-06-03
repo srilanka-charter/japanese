@@ -292,8 +292,8 @@ export default function HoneymoonArticle() {
           <ul className="text-sm text-gray-700 space-y-1.5">
             <li>・<strong>民族衣装レンタル</strong>：スリランカの伝統衣装で記念撮影（ドライバーが手配可能）</li>
             <li>・<strong>アーユルヴェーダスパ</strong>：スリランカ発祥の伝統医療スパで二人でリラックス</li>
-            <li>・<strong>キャンドルディナー</strong>：ゴールやミリッサのビーチサイドレストランで特別な夕食</li>
-            <li>・<strong>早朝シーギリヤ登頂</strong>：混雑前の朝日の中、二人だけで頂上を独占</li>
+            <li>・<strong>キャンドルディナー</strong>：<Link href="/galle" className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">ゴール</Link>や<Link href="/whale-watching" className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">ミリッサ</Link>のビーチサイドレストランで特別な夕食</li>
+            <li>・<strong>早朝シーギリヤ登頂</strong>：混雑前の朝日の中、<Link href="/sigiriya" className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">シーギリヤ岩</Link>の頂上を二人だけで独占</li>
           </ul>
         </div>
 
@@ -443,6 +443,9 @@ export default function HoneymoonArticle() {
           <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-3">関連記事</p>
           <ul className="space-y-2">
             {[
+              { href: "/sigiriya", label: "シーギリヤ岩・シーギリヤの観光情報｜スリランカハネムーンのメインスポット" },
+              { href: "/galle", label: "ゴール旧市街・サンセットスポット｜スリランカ新婚旅行のロマンティックスポット" },
+              { href: "/whale-watching", label: "ミリッサビーチ・ホエールウォッチング｜スリランカハネムーンのビーチリゾート" },
               { href: "/theme-travel/family-travel-charter", label: "スリランカ家族旅行に専用車が向いている理由｜子連れで安心のモデルコース" },
               { href: "/theme-travel/solo-women-travel-charter", label: "女子旅にスリランカはおすすめ？一人旅でも安心なタクシーチャーターで個人旅行をしよう！" },
               { href: "/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカでタクシーチャーターがおすすめな理由" },

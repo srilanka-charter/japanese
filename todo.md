@@ -104,3 +104,11 @@
   - [x] Course45Page.tsx: useEffect手動SEO → useSEOフック移行（JSON-LD TouristTrip追加）
   - [x] Course56Page.tsx: useEffect手動SEO → useSEOフック移行（JSON-LD TouristTrip追加）
   - [x] Course67Page.tsx: useEffect手動SEO → useSEOフック移行（JSON-LD TouristTrip追加）
+- [x] 家族旅行・女子旅記事SEO強化
+  - [x] blogData.ts: 家族旅行記事のtitle/excerptを「スリランカ 家族旅行」「子連れ スリランカ」キーワード最適化
+  - [x] blogData.ts: 女子旅記事のtitle/excerptを「スリランカ 女子旅」「スリランカ 一人旅」キーワード最適化
+  - [x] FamilyTravelArticle.tsx: リード文・H2見出し6箇所・目次ラベルに「スリランカ 家族旅行」「子連れ スリランカ」を自然に挿入
+  - [x] SoloWomenTravelArticle.tsx: リード文・H2見出し7箇所・目次ラベルに「スリランカ 女子旅」「スリランカ 一人旅」を自然に挿入
+- [x] ハネムーン記事に内部リンクを追加
+  - [x] オプションリスト内「ゴール」「ミリッサ」「シーギリヤ岩」にLinkコンポーネントで内部リンク追加
+  - [x] 関連記事リストにシーギリヤ・ゴール・ミリッサの観光地詳細ページへのリンクを新規追加（3件）

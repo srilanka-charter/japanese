@@ -4,10 +4,10 @@ export default function FamilyTravelArticle() {
 
       {/* ── リード文 ── */}
       <p className="text-base sm:text-lg leading-[1.9] text-gray-700 mb-10">
-        「子どもを連れてスリランカに行けるの？」「移動が大変そう…」と不安に感じている方は少なくありません。
+        「<strong className="text-gray-900">スリランカ 家族旅行</strong>」「<strong className="text-gray-900">子連れ スリランカ</strong>」で検索している方必見。「子どもを連れてスリランカに行けるの？」「移動が大変そう…」と不安に感じている方は少なくありません。
         しかし、<strong className="text-gray-900">専用車チャーター（タクシーチャーター）</strong>を利用すれば、
-        子連れ家族でも快適・安全にスリランカを旅することができます。
-        この記事では、家族旅行に専用車が向いている理由と、子連れで楽しめるモデルコースを詳しく解説します。
+        スリランカ家族旅行でも快適・安全に旅することができます。
+        この記事では、スリランカ家族旅行に専用車が向いている理由と、子連れで楽しめるモデルコースを詳しく解説します。
       </p>
 
       {/* ── 目次 ── */}
@@ -15,12 +15,12 @@ export default function FamilyTravelArticle() {
         <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-3">目次</p>
         <ol className="space-y-1.5 text-sm">
           {[
-            ["1", "スリランカは子連れ旅行に向いているか？"],
-            ["2", "家族旅行に専用車が選ばれる6つの理由"],
-            ["3", "子連れにおすすめの観光スポット"],
-            ["4", "子連れ家族向けモデルコース"],
-            ["5", "実際のご家族の声"],
-            ["6", "まとめ"],
+            ["1", "スリランカは子連れ家族旅行に向いているか？"],
+            ["2", "スリランカ家族旅行に専用車チャーターが選ばれる6つの理由"],
+            ["3", "スリランカ子連れ旅行で訪れたいおすすめ観光スポット"],
+            ["4", "スリランカ子連れ家族向けモデルコース"],
+            ["5", "スリランカ家族旅行をした実際のご家族の声"],
+            ["6", "スリランカ家族旅行（子連れ）まとめ"],
           ].map(([num, label]) => (
             <li key={num} className="flex items-start gap-2 text-gray-600">
               <span className="text-[oklch(0.35_0.12_155)] font-bold flex-shrink-0">{num}.</span>
@@ -38,7 +38,7 @@ export default function FamilyTravelArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          スリランカは子連れ旅行に向いているか？
+          スリランカは子連れ家族旅行に向いているか？
         </h2>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
           スリランカは、象・サファリ・世界遺産・ビーチ・紅茶列車など、子どもが喜ぶ体験が豊富な国です。
@@ -70,7 +70,7 @@ export default function FamilyTravelArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          家族旅行に専用車が選ばれる6つの理由
+          スリランカ家族旅行に専用車チャーターが選ばれる6つの理由
         </h2>
 
         <div className="space-y-5">
@@ -158,7 +158,7 @@ export default function FamilyTravelArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          子連れにおすすめの観光スポット
+          スリランカ子連れ旅行で訪れたいおすすめ観光スポット
         </h2>
 
         {/* 象サファリ画像 */}
@@ -239,7 +239,7 @@ export default function FamilyTravelArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          子連れ家族向けモデルコース
+          スリランカ子連れ家族向けモデルコース
         </h2>
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
           以下は、子連れ家族に人気の5泊6日モデルコースです。移動距離と観光のバランスを考慮し、無理のない旅程を組んでいます。
@@ -315,7 +315,7 @@ export default function FamilyTravelArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          実際のご家族の声
+          スリランカ家族旅行をした実際のご家族の声
         </h2>
 
         <div className="space-y-6">
@@ -416,7 +416,7 @@ export default function FamilyTravelArticle() {
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          まとめ
+          スリランカ家族旅行（子連れ）まとめ
         </h2>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
           スリランカは子連れ家族にとって魅力的な観光地ですが、移動手段の選択が旅の快適さを大きく左右します。
