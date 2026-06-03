@@ -204,6 +204,16 @@ export default function PricingPage() {
             <p className="text-white/70 text-sm leading-relaxed mt-6">
               特に一見すると低価格に見えるサービスでは、距離制限が設けられており超過距離に対して追加料金が発生する契約になっているケースがあります。現地でドライバーが申告する走行距離が実際より長く、想定を大幅に上回る金額を請求されたという事例も少なくありません。
             </p>
+            <p className="text-white/70 text-sm leading-relaxed mt-4">
+              料金の内訳や注意点について詳しくは、
+              <a
+                href="/taxi-charter-basics/price-breakdown-risks"
+                className="text-[#6ee2b0] underline underline-offset-2 hover:opacity-80"
+              >
+                スリランカのタクシーチャーター料金の内訳とは？安いサービスには気をつけよう！
+              </a>
+              をご覧ください。
+            </p>
           </div>
         </div>
       </section>
