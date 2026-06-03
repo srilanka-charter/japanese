@@ -127,6 +127,18 @@ export const blogArticles: BlogArticle[] = [
 
   // ── タクシーチャーターの基礎 ──────────────────────────────────────────────
   {
+    slug: "price-breakdown-risks",
+    title: "スリランカのタクシーチャーター料金の内訳とは？安いサービスには気をつけよう！",
+    excerpt:
+      "「スリランカ タクシーチャーター 料金」を調べると価格帯に大きな差があります。人件費が安い国なのになぜ高い？格安サービスに潜む追加請求・旧型車・サポート不足のリスクと、日本車への高関税・円安が料金に与える影響をSLTCSがわかりやすく解説します。",
+    category: "タクシーチャーターの基礎",
+    categorySlug: "taxi-charter-basics",
+    publishedAt: "2026-06-03",
+    thumbnail:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-course-4-5days-KXcqn2CWtUmAAGVJ4hdpbL.webp",
+    readingTime: 9,
+  },
+  {
     slug: "why-taxi-charter-is-recommended",
     title: "スリランカ旅行でタクシーチャーターがおすすめな理由｜公共交通との違い",
     excerpt:

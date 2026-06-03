@@ -8,6 +8,7 @@ import BookingTimingArticle from "./articles/BookingTimingArticle";
 import FamilyTravelArticle from "./articles/FamilyTravelArticle";
 import SoloWomenTravelArticle from "./articles/SoloWomenTravelArticle";
 import HoneymoonArticle from "./articles/HoneymoonArticle";
+import PriceBreakdownArticle from "./articles/PriceBreakdownArticle";
 import { useSEO } from "@/hooks/useSEO";
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -31,6 +32,9 @@ function ArticleContent({ slug }: { slug: string }) {
   }
   if (slug === "honeymoon-sri-lanka") {
     return <HoneymoonArticle />;
+  }
+  if (slug === "price-breakdown-risks") {
+    return <PriceBreakdownArticle />;
   }
   return (
     <p className="text-gray-500 text-center py-12">記事コンテンツを準備中です。</p>
