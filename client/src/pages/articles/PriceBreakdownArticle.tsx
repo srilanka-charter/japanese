@@ -40,7 +40,7 @@ export default function PriceBreakdownArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section1">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカのタクシーチャーター料金が「思ったより安くない」理由
@@ -55,7 +55,7 @@ export default function PriceBreakdownArticle() {
         </p>
 
         <h3
-          className="text-base font-bold text-[oklch(0.25_0.1_155)] mb-3 mt-8 pb-2 border-b-2 border-[oklch(0.35_0.12_155)] flex items-center gap-2"
+          className="text-base font-bold text-[oklch(0.25_0.1_155)] mb-3 mt-12 pb-2 border-b-2 border-[oklch(0.35_0.12_155)] flex items-center gap-2"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           <span className="inline-flex items-center justify-center w-5 h-5 rounded bg-[oklch(0.35_0.12_155)] text-white text-[10px] font-bold flex-shrink-0">1</span>
@@ -97,7 +97,7 @@ export default function PriceBreakdownArticle() {
         </div>
 
         <h3
-          className="text-base font-bold text-[oklch(0.25_0.1_155)] mb-3 mt-8 pb-2 border-b-2 border-[oklch(0.35_0.12_155)] flex items-center gap-2"
+          className="text-base font-bold text-[oklch(0.25_0.1_155)] mb-3 mt-12 pb-2 border-b-2 border-[oklch(0.35_0.12_155)] flex items-center gap-2"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           <span className="inline-flex items-center justify-center w-5 h-5 rounded bg-[oklch(0.35_0.12_155)] text-white text-[10px] font-bold flex-shrink-0">2</span>
@@ -114,7 +114,7 @@ export default function PriceBreakdownArticle() {
         </p>
 
         <h3
-          className="text-base font-bold text-[oklch(0.25_0.1_155)] mb-3 mt-8 pb-2 border-b-2 border-[oklch(0.35_0.12_155)] flex items-center gap-2"
+          className="text-base font-bold text-[oklch(0.25_0.1_155)] mb-3 mt-12 pb-2 border-b-2 border-[oklch(0.35_0.12_155)] flex items-center gap-2"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           <span className="inline-flex items-center justify-center w-5 h-5 rounded bg-[oklch(0.35_0.12_155)] text-white text-[10px] font-bold flex-shrink-0">3</span>
@@ -132,7 +132,7 @@ export default function PriceBreakdownArticle() {
         </p>
 
         <h3
-          className="text-base font-bold text-[oklch(0.25_0.1_155)] mb-3 mt-8 pb-2 border-b-2 border-[oklch(0.35_0.12_155)] flex items-center gap-2"
+          className="text-base font-bold text-[oklch(0.25_0.1_155)] mb-3 mt-12 pb-2 border-b-2 border-[oklch(0.35_0.12_155)] flex items-center gap-2"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           <span className="inline-flex items-center justify-center w-5 h-5 rounded bg-[oklch(0.35_0.12_155)] text-white text-[10px] font-bold flex-shrink-0">4</span>
@@ -154,7 +154,7 @@ export default function PriceBreakdownArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section2">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカの安いタクシーチャーターサービスに潜む5つのリスク
@@ -233,7 +233,7 @@ export default function PriceBreakdownArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section3">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカ人ドライバーを適正価格で支えることの大切さ
@@ -275,7 +275,7 @@ export default function PriceBreakdownArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section4">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           SLTCSが適正価格にこだわる理由
@@ -332,7 +332,7 @@ export default function PriceBreakdownArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section5">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカ タクシーチャーター料金の内訳をわかりやすく解説
@@ -394,7 +394,7 @@ export default function PriceBreakdownArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section6">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           スリランカ タクシーチャーター料金に関するよくある質問（FAQ）
@@ -446,7 +446,7 @@ export default function PriceBreakdownArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-10" id="section7">
         <h2
-          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5"
+          className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
           まとめ：スリランカ タクシーチャーターは「価格より信頼」で選ぼう
