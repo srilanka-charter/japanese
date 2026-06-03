@@ -50,10 +50,10 @@ export default function PriceBreakdownArticle() {
         </p>
 
         <h3
-          className="text-base font-bold text-gray-900 mb-3 mt-8 flex items-center gap-2"
+          className="text-base font-bold text-[oklch(0.25_0.1_155)] mb-3 mt-8 pb-2 border-b-2 border-[oklch(0.35_0.12_155)] flex items-center gap-2"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[oklch(0.35_0.12_155)] text-white text-xs font-bold flex-shrink-0">1</span>
+          <span className="inline-flex items-center justify-center w-5 h-5 rounded bg-[oklch(0.35_0.12_155)] text-white text-[10px] font-bold flex-shrink-0">1</span>
           スリランカでは日本車が主流だが、輸入関税が極めて高い
         </h3>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
@@ -90,10 +90,10 @@ export default function PriceBreakdownArticle() {
         </div>
 
         <h3
-          className="text-base font-bold text-gray-900 mb-3 mt-8 flex items-center gap-2"
+          className="text-base font-bold text-[oklch(0.25_0.1_155)] mb-3 mt-8 pb-2 border-b-2 border-[oklch(0.35_0.12_155)] flex items-center gap-2"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[oklch(0.35_0.12_155)] text-white text-xs font-bold flex-shrink-0">2</span>
+          <span className="inline-flex items-center justify-center w-5 h-5 rounded bg-[oklch(0.35_0.12_155)] text-white text-[10px] font-bold flex-shrink-0">2</span>
           近年の円安がさらに負担を増大させている
         </h3>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
@@ -105,10 +105,10 @@ export default function PriceBreakdownArticle() {
         </p>
 
         <h3
-          className="text-base font-bold text-gray-900 mb-3 mt-8 flex items-center gap-2"
+          className="text-base font-bold text-[oklch(0.25_0.1_155)] mb-3 mt-8 pb-2 border-b-2 border-[oklch(0.35_0.12_155)] flex items-center gap-2"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[oklch(0.35_0.12_155)] text-white text-xs font-bold flex-shrink-0">3</span>
+          <span className="inline-flex items-center justify-center w-5 h-5 rounded bg-[oklch(0.35_0.12_155)] text-white text-[10px] font-bold flex-shrink-0">3</span>
           原油高騰のダイレクトな影響
         </h3>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
@@ -121,10 +121,10 @@ export default function PriceBreakdownArticle() {
         </p>
 
         <h3
-          className="text-base font-bold text-gray-900 mb-3 mt-8 flex items-center gap-2"
+          className="text-base font-bold text-[oklch(0.25_0.1_155)] mb-3 mt-8 pb-2 border-b-2 border-[oklch(0.35_0.12_155)] flex items-center gap-2"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[oklch(0.35_0.12_155)] text-white text-xs font-bold flex-shrink-0">4</span>
+          <span className="inline-flex items-center justify-center w-5 h-5 rounded bg-[oklch(0.35_0.12_155)] text-white text-[10px] font-bold flex-shrink-0">4</span>
           ドライバーは高額なローンを抱えながら働いている
         </h3>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
