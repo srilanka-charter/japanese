@@ -111,6 +111,20 @@ export const blogArticles: BlogArticle[] = [
     readingTime: 12,
   },
 
+  // ── タクシーチャーターの基礎（追加） ─────────────────────────────────────────
+  {
+    slug: "tip-manner-guide",
+    title: "スリランカのチップ・マナー完全ガイド｜ドライバー・ホテル・レストランの相場",
+    excerpt:
+      "スリランカ旅行でチップはいくら渡せばいい？ドライバー・ホテルスタッフ・レストランなどシーン別の相場と、渡し方のマナーをわかりやすく解説します。小額紙幣の準備方法や注意点も紹介。初めてのスリランカ旅行でも安心して対応できます。",
+    category: "タクシーチャーターの基礎",
+    categorySlug: "taxi-charter-basics",
+    publishedAt: "2026-06-06",
+    thumbnail:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-booking-timing-MRqrgcQXvfYZKvH7j2ycGu.webp",
+    readingTime: 8,
+  },
+
   // ── 旅行計画・準備 ──────────────────────────────────────────────────────────
   {
     slug: "when-to-book-charter",

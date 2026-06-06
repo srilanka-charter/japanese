@@ -9,6 +9,7 @@ import FamilyTravelArticle from "./articles/FamilyTravelArticle";
 import SoloWomenTravelArticle from "./articles/SoloWomenTravelArticle";
 import HoneymoonArticle from "./articles/HoneymoonArticle";
 import PriceBreakdownArticle from "./articles/PriceBreakdownArticle";
+import TipMannerArticle from "./articles/TipMannerArticle";
 import { useSEO } from "@/hooks/useSEO";
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -35,6 +36,9 @@ function ArticleContent({ slug }: { slug: string }) {
   }
   if (slug === "price-breakdown-risks") {
     return <PriceBreakdownArticle />;
+  }
+  if (slug === "tip-manner-guide") {
+    return <TipMannerArticle />;
   }
   return (
     <p className="text-gray-500 text-center py-12">記事コンテンツを準備中です。</p>
