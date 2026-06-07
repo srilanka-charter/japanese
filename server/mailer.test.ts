@@ -43,7 +43,7 @@ describe("sendOwnerNotification", () => {
 
     expect(mockTransporter.sendMail).toHaveBeenCalledOnce();
     const callArgs = mockTransporter.sendMail.mock.calls[0][0];
-    expect(callArgs.to).toBe("srilanka.41032@gmail.com");
+    expect(callArgs.to).toBe("srilanka.41032@gmail.com, contact@gohellolanka.com");
     expect(callArgs.subject).toContain("テスト太郎");
     expect(callArgs.text).toContain("テスト太郎");
     expect(callArgs.text).toContain("test@example.com");
