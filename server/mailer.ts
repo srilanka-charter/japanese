@@ -22,7 +22,9 @@ function createTransporter() {
 }
 
 /**
- * 運営者（srilanka.41032@gmail.com / contact@gohellolanka.com）への通知メール
+ * 運営者への通知メール
+ * To: srilanka.41032@gmail.com（Freshdesk監視アドレス）
+ * BCC: contact@gohellolanka.com（控え用）
  */
 export async function sendOwnerNotification(data: ContactFormData): Promise<void> {
   const transporter = createTransporter();
@@ -45,7 +47,8 @@ ${data.message || "（内容なし）"}
 
   await transporter.sendMail({
     from: `"SLTCS お問い合わせ" <${process.env.GMAIL_USER}>`,
-    to: "srilanka.41032@gmail.com, contact@gohellolanka.com",
+    to: "srilanka.41032@gmail.com",
+    bcc: "contact@gohellolanka.com",
     replyTo: data.email,
     subject: `《sltcs》${data.name}様からお問い合わせがありました`,
     text: body,
