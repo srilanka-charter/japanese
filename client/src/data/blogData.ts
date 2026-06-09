@@ -233,6 +233,18 @@ export const blogArticles: BlogArticle[] = [
   },
   // テーマ旅行
   {
+    slug: "senior-travel-charter",
+    title: "スリランカのシニア旅行完全ガイド｜60代・70代でも安心の専用車チャーター旅",
+    excerpt:
+      "「スリランカ シニア旅行」「スリランカ 60代 旅行」で検索している方必見。体力的な不安や言葉の壁を解消し、自分たちのペースでゆったり観光できる専用車チャーターの魅力と、シニア世代向け5泊6日モデルコースを詳しく解説します。世界遺産・サファリ・アーユルヴェーダなど多彩な体験が一島に凝縮されたスリランカは、60代・70代のシニア旅行先として最適です。",
+    category: "テーマ旅行",
+    categorySlug: "theme-travel",
+    publishedAt: "2026-06-09",
+    thumbnail:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-senior-travel-hero-N3vErakmjh5szFE9xtAqWY.webp",
+    readingTime: 9,
+  },
+  {
     slug: "family-travel-charter",
     title: "スリランカ家族旅行完全ガイド｜子連れで安心のタクシーチャーターモデルコース",
     excerpt:

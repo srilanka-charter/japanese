@@ -124,3 +124,4 @@
   - [x] Course10DaysArticle.tsx：H2/H3コンポーネントにmt-4追加・H3バッジデザイン・段落改行
   - [x] BookingTimingArticle.tsx：H2余白・段落改行
 - [x] チップ・マナー完全ガイド記事（TipMannerArticle.tsx）の新規作成・blogData.ts登録・BlogArticlePage.tsx組み込み
+- [x] シニア旅行完全ガイド記事（SeniorTravelArticle.tsx）の新規作成・blogData.ts登録・BlogArticlePage.tsx組み込み
