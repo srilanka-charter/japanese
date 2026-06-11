@@ -7,6 +7,8 @@ export interface BlogArticle {
   publishedAt: string;
   thumbnail: string;
   readingTime: number;
+  /** SEOキーワード（JSON-LD keywords フィールドに使用） */
+  keywords?: string[];
   /** 外部ページへの直接リンク（設定時はブログ記事詳細ではなくこのURLへ遷移） */
   externalHref?: string;
 }
@@ -68,6 +70,7 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-course-3-4days-QkoH7BFAYewytqQgdFSgNm.webp",
     readingTime: 6,
+    keywords: ["スリランカ 3泊4日", "スリランカ モデルコース", "スリランカ 旅行 短期", "タクシーチャーター モデルコース", "スリランカ シーギリヤ キャンディ"],
     externalHref: "/course/3-4days",
   },
   {
@@ -81,6 +84,7 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-course-4-5days-KXcqn2CWtUmAAGVJ4hdpbL.webp",
     readingTime: 7,
+    keywords: ["スリランカ 4泊5日", "スリランカ モデルコース 王道", "スリランカ 旅行 日程", "タクシーチャーター 観光", "スリランカ シーギリヤ ゴール"],
     externalHref: "/course/4-5days",
   },
   {
@@ -94,6 +98,7 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-course-5-6days-EjXwMbGq2hXDp9w4ZRfuDS.webp",
     readingTime: 8,
+    keywords: ["スリランカ 5泊6日", "スリランカ モデルコース", "スリランカ サファリ アーユルヴェーダ", "スリランカ 世界遺産 旅行", "タクシーチャーター ゆったり"],
     externalHref: "/course/5-6days",
   },
 
@@ -109,6 +114,7 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-course-10days-5oo5hk9wkcUpAUQhRGKDKE.webp",
     readingTime: 12,
+    keywords: ["スリランカ 10日間", "スリランカ 長期旅行", "スリランカ 周遊 モデルコース", "スリランカ ホエールウォッチング", "タクシーチャーター 10日"],
   },
 
   // ── タクシーチャーターの基礎（追加） ─────────────────────────────────────────
@@ -123,6 +129,7 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-booking-timing-MRqrgcQXvfYZKvH7j2ycGu.webp",
     readingTime: 8,
+    keywords: ["スリランカ チップ", "スリランカ チップ 相場", "スリランカ マナー", "スリランカ ドライバー チップ", "スリランカ ホテル チップ"],
   },
 
   // ── 旅行計画・準備 ──────────────────────────────────────────────────────────
@@ -137,6 +144,7 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-booking-timing-MRqrgcQXvfYZKvH7j2ycGu.webp",
     readingTime: 7,
+    keywords: ["スリランカ タクシーチャーター 予約", "スリランカ 旅行 予約 タイミング", "スリランカ ハイシーズン", "スリランカ 年末年始 旅行", "専用車チャーター いつ予約"],
   },
 
   // ── タクシーチャーターの基礎 ──────────────────────────────────────────────
@@ -151,6 +159,7 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-course-4-5days-KXcqn2CWtUmAAGVJ4hdpbL.webp",
     readingTime: 9,
+    keywords: ["スリランカ タクシーチャーター 料金", "スリランカ 専用車 料金 内訳", "スリランカ タクシー 安い リスク", "スリランカ 旅行 費用", "タクシーチャーター 格安 注意"],
   },
   {
     slug: "why-taxi-charter-is-recommended",
@@ -163,6 +172,7 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80",
     readingTime: 8,
+    keywords: ["スリランカ タクシーチャーター おすすめ", "スリランカ 移動手段", "スリランカ 専用車 メリット", "スリランカ 鉄道 バス 比較", "スリランカ 旅行 交通"],
   },
 
   // ── 観光地ガイド ──────────────────────────────────────────────────────────
@@ -177,6 +187,7 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_rock_hero-WvSdEsM6SGKw7D3K9DXp8D.webp",
     readingTime: 8,
+    keywords: ["シーギリヤ", "シーギリヤロック", "スリランカ 世界遺産", "シーギリヤ 登り方", "シーギリヤ アクセス"],
     externalHref: "/sigiriya",
   },
   {
@@ -190,6 +201,7 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/kandy_tooth_relic_temple_hero-H5KPCu2wFYrgvuf3d6Q945.webp",
     readingTime: 7,
+    keywords: ["キャンディ 観光", "スリランカ キャンディ", "仏歯寺", "キャンディ ペラヘラ祭", "キャンディ アクセス"],
     externalHref: "/kandy",
   },
   {
@@ -203,6 +215,7 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/galle_fort_hero-DUKxQjoVyFYYNXeLGiZBub.webp",
     readingTime: 7,
+    keywords: ["ゴール 観光", "スリランカ ゴール", "ゴール要塞", "スリランカ 南部 観光", "ゴール アクセス コロンボ"],
     externalHref: "/galle",
   },
   {
@@ -216,6 +229,7 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&q=80",
     readingTime: 9,
+    keywords: ["スリランカ サファリ", "ヤーラ国立公園", "スリランカ ヒョウ", "スリランカ 動物 観光", "ヤーラ サファリ ツアー"],
     externalHref: "/safari",
   },
   {
@@ -229,6 +243,7 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-tea-train-guide-2ddzgbXcNQFiTJrQfuf4it.webp",
     readingTime: 8,
+    keywords: ["スリランカ 紅茶列車", "スリランカ エッラ 列車", "キャンディ エッラ 鉄道", "スリランカ 列車 予約", "九連アーチ橋"],
     externalHref: "/tea-train",
   },
   // テーマ旅行
@@ -243,6 +258,7 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-senior-travel-hero-N3vErakmjh5szFE9xtAqWY.webp",
     readingTime: 9,
+    keywords: ["スリランカ シニア旅行", "スリランカ 60代 旅行", "スリランカ 70代 旅行", "シニア 海外旅行 おすすめ", "スリランカ 専用車 シニア"],
   },
   {
     slug: "family-travel-charter",
@@ -255,6 +271,7 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-family-travel-hero-MxVNfzXrPpRtNveAS4zeaF.webp",
     readingTime: 8,
+    keywords: ["スリランカ 家族旅行", "子連れ スリランカ", "スリランカ 子供 旅行", "スリランカ ファミリー旅行", "スリランカ 象 子供"],
   },
   {
     slug: "solo-women-travel-charter",
@@ -267,6 +284,7 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-women-travel-hero-QvZf6gWCAaZReNfWoUne2Q.webp",
     readingTime: 7,
+    keywords: ["スリランカ 女子旅", "スリランカ 一人旅", "スリランカ 女性 安全", "スリランカ 一人旅 女性", "スリランカ 個人旅行"],
   },
   {
     slug: "honeymoon-sri-lanka",
@@ -279,6 +297,7 @@ export const blogArticles: BlogArticle[] = [
     thumbnail:
       "/manus-storage/blog-honeymoon-couple_5fca0963.jpg",
     readingTime: 8,
+    keywords: ["スリランカ ハネムーン", "スリランカ 新婚旅行", "スリランカ カップル旅行", "スリランカ ハネムーン モデルコース", "スリランカ 新婚旅行 費用"],
   },
 ];
 

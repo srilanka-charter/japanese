@@ -411,9 +411,13 @@ export default function BlogArticlePage() {
     "publisher": {
       "@type": "Organization",
       "name": "SLTCS スリランカタクシーチャーターサービス",
+      "logo": { "@type": "ImageObject", "url": `${SITE_URL}/favicon.ico` },
       "url": SITE_URL,
     },
     "datePublished": article.publishedAt,
+    "dateModified": article.publishedAt,
+    ...(article.keywords && article.keywords.length > 0 ? { "keywords": article.keywords.join(", ") } : {}),
+    "inLanguage": "ja",
     "mainEntityOfPage": { "@type": "WebPage", "@id": `${SITE_URL}/${params.category}/${params.slug}` },
   } : null;
 

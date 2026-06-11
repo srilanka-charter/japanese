@@ -4,7 +4,7 @@
   <!-- ── トップページ ── -->
   <url>
     <loc>https://sltcs.srilanka-charter.com/</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,25 +12,31 @@
   <!-- ── サービス・情報ページ ── -->
   <url>
     <loc>https://sltcs.srilanka-charter.com/plan</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://sltcs.srilanka-charter.com/vehicles</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sltcs.srilanka-charter.com/pricing</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sltcs.srilanka-charter.com/faq</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sltcs.srilanka-charter.com/contact</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -116,36 +122,37 @@
   <!-- ── お役立ち情報 カテゴリーページ ── -->
   <url>
     <loc>https://sltcs.srilanka-charter.com/model-course</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sltcs.srilanka-charter.com/taxi-charter-basics</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sltcs.srilanka-charter.com/sightseeing-guide</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sltcs.srilanka-charter.com/travel-planning</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://sltcs.srilanka-charter.com/theme-travel</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- ── お役立ち情報 記事ページ ── -->
+
   <!-- モデルコース記事 -->
   <url>
     <loc>https://sltcs.srilanka-charter.com/model-course/course-3-4days</loc>
@@ -171,6 +178,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <!-- タクシーチャーターの基礎 記事 -->
   <url>
     <loc>https://sltcs.srilanka-charter.com/taxi-charter-basics/why-taxi-charter-is-recommended</loc>
@@ -178,6 +186,19 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://sltcs.srilanka-charter.com/taxi-charter-basics/price-breakdown-risks</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sltcs.srilanka-charter.com/taxi-charter-basics/tip-manner-guide</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- 旅行計画・準備 記事 -->
   <url>
     <loc>https://sltcs.srilanka-charter.com/travel-planning/when-to-book-charter</loc>
@@ -185,6 +206,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <!-- 観光地ガイド 記事 -->
   <url>
     <loc>https://sltcs.srilanka-charter.com/sightseeing-guide/sigiriya-guide</loc>
@@ -216,6 +238,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <!-- テーマ旅行 記事 -->
   <url>
     <loc>https://sltcs.srilanka-charter.com/theme-travel/family-travel-charter</loc>
@@ -232,6 +255,12 @@
   <url>
     <loc>https://sltcs.srilanka-charter.com/theme-travel/honeymoon-sri-lanka</loc>
     <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sltcs.srilanka-charter.com/theme-travel/senior-travel-charter</loc>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
