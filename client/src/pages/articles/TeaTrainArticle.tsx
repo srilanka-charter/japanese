@@ -416,12 +416,15 @@ export default function TeaTrainArticle() {
         </figure>
 
         <div className="bg-[oklch(0.96_0.02_155)] rounded-2xl p-6 mb-8">
-          <p className="text-sm font-bold text-[oklch(0.25_0.08_155)] mb-4">SLTCSおすすめ 3日間プラン例</p>
+          <p className="text-sm font-bold text-[oklch(0.25_0.08_155)] mb-4">SLTCSおすすめ 6日間プラン例</p>
           <div className="space-y-3">
             {[
               { day: "1日目", content: "コロンボ空港 → キャンディ（専用車）。キャンディ市内観光（仏歯寺・キャンディ湖）。キャンディ泊。" },
               { day: "2日目", content: "専用車でヌワラエリヤ方面へ。車の車窓から茶畑の絶景を堪能しながらBandarawela方面へ移動。Bandarawela泊。" },
-              { day: "3日目", content: "ナヌオヤ駅からBandarawela駅まで専用車で移動。Bandarawela駅から列車に乗車し、九連アーチ橋・デモダラループを体験しながらDemodara駅まで約1時間の列車旅。Demodara駅でSLTCSドライバーがお出迎えし、そのままEllaへ。Ella観光（エッラロック・ラワナ滝）。" },
+              { day: "3日目", content: "ナヌオヤ駅からBandarawela駅まで専用車で移動。Bandarawela駅から列車に乗車し、九連アーチ橋・デモダラループを体験しながらDemodara駅まで約1時間の列車旅。Demodara駅でSLTCSドライバーがお出迎えし、そのままEllaへ。Ella観光（エッラロック・ラワナ滝）。Ella泊。" },
+              { day: "4日目", content: "Ellaからヤラ国立公園（Yala）へ専用車で移動（約2.5時間）。ヤラ周辺のホテルにチェックイン。Yala泊。" },
+              { day: "5日目", content: "早朝からヤラ国立公園でジープサファリツアー（ヒョウ・ゾウ・クジャクなどを観察）。ツアー後、専用車でミリッサ（Mirissa）へ移動（約2時間）。ビーチでリラックス。ミリッサ泊。" },
+              { day: "6日目", content: "ミリッサからゴール（Galle）へ専用車で移動（約30分）。ゴール旧市街・ゴール要塞を観光。その後、コロンボ国際空港へ向けて出発（約2.5時間）。帰国の途へ。" },
             ].map((item, i) => (
               <div key={i} className="flex gap-3 items-start">
                 <span className="flex-shrink-0 bg-[oklch(0.35_0.12_155)] text-white text-xs font-bold px-2 py-1 rounded-md min-w-[60px] text-center">

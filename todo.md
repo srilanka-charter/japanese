@@ -125,3 +125,10 @@
   - [x] BookingTimingArticle.tsx：H2余白・段落改行
 - [x] チップ・マナー完全ガイド記事（TipMannerArticle.tsx）の新規作成・blogData.ts登録・BlogArticlePage.tsx組み込み
 - [x] シニア旅行完全ガイド記事（SeniorTravelArticle.tsx）の新規作成・blogData.ts登録・BlogArticlePage.tsx組み込み
+- [x] 全記事SEO最適化（blogData.tsにkeywordsフィールド追加・BlogArticlePage.tsxのJSON-LDにkeywords/dateModified/inLanguage/logo追加）
+- [x] sitemap.xml更新（新規記事3件追加・lastmod更新・contact追加、計35URL）
+- [x] 紅茶列車完全ガイド記事（TeaTrainArticle.tsx）の新規作成・blogData.ts登録・BlogArticlePage.tsx組み込み・DestinationsSectionのhref設定
+- [x] 紅茶列車記事の3点修正（絵文字削除・サイクロン情報・Demodara推奨）
+- [x] お問い合わせ通知メールのBCC設定（contact@gohellolanka.comをBCCに追加）
+- [x] PricingPageに料金内訳記事への内部リンク追加
+- [x] TeaTrainArticle.tsxのおすすめプランを3日間→6日間に更新（4日目:Ella→Yala、5日目:Yalaジープツアー→ミリッサ、6日目:Galle観光→空港）
