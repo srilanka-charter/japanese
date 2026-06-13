@@ -244,7 +244,6 @@ export const blogArticles: BlogArticle[] = [
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-tea-train-guide-2ddzgbXcNQFiTJrQfuf4it.webp",
     readingTime: 8,
     keywords: ["スリランカ 紅茶列車", "スリランカ エッラ 列車", "キャンディ エッラ 鉄道", "スリランカ 列車 予約", "九連アーチ橋"],
-    externalHref: "/tea-train",
   },
   // テーマ旅行
   {

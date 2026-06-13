@@ -40,7 +40,7 @@ const destinations = [
     desc: "九連アーチ橋と茶畑の絶景列車の旅",
     image: "/manus-storage/ella_nine_arch_8f10f348.webp",
     size: "medium",
-    href: null,
+    href: "/sightseeing-guide/tea-train-guide",
   },
 ];
 
