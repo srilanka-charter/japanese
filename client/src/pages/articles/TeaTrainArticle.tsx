@@ -474,7 +474,7 @@ export default function TeaTrainArticle() {
             {
               fail: "Ella駅で降りたら九連アーチ橋を渡れなかった",
               cause: "九連アーチ橋はEllaとDemodaraの間にあるため、Ella駅で下車すると橋を列車から体験できない",
-              solution: "必ずEllaの次の駅・Demodara駅まで乗車する。SLTCSのドライバーがDemodara駅でお出迎えします。",
+              solution: "Ellaの次の駅・Demodara駅まで乗車する。SLTCSのドライバーがDemodara駅でお出迎えします。",
             },
             {
               fail: "指定席が取れず立ち乗りになった",
@@ -485,11 +485,6 @@ export default function TeaTrainArticle() {
               fail: "列車が大幅に遅延して次の予定が狂った",
               cause: "スリランカの列車は1〜2時間の遅延が珍しくない。次の観光の予定を詰め込みすぎた",
               solution: "列車の後の予定には十分な余裕を持たせる。専用車チャーターなら遅延に合わせて柔軟に対応できる。",
-            },
-            {
-              fail: "九連アーチ橋を列車の中から見逃した",
-              cause: "橋を渡る時間が短く、どちら側の窓から見えるか知らなかった",
-              solution: "Bandarawela→Demodara方向の場合、橋は左側（北側）の窓から見えることが多い。事前に情報を確認しておく。",
             },
           ].map((item, i) => (
             <div key={i} className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
