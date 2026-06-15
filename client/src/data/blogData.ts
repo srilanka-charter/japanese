@@ -134,6 +134,19 @@ export const blogArticles: BlogArticle[] = [
 
   // ── 旅行計画・準備 ──────────────────────────────────────────────────────────
   {
+    slug: "best-season-guide",
+    title: "スリランカ旅行のベストシーズンと気候完全ガイド｜月別の天気・乾季・雨季を解説",
+    excerpt:
+      "「スリランカ ベストシーズン」「スリランカ 気候」で検索しているあなたへ。スリランカは2つのモンスーンの影響で地域によって乾季・雨季が異なります。月別の天気・エリア別ベストシーズン・旅行スタイル別おすすめ時期をわかりやすく解説します。",
+    category: "旅行計画・準備",
+    categorySlug: "travel-planning",
+    publishedAt: "2026-06-15",
+    thumbnail:
+      "https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?w=800&q=80",
+    readingTime: 9,
+    keywords: ["スリランカ ベストシーズン", "スリランカ 気候", "スリランカ 天気", "スリランカ 乾季 雨季", "スリランカ 旅行 時期"],
+  },
+  {
     slug: "when-to-book-charter",
     title: "スリランカの専用車チャーターをいつ予約すべき？｜予約タイミング完全ガイド",
     excerpt:

@@ -132,3 +132,4 @@
 - [x] お問い合わせ通知メールのBCC設定（contact@gohellolanka.comをBCCに追加）
 - [x] PricingPageに料金内訳記事への内部リンク追加
 - [x] TeaTrainArticle.tsxのおすすめプランを3日間→6日間に更新（4日目:Ella→Yala、5日目:Yalaジープツアー→ミリッサ、6日目:Galle観光→空港）
+- [x] ベストシーズン・気候完全ガイド記事（BestSeasonArticle.tsx）の新規作成・blogData.ts登録・BlogArticlePage.tsx組み込み・sitemap.xml更新

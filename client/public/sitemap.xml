@@ -201,6 +201,12 @@
 
   <!-- 旅行計画・準備 記事 -->
   <url>
+    <loc>https://sltcs.srilanka-charter.com/travel-planning/best-season-guide</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sltcs.srilanka-charter.com/travel-planning/when-to-book-charter</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>

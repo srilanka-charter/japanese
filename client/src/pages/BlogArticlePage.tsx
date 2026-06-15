@@ -12,6 +12,7 @@ import PriceBreakdownArticle from "./articles/PriceBreakdownArticle";
 import TipMannerArticle from "./articles/TipMannerArticle";
 import SeniorTravelArticle from "./articles/SeniorTravelArticle";
 import TeaTrainArticle from "./articles/TeaTrainArticle";
+import BestSeasonArticle from "./articles/BestSeasonArticle";
 import { useSEO } from "@/hooks/useSEO";
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -47,6 +48,9 @@ function ArticleContent({ slug }: { slug: string }) {
   }
   if (slug === "tea-train-guide") {
     return <TeaTrainArticle />;
+  }
+  if (slug === "best-season-guide") {
+    return <BestSeasonArticle />;
   }
   return (
     <p className="text-gray-500 text-center py-12">記事コンテンツを準備中です。</p>
