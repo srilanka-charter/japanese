@@ -191,16 +191,16 @@ export default function FamilyTravelArticle() {
               icon: "🚂",
               name: "キャンディ〜エッラ 紅茶列車",
               desc: "茶畑の絶景を走る列車旅。専用車で駅まで送迎し、列車を楽しんだ後また迎えに来てもらえます。",
-              link: "/tea-train",
+              link: "/blog/sightseeing-guide/tea-train-guide",
             },
             {
               icon: "🌊",
               name: "ミリッサ・ウナワトゥナ",
               desc: "南部の美しいビーチ。穏やかな波で子どもも安心して遊べます。ホエールウォッチングも人気です。",
-              link: null,
+              link: "/whale-watching",
             },
             {
-              icon: "🏯",
+              icon: "🏰",
               name: "キャンディ（仏歯寺）",
               desc: "スリランカ最大の仏教聖地。象のパレードが見られる時期は特に子どもに人気です。",
               link: "/kandy",
@@ -436,7 +436,7 @@ export default function FamilyTravelArticle() {
         <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-4">関連記事</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <a
-            href="/taxi-charter-basics/why-taxi-charter-is-recommended"
+            href="/blog/taxi-charter-basics/why-taxi-charter-is-recommended"
             className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group border border-gray-100"
           >
             <div className="flex-1 min-w-0">
@@ -455,6 +455,42 @@ export default function FamilyTravelArticle() {
               <p className="text-xs text-[oklch(0.35_0.12_155)] font-semibold mb-1">プラン</p>
               <p className="text-sm font-medium text-gray-800 group-hover:text-[oklch(0.35_0.12_155)] transition-colors leading-snug">
                 SLTCSのタクシーチャータープランを見る
+              </p>
+            </div>
+            <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+          </a>
+          <a
+            href="/pricing"
+            className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group border border-gray-100"
+          >
+            <div className="flex-1 min-w-0">
+              <p className="text-xs text-[oklch(0.35_0.12_155)] font-semibold mb-1">料金</p>
+              <p className="text-sm font-medium text-gray-800 group-hover:text-[oklch(0.35_0.12_155)] transition-colors leading-snug">
+                SLTCSの料金一覧｜スリランカ専用車チャーターの価格
+              </p>
+            </div>
+            <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+          </a>
+          <a
+            href="/blog/travel-planning/best-season-guide"
+            className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group border border-gray-100"
+          >
+            <div className="flex-1 min-w-0">
+              <p className="text-xs text-[oklch(0.35_0.12_155)] font-semibold mb-1">旅行計画・準備</p>
+              <p className="text-sm font-medium text-gray-800 group-hover:text-[oklch(0.35_0.12_155)] transition-colors leading-snug">
+                スリランカ旅行のベストシーズンと気候完全ガイド
+              </p>
+            </div>
+            <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+          </a>
+          <a
+            href="/blog/theme-travel/senior-travel-charter"
+            className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group border border-gray-100"
+          >
+            <div className="flex-1 min-w-0">
+              <p className="text-xs text-[oklch(0.35_0.12_155)] font-semibold mb-1">属性別旅行</p>
+              <p className="text-sm font-medium text-gray-800 group-hover:text-[oklch(0.35_0.12_155)] transition-colors leading-snug">
+                スリランカシニア旅行完全ガイド｜60代・70代の方におすすめ
               </p>
             </div>
             <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>

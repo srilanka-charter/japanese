@@ -333,50 +333,63 @@ export default function BestSeasonArticle() {
           {[
             {
               style: "世界遺産・文化観光（シーギリヤ・キャンディ・ダンブッラ）",
-              best: "12月〜3月",
+              best: "12月～3月",
               reason: "晴天率が高く、シーギリヤロック登頂やキャンディ仏歯寺観光に最適。混雑するが観光条件は最高。",
-              link: null,
+              link: "/sigiriya",
             },
             {
               style: "ビーチ・海水浴（ミリッサ・ゴール・タンガッレ）",
-              best: "12月〜3月",
+              best: "12月～3月",
               reason: "南部の海が最も穏やかな時期。透明度も高く、シュノーケリングやダイビングも楽しめる。",
-              link: null,
+              link: "/galle",
             },
             {
               style: "ホエールウォッチング",
-              best: "1月〜3月",
+              best: "1月～3月",
               reason: "ミリッサ沖でシロナガスクジラを見られる確率が最も高い。早朝出発のツアーが多い。",
-              link: null,
+              link: "/whale-watching",
             },
             {
               style: "サファリ（ヤーラ国立公園）",
-              best: "2月〜6月",
-              reason: "乾季に水場に動物が集まり、ヒョウの目撃率が上がる。早朝・夕方のジープサファリがおすすめ。",
-              link: null,
+              best: "2月～6月",
+              reason: "举季に水場に動物が集まり、ヒョウの目撃率が上がる。早朝・夕方のジープサファリがおすすめ。",
+              link: "/safari",
             },
             {
               style: "紅茶列車・高原観光",
-              best: "1月〜3月・7月〜9月",
-              reason: "晴天率が高く、茶畑の車窓風景を楽しみやすい。7〜9月は雨季明けで茶畑が鮮やかな緑色に。",
-              link: null,
+              best: "1月～3月・7月～9月",
+              reason: "晴天率が高く、茶畑の車窓風景を楽しみやすい。7～9月は雨季明けで茶畑が鮮やかな緑色に。",
+              link: "/blog/sightseeing-guide/tea-train-guide",
             },
             {
               style: "ハネムーン・新婚旅行",
-              best: "12月〜3月",
+              best: "12月～3月",
               reason: "ビーチ・文化観光・サファリをすべて楽しめるグランドシーズン。早めの予約が必須。",
-              link: null,
+              link: "/blog/theme-travel/honeymoon-sri-lanka",
             },
           ].map((item, i) => (
-            <div key={i} className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
-              <div className="flex flex-wrap items-center gap-2 mb-2">
-                <span className="text-sm font-bold text-gray-900">{item.style}</span>
-                <span className="bg-emerald-100 text-emerald-700 text-xs font-bold px-2 py-0.5 rounded-full">
-                  ベスト：{item.best}
-                </span>
+            item.link ? (
+              <a key={i} href={item.link} className="block bg-white border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md hover:border-[oklch(0.75_0.12_155)] transition-all group">
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <span className="text-sm font-bold text-gray-900 group-hover:text-[oklch(0.35_0.12_155)] transition-colors">{item.style}</span>
+                  <span className="bg-emerald-100 text-emerald-700 text-xs font-bold px-2 py-0.5 rounded-full">
+                    ベスト：{item.best}
+                  </span>
+                </div>
+                <p className="text-sm text-gray-600 leading-relaxed">{item.reason}</p>
+                <p className="text-xs text-[oklch(0.35_0.12_155)] mt-2 font-medium">詳しく見る →</p>
+              </a>
+            ) : (
+              <div key={i} className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <span className="text-sm font-bold text-gray-900">{item.style}</span>
+                  <span className="bg-emerald-100 text-emerald-700 text-xs font-bold px-2 py-0.5 rounded-full">
+                    ベスト：{item.best}
+                  </span>
+                </div>
+                <p className="text-sm text-gray-600 leading-relaxed">{item.reason}</p>
               </div>
-              <p className="text-sm text-gray-600 leading-relaxed">{item.reason}</p>
-            </div>
+            )
           ))}
         </div>
 

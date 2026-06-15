@@ -393,10 +393,13 @@ export default function SoloWomenTravelArticle() {
           <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-4">関連記事</p>
           <div className="grid sm:grid-cols-2 gap-3">
             {[
-              { label: "タクシーチャーターがおすすめな理由", href: "/taxi-charter-basics/why-taxi-charter-is-recommended" },
-              { label: "スリランカ専用車チャーターの予約タイミング", href: "/travel-planning/when-to-book-charter" },
-              { label: "家族旅行に専用車が向いている理由", href: "/theme-travel/family-travel-charter" },
+              { label: "タクシーチャーターがおすすめな理由", href: "/blog/taxi-charter-basics/why-taxi-charter-is-recommended" },
+              { label: "スリランカ専用車チャーターの予約タイミング", href: "/blog/travel-planning/when-to-book-charter" },
+              { label: "家族旅行に専用車が向いている理由", href: "/blog/theme-travel/family-travel-charter" },
               { label: "プランと料金を見る", href: "/plan" },
+              { label: "SLTCSの料金一覧", href: "/pricing" },
+              { label: "スリランカ旅行のベストシーズンと気候", href: "/blog/travel-planning/best-season-guide" },
+              { label: "紅茶列車完全ガイド", href: "/blog/sightseeing-guide/tea-train-guide" },
             ].map((item) => (
               <Link
                 key={item.href}

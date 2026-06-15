@@ -257,8 +257,12 @@ export default function BookingTimingArticle() {
         <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-4">関連記事</p>
         <ul className="space-y-2">
           {[
-            { href: "/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカ旅行でタクシーチャーターがおすすめな理由｜公共交通との違い" },
-           { href: "/model-course/course-10days", label: "スリランカを 10日間で周游する大満足モデルコース" },
+            { href: "/blog/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカ旅行でタクシーチャーターがおすすめな理由｜公共交通との違い" },
+            { href: "/blog/model-course/course-10days", label: "スリランカを 10日間で周游する大満足モデルコース" },
+            { href: "/blog/taxi-charter-basics/price-breakdown-risks", label: "スリランカのタクシーチャーター料金の内訳と安いサービスのリスク" },
+            { href: "/pricing", label: "SLTCSの料金一覧｜スリランカ専用車チャーターの価格" },
+            { href: "/blog/travel-planning/best-season-guide", label: "スリランカ旅行のベストシーズンと気候完全ガイド" },
+            { href: "/blog/taxi-charter-basics/tip-manner-guide", label: "スリランカのチップ相場・渡し方マナー完全ガイド" },
           ].map((link, i) => (
             <li key={i}>
               <a

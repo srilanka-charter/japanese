@@ -342,7 +342,7 @@ export default function SeniorTravelArticle() {
         <div className="bg-[oklch(0.96_0.04_155)] border border-[oklch(0.80_0.10_155)] rounded-2xl p-6 text-center mb-4">
           <p className="text-sm text-gray-600 mb-3">このモデルコースをベースに、ご希望に合わせてカスタマイズできます</p>
           <Link
-            href="/contact"
+            href="/#contact"
             className="inline-block bg-[oklch(0.35_0.12_155)] hover:bg-[oklch(0.28_0.10_155)] text-white font-bold px-8 py-3 rounded-full text-sm transition-colors"
           >
             無料で旅程相談する
@@ -479,7 +479,7 @@ export default function SeniorTravelArticle() {
             旅程のカスタマイズ・料金のお見積もり・ご不明点など、お気軽にお問い合わせください。
           </p>
           <Link
-            href="/contact"
+            href="/#contact"
             className="inline-block bg-[oklch(0.35_0.12_155)] hover:bg-[oklch(0.28_0.10_155)] text-white font-bold px-8 py-3 rounded-full text-sm transition-colors"
           >
             無料で旅程相談する
@@ -492,10 +492,12 @@ export default function SeniorTravelArticle() {
         <p className="text-sm font-semibold text-gray-500 mb-4">関連記事</p>
         <div className="grid sm:grid-cols-2 gap-3">
           {[
-            { href: "/blog/travel-by-type/family-travel-charter", label: "スリランカ家族旅行完全ガイド｜子連れで安心のタクシーチャーターモデルコース" },
+            { href: "/blog/theme-travel/family-travel-charter", label: "スリランカ家族旅行完全ガイド｜子連れで安心のタクシーチャーターモデルコース" },
             { href: "/blog/theme-travel/solo-women-travel-charter", label: "スリランカ女子旅・一人旅安全ガイド｜タクシーチャーターで安心の個人旅行モデルコース" },
             { href: "/blog/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカ旅行でタクシーチャーターがおすすめな理由｜公共交通との違い" },
             { href: "/blog/travel-planning/when-to-book-charter", label: "スリランカの専用車チャーターをいつ予約すべき？｜予約タイミング完全ガイド" },
+            { href: "/pricing", label: "SLTCSの料金一覧｜スリランカ専用車チャーターの価格" },
+            { href: "/blog/travel-planning/best-season-guide", label: "スリランカ旅行のベストシーズンと気候完全ガイド" },
           ].map((link, i) => (
             <Link
               key={i}

@@ -211,7 +211,7 @@ export default function HoneymoonArticle() {
             },
             {
               name: "紅茶列車（キャンディ〜エッラ）",
-              href: "/tea-train",
+              href: "/blog/sightseeing-guide/tea-train-guide",
               desc: "世界で最も美しい鉄道路線のひとつ。茶畑の中を走る列車から眺める緑の絶景は、二人の旅のハイライトになるでしょう。",
               tag: "絶景列車・ロマンティック",
             },
@@ -454,10 +454,12 @@ export default function HoneymoonArticle() {
               { href: "/sigiriya", label: "シーギリヤ岩・シーギリヤの観光情報｜スリランカハネムーンのメインスポット" },
               { href: "/galle", label: "ゴール旧市街・サンセットスポット｜スリランカ新婚旅行のロマンティックスポット" },
               { href: "/whale-watching", label: "ミリッサビーチ・ホエールウォッチング｜スリランカハネムーンのビーチリゾート" },
-              { href: "/theme-travel/family-travel-charter", label: "スリランカ家族旅行に専用車が向いている理由｜子連れで安心のモデルコース" },
-              { href: "/theme-travel/solo-women-travel-charter", label: "女子旅にスリランカはおすすめ？一人旅でも安心なタクシーチャーターで個人旅行をしよう！" },
-              { href: "/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカでタクシーチャーターがおすすめな理由" },
-              { href: "/taxi-charter-basics/booking-timing", label: "スリランカの専用車チャーターをいつ予約すべき？" },
+              { href: "/blog/theme-travel/family-travel-charter", label: "スリランカ家族旅行に専用車が向いている理由｜子連れで安心のモデルコース" },
+              { href: "/blog/theme-travel/solo-women-travel-charter", label: "女子旅にスリランカはおすすめ？一人旅でも安心なタクシーチャーターで個人旅行をしよう！" },
+              { href: "/blog/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカでタクシーチャーターがおすすめな理由" },
+              { href: "/blog/travel-planning/when-to-book-charter", label: "スリランカの専用車チャーターをいつ予約すべき？" },
+              { href: "/pricing", label: "SLTCSの料金一覧｜スリランカ専用車チャーターの価格" },
+              { href: "/blog/travel-planning/best-season-guide", label: "スリランカ旅行のベストシーズンと気候完全ガイド" },
             ].map((link, i) => (
               <li key={i}>
                 <Link href={link.href}>

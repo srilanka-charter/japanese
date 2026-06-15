@@ -584,9 +584,11 @@ export default function TeaTrainArticle() {
             {[
               { href: "/nuwara-eliya", label: "ヌワラエリヤ観光ガイド｜茶畑・高原リゾートの見どころ" },
               { href: "/kandy", label: "キャンディ観光ガイド｜仏歯寺・キャンディ湖の見どころ" },
-              { href: "/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカでタクシーチャーターがおすすめな理由" },
-              { href: "/model-course/course-10days", label: "スリランカ10日間モデルコース｜紅茶列車も組み込んだ完全版" },
-              { href: "/theme-travel/honeymoon-sri-lanka", label: "スリランカハネムーン完全ガイド｜新婚旅行に専用車チャーターがおすすめな理由" },
+              { href: "/blog/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカでタクシーチャーターがおすすめな理由" },
+              { href: "/blog/model-course/course-10days", label: "スリランカ10日間モデルコース｜紅茶列車も組み込んだ完全版" },
+              { href: "/blog/theme-travel/honeymoon-sri-lanka", label: "スリランカハネムーン完全ガイド｜新婚旅行に専用車チャーターがおすすめな理由" },
+              { href: "/pricing", label: "SLTCSの料金一覧｜スリランカ専用車チャーターの価格" },
+              { href: "/blog/travel-planning/best-season-guide", label: "スリランカ旅行のベストシーズンと気候完全ガイド" },
             ].map((link, i) => (
               <li key={i}>
                 <Link href={link.href}>

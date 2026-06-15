@@ -1,3 +1,5 @@
+import { Link } from "wouter";
+
 export default function PriceBreakdownArticle() {
   return (
     <article className="text-gray-800">
@@ -12,6 +14,7 @@ export default function PriceBreakdownArticle() {
         また、格安サービスを選んだ結果、旅行中にトラブルが発生したという声も後を絶ちません。
         この記事では、<strong className="text-gray-900">スリランカのタクシーチャーター料金の内訳</strong>と、
         安いサービスに潜むリスクを、SLTCSの実体験をもとにわかりやすく解説します。
+        SLTCSの<Link href="/pricing" className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">料金ページ</Link>では具体的な料金目安も公開しています。
       </p>
 
       {/* ── 目次 ── */}
@@ -483,10 +486,48 @@ export default function PriceBreakdownArticle() {
         </div>
 
         <p className="text-base leading-[1.9] text-gray-700">
-          スリランカ旅行の移動手段選びで迷っている方は、ぜひSLTCSにお気軽にご相談ください。
-          旅程・人数・ご予算に合わせた最適なプランをご提案します。
+          スリランカ旅行の移動手段選びで迷っている方は、ぜびSLTCSにお気軽にご相談ください。
+          <Link href="/plan" className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">旅程・プランページ</Link>から旅程のイメージを確認し、人数・ご予算に合わせた最適なプランをご提案します。
         </p>
       </section>
+
+      {/* ── 関連記事リンク ── */}
+      <div className="bg-gray-50 rounded-xl p-6 mb-8">
+        <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-4">関連記事</p>
+        <ul className="space-y-2">
+          {[
+            { href: "/pricing", label: "SLTCSの料金一覧｜スリランカ専用車チャーターの価格" },
+            { href: "/plan", label: "SLTCSのプラン一覧｜スリランカ旅行の旅程を選ぶ" },
+            { href: "/blog/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカ旅行でタクシーチャーターがおすすめな理由｜公共交通との違い" },
+            { href: "/blog/travel-planning/when-to-book-charter", label: "スリランカの専用車チャーターをいつ予約すべき？｜予約タイミング完全ガイド" },
+            { href: "/blog/taxi-charter-basics/tip-manner-guide", label: "スリランカのチップ相場・渡し方マナー完全ガイド" },
+            { href: "/blog/travel-planning/best-season-guide", label: "スリランカ旅行のベストシーズンと気候完全ガイド" },
+          ].map((link, i) => (
+            <li key={i}>
+              <Link
+                href={link.href}
+                className="text-sm text-[oklch(0.35_0.12_155)] hover:opacity-80 underline underline-offset-2"
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* ── CTA ── */}
+      <div className="bg-gradient-to-br from-[oklch(0.35_0.12_155)] to-[oklch(0.28_0.10_155)] rounded-2xl p-8 text-center text-white mb-4">
+        <p className="text-lg font-bold mb-2">スリランカ旅行の専用車チャーターを相談しませんか？</p>
+        <p className="text-sm opacity-90 mb-6">
+          旅程が決まっていなくてもOK。日本語スタッフが丁寧にご提案します。
+        </p>
+        <a
+          href="/#contact"
+          className="inline-block bg-white text-[oklch(0.35_0.12_155)] font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition-colors"
+        >
+          無料で相談する →
+        </a>
+      </div>
 
     </article>
   );
