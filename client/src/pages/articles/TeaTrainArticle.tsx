@@ -430,7 +430,7 @@ export default function TeaTrainArticle() {
           スリランカ国鉄には1等・2等・3等の座席クラスがあり、それぞれ快適さと料金が異なります。
         </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
-          外国人旅行者には<strong className="text-gray-900">1等（観光用エクスポジャーワゴン）</strong>または<strong className="text-gray-900">2等指定席</strong>がおすすめです。
+          外国人旅行者には<strong className="text-gray-900">2等指定席</strong>が最もおすすめです。窓を開けて風を感じながら景色を楽しめる上、料金面でもコスパ良好です。<strong className="text-gray-900">1等（エクスポジャーワゴン）</strong>は展望車として人気がありますが、窓が開かないためご注意ください。
         </p>
 
         <div className="overflow-x-auto mb-8 rounded-xl shadow-sm">
@@ -445,8 +445,8 @@ export default function TeaTrainArticle() {
             </thead>
             <tbody>
               {[
-                ["1等（エクスポジャーワゴン）", "約2,000〜3,000円", "展望車・エアコンなし・大きな窓・指定席。景色を楽しむなら最適", "◎"],
-                ["2等指定席", "約700〜1,500円", "指定席・扇風機あり・比較的快適。コスパ良好", "○"],
+                ["1等（エクスポジャーワゴン）", "約2,000〜3,000円", "展望車・エアコンなし・大きな窓・指定席。ただし窓が開かないため、風を感じながら景色を楽しむなら2等がおすすめ", "○"],
+                ["2等指定席", "約700〜1,500円", "指定席・扇風機あり・窓を開けることができるので風を感じながら景色を楽しめる。コスパ良好でSLTCSが最もおすすめ", "◎"],
                 ["3等自由席", "約200〜500円", "自由席・混雑時は立ち乗りも。1時間程度の区間なら許容範囲", "△"],
               ].map(([cls, price, desc, rec], i) => (
                 <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
