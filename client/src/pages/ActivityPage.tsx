@@ -26,7 +26,7 @@ const articleJsonLd = {
     "url": "https://sltcs.srilanka-charter.com",
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sltcs.srilanka-charter.com/activity" },
-  "keywords": "スリランカ アクティビティ, スリランカ サファリ, スリランカ アーユルヴェーダ, シーギリヤ ビレッジツアー, スリランカ ホエールウォッチング, スリランカ 象乗り, スリランカ 占星術",
+  "keywords": "スリランカ アクティビティ, スリランカ サファリ, スリランカ アーユルヴェーダ, シーギリヤ ビレッジツアー, スリランカ ホエールウォッチング, スリランカ 象乗り, スリランカ 占星術, スリランカ 紅茶列車, スリランカ 鉄道",
 };
 
 const breadcrumbJsonLd = {
@@ -45,6 +45,7 @@ const toc = [
   { id: "village-tour",  label: "シーギリヤ村でのビレッジツアー" },
   { id: "elephant-ride", label: "シーギリヤ村でのエレファントライド" },
   { id: "whale",         label: "ホエールウォッチング" },
+  { id: "tea-train",     label: "紅茶列車（キャンディ〜エッラ）" },
   { id: "astrology",     label: "占星術" },
 ];
 
@@ -143,7 +144,7 @@ export default function ActivityPage() {
         {/* イントロ */}
         <div className="bg-gray-50 border-l-4 border-emerald-500 rounded-r-xl p-6 mb-10 text-gray-700 leading-relaxed">
           <p className="mb-3">
-            スリランカには世界遺産以外にも、<strong>サファリ・アーユルヴェーダ・紅茶列車・ホエールウォッチング・占星術</strong>と様々なアクティビティが存在しています。
+            スリランカには世界遺産以外にも、<strong>サファリ・アーユルヴェーダ・紅茶列車・ホエールウォッチング・占星術</strong>と様々なアクティビティが存在しています。詳しい紅茶列車の乗り方は<Link href="/blog/sightseeing-guide/tea-train-guide" className="text-emerald-600 hover:underline font-medium">紅茶列車完全ガイド</Link>をご覧ください。
           </p>
           <p className="mb-3">
             SLTCSの<strong>プラチナプランでは限定で手配ができるもの</strong>もあります。この項目ではSLTCSで手配できるアクティビティを紹介します。
@@ -372,6 +373,49 @@ export default function ActivityPage() {
               className="inline-flex items-center justify-center gap-2 border border-emerald-600 text-emerald-700 hover:bg-emerald-50 font-bold px-6 py-2.5 rounded-full transition-colors text-sm"
             >
               ホエールウォッチングについて問い合わせる →
+            </a>
+          </div>
+        </section>
+
+        {/* ── H2: 紅茶列車 ── */}
+        <section id="tea-train" className="mb-16 scroll-mt-24">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 border-l-4 border-emerald-500 pl-4 mb-2">
+            紅茶列車（キャンディ〜エッラ）
+          </h2>
+          <p className="text-gray-500 text-sm mb-6">世界で最も美しい鉄道路線のひとつ、茶畑を縫う絶景の旅</p>
+
+          <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1586500036706-41963de24d8b?w=900&auto=format&fit=crop"
+              alt="スリランカ 紅茶列車 キャンディ エッラ 茶畑"
+              className="w-full h-72 object-cover"
+            />
+          </div>
+
+          <div className="space-y-4 text-gray-700 leading-relaxed mb-8">
+            <p>
+              <strong>キャンディ〜エッラ間の紅茶列車</strong>は、「世界で最も美しい鉄道路線のひとつ」として旅行者から絶大な人気を誇ります。緑の茶畑と霧に包まれた山岳地帯を約7時間かけてゆっくり走る列車は、スリランカ旅行の中でも特別なハイライトです。
+            </p>
+            <p>
+              途中の<strong>Demodara駅（デモダラ駅）</strong>では、列車が自分自身の下をくぐり抜ける世界的にも珍しい「デモダラループ」と、9つのアーチが連なる<strong>ナインアーチブリッジ</strong>を見学できます。SLTCSでは列車乗車前後の専用車送迎を手配しており、チケット手配のアドバイスも可能です。
+            </p>
+            <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-800">
+              <strong>SLTCSおすすめの乗り方：</strong>キャンディ駅から乗車し、Demodara駅で下車してナインアーチブリッジを徒歩で見学。その後SLTCSドライバーがお迎えし、Ellaへ移動します。
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-3 mb-4">
+            <Link
+              href="/blog/sightseeing-guide/tea-train-guide"
+              className="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-2.5 rounded-full transition-colors text-sm shadow"
+            >
+              紅茶列車完全ガイドを読む →
+            </Link>
+            <a
+              href="/#contact"
+              className="inline-flex items-center justify-center gap-2 border border-emerald-600 text-emerald-700 hover:bg-emerald-50 font-bold px-6 py-2.5 rounded-full transition-colors text-sm"
+            >
+              紅茶列車の送迎について問い合わせる →
             </a>
           </div>
         </section>

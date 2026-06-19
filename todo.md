@@ -134,3 +134,4 @@
 - [x] TeaTrainArticle.tsxのおすすめプランを3日間→6日間に更新（4日目:Ella→Yala、5日目:Yalaジープツアー→ミリッサ、6日目:Galle観光→空港）
 - [x] ベストシーズン・気候完全ガイド記事（BestSeasonArticle.tsx）の新規作成・blogData.ts登録・BlogArticlePage.tsx組み込み・sitemap.xml更新
 - [x] 全記事の内部リンク追加（記事間・/pricing・/plan・/safari・/whale-watching・/sigiriya・/kandy・/galleへのリンク、旅行スタイル別カードをクリック可能に、Course10DaysのDay1-10全日程にリンク追加）
+- [x] ActivityPageに紅茶列車セクションを追加（目次・イントロ・JSON-LD更新・紅茶列車記事への内部リンク）
