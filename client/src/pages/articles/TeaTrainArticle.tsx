@@ -328,6 +328,23 @@ export default function TeaTrainArticle() {
             SLTCSのドライバーがDemodara駅でお出迎えし、そのままEllaへご案内します。
           </p>
         </div>
+
+        {/* 事前予約が取れなかった方へ */}
+        <div className="bg-green-50 border border-green-300 rounded-2xl p-6 mb-6">
+          <p className="text-sm font-bold text-green-800 mb-3">✅ 事前予約が取れなかった方もご安心ください</p>
+          <p className="text-sm text-green-700 leading-relaxed mb-3">
+            ハイシーズンや人気列車は指定席が満席になることがありますが、<strong>当日、SLTCSのドライバーの補助のもと、自由席の当日券を購入することが可能です。</strong>
+          </p>
+          <p className="text-sm text-green-700 leading-relaxed mb-3">
+            また、万が一ハイシーズンで立ち席になったとしても、SLTCSがご案内する区間は<strong>Ella〜Demodara間の約1時間</strong>です。
+            <strong>立ち席になったとしても、車窓の絶景を十分楽しめる1時間程度の区間をご案内します。</strong>
+          </p>
+          <ul className="space-y-1.5 text-sm text-green-700">
+            <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">•</span><span>当日券の購入はドライバーがサポートしますので、言語の心配は不要です</span></li>
+            <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">•</span><span>Ella駅から乗車し、Demodara駅でSLTCSドライバーがお待ちしています</span></li>
+            <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">•</span><span>九連アーチ橋を車窓から渡る体験は、立ち席でも十分楽しめます</span></li>
+          </ul>
+        </div>
       </section>
 
       {/* ════════════════════════════════════════════════════
