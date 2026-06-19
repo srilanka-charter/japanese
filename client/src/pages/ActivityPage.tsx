@@ -144,7 +144,7 @@ export default function ActivityPage() {
         {/* イントロ */}
         <div className="bg-gray-50 border-l-4 border-emerald-500 rounded-r-xl p-6 mb-10 text-gray-700 leading-relaxed">
           <p className="mb-3">
-            スリランカには世界遺産以外にも、<strong>サファリ・アーユルヴェーダ・紅茶列車・ホエールウォッチング・占星術</strong>と様々なアクティビティが存在しています。詳しい紅茶列車の乗り方は<Link href="/blog/sightseeing-guide/tea-train-guide" className="text-emerald-600 hover:underline font-medium">紅茶列車完全ガイド</Link>をご覧ください。
+            スリランカには世界遺産以外にも、<strong>サファリ・アーユルヴェーダ・紅茶列車・ホエールウォッチング・占星術</strong>と様々なアクティビティが存在しています。詳しい紅茶列車の乗り方は<Link href="/sightseeing-guide/tea-train-guide" className="text-emerald-600 hover:underline font-medium">紅茶列車完全ガイド</Link>をご覧ください。
           </p>
           <p className="mb-3">
             SLTCSの<strong>プラチナプランでは限定で手配ができるもの</strong>もあります。この項目ではSLTCSで手配できるアクティビティを紹介します。
@@ -406,7 +406,7 @@ export default function ActivityPage() {
 
           <div className="flex flex-col sm:flex-row gap-3 mb-4">
             <Link
-              href="/blog/sightseeing-guide/tea-train-guide"
+              href="/sightseeing-guide/tea-train-guide"
               className="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-2.5 rounded-full transition-colors text-sm shadow"
             >
               紅茶列車完全ガイドを読む →

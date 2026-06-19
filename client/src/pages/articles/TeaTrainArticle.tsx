@@ -52,15 +52,16 @@ export default function TeaTrainArticle() {
       </p>
 
       {/* ── 運行状況アラート ── */}
-      <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-5 mb-10">
-        <p className="text-sm font-bold text-amber-800 mb-2">2026年6月現在の運行状況について</p>
-        <p className="text-sm text-amber-700 leading-relaxed mb-2">
-          2025年11月末に発生したサイクロンの影響により、現在は<strong>Ambewelaからバドゥッラ（Badulla）の区間のみ運行</strong>しています。
-          キャンディ〜ナヌオヤ間など、高原鉄道の一部区間は運休中です。旅行前に最新の運行情報を必ずご確認ください。
+      <div className="bg-blue-50 border-l-4 border-blue-400 rounded-r-xl p-5 mb-10">
+        <p className="text-sm font-bold text-blue-800 mb-2">🔔 最新情報（2026年6月20日更新）</p>
+        <p className="text-sm text-blue-700 leading-relaxed mb-2">
+          <strong>2026年6月20日より、Nanu Oya〜Badulla間での運行が再開されました。</strong>
+          ヌワラエリヤ観光の玄関口であるNanu Oya駅から、Ella・Demodara方面を経由してBadullaまで向かう紅茶列車の旅を再び楽しめます。
+          ただし、Kandy〜Nanu Oya間は引き続き運休中です。
         </p>
-        <p className="text-sm text-amber-700 leading-relaxed">
-          SLTCSが現在おすすめする乗車区間は、<strong>BandarawelaからDemodaraまでの約1時間の区間</strong>です。
-          理由は後述の「SLTCSおすすめ区間」セクションをご覧ください。
+        <p className="text-sm text-blue-700 leading-relaxed">
+          SLTCSが現在おすすめする乗車区間は、<strong>Nanu OyaからDemodaraまでの区間</strong>です。
+          詳細は後述の「SLTCSおすすめ区間」セクションをご覧ください。
         </p>
       </div>
 
@@ -150,20 +151,139 @@ export default function TeaTrainArticle() {
       <section className="mb-14" id="section2">
         <H2 id="section2">現在の運行状況とSLTCSおすすめ区間</H2>
 
-        <H3>2025年サイクロンによる運休区間</H3>
+        {/* ── 最新情報バナー ── */}
+        <div className="bg-blue-50 border-2 border-blue-400 rounded-xl p-5 mb-8">
+          <p className="text-sm font-bold text-blue-800 mb-1">🔔 最新情報（2026年6月20日更新）</p>
+          <p className="text-sm text-blue-700 leading-relaxed">
+            <strong>2026年6月20日より、Nanu Oya〜Badulla間での運行が再開されました。</strong>
+            ヌワラエリヤ観光の玄関口であるNanu Oya駅から、Ella・Demodara方面を経由してBadullaまで向かう紅茶列車の旅を再び楽しめます。
+            SLTCSおすすめ乗車区間も更新しています（下記参照）。
+          </p>
+        </div>
+
+        {/* 路線状況インフォグラフィック */}
+        <figure className="mb-8 rounded-2xl overflow-hidden shadow-md">
+          <img
+            src="/manus-storage/tea-train-route-status_1fc850ba.png"
+            alt="スリランカ紅茶列車の最新運行状況マップ（2026年6月）"
+            className="w-full object-contain max-h-[600px] bg-white"
+          />
+          <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
+            2026年6月時点の路線区間と運行状況。Nanu Oya〜Badulla間が6月20日より運行再開。
+          </figcaption>
+        </figure>
+
+        <H3>2025年サイクロンによる運休区間と復旧状況</H3>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
-          2025年11月末にスリランカを直撃したサイクロンにより、高原鉄道の一部区間が被害を受けました。
-          2026年6月現在、<strong className="text-gray-900">Ambewela〜Badulla間のみ運行</strong>しており、
-          キャンディ〜ナヌオヤ間などの区間は運休中です。
+          2025年11月末にスリランカを直撃したサイクロン・ディトワにより、高原鉄道の一部区間が被害を受けました。
+          長らくAmbewela〜Badulla間のみの運行が続いていましたが、<strong className="text-gray-900">2026年6月20日よりNanu Oya〜Badulla間での運行が再開</strong>されました。
+          ただし、<strong className="text-gray-900">Kandy〜Nanu Oya間は引き続き運休中</strong>です。
         </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
           旅行前には必ずスリランカ国鉄の公式情報や現地エージェントを通じて最新の運行状況をご確認ください。
           SLTCSでもご相談時に最新情報をお伝えしています。
         </p>
 
-        <H3>SLTCSおすすめ区間：Bandarawela → Demodara（約1時間）</H3>
+        {/* 区間別運行状況表 */}
+        <div className="overflow-x-auto mb-8 rounded-xl shadow-sm">
+          <table className="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-[oklch(0.35_0.12_155)] text-white">
+                <th className="px-4 py-3 text-left font-semibold">区間</th>
+                <th className="px-4 py-3 text-left font-semibold">運行状況</th>
+                <th className="px-4 py-3 text-left font-semibold">備考</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { section: "Kandy → Nanu Oya", status: "運休中", statusColor: "text-red-600", note: "サイクロン被害により引き続き運休" },
+                { section: "Nanu Oya → Ambewela", status: "6月20日より運行再開", statusColor: "text-blue-600", note: "2026年6月20日より復旧" },
+                { section: "Ambewela → Demodara", status: "運行中", statusColor: "text-green-600", note: "九連アーチ橋・デモダラループを通過" },
+                { section: "Demodara → Badulla", status: "運行中", statusColor: "text-green-600", note: "終点バドゥッラまで" },
+              ].map((row, i) => (
+                <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td className="px-4 py-3 font-medium text-gray-900 border-b border-gray-100">{row.section}</td>
+                  <td className={`px-4 py-3 font-bold border-b border-gray-100 ${row.statusColor}`}>{row.status}</td>
+                  <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{row.note}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <H3>2026年6月20日以降の時刻表</H3>
+        <p className="text-base leading-[1.9] text-gray-700 mb-5">
+          Nanu Oyaからは当面1日2〜3本の運行予定です（水曜日のみ運行本数が異なります）。
+          天候・線路復旧状況・安全確認の結果によって急きょ変更・運休となる場合があるため、旅行前に必ず最新情報をご確認ください。
+        </p>
+
+        {/* 時刻表画像 */}
+        <figure className="mb-8 rounded-2xl overflow-hidden shadow-md">
+          <img
+            src="/manus-storage/tea-train-timetable_fb5116f3.png"
+            alt="紅茶列車の時刻表（Nanu Oya発・Badulla発）2026年6月20日以降"
+            className="w-full object-contain max-h-[700px] bg-white"
+          />
+          <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
+            2026年6月20日以降の紅茶列車時刻表。Nanu Oya発・Badulla発の各列車と発車時刻。
+          </figcaption>
+        </figure>
+
+        {/* 時刻表テキスト版 */}
+        <div className="grid sm:grid-cols-2 gap-4 mb-8">
+          <div className="bg-[oklch(0.96_0.02_155)] border border-[oklch(0.82_0.06_155)] rounded-xl p-5">
+            <p className="text-sm font-bold text-[oklch(0.25_0.10_155)] mb-3">Nanu Oya 発</p>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex justify-between"><span>Podi Manike</span><span className="font-semibold">9:00</span></li>
+              <li className="flex justify-between"><span>Udarata Manike</span><span className="font-semibold">14:30（水曜除く）</span></li>
+              <li className="flex justify-between"><span>Ella Oddesy</span><span className="font-semibold">13:00（水曜のみ）</span></li>
+            </ul>
+          </div>
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-amber-800 mb-3">Badulla 発</p>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex justify-between"><span>Udarata Manike</span><span className="font-semibold">9:00（水曜除く）</span></li>
+              <li className="flex justify-between"><span>Podi Manike</span><span className="font-semibold">15:00</span></li>
+              <li className="flex justify-between"><span>Ella Oddesy</span><span className="font-semibold">7:45（水曜のみ）</span></li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Kandy〜Nanu Oya運休の注意 */}
+        <div className="bg-red-50 border-l-4 border-red-400 rounded-r-xl p-5 mb-8">
+          <p className="text-sm font-bold text-red-800 mb-2">Kandy〜Nanu Oya間は引き続き運休中</p>
+          <p className="text-sm text-red-700 leading-relaxed mb-3">
+            コロンボ・キャンディ方面から紅茶列車で直接Nanu Oyaへ向かう従来のルートは、まだ復旧していません。
+            そのため、現在は以下の旅程設計が現実的です。
+          </p>
+          <div className="overflow-x-auto">
+            <table className="min-w-[360px] w-full text-xs border-collapse">
+              <thead>
+                <tr className="bg-red-100">
+                  <th className="px-3 py-2 text-left text-red-800">移動区間</th>
+                  <th className="px-3 py-2 text-left text-red-800">推奨移動方法</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["Kandy → Nanu Oya", "SLTCSの専用車チャーターで移動"],
+                  ["Nanu Oya → Demodara / Ella / Badulla", "紅茶列車を利用"],
+                  ["Ella / Demodara / Badulla到着後", "SLTCSの専用車チャーターでホテル・次の観光地へ"],
+                ].map(([from, to], i) => (
+                  <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-red-50"}>
+                    <td className="px-3 py-2 text-gray-700 border-b border-red-100">{from}</td>
+                    <td className="px-3 py-2 text-gray-700 border-b border-red-100">{to}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <H3>SLTCSおすすめ区間：Nanu Oya → Demodara（約3時間）</H3>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
-          現在の運行区間の中で、SLTCSが最もおすすめするのは<strong className="text-gray-900">BandarawelaからDemodaraまでの約1時間の区間</strong>です。
+          Nanu Oya〜Badulla間の運行再開により、SLTCSが現在おすすめする乗車区間は<strong className="text-gray-900">Nanu OyaからDemodaraまでの約3時間の区間</strong>です。
+          ヌワラエリヤの茶畝を抑えたNanu Oya駅を出発点に、Ambewela・Ellaを経由して、九連アーチ橋とデモダラループがあるDemodaraまでの全区間を楽しめます。
         </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
           この区間をおすすめする理由は3つあります。
