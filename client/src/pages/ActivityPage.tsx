@@ -386,7 +386,7 @@ export default function ActivityPage() {
 
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img
-              src="https://images.unsplash.com/photo-1586500036706-41963de24d8b?w=900&auto=format&fit=crop"
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-tea-train-guide-2ddzgbXcNQFiTJrQfuf4it.webp"
               alt="スリランカ 紅茶列車 キャンディ エッラ 茶畑"
               className="w-full h-72 object-cover"
             />
