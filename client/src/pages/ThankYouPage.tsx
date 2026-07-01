@@ -42,6 +42,11 @@ export default function ThankYouPage() {
           届かない場合は迷惑メールフォルダをご確認ください。
         </p>
 
+        {/* キャリアメール注意書き */}
+        <p className="text-sm text-red-600 font-bold leading-relaxed mb-6 bg-red-50 border border-red-200 rounded-xl px-4 py-3">
+          docomo・au・softbankのメールアドレスは担当者からのメールが届かない可能性があります。お手数をおかけし申し訳ありませんが、これらのアドレスを入力された方は別のメールアドレスをご入力ください。
+        </p>
+
         {/* Divider */}
         <div className="border-t border-[oklch(0.9_0.01_155)] mb-8" />
 
