@@ -1,7 +1,7 @@
-import { useEffect } from "react";
 import { Link } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useSEO } from "@/hooks/useSEO";
 
 // ── 画像URL ──────────────────────────────────────────────
 const SAFARI_COMBINED_IMG = "/manus-storage/activity_safari_new_441f0bbd.png";
@@ -50,60 +50,14 @@ const toc = [
 ];
 
 export default function ActivityPage() {
-  useEffect(() => {
-    document.title = "スリランカのアクティビティ完全ガイド｜サファリ・アーユルヴェーダ・ビレッジツアー・ホエールウォッチング【SLTCS】";
-
-    const desc = document.querySelector('meta[name="description"]');
-    if (desc) {
-      desc.setAttribute(
-        "content",
-        "スリランカで体験できるアクティビティを徹底紹介。サファリ、アーユルヴェーダ、シーギリヤ村ビレッジツアー、エレファントライド、ホエールウォッチング、占星術まで。SLTCSプラチナプラン限定の手配も可能。"
-      );
-    }
-
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) ogTitle.setAttribute("content", "スリランカのアクティビティ完全ガイド｜SLTCS");
-    const ogDesc = document.querySelector('meta[property="og:description"]');
-    if (ogDesc) ogDesc.setAttribute("content", "サファリ・アーユルヴェーダ・ビレッジツアー・エレファントライド・ホエールウォッチング・占星術。SLTCSで手配できるスリランカのアクティビティを一挙紹介。");
-    const ogUrl = document.querySelector('meta[property="og:url"]');
-    if (ogUrl) ogUrl.setAttribute("content", "https://sltcs.srilanka-charter.com/activity");
-    const ogImage = document.querySelector('meta[property="og:image"]');
-    if (ogImage) ogImage.setAttribute("content", SAFARI_COMBINED_IMG);
-
-    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
-    canonical.href = "https://sltcs.srilanka-charter.com/activity";
-
-    const articleScript = document.createElement("script");
-    articleScript.type = "application/ld+json";
-    articleScript.id = "activity-article-jsonld";
-    articleScript.textContent = JSON.stringify(articleJsonLd);
-    document.head.appendChild(articleScript);
-
-    const breadcrumbScript = document.createElement("script");
-    breadcrumbScript.type = "application/ld+json";
-    breadcrumbScript.id = "activity-breadcrumb-jsonld";
-    breadcrumbScript.textContent = JSON.stringify(breadcrumbJsonLd);
-    document.head.appendChild(breadcrumbScript);
-
-    return () => {
-      document.title = "スリランカタクシーチャーターならSLTCS｜日本語対応の専用車で自由に周遊";
-      const descEl = document.querySelector('meta[name="description"]');
-      if (descEl)
-        descEl.setAttribute(
-          "content",
-          "スリランカタクシーチャーターならSLTCS。日本語対応の専用車・カーチャーターで、シーギリヤ・キャンディ・ヤラなどスリランカ全土を自由に周遊。政府公認ドライバーによる完全プライベートチャーターをご提供します。"
-        );
-      document.getElementById("activity-article-jsonld")?.remove();
-      document.getElementById("activity-breadcrumb-jsonld")?.remove();
-      const canonicalEl = document.querySelector('link[rel="canonical"]');
-      if (canonicalEl) canonicalEl.remove();
-    };
-  }, []);
+  useSEO({
+    title: "スリランカのアクティビティ完全ガイド｜サファリ・アーユルヴェーダ・ビレッジツアー・ホエールウォッチング【SLTCS】",
+    description: "スリランカで体験できるアクティビティを徹底紹介。サファリ、アーユルヴェーダ、シーギリヤ村ビレッジツアー、エレファントライド、ホエールウォッチング、占星術まで。SLTCSプラチナプラン限定の手配も可能。",
+    path: "/activity",
+    ogImage: SAFARI_COMBINED_IMG,
+    jsonLdList: [articleJsonLd, breadcrumbJsonLd],
+    jsonLdIdPrefix: "activity",
+  });
 
   return (
     <div className="min-h-screen bg-white">

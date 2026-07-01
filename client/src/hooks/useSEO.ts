@@ -17,6 +17,19 @@ export interface SEOOptions {
   jsonLdList?: object[];
   /** JSON-LD スクリプトに付与する一意のIDプレフィックス */
   jsonLdIdPrefix?: string;
+  /** true の場合、robots meta に noindex,nofollow を設定 */
+  noindex?: boolean;
+}
+
+/** meta要素を取得または作成するヘルパー */
+function getOrCreateMeta(selector: string, attrName: string, attrValue: string): HTMLMetaElement {
+  let el = document.querySelector(selector) as HTMLMetaElement | null;
+  if (!el) {
+    el = document.createElement("meta");
+    el.setAttribute(attrName, attrValue);
+    document.head.appendChild(el);
+  }
+  return el;
 }
 
 /**
@@ -31,6 +44,7 @@ export function useSEO({
   ogImage = DEFAULT_OG_IMAGE,
   jsonLdList = [],
   jsonLdIdPrefix = "page",
+  noindex = false,
 }: SEOOptions) {
   useEffect(() => {
     const canonicalUrl = `${SITE_URL}${path}`;
@@ -39,25 +53,35 @@ export function useSEO({
     document.title = title;
 
     // ── meta description ───────────────────────────────────
-    let descEl = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
-    if (!descEl) {
-      descEl = document.createElement("meta");
-      descEl.name = "description";
-      document.head.appendChild(descEl);
-    }
+    const descEl = getOrCreateMeta('meta[name="description"]', "name", "description");
     descEl.setAttribute("content", description);
 
     // ── OGP ────────────────────────────────────────────────
-    const setMeta = (selector: string, value: string) => {
-      const el = document.querySelector(selector);
-      if (el) el.setAttribute("content", value);
-    };
-    setMeta('meta[property="og:title"]', title);
-    setMeta('meta[property="og:description"]', description);
-    setMeta('meta[property="og:url"]', canonicalUrl);
-    setMeta('meta[property="og:image"]', ogImage);
-    setMeta('meta[name="twitter:title"]', title);
-    setMeta('meta[name="twitter:description"]', description);
+    const ogTitleEl = getOrCreateMeta('meta[property="og:title"]', "property", "og:title");
+    ogTitleEl.setAttribute("content", title);
+
+    const ogDescEl = getOrCreateMeta('meta[property="og:description"]', "property", "og:description");
+    ogDescEl.setAttribute("content", description);
+
+    const ogUrlEl = getOrCreateMeta('meta[property="og:url"]', "property", "og:url");
+    ogUrlEl.setAttribute("content", canonicalUrl);
+
+    const ogImageEl = getOrCreateMeta('meta[property="og:image"]', "property", "og:image");
+    ogImageEl.setAttribute("content", ogImage);
+
+    // ── Twitter Card ───────────────────────────────────────
+    const twTitleEl = getOrCreateMeta('meta[name="twitter:title"]', "name", "twitter:title");
+    twTitleEl.setAttribute("content", title);
+
+    const twDescEl = getOrCreateMeta('meta[name="twitter:description"]', "name", "twitter:description");
+    twDescEl.setAttribute("content", description);
+
+    const twImageEl = getOrCreateMeta('meta[name="twitter:image"]', "name", "twitter:image");
+    twImageEl.setAttribute("content", ogImage);
+
+    // ── noindex ──────────────────────────────────────────────
+    const robotsMeta = getOrCreateMeta('meta[name="robots"]', "name", "robots");
+    robotsMeta.setAttribute("content", noindex ? "noindex,nofollow" : "index,follow");
 
     // ── canonical ──────────────────────────────────────────
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
@@ -87,15 +111,24 @@ export function useSEO({
       document.title = DEFAULT_TITLE;
       const d = document.querySelector('meta[name="description"]');
       if (d) d.setAttribute("content", DEFAULT_DESC);
-      setMeta('meta[property="og:title"]', DEFAULT_TITLE);
-      setMeta('meta[property="og:description"]', DEFAULT_DESC);
-      setMeta('meta[property="og:url"]', SITE_URL + "/");
-      setMeta('meta[property="og:image"]', DEFAULT_OG_IMAGE);
-      setMeta('meta[name="twitter:title"]', DEFAULT_TITLE);
-      setMeta('meta[name="twitter:description"]', DEFAULT_DESC);
-      document.querySelector('link[rel="canonical"]')?.remove();
+      const ogT = document.querySelector('meta[property="og:title"]');
+      if (ogT) ogT.setAttribute("content", DEFAULT_TITLE);
+      const ogD = document.querySelector('meta[property="og:description"]');
+      if (ogD) ogD.setAttribute("content", DEFAULT_DESC);
+      const ogU = document.querySelector('meta[property="og:url"]');
+      if (ogU) ogU.setAttribute("content", SITE_URL + "/");
+      const ogI = document.querySelector('meta[property="og:image"]');
+      if (ogI) ogI.setAttribute("content", DEFAULT_OG_IMAGE);
+      const twT = document.querySelector('meta[name="twitter:title"]');
+      if (twT) twT.setAttribute("content", DEFAULT_TITLE);
+      const twD = document.querySelector('meta[name="twitter:description"]');
+      if (twD) twD.setAttribute("content", DEFAULT_DESC);
+      const twI = document.querySelector('meta[name="twitter:image"]');
+      if (twI) twI.setAttribute("content", DEFAULT_OG_IMAGE);
+      const canonicalEl = document.querySelector('link[rel="canonical"]');
+      if (canonicalEl) canonicalEl.setAttribute("href", SITE_URL + "/");
       scriptIds.forEach((id) => document.getElementById(id)?.remove());
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [title, description, path]);
+  }, [title, description, path, ogImage]);
 }

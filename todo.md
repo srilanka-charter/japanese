@@ -135,3 +135,16 @@
 - [x] ベストシーズン・気候完全ガイド記事（BestSeasonArticle.tsx）の新規作成・blogData.ts登録・BlogArticlePage.tsx組み込み・sitemap.xml更新
 - [x] 全記事の内部リンク追加（記事間・/pricing・/plan・/safari・/whale-watching・/sigiriya・/kandy・/galleへのリンク、旅行スタイル別カードをクリック可能に、Course10DaysのDay1-10全日程にリンク追加）
 - [x] ActivityPageに紅茶列車セクションを追加（目次・イントロ・JSON-LD更新・紅茶列車記事への内部リンク）
+- [x] ActivityPage紅茶列車セクションのビーチ画像を紅茶列車画像に差し替え
+- [x] ActivityPage「紅茶列車完全ガイドを読む」ボタンの404修正（/blog/プレフィックス削除）
+- [x] TeaTrainArticle.tsxに最新運行状況セクション追加（2026年6月20日更新）
+- [x] TeaTrainArticle.tsxにチケット取れなかった方への安心ボックス追加
+- [x] TeaTrainArticle.tsxの座席比較表修正（1等○・2等◎）
+- [x] mailer.tsのオーナー通知メール件名修正
+- [x] ThankYouPage.tsxにキャリアメール注意書き追加
+- [x] SEO致命的問題修正：react-helmet-asyncを導入してSSR対応の動的メタタグ管理を実装
+- [x] SEO：全ページにページ固有のtitle・meta description・canonical URLを設定
+- [x] SEO：SigiriyaPage・KandyPage・GallePage・NuwaraEliyaPageのuseEffect手書きSEOをuseSEOフックに統一
+- [x] SEO：FaqArticlePage・VehiclesPage・Home・ThankYouPage等の残りページにuseSEOを追加
+- [x] SEO：全ページのog:imageを設定
+- [x] SEO：sitemap.xmlのrobots.txtへのSitemap参照確認（既に設定済みか確認）

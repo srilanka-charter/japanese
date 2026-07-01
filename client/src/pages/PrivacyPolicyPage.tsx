@@ -1,8 +1,16 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function PrivacyPolicyPage() {
+  useSEO({
+    title: "プライバシーポリシー｜SLTCS スリランカタクシーチャーターサービス",
+    description: "SLTCS（スリランカタクシーチャーターサービス）のプライバシーポリシー。個人情報の取り扱い、利用目的、第三者提供について説明しています。",
+    path: "/privacy",
+    noindex: true,
+  });
+
   return (
     <div className="min-h-screen bg-white">
       <Header />

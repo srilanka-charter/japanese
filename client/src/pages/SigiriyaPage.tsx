@@ -1,7 +1,7 @@
-import { useEffect } from "react";
 import { Link } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useSEO } from "@/hooks/useSEO";
 
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_rock_hero-WvSdEsM6SGKw7D3K9DXp8D.webp";
 const TAXI_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_taxi_charter-jbGez2ndeLZJLBsvWSRKhH.webp";
@@ -222,58 +222,14 @@ const articleJsonLd = {
 };
 
 export default function SigiriyaPage() {
-  useEffect(() => {
-    // SEO: titleタグ — ターゲットキーワード「シーギリヤロック 行き方」を前方に配置
-    document.title = "シーギリヤロックの行き方・見どころ完全ガイド｜タクシーチャーターで快適アクセス【SLTCS】";
-
-    // SEO: descriptionタグ — 155文字以内でキーワードを自然に含める
-    const desc = document.querySelector('meta[name="description"]');
-    if (desc) {
-      desc.setAttribute("content", "シーギリヤロックへの行き方を徹底解説。コロンボからタクシーチャーター（約4〜5時間）・バス・鉄道を比較。日本語対応SLTCSなら直行でアクセス可能。見どころ・周辺レストラン・ホテルも網羅。");
-    }
-
-    // SEO: OGP
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) ogTitle.setAttribute("content", "シーギリヤロックの行き方・見どころ完全ガイド｜SLTCS");
-    const ogDesc = document.querySelector('meta[property="og:description"]');
-    if (ogDesc) ogDesc.setAttribute("content", "シーギリヤロックへの行き方を徹底解説。タクシーチャーター・バス・鉄道を比較。日本語対応SLTCSで快適アクセス。見どころ・レストラン・ホテルも網羅。");
-    const ogUrl = document.querySelector('meta[property="og:url"]');
-    if (ogUrl) ogUrl.setAttribute("content", "https://sltcs.srilanka-charter.com/sigiriya");
-    const ogImage = document.querySelector('meta[property="og:image"]');
-    if (ogImage) ogImage.setAttribute("content", "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_rock_hero-WvSdEsM6SGKw7D3K9DXp8D.webp");
-
-    // SEO: canonical
-    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
-    canonical.href = "https://sltcs.srilanka-charter.com/sigiriya";
-
-    // SEO: JSON-LD 構造化データ（FAQ + Article）
-    const faqScript = document.createElement("script");
-    faqScript.type = "application/ld+json";
-    faqScript.id = "faq-jsonld";
-    faqScript.textContent = JSON.stringify(faqJsonLd);
-    document.head.appendChild(faqScript);
-
-    const articleScript = document.createElement("script");
-    articleScript.type = "application/ld+json";
-    articleScript.id = "article-jsonld";
-    articleScript.textContent = JSON.stringify(articleJsonLd);
-    document.head.appendChild(articleScript);
-
-    return () => {
-      document.title = "スリランカタクシーチャーターならSLTCS｜日本語対応の専用車で自由に周遊";
-      const descEl = document.querySelector('meta[name="description"]');
-      if (descEl) descEl.setAttribute("content", "スリランカタクシーチャーターならSLTCS。日本語対応の専用車・カーチャーターで、シーギリヤ・キャンディ・ヤラなどスリランカ全土を自由に周遊。政府公認ドライバーによる完全プライベートチャーターをご提供します。");
-      document.getElementById("faq-jsonld")?.remove();
-      document.getElementById("article-jsonld")?.remove();
-      const canonicalEl = document.querySelector('link[rel="canonical"]');
-      if (canonicalEl) canonicalEl.remove();
-    };
-  }, []);
+  useSEO({
+    title: "シーギリヤロックの行き方・見どころ完全ガイド｜タクシーチャーターで快適アクセス【SLTCS】",
+    description: "シーギリヤロックへの行き方を徹底解説。コロンボからタクシーチャーター（約4〜5時間）・バス・鉄道を比較。日本語対応SLTCSなら直行でアクセス可能。見どころ・周辺レストラン・ホテルも網羅。",
+    path: "/sigiriya",
+    ogImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_rock_hero-WvSdEsM6SGKw7D3K9DXp8D.webp",
+    jsonLdList: [faqJsonLd, articleJsonLd],
+    jsonLdIdPrefix: "sigiriya",
+  });
 
   return (
     <div className="min-h-screen bg-white">

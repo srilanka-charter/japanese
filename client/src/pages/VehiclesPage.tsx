@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
 import { Users, Briefcase, Check } from "lucide-react";
+import { useSEO } from "@/hooks/useSEO";
 
 const vehicles = [
   {
@@ -81,6 +82,12 @@ const vehicles = [
 ];
 
 export default function VehiclesPage() {
+  useSEO({
+    title: "スリランカタクシーチャーターの車両ラインナップ｜セダン・バン・ミニバン【SLTCS】",
+    description: "スリランカタクシーチャーターサービスSLTCSの車両ラインナップ。セダン（2〜3名）・バン（4〜6名）・ミニバン（6〜9名）をグループ規模に合わせて選択。エアコン・ミネラルウォーター完備。",
+    path: "/vehicles",
+  });
+
   const scrollToContact = () => {
     window.location.href = "/#contact";
   };

@@ -50,7 +50,7 @@ ${data.message || "（内容なし）"}
     to: "srilanka.41032@gmail.com",
     bcc: "contact@gohellolanka.com",
     replyTo: data.email,
-    subject: `〈SLTCS〉お問い合わせありがとうございます`,
+    subject: `〈SLTCS〉新規お問い合わせ：${data.name}様`,
     text: body,
   });
 }

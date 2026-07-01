@@ -1,8 +1,16 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function TermsPage() {
+  useSEO({
+    title: "利用規約・免責事項｜SLTCS スリランカタクシーチャーターサービス",
+    description: "SLTCS（スリランカタクシーチャーターサービス）の利用規約および免責事項。サービスの性質、利用条件、責任の限界について説明しています。",
+    path: "/terms",
+    noindex: true,
+  });
+
   return (
     <div className="min-h-screen bg-white">
       <Header />

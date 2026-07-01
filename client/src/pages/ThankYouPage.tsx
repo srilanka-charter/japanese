@@ -1,8 +1,16 @@
 import { useEffect } from "react";
 import { CheckCircle, Home, MessageCircle } from "lucide-react";
 import { Link } from "wouter";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function ThankYouPage() {
+  useSEO({
+    title: "お申し込みありがとうございます｜SLTCS スリランカタクシーチャーターサービス",
+    description: "お申し込みを受け付けました。担当者より近日中にご連絡いたします。",
+    path: "/thank-you",
+    noindex: true,
+  });
+
   useEffect(() => {
     // Google Ads コンバージョントラッキング: SLTCS 予約完了
     if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {

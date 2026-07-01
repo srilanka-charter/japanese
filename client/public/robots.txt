@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # サンクスページ・エラーページはインデックス対象外
-Disallow: /thanks
+Disallow: /thank-you
 Disallow: /404
 
 # サイトマップ

@@ -2,9 +2,17 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { AlertCircle, Home } from "lucide-react";
 import { useLocation } from "wouter";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function NotFound() {
   const [, setLocation] = useLocation();
+
+  useSEO({
+    title: "404 ページが見つかりません｜SLTCS スリランカタクシーチャーターサービス",
+    description: "お探しのページは見つかりませんでした。トップページに戻ってください。",
+    path: "/404",
+    noindex: true,
+  });
 
   const handleGoHome = () => {
     setLocation("/");
