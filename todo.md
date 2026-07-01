@@ -148,3 +148,6 @@
 - [x] SEO：FaqArticlePage・VehiclesPage・Home・ThankYouPage等の残りページにuseSEOを追加
 - [x] SEO：全ページのog:imageを設定
 - [x] SEO：sitemap.xmlのrobots.txtへのSitemap参照確認（既に設定済みか確認）
+- [x] LCP改善：ヒーロー画像（HeroSection）にfetchpriority="high"・loading="eager"を追加（その他スライドにloading="lazy"も設定）
+- [x] JSON-LD拡充：/pricingページにPriceSpecificationスキーマを追加（各プランにminPrice/maxPrice設定）
+- [x] JSON-LD拡充：/vehiclesページにItemList+Productスキーマを追加（各車種にPriceSpecification含む）

@@ -115,20 +115,70 @@ export default function PricingPage() {
     title: PRICING_TITLE + " | SLTCS",
     description: PRICING_DESCRIPTION,
     path: "/pricing",
-    jsonLdList: [{
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "SLTCS スリランカタクシーチャーターサービス 料金プラン",
-      "description": PRICING_DESCRIPTION,
-      "provider": { "@type": "Organization", "name": "SLTCS" },
-      "areaServed": { "@type": "Country", "name": "Sri Lanka" },
-      "url": "https://sltcs.srilanka-charter.com/pricing",
-      "offers": [
-        { "@type": "Offer", "name": "ブロンズプラン", "priceCurrency": "JPY", "price": "45000" },
-        { "@type": "Offer", "name": "シルバープラン", "priceCurrency": "JPY", "price": "53000" },
-        { "@type": "Offer", "name": "ゴールドプラン", "priceCurrency": "JPY", "price": "69000" },
-      ],
-    }],
+    jsonLdList: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "SLTCS スリランカタクシーチャーターサービス 料金プラン",
+        "description": PRICING_DESCRIPTION,
+        "provider": { "@type": "Organization", "name": "SLTCS", "url": "https://sltcs.srilanka-charter.com" },
+        "areaServed": { "@type": "Country", "name": "Sri Lanka" },
+        "url": "https://sltcs.srilanka-charter.com/pricing",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "ブロンズプラン（2日間／Sedan）",
+            "priceCurrency": "JPY",
+            "price": "45000",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "45000",
+              "priceCurrency": "JPY",
+              "minPrice": "45000",
+              "maxPrice": "216000",
+              "description": "2日間｜2泊3日から対応。Sedan（｜3名）・Van（3｜6名）・Big Van（6｜9名）の3車種。"
+            },
+            "eligibleQuantity": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 3, "unitText": "名" },
+            "availability": "https://schema.org/InStock",
+            "url": "https://sltcs.srilanka-charter.com/pricing"
+          },
+          {
+            "@type": "Offer",
+            "name": "シルバープラン（2日間／Sedan）",
+            "priceCurrency": "JPY",
+            "price": "53000",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "53000",
+              "priceCurrency": "JPY",
+              "minPrice": "53000",
+              "maxPrice": "184000",
+              "description": "政府公認Tourist Driver以上を手配。観光地での同行・解説付き。SLTCSの看板プラン。"
+            },
+            "eligibleQuantity": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 6, "unitText": "名" },
+            "availability": "https://schema.org/InStock",
+            "url": "https://sltcs.srilanka-charter.com/pricing"
+          },
+          {
+            "@type": "Offer",
+            "name": "ゴールドプラン（2日間／Sedan）",
+            "priceCurrency": "JPY",
+            "price": "69000",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "69000",
+              "priceCurrency": "JPY",
+              "minPrice": "69000",
+              "maxPrice": "216000",
+              "description": "高評価Chauffeur Guide Driver確約。全行程同行・解説、日本語対応の現地統括。"
+            },
+            "eligibleQuantity": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 9, "unitText": "名" },
+            "availability": "https://schema.org/InStock",
+            "url": "https://sltcs.srilanka-charter.com/pricing"
+          },
+        ],
+      },
+    ],
     jsonLdIdPrefix: "pricing",
   });
 

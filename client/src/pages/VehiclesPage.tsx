@@ -84,8 +84,98 @@ const vehicles = [
 export default function VehiclesPage() {
   useSEO({
     title: "スリランカタクシーチャーターの車両ラインナップ｜セダン・バン・ミニバン【SLTCS】",
-    description: "スリランカタクシーチャーターサービスSLTCSの車両ラインナップ。セダン（2〜3名）・バン（4〜6名）・ミニバン（6〜9名）をグループ規模に合わせて選択。エアコン・ミネラルウォーター完備。",
+    description: "スリランカタクシーチャーターサービスSLTCSの車両ラインナップ。セダン（2｜3名）・バン（4｜6名）・ミニバン（6｜9名）をグループ規模に合わせて選択。エアコン・ミネラルウォーター完備。",
     path: "/vehicles",
+    jsonLdList: [
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "SLTCS スリランカタクシーチャーター 車両ラインナップ",
+        "url": "https://sltcs.srilanka-charter.com/vehicles",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Product",
+              "name": "Sedan （セダン）―スリランカタクシーチャーター",
+              "description": "カップル・少人数旅行（2｜3名）に最適。エアコン・ミネラルウォーター完備。大きなスーツケース2個＋小さなスーツケース1個まで積載可能。",
+              "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/vehicle_sedan_ee212661.webp",
+              "brand": { "@type": "Brand", "name": "SLTCS" },
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "JPY",
+                "price": "45000",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "price": "45000",
+                  "priceCurrency": "JPY",
+                  "minPrice": "45000",
+                  "maxPrice": "176000",
+                  "description": "2日間から8日間まで対応。ブロンズ／シルバー／ゴールドプラン選択可能。"
+                },
+                "availability": "https://schema.org/InStock",
+                "url": "https://sltcs.srilanka-charter.com/pricing"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Product",
+              "name": "Van （バン）―スリランカタクシーチャーター",
+              "description": "ファミリー・グループ旅行（4｜6名）に最適。広々とした室内空間と充実した荷物収納スペース。大きなスーツケース8個まで積載可能。",
+              "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/vehicle_van_de904967.webp",
+              "brand": { "@type": "Brand", "name": "SLTCS" },
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "JPY",
+                "price": "52000",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "price": "52000",
+                  "priceCurrency": "JPY",
+                  "minPrice": "52000",
+                  "maxPrice": "200000",
+                  "description": "2日間から8日間まで対応。ブロンズ／シルバー／ゴールドプラン選択可能。"
+                },
+                "availability": "https://schema.org/InStock",
+                "url": "https://sltcs.srilanka-charter.com/pricing"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Product",
+              "name": "Big Van （ビッグバン）―スリランカタクシーチャーター",
+              "description": "大型グループ・企業旅行（7｜10名）に最適。独立シート9席、大型荷物スペース完備。大きなスーツケース10個まで積載可能。",
+              "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/vehicle_bigvan_7c49b85f.webp",
+              "brand": { "@type": "Brand", "name": "SLTCS" },
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "JPY",
+                "price": "60000",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "price": "60000",
+                  "priceCurrency": "JPY",
+                  "minPrice": "60000",
+                  "maxPrice": "216000",
+                  "description": "2日間から8日間まで対応。ブロンズ／シルバー／ゴールドプラン選択可能。"
+                },
+                "availability": "https://schema.org/InStock",
+                "url": "https://sltcs.srilanka-charter.com/pricing"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    jsonLdIdPrefix: "vehicles",
   });
 
   const scrollToContact = () => {

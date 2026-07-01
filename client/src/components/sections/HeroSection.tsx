@@ -95,6 +95,9 @@ export default function HeroSection() {
             alt={s.label}
             className="w-full h-full object-cover"
             style={{ transform: i === current ? "scale(1.03)" : "scale(1)", transition: "transform 6s ease-out" }}
+            {...(i === 0
+              ? { fetchPriority: "high" as const, loading: "eager" as const }
+              : { loading: "lazy" as const })}
           />
           {/* Dark gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70" />
