@@ -176,6 +176,11 @@ export default function VehiclesPage() {
       }
     ],
     jsonLdIdPrefix: "vehicles",
+    hreflangList: [
+      { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/vehicles" },
+      { hreflang: "ko", href: "https://ko.srilanka-charter.com/vehicles" },
+      { hreflang: "x-default", href: "https://en.srilanka-charter.com/vehicles" },
+    ],
   });
 
   const scrollToContact = () => {

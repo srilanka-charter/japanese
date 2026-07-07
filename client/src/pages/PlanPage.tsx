@@ -74,6 +74,11 @@ export default function PlanPage() {
       "url": "https://sltcs.srilanka-charter.com/plan",
     }],
     jsonLdIdPrefix: "plan",
+    hreflangList: [
+      { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/plan" },
+      { hreflang: "ko", href: "https://ko.srilanka-charter.com/plans" },
+      { hreflang: "x-default", href: "https://en.srilanka-charter.com/plans" },
+    ],
   });
 
   const scrollToContact = () => {

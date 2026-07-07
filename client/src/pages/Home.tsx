@@ -43,6 +43,11 @@ export default function Home() {
     ogImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_rock_hero-WvSdEsM6SGKw7D3K9DXp8D.webp",
     jsonLdList: [localBusinessJsonLd],
     jsonLdIdPrefix: "home",
+    hreflangList: [
+      { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/" },
+      { hreflang: "ko", href: "https://ko.srilanka-charter.com/" },
+      { hreflang: "x-default", href: "https://en.srilanka-charter.com/" },
+    ],
   });
 
   return (

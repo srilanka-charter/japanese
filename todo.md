@@ -151,3 +151,6 @@
 - [x] LCP改善：ヒーロー画像（HeroSection）にfetchpriority="high"・loading="eager"を追加（その他スライドにloading="lazy"も設定）
 - [x] JSON-LD拡充：/pricingページにPriceSpecificationスキーマを追加（各プランにminPrice/maxPrice設定）
 - [x] JSON-LD拡充：/vehiclesページにItemList+Productスキーマを追加（各車種にPriceSpecification含む）
+- [x] 言語プルダウンに韓国語（Korean）を追加（https://ko.srilanka-charter.com/）
+- [x] useSEOフックにhreflangListオプションを追加
+- [x] Top・Plans・Vehicles・FAQページに韓国語hreflangタグを設定（x-defaultは英語版のまま）

@@ -8,6 +8,14 @@ const SITE_URL = "https://sltcs.srilanka-charter.com";
 const DEFAULT_OG_IMAGE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_rock_hero-WvSdEsM6SGKw7D3K9DXp8D.webp";
 
+/** hreflang リンクの定義 */
+export interface HreflangEntry {
+  /** BCP47 言語タグ（例: "ja", "en", "ko", "x-default"） */
+  hreflang: string;
+  /** 対応ページの絶対URL */
+  href: string;
+}
+
 export interface SEOOptions {
   title: string;
   description: string;
@@ -19,6 +27,8 @@ export interface SEOOptions {
   jsonLdIdPrefix?: string;
   /** true の場合、robots meta に noindex,nofollow を設定 */
   noindex?: boolean;
+  /** hreflang alternate リンクの配列 */
+  hreflangList?: HreflangEntry[];
 }
 
 /** meta要素を取得または作成するヘルパー */
@@ -34,7 +44,7 @@ function getOrCreateMeta(selector: string, attrName: string, attrValue: string):
 
 /**
  * ページごとの SEO メタデータを管理するカスタムフック。
- * title / meta description / OGP / canonical / JSON-LD を設定し、
+ * title / meta description / OGP / canonical / JSON-LD / hreflang を設定し、
  * アンマウント時にデフォルト値へ復元する。
  */
 export function useSEO({
@@ -45,6 +55,7 @@ export function useSEO({
   jsonLdList = [],
   jsonLdIdPrefix = "page",
   noindex = false,
+  hreflangList = [],
 }: SEOOptions) {
   useEffect(() => {
     const canonicalUrl = `${SITE_URL}${path}`;
@@ -92,6 +103,17 @@ export function useSEO({
     }
     canonical.href = canonicalUrl;
 
+    // ── hreflang alternate ────────────────────────────────
+    // 既存のhreflangタグを一旦すべて削除してから再追加
+    document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((el) => el.remove());
+    hreflangList.forEach(({ hreflang, href }) => {
+      const link = document.createElement("link");
+      link.rel = "alternate";
+      link.setAttribute("hreflang", hreflang);
+      link.href = href;
+      document.head.appendChild(link);
+    });
+
     // ── JSON-LD ────────────────────────────────────────────
     const scriptIds: string[] = [];
     jsonLdList.forEach((data, i) => {
@@ -127,6 +149,8 @@ export function useSEO({
       if (twI) twI.setAttribute("content", DEFAULT_OG_IMAGE);
       const canonicalEl = document.querySelector('link[rel="canonical"]');
       if (canonicalEl) canonicalEl.setAttribute("href", SITE_URL + "/");
+      // hreflangタグを削除
+      document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((el) => el.remove());
       scriptIds.forEach((id) => document.getElementById(id)?.remove());
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps

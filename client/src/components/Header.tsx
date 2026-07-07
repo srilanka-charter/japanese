@@ -14,6 +14,7 @@ const blogMenuItems = [
 
 const languages = [
   { label: "English", href: "https://en.srilanka-charter.com/" },
+  { label: "Korean", href: "https://ko.srilanka-charter.com/" },
   { label: "French", href: "https://fr.srilanka-charter.com/" },
   { label: "Spanish", href: "https://es.srilanka-charter.com/" },
   { label: "German", href: "https://de.srilanka-charter.com/" },
