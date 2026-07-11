@@ -83,6 +83,19 @@ export default function SigiriyaDambullaHotelsArticle() {
           スリランカの伝統的なモチーフを取り入れた落ち着いた雰囲気が漂います。
         </p>
 
+        {/* 客室写真 */}
+        <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
+          <img
+            src="/manus-storage/heritance-kandalama-room_eeb08e5b.jpg"
+            alt="ヘリタンスカンダラマの客室 — 湖を望む開放的な客室"
+            className="w-full object-cover max-h-[420px]"
+            loading="lazy"
+          />
+          <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
+            湖を望む開放的な客室。大きな窓からカンダラマ湖と熱帯雨林が一望できる。
+          </figcaption>
+        </figure>
+
         {/* 内装写真 */}
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
@@ -147,10 +160,10 @@ export default function SigiriyaDambullaHotelsArticle() {
           シーギリヤロック観光の前後に滞在するホテルとして、多くの旅行者から高い評価を受けています。
         </p>
 
-        {/* 外観写真 */}
+        {/* 外観写真（正しいホテルシーギリヤの外観） */}
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
-            src="/manus-storage/sigiriya_exterior1_8ee87ab4.jpg"
+            src="/manus-storage/hotel-sigiriya-exterior-correct_8f60af29.jpg"
             alt="ホテルシーギリヤの外観 — シーギリヤロックを背景にした緑豊かなリゾート"
             className="w-full object-cover max-h-[420px]"
             loading="lazy"
@@ -172,6 +185,19 @@ export default function SigiriyaDambullaHotelsArticle() {
           プールサイドからはシーギリヤロックが一望でき、
           早朝の朝日に照らされたロックの姿は格別の美しさです。
         </p>
+
+        {/* 客室写真 */}
+        <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
+          <img
+            src="/manus-storage/hotel-sigiriya-room_5d0035ef.jpg"
+            alt="ホテルシーギリヤの客室 — スリランカの伝統的デザインを取り入れた客室"
+            className="w-full object-cover max-h-[420px]"
+            loading="lazy"
+          />
+          <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
+            スリランカの伝統的なデザインを取り入れた温かみのある客室。
+          </figcaption>
+        </figure>
 
         {/* 内装写真 */}
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
@@ -262,6 +288,19 @@ export default function SigiriyaDambullaHotelsArticle() {
           バルコニーからは湖や庭園の緑が広がります。
           スパ施設も充実しており、観光の疲れをしっかりと癒すことができます。
         </p>
+
+        {/* 客室写真 */}
+        <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
+          <img
+            src="/manus-storage/amaya-lake-room_13bbf799.jpg"
+            alt="アマヤレイク・ダンブッラの客室 — コロニアルスタイルの客室"
+            className="w-full object-cover max-h-[420px]"
+            loading="lazy"
+          />
+          <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
+            コロニアルスタイルを基調とした温かみのある客室。バルコニーから湖の緑が広がる。
+          </figcaption>
+        </figure>
 
         {/* 内装写真 */}
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
@@ -354,6 +393,19 @@ export default function SigiriyaDambullaHotelsArticle() {
           プライベートプール付きのヴィラでは、
           周囲の自然を独り占めにするような贅沢な体験ができます。
         </p>
+
+        {/* 客室写真 */}
+        <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
+          <img
+            src="/manus-storage/jetwing-vil-uyana-room_0b57fa73.jpg"
+            alt="ジェットウィング・ヴィル・ウヤナの客室 — 自然素材を使った開放的なヴィラ客室"
+            className="w-full object-cover max-h-[420px]"
+            loading="lazy"
+          />
+          <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
+            木・石・竹などスリランカ産の自然素材で構成されたヴィラ客室。開放的な空間が広がる。
+          </figcaption>
+        </figure>
 
         {/* 内装写真 */}
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">

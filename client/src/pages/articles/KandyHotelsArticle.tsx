@@ -82,6 +82,19 @@ export default function KandyHotelsArticle() {
           夜はライトアップされた仏歯寺の幻想的な姿を楽しめます。
         </p>
 
+        {/* 客室写真 */}
+        <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
+          <img
+            src="/manus-storage/grand-kandyan-room_a4e8dc9f.jpg"
+            alt="The Grand Kandyanの客室 — モダンとスリランカ伝統が融合した客室"
+            className="w-full object-cover max-h-[420px]"
+            loading="lazy"
+          />
+          <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
+            モダンとスリランカの伝統が融合した客室。レイクビュールームからはキャンディ湖が一望できる。
+          </figcaption>
+        </figure>
+
         {/* 内装写真 */}
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
@@ -91,7 +104,7 @@ export default function KandyHotelsArticle() {
             loading="lazy"
           />
           <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
-            モダンとスリランカの伝統が融合した客室。窓からはキャンディ湖が広がる。
+            屋上プールエリア。キャンディ湖と緑豊かな丘陵地帯が一望できる。
           </figcaption>
         </figure>
 
@@ -174,11 +187,24 @@ export default function KandyHotelsArticle() {
           キャンディの歴史的な景観を間近に感じることができます。
         </p>
 
+        {/* 客室写真 */}
+        <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
+          <img
+            src="/manus-storage/queens-hotel-room_08188e37.jpg"
+            alt="Queen's Hotel Kandyの客室 — 英国コロニアルスタイルの客室"
+            className="w-full object-cover max-h-[420px]"
+            loading="lazy"
+          />
+          <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
+            英国コロニアルスタイルの客室。高い天井と木製の調度品が時代を超えた優雅さを演出する。
+          </figcaption>
+        </figure>
+
         {/* 内装写真 */}
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
             src="/manus-storage/queens_interior1_78d2c8aa.jpg"
-            alt="Queen's Hotel Kandyの内装 — 英国コロニアルスタイルのクラシカルな客室"
+            alt="Queen's Hotel Kandyの内装 — 英国コロニアルスタイルのクラシカルな内装"
             className="w-full object-cover max-h-[420px]"
             loading="lazy"
           />
@@ -265,16 +291,29 @@ export default function KandyHotelsArticle() {
           ゆったりとした朝食を楽しむことができます。
         </p>
 
-        {/* 内装写真 */}
+        {/* 客室写真 */}
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
-            src="/manus-storage/earls_interior1_6aa309e0.jpg"
-            alt="Earl's Regency Kandyの内装 — 丘の景色を望むモダンな客室"
+            src="/manus-storage/earls-regency-room_e2980210.jpg"
+            alt="Earl's Regency Kandyの客室 — モダンなデザインの客室"
             className="w-full object-cover max-h-[420px]"
             loading="lazy"
           />
           <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
-            モダンなインテリアと大きな窓が特徴の客室。キャンディの緑豊かな景色が広がる。
+            モダンなデザインの客室。大きな窓からキャンディの緑豊かな丘陵地帯が広がる。
+          </figcaption>
+        </figure>
+
+        {/* 内装写真 */}
+        <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
+          <img
+            src="/manus-storage/earls_interior1_6aa309e0.jpg"
+            alt="Earl's Regency Kandyのインフィニティプール — 丘の絶景を望むプール"
+            className="w-full object-cover max-h-[420px]"
+            loading="lazy"
+          />
+          <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
+            インフィニティプールからキャンディの緑豊かな丘陵地帯が一望できる。
           </figcaption>
         </figure>
 
@@ -356,16 +395,29 @@ export default function KandyHotelsArticle() {
           スリランカ料理をはじめとする多彩なレストランも充実しています。
         </p>
 
-        {/* 内装写真 */}
+        {/* 客室写真 */}
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
-            src="/manus-storage/cinnamon_interior1_00ecd443.jpg"
-            alt="Cinnamon Citadel Kandyの内装 — 洗練されたモダンな客室"
+            src="/manus-storage/cinnamon-citadel-room_fac9afcb.jpg"
+            alt="Cinnamon Citadel Kandyの客室 — 洗練されたモダンな客室"
             className="w-full object-cover max-h-[420px]"
             loading="lazy"
           />
           <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
             シナモンホテルズらしい洗練されたモダンな客室。川ビューの部屋は特に人気が高い。
+          </figcaption>
+        </figure>
+
+        {/* 内装写真 */}
+        <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
+          <img
+            src="/manus-storage/cinnamon_interior1_00ecd443.jpg"
+            alt="Cinnamon Citadel Kandyのプール — マハウェリ川を望むリゾートプール"
+            className="w-full object-cover max-h-[420px]"
+            loading="lazy"
+          />
+          <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
+            マハウェリ川を望むリゾートプール。川の穏やかな流れと緑豊かな境内が心を癒す。
           </figcaption>
         </figure>
 
