@@ -13,6 +13,8 @@ import TipMannerArticle from "./articles/TipMannerArticle";
 import SeniorTravelArticle from "./articles/SeniorTravelArticle";
 import TeaTrainArticle from "./articles/TeaTrainArticle";
 import BestSeasonArticle from "./articles/BestSeasonArticle";
+import SigiriyaDambullaHotelsArticle from "./articles/SigiriyaDambullaHotelsArticle";
+import KandyHotelsArticle from "./articles/KandyHotelsArticle";
 import { useSEO } from "@/hooks/useSEO";
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -51,6 +53,12 @@ function ArticleContent({ slug }: { slug: string }) {
   }
   if (slug === "best-season-guide") {
     return <BestSeasonArticle />;
+  }
+  if (slug === "sigiriya-dambulla-hotels") {
+    return <SigiriyaDambullaHotelsArticle />;
+  }
+  if (slug === "kandy-hotels") {
+    return <KandyHotelsArticle />;
   }
   return (
     <p className="text-gray-500 text-center py-12">記事コンテンツを準備中です。</p>

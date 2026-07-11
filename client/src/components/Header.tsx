@@ -10,6 +10,7 @@ const blogMenuItems = [
   { label: "アクティビティ", href: "/activity" },
   { label: "旅行計画・準備", href: "/travel-planning" },
   { label: "テーマ旅行", href: "/theme-travel" },
+  { label: "ホテル", href: "/hotel" },
 ];
 
 const languages = [

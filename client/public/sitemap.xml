@@ -251,6 +251,28 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- ホテル カテゴリーページ -->
+  <url>
+    <loc>https://sltcs.srilanka-charter.com/hotel</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ホテル 記事 -->
+  <url>
+    <loc>https://sltcs.srilanka-charter.com/hotel/sigiriya-dambulla-hotels</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sltcs.srilanka-charter.com/hotel/kandy-hotels</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- テーマ旅行 記事 -->
   <url>
     <loc>https://sltcs.srilanka-charter.com/theme-travel/family-travel-charter</loc>

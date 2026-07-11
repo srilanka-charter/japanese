@@ -154,3 +154,8 @@
 - [x] 言語プルダウンに韓国語（Korean）を追加（https://ko.srilanka-charter.com/）
 - [x] useSEOフックにhreflangListオプションを追加
 - [x] Top・Plans・Vehicles・FAQページに韓国語hreflangタグを設定（x-defaultは英語版のまま）
+- [x] お役立ち情報に「ホテル」カテゴリーを新設（blogData.ts・Header.tsxに追加）
+- [x] ホテル記事1：シーギリヤとダンブッラ地域でおすすめのホテル4選（SigiriyaDambullaHotelsArticle.tsx作成）
+- [x] ホテル記事2：キャンディ観光に適したおすすめホテル4選（KandyHotelsArticle.tsx作成）
+- [x] 各ホテルの内装・外装写真を収集してアップロード（16枚）
+- [x] sitemap.xmlにホテルカテゴリーページと記事2本を追加

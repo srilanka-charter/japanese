@@ -55,6 +55,11 @@ export const blogCategories: BlogCategory[] = [
     label: "テーマ旅行",
     description: "アーユルヴェーダ・ジェフリーバワ建築など、テーマを絞ったスリランカ旅行の楽しみ方を紹介します。",
   },
+  {
+    slug: "hotel",
+    label: "ホテル",
+    description: "シーギリヤ・キャンディ・コロンボなど、スリランカ各地のおすすめホテルを内装・外装写真とともに詳しく紹介します。",
+  },
 ];
 
 export const blogArticles: BlogArticle[] = [
@@ -310,6 +315,31 @@ export const blogArticles: BlogArticle[] = [
       "/manus-storage/blog-honeymoon-couple_5fca0963.jpg",
     readingTime: 8,
     keywords: ["スリランカ ハネムーン", "スリランカ 新婚旅行", "スリランカ カップル旅行", "スリランカ ハネムーン モデルコース", "スリランカ 新婚旅行 費用"],
+  },
+  // ホテル
+  {
+    slug: "sigiriya-dambulla-hotels",
+    title: "シーギリヤとダンブッラ地域でおすすめのホテル4選",
+    excerpt:
+      "スリランカ有数のリゾートホテルが集まるシーギリヤ・ダンブッラ地域。ヘリタンスカンダラマ・ホテルシーギリヤ・アマヤレイク・ジェットウィング・ヴィル・ウヤナの4ホテルを内装・外装写真とともに詳しく紹介します。",
+    category: "ホテル",
+    categorySlug: "hotel",
+    publishedAt: "2026-07-12",
+    thumbnail: "/manus-storage/heritance_exterior1_51d2726f.jpg",
+    readingTime: 7,
+    keywords: ["シーギリヤ ホテル", "ダンブッラ ホテル", "スリランカ リゾート", "ヘリタンスカンダラマ", "ジェットウィング ヴィル ウヤナ"],
+  },
+  {
+    slug: "kandy-hotels",
+    title: "キャンディ観光に適したおすすめホテル4選",
+    excerpt:
+      "スリランカの古都キャンディに宿泊するならこの4ホテル。The Grand Kandyan・Queen's Hotel・Earl's Regency・Cinnamon Citadelを内装・外装写真とともに詳しく紹介します。",
+    category: "ホテル",
+    categorySlug: "hotel",
+    publishedAt: "2026-07-12",
+    thumbnail: "/manus-storage/grandkandyan_exterior1_be8148ca.jpg",
+    readingTime: 7,
+    keywords: ["キャンディ ホテル", "スリランカ ホテル キャンディ", "Earl's Regency", "Cinnamon Citadel Kandy", "The Grand Kandyan"],
   },
 ];
 
