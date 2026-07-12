@@ -407,19 +407,6 @@ export default function SigiriyaDambullaHotelsArticle() {
           </figcaption>
         </figure>
 
-        {/* 内装写真 */}
-        <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
-          <img
-            src="/manus-storage/viluyana_interior1_12ebb9fd.jpg"
-            alt="ジェットウィング・ヴィル・ウヤナの内装 — 自然素材を使ったヴィラ室内"
-            className="w-full object-cover max-h-[420px]"
-            loading="lazy"
-          />
-          <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
-            木・石・竹などスリランカ産の自然素材で構成されたヴィラ室内。温かみと高級感が共存。
-          </figcaption>
-        </figure>
-
         {/* ホテル情報テーブル */}
         <div className="overflow-x-auto mb-8 rounded-xl shadow-sm">
           <table className="min-w-[400px] w-full text-sm border-collapse">
