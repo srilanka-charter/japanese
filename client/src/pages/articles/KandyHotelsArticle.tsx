@@ -304,19 +304,6 @@ export default function KandyHotelsArticle() {
           </figcaption>
         </figure>
 
-        {/* 内装写真 */}
-        <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
-          <img
-            src="/manus-storage/earls_interior1_6aa309e0.jpg"
-            alt="Earl's Regency Kandyのインフィニティプール — 丘の絶景を望むプール"
-            className="w-full object-cover max-h-[420px]"
-            loading="lazy"
-          />
-          <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
-            インフィニティプールからキャンディの緑豊かな丘陵地帯が一望できる。
-          </figcaption>
-        </figure>
-
         {/* ホテル情報テーブル */}
         <div className="overflow-x-auto mb-8 rounded-xl shadow-sm">
           <table className="min-w-[400px] w-full text-sm border-collapse">
