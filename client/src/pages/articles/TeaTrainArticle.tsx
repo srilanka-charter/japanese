@@ -303,8 +303,8 @@ export default function TeaTrainArticle() {
             },
             {
               num: "03",
-              title: "万が一立ち席になっても1時間なら十分楽しめる",
-              desc: "ハイシーズンや直前予約では指定席が取れず、3等自由席の立ち乗りになることがあります。長時間の立ち乗りは体力的に辛いですが、1時間程度であれば絶景を楽しみながら乗り切れます。",
+              title: "ナインアーチブリッジにtuktukでいける",
+              desc: "Ellaで降りるとナインアーチブリッジには往復1時間の坂道を歩きで行く必要があります。Demodaraからであれば細い道をtuktukで10分程度で行くことができるので体力的にも余裕をもてます。電車で渡った後に観光を容易にできるのです。",
             },
           ].map((item) => (
             <div key={item.num} className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
@@ -336,14 +336,20 @@ export default function TeaTrainArticle() {
             ハイシーズンや人気列車は指定席が満席になることがありますが、<strong>当日、SLTCSのドライバーの補助のもと、自由席の当日券を購入することが可能です。</strong>
           </p>
           <p className="text-sm text-green-700 leading-relaxed mb-3">
-            また、万が一ハイシーズンで立ち席になったとしても、SLTCSがご案内する区間は<strong>Ella〜Demodara間の約1時間</strong>です。
-            <strong>立ち席になったとしても、車窓の絶景を十分楽しめる1時間程度の区間をご案内します。</strong>
+            この場合は<strong>HaputaleからDemodaraまでの1時間程度の区間</strong>がおすすめです。立ち席になったとしても、車窓の絶景を十分楽しめる1時間程度の区間をご案内します。
           </p>
-          <ul className="space-y-1.5 text-sm text-green-700">
-            <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">•</span><span>当日券の購入はドライバーがサポートしますので、言語の心配は不要です</span></li>
-            <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">•</span><span>Ella駅から乗車し、Demodara駅でSLTCSドライバーがお待ちしています</span></li>
-            <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">•</span><span>九連アーチ橋を車窓から渡る体験は、立ち席でも十分楽しめます</span></li>
-          </ul>
+          <p className="text-sm text-green-700 leading-relaxed mb-4">
+            ヌワラエリヤからHaputaleまでは車で2時間から2時間半なので以下の時間に出発しましょう。
+          </p>
+          {/* 出発時間の図 */}
+          <div className="rounded-xl overflow-hidden border border-green-200">
+            <img
+              src="/manus-storage/departure_time_chart_e6a400e6.png"
+              alt="ヌワラエリヤ出発時間のめやす（Haputale〜Demodara区間）"
+              className="w-full h-auto"
+              loading="lazy"
+            />
+          </div>
         </div>
       </section>
 
