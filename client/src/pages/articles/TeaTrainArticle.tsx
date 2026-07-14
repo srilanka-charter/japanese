@@ -72,7 +72,7 @@ export default function TeaTrainArticle() {
           {[
             ["1", "紅茶列車とは？スリランカ高原鉄道の歴史と魅力"],
             ["2", "現在の運行状況とSLTCSおすすめ区間"],
-            ["3", "キャンディ〜エッラ間の絶景スポット"],
+            ["3", "キャンディ〜デモダラ間の絶景スポット"],
             ["4", "座席の種類と選び方｜1等・2等・3等の違い"],
             ["5", "列車の予約方法と注意点"],
             ["6", "SLTCSの専用車チャーターとの組み合わせ方"],
@@ -357,7 +357,7 @@ export default function TeaTrainArticle() {
           H2 ③ 絶景スポット
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section3">
-        <H2 id="section3">キャンディ〜エッラ間の絶景スポット</H2>
+        <H2 id="section3">キャンディ〜デモダラ間の絶景スポット</H2>
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
           この区間には、車窓から見逃せない絶景ポイントが点在しています。
           乗車前に場所を把握しておくことで、写真撮影のタイミングを逃さずに済みます。
@@ -502,7 +502,7 @@ export default function TeaTrainArticle() {
             },
             {
               method: "駅窓口での購入",
-              desc: "Bandarawela駅の窓口で直接購入できます。ただし、指定席は早期に売り切れることが多く、当日購入は難しい場合があります。",
+              desc: "Haputale駅の窓口で直接購入できます。ただし、指定席は早期に売り切れることが多く、当日購入は難しい場合があります。",
               url: null,
             },
           ].map((item, i) => (
@@ -540,7 +540,7 @@ export default function TeaTrainArticle() {
         <H2 id="section6">SLTCSの専用車チャーターとの組み合わせ方</H2>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
           紅茶列車の最大の課題は、<strong className="text-gray-900">乗り降りの駅への移動</strong>です。
-          Bandarawela駅・Demodara駅はいずれも観光地から離れており、荷物を持ってのアクセスは大変です。
+          Haputale駅・Demodara駅はいずれも観光地から離れており、荷物を持ってのアクセスは大変です。
         </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
           SLTCSの専用車チャーターを組み合わせることで、列車旅をより快適・安心に楽しめます。
@@ -563,8 +563,8 @@ export default function TeaTrainArticle() {
           <div className="space-y-3">
             {[
               { day: "1日目", content: "コロンボ空港 → キャンディ（専用車）。キャンディ市内観光（仏歯寺・キャンディ湖）。キャンディ泊。" },
-              { day: "2日目", content: "専用車でヌワラエリヤ方面へ。車の車窓から茶畑の絶景を堪能しながらBandarawela方面へ移動。Bandarawela泊。" },
-              { day: "3日目", content: "ナヌオヤ駅からBandarawela駅まで専用車で移動。Bandarawela駅から列車に乗車し、九連アーチ橋・デモダラループを体験しながらDemodara駅まで約1時間の列車旅。Demodara駅でSLTCSドライバーがお出迎えし、そのままEllaへ。Ella観光（エッラロック・ラワナ滝）。Ella泊。" },
+              { day: "2日目", content: "専用車でヌワラエリヤ方面へ。車の車窓から茶畑の絶景を堪能しながらHaputale方面へ移動。Haputale泊。" },
+              { day: "3日目", content: "ナヌオヤ駅からHaputale駅まで専用車で移動。Haputale駅から列車に乗車し、九連アーチ橋・デモダラループを体験しながらDemodara駅まで約1時間の列車旅。Demodara駅でSLTCSドライバーがお出迎えし、そのままEllaへ。Ella観光（エッラロック・ラワナ滝）。Ella泊。" },
               { day: "4日目", content: "Ellaからヤラ国立公園（Yala）へ専用車で移動（約2.5時間）。ヤラ周辺のホテルにチェックイン。Yala泊。" },
               { day: "5日目", content: "早朝からヤラ国立公園でジープサファリツアー（ヒョウ・ゾウ・クジャクなどを観察）。ツアー後、専用車でミリッサ（Mirissa）へ移動（約2時間）。ビーチでリラックス。ミリッサ泊。" },
               { day: "6日目", content: "ミリッサからゴール（Galle）へ専用車で移動（約30分）。ゴール旧市街・ゴール要塞を観光。その後、コロンボ国際空港へ向けて出発（約2.5時間）。帰国の途へ。" },
@@ -585,7 +585,7 @@ export default function TeaTrainArticle() {
         <div className="grid sm:grid-cols-2 gap-4 mb-6">
           <FeatureCard
             title="駅への送迎"
-            desc="Bandarawela駅・Demodara駅など、ご希望の駅まで専用車でお送りします。重い荷物も車内に積んだまま移動できます。"
+            desc="Haputale駅・Demodara駅など、ご希望の駅まで専用車でお送りします。重い荷物も車内に積んだまま移動できます。"
           />
           <FeatureCard
             title="荷物の心配なし"
@@ -622,7 +622,7 @@ export default function TeaTrainArticle() {
             {
               fail: "指定席が取れず立ち乗りになった",
               cause: "ハイシーズンに直前予約したため、指定席が売り切れていた",
-              solution: "旅行日程が決まり次第、30日前から予約を開始する。12Go.Asiaを活用して早めに確保する。なお、Bandarawela〜Demodara間の約1時間であれば、立ち席でも十分楽しめます。",
+              solution: "旅行日程が決まり次第、30日前から予約を開始する。12Go.Asiaを活用して早めに確保する。なお、Haputale〜Demodara間の約1時間であれば、立ち席でも十分楽しめます。",
             },
             {
               fail: "列車が大幅に遅延して次の予定が狂った",
@@ -701,14 +701,14 @@ export default function TeaTrainArticle() {
         </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
           2026年6月現在はサイクロンの影響でAmbewela〜Badulla間のみ運行中ですが、
-          SLTCSがおすすめするBandarawela〜Demodara間（約1時間）は九連アーチ橋・デモダラループを両方体験できる最高の区間です。
+          SLTCSがおすすめするHaputale〜Demodara間（約1時間）は九連アーチ橋・デモダラループを両方体験できる最高の区間です。
           SLTCSの専用車チャーターと組み合わせることで、駅への送迎・荷物の心配・途中立ち寄りなど、列車旅の不便な点をすべてカバーし、より快適な旅が実現できます。
         </p>
 
         <ul className="space-y-2 text-base text-gray-700 mb-8">
           {[
             "2026年6月現在、Ambewela〜Badulla間のみ運行（サイクロンの影響）",
-            "SLTCSおすすめ区間はBandarawela〜Demodara（約1時間）",
+            "SLTCSおすすめ区間はHaputale〜Demodara（約1時間）",
             "九連アーチ橋を列車から体験するには、Ellaではなくその先のDemodara駅まで乗車が必須",
             "1等（展望車）または2等指定席がおすすめ。早めの予約が必須",
             "SLTCSの専用車チャーターで駅への送迎・荷物運搬・途中立ち寄りをサポート",
