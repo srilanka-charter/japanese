@@ -164,7 +164,7 @@ export default function TeaTrainArticle() {
         {/* 路線状況インフォグラフィック */}
         <figure className="mb-8 rounded-2xl overflow-hidden shadow-md">
           <img
-            src="/manus-storage/tea-train-route-status_1fc850ba.png"
+            src="/manus-storage/tea_train_route_new_cbde0982.png"
             alt="スリランカ紅茶列車の最新運行状況マップ（2026年6月）"
             className="w-full object-contain max-h-[600px] bg-white"
           />
@@ -344,7 +344,7 @@ export default function TeaTrainArticle() {
           {/* 出発時間の図 */}
           <div className="rounded-xl overflow-hidden border border-green-200">
             <img
-              src="/manus-storage/departure_time_chart_e6a400e6.png"
+              src="/manus-storage/departure_time_chart_new_8ef64d8d.png"
               alt="ヌワラエリヤ出発時間のめやす（Haputale〜Demodara区間）"
               className="w-full h-auto"
               loading="lazy"
