@@ -239,6 +239,13 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://sltcs.srilanka-charter.com/travel-planning/forex</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- 観光地ガイド 記事 -->
   <url>
     <loc>https://sltcs.srilanka-charter.com/sightseeing-guide/sigiriya-guide</loc>

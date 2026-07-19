@@ -15,6 +15,7 @@ import TeaTrainArticle from "./articles/TeaTrainArticle";
 import BestSeasonArticle from "./articles/BestSeasonArticle";
 import SigiriyaDambullaHotelsArticle from "./articles/SigiriyaDambullaHotelsArticle";
 import KandyHotelsArticle from "./articles/KandyHotelsArticle";
+import ForexArticle from "./articles/ForexArticle";
 import InsuranceArticle from "./articles/InsuranceArticle";
 import WhatsAppArticle from "./articles/WhatsAppArticle";
 import EsimArticle from "./articles/EsimArticle";
@@ -62,6 +63,9 @@ function ArticleContent({ slug }: { slug: string }) {
   }
   if (slug === "kandy-hotels") {
     return <KandyHotelsArticle />;
+  }
+  if (slug === "forex") {
+    return <ForexArticle />;
   }
   if (slug === "insurance") {
     return <InsuranceArticle />;

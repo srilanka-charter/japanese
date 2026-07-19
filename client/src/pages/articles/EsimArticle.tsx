@@ -53,7 +53,7 @@ export default function EsimArticle() {
     title: "スリランカ到着後すぐにネットを使うには？空港でのSIM購入＆eSIM完全ガイド | SLTCS",
     description:
       "スリランカ・バンダラナイケ空港でのDialog SIM購入手順とeSIMの事前設定方法を徹底解説。料金比較・物理SIM vs eSIMの選び方まで、SLTCSが旅行者向けにまとめました。",
-    path: "/blog/esim",
+    path: "/travel-planning/esim",
     noindex: false,
     jsonLdList: [
       {
@@ -73,6 +73,17 @@ export default function EsimArticle() {
 
   return (
     <article className="text-gray-800">
+      {/* ── ヒーロー画像 ── */}
+      <figure className="mb-8">
+        <img
+          src="/manus-storage/hero_8be50ec9.jpeg"
+          alt="スリランカ到着後すぐにネットを使うには？空港でのSIM購入＆eSIM完全ガイド"
+          fetchPriority="high"
+          loading="eager"
+          className="w-full rounded-2xl shadow-md object-cover max-h-[400px]"
+        />
+      </figure>
+
       {/* ── リード文 ── */}
       <p className="text-base sm:text-lg leading-[1.9] text-gray-700 mb-6">
         スリランカの玄関口であるバンダラナイケ国際空港に降り立った瞬間、多くの旅行者がまず考えること――それは「<strong className="text-gray-900">どうやってスマホをネットに繋げるか</strong>」ではないでしょうか。
@@ -116,6 +127,15 @@ export default function EsimArticle() {
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
           その中で旅行者から圧倒的に支持されているのが、国内シェアNo.1の「<strong className="text-gray-900">Dialog（ダイアログ）</strong>」です。選ばれている背景には、主に3つの理由があります。
         </p>
+        <figure className="my-6">
+          <img
+            src="/manus-storage/airport_carriers_5e78b675.png"
+            alt="バンダラナイケ空港の通信会社カウンター"
+            loading="lazy"
+            className="w-full rounded-xl shadow-md border border-gray-100"
+          />
+          <figcaption className="text-center text-xs text-gray-500 mt-2">バンダラナイケ空港の到着ロビーにある各通信会社のカウンター</figcaption>
+        </figure>
         <div className="grid sm:grid-cols-3 gap-4 mb-6">
           {[
             {
@@ -251,6 +271,15 @@ export default function EsimArticle() {
         </div>
 
         <H3>DialogのeSIMを事前に入手する方法</H3>
+        <figure className="my-6">
+          <img
+            src="/manus-storage/dialog_esim_2312c71e.png"
+            alt="Dialog eSIMの購入画面"
+            loading="lazy"
+            className="w-full max-w-lg mx-auto rounded-xl shadow-md border border-gray-100"
+          />
+          <figcaption className="text-center text-xs text-gray-500 mt-2">Dialog公式サイトのeSIM購入画面</figcaption>
+        </figure>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
           Dialogは公式サイト上でeSIMのオンライン販売を行っています。
           約3,500ルピー（日本円でおよそ<strong className="text-gray-900">1,800円前後</strong>）で100GBのデータ通信パッケージを購入可能です。

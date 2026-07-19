@@ -170,3 +170,6 @@
 - [x] BlogArticlePage.tsx：3記事のimportとslug分岐を追加
 - [x] sitemap.xml：3記事のURLを追加
 - [x] WhatsAppArticle.tsx：元サイトから9枚の画像を取得・アップロードして記事に組み込み（ヒーロー画像＋手順画像8枚）
+- [x] EsimArticle.tsx：元サイトから画像を取得・アップロードして記事に組み込み
+- [x] ForexArticle.tsx：両替記事を新規作成（旅行計画・準備カテゴリー）
+- [x] blogData.ts・BlogArticlePage.tsx・sitemap.xml：両替記事の登録

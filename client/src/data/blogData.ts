@@ -167,6 +167,19 @@ export const blogArticles: BlogArticle[] = [
 
   // ── 旅行計画・準備（追加分） ─────────────────────────────────────────────────
   {
+    slug: "forex",
+    title: "スリランカ両替ガイド：空港・市内の両替方法と1日の必要現金は？",
+    excerpt:
+      "スリランカ旅行の両替を役立てる情報をまとめました。バンダラナイケ空港での両替方法、市内の両替所の選び方、チップ・食事代・観光地入場料の現金目安まで、SLTCSが旅行者向けにいちから解説。",
+    category: "旅行計画・準備",
+    categorySlug: "travel-planning",
+    publishedAt: "2026-07-01",
+    thumbnail:
+      "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=800&q=80",
+    readingTime: 6,
+    keywords: ["スリランカ 両替", "スリランカ ルピー", "スリランカ 現金", "スリランカ 空港 両替", "スリランカ チップ"],
+  },
+  {
     slug: "insurance",
     title: "スリランカ旅行に海外旅行保険は欠かせない？加入すべき理由と賢い選び方とは？",
     excerpt:
