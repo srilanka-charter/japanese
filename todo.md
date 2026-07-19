@@ -173,3 +173,6 @@
 - [x] EsimArticle.tsx：元サイトから画像を取得・アップロードして記事に組み込み
 - [x] ForexArticle.tsx：両替記事を新規作成（旅行計画・準備カテゴリー）
 - [x] blogData.ts・BlogArticlePage.tsx・sitemap.xml：両替記事の登録
+- [ ] TravelPlanningTopPage.tsx：旅行計画・準備のまとめ記事ページを新規作成（/travel-planningルート）
+- [ ] App.tsx：/travel-planningルートをTravelPlanningTopPageに変更（BlogCategoryPageから切り替え）
+- [ ] sitemap.xml：/travel-planningのURLを追加
