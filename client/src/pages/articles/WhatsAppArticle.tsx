@@ -13,33 +13,37 @@ function H2({ id, children }: { id?: string; children: React.ReactNode }) {
   );
 }
 
-function StepCard({
-  step,
-  title,
-  children,
-}: {
-  step: number;
-  title: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div className="flex gap-4 bg-white border border-gray-200 rounded-xl p-4 shadow-sm mb-4">
-      <div className="flex-shrink-0 w-9 h-9 bg-[oklch(0.35_0.12_155)] text-white rounded-full flex items-center justify-center text-sm font-bold">
-        {step}
-      </div>
-      <div>
-        <p className="font-bold text-gray-900 mb-1">{title}</p>
-        <div className="text-sm text-gray-700 leading-relaxed">{children}</div>
-      </div>
-    </div>
-  );
-}
-
 function NoteBox({ children }: { children: React.ReactNode }) {
   return (
     <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-4 my-5 text-sm text-amber-900 leading-relaxed">
       <span className="font-bold">【注意】</span> {children}
     </div>
+  );
+}
+
+function StepImage({
+  src,
+  alt,
+  caption,
+}: {
+  src: string;
+  alt: string;
+  caption?: string;
+}) {
+  return (
+    <figure className="my-6">
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        className="w-full max-w-sm mx-auto rounded-xl shadow-md border border-gray-100"
+      />
+      {caption && (
+        <figcaption className="text-center text-xs text-gray-500 mt-2">
+          {caption}
+        </figcaption>
+      )}
+    </figure>
   );
 }
 
@@ -49,6 +53,7 @@ export default function WhatsAppArticle() {
     description:
       "スリランカ旅行に必須のWhatsApp（ワッツアップ）のインストール方法・初期設定・ドライバーへの連絡方法をわかりやすく解説。旅行前に準備しておきましょう。",
     path: "/blog/whats-app",
+    ogImage: "/manus-storage/hero_520c4246.jpeg",
     noindex: false,
     jsonLdList: [
       {
@@ -67,14 +72,27 @@ export default function WhatsAppArticle() {
 
   return (
     <article className="text-gray-800">
+      {/* ── ヒーロー画像 ── */}
+      <figure className="mb-8">
+        <img
+          src="/manus-storage/hero_520c4246.jpeg"
+          alt="WhatsAppのダウンロードと設定"
+          fetchPriority="high"
+          loading="eager"
+          className="w-full rounded-2xl shadow-md object-cover max-h-[400px]"
+        />
+      </figure>
+
       {/* ── リード文 ── */}
       <p className="text-base sm:text-lg leading-[1.9] text-gray-700 mb-6">
         日本では日常的なやりとりにLINEが広く使われていますが、このアプリが定番として機能するのは国内に限られます。
         海外に目を向けると、FacebookのMessengerや<strong className="text-gray-900">WhatsApp</strong>が人々の間で標準的なコミュニケーション手段となっています。
       </p>
+
       <p className="text-base sm:text-lg leading-[1.9] text-gray-700 mb-4">
         スリランカにおいてはWhatsAppの普及率が非常に高く、現地で最もよく利用される連絡方法です。
       </p>
+
       <p className="text-base sm:text-lg leading-[1.9] text-gray-700 mb-10">
         あらかじめインストールして使える状態にしておけば、車の手配先とのメッセージのやりとりはもちろん、
         飲食店やアクティビティの予約連絡にも幅広く対応できるため、旅行者にとって欠かせない存在といえます。
@@ -86,14 +104,16 @@ export default function WhatsAppArticle() {
         <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-3">目次</p>
         <ol className="space-y-1.5 text-sm">
           {[
-            ["1", "WhatsAppのインストール方法"],
-            ["2", "初期設定"],
-            ["3", "自分の連絡先を登録"],
-            ["4", "Driverと連絡を取る"],
-          ].map(([num, label]) => (
+            ["1", "WhatsAppのインストール方法", "#section1"],
+            ["2", "初期設定", "#section2"],
+            ["3", "自分の連絡先を登録", "#section3"],
+            ["4", "Driverと連絡を取る", "#section4"],
+          ].map(([num, label, href]) => (
             <li key={num} className="flex items-start gap-2 text-gray-600">
               <span className="text-[oklch(0.35_0.12_155)] font-bold flex-shrink-0">{num}.</span>
-              <span>{label}</span>
+              <a href={href} className="hover:text-[oklch(0.35_0.12_155)] transition-colors">
+                {label}
+              </a>
             </li>
           ))}
         </ol>
@@ -104,12 +124,21 @@ export default function WhatsAppArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section1">
         <H2 id="section1">WhatsAppのインストール方法</H2>
+
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
           まずはダウンロードをしましょう。
         </p>
+
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
-          iPhoneならApple Store、アンドロイドならGoogle Playで「<strong className="text-gray-900">ワッツアップ</strong>」と日本語で検索すれば、ダウンロード画面が表示されます。
+          iPhoneならApple Store、アンドロイドならGoogle Playで「<strong className="text-gray-900">ワッツアップ</strong>」と日本語で検索すれば、以下の画面のようにダウンロード画面が表示されます。
         </p>
+
+        <StepImage
+          src="/manus-storage/step1_download_8f78af9c.png"
+          alt="WhatsApp ダウンロード画面"
+          caption="App Store / Google Play でのダウンロード画面"
+        />
+
         <NoteBox>
           WhatsApp Businessというアプリがあります。<strong>WhatsApp Businessではなく、WhatsApp Messenger</strong>を間違えずに選択してダウンロードしましょう。
         </NoteBox>
@@ -148,21 +177,37 @@ export default function WhatsAppArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section2">
         <H2 id="section2">初期設定</H2>
+
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
-          次に初期設定に移っていきましょう。
+          次に初期設定に移っていきましょう。まずは、最初の画面で日本語を選択します。
         </p>
-        <div className="space-y-3">
-          <StepCard step={1} title="言語を選択">
-            最初の画面で<strong>日本語</strong>を選択します。
-          </StepCard>
-          <StepCard step={2} title="利用規約に同意">
-            内容を確認して「同意して実行」をタップします。
-          </StepCard>
-          <StepCard step={3} title="通知を許可">
-            通知の許可設定も忘れずに行っておきましょう。日頃あまり使い慣れていないアプリだと、メッセージが届いても見落としてしまうことがあります。
-            少なくとも<strong>旅行期間中は通知をオンにしておくことをおすすめします</strong>。
-          </StepCard>
-        </div>
+
+        <StepImage
+          src="/manus-storage/step2_language_a644bfa8.png"
+          alt="WhatsApp 言語選択画面"
+          caption="最初の画面で「日本語」を選択"
+        />
+
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
+          同意して実行しましょう。
+        </p>
+
+        <StepImage
+          src="/manus-storage/step3_agree_18fcd345.png"
+          alt="WhatsApp 利用規約同意画面"
+          caption="利用規約を確認して「同意して実行」をタップ"
+        />
+
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
+          通知の許可設定も忘れずに行っておきましょう。日頃あまり使い慣れていないアプリだと、メッセージが届いても見落としてしまうことがあります。
+          少なくとも<strong className="text-gray-900">旅行期間中は通知をオンにしておくことをおすすめします</strong>。
+        </p>
+
+        <StepImage
+          src="/manus-storage/step4_notification_3354a590.png"
+          alt="WhatsApp 通知許可設定画面"
+          caption="通知を「許可」に設定しておくと安心"
+        />
       </section>
 
       {/* ════════════════════════════════════════════════════
@@ -170,13 +215,37 @@ export default function WhatsAppArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section3">
         <H2 id="section3">自分の連絡先を登録</H2>
+
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
           次に自分の連絡先の登録になります。
         </p>
+
+        <StepImage
+          src="/manus-storage/step5_phone_9e39af53.png"
+          alt="WhatsApp 電話番号登録画面"
+          caption="電話番号を入力して登録"
+        />
+
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
           「次へ」をタップするとSMSで認証コードが届きますので、それを入力して登録手続きを完了させましょう。
+        </p>
+
+        <StepImage
+          src="/manus-storage/step6_sms_ac084455.png"
+          alt="WhatsApp SMS認証コード入力画面"
+          caption="SMSで届いた認証コードを入力"
+        />
+
+        <p className="text-base leading-[1.9] text-gray-700 mb-4">
           続いてプロフィールの設定画面に移ります。
         </p>
+
+        <StepImage
+          src="/manus-storage/step7_profile_12c496de.png"
+          alt="WhatsApp プロフィール設定画面"
+          caption="プロフィール名を設定"
+        />
+
         <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 text-sm text-blue-900">
           お名前はローマ字表記で「<strong>Ichiro Suzuki</strong>」のように入力してください。
         </div>
@@ -187,9 +256,17 @@ export default function WhatsAppArticle() {
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section4">
         <H2 id="section4">Driverと連絡を取る</H2>
+
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
           次にお伝えするドライバーとの連絡先を元に、ドライバーと連絡する手順をお伝えします。
         </p>
+
+        <StepImage
+          src="/manus-storage/step8_driver_contact_c2128fcf.png"
+          alt="WhatsApp ドライバーへの連絡画面"
+          caption="ドライバーのチャット画面でメッセージを送信"
+        />
+
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
           ドライバーには以下の通りピックアップ場所とともに連絡していただければと思います。
         </p>

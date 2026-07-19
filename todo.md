@@ -169,3 +169,4 @@
 - [x] blogData.ts：insurance・whats-app・esimの3記事エントリーを追加
 - [x] BlogArticlePage.tsx：3記事のimportとslug分岐を追加
 - [x] sitemap.xml：3記事のURLを追加
+- [x] WhatsAppArticle.tsx：元サイトから9枚の画像を取得・アップロードして記事に組み込み（ヒーロー画像＋手順画像8枚）
