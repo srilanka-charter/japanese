@@ -156,8 +156,8 @@ export const blogArticles: BlogArticle[] = [
     title: "スリランカの専用車チャーターをいつ予約すべき？｜予約タイミング完全ガイド",
     excerpt:
       "スリランカ旅行の専用車チャーターは、いつ予約するのがベストか？ハイシーズン・年末年始・GWなど時期別の推奨タイミングと、予約前に決めておくべきことをわかりやすく解説します。",
-    category: "旅行計画・準備",
-    categorySlug: "travel-planning",
+    category: "タクシーチャーターの基礎",
+    categorySlug: "taxi-charter-basics",
     publishedAt: "2026-06-02",
     thumbnail:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-booking-timing-MRqrgcQXvfYZKvH7j2ycGu.webp",
