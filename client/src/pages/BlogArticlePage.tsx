@@ -15,6 +15,9 @@ import TeaTrainArticle from "./articles/TeaTrainArticle";
 import BestSeasonArticle from "./articles/BestSeasonArticle";
 import SigiriyaDambullaHotelsArticle from "./articles/SigiriyaDambullaHotelsArticle";
 import KandyHotelsArticle from "./articles/KandyHotelsArticle";
+import InsuranceArticle from "./articles/InsuranceArticle";
+import WhatsAppArticle from "./articles/WhatsAppArticle";
+import EsimArticle from "./articles/EsimArticle";
 import { useSEO } from "@/hooks/useSEO";
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -59,6 +62,15 @@ function ArticleContent({ slug }: { slug: string }) {
   }
   if (slug === "kandy-hotels") {
     return <KandyHotelsArticle />;
+  }
+  if (slug === "insurance") {
+    return <InsuranceArticle />;
+  }
+  if (slug === "whats-app") {
+    return <WhatsAppArticle />;
+  }
+  if (slug === "esim") {
+    return <EsimArticle />;
   }
   return (
     <p className="text-gray-500 text-center py-12">記事コンテンツを準備中です。</p>

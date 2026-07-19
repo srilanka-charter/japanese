@@ -165,3 +165,7 @@
 - [x] TeaTrainArticle.tsx：事前予約セクションをHaputale〜Demodara区間案内に全面改訂
 - [x] ヌワラエリヤ出発時間の図（出発時間めやす）をPythonで生成・アップロード（3パターン：毎日/水曜以外/水曜のみ）
 - [x] 出発時間の図をTeaTrainArticle.tsxの事前予約セクションに挿入
+- [x] InsuranceArticle.tsx・WhatsAppArticle.tsx・EsimArticle.tsx：旅行計画・準備カテゴリーに3記事追加
+- [x] blogData.ts：insurance・whats-app・esimの3記事エントリーを追加
+- [x] BlogArticlePage.tsx：3記事のimportとslug分岐を追加
+- [x] sitemap.xml：3記事のURLを追加

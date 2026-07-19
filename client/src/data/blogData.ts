@@ -165,6 +165,47 @@ export const blogArticles: BlogArticle[] = [
     keywords: ["スリランカ タクシーチャーター 予約", "スリランカ 旅行 予約 タイミング", "スリランカ ハイシーズン", "スリランカ 年末年始 旅行", "専用車チャーター いつ予約"],
   },
 
+  // ── 旅行計画・準備（追加分） ─────────────────────────────────────────────────
+  {
+    slug: "insurance",
+    title: "スリランカ旅行に海外旅行保険は欠かせない？加入すべき理由と賢い選び方とは？",
+    excerpt:
+      "スリランカでは現地の車両保険の補償水準が非常に低く、旅行者自身による保険準備が不可欠です。クレジットカード付帯保険の活用法から有料保険の選び方、推奨補償額まで、SLTCSがわかりやすく解説します。",
+    category: "旅行計画・準備",
+    categorySlug: "travel-planning",
+    publishedAt: "2026-04-07",
+    thumbnail:
+      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+    readingTime: 6,
+    keywords: ["スリランカ 海外旅行保険", "スリランカ 旅行 保険", "クレジットカード 付帯保険 海外", "海外旅行保険 選び方", "スリランカ 旅行 準備"],
+  },
+  {
+    slug: "whats-app",
+    title: "WhatsAppのダウンロードと設定方法をわかりやすく説明します",
+    excerpt:
+      "スリランカではWhatsAppが現地の標準的な連絡手段です。インストール方法・初期設定・ドライバーへの連絡方法まで、旅行前に準備しておくべき手順をわかりやすく解説します。",
+    category: "旅行計画・準備",
+    categorySlug: "travel-planning",
+    publishedAt: "2026-04-07",
+    thumbnail:
+      "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=800&q=80",
+    readingTime: 5,
+    keywords: ["WhatsApp 使い方", "ワッツアップ 設定", "スリランカ 連絡", "WhatsApp インストール", "スリランカ 旅行 準備"],
+  },
+  {
+    slug: "esim",
+    title: "スリランカ到着後すぐにネットを使うには？空港でのSIM購入＆eSIM完全ガイド",
+    excerpt:
+      "バンダラナイケ空港でのDialog SIM購入手順とeSIMの事前設定方法を徹底解説。料金比較・物理SIM vs eSIMの選び方まで、スリランカ旅行者向けにSLTCSがまとめました。",
+    category: "旅行計画・準備",
+    categorySlug: "travel-planning",
+    publishedAt: "2026-04-07",
+    thumbnail:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+    readingTime: 7,
+    keywords: ["スリランカ SIM", "スリランカ eSIM", "Dialog SIM スリランカ", "スリランカ 空港 SIM", "スリランカ 旅行 ネット"],
+  },
+
   // ── タクシーチャーターの基礎 ──────────────────────────────────────────────
   {
     slug: "price-breakdown-risks",

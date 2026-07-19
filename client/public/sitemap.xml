@@ -219,6 +219,26 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- 旅行計画・準備 追加記事 -->
+  <url>
+    <loc>https://sltcs.srilanka-charter.com/travel-planning/insurance</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sltcs.srilanka-charter.com/travel-planning/whats-app</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sltcs.srilanka-charter.com/travel-planning/esim</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- 観光地ガイド 記事 -->
   <url>
     <loc>https://sltcs.srilanka-charter.com/sightseeing-guide/sigiriya-guide</loc>
