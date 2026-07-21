@@ -179,3 +179,7 @@
 - [x] favicon.ico再生成：apple-touch-icon.pngから16x16・32x32・48x48の3サイズを含むICOファイルを生成（3,176バイト）・PNG版も追加・index.htmlのfaviconタグを更新
 - [x] manifest.json を client/public/ に追加（PWA設定・アイコン・テーマカラー・ショートカット2件）
 - [x] index.html に manifest.json の link タグ・theme-color・apple-mobile-web-app メタタグを追加
+- [x] SLTCSロゴをfavicon.ico・apple-touch-icon.png・manifest用アイコンに設定
+- [x] TaxiCharterBasicsTopPage.tsx：タクシーチャーターの基礎カテゴリーのまとめ記事ページを新規作成
+- [x] App.tsx：/taxi-charter-basicsルートをTaxiCharterBasicsTopPageに設定
+- [x] sitemap.xml：/taxi-charter-basicsのURLを追加（既存エントリー確認済み）

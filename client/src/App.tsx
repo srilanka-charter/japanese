@@ -26,6 +26,7 @@ import AstrologyPage from "./pages/AstrologyPage";
 import BlogCategoryPage from "./pages/BlogCategoryPage";
 import BlogArticlePage from "./pages/BlogArticlePage";
 import TravelPlanningTopPage from "./pages/TravelPlanningTopPage";
+import TaxiCharterBasicsTopPage from "./pages/TaxiCharterBasicsTopPage";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -50,6 +51,7 @@ function Router() {
       <Route path="/whale-watching" component={WhaleWatchingPage} />
       <Route path="/astrology" component={AstrologyPage} />
       <Route path="/travel-planning" component={TravelPlanningTopPage} />
+      <Route path="/taxi-charter-basics" component={TaxiCharterBasicsTopPage} />
       <Route path="/:category/:slug" component={BlogArticlePage} />
       <Route path="/:category" component={BlogCategoryPage} />
       <Route path="/404" component={NotFound} />
