@@ -50,6 +50,16 @@ const articles = [
     image:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/blog-booking-timing-MRqrgcQXvfYZKvH7j2ycGu.webp",
   },
+  {
+    number: "05",
+    slug: "one-day-charter",
+    title: "スリランカで1日チャーターをご希望の方へ",
+    subtitle: "プラットフォームを使ったドライバー手配・予約手順",
+    description:
+      "スリランカで1日だけ専用車をチャーターしたい方へ。プラットフォームを使ったドライバーの探し方・予約手順・WhatsApp準備まで、1日チャーターに必要な情報をわかりやすく解説します。",
+    tags: ["1日チャーター", "プラットフォーム", "予約方法"],
+    image: "/manus-storage/hero_2a3bdb80.png",
+  },
 ];
 
 // ── 基礎知識チェックリスト ───────────────────────────────────────────────────
@@ -58,6 +68,7 @@ const checklistItems = [
   { label: "料金の内訳と格安サービスのリスクを把握する", slug: "price-breakdown-risks" },
   { label: "予約のベストタイミングを確認する", slug: "when-to-book-charter" },
   { label: "チップ・マナーの相場を事前に知っておく", slug: "tip-manner-guide" },
+  { label: "1日チャーターの予約方法とプラットフォームの使い方を確認する", slug: "one-day-charter" },
 ];
 
 export default function TaxiCharterBasicsTopPage() {

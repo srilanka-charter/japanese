@@ -19,6 +19,7 @@ import ForexArticle from "./articles/ForexArticle";
 import InsuranceArticle from "./articles/InsuranceArticle";
 import WhatsAppArticle from "./articles/WhatsAppArticle";
 import EsimArticle from "./articles/EsimArticle";
+import OneDayCharterArticle from "./articles/OneDayCharterArticle";
 import { useSEO } from "@/hooks/useSEO";
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -75,6 +76,9 @@ function ArticleContent({ slug }: { slug: string }) {
   }
   if (slug === "esim") {
     return <EsimArticle />;
+  }
+  if (slug === "one-day-charter") {
+    return <OneDayCharterArticle />;
   }
   return (
     <p className="text-gray-500 text-center py-12">記事コンテンツを準備中です。</p>

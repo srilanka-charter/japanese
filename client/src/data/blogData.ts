@@ -384,6 +384,18 @@ export const blogArticles: BlogArticle[] = [
     keywords: ["シーギリヤ ホテル", "ダンブッラ ホテル", "スリランカ リゾート", "ヘリタンスカンダラマ", "ジェットウィング ヴィル ウヤナ"],
   },
   {
+    slug: "one-day-charter",
+    title: "スリランカで1日チャーターをご希望の方へ",
+    excerpt:
+      "スリランカで1日だけ専用車をチャーターしたい方へ。プラットフォームを使ったドライバーの探し方・予約手順・WhatsApp準備まで、1日チャーターに必要な情報をわかりやすく解説します。",
+    category: "タクシーチャーターの基礎",
+    categorySlug: "taxi-charter-basics",
+    publishedAt: "2026-07-22",
+    thumbnail: "/manus-storage/hero_2a3bdb80.png",
+    readingTime: 6,
+    keywords: ["スリランカ 1日チャーター", "スリランカ タクシーチャーター 1日", "スリランカ 専用車 1日", "スリランカ ドライバー 手配"],
+  },
+  {
     slug: "kandy-hotels",
     title: "キャンディ観光に適したおすすめホテル4選",
     excerpt:

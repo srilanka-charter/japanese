@@ -183,3 +183,8 @@
 - [x] TaxiCharterBasicsTopPage.tsx：タクシーチャーターの基礎カテゴリーのまとめ記事ページを新規作成
 - [x] App.tsx：/taxi-charter-basicsルートをTaxiCharterBasicsTopPageに設定
 - [x] sitemap.xml：/taxi-charter-basicsのURLを追加（既存エントリー確認済み）
+- [x] OneDayCharterArticle.tsx：「スリランカで1日チャーターをご希望の方へ」記事を重複コンテンツ回避で独自文章に書き直し新規作成
+- [x] blogData.ts：one-day-charter記事をtaxi-charter-basicsカテゴリーに追加
+- [x] BlogArticlePage.tsx：one-day-charterのimport・分岐を追加
+- [x] sitemap.xml：/taxi-charter-basics/one-day-charterを追加
+- [x] TaxiCharterBasicsTopPage.tsx：記事一覧・チェックリストに05番記事を追加
