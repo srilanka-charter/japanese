@@ -177,3 +177,5 @@
 - [x] App.tsx：/travel-planningルートをTravelPlanningTopPageに変更（BlogCategoryPageから切り替え）
 - [x] sitemap.xml：/travel-planningのURLを追加（priority 0.8に更新）
 - [x] favicon.ico再生成：apple-touch-icon.pngから16x16・32x32・48x48の3サイズを含むICOファイルを生成（3,176バイト）・PNG版も追加・index.htmlのfaviconタグを更新
+- [x] manifest.json を client/public/ に追加（PWA設定・アイコン・テーマカラー・ショートカット2件）
+- [x] index.html に manifest.json の link タグ・theme-color・apple-mobile-web-app メタタグを追加
