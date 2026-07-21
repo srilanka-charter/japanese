@@ -73,7 +73,7 @@ export default function OneDayCharterArticle() {
         {/* アイキャッチ画像 */}
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
-            src="/manus-storage/hero_72f55744.png"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/one-day-charter-hero-Cve9iXTzSsRjWGWujMNXLY.webp"
             alt="スリランカ1日チャーターのイメージ"
             className="w-full object-cover"
             fetchPriority="high"

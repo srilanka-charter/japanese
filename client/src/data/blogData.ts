@@ -391,7 +391,7 @@ export const blogArticles: BlogArticle[] = [
     category: "タクシーチャーターの基礎",
     categorySlug: "taxi-charter-basics",
     publishedAt: "2026-07-22",
-    thumbnail: "/manus-storage/hero_72f55744.png",
+    thumbnail: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/one-day-charter-hero-Cve9iXTzSsRjWGWujMNXLY.webp",
     readingTime: 6,
     keywords: ["スリランカ 1日チャーター", "スリランカ タクシーチャーター 1日", "スリランカ 専用車 1日", "スリランカ ドライバー 手配"],
   },

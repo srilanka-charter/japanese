@@ -58,7 +58,7 @@ const articles = [
     description:
       "スリランカで1日だけ専用車をチャーターしたい方へ。プラットフォームを使ったドライバーの探し方・予約手順・WhatsApp準備まで、1日チャーターに必要な情報をわかりやすく解説します。",
     tags: ["1日チャーター", "プラットフォーム", "予約方法"],
-    image: "/manus-storage/platform-top_6c3b990b.png",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/one-day-charter-hero-Cve9iXTzSsRjWGWujMNXLY.webp",
   },
 ];
 
