@@ -173,6 +173,7 @@
 - [x] EsimArticle.tsx：元サイトから画像を取得・アップロードして記事に組み込み
 - [x] ForexArticle.tsx：両替記事を新規作成（旅行計画・準備カテゴリー）
 - [x] blogData.ts・BlogArticlePage.tsx・sitemap.xml：両替記事の登録
-- [ ] TravelPlanningTopPage.tsx：旅行計画・準備のまとめ記事ページを新規作成（/travel-planningルート）
-- [ ] App.tsx：/travel-planningルートをTravelPlanningTopPageに変更（BlogCategoryPageから切り替え）
-- [ ] sitemap.xml：/travel-planningのURLを追加
+- [x] TravelPlanningTopPage.tsx：旅行計画・準備のまとめ記事ページを新規作成（/travel-planningルート）
+- [x] App.tsx：/travel-planningルートをTravelPlanningTopPageに変更（BlogCategoryPageから切り替え）
+- [x] sitemap.xml：/travel-planningのURLを追加（priority 0.8に更新）
+- [x] favicon.ico再生成：apple-touch-icon.pngから16x16・32x32・48x48の3サイズを含むICOファイルを生成（3,176バイト）・PNG版も追加・index.htmlのfaviconタグを更新
