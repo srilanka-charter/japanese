@@ -73,7 +73,7 @@ export default function OneDayCharterArticle() {
         {/* アイキャッチ画像 */}
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
-            src="/manus-storage/hero_2a3bdb80.png"
+            src="/manus-storage/hero_72f55744.png"
             alt="スリランカ1日チャーターのイメージ"
             className="w-full object-cover"
             fetchPriority="high"
@@ -122,7 +122,7 @@ export default function OneDayCharterArticle() {
 
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
-            src="/manus-storage/platform-top_d1263c60.png"
+            src="/manus-storage/platform-top_6c3b990b.png"
             alt="スリランカタクシーチャータープラットフォームのトップ画面"
             className="w-full object-cover"
             loading="lazy"
@@ -206,7 +206,7 @@ export default function OneDayCharterArticle() {
 
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
-            src="/manus-storage/driver-search_0d9d204d.png"
+            src="/manus-storage/driver-search_f3f4826c.png"
             alt="ドライバー検索画面"
             className="w-full object-cover"
             loading="lazy"
@@ -225,7 +225,7 @@ export default function OneDayCharterArticle() {
 
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
-            src="/manus-storage/driver-detail_7b91e509.png"
+            src="/manus-storage/driver-detail_76731d38.png"
             alt="ドライバー詳細画面"
             className="w-full object-cover"
             loading="lazy"
@@ -243,7 +243,7 @@ export default function OneDayCharterArticle() {
 
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
-            src="/manus-storage/booking1_f4cfc911.png"
+            src="/manus-storage/booking1_d7187956.png"
             alt="予約入力画面①"
             className="w-full object-cover"
             loading="lazy"
@@ -262,7 +262,7 @@ export default function OneDayCharterArticle() {
 
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
-            src="/manus-storage/booking2_f533a037.png"
+            src="/manus-storage/booking2_b670f3ee.png"
             alt="予約入力画面②（お客様情報）"
             className="w-full object-cover"
             loading="lazy"
@@ -279,7 +279,7 @@ export default function OneDayCharterArticle() {
 
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
-            src="/manus-storage/whatsapp-notify_d5fe62e0.png"
+            src="/manus-storage/whatsapp-notify_55e3d28c.png"
             alt="WhatsAppへの通知画面"
             className="w-full object-cover"
             loading="lazy"
@@ -316,7 +316,7 @@ export default function OneDayCharterArticle() {
 
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
-            src="/manus-storage/get-multiple-quotes_adf4f6e2.png"
+            src="/manus-storage/get-multiple-quotes_54fed1f6.png"
             alt="Get Multiple Quotesボタン"
             className="w-full object-cover"
             loading="lazy"
@@ -333,7 +333,7 @@ export default function OneDayCharterArticle() {
 
         <figure className="mb-7 rounded-2xl overflow-hidden shadow-md">
           <img
-            src="/manus-storage/multiple-quotes-form_b5d02042.png"
+            src="/manus-storage/multiple-quotes-form_eddad78a.png"
             alt="Get Multiple Quotes入力フォーム"
             className="w-full object-cover"
             loading="lazy"
