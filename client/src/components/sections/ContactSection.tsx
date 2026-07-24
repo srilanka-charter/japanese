@@ -16,6 +16,19 @@ export default function ContactSection() {
 
   const sendMutation = trpc.contact.send.useMutation({
     onSuccess: () => {
+      // チャーター日数を計算してリダイレクト先を振り分け
+      // diffDays: 0 = 1日チャーター（開始日=終了日）、diffDays: 1 = 2日チャーター
+      // diffDays <= 1 → /another（コンバージョンタグなし）
+      // diffDays >= 2 → /thanks（コンバージョンタグあり）
+      if (form.startDate && form.endDate) {
+        const start = new Date(form.startDate);
+        const end = new Date(form.endDate);
+        const diffDays = Math.round((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
+        if (diffDays <= 1) {
+          navigate("/another");
+          return;
+        }
+      }
       navigate("/thanks");
     },
     onError: (err) => {

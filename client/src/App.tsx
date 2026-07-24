@@ -11,6 +11,7 @@ import Course45Page from "./pages/Course45Page";
 import Course56Page from "./pages/Course56Page";
 import Course67Page from "./pages/Course67Page";
 import ThankYouPage from "./pages/ThankYouPage";
+import AnotherPage from "./pages/AnotherPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import TermsPage from "./pages/TermsPage";
 import PricingPage from "./pages/PricingPage";
@@ -38,6 +39,7 @@ function Router() {
       <Route path="/course/4-5days" component={Course56Page} />
       <Route path="/course/5-6days" component={Course67Page} />
       <Route path="/thanks" component={ThankYouPage} />
+      <Route path="/another" component={AnotherPage} />
       <Route path="/privacy" component={PrivacyPolicyPage} />
       <Route path="/terms" component={TermsPage} />
       <Route path="/pricing" component={PricingPage} />

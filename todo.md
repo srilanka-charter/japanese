@@ -188,3 +188,6 @@
 - [x] BlogArticlePage.tsx：one-day-charterのimport・分岐を追加
 - [x] sitemap.xml：/taxi-charter-basics/one-day-charterを追加
 - [x] TaxiCharterBasicsTopPage.tsx：記事一覧・チェックリストに05番記事を追加
+- [x] AnotherPage.tsx：チャーター1〜2日用サンクスページを新規作成（/another・コンバージョンタグなし・noindex）
+- [x] ContactSection.tsx：フォーム送信成功時に開始日〜終了日の差分を計算し、1〜2日→/another、3日以上→/thanksへ振り分けるロジックを追加
+- [x] App.tsx：/anotherルートをAnotherPageに追加
