@@ -1,8 +1,11 @@
 User-agent: *
 Allow: /
 
-# サンクスページ・エラーページはインデックス対象外
-Disallow: /thank-you
+# サンクスページ・法的ページ・エラーページはインデックス対象外
+Disallow: /thanks
+Disallow: /another
+Disallow: /privacy
+Disallow: /terms
 Disallow: /404
 
 # サイトマップ
