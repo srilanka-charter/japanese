@@ -40,12 +40,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://sltcs.srilanka-charter.com/contact</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
 
   <!-- ── モデルコースページ ── -->
   <url>
@@ -92,20 +86,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://sltcs.srilanka-charter.com/tea-train</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- ── アクティビティページ ── -->
-  <url>
-    <loc>https://sltcs.srilanka-charter.com/activity</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
   <url>
     <loc>https://sltcs.srilanka-charter.com/safari</loc>
     <lastmod>2026-04-20</lastmod>
@@ -160,24 +142,6 @@
   <!-- ── お役立ち情報 記事ページ ── -->
 
   <!-- モデルコース記事 -->
-  <url>
-    <loc>https://sltcs.srilanka-charter.com/model-course/course-3-4days</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sltcs.srilanka-charter.com/model-course/course-4-5days</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sltcs.srilanka-charter.com/model-course/course-5-6days</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
   <url>
     <loc>https://sltcs.srilanka-charter.com/model-course/course-10days</loc>
     <lastmod>2026-06-02</lastmod>
@@ -253,30 +217,6 @@
   </url>
 
   <!-- 観光地ガイド 記事 -->
-  <url>
-    <loc>https://sltcs.srilanka-charter.com/sightseeing-guide/sigiriya-guide</loc>
-    <lastmod>2026-05-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sltcs.srilanka-charter.com/sightseeing-guide/kandy-guide</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sltcs.srilanka-charter.com/sightseeing-guide/galle-guide</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sltcs.srilanka-charter.com/sightseeing-guide/safari-guide</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
   <url>
     <loc>https://sltcs.srilanka-charter.com/sightseeing-guide/tea-train-guide</loc>
     <lastmod>2026-06-14</lastmod>

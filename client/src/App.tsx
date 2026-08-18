@@ -4,6 +4,7 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { SeoCaptureProvider, type SEOOptions } from "./hooks/useSEO";
 import Home from "./pages/Home";
 import PlanPage from "./pages/PlanPage";
 import VehiclesPage from "./pages/VehiclesPage";
@@ -62,16 +63,18 @@ function Router() {
   );
 }
 
-function App() {
+function App({ ssrSeoCapture }: { ssrSeoCapture?: (options: SEOOptions) => void }) {
   return (
-    <ErrorBoundary>
-      <ThemeProvider defaultTheme="light">
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-        </TooltipProvider>
-      </ThemeProvider>
-    </ErrorBoundary>
+    <SeoCaptureProvider onCapture={ssrSeoCapture}>
+      <ErrorBoundary>
+        <ThemeProvider defaultTheme="light">
+          <TooltipProvider>
+            <Toaster />
+            <Router />
+          </TooltipProvider>
+        </ThemeProvider>
+      </ErrorBoundary>
+    </SeoCaptureProvider>
   );
 }
 

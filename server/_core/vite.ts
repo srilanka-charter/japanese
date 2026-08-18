@@ -5,6 +5,24 @@ import { nanoid } from "nanoid";
 import path from "path";
 import { createServer as createViteServer } from "vite";
 import viteConfig from "../../vite.config";
+import { injectSsrPage, renderSsrPage } from "../../client/src/ssr";
+import { getCanonicalRedirect, isKnownSiteRoute, normalizeSeoPath } from "./seoRoutes";
+
+function sendSeoAwarePage(req: express.Request, res: express.Response, template: string) {
+  const pathname = normalizeSeoPath(new URL(req.originalUrl, "http://localhost").pathname);
+  const redirectTarget = getCanonicalRedirect(pathname);
+
+  if (redirectTarget) {
+    res.redirect(301, redirectTarget);
+    return;
+  }
+
+  const isNotFound = !isKnownSiteRoute(pathname);
+  const { appHtml, seoHead } = renderSsrPage(pathname, isNotFound);
+  res.status(isNotFound ? 404 : 200)
+    .set({ "Content-Type": "text/html; charset=UTF-8" })
+    .end(injectSsrPage(template, appHtml, seoHead));
+}
 
 export async function setupVite(app: Express, server: Server) {
   const serverOptions = {
@@ -39,7 +57,7 @@ export async function setupVite(app: Express, server: Server) {
         `src="/src/main.tsx?v=${nanoid()}"`
       );
       const page = await vite.transformIndexHtml(url, template);
-      res.status(200).set({ "Content-Type": "text/html" }).end(page);
+      sendSeoAwarePage(req, res, page);
     } catch (e) {
       vite.ssrFixStacktrace(e as Error);
       next(e);
@@ -58,10 +76,16 @@ export function serveStatic(app: Express) {
     );
   }
 
-  app.use(express.static(distPath));
+  // index.htmlは必ず下のSEO対応フォールバックでSSRするため、静的配信では直接返さない。
+  app.use(express.static(distPath, { index: false }));
 
-  // fall through to index.html if the file doesn't exist
-  app.use("*", (_req, res) => {
-    res.sendFile(path.resolve(distPath, "index.html"));
+  // 既知のSPAルートだけをHTMLとして返し、未知のURLはHTTP 404にする。
+  app.use("*", async (req, res, next) => {
+    try {
+      const template = await fs.promises.readFile(path.resolve(distPath, "index.html"), "utf-8");
+      sendSeoAwarePage(req, res, template);
+    } catch (error) {
+      next(error);
+    }
   });
 }

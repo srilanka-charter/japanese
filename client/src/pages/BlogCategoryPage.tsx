@@ -2,6 +2,7 @@ import { Link, useParams } from "wouter";
 import { Calendar, Clock, ChevronRight, BookOpen } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NotFound from "@/pages/NotFound";
 import {
   blogCategories,
   getCategoryBySlug,
@@ -93,24 +94,14 @@ export default function BlogCategoryPage() {
     jsonLdList: breadcrumbJsonLd ? [breadcrumbJsonLd] : [],
     jsonLdIdPrefix: `category-${categorySlug}`,
   } : {
-    title: "お役立ち情報 | SLTCS スリランカタクシーチャーターサービス",
-    description: "スリランカ旅行に役立つ情報をお届けします。タクシーチャーターの基礎・観光地ガイド・モデルコースなど。",
-    path: "/",
+    title: "404 ページが見つかりません｜SLTCS スリランカタクシーチャーターサービス",
+    description: "お探しのページは見つかりませんでした。トップページに戻ってください。",
+    path: "/404",
+    noindex: true,
   });
 
   if (!category) {
-    return (
-      <div className="min-h-screen bg-white">
-        <Header />
-        <div className="pt-32 pb-20 text-center">
-          <p className="text-gray-500 text-lg">カテゴリーが見つかりませんでした。</p>
-          <Link href="/" className="mt-4 inline-block text-emerald-600 hover:underline">
-            トップページへ戻る
-          </Link>
-        </div>
-        <Footer />
-      </div>
-    );
+    return <NotFound />;
   }
 
   return (

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { createContext, createElement, useContext, useEffect } from "react";
 
 const DEFAULT_TITLE =
   "スリランカタクシーチャーターならSLTCS｜日本語対応の専用車で自由に周遊";
@@ -31,6 +31,18 @@ export interface SEOOptions {
   hreflangList?: HreflangEntry[];
 }
 
+const SeoCaptureContext = createContext<((options: SEOOptions) => void) | null>(null);
+
+export function SeoCaptureProvider({
+  children,
+  onCapture,
+}: {
+  children: React.ReactNode;
+  onCapture?: (options: SEOOptions) => void;
+}) {
+  return createElement(SeoCaptureContext.Provider, { value: onCapture ?? null }, children);
+}
+
 /** meta要素を取得または作成するヘルパー */
 function getOrCreateMeta(selector: string, attrName: string, attrValue: string): HTMLMetaElement {
   let el = document.querySelector(selector) as HTMLMetaElement | null;
@@ -57,6 +69,23 @@ export function useSEO({
   noindex = false,
   hreflangList = [],
 }: SEOOptions) {
+  const captureSeo = useContext(SeoCaptureContext);
+  const options: SEOOptions = {
+    title,
+    description,
+    path,
+    ogImage,
+    jsonLdList,
+    jsonLdIdPrefix,
+    noindex,
+    hreflangList,
+  };
+
+  // SSRではuseEffectが実行されないため、レンダリング中にページ固有のSEO定義を収集する。
+  if (captureSeo && typeof document === "undefined") {
+    captureSeo(options);
+  }
+
   useEffect(() => {
     const canonicalUrl = `${SITE_URL}${path}`;
 

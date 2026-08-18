@@ -2,6 +2,7 @@ import { Link, useParams } from "wouter";
 import { Calendar, Clock, ChevronRight, ArrowLeft } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NotFound from "@/pages/NotFound";
 import { getArticleBySlug, getCategoryBySlug } from "@/data/blogData";
 import Course10DaysArticle from "./articles/Course10DaysArticle";
 import BookingTimingArticle from "./articles/BookingTimingArticle";
@@ -433,11 +434,12 @@ export default function BlogArticlePage() {
   const params = useParams<{ category: string; slug: string }>();
   const article = getArticleBySlug(params.slug);
   const category = getCategoryBySlug(params.category);
+  const isValidArticleRoute = Boolean(article && category && article.categorySlug === params.category);
 
   const SITE_URL = "https://sltcs.srilanka-charter.com";
 
   // SEO最適化：記事ごとのメタデータを動的に設定
-  const articleJsonLd = article ? {
+  const articleJsonLd = isValidArticleRoute && article ? {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": article.title,
@@ -457,7 +459,7 @@ export default function BlogArticlePage() {
     "mainEntityOfPage": { "@type": "WebPage", "@id": `${SITE_URL}/${params.category}/${params.slug}` },
   } : null;
 
-  const breadcrumbJsonLd = article && category ? {
+  const breadcrumbJsonLd = isValidArticleRoute && article && category ? {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
@@ -468,7 +470,7 @@ export default function BlogArticlePage() {
     ],
   } : null;
 
-  useSEO(article && category ? {
+  useSEO(isValidArticleRoute && article && category ? {
     title: `${article.title} | SLTCS`,
     description: article.excerpt,
     path: `/${params.category}/${params.slug}`,
@@ -476,24 +478,14 @@ export default function BlogArticlePage() {
     jsonLdList: [articleJsonLd, breadcrumbJsonLd].filter(Boolean) as object[],
     jsonLdIdPrefix: `article-${params.slug}`,
   } : {
-    title: "お役立ち情報 | SLTCS スリランカタクシーチャーターサービス",
-    description: "スリランカ旅行に役立つ情報をお届けします。タクシーチャーターの基礎・観光地ガイド・モデルコースなど。",
-    path: "/",
+    title: "404 ページが見つかりません｜SLTCS スリランカタクシーチャーターサービス",
+    description: "お探しのページは見つかりませんでした。トップページに戻ってください。",
+    path: "/404",
+    noindex: true,
   });
 
-  if (!article || !category) {
-    return (
-      <div className="min-h-screen bg-white">
-        <Header />
-        <div className="pt-32 pb-20 text-center">
-          <p className="text-gray-500 text-lg">記事が見つかりませんでした。</p>
-          <Link href="/" className="mt-4 inline-block text-emerald-600 hover:underline">
-            トップページへ戻る
-          </Link>
-        </div>
-        <Footer />
-      </div>
-    );
+  if (!isValidArticleRoute || !article || !category) {
+    return <NotFound />;
   }
 
   return (
