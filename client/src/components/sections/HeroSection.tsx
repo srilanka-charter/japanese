@@ -153,7 +153,11 @@ export default function HeroSection() {
           }}
         >
           {slide.isH1 ? (
-            <h1
+            <>
+              <h1 className="sr-only">
+                スリランカのタクシーチャーター｜日本語対応の専用車・政府公認ドライバーならSLTCS
+              </h1>
+              <div
                 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black text-white leading-[1.05] mb-6"
                 style={{
                   fontFamily: "'Noto Serif JP', serif",
@@ -162,7 +166,8 @@ export default function HeroSection() {
                 }}
               >
                 {slide.title}
-            </h1>
+              </div>
+            </>
           ) : (
             <h2
               className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black text-white leading-[1.05] mb-6"

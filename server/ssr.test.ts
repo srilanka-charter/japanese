@@ -10,6 +10,16 @@ describe("SSR SEO出力", () => {
     expect(appHtml).toContain("<h1");
   });
 
+  it("blogDataへ登録された記事は初期HTMLでも記事固有のSEO情報を出力する", () => {
+    const { appHtml, seoHead } = renderSsrPage("/taxi-charter-basics/one-day-charter");
+
+    expect(seoHead).toContain("スリランカで1日のタクシーチャーターをご希望の方へ | SLTCS");
+    expect(seoHead).toContain(
+      'href="https://sltcs.srilanka-charter.com/taxi-charter-basics/one-day-charter"'
+    );
+    expect(appHtml).toContain("スリランカを1日だけ専用車でめぐりたい");
+  });
+
   it("未知URLはnoindexを含む404用の初期HTMLを返せる", () => {
     const { appHtml, seoHead } = renderSsrPage("/seo-audit-nonexistent-page-9f3c", true);
 

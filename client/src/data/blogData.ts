@@ -62,6 +62,11 @@ export const blogCategories: BlogCategory[] = [
   },
 ];
 
+/**
+ * 新規記事を追加する際は、必ずこの配列にslug・title・excerpt・categorySlug・thumbnailを登録する。
+ * BlogArticlePageとserver/_core/seoRoutes.tsはこの配列を参照するため、登録済み記事は初期HTMLでも
+ * title・description・canonical・Article JSON-LD・本文をSSR出力の対象として自動認識される。
+ */
 export const blogArticles: BlogArticle[] = [
   // ── モデルコース ──────────────────────────────────────────────────────────
   {
