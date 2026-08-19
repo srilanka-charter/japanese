@@ -60,12 +60,12 @@ export default function ReviewsSection() {
         <div className="grid md:grid-cols-2 gap-8">
           {reviews.map((r) => (
             <div key={r.id} className="bg-white rounded-2xl border border-[oklch(0.9_0.01_155)] overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-              {/* 画像：アスペクト比を保ちながら全体を表示 */}
-              <div className="w-full overflow-hidden bg-[oklch(0.95_0_0)]">
+              {/* 共通の画像枠で高さを揃え、写真はトリミングせず全体を表示 */}
+              <div className="w-full aspect-[4/3] overflow-hidden bg-[oklch(0.95_0_0)]">
                 <img
                   src={r.image}
                   alt={r.name}
-                  className="w-full h-auto object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="p-6">

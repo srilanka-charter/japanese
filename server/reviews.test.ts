@@ -24,5 +24,7 @@ describe("口コミカード画像", () => {
 
     expect(positions).toEqual([...positions].sort((left, right) => left - right));
     expect(source).toContain('alt={r.name}');
+    expect(source).toContain('aspect-[4/3]');
+    expect(source).toContain('w-full h-full object-contain');
   });
 });
