@@ -1,7 +1,7 @@
 const reviews = [
   {
     id: 1,
-    image: "/manus-storage/review_tk_couple_07b5bba1.png",
+    image: "/manus-storage/review-tk-couple-sigiriya_1ffa6081.png",
     name: "T様&K様",
     country: "日本",
     count: 4,
@@ -12,7 +12,7 @@ const reviews = [
   },
   {
     id: 2,
-    image: "/manus-storage/review_k_family_new_2b2c81ce.png",
+    image: "/manus-storage/review-k-family-safari_d7a8cd58.png",
     name: "K様ご家族",
     country: "日本",
     count: 6,
@@ -23,7 +23,7 @@ const reviews = [
   },
   {
     id: 3,
-    image: "/manus-storage/review_S_family_38517451.png",
+    image: "/manus-storage/review-s-couple-boat_decdd6fc.png",
     name: "S様ご夫婦",
     country: "日本",
     count: 2,
@@ -34,7 +34,7 @@ const reviews = [
   },
   {
     id: 4,
-    image: "/manus-storage/review_h_couple_new_9b3b04db.png",
+    image: "/manus-storage/review-h-pair-coconut_172ca850.png",
     name: "H様お二人連れ",
     country: "日本",
     count: 2,
