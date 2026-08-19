@@ -28,6 +28,15 @@ describe("SSR SEO出力", () => {
     expect(appHtml).toContain("404 ページが見つかりません");
   });
 
+  it("利用規約第2条の更新済み定義を初期HTMLに含める", () => {
+    const { appHtml, seoHead } = renderSsrPage("/terms");
+
+    expect(seoHead).toContain('content="noindex,nofollow"');
+    expect(appHtml).toContain("「運営会社」");
+    expect(appHtml).toContain("タクシーチャータードライバーとのオンラインマッチングサービス");
+    expect(appHtml).toContain("現地のTour Operatorが手配するドライバー");
+  });
+
   it("SSR済み本文とURL固有のheadをHTMLテンプレートへ注入できる", () => {
     const document = injectSsrPage(
       '<head><!--ssr-seo-head--></head><body><div id="root"></div></body>',

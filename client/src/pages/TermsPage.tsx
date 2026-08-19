@@ -60,16 +60,20 @@ export default function TermsPage() {
               </h2>
               <dl className="space-y-3 text-sm">
                 <div>
-                  <dt className="font-semibold text-[oklch(0.15_0.03_155)]">「当社」／「SLTCS」</dt>
+                  <dt className="font-semibold text-[oklch(0.15_0.03_155)]">「運営会社」</dt>
                   <dd className="mt-1 pl-4">Sri Lanka Taxi Charter Service International Limited（CR No. 78456401、香港法人）をいいます。</dd>
                 </div>
                 <div>
+                  <dt className="font-semibold text-[oklch(0.15_0.03_155)]">「SLTCS」</dt>
+                  <dd className="mt-1 pl-4">運営会社が提供する、スリランカ国内のタクシーチャータードライバーとのオンラインマッチングサービスの名称をいいます。</dd>
+                </div>
+                <div>
                   <dt className="font-semibold text-[oklch(0.15_0.03_155)]">「本サービス」</dt>
-                  <dd className="mt-1 pl-4">スリランカ国内の陸上輸送チャーターを希望するお客様と、観光運転免許を保有するドライバー（またはドライバー管理事業者）との間を取り次ぐ紹介・連絡調整サービスをいいます。当社は運送事業者ではなく、輸送契約の当事者にはなりません（第3条参照）。</dd>
+                  <dd className="mt-1 pl-4">SLTCSを通じて、スリランカ国内の陸上輸送チャーターを希望するお客様と、観光運転免許を保有するドライバーまたはドライバー管理事業者との間を取り次ぐ、紹介・連絡調整サービスをいいます。</dd>
                 </div>
                 <div>
                   <dt className="font-semibold text-[oklch(0.15_0.03_155)]">「ドライバー」</dt>
-                  <dd className="mt-1 pl-4">スリランカ当局が発行する有効な Tourist Driver Licence（観光運転免許）を保有する独立した第三者をいいます。</dd>
+                  <dd className="mt-1 pl-4">スリランカ当局が発行する有効な観光運転免許を保有する独立した第三者または現地のTour Operatorが手配するドライバーをいいます。</dd>
                 </div>
                 <div>
                   <dt className="font-semibold text-[oklch(0.15_0.03_155)]">「当社サービス料」</dt>
