@@ -20,7 +20,7 @@ describe("ファーストビュー画像", () => {
     expectedImagePaths.forEach(imagePath => expect(source).toContain(imagePath));
     expect(source).not.toContain("d2xsxph8kpxj0f.cloudfront.net");
     expect(source.match(/image: "\/manus-storage\//g)).toHaveLength(4);
-    expect(source).toContain("}, 2000);");
+    expect(source).toContain("}, 5000);");
     expect(source).toContain("slides.slice(1).forEach");
   });
 });
