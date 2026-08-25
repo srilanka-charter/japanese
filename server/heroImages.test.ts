@@ -11,14 +11,16 @@ describe("ファーストビュー画像", () => {
   it("全スライドがManusストレージの画像を参照し、失効したCloudFront URLを含まない", () => {
     const source = readFileSync(heroSectionPath, "utf8");
     const expectedImagePaths = [
-      "/manus-storage/sigiriya_44803162.jpg",
-      "/manus-storage/ella_nine_arch_8f10f348.webp",
-      "/manus-storage/activity_safari_new_441f0bbd.png",
-      "/manus-storage/blog-honeymoon-beach_437cd287.jpg",
+      "/manus-storage/fv-sri-lanka-sigiriya-kandy_bd15c5a6.webp",
+      "/manus-storage/fv-sri-lanka-tea-train_15d4f75c.webp",
+      "/manus-storage/fv-sri-lanka-safari_16f8c563.webp",
+      "/manus-storage/fv-sri-lanka-surfing_4fc9f83a.webp",
     ];
 
     expectedImagePaths.forEach(imagePath => expect(source).toContain(imagePath));
     expect(source).not.toContain("d2xsxph8kpxj0f.cloudfront.net");
-    expect(source.match(/image: "\/manus-storage\//g)).toHaveLength(5);
+    expect(source.match(/image: "\/manus-storage\//g)).toHaveLength(4);
+    expect(source).toContain("}, 2000);");
+    expect(source).toContain("slides.slice(1).forEach");
   });
 });

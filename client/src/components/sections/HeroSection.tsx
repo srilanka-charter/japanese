@@ -3,7 +3,7 @@ import { ChevronDown, MessageCircle, ChevronLeft, ChevronRight } from "lucide-re
 
 const slides = [
   {
-    image: "/manus-storage/sigiriya_44803162.jpg",
+    image: "/manus-storage/fv-sri-lanka-sigiriya-kandy_bd15c5a6.webp",
     label: "TAXI CHARTER",
     title: "スリランカを\nタクシーチャーターで\n駆け抜ける",
     subtitle: "日本語対応の専用車・カーチャーターで、スリランカを自由に旅しよう",
@@ -11,32 +11,25 @@ const slides = [
     isH1: true,
   },
   {
-    image: "/manus-storage/ella_nine_arch_8f10f348.webp",
+    image: "/manus-storage/fv-sri-lanka-tea-train_15d4f75c.webp",
     label: "TEA TRAIN",
     title: "紅茶列車で\n駆け抜ける\n高原の絶景",
     subtitle: "エッラの九連アーチ橋を渡る青い列車と、広大な茶畑の風景",
     badge: "キャンディ〜エッラ",
   },
   {
-    image: "/manus-storage/activity_safari_new_441f0bbd.png",
+    image: "/manus-storage/fv-sri-lanka-safari_16f8c563.webp",
     label: "SAFARI",
     title: "野生の王国へ\nジープで\n踏み込む",
     subtitle: "ヤラ国立公園でヒョウとゾウが共存する、息をのむ大自然",
     badge: "ヤラ国立公園",
   },
   {
-    image: "/manus-storage/sigiriya_44803162.jpg",
-    label: "WORLD HERITAGE",
-    title: "天空の宮殿と\n聖なる仏歯寺\n世界遺産の旅",
-    subtitle: "シーギリヤロックとキャンディ仏歯寺——スリランカが誇る二大世界遺産",
-    badge: "シーギリヤ・キャンディ",
-  },
-  {
-    image: "/manus-storage/blog-honeymoon-beach_437cd287.jpg",
+    image: "/manus-storage/fv-sri-lanka-surfing_4fc9f83a.webp",
     label: "INDIAN OCEAN",
     title: "インド洋の\n碧い波に\n乗り込め",
-    subtitle: "アルガム湾の透き通る海——サーファーの聖地で最高の波を体感",
-    badge: "アルガム湾",
+    subtitle: "ミリッサをはじめとする南西海岸——椰子の木が連なる海で波を体感",
+    badge: "ミリッサ・南西海岸",
   },
 ];
 
@@ -48,6 +41,17 @@ export default function HeroSection() {
   useEffect(() => {
     const t = setTimeout(() => setLoaded(true), 100);
     return () => clearTimeout(t);
+  }, []);
+
+  useEffect(() => {
+    const preloadTimer = window.setTimeout(() => {
+      slides.slice(1).forEach(({ image }) => {
+        const preloadedImage = new Image();
+        preloadedImage.src = image;
+      });
+    }, 700);
+
+    return () => window.clearTimeout(preloadTimer);
   }, []);
 
   const goTo = useCallback((idx: number) => {
@@ -71,7 +75,7 @@ export default function HeroSection() {
   useEffect(() => {
     const timer = setInterval(() => {
       next();
-    }, 5000);
+    }, 2000);
     return () => clearInterval(timer);
   }, [next]);
 
