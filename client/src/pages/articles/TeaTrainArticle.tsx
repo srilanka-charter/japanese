@@ -333,11 +333,25 @@ export default function TeaTrainArticle() {
         <div className="bg-green-50 border border-green-300 rounded-2xl p-6 mb-6">
           <p className="text-sm font-bold text-green-800 mb-3">✅ 事前予約が取れなかった方もご安心ください</p>
           <p className="text-sm text-green-700 leading-relaxed mb-3">
-            ハイシーズンや人気列車は指定席が満席になることがありますが、<strong>当日、SLTCSのドライバーの補助のもと、自由席の当日券を購入することが可能です。</strong>
+            ハイシーズンや人気列車は指定席が満席になることがありますが、当日、SLTCSのドライバーの補助のもと、自由席の当日券を購入することが可能です。出発の2時間前に駅にいけば、2等指定席を購入できる場合があります。
           </p>
           <p className="text-sm text-green-700 leading-relaxed mb-3">
-            この場合は<strong>HaputaleからDemodaraまでの1時間程度の区間</strong>がおすすめです。立ち席になったとしても、車窓の絶景を十分楽しめる1時間程度の区間をご案内します。
+            もし取れたら近くで時間を潰して、2等指定席に乗車しましょう。しかし、仮に取れなかった場合は、ナヌオヤからデモダラまでの3時間半程度が立ち席となる可能性があります。
           </p>
+          <p className="text-sm text-green-700 leading-relaxed mb-4">
+            その場合はチャーター車でそのままHaputale駅へ向かいましょう。HaputaleからDemodaraまでの1時間程度の区間でも、十分楽しむことができます。
+          </p>
+          <figure className="mb-4 rounded-xl overflow-hidden border border-green-200 bg-white">
+            <img
+              src="/manus-storage/tea-train-sltcs-ticket-options_fd6720b9.png"
+              alt="紅茶列車の予約が取れなかった場合のSLTCSおすすめ乗車プラン"
+              className="w-full h-auto"
+              loading="lazy"
+            />
+            <figcaption className="px-3 py-2 text-center text-xs text-green-700">
+              当日券の確認後、状況に応じてHaputale〜Demodara区間の乗車をご案内します。
+            </figcaption>
+          </figure>
           <p className="text-sm text-green-700 leading-relaxed mb-4">
             ヌワラエリヤからHaputaleまでは車で2時間から2時間半なので以下の時間に出発しましょう。
           </p>
