@@ -30,14 +30,14 @@ const plans = [
     bgColor: "oklch(0.96_0.02_155)",
     popular: true,
     features: [
-      "政府公認 Tourist Driver の手配",
+      "政府公認Tourist Driver以上の手配",
       "観光地での同行・解説",
       "日本語対応の現地統括スタッフ",
       "サファリ・アクティビティ手配",
       "追加料金なしのガイド手配",
       "旅程のカスタマイズ対応",
     ],
-    desc: "最も人気のプランです。政府公認のTourist Driverが観光地での案内も担当。コストパフォーマンスと安心感を両立しています。",
+    desc: "最も人気のプランです。政府公認のTourist Driverが観光地での案内も担当。コストパフォーマンスと安心感を両立しています。（※）閑散期にはChauffeur Guide Driverが手配される場合もあります。",
   },
   {
     id: "gold",
