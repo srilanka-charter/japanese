@@ -37,4 +37,17 @@ describe("sitemap.xml", () => {
       expect(paths).not.toContain(pagePath);
     }
   });
+
+  it("records the latest content updates with valid lastmod values", () => {
+    const xml = readFileSync(SITEMAP_PATH, "utf8");
+    const lastmodValues = [...xml.matchAll(/<lastmod>(\d{4}-\d{2}-\d{2})<\/lastmod>/g)].map(
+      ([, date]) => date,
+    );
+
+    expect(lastmodValues).toHaveLength(40);
+    expect(lastmodValues.every((date) => !Number.isNaN(Date.parse(`${date}T00:00:00Z`)))).toBe(true);
+    expect(xml).toContain("<loc>https://sltcs.srilanka-charter.com/</loc><lastmod>2026-09-01</lastmod>");
+    expect(xml).toContain("<loc>https://sltcs.srilanka-charter.com/plan</loc><lastmod>2026-09-01</lastmod>");
+    expect(xml).toContain("<loc>https://sltcs.srilanka-charter.com/sightseeing-guide/tea-train-guide</loc><lastmod>2026-08-31</lastmod>");
+  });
 });
