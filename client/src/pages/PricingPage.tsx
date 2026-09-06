@@ -230,18 +230,9 @@ export default function PricingPage() {
       <section className="py-16 bg-[#0a1a12]">
         <div className="container max-w-5xl">
           <div className="rounded-2xl border border-white/10 bg-[#0d1f16] p-6 lg:p-8">
-            <div className="flex items-center gap-3 mb-2 flex-wrap">
-              <span
-                className="inline-block text-xs font-bold px-3 py-1 rounded-full text-[#0a1a12]"
-                style={{ backgroundColor: bronzePlan.accentColor }}
-              >
-                {bronzePlan.badge}
-              </span>
-              <h2 className="text-xl font-black text-white" style={{ fontFamily: "'Noto Serif JP', serif" }}>
-                {bronzePlan.name}
-              </h2>
-            </div>
-            <p className="text-sm text-white/55 mb-4 leading-relaxed">{bronzePlan.desc}</p>
+            <p className="text-sm text-white/75 mb-6 leading-relaxed">
+              業界最安の価格です。距離に応じて価格が変動するのでお問い合わせください。お問い合わせ時にお客様のお好みに合わせたプランも提案させていただきます。
+            </p>
             <PlanPricingTable plan={bronzePlan} />
           </div>
 

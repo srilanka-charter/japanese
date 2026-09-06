@@ -17,5 +17,11 @@ describe("料金ページの掲載範囲", () => {
     expect(source).not.toContain("SLTCSではお客様の趣向に合わせて3つのプランをご用意しております");
     expect(source).not.toContain("シルバープラン（2日間／Sedan）");
     expect(source).not.toContain("ゴールドプラン（2日間／Sedan）");
+    expect(source).toContain(
+      "業界最安の価格です。距離に応じて価格が変動するのでお問い合わせください。お問い合わせ時にお客様のお好みに合わせたプランも提案させていただきます。",
+    );
+    expect(source).not.toContain("{bronzePlan.badge}");
+    expect(source).not.toContain("{bronzePlan.name}");
+    expect(source).not.toContain("{bronzePlan.desc}");
   });
 });
