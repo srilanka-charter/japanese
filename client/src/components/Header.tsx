@@ -95,13 +95,6 @@ export default function Header() {
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-1">
             <Link
-              href="/plan"
-              className="text-white/90 hover:text-[oklch(0.75_0.12_75)] px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200"
-            >
-              プラン
-            </Link>
-
-            <Link
               href="/vehicles"
               className="text-white/90 hover:text-[oklch(0.75_0.12_75)] px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200"
             >
@@ -207,14 +200,6 @@ export default function Header() {
       {mobileOpen && (
         <div className="lg:hidden bg-[oklch(0.12_0.02_155)/98] backdrop-blur-md border-t border-white/10">
           <div className="px-4 py-4 space-y-1">
-            <Link
-              href="/plan"
-              onClick={() => setMobileOpen(false)}
-              className="block text-white/90 px-3 py-3 text-base font-medium border-b border-white/10"
-            >
-              プラン
-            </Link>
-
             <Link
               href="/vehicles"
               onClick={() => setMobileOpen(false)}

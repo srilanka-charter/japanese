@@ -14,9 +14,10 @@ describe("SEOルート制御", () => {
     expect(normalizeSeoPath("/")).toBe("/");
   });
 
-  it("重複する記事URLを正規ページへ301転送できる", () => {
+  it("重複する記事URLと削除済みプランURLを正規ページへ301転送できる", () => {
     expect(getCanonicalRedirect("/sightseeing-guide/sigiriya-guide")).toBe("/sigiriya");
     expect(getCanonicalRedirect("/model-course/course-3-4days")).toBe("/course/3-4days");
+    expect(getCanonicalRedirect("/plan")).toBe("/pricing");
     expect(getCanonicalRedirect("/pricing")).toBeNull();
   });
 });

@@ -487,7 +487,7 @@ export default function PriceBreakdownArticle() {
 
         <p className="text-base leading-[1.9] text-gray-700">
           スリランカ旅行の移動手段選びで迷っている方は、ぜびSLTCSにお気軽にご相談ください。
-          <Link href="/plan" className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">旅程・プランページ</Link>から旅程のイメージを確認し、人数・ご予算に合わせた最適なプランをご提案します。
+          <Link href="/pricing" className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">料金ページ</Link>から料金の目安を確認し、人数・ご予算に合わせたお見積もりをご提案します。
         </p>
       </section>
 
@@ -497,7 +497,7 @@ export default function PriceBreakdownArticle() {
         <ul className="space-y-2">
           {[
             { href: "/pricing", label: "SLTCSの料金一覧｜スリランカ専用車チャーターの価格" },
-            { href: "/plan", label: "SLTCSのプラン一覧｜スリランカ旅行の旅程を選ぶ" },
+            { href: "/vehicles", label: "SLTCSのチャーター車両一覧" },
             { href: "/blog/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカ旅行でタクシーチャーターがおすすめな理由｜公共交通との違い" },
             { href: "/blog/travel-planning/when-to-book-charter", label: "スリランカの専用車チャーターをいつ予約すべき？｜予約タイミング完全ガイド" },
             { href: "/blog/taxi-charter-basics/tip-manner-guide", label: "スリランカのチップ相場・渡し方マナー完全ガイド" },

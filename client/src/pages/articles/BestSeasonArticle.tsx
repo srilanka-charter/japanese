@@ -530,10 +530,10 @@ export default function BestSeasonArticle() {
             無料で相談する
           </a>
           <a
-            href="/plan"
+            href="/pricing"
             className="inline-block border border-white/30 text-white font-medium px-8 py-3 rounded-full text-sm hover:bg-white/10 transition-colors"
           >
-            プランを見る
+            料金を見る
           </a>
         </div>
       </div>

@@ -30,7 +30,6 @@ export default function Footer() {
           <div>
             <h4 className="text-white/80 font-semibold text-sm mb-4">ナビゲーション</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/plan" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">プラン</Link></li>
               <li>
                 <Link href="/course/3-4days" className="hover:text-[oklch(0.75_0.12_75)] transition-colors">
                   3泊4日モデルコース

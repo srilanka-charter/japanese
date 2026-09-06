@@ -35,8 +35,8 @@ const itinerary = [
     day: "Day 1", title: "コロンボ到着・市内観光", area: "コロンボ",
     spots: ["ガンガラーマ寺院", "コロンボ国立博物館", "ゴール・フェイスグリーン"],
     body: "スリランカの玄関口、バンダラナイケ国際空港に到着後、専用車でコロンボへ。ガンガラーマ寺院では色鮮やかな仏像と象に出会え、国立博物館ではスリランカの歴史を一望できます。夜は海沿いのゴール・フェイスグリーンで夕涼みを楽しみましょう。",
-    link: "/plan",
-    linkLabel: "コロンボ発着プランを見る",
+    link: "/pricing",
+    linkLabel: "料金・見積もりを見る",
   },
   {
     day: "Day 2", title: "コロンボ → アヌラーダプラ → シーギリヤ泊", area: "文化三角地帯",
@@ -98,8 +98,8 @@ const itinerary = [
     day: "Day 10", title: "コロンボへ移動・帰国", area: "コロンボ",
     spots: ["コロンボ市内ショッピング", "空港送迎"],
     body: "最終日は専用車でコロンボへ。出発前にコロンボのショッピングモールやスパイスマーケットでお土産を購入しましょう。SLTCSの専用車が空港まで確実にお送りします。",
-    link: "/plan",
-    linkLabel: "帰国プランを確認する",
+    link: "/pricing",
+    linkLabel: "料金・見積もりを確認する",
   },
 ];
 
@@ -314,8 +314,8 @@ export default function Course10DaysArticle() {
           >
             無料で相談する
           </a>
-          <a href="/plan" className="inline-block border border-white/30 text-white font-medium px-8 py-3 rounded-full text-sm hover:bg-white/10 transition-colors">
-            プランを見る
+          <a href="/pricing" className="inline-block border border-white/30 text-white font-medium px-8 py-3 rounded-full text-sm hover:bg-white/10 transition-colors">
+            料金を見る
           </a>
         </div>
       </div>
@@ -345,10 +345,10 @@ export default function Course10DaysArticle() {
             </div>
             <ChevronRight size={16} className="text-gray-400 flex-shrink-0" />
           </a>
-          <a href="/plan" className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group border border-gray-100">
+          <a href="/vehicles" className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group border border-gray-100">
             <div className="flex-1">
-              <p className="text-xs text-[oklch(0.35_0.12_155)] font-semibold mb-1">プラン</p>
-              <p className="text-sm font-medium text-gray-800 group-hover:text-[oklch(0.35_0.12_155)] transition-colors leading-snug">SLTCSのタクシーチャータープランを見る</p>
+              <p className="text-xs text-[oklch(0.35_0.12_155)] font-semibold mb-1">車両</p>
+              <p className="text-sm font-medium text-gray-800 group-hover:text-[oklch(0.35_0.12_155)] transition-colors leading-snug">SLTCSのチャーター車両を見る</p>
             </div>
             <ChevronRight size={16} className="text-gray-400 flex-shrink-0" />
           </a>

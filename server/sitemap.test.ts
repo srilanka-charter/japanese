@@ -20,7 +20,7 @@ describe("sitemap.xml", () => {
 
     expect(xml).toMatch(/^<\?xml version="1\.0" encoding="UTF-8"\?>\n<urlset xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">/);
     expect(xml.trimEnd()).toMatch(/<\/urlset>$/);
-    expect(paths).toHaveLength(40);
+    expect(paths).toHaveLength(39);
     expect(new Set(paths).size).toBe(paths.length);
 
     for (const pagePath of paths) {
@@ -31,7 +31,7 @@ describe("sitemap.xml", () => {
 
   it("does not include noindex or non-existent URLs", () => {
     const paths = getSitemapPaths();
-    const excludedPaths = ["/thanks", "/another", "/privacy", "/terms", "/404", "/contact", "/tea-train"];
+    const excludedPaths = ["/thanks", "/another", "/privacy", "/terms", "/404", "/contact", "/tea-train", "/plan"];
 
     for (const pagePath of excludedPaths) {
       expect(paths).not.toContain(pagePath);
@@ -44,10 +44,10 @@ describe("sitemap.xml", () => {
       ([, date]) => date,
     );
 
-    expect(lastmodValues).toHaveLength(40);
+    expect(lastmodValues).toHaveLength(39);
     expect(lastmodValues.every((date) => !Number.isNaN(Date.parse(`${date}T00:00:00Z`)))).toBe(true);
     expect(xml).toContain("<loc>https://sltcs.srilanka-charter.com/</loc><lastmod>2026-09-01</lastmod>");
-    expect(xml).toContain("<loc>https://sltcs.srilanka-charter.com/plan</loc><lastmod>2026-09-01</lastmod>");
+    expect(getCanonicalRedirect("/plan")).toBe("/pricing");
     expect(xml).toContain("<loc>https://sltcs.srilanka-charter.com/sightseeing-guide/tea-train-guide</loc><lastmod>2026-08-31</lastmod>");
   });
 });

@@ -2,7 +2,6 @@ import { blogArticles, blogCategories } from "../../client/src/data/blogData";
 
 const staticRoutes = new Set([
   "/",
-  "/plan",
   "/vehicles",
   "/course/3-4days",
   "/course/4-5days",
@@ -25,6 +24,10 @@ const staticRoutes = new Set([
   "/taxi-charter-basics",
 ]);
 
+const staticRedirects = new Map<string, string>([
+  ["/plan", "/pricing"],
+]);
+
 export function normalizeSeoPath(pathname: string): string {
   if (!pathname || pathname === "/") return "/";
   const normalized = pathname.replace(/\/+$/, "");
@@ -33,6 +36,9 @@ export function normalizeSeoPath(pathname: string): string {
 
 export function getCanonicalRedirect(pathname: string): string | null {
   const path = normalizeSeoPath(pathname);
+  const staticRedirect = staticRedirects.get(path);
+  if (staticRedirect) return staticRedirect;
+
   const article = blogArticles.find(
     candidate => path === `/${candidate.categorySlug}/${candidate.slug}`
   );

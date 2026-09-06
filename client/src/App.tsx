@@ -6,7 +6,6 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { SeoCaptureProvider, type SEOOptions } from "./hooks/useSEO";
 import Home from "./pages/Home";
-import PlanPage from "./pages/PlanPage";
 import VehiclesPage from "./pages/VehiclesPage";
 import Course45Page from "./pages/Course45Page";
 import Course56Page from "./pages/Course56Page";
@@ -34,7 +33,6 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/plan" component={PlanPage} />
       <Route path="/vehicles" component={VehiclesPage} />
       <Route path="/course/3-4days" component={Course45Page} />
       <Route path="/course/4-5days" component={Course56Page} />

@@ -245,7 +245,7 @@ export default function FamilyTravelArticle() {
           以下は、子連れ家族に人気の5泊6日モデルコースです。移動距離と観光のバランスを考慮し、無理のない旅程を組んでいます。
         </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
-          詳細なルートは<a href="/plan" className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">プランページ</a>でもご確認いただけます。
+          詳細なルートは<a href="/course/5-6days" className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">5泊6日モデルコース</a>でもご確認いただけます。
         </p>
 
         {/* モデルコース表 */}
@@ -402,10 +402,10 @@ export default function FamilyTravelArticle() {
             無料で相談する
           </a>
           <a
-            href="/plan"
+            href="/pricing"
             className="inline-block border border-white/30 text-white font-medium px-8 py-3 rounded-full text-sm hover:bg-white/10 transition-colors"
           >
-            プランを見る
+            料金を見る
           </a>
         </div>
       </div>
@@ -448,13 +448,13 @@ export default function FamilyTravelArticle() {
             <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
           </a>
           <a
-            href="/plan"
+            href="/vehicles"
             className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group border border-gray-100"
           >
             <div className="flex-1 min-w-0">
-              <p className="text-xs text-[oklch(0.35_0.12_155)] font-semibold mb-1">プラン</p>
+              <p className="text-xs text-[oklch(0.35_0.12_155)] font-semibold mb-1">車両</p>
               <p className="text-sm font-medium text-gray-800 group-hover:text-[oklch(0.35_0.12_155)] transition-colors leading-snug">
-                SLTCSのタクシーチャータープランを見る
+                SLTCSのチャーター車両を見る
               </p>
             </div>
             <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>

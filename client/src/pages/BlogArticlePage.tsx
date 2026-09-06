@@ -365,10 +365,10 @@ function WhyTaxiCharterArticle() {
             無料で相談する
           </a>
           <a
-            href="/plan"
+            href="/pricing"
             className="inline-block border border-white/30 text-white font-medium px-8 py-3 rounded-full text-sm hover:bg-white/10 transition-colors"
           >
-            プランを見る
+            料金を見る
           </a>
         </div>
       </div>
@@ -397,13 +397,13 @@ function WhyTaxiCharterArticle() {
         <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-4">関連記事</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <a
-            href="/plan"
+            href="/vehicles"
             className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group border border-gray-100"
           >
             <div className="flex-1">
-              <p className="text-xs text-[oklch(0.35_0.12_155)] font-semibold mb-1">プラン</p>
+              <p className="text-xs text-[oklch(0.35_0.12_155)] font-semibold mb-1">車両</p>
               <p className="text-sm font-medium text-gray-800 group-hover:text-[oklch(0.35_0.12_155)] transition-colors leading-snug">
-                SLTCSのタクシーチャータープランを見る
+                SLTCSのチャーター車両を見る
               </p>
             </div>
             <ChevronRight size={16} className="text-gray-400 flex-shrink-0" />

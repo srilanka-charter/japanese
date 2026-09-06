@@ -298,10 +298,10 @@ export default function TravelPlanningTopPage() {
               <ArrowRight size={16} />
             </a>
             <Link
-              href="/plan"
+              href="/pricing"
               className="inline-flex items-center justify-center gap-2 border-2 border-[oklch(0.35_0.12_155)] text-[oklch(0.35_0.12_155)] font-bold px-6 py-3 rounded-xl hover:bg-[oklch(0.97_0.01_155)] transition-colors text-sm"
             >
-              プランを見る
+              料金を見る
             </Link>
           </div>
         </div>
