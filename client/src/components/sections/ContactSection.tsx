@@ -320,8 +320,8 @@ export default function ContactSection() {
                     </svg>
                   ),
                   num: "04",
-                  title: "観光地の深い知識と案内",
-                  desc: "Chauffeur Guide Driverは歴史・文化・グルメに精通したガイドでもあります。教科書には載っていない現地の魅力を余すことなく伝えてくれます。"
+                  title: "最安価格で提供",
+                  desc: "移動に特化することで日本人が運営するサービスの中で最安値での提供が可能に。予算に制約がある方でも手軽に利用できます。"
                 },
                 {
                   svgIcon: (
