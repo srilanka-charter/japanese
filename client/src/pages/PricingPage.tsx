@@ -1,58 +1,24 @@
 import { useState } from "react";
-import { Check, AlertTriangle, MessageCircle } from "lucide-react";
+import { AlertTriangle, MessageCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
-import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
 
 const PRICING_TITLE = "スリランカタクシーチャーターサービスの料金(価格)とは？";
-const PRICING_DESCRIPTION = "スリランカタクシーチャーターサービス（SLTCS）の料金・価格一覧。Bronze・Silver・Goldの3プラン、Sedan・Van・Big Van対応。日本語対応の専用車カーチャーターを業界最安水準でご提供。";
+const PRICING_DESCRIPTION = "スリランカタクシーチャーターサービス（SLTCS）の料金・価格一覧。Sedan・Van・Big Vanの車種別に、スリランカ周遊の専用車チャーター料金をご案内します。ご旅程に合わせたお見積もりも日本語で承ります。";
 
-const plans = [
-  {
-    id: "bronze",
-    name: "ブロンズプラン",
-    badge: "BRONZE",
-    desc: "移動中心のプランで価格重視の方におすすめのプランです",
-    features: ["研修中ドライバー手配", "送迎・移動サービス", "英語対応の現地統括", "エアコン完備のクリーンな車両"],
-    accentColor: "#c8a96e",   // ブロンズ（明るいゴールド）
-    popular: false,
-    pricing: {
-      sedan: [45000, 50000, 59000, 72000, 85000, 99000, 112000],
-      van: [52000, 59000, 71000, 87000, 103000, 120000, 136000],
-      bigvan: [60000, 65000, 79000, 97000, 115000, 134000, 152000],
-    },
+const bronzePlan = {
+  name: "ブロンズプラン",
+  badge: "BRONZE",
+  desc: "移動中心で、価格を重視する方におすすめのプランです。",
+  accentColor: "#c8a96e",
+  pricing: {
+    sedan: [45000, 50000, 59000, 72000, 85000, 99000, 112000],
+    van: [52000, 59000, 71000, 87000, 103000, 120000, 136000],
+    bigvan: [60000, 65000, 79000, 97000, 115000, 134000, 152000],
   },
-  {
-    id: "silver",
-    name: "シルバープラン",
-    badge: "SILVER",
-    desc: "観光地への同行と説明が入っているプランでリーズナブルな価格で深くスリランカを楽しみたい方におすすめのプランです。SLTCSの看板プランです。",
-    features: ["政府公認 Tourist Driver以上を手配", "観光地での同行・解説", "日本語対応の現地統括", "サファリ・アクティビティ手配", "追加料金なしのガイド手配"],
-    accentColor: "#6ee2b0",   // シルバー（明るいミント）
-    popular: true,
-    pricing: {
-      sedan: [53000, 62000, 75000, 92000, 109000, 127000, 144000],
-      van: [64000, 74000, 91000, 112000, 133000, 155000, 176000],
-      bigvan: [67000, 77000, 95000, 117000, 139000, 162000, 184000],
-    },
-  },
-  {
-    id: "gold",
-    name: "ゴールドプラン",
-    badge: "GOLD",
-    desc: "最も上位の観光ドライバー資格であるChauffeur Guide Driverの中でも実績があり顧客からの評価が高いドライバーが手配されるラグジュアリープランです。",
-    accentColor: "#f5d06a",   // ゴールド（明るい黄金）
-    popular: false,
-    features: ["高評価 Chauffeur Guide Driver 確約", "全行程での同行・解説", "日本語対応の現地統括", "日本人スタッフによるサポート", "二重のサポート体制"],
-    pricing: {
-      sedan: [69000, 74000, 91000, 112000, 133000, 155000, 176000],
-      van: [78000, 83000, 103000, 127000, 151000, 176000, 200000],
-      bigvan: [84000, 89000, 111000, 137000, 163000, 190000, 216000],
-    },
-  },
-];
+};
 
 const days = [2, 3, 4, 5, 6, 7, 8];
 
@@ -62,7 +28,7 @@ const vehicleTypes = [
   { key: "bigvan", label: "Big Van（6〜9人）" },
 ];
 
-function PlanPricingTable({ plan }: { plan: typeof plans[0] }) {
+function PlanPricingTable({ plan }: { plan: typeof bronzePlan }) {
   const [activeVehicle, setActiveVehicle] = useState<"sedan" | "van" | "bigvan">("sedan");
 
   return (
@@ -139,40 +105,6 @@ export default function PricingPage() {
               "description": "2日間｜2泊3日から対応。Sedan（｜3名）・Van（3｜6名）・Big Van（6｜9名）の3車種。"
             },
             "eligibleQuantity": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 3, "unitText": "名" },
-            "availability": "https://schema.org/InStock",
-            "url": "https://sltcs.srilanka-charter.com/pricing"
-          },
-          {
-            "@type": "Offer",
-            "name": "シルバープラン（2日間／Sedan）",
-            "priceCurrency": "JPY",
-            "price": "53000",
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "price": "53000",
-              "priceCurrency": "JPY",
-              "minPrice": "53000",
-              "maxPrice": "184000",
-              "description": "政府公認Tourist Driver以上を手配。観光地での同行・解説付き。SLTCSの看板プラン。"
-            },
-            "eligibleQuantity": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 6, "unitText": "名" },
-            "availability": "https://schema.org/InStock",
-            "url": "https://sltcs.srilanka-charter.com/pricing"
-          },
-          {
-            "@type": "Offer",
-            "name": "ゴールドプラン（2日間／Sedan）",
-            "priceCurrency": "JPY",
-            "price": "69000",
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "price": "69000",
-              "priceCurrency": "JPY",
-              "minPrice": "69000",
-              "maxPrice": "216000",
-              "description": "高評価Chauffeur Guide Driver確約。全行程同行・解説、日本語対応の現地統括。"
-            },
-            "eligibleQuantity": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 9, "unitText": "名" },
             "availability": "https://schema.org/InStock",
             "url": "https://sltcs.srilanka-charter.com/pricing"
           },
@@ -294,89 +226,23 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Plan cards + pricing tables */}
+      {/* Bronze pricing table */}
       <section className="py-16 bg-[#0a1a12]">
         <div className="container max-w-5xl">
-
-          {/* Plan overview intro */}
-          <div className="mb-10 text-center">
-            <p className="text-white/75 text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
-              SLTCSではお客様の趣向に合わせて3つのプランをご用意しております。価格の説明に移る前に、まずは各プランの早見表をご確認ください。
-            </p>
-          </div>
-
-          {/* Plan overview cards */}
-          <div className="grid md:grid-cols-3 gap-6 mb-16">
-            {plans.map((plan) => (
-              <div
-                key={plan.id}
-                className={`relative rounded-2xl border-2 p-6 flex flex-col bg-[#0d1f16] ${
-                  plan.popular
-                    ? "shadow-2xl scale-105"
-                    : "border-white/10"
-                }`}
-                style={plan.popular ? { borderColor: plan.accentColor, boxShadow: `0 0 40px ${plan.accentColor}20` } : {}}
+          <div className="rounded-2xl border border-white/10 bg-[#0d1f16] p-6 lg:p-8">
+            <div className="flex items-center gap-3 mb-2 flex-wrap">
+              <span
+                className="inline-block text-xs font-bold px-3 py-1 rounded-full text-[#0a1a12]"
+                style={{ backgroundColor: bronzePlan.accentColor }}
               >
-                {plan.popular && (
-                  <div
-                    className="absolute -top-4 left-1/2 -translate-x-1/2 text-[#0a1a12] text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap"
-                    style={{ backgroundColor: plan.accentColor }}
-                  >
-                    人気 No.1
-                  </div>
-                )}
-                <div className="mb-4">
-                  <span
-                    className="inline-block text-xs font-bold px-3 py-1 rounded-full mb-3 text-[#0a1a12]"
-                    style={{ backgroundColor: plan.accentColor }}
-                  >
-                    {plan.badge}
-                  </span>
-                  <h3 className="text-xl font-black text-white" style={{ fontFamily: "'Noto Serif JP', serif" }}>
-                    {plan.name}
-                  </h3>
-                  <p className="text-xs text-white/50 mt-1 leading-relaxed">{plan.desc}</p>
-                </div>
-                <ul className="space-y-2 flex-1 mb-6">
-                  {plan.features.map((f, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-white/75">
-                      <Check size={14} className="mt-0.5 flex-shrink-0" style={{ color: plan.accentColor }} />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-
-              </div>
-            ))}
-          </div>
-
-          {/* Pricing tables per plan */}
-          <div className="space-y-12">
-            {plans.map((plan) => (
-              <div key={plan.id} className="rounded-2xl border border-white/10 bg-[#0d1f16] p-6 lg:p-8">
-                <div className="flex items-center gap-3 mb-2 flex-wrap">
-                  <span
-                    className="inline-block text-xs font-bold px-3 py-1 rounded-full text-[#0a1a12]"
-                    style={{ backgroundColor: plan.accentColor }}
-                  >
-                    {plan.badge}
-                  </span>
-                  <h3 className="text-xl font-black text-white" style={{ fontFamily: "'Noto Serif JP', serif" }}>
-                    {plan.name}
-                  </h3>
-                  {plan.popular && (
-                    <span
-                      className="text-xs font-bold px-3 py-1 rounded-full text-[#0a1a12]"
-                      style={{ backgroundColor: plan.accentColor }}
-                    >
-                      人気 No.1
-                    </span>
-                  )}
-                </div>
-                <p className="text-sm text-white/55 mb-4 leading-relaxed">{plan.desc}</p>
-                <PlanPricingTable plan={plan} />
-              </div>
-            ))}
+                {bronzePlan.badge}
+              </span>
+              <h2 className="text-xl font-black text-white" style={{ fontFamily: "'Noto Serif JP', serif" }}>
+                {bronzePlan.name}
+              </h2>
+            </div>
+            <p className="text-sm text-white/55 mb-4 leading-relaxed">{bronzePlan.desc}</p>
+            <PlanPricingTable plan={bronzePlan} />
           </div>
 
           {/* CTA */}
