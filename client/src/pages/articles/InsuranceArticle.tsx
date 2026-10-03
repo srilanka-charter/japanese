@@ -44,9 +44,9 @@ function SummaryBox({ children }: { children: React.ReactNode }) {
 
 export default function InsuranceArticle() {
   useSEO({
-    title: "スリランカ旅行に海外旅行保険は欠かせない？加入すべき理由と賢い選び方とは？ | SLTCS",
+    title: "スリランカ旅行に海外旅行保険は欠かせない？加入すべき理由と賢い選び方とは？ | SriNowa",
     description:
-      "スリランカ旅行で海外旅行保険が必要な理由を解説。クレジットカード付帯保険の活用法から有料保険の選び方、推奨補償額まで、SLTCSが旅行者向けにわかりやすくまとめました。",
+      "スリランカ旅行で海外旅行保険が必要な理由を解説。クレジットカード付帯保険の活用法から有料保険の選び方、推奨補償額まで、SriNowaが旅行者向けにわかりやすくまとめました。",
     path: "/blog/insurance",
     noindex: false,
     jsonLdList: [
@@ -57,7 +57,7 @@ export default function InsuranceArticle() {
           "スリランカ旅行に海外旅行保険は欠かせない？加入すべき理由と賢い選び方とは？",
         description:
           "スリランカ旅行で海外旅行保険が必要な理由を解説。クレジットカード付帯保険の活用法から有料保険の選び方、推奨補償額まで。",
-        author: { "@type": "Organization", name: "SLTCS" },
+        author: { "@type": "Organization", name: "SriNowa" },
         datePublished: "2026-04-07",
         inLanguage: "ja",
       },
@@ -114,7 +114,7 @@ export default function InsuranceArticle() {
           これは日本の感覚とは異なるかもしれませんが、アメリカをはじめ海外では珍しくない状況です。
         </p>
         <InfoBox>
-          こうした事情を踏まえ、<strong>スリランカタクシーチャーターサービス（SLTCS）</strong>では、ご利用前に海外旅行保険（クレジットカードに付帯するものを含む）への加入をお客様にお願いしています。
+          こうした事情を踏まえ、<strong>スリノワ（SriNowa）</strong>では、ご利用前に海外旅行保険（クレジットカードに付帯するものを含む）への加入をお客様にお願いしています。
         </InfoBox>
       </section>
 
@@ -309,7 +309,7 @@ export default function InsuranceArticle() {
           </ul>
         </SummaryBox>
         <p className="text-base leading-[1.9] text-gray-700 mt-6">
-          <strong className="text-gray-900">スリランカタクシーチャーターサービス（SLTCS）</strong>では、お客様が安心して旅を楽しめるよう、渡航前の保険加入を強くおすすめしています。
+          <strong className="text-gray-900">スリノワ（SriNowa）</strong>では、お客様が安心して旅を楽しめるよう、渡航前の保険加入を強くおすすめしています。
           しっかりと準備を整えたうえで、素晴らしいスリランカの旅をお楽しみください。
         </p>
       </section>

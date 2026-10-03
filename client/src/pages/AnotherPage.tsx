@@ -6,7 +6,7 @@ import { useSEO } from "@/hooks/useSEO";
 // チャーター日数が1〜2日の場合にリダイレクトされるサンクスページ。
 export default function AnotherPage() {
   useSEO({
-    title: "お申し込みありがとうございます｜SLTCS スリランカタクシーチャーターサービス",
+    title: "お申し込みありがとうございます｜SriNowa スリノワ",
     description: "お申し込みを受け付けました。担当者より近日中にご連絡いたします。",
     path: "/another",
     noindex: true,
@@ -64,9 +64,9 @@ export default function AnotherPage() {
         </div>
       </div>
 
-      {/* SLTCS branding */}
+      {/* SriNowa branding */}
       <p className="mt-8 text-sm text-[oklch(0.6_0.02_155)]">
-        SLTCS — Sri Lanka Private Charter Service
+        SriNowa — Sri Lanka Private Charter Service
       </p>
     </div>
   );

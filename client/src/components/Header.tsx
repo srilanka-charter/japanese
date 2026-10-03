@@ -81,13 +81,13 @@ export default function Header() {
                 className="text-white text-base sm:text-lg tracking-wider leading-tight"
                 style={{ fontFamily: "'Shippori Mincho', serif", fontWeight: 700 }}
               >
-                スリランカタクシーチャーターサービス
+                スリノワ
               </span>
               <span
                 className="text-[oklch(0.75_0.12_75)] text-[11px] tracking-[0.25em]"
                 style={{ fontFamily: "'Shippori Mincho', serif", fontWeight: 500 }}
               >
-                SLTCS
+                SriNowa
               </span>
             </div>
           </Link>

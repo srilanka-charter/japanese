@@ -50,9 +50,9 @@ function StepCard({
 
 export default function EsimArticle() {
   useSEO({
-    title: "スリランカ到着後すぐにネットを使うには？空港でのSIM購入＆eSIM完全ガイド | SLTCS",
+    title: "スリランカ到着後すぐにネットを使うには？空港でのSIM購入＆eSIM完全ガイド | SriNowa",
     description:
-      "スリランカ・バンダラナイケ空港でのDialog SIM購入手順とeSIMの事前設定方法を徹底解説。料金比較・物理SIM vs eSIMの選び方まで、SLTCSが旅行者向けにまとめました。",
+      "スリランカ・バンダラナイケ空港でのDialog SIM購入手順とeSIMの事前設定方法を徹底解説。料金比較・物理SIM vs eSIMの選び方まで、SriNowaが旅行者向けにまとめました。",
     path: "/travel-planning/esim",
     noindex: false,
     jsonLdList: [
@@ -63,7 +63,7 @@ export default function EsimArticle() {
           "スリランカ到着後すぐにネットを使うには？空港でのSIM購入＆eSIM完全ガイド",
         description:
           "スリランカ・バンダラナイケ空港でのDialog SIM購入手順とeSIMの事前設定方法を徹底解説。",
-        author: { "@type": "Organization", name: "SLTCS" },
+        author: { "@type": "Organization", name: "SriNowa" },
         datePublished: "2026-04-07",
         inLanguage: "ja",
       },
@@ -309,10 +309,10 @@ export default function EsimArticle() {
         <H2 id="section5">SIM購入で困ったら？現地ドライバーのサポートを活用</H2>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
           長時間のフライト後、慣れない空港で通信カウンターを探すのは意外と体力を消耗します。
-          もし英語でのやり取りに不安がある場合や、カウンターの場所がわからない場合は、<strong className="text-gray-900">スリランカタクシーチャーターサービス(SLTCS)のドライバーに頼る</strong>という方法もあります。
+          もし英語でのやり取りに不安がある場合や、カウンターの場所がわからない場合は、<strong className="text-gray-900">スリノワ(SriNowa)のドライバーに頼る</strong>という方法もあります。
         </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
-          SLTCSのドライバーは、到着ロビーを出てすぐの「<strong className="text-gray-900">Paging Area</strong>」と呼ばれるエリアで待機しています。
+          SriNowaのドライバーは、到着ロビーを出てすぐの「<strong className="text-gray-900">Paging Area</strong>」と呼ばれるエリアで待機しています。
           合流後、一緒にSIMカウンターまで同行してもらえるほか、プラン選びの通訳サポートもしてくれるので、初めてのスリランカでも安心です。
         </p>
       </section>

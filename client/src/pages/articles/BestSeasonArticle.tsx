@@ -40,7 +40,7 @@ export default function BestSeasonArticle() {
 
       <p className="text-base sm:text-lg leading-[1.9] text-gray-700 mb-10">
         この記事では、スリランカの気候の仕組みから月別の天気・エリア別のベストシーズン・旅行スタイル別のおすすめ時期まで、
-        <strong className="text-gray-900">SLTCSの専用車チャーターと組み合わせた最適な旅行計画</strong>をわかりやすく解説します。
+        <strong className="text-gray-900">SriNowaの専用車チャーターと組み合わせた最適な旅行計画</strong>をわかりやすく解説します。
       </p>
 
       {/* ── 目次 ── */}
@@ -447,7 +447,7 @@ export default function BestSeasonArticle() {
             スリランカ最大の正月祭であるシンハラ・タミル新年の前後は、多くの地元の人が帰省するため、
             バス・列車が非常に混雑します。また、商店や観光施設が休業することも多いです。
             専用車チャーターなら公共交通の混雑を避けられますが、ドライバーも祝日料金が発生する場合があります。
-            事前にSLTCSへご確認ください。
+            事前にSriNowaへご確認ください。
           </p>
         </div>
 
@@ -498,7 +498,7 @@ export default function BestSeasonArticle() {
         </p>
 
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
-          SLTCSでは、旅行時期・希望の観光地・日数に合わせて最適なルートをご提案します。
+          SriNowaでは、旅行時期・希望の観光地・日数に合わせて最適なルートをご提案します。
           「この時期に行くなら、どこを回るのがベストか」という相談も無料で承っています。
         </p>
 
@@ -597,7 +597,7 @@ export default function BestSeasonArticle() {
 
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
           重要なのは、旅行時期に合わせたルート設計です。
-          SLTCSでは、旅行時期・希望の観光地・日数をお伝えいただければ、
+          SriNowaでは、旅行時期・希望の観光地・日数をお伝えいただければ、
           シーズンに合わせた最適なモデルコースとお見積もりを無料でご提案します。
         </p>
 

@@ -26,7 +26,7 @@ const highlights = [
   {
     name: "エッラ〜ヌワラエリヤ 高原列車",
     img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/nuwara_eliya_train_ella-Y3vannLMwdJL9wmfVcm2zh.webp",
-    desc: "スリランカ屈指の絶景鉄道路線で、ナインアーチブリッジを渡る青い列車の光景は世界中の旅行者を魅了しています。エッラからナヌオヤ（ヌワラエリヤの最寄り駅）まで約3時間の車窓には、茶畑・滝・霧の山岳風景が続きます。1等観光車両（Observation Car）の窓から身を乗り出して撮影するのが定番です。SLTCSのタクシーチャーターを利用すれば、列車の出発駅まで送迎し、到着後の観光もスムーズに手配できます。",
+    desc: "スリランカ屈指の絶景鉄道路線で、ナインアーチブリッジを渡る青い列車の光景は世界中の旅行者を魅了しています。エッラからナヌオヤ（ヌワラエリヤの最寄り駅）まで約3時間の車窓には、茶畑・滝・霧の山岳風景が続きます。1等観光車両（Observation Car）の窓から身を乗り出して撮影するのが定番です。SriNowaのタクシーチャーターを利用すれば、列車の出発駅まで送迎し、到着後の観光もスムーズに手配できます。",
     time: "所要時間：約3〜4時間（エッラ〜ナヌオヤ）",
     fee: "列車料金：1等約USD 10〜15",
   },
@@ -92,7 +92,7 @@ const hotels = [
 const faqs = [
   {
     q: "ヌワラエリヤへの行き方は？コロンボからどのくらいかかりますか？",
-    a: "コロンボからヌワラエリヤまでは約180km、車で約5〜6時間です。公共バスや列車（キャンディ経由）でも行けますが、荷物が多い場合や時間を有効活用したい場合はタクシーチャーターが最も快適です。SLTCSのタクシーチャーターなら、コロンボのホテルから直接ヌワラエリヤまで送迎します。途中ランボダ滝などに立ち寄ることも可能です。"
+    a: "コロンボからヌワラエリヤまでは約180km、車で約5〜6時間です。公共バスや列車（キャンディ経由）でも行けますが、荷物が多い場合や時間を有効活用したい場合はタクシーチャーターが最も快適です。SriNowaのタクシーチャーターなら、コロンボのホテルから直接ヌワラエリヤまで送迎します。途中ランボダ滝などに立ち寄ることも可能です。"
   },
   {
     q: "ヌワラエリヤの気候・服装は？",
@@ -100,15 +100,15 @@ const faqs = [
   },
   {
     q: "ホートンプレインズ国立公園への行き方は？",
-    a: "ホートンプレインズ国立公園はヌワラエリヤ市街から約32km、車で約1時間です。公共交通機関のアクセスが不便なため、タクシーチャーターの利用が一般的です。SLTCSのタクシーチャーターなら、ヌワラエリヤのホテルからホートンプレインズまで送迎し、トレッキング中は公園入口で待機します。早朝出発（6時頃）が霧が少なく、ワールズエンドの絶景を楽しめるためおすすめです。"
+    a: "ホートンプレインズ国立公園はヌワラエリヤ市街から約32km、車で約1時間です。公共交通機関のアクセスが不便なため、タクシーチャーターの利用が一般的です。SriNowaのタクシーチャーターなら、ヌワラエリヤのホテルからホートンプレインズまで送迎し、トレッキング中は公園入口で待機します。早朝出発（6時頃）が霧が少なく、ワールズエンドの絶景を楽しめるためおすすめです。"
   },
   {
     q: "紅茶工場見学はどこがおすすめですか？",
-    a: "ヌワラエリヤ周辺には複数の紅茶工場があり、ペドロ茶園（Pedro Tea Estate）とマッケウッズ茶園（Mackwoods Labookellie）が特に観光客に人気です。どちらも無料または低料金で工場見学と試飲ができます。SLTCSのシルバープラン以上では、ドライバーが各茶園の特徴や製茶工程を詳しく解説します。日本語ドライバーを選択していれば日本語での説明を受けることができます。"
+    a: "ヌワラエリヤ周辺には複数の紅茶工場があり、ペドロ茶園（Pedro Tea Estate）とマッケウッズ茶園（Mackwoods Labookellie）が特に観光客に人気です。どちらも無料または低料金で工場見学と試飲ができます。SriNowaのシルバープラン以上では、ドライバーが各茶園の特徴や製茶工程を詳しく解説します。日本語ドライバーを選択していれば日本語での説明を受けることができます。"
   },
   {
     q: "ヌワラエリヤからエッラへの移動方法は？",
-    a: "ヌワラエリヤからエッラへは、高原列車（ナヌオヤ駅からエッラ駅まで約3時間）が最も人気のある移動手段です。世界で最も美しい鉄道路線の一つとして知られており、ナインアーチブリッジを渡る絶景が楽しめます。SLTCSのタクシーチャーターを利用すれば、ナヌオヤ駅まで送迎し、エッラ到着後の観光もスムーズに手配できます。"
+    a: "ヌワラエリヤからエッラへは、高原列車（ナヌオヤ駅からエッラ駅まで約3時間）が最も人気のある移動手段です。世界で最も美しい鉄道路線の一つとして知られており、ナインアーチブリッジを渡る絶景が楽しめます。SriNowaのタクシーチャーターを利用すれば、ナヌオヤ駅まで送迎し、エッラ到着後の観光もスムーズに手配できます。"
   },
 ];
 
@@ -120,8 +120,8 @@ const structuredData = {
       "headline": "ヌワラエリヤ高原の観光ガイド｜紅茶畑・高原列車・ホートンプレインズへの行き方",
       "description": "スリランカの高原都市ヌワラエリヤへの行き方・見どころ・おすすめホテル・レストランを徹底解説。タクシーチャーターで快適にアクセスする方法も紹介。",
       "image": HERO_IMG,
-      "author": { "@type": "Organization", "name": "SLTCS" },
-      "publisher": { "@type": "Organization", "name": "SLTCS スリランカタクシーチャーターサービス" },
+      "author": { "@type": "Organization", "name": "SriNowa" },
+      "publisher": { "@type": "Organization", "name": "SriNowa スリノワ" },
       "datePublished": "2025-01-01",
       "dateModified": "2025-06-01",
       "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sltcs.srilanka-charter.com/nuwara-eliya" }
@@ -151,7 +151,7 @@ export default function NuwaraEliyaPage() {
   }, []);
 
   useSEO({
-    title: "ヌワラエリヤ高原の観光ガイド｜紅茶畑・高原列車・ホートンプレインズへの行き方【SLTCS】",
+    title: "ヌワラエリヤ高原の観光ガイド｜紅茶畑・高原列車・ホートンプレインズへの行き方【SriNowa】",
     description: "スリランカの高原都市ヌワラエリヤへの行き方・見どころ・おすすめホテル・レストランを徹底解説。コロンボからタクシーチャーターで快適にアクセスする方法も紹介。",
     path: "/nuwara-eliya",
     ogImage: HERO_IMG,
@@ -162,7 +162,7 @@ export default function NuwaraEliyaPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const accessRows = [
-    { method: "タクシーチャーター（SLTCS）", time: "約5〜6時間", price: "USD 80〜120", desc: "ホテルから直接送迎。途中の観光地（ランボダ滝・茶園）に自由に立ち寄り可能。荷物の多い方・グループ旅行に最適。" },
+    { method: "タクシーチャーター（SriNowa）", time: "約5〜6時間", price: "USD 80〜120", desc: "ホテルから直接送迎。途中の観光地（ランボダ滝・茶園）に自由に立ち寄り可能。荷物の多い方・グループ旅行に最適。" },
     { method: "公共バス", time: "約6〜7時間", price: "USD 2〜5", desc: "コロンボのバスターミナルから出発。乗り換えが必要な場合あり。荷物が多いと不便。" },
     { method: "列車（キャンディ経由）", time: "約6〜8時間", price: "USD 5〜15", desc: "キャンディで乗り換えてナヌオヤ駅まで。高原列車の車窓は絶景だが時間がかかる。" },
   ];
@@ -283,15 +283,15 @@ export default function NuwaraEliyaPage() {
             </div>
           </div>
 
-          {/* SLTCSタクシーチャーター */}
+          {/* SriNowaタクシーチャーター */}
           <div className="bg-gradient-to-r from-emerald-700 to-teal-800 rounded-2xl p-6 text-white mb-6">
             <div className="flex items-center gap-3 mb-3">
-              <span className="bg-amber-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full">SLTCS シルバープラン以上</span>
+              <span className="bg-amber-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full">SriNowa シルバープラン以上</span>
               <span className="text-amber-300 font-bold text-sm">特別サービス</span>
             </div>
             <h3 className="text-lg font-bold text-white mb-3">ドライバーが茶園・観光スポットに同行し、各スポットを詳しく解説します</h3>
             <p className="text-white/85 text-sm leading-relaxed mb-3">
-              SLTCSのシルバープラン以上をご利用のお客様には、担当ドライバーが茶園見学や観光スポットへの同行を含めて、ペドロ茶園の製茶工程・ホートンプレインズなど各見どころを詳しく解説するサービスをご提供しています。日本語ドライバーを選択していれば日本語での説明を受けることができます。
+              SriNowaのシルバープラン以上をご利用のお客様には、担当ドライバーが茶園見学や観光スポットへの同行を含めて、ペドロ茶園の製茶工程・ホートンプレインズなど各見どころを詳しく解説するサービスをご提供しています。日本語ドライバーを選択していれば日本語での説明を受けることができます。
             </p>
             <p className="text-white/85 text-sm leading-relaxed mb-4">
               ランボダ滝・ハクガラ植物園など移動途中の観光地への立ち寄りスケジュールの調整も柔軟に対応します。ブロンズプランはドライバーが外でお待ちします。
@@ -304,7 +304,7 @@ export default function NuwaraEliyaPage() {
           </div>
 
           <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
-            <h3 className="font-bold text-gray-800 mb-3">SLTCSタクシーチャーターの特徴</h3>
+            <h3 className="font-bold text-gray-800 mb-3">SriNowaタクシーチャーターの特徴</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex items-start gap-2">
                 <span className="text-emerald-500 mt-0.5">✓</span>

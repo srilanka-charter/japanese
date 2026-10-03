@@ -17,12 +17,12 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "スリランカのアクティビティ完全ガイド｜サファリ・アーユルヴェーダ・ビレッジツアー・ホエールウォッチング・占星術",
-  "description": "スリランカで体験できるアクティビティを徹底紹介。サファリ、アーユルヴェーダ、シーギリヤ村ビレッジツアー、エレファントライド、ホエールウォッチング、占星術まで。SLTCSプラチナプラン限定の手配も可能。",
+  "description": "スリランカで体験できるアクティビティを徹底紹介。サファリ、アーユルヴェーダ、シーギリヤ村ビレッジツアー、エレファントライド、ホエールウォッチング、占星術まで。SriNowaプラチナプラン限定の手配も可能。",
   "image": SAFARI_COMBINED_IMG,
-  "author": { "@type": "Organization", "name": "SLTCS スリランカタクシーチャーターサービス" },
+  "author": { "@type": "Organization", "name": "SriNowa スリノワ" },
   "publisher": {
     "@type": "Organization",
-    "name": "SLTCS スリランカタクシーチャーターサービス",
+    "name": "SriNowa スリノワ",
     "url": "https://sltcs.srilanka-charter.com",
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sltcs.srilanka-charter.com/activity" },
@@ -51,8 +51,8 @@ const toc = [
 
 export default function ActivityPage() {
   useSEO({
-    title: "スリランカのアクティビティ完全ガイド｜サファリ・アーユルヴェーダ・ビレッジツアー・ホエールウォッチング【SLTCS】",
-    description: "スリランカで体験できるアクティビティを徹底紹介。サファリ、アーユルヴェーダ、シーギリヤ村ビレッジツアー、エレファントライド、ホエールウォッチング、占星術まで。SLTCSプラチナプラン限定の手配も可能。",
+    title: "スリランカのアクティビティ完全ガイド｜サファリ・アーユルヴェーダ・ビレッジツアー・ホエールウォッチング【SriNowa】",
+    description: "スリランカで体験できるアクティビティを徹底紹介。サファリ、アーユルヴェーダ、シーギリヤ村ビレッジツアー、エレファントライド、ホエールウォッチング、占星術まで。SriNowaプラチナプラン限定の手配も可能。",
     path: "/activity",
     ogImage: SAFARI_COMBINED_IMG,
     jsonLdList: [articleJsonLd, breadcrumbJsonLd],
@@ -101,7 +101,7 @@ export default function ActivityPage() {
             スリランカには世界遺産以外にも、<strong>サファリ・アーユルヴェーダ・紅茶列車・ホエールウォッチング・占星術</strong>と様々なアクティビティが存在しています。詳しい紅茶列車の乗り方は<Link href="/sightseeing-guide/tea-train-guide" className="text-emerald-600 hover:underline font-medium">紅茶列車完全ガイド</Link>をご覧ください。
           </p>
           <p className="mb-3">
-            SLTCSの<strong>プラチナプランでは限定で手配ができるもの</strong>もあります。この項目ではSLTCSで手配できるアクティビティを紹介します。
+            SriNowaの<strong>プラチナプランでは限定で手配ができるもの</strong>もあります。この項目ではSriNowaで手配できるアクティビティを紹介します。
           </p>
           <p className="text-sm text-gray-500">
             気になるアクティビティに関してはお問い合わせ時にお伝えください。担当者から価格を含めてご案内させていただきます。
@@ -145,7 +145,7 @@ export default function ActivityPage() {
               サファリには<strong>専用のジープが必須</strong>です。公園内は舗装されていない赤土の道が続き、一般車では立ち入ることができません。ジープに乗り込み、ガイドとともに草原や密林を進みながら、象・水牛・孔雀・ワニなど多様な野生動物を間近で観察します。
             </p>
             <p>
-              SLTCSの<strong>プラチナプランでは、ラグジュアリージープの手配が可能</strong>です。通常のサファリジープよりも快適な車内で、SLTCSのドライバーも同乗して日本語で解説します。動物の習性や最適な観察ポイントなど、現地を知り尽くしたドライバーならではの案内で、サファリ体験がさらに充実したものになります。早朝（6〜9時）と夕方（16〜18時）が動物の活動時間帯のため、この時間帯のサファリが特におすすめです。
+              SriNowaの<strong>プラチナプランでは、ラグジュアリージープの手配が可能</strong>です。通常のサファリジープよりも快適な車内で、SriNowaのドライバーも同乗して日本語で解説します。動物の習性や最適な観察ポイントなど、現地を知り尽くしたドライバーならではの案内で、サファリ体験がさらに充実したものになります。早朝（6〜9時）と夕方（16〜18時）が動物の活動時間帯のため、この時間帯のサファリが特におすすめです。
             </p>
           </div>
 
@@ -194,10 +194,10 @@ export default function ActivityPage() {
               スリランカといえばアーユルヴェーダというほど、スリランカはアーユルヴェーダが盛んな国として世界的に知られています。アーユルヴェーダとは、インド発祥の5,000年以上の歴史を持つ伝統医学で、ハーブオイルを使ったマッサージや薬草療法によって心身のバランスを整えます。スリランカでは独自の発展を遂げており、専用のアーユルヴェーダリゾートホテルに滞在して長期的な施術を受けることもできます。
             </p>
             <p>
-              一方、シーギリヤ近郊では<strong>立ち寄り型の施設で気軽にアーユルヴェーダを体験</strong>することができます。SLTCSがご案内できる施設のひとつが、シーギリヤ近郊に位置する<strong><a href="https://athreyasigiriya.com" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline">Athreya（アスレヤ）</a></strong>です。
+              一方、シーギリヤ近郊では<strong>立ち寄り型の施設で気軽にアーユルヴェーダを体験</strong>することができます。SriNowaがご案内できる施設のひとつが、シーギリヤ近郊に位置する<strong><a href="https://athreyasigiriya.com" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline">Athreya（アスレヤ）</a></strong>です。
             </p>
             <p>
-              Athreyaは、スリランカの伝統的なアーユルヴェーダの知識と技術を受け継いだ施設です。経験豊富なセラピストによる本格的なオイルマッサージや各種トリートメントを提供しており、シーギリヤ観光の合間に立ち寄ることができます。慌ただしい観光スケジュールの中でも、心身をリセットできる貴重な時間を過ごせます。SLTCSのドライバーが施設まで送迎し、予約のサポートもいたします。
+              Athreyaは、スリランカの伝統的なアーユルヴェーダの知識と技術を受け継いだ施設です。経験豊富なセラピストによる本格的なオイルマッサージや各種トリートメントを提供しており、シーギリヤ観光の合間に立ち寄ることができます。慌ただしい観光スケジュールの中でも、心身をリセットできる貴重な時間を過ごせます。SriNowaのドライバーが施設まで送迎し、予約のサポートもいたします。
             </p>
           </div>
 
@@ -206,7 +206,7 @@ export default function ActivityPage() {
             <ul className="text-sm text-emerald-700 space-y-1">
               <li>✔ スリランカは世界有数のアーユルヴェーダの聖地</li>
               <li>✔ シーギリヤ近郊のAthreyaで立ち寄り型の施術が可能</li>
-              <li>✔ SLTCSドライバーが送迎・予約サポートを担当</li>
+              <li>✔ SriNowaドライバーが送迎・予約サポートを担当</li>
             </ul>
           </div>
 
@@ -351,10 +351,10 @@ export default function ActivityPage() {
               <strong>キャンディ〜エッラ間の紅茶列車</strong>は、「世界で最も美しい鉄道路線のひとつ」として旅行者から絶大な人気を誇ります。緑の茶畑と霧に包まれた山岳地帯を約7時間かけてゆっくり走る列車は、スリランカ旅行の中でも特別なハイライトです。
             </p>
             <p>
-              途中の<strong>Demodara駅（デモダラ駅）</strong>では、列車が自分自身の下をくぐり抜ける世界的にも珍しい「デモダラループ」と、9つのアーチが連なる<strong>ナインアーチブリッジ</strong>を見学できます。SLTCSでは列車乗車前後の専用車送迎を手配しており、チケット手配のアドバイスも可能です。
+              途中の<strong>Demodara駅（デモダラ駅）</strong>では、列車が自分自身の下をくぐり抜ける世界的にも珍しい「デモダラループ」と、9つのアーチが連なる<strong>ナインアーチブリッジ</strong>を見学できます。SriNowaでは列車乗車前後の専用車送迎を手配しており、チケット手配のアドバイスも可能です。
             </p>
             <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-800">
-              <strong>SLTCSおすすめの乗り方：</strong>キャンディ駅から乗車し、Demodara駅で下車してナインアーチブリッジを徒歩で見学。その後SLTCSドライバーがお迎えし、Ellaへ移動します。
+              <strong>SriNowaおすすめの乗り方：</strong>キャンディ駅から乗車し、Demodara駅で下車してナインアーチブリッジを徒歩で見学。その後SriNowaドライバーがお迎えし、Ellaへ移動します。
             </div>
           </div>
 
@@ -410,7 +410,7 @@ export default function ActivityPage() {
         {/* ── CTA ── */}
         <div className="bg-gradient-to-r from-emerald-700 to-teal-600 rounded-2xl p-8 text-center text-white">
           <h3 className="text-xl md:text-2xl font-bold mb-3">
-            アクティビティの手配はSLTCSにお任せください
+            アクティビティの手配はSriNowaにお任せください
           </h3>
           <p className="text-white/90 mb-6 text-sm md:text-base">
             気になるアクティビティがあれば、お問い合わせ時にお伝えください。<br />

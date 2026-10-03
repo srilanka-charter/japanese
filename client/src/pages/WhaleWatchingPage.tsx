@@ -73,15 +73,15 @@ const highlights = [
 
 export default function WhaleWatchingPage() {
   useSEO({
-    title: "スリランカのミリッサでホエールウォッチングを楽しもう！｜シロナガスクジラに出会う旅 | SLTCS",
-    description: "スリランカ・ミリッサ発のホエールウォッチングツアー。世界最大の動物・シロナガスクジラやスピナードルフィンに出会える世界有数のスポット。SLTCSの専用車チャーターで送迎付きでご案内。",
+    title: "スリランカのミリッサでホエールウォッチングを楽しもう！｜シロナガスクジラに出会う旅 | SriNowa",
+    description: "スリランカ・ミリッサ発のホエールウォッチングツアー。世界最大の動物・シロナガスクジラやスピナードルフィンに出会える世界有数のスポット。SriNowaの専用車チャーターで送迎付きでご案内。",
     path: "/whale-watching",
     ogImage: HERO_IMG,
     jsonLdList: [{
       "@context": "https://schema.org",
       "@type": "TouristAttraction",
       "name": "スリランカ ホエールウォッチング（ミリッサ）",
-      "description": "スリランカ・ミリッサ発のホエールウォッチング。シロナガスクジラやスピナードルフィンに出会える世界有数のスポット。SLTCSでは送迎付きでご案内します。",
+      "description": "スリランカ・ミリッサ発のホエールウォッチング。シロナガスクジラやスピナードルフィンに出会える世界有数のスポット。SriNowaでは送迎付きでご案内します。",
       "url": "https://sltcs.srilanka-charter.com/whale-watching",
       "image": HERO_IMG,
       "touristType": "Wildlife Tourism",
@@ -151,7 +151,7 @@ export default function WhaleWatchingPage() {
             <li className="flex items-center gap-2"><span className="font-bold">1.</span><a href="#why-mirissa" className="hover:underline">なぜミリッサが有名なのか</a></li>
             <li className="flex items-center gap-2"><span className="font-bold">2.</span><a href="#highlights" className="hover:underline">ホエールウォッチングの魅力</a></li>
             <li className="flex items-center gap-2"><span className="font-bold">3.</span><a href="#season" className="hover:underline">ベストシーズンと見られる生き物</a></li>
-            <li className="flex items-center gap-2"><span className="font-bold">4.</span><a href="#sltcs" className="hover:underline">SLTCSで手配するメリット</a></li>
+            <li className="flex items-center gap-2"><span className="font-bold">4.</span><a href="#sltcs" className="hover:underline">SriNowaで手配するメリット</a></li>
             <li className="flex items-center gap-2"><span className="font-bold">5.</span><a href="#tips" className="hover:underline">参加前に知っておきたいこと</a></li>
             <li className="flex items-center gap-2"><span className="font-bold">6.</span><a href="#contact" className="hover:underline">お問い合わせ</a></li>
           </ol>
@@ -281,23 +281,23 @@ export default function WhaleWatchingPage() {
         </div>
       </section>
 
-      {/* Section 4: SLTCSで手配するメリット */}
+      {/* Section 4: SriNowaで手配するメリット */}
       <section id="sltcs" className="py-16 px-6 md:px-16 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-            SLTCSで手配するメリット
+            SriNowaで手配するメリット
           </h2>
           <div className="w-12 h-1 bg-amber-500 mb-8 rounded-full" />
           <div className="grid md:grid-cols-2 gap-10 items-start">
             <div>
               <p className="text-gray-700 leading-relaxed mb-6">
                 ホエールウォッチングは自分で現地のボート会社に申し込むことも可能ですが、
-                SLTCSのプランに組み込むことで、移動の手間をすべて省くことができます。
+                SriNowaのプランに組み込むことで、移動の手間をすべて省くことができます。
                 前日の観光地からミリッサ港へのスムーズな移動、ツアー終了後の次の目的地への移動まで、
                 すべてチャーター車で一括対応します。
               </p>
               <div className="bg-white rounded-xl border border-amber-200 p-5 shadow-sm">
-                <h3 className="font-bold text-amber-800 mb-4">SLTCSで手配するメリット</h3>
+                <h3 className="font-bold text-amber-800 mb-4">SriNowaで手配するメリット</h3>
                 <ul className="space-y-3">
                   {sltcsMerits.map((m, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
@@ -358,7 +358,7 @@ export default function WhaleWatchingPage() {
             ホエールウォッチングはもちろん、自分で現地のボート会社に直接申し込んでいただいても大丈夫です。
           </p>
           <p className="text-blue-100 mb-8 leading-relaxed">
-            SLTCSのチャーターに組み込む場合は、ミリッサへの送迎・ボートの手配・前後の観光地への移動をまとめてご相談ください。
+            SriNowaのチャーターに組み込む場合は、ミリッサへの送迎・ボートの手配・前後の観光地への移動をまとめてご相談ください。
             お気軽にお問い合わせください。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

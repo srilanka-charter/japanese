@@ -253,7 +253,7 @@ function WhyTaxiCharterArticle() {
             {
               num: "03",
               title: "日本語で相談しながら旅ができる",
-              body: "SLTCSでは、予約から当日の移動まで日本語でのやり取りが可能です。観光地の見どころや食事のおすすめ、急な体調不良時の対応など、旅行中に生じるさまざまな場面でサポートを受けられます。英語に自信がない方や、初めてスリランカを訪れる方に特に安心です。",
+              body: "SriNowaでは、予約から当日の移動まで日本語でのやり取りが可能です。観光地の見どころや食事のおすすめ、急な体調不良時の対応など、旅行中に生じるさまざまな場面でサポートを受けられます。英語に自信がない方や、初めてスリランカを訪れる方に特に安心です。",
             },
             {
               num: "04",
@@ -263,7 +263,7 @@ function WhyTaxiCharterArticle() {
             {
               num: "05",
               title: "政府公認ドライバーによる安心の移動",
-              body: "SLTCSのドライバーはスリランカ政府観光局の認定を受けています。道路状況や観光地の最新情報を熟知しており、安全で快適な移動を提供します。スリランカでは交通事情が日本と大きく異なるため、慣れたドライバーに任せることが旅の安全につながります。",
+              body: "SriNowaのドライバーはスリランカ政府観光局の認定を受けています。道路状況や観光地の最新情報を熟知しており、安全で快適な移動を提供します。スリランカでは交通事情が日本と大きく異なるため、慣れたドライバーに任せることが旅の安全につながります。",
             },
           ].map((item) => (
             <div key={item.num} className="flex gap-5 p-5 bg-gray-50 rounded-xl border border-gray-100">
@@ -308,7 +308,7 @@ function WhyTaxiCharterArticle() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-[oklch(0.75_0.12_75)] font-bold flex-shrink-0">✓</span>
-              SLTCSでは旅行日数・人数・行き先に合わせた無料見積もりを提供
+              SriNowaでは旅行日数・人数・行き先に合わせた無料見積もりを提供
             </li>
           </ul>
         </div>
@@ -350,7 +350,7 @@ function WhyTaxiCharterArticle() {
           className="text-white text-xl sm:text-2xl font-bold mb-3"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          スリランカタクシーチャーターの相談はSLTCSへ
+          スリランカタクシーチャーターの相談はSriNowaへ
         </h3>
         <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-md mx-auto">
           日程・人数・行きたい場所をお知らせいただければ、<br className="hidden sm:block" />
@@ -388,7 +388,7 @@ function WhyTaxiCharterArticle() {
           鉄道やバスは費用が安い反面、観光地へのアクセスや日本語対応に限界があります。
         </p>
         <p className="text-base leading-[1.9] text-gray-700">
-          SLTCSでは、政府公認ドライバーによる完全プライベートチャーターを日本語でご提供しています。スリランカ旅行を検討している方は、まず無料相談からお気軽にご連絡ください。
+          SriNowaでは、政府公認ドライバーによる完全プライベートチャーターを日本語でご提供しています。スリランカ旅行を検討している方は、まず無料相談からお気軽にご連絡ください。
         </p>
       </section>
 
@@ -403,7 +403,7 @@ function WhyTaxiCharterArticle() {
             <div className="flex-1">
               <p className="text-xs text-[oklch(0.35_0.12_155)] font-semibold mb-1">車両</p>
               <p className="text-sm font-medium text-gray-800 group-hover:text-[oklch(0.35_0.12_155)] transition-colors leading-snug">
-                SLTCSのチャーター車両を見る
+                SriNowaのチャーター車両を見る
               </p>
             </div>
             <ChevronRight size={16} className="text-gray-400 flex-shrink-0" />
@@ -445,10 +445,10 @@ export default function BlogArticlePage() {
     "headline": article.title,
     "description": article.excerpt,
     "image": article.thumbnail?.startsWith('http') ? article.thumbnail : `${SITE_URL}${article.thumbnail}`,
-    "author": { "@type": "Organization", "name": "SLTCS スリランカタクシーチャーターサービス" },
+    "author": { "@type": "Organization", "name": "SriNowa スリノワ" },
     "publisher": {
       "@type": "Organization",
-      "name": "SLTCS スリランカタクシーチャーターサービス",
+      "name": "SriNowa スリノワ",
       "logo": { "@type": "ImageObject", "url": `${SITE_URL}/favicon.ico` },
       "url": SITE_URL,
     },
@@ -471,14 +471,14 @@ export default function BlogArticlePage() {
   } : null;
 
   useSEO(isValidArticleRoute && article && category ? {
-    title: `${article.title} | SLTCS`,
+    title: `${article.title} | SriNowa`,
     description: article.excerpt,
     path: `/${params.category}/${params.slug}`,
     ogImage: article.thumbnail?.startsWith('http') ? article.thumbnail : `${SITE_URL}${article.thumbnail}`,
     jsonLdList: [articleJsonLd, breadcrumbJsonLd].filter(Boolean) as object[],
     jsonLdIdPrefix: `article-${params.slug}`,
   } : {
-    title: "404 ページが見つかりません｜SLTCS スリランカタクシーチャーターサービス",
+    title: "404 ページが見つかりません｜SriNowa スリノワ",
     description: "お探しのページは見つかりませんでした。トップページに戻ってください。",
     path: "/404",
     noindex: true,

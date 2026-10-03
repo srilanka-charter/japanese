@@ -73,7 +73,7 @@ const checklistItems = [
 
 export default function TaxiCharterBasicsTopPage() {
   useSEO({
-    title: "タクシーチャーターの基礎知識まとめ｜料金・予約・マナーをわかりやすく解説 | SLTCS",
+    title: "タクシーチャーターの基礎知識まとめ｜料金・予約・マナーをわかりやすく解説 | SriNowa",
     description:
       "スリランカのタクシーチャーターを初めて利用する方向けに、移動手段の選び方・料金の内訳・予約タイミング・チップマナーなど基礎知識を一気に整理。各テーマの詳しい解説記事へすぐ進める一覧型まとめ記事です。",
     path: "/taxi-charter-basics",
@@ -89,11 +89,11 @@ export default function TaxiCharterBasicsTopPage() {
         inLanguage: "ja",
         author: {
           "@type": "Organization",
-          name: "SLTCS スリランカタクシーチャーターサービス",
+          name: "SriNowa スリノワ",
         },
         publisher: {
           "@type": "Organization",
-          name: "SLTCS スリランカタクシーチャーターサービス",
+          name: "SriNowa スリノワ",
           url: "https://sltcs.srilanka-charter.com",
         },
       },
@@ -284,7 +284,7 @@ export default function TaxiCharterBasicsTopPage() {
           <p className="text-gray-600 text-sm sm:text-base mb-6 leading-relaxed">
             基礎知識を確認したら、次は実際の旅程を検討してみましょう。
             <br className="hidden sm:block" />
-            SLTCSでは専用車チャーターで空港から観光地まで快適に移動できます。
+            SriNowaでは専用車チャーターで空港から観光地まで快適に移動できます。
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a

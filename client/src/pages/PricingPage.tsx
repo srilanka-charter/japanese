@@ -6,21 +6,21 @@ import FloatingCTA from "@/components/FloatingCTA";
 import { useSEO } from "@/hooks/useSEO";
 import CharterPricingTable from "@/components/sections/CharterPricingTable";
 
-const PRICING_TITLE = "スリランカタクシーチャーターサービスの料金(価格)とは？";
-const PRICING_DESCRIPTION = "スリランカタクシーチャーターサービス（SLTCS）の料金・価格一覧。Sedan・Van・Big Vanの車種別に、スリランカ周遊の専用車チャーター料金をご案内します。ご旅程に合わせたお見積もりも日本語で承ります。";
+const PRICING_TITLE = "スリノワの料金(価格)とは？";
+const PRICING_DESCRIPTION = "スリノワ（SriNowa）の料金・価格一覧。Sedan・Van・Big Vanの車種別に、スリランカ周遊の専用車チャーター料金をご案内します。ご旅程に合わせたお見積もりも日本語で承ります。";
 
 export default function PricingPage() {
   useSEO({
-    title: PRICING_TITLE + " | SLTCS",
+    title: PRICING_TITLE + " | SriNowa",
     description: PRICING_DESCRIPTION,
     path: "/pricing",
     jsonLdList: [
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "SLTCS スリランカタクシーチャーターサービス 料金プラン",
+        "name": "SriNowa スリノワ 料金プラン",
         "description": PRICING_DESCRIPTION,
-        "provider": { "@type": "Organization", "name": "SLTCS", "url": "https://sltcs.srilanka-charter.com" },
+        "provider": { "@type": "Organization", "name": "SriNowa", "url": "https://sltcs.srilanka-charter.com" },
         "areaServed": { "@type": "Country", "name": "Sri Lanka" },
         "url": "https://sltcs.srilanka-charter.com/pricing",
         "offers": [
@@ -85,7 +85,7 @@ export default function PricingPage() {
       <section className="py-16 bg-[#0d1f16]">
         <div className="container max-w-3xl">
           <p className="text-white/80 leading-relaxed text-base lg:text-lg">
-            スリランカタクシーチャーターサービス（SLTCS）では、厳選されたドライバーをできる限りお求めやすい価格でご利用いただくために、業界最安水準まで料金を抑えてご案内しております。現在より低い価格での提供となると、サービスの質を維持することが困難になります。
+            スリノワ（SriNowa）では、厳選されたドライバーをできる限りお求めやすい価格でご利用いただくために、業界最安水準まで料金を抑えてご案内しております。現在より低い価格での提供となると、サービスの質を維持することが困難になります。
           </p>
         </div>
       </section>
@@ -133,15 +133,15 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* SLTCS commitment */}
+      {/* SriNowa commitment */}
       <section className="py-16 bg-[#0d1f16]">
         <div className="container max-w-3xl">
           <div className="border border-[#6ee2b0]/20 bg-[#6ee2b0]/5 rounded-2xl p-6 lg:p-8">
             <h2 className="text-xl font-bold text-white mb-4" style={{ fontFamily: "'Noto Serif JP', serif" }}>
-              SLTCSの安心・透明な料金体系
+              SriNowaの安心・透明な料金体系
             </h2>
             <p className="text-white/75 text-sm leading-relaxed mb-4">
-              スリランカタクシーチャーターサービスでは、事前にいただいた旅程をもとに<strong className="text-white">定額の料金</strong>をご提示します。相談段階から日本語でやりとりができるため、安心して手続きを進めていただけます。
+              スリノワでは、事前にいただいた旅程をもとに<strong className="text-white">定額の料金</strong>をご提示します。相談段階から日本語でやりとりができるため、安心して手続きを進めていただけます。
             </p>
             <p className="text-white/75 text-sm leading-relaxed">
               まだ旅程は決まっていないが、行きたいスポットは決まっているという場合でも、最適なルートを組んでお見積もりいたします。お気軽にお問い合わせください。

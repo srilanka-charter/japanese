@@ -206,10 +206,10 @@ export default function WorriesSection() {
           </div>
         </div>
 
-        {/* ===== すべての不安をSLTCSが解決します（そのまま） ===== */}
+        {/* ===== すべての不安をSriNowaが解決します（そのまま） ===== */}
         <div className="bg-[oklch(0.35_0.12_155)]/30 border border-[oklch(0.35_0.12_155)]/40 rounded-2xl p-8 text-center">
           <h3 className="text-2xl lg:text-3xl font-black text-white mb-3" style={{ fontFamily: "'Noto Serif JP', serif" }}>
-            すべての不安を<span className="text-[oklch(0.75_0.12_75)]">SLTCSが解決します</span>
+            すべての不安を<span className="text-[oklch(0.75_0.12_75)]">SriNowaが解決します</span>
           </h3>
           <p className="text-white/70 mb-6">日本語対応の専属ドライバーが旅の<strong className="text-white">すべてをサポート</strong><br />あなたは旅を楽しむことだけに集中してください</p>
           <a

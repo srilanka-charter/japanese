@@ -8,7 +8,7 @@ export default function NotFound() {
   const [, setLocation] = useLocation();
 
   useSEO({
-    title: "404 ページが見つかりません｜SLTCS スリランカタクシーチャーターサービス",
+    title: "404 ページが見つかりません｜SriNowa スリノワ",
     description: "お探しのページは見つかりませんでした。トップページに戻ってください。",
     path: "/404",
     noindex: true,

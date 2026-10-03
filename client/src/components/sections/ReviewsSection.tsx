@@ -54,7 +54,7 @@ export default function ReviewsSection() {
           <h2 className="text-3xl lg:text-4xl font-black text-[oklch(0.15_0.01_60)] mt-2" style={{ fontFamily: "'Noto Serif JP', serif" }}>
             お客様の声
           </h2>
-          <p className="text-[oklch(0.5_0.02_155)] mt-3">実際にSLTCSをご利用いただいたお客様からのリアルな声をご紹介します</p>
+          <p className="text-[oklch(0.5_0.02_155)] mt-3">実際にSriNowaをご利用いただいたお客様からのリアルな声をご紹介します</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">

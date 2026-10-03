@@ -46,11 +46,11 @@ ${data.message || "（内容なし）"}
   `.trim();
 
   await transporter.sendMail({
-    from: `"SLTCS お問い合わせ" <${process.env.GMAIL_USER}>`,
+    from: `"SriNowa お問い合わせ" <${process.env.GMAIL_USER}>`,
     to: "srilanka.41032@gmail.com",
     bcc: "contact@gohellolanka.com",
     replyTo: data.email,
-    subject: `〈SLTCS〉お問い合わせありがとうございます：${data.name}様`,
+    subject: `〈SriNowa〉お問い合わせありがとうございます：${data.name}様`,
     text: body,
   });
 }
@@ -64,19 +64,19 @@ export async function sendCustomerAutoReply(data: ContactFormData): Promise<void
   const body = `
 ${data.name}様
 
-この度はスリランカタクシーチャーターサービスにお問い合わせいただき、誠にありがとうございます。
+この度はスリノワにお問い合わせいただき、誠にありがとうございます。
 
 弊社では、すべてのお問い合わせに対し 24時間以内に必ずご返信いたします。
 
 現在いただいた内容を確認し、担当者より改めてご案内いたしますので、今しばらくお待ちくださいませ。
 
-SLTCS カスタマーサポート
+SriNowa カスタマーサポート
   `.trim();
 
   await transporter.sendMail({
-    from: `"SLTCS カスタマーサポート" <${process.env.GMAIL_USER}>`,
+    from: `"SriNowa カスタマーサポート" <${process.env.GMAIL_USER}>`,
     to: data.email,
-    subject: "【SLTCS】お問い合わせを受け付けました",
+    subject: "【SriNowa】お問い合わせを受け付けました",
     text: body,
   });
 }

@@ -139,7 +139,7 @@ const iconMap: Record<string, React.ReactNode> = {
 
 export default function Course56Page() {
   useSEO({
-    title: "スリランカ 4泊5日 モデルコース｜タクシーチャーターで巡る王道周遊プラン | SLTCS",
+    title: "スリランカ 4泊5日 モデルコース｜タクシーチャーターで巡る王道周遊プラン | SriNowa",
     description: "スリランカ4泊5日のモデルコースをご紹介。シーギリヤ・キャンディ・エッラ・ウダワラウェ・ゴールなど主要観光地を専用タクシーチャーターで周遊。日本語対応ドライバーが旅をサポートします。",
     path: "/course/4-5days",
     jsonLdList: [{

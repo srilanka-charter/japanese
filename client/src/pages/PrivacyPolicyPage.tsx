@@ -5,8 +5,8 @@ import { useSEO } from "@/hooks/useSEO";
 
 export default function PrivacyPolicyPage() {
   useSEO({
-    title: "プライバシーポリシー｜SLTCS スリランカタクシーチャーターサービス",
-    description: "SLTCS（スリランカタクシーチャーターサービス）のプライバシーポリシー。個人情報の取り扱い、利用目的、第三者提供について説明しています。",
+    title: "プライバシーポリシー｜SriNowa スリノワ",
+    description: "SriNowa（スリノワ）のプライバシーポリシー。個人情報の取り扱い、利用目的、第三者提供について説明しています。",
     path: "/privacy",
     noindex: true,
   });
@@ -30,7 +30,7 @@ export default function PrivacyPolicyPage() {
             プライバシーポリシー
           </h1>
           <p className="text-white/50 text-sm mt-3">
-            スリランカタクシーチャーターサービス（SLTCS）<br />
+            スリノワ（SriNowa）<br />
             最終改定日：2025年7月23日
           </p>
         </div>
@@ -48,7 +48,7 @@ export default function PrivacyPolicyPage() {
                 第1条　適用範囲・定義・法的根拠
               </h2>
               <p>
-                本プライバシーポリシー（以下「本ポリシー」）は、スリランカタクシーチャーターサービス（以下「当社」）が運営する本ウェブサイトおよびお問い合わせフォームを通じて取得する個人情報の取扱いについて定めるものです。当社は、香港法人 Sri Lanka Taxi Charter Service International Limited（CR No. 78456401）として設立されており、Personal Data (Privacy) Ordinance（Cap.486、以下「PDPO」）に定める Data Protection Principles（DPP）第1条から第6条を遵守します。
+                本プライバシーポリシー（以下「本ポリシー」）は、スリノワ（以下「当社」）が運営する本ウェブサイトおよびお問い合わせフォームを通じて取得する個人情報の取扱いについて定めるものです。当社は、香港法人 Sri Lanka Taxi Charter Service International Limited（CR No. 78456401）として設立されており、Personal Data (Privacy) Ordinance（Cap.486、以下「PDPO」）に定める Data Protection Principles（DPP）第1条から第6条を遵守します。
               </p>
               <p className="mt-3">
                 「個人情報」とは、特定の個人を識別できる、またはその可能性のある情報であって、当社が実際にアクセス・処理可能な形式で保有するものをいいます。

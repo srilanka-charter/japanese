@@ -88,13 +88,13 @@ export default function BlogCategoryPage() {
   } : null;
 
   useSEO(category ? {
-    title: `${category.label} | SLTCS スリランカタクシーチャーターサービス`,
-    description: `${category.description}スリランカ旅行の専門情報サイトSLTCS。`,
+    title: `${category.label} | SriNowa スリノワ`,
+    description: `${category.description}スリランカ旅行の専門情報サイトSriNowa。`,
     path: `/${categorySlug}`,
     jsonLdList: breadcrumbJsonLd ? [breadcrumbJsonLd] : [],
     jsonLdIdPrefix: `category-${categorySlug}`,
   } : {
-    title: "404 ページが見つかりません｜SLTCS スリランカタクシーチャーターサービス",
+    title: "404 ページが見つかりません｜SriNowa スリノワ",
     description: "お探しのページは見つかりませんでした。トップページに戻ってください。",
     path: "/404",
     noindex: true,
@@ -188,7 +188,7 @@ export default function BlogCategoryPage() {
             className="text-white text-xl sm:text-2xl font-bold mb-3"
             style={{ fontFamily: "'Shippori Mincho', serif" }}
           >
-            スリランカ旅行の相談はSLTCSへ
+            スリランカ旅行の相談はSriNowaへ
           </h3>
           <p className="text-white/60 text-sm mb-6 max-w-md mx-auto leading-relaxed">
             日程・人数・行きたい場所をお知らせいただければ、専用車チャーターに適したモデルコースとお見積もりをご提案します。

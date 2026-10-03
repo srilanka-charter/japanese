@@ -22,7 +22,7 @@ export default function SigiriyaDambullaHotelsArticle() {
             ["2", "ホテルシーギリヤ — シーギリヤロックを望む絶景ホテル"],
             ["3", "アマヤレイク・ダンブッラ — 湖畔に広がる開放的なリゾート"],
             ["4", "ジェットウィング・ヴィル・ウヤナ — 湿地の自然に囲まれたヴィラリゾート"],
-            ["5", "SLTCSのタクシーチャーターでシーギリヤ・ダンブッラへ"],
+            ["5", "SriNowaのタクシーチャーターでシーギリヤ・ダンブッラへ"],
           ].map(([num, label]) => (
             <li key={num} className="flex items-start gap-2 text-gray-600">
               <span className="text-[oklch(0.35_0.12_155)] font-bold flex-shrink-0">{num}.</span>
@@ -435,19 +435,19 @@ export default function SigiriyaDambullaHotelsArticle() {
       </section>
 
       {/* ════════════════════════════════════════════════════
-          H2 ⑤ SLTCSのタクシーチャーターで
+          H2 ⑤ SriNowaのタクシーチャーターで
       ════════════════════════════════════════════════════ */}
       <section className="mb-12" id="section5">
         <h2
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          SLTCSのタクシーチャーターでシーギリヤ・ダンブッラへ
+          SriNowaのタクシーチャーターでシーギリヤ・ダンブッラへ
         </h2>
 
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
           シーギリヤ・ダンブッラ地域は、コロンボ国際空港から車で約3〜4時間。
-          <strong className="text-gray-900">SLTCSの専用車チャーター</strong>を利用すれば、
+          <strong className="text-gray-900">SriNowaの専用車チャーター</strong>を利用すれば、
           空港からホテルまで快適に移動できます。
           途中でダンブッラ石窟寺院に立ち寄るなど、
           自分たちのペースで旅程を組めるのが専用車の最大の魅力です。
@@ -455,7 +455,7 @@ export default function SigiriyaDambullaHotelsArticle() {
 
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
           また、シーギリヤ・ダンブッラ地域からキャンディやヌワラエリヤへの移動にも、
-          SLTCSの専用車チャーターが便利です。
+          SriNowaの専用車チャーターが便利です。
           日本語対応のドライバーが同行するため、
           言葉の壁を気にせず安心して旅を楽しめます。
         </p>
@@ -463,7 +463,7 @@ export default function SigiriyaDambullaHotelsArticle() {
         {/* CTA */}
         <div className="bg-[oklch(0.97_0.02_155)] border border-[oklch(0.75_0.08_155)] rounded-2xl p-6 text-center">
           <p className="text-base font-semibold text-gray-800 mb-3">
-            シーギリヤ・ダンブッラへの移動はSLTCSにお任せください
+            シーギリヤ・ダンブッラへの移動はSriNowaにお任せください
           </p>
           <p className="text-sm text-gray-600 mb-5">
             日本語対応・完全貸し切りの専用車チャーターで、快適なスリランカ旅行をサポートします。

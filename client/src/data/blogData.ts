@@ -175,7 +175,7 @@ export const blogArticles: BlogArticle[] = [
     slug: "forex",
     title: "スリランカ両替ガイド：空港・市内の両替方法と1日の必要現金は？",
     excerpt:
-      "スリランカ旅行の両替を役立てる情報をまとめました。バンダラナイケ空港での両替方法、市内の両替所の選び方、チップ・食事代・観光地入場料の現金目安まで、SLTCSが旅行者向けにいちから解説。",
+      "スリランカ旅行の両替を役立てる情報をまとめました。バンダラナイケ空港での両替方法、市内の両替所の選び方、チップ・食事代・観光地入場料の現金目安まで、SriNowaが旅行者向けにいちから解説。",
     category: "旅行計画・準備",
     categorySlug: "travel-planning",
     publishedAt: "2026-07-01",
@@ -188,7 +188,7 @@ export const blogArticles: BlogArticle[] = [
     slug: "insurance",
     title: "スリランカ旅行に海外旅行保険は欠かせない？加入すべき理由と賢い選び方とは？",
     excerpt:
-      "スリランカでは現地の車両保険の補償水準が非常に低く、旅行者自身による保険準備が不可欠です。クレジットカード付帯保険の活用法から有料保険の選び方、推奨補償額まで、SLTCSがわかりやすく解説します。",
+      "スリランカでは現地の車両保険の補償水準が非常に低く、旅行者自身による保険準備が不可欠です。クレジットカード付帯保険の活用法から有料保険の選び方、推奨補償額まで、SriNowaがわかりやすく解説します。",
     category: "旅行計画・準備",
     categorySlug: "travel-planning",
     publishedAt: "2026-04-07",
@@ -214,7 +214,7 @@ export const blogArticles: BlogArticle[] = [
     slug: "esim",
     title: "スリランカ到着後すぐにネットを使うには？空港でのSIM購入＆eSIM完全ガイド",
     excerpt:
-      "バンダラナイケ空港でのDialog SIM購入手順とeSIMの事前設定方法を徹底解説。料金比較・物理SIM vs eSIMの選び方まで、スリランカ旅行者向けにSLTCSがまとめました。",
+      "バンダラナイケ空港でのDialog SIM購入手順とeSIMの事前設定方法を徹底解説。料金比較・物理SIM vs eSIMの選び方まで、スリランカ旅行者向けにSriNowaがまとめました。",
     category: "旅行計画・準備",
     categorySlug: "travel-planning",
     publishedAt: "2026-04-07",
@@ -229,7 +229,7 @@ export const blogArticles: BlogArticle[] = [
     slug: "price-breakdown-risks",
     title: "スリランカのタクシーチャーター料金の内訳とは？安いサービスには気をつけよう！",
     excerpt:
-      "「スリランカ タクシーチャーター 料金」を調べると価格帯に大きな差があります。人件費が安い国なのになぜ高い？格安サービスに潜む追加請求・旧型車・サポート不足のリスクと、日本車への高関税・円安が料金に与える影響をSLTCSがわかりやすく解説します。",
+      "「スリランカ タクシーチャーター 料金」を調べると価格帯に大きな差があります。人件費が安い国なのになぜ高い？格安サービスに潜む追加請求・旧型車・サポート不足のリスクと、日本車への高関税・円安が料金に与える影響をSriNowaがわかりやすく解説します。",
     category: "タクシーチャーターの基礎",
     categorySlug: "taxi-charter-basics",
     publishedAt: "2026-06-03",
@@ -299,7 +299,7 @@ export const blogArticles: BlogArticle[] = [
     slug: "safari-guide",
     title: "スリランカサファリ完全ガイド｜ヤーラ国立公園でヒョウに会おう",
     excerpt:
-      "スリランカ南東部に広がるヤーラ国立公園は、世界最高密度のヒョウの生息地。サファリの見どころ・ベストシーズン・SLTCSのサファリ手配サービスを詳しく紹介します。",
+      "スリランカ南東部に広がるヤーラ国立公園は、世界最高密度のヒョウの生息地。サファリの見どころ・ベストシーズン・SriNowaのサファリ手配サービスを詳しく紹介します。",
     category: "観光地ガイド",
     categorySlug: "sightseeing-guide",
     publishedAt: "2026-04-20",
@@ -313,7 +313,7 @@ export const blogArticles: BlogArticle[] = [
     slug: "tea-train-guide",
     title: "スリランカ紅茶列車（エッラ）完全ガイド｜キャンディ〜エッラ間の乗り方・予約方法",
     excerpt:
-      "世界で最も美しい鉄道路線のひとつ、キャンディ〜エッラ間の紅茶列車。九連アーチ橋・茶畑の絶景・列車の予約方法・SLTCSの送迎サービスを詳しく解説します。",
+      "世界で最も美しい鉄道路線のひとつ、キャンディ〜エッラ間の紅茶列車。九連アーチ橋・茶畑の絶景・列車の予約方法・SriNowaの送迎サービスを詳しく解説します。",
     category: "観光地ガイド",
     categorySlug: "sightseeing-guide",
     publishedAt: "2026-04-10",

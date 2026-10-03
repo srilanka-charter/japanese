@@ -85,7 +85,7 @@ export default function OneDayCharterArticle() {
         </figure>
 
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
-          なお、SLTCSでは現在、需要の増加に伴い1日チャーターの直接受付を一時的に停止しています。
+          なお、SriNowaでは現在、需要の増加に伴い1日チャーターの直接受付を一時的に停止しています。
           ただし、弊社が提携しているプラットフォームを通じて、引き続き1日チャーターをご利用いただける環境を整えています。
         </p>
 
@@ -371,7 +371,7 @@ export default function OneDayCharterArticle() {
 
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
           なお、プラットフォームを通じた予約はドライバーとお客様の直接契約となります。
-          SLTCSによる日本語サポートが必要な方は、複数日チャーターのプランをご検討ください。
+          SriNowaによる日本語サポートが必要な方は、複数日チャーターのプランをご検討ください。
           日本語スタッフが旅程の相談から当日のトラブル対応まで一貫してサポートします。
         </p>
 
@@ -388,7 +388,7 @@ export default function OneDayCharterArticle() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-[oklch(0.35_0.12_155)] flex-shrink-0">•</span>
-              <span>SLTCSへのご相談は下記のお問い合わせフォームから</span>
+              <span>SriNowaへのご相談は下記のお問い合わせフォームから</span>
             </li>
           </ul>
         </div>
@@ -425,7 +425,7 @@ export default function OneDayCharterArticle() {
 
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
           ただし、ドライバーとの直接交渉が基本となるため、英語でのコミュニケーションや事前のWhatsApp準備が欠かせません。
-          日本語サポートを希望する場合や、複数日にわたる旅程をご検討の場合は、SLTCSのプランもあわせてご確認ください。
+          日本語サポートを希望する場合や、複数日にわたる旅程をご検討の場合は、SriNowaのプランもあわせてご確認ください。
         </p>
 
         {/* まとめリスト */}
@@ -459,7 +459,7 @@ export default function OneDayCharterArticle() {
             { href: "/blog/taxi-charter-basics/price-breakdown-risks", label: "スリランカのタクシーチャーター料金の内訳とは？安いサービスには気をつけよう！" },
             { href: "/blog/taxi-charter-basics/when-to-book-charter", label: "スリランカの専用車チャーターをいつ予約すべき？｜予約タイミング完全ガイド" },
             { href: "/blog/taxi-charter-basics/tip-manner-guide", label: "スリランカのチップ・マナー完全ガイド｜ドライバー・ホテル・レストラン別の相場" },
-            { href: "/pricing", label: "SLTCSの料金一覧｜スリランカ専用車チャーターの価格" },
+            { href: "/pricing", label: "SriNowaの料金一覧｜スリランカ専用車チャーターの価格" },
           ].map((link, i) => (
             <li key={i}>
               <Link

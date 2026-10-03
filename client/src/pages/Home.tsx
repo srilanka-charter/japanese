@@ -18,7 +18,7 @@ import CompanySection from "@/components/sections/CompanySection";
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "スリランカタクシーチャーターサービス（SLTCS）",
+  "name": "スリノワ（SriNowa）",
   "url": "https://sltcs.srilanka-charter.com/",
   "description": "スリランカ全土を日本語対応の専属ドライバーと巡る完全プライベートチャーターサービス。シーギリヤ・キャンディ・ゴール・ヌワラエリヤなど主要観光地への送迎を提供。",
   "areaServed": {
@@ -37,7 +37,7 @@ const localBusinessJsonLd = {
 
 export default function Home() {
   useSEO({
-    title: "スリランカタクシーチャーターならSLTCS｜日本語対応の専用車で自由に周遊",
+    title: "スリランカタクシーチャーターならSriNowa｜日本語対応の専用車で自由に周遊",
     description: "スリランカ全土を日本語対応の専属ドライバーと巡る完全プライベートチャーターサービス。シーギリヤ・キャンディ・ゴール・ヌワラエリヤなど主要観光地への送迎を提供。政府公認ドライバーによる安心のチャーター。",
     path: "/",
     ogImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_rock_hero-WvSdEsM6SGKw7D3K9DXp8D.webp",

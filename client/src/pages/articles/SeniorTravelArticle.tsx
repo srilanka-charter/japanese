@@ -165,7 +165,7 @@ export default function SeniorTravelArticle() {
 
         <H3>日本語対応ドライバーが安心をサポート</H3>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
-          SLTCSのドライバーは日本語でのコミュニケーションが可能です。
+          SriNowaのドライバーは日本語でのコミュニケーションが可能です。
           観光地の説明・レストランの予約・緊急時の対応まで、現地での困りごとをサポートします。
         </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
@@ -369,7 +369,7 @@ export default function SeniorTravelArticle() {
             },
             {
               q: "言葉が通じるか心配",
-              a: "SLTCSのドライバーは日本語でのコミュニケーションが可能です。観光地の説明・レストランの選定・緊急時の対応まで、日本語でサポートします。",
+              a: "SriNowaのドライバーは日本語でのコミュニケーションが可能です。観光地の説明・レストランの選定・緊急時の対応まで、日本語でサポートします。",
             },
             {
               q: "食事が合わなかったら？",
@@ -474,7 +474,7 @@ export default function SeniorTravelArticle() {
 
         {/* 最終CTA */}
         <div className="bg-[oklch(0.96_0.04_155)] border border-[oklch(0.80_0.10_155)] rounded-2xl p-6 text-center">
-          <p className="text-base font-bold text-gray-900 mb-2">スリランカ シニア旅行のご相談はSLTCSへ</p>
+          <p className="text-base font-bold text-gray-900 mb-2">スリランカ シニア旅行のご相談はSriNowaへ</p>
           <p className="text-sm text-gray-600 mb-4">
             旅程のカスタマイズ・料金のお見積もり・ご不明点など、お気軽にお問い合わせください。
           </p>
@@ -496,7 +496,7 @@ export default function SeniorTravelArticle() {
             { href: "/blog/theme-travel/solo-women-travel-charter", label: "スリランカ女子旅・一人旅安全ガイド｜タクシーチャーターで安心の個人旅行モデルコース" },
             { href: "/blog/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカ旅行でタクシーチャーターがおすすめな理由｜公共交通との違い" },
             { href: "/blog/travel-planning/when-to-book-charter", label: "スリランカの専用車チャーターをいつ予約すべき？｜予約タイミング完全ガイド" },
-            { href: "/pricing", label: "SLTCSの料金一覧｜スリランカ専用車チャーターの価格" },
+            { href: "/pricing", label: "SriNowaの料金一覧｜スリランカ専用車チャーターの価格" },
             { href: "/blog/travel-planning/best-season-guide", label: "スリランカ旅行のベストシーズンと気候完全ガイド" },
           ].map((link, i) => (
             <Link

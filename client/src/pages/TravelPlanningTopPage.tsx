@@ -75,7 +75,7 @@ const checklistItems = [
 
 export default function TravelPlanningTopPage() {
   useSEO({
-    title: "スリランカ旅行の準備完全ガイド｜出発前に確認したい5つのチェックリスト | SLTCS",
+    title: "スリランカ旅行の準備完全ガイド｜出発前に確認したい5つのチェックリスト | SriNowa",
     description:
       "ベストシーズン・両替・海外旅行保険・WhatsApp・SIM/eSIMなど、スリランカ旅行の出発前に確認しておきたい準備項目を一気に整理。各テーマの詳しい解説記事へすぐ進める一覧型まとめ記事です。",
     path: "/travel-planning",
@@ -91,11 +91,11 @@ export default function TravelPlanningTopPage() {
         inLanguage: "ja",
         author: {
           "@type": "Organization",
-          name: "SLTCS スリランカタクシーチャーターサービス",
+          name: "SriNowa スリノワ",
         },
         publisher: {
           "@type": "Organization",
-          name: "SLTCS スリランカタクシーチャーターサービス",
+          name: "SriNowa スリノワ",
           url: "https://sltcs.srilanka-charter.com",
         },
       },
@@ -287,7 +287,7 @@ export default function TravelPlanningTopPage() {
           <p className="text-gray-600 text-sm sm:text-base mb-6 leading-relaxed">
             旅行準備と合わせて、現地の移動手段も早めに検討しておきましょう。
             <br className="hidden sm:block" />
-            SLTCSでは専用車チャーターで空港から観光地まで快適に移動できます。
+            SriNowaでは専用車チャーターで空港から観光地まで快適に移動できます。
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a

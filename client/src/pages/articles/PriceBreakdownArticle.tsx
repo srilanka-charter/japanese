@@ -13,8 +13,8 @@ export default function PriceBreakdownArticle() {
       <p className="text-base sm:text-lg leading-[1.9] text-gray-700 mb-10">
         また、格安サービスを選んだ結果、旅行中にトラブルが発生したという声も後を絶ちません。
         この記事では、<strong className="text-gray-900">スリランカのタクシーチャーター料金の内訳</strong>と、
-        安いサービスに潜むリスクを、SLTCSの実体験をもとにわかりやすく解説します。
-        SLTCSの<Link href="/pricing" className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">料金ページ</Link>では具体的な料金目安も公開しています。
+        安いサービスに潜むリスクを、SriNowaの実体験をもとにわかりやすく解説します。
+        SriNowaの<Link href="/pricing" className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">料金ページ</Link>では具体的な料金目安も公開しています。
       </p>
 
       {/* ── 目次 ── */}
@@ -25,7 +25,7 @@ export default function PriceBreakdownArticle() {
             ["1", "スリランカのタクシーチャーター料金が「思ったより安くない」理由"],
             ["2", "安いサービスに潜む5つのリスク"],
             ["3", "スリランカ人ドライバーを適正価格で支えることの大切さ"],
-            ["4", "SLTCSが適正価格にこだわる理由"],
+            ["4", "SriNowaが適正価格にこだわる理由"],
             ["5", "料金の内訳をわかりやすく解説"],
             ["6", "よくある質問（FAQ）"],
             ["7", "まとめ：価格より「信頼」で選ぶ"],
@@ -176,7 +176,7 @@ export default function PriceBreakdownArticle() {
             num: "01",
             title: "距離制限による追加請求",
             body1: "格安サービスの多くは「1日150kmまで」などの距離制限が設けられています。スリランカでは1日250km以上移動することも珍しくなく、超過分が1kmあたり100円前後で加算されると、最終的な支払い額が予算を大幅に超えることがあります。",
-            body2: "SLTCSでは事前に旅程全体の料金を確定するため、追加請求は発生しません。",
+            body2: "SriNowaでは事前に旅程全体の料金を確定するため、追加請求は発生しません。",
           },
           {
             num: "02",
@@ -242,7 +242,7 @@ export default function PriceBreakdownArticle() {
           スリランカ人ドライバーを適正価格で支えることの大切さ
         </h2>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
-          SLTCSが適正価格にこだわる理由は、単にサービス品質を守るためだけではありません。
+          SriNowaが適正価格にこだわる理由は、単にサービス品質を守るためだけではありません。
           <strong className="text-gray-900">スリランカ人ドライバーとその家族の生活を守る</strong>という視点も大切にしています。
         </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
@@ -267,24 +267,24 @@ export default function PriceBreakdownArticle() {
         </div>
 
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
-          SLTCSでは、ドライバーへの適正な報酬の支払いを徹底しています。
+          SriNowaでは、ドライバーへの適正な報酬の支払いを徹底しています。
           それが結果として、質の高いサービスの継続と、
           スリランカ旅行の満足度向上につながると確信しているからです。
         </p>
       </section>
 
       {/* ════════════════════════════════════════════════════
-          H2 ④ SLTCSが適正価格にこだわる理由
+          H2 ④ SriNowaが適正価格にこだわる理由
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section4">
         <h2
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          SLTCSが適正価格にこだわる理由
+          SriNowaが適正価格にこだわる理由
         </h2>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
-          SLTCSは、スリランカ政府公認ライセンスを持つドライバーのみを採用し、
+          SriNowaは、スリランカ政府公認ライセンスを持つドライバーのみを採用し、
           厳格な審査と継続的な品質管理を行っています。更に日本語スタッフの人件費もかかってきます。
         </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
@@ -295,7 +295,7 @@ export default function PriceBreakdownArticle() {
           ただ、それでも同様のサービスを提供しているサービスに比べて安い価格で提供させていただいております。
         </p>
 
-        {/* SLTCSの取り組みカード */}
+        {/* SriNowaの取り組みカード */}
         <div className="grid sm:grid-cols-2 gap-4 mb-8">
           {[
             {
@@ -390,7 +390,7 @@ export default function PriceBreakdownArticle() {
             className="w-full object-cover max-h-[380px]"
           />
           <figcaption className="text-center text-xs text-gray-400 mt-2 pb-1">
-            SLTCSでは旅程全体の料金を事前に確定。安心して旅行を楽しんでいただけます。
+            SriNowaでは旅程全体の料金を事前に確定。安心して旅行を楽しんでいただけます。
           </figcaption>
         </figure>
       </section>
@@ -409,12 +409,12 @@ export default function PriceBreakdownArticle() {
         <div className="space-y-4">
           {[
             {
-              q: "SLTCSの料金はどのくらいですか？",
+              q: "SriNowaの料金はどのくらいですか？",
               a: "旅程・日数・車種によって異なります。まずはお問い合わせフォームよりご希望の旅程をお知らせください。旅程全体の料金を事前に確定してお伝えします。",
             },
             {
               q: "チップは必要ですか？",
-              a: "SLTCSでは料金にドライバーへの適正な報酬が含まれています。チップは義務ではありませんが、サービスに満足いただけた場合は気持ちとしてお渡しいただいても構いません。",
+              a: "SriNowaでは料金にドライバーへの適正な報酬が含まれています。チップは義務ではありませんが、サービスに満足いただけた場合は気持ちとしてお渡しいただいても構いません。",
             },
             {
               q: "もう少し安くなりませんか？",
@@ -422,7 +422,7 @@ export default function PriceBreakdownArticle() {
             },
             {
               q: "円安の影響で料金が上がりましたか？",
-              a: "SLTCSのドライバーへの料金はスリランカルピーまたは米ドルベースで設定しています。円安が進んだ場合、円換算での金額は増加しますが、これはサービス内容の変化ではなく為替の影響です。",
+              a: "SriNowaのドライバーへの料金はスリランカルピーまたは米ドルベースで設定しています。円安が進んだ場合、円換算での金額は増加しますが、これはサービス内容の変化ではなく為替の影響です。",
             },
             {
               q: "追加料金が発生することはありますか？",
@@ -475,7 +475,7 @@ export default function PriceBreakdownArticle() {
               "原油高騰の影響を直接受けるスリランカでは、政府の備蓄・補助金制度が整備されておらず、燃料費の増加がサービス料金に反映される",
               "格安サービスには追加請求・旧型車・サポート不足などのリスクが潜む",
               "ドライバーへの適正な報酬を守ることが、高品質なサービスの継続につながる",
-              "SLTCSでは事前確定の明朗会計・政府公認ドライバー・日本語サポートを提供",
+              "SriNowaでは事前確定の明朗会計・政府公認ドライバー・日本語サポートを提供",
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-2">
                 <span className="text-[oklch(0.35_0.12_155)] font-bold flex-shrink-0 mt-0.5">✓</span>
@@ -486,7 +486,7 @@ export default function PriceBreakdownArticle() {
         </div>
 
         <p className="text-base leading-[1.9] text-gray-700">
-          スリランカ旅行の移動手段選びで迷っている方は、ぜびSLTCSにお気軽にご相談ください。
+          スリランカ旅行の移動手段選びで迷っている方は、ぜびSriNowaにお気軽にご相談ください。
           <Link href="/pricing" className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">料金ページ</Link>から料金の目安を確認し、人数・ご予算に合わせたお見積もりをご提案します。
         </p>
       </section>
@@ -496,8 +496,8 @@ export default function PriceBreakdownArticle() {
         <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-4">関連記事</p>
         <ul className="space-y-2">
           {[
-            { href: "/pricing", label: "SLTCSの料金一覧｜スリランカ専用車チャーターの価格" },
-            { href: "/vehicles", label: "SLTCSのチャーター車両一覧" },
+            { href: "/pricing", label: "SriNowaの料金一覧｜スリランカ専用車チャーターの価格" },
+            { href: "/vehicles", label: "SriNowaのチャーター車両一覧" },
             { href: "/blog/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカ旅行でタクシーチャーターがおすすめな理由｜公共交通との違い" },
             { href: "/blog/travel-planning/when-to-book-charter", label: "スリランカの専用車チャーターをいつ予約すべき？｜予約タイミング完全ガイド" },
             { href: "/blog/taxi-charter-basics/tip-manner-guide", label: "スリランカのチップ相場・渡し方マナー完全ガイド" },

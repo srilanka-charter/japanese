@@ -259,7 +259,7 @@ export default function ContactSection() {
             <div className="mb-8 text-center">
               <div className="flex items-center justify-center gap-3 mb-2">
                 <div className="h-px w-12 bg-gradient-to-r from-transparent to-[oklch(0.72_0.12_85)]" />
-                <span className="text-xs font-bold tracking-[0.3em] text-[oklch(0.72_0.12_85)] uppercase">WHY SLTCS</span>
+                <span className="text-xs font-bold tracking-[0.3em] text-[oklch(0.72_0.12_85)] uppercase">WHY SriNowa</span>
                 <div className="h-px w-12 bg-gradient-to-l from-transparent to-[oklch(0.72_0.12_85)]" />
               </div>
               {/* 装飾ダイヤモンド */}

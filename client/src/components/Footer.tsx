@@ -15,13 +15,13 @@ export default function Footer() {
               className="text-white text-xl mb-0.5 tracking-wider leading-tight"
               style={{ fontFamily: "'Shippori Mincho', serif", fontWeight: 700 }}
             >
-              スリランカタクシーチャーターサービス
+              スリノワ
             </div>
             <div
               className="text-[oklch(0.75_0.12_75)] text-sm tracking-[0.25em] mb-4"
               style={{ fontFamily: "'Shippori Mincho', serif", fontWeight: 500 }}
             >
-              SLTCS
+              SriNowa
             </div>
             <p className="text-white/40 text-xs leading-relaxed max-w-xs">
               スリランカ全土を日本語対応の専属ドライバーと巡る完全プライベートチャーターサービス。
@@ -74,7 +74,7 @@ export default function Footer() {
               利用規約および免責事項
             </Link>
           </div>
-          Copyright © スリランカタクシーチャーターサービス All Rights Reserved.
+          Copyright © スリノワ All Rights Reserved.
         </div>
       </div>
     </footer>

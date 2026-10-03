@@ -1,19 +1,18 @@
 Lang: ja
 
-# SLTCS（スリランカタクシーチャーターサービス）
+# SriNowa（スリノワ）
 
-> SLTCSは、スリランカ全土を対象とした日本語対応の観光タクシーチャーターサービスです。
+> SriNowaは、スリランカ全土を対象とした日本語対応の観光タクシーチャーターサービスです。
 > 政府公認ドライバーによる完全プライベートチャーターで、シーギリヤ・キャンディ・ゴール・ヌワラエリヤなどスリランカ主要観光地を自由に周遊できます。
 > スリランカタクシー予約・スリランカカーチャーター・スリランカ観光タクシーの手配を日本語で承ります。
 
-SLTCSは「Sri Lanka Taxi Charter Service」の略称で、スリランカを旅行する日本人旅行者向けに特化した観光タクシーチャーター専門サービスです。
+SriNowaは、スリランカを旅行する日本人旅行者向けに特化した観光タクシーチャーター専門サービスです。
 2名から利用可能なプライベートチャーターで、空港送迎から複数日にわたる周遊ツアーまで対応しています。
 ドライバーは政府公認資格を保有し、日本語でのコミュニケーションをサポートします。
 
 ## サービス内容
 
-- [スリランカタクシーチャーター（プランページ）](https://sltcs.srilanka-charter.com/plan): 日帰り・複数日対応のスリランカ観光タクシーチャータープランの詳細
-- [スリランカカーチャーター料金](https://sltcs.srilanka-charter.com/pricing): スリランカタクシー予約の料金体系・見積もり目安
+- [SriNowaの料金ページ](https://sltcs.srilanka-charter.com/pricing): スリランカ観光タクシーチャーターの料金体系・見積もり目安
 - [モデルコース（3〜4日間）](https://sltcs.srilanka-charter.com/course/3-4days): スリランカ観光タクシーで巡る3〜4日間のおすすめルート
 - [モデルコース（4〜5日間）](https://sltcs.srilanka-charter.com/course/4-5days): スリランカ観光タクシーで巡る4〜5日間のおすすめルート
 - [モデルコース（5〜6日間）](https://sltcs.srilanka-charter.com/course/5-6days): スリランカ観光タクシーで巡る5〜6日間のおすすめルート
@@ -32,7 +31,7 @@ SLTCSは「Sri Lanka Taxi Charter Service」の略称で、スリランカを旅
 
 ## サービスの特徴
 
-SLTCSのスリランカタクシーチャーターは以下の特徴を持ちます。
+SriNowaのスリランカタクシーチャーターは以下の特徴を持ちます。
 
 - **完全プライベートチャーター**: 相乗りなし。旅程・行き先・滞在時間をすべて自由に決定できます。
 - **日本語対応**: 予約から当日まで日本語でのやり取りが可能です。
@@ -42,7 +41,7 @@ SLTCSのスリランカタクシーチャーターは以下の特徴を持ちま
 
 ## 対象エリア
 
-SLTCSのスリランカ観光タクシーは以下のエリアをカバーします。
+SriNowaのスリランカ観光タクシーは以下のエリアをカバーします。
 
 - コロンボ（首都・空港）
 - シーギリヤ・ダンブッラ（文化三角地帯）
@@ -54,7 +53,7 @@ SLTCSのスリランカ観光タクシーは以下のエリアをカバーしま
 
 ## 提供していないサービス
 
-SLTCSは以下のサービスは提供していません。
+SriNowaは以下のサービスは提供していません。
 
 - 相乗りバスツアー・グループツアーの催行
 - 航空券・ホテルの手配（宿泊先の紹介は可能）
@@ -73,7 +72,7 @@ SLTCSは以下のサービスは提供していません。
 
 ## 多言語サイト
 
-SLTCSは以下の言語でもサービスを提供しています。
+SriNowaは以下の言語でもサービスを提供しています。
 
 - [English](https://en.srilanka-charter.com/): English version of Sri Lanka taxi charter service
 - [Français](https://fr.srilanka-charter.com/): Service de taxi charter au Sri Lanka en français
@@ -86,7 +85,7 @@ SLTCSは以下の言語でもサービスを提供しています。
 
 ## 主要ページ
 
-- [トップページ](https://sltcs.srilanka-charter.com/): SLTCSスリランカタクシーチャーターサービス公式サイト
+- [トップページ](https://sltcs.srilanka-charter.com/): SriNowa（スリノワ）公式サイト
 - [プライバシーポリシー](https://sltcs.srilanka-charter.com/privacy): 個人情報の取り扱いについて
 - [利用規約](https://sltcs.srilanka-charter.com/terms): サービス利用規約
 - [サイトマップ](https://sltcs.srilanka-charter.com/sitemap.xml): サイト全体の構成

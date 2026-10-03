@@ -12,7 +12,7 @@ const DEFAULT_OG_IMAGE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_rock_hero-WvSdEsM6SGKw7D3K9DXp8D.webp";
 
 const notFoundSeo: SEOOptions = {
-  title: "404 ページが見つかりません｜SLTCS スリランカタクシーチャーターサービス",
+  title: "404 ページが見つかりません｜SriNowa スリノワ",
   description: "お探しのページは見つかりませんでした。トップページに戻ってください。",
   path: "/404",
   noindex: true,

@@ -14,6 +14,6 @@ describe("トップページの会社概要", () => {
     expect(source).toContain('label: "車両提供会社"');
     expect(source).toContain('value: "I Tours & Travel（在スリランカ）"');
     expect(source).not.toContain('label: "英語名"');
-    expect(source).not.toContain('value: "SLTCS Int Ltd"');
+    expect(source).not.toContain('value: "SriNowa Int Ltd"');
   });
 });

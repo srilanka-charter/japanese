@@ -97,7 +97,7 @@ const itinerary = [
   {
     day: "Day 10", title: "コロンボへ移動・帰国", area: "コロンボ",
     spots: ["コロンボ市内ショッピング", "空港送迎"],
-    body: "最終日は専用車でコロンボへ。出発前にコロンボのショッピングモールやスパイスマーケットでお土産を購入しましょう。SLTCSの専用車が空港まで確実にお送りします。",
+    body: "最終日は専用車でコロンボへ。出発前にコロンボのショッピングモールやスパイスマーケットでお土産を購入しましょう。SriNowaの専用車が空港まで確実にお送りします。",
     link: "/pricing",
     linkLabel: "料金・見積もりを確認する",
   },
@@ -219,8 +219,8 @@ export default function Course10DaysArticle() {
       <section className="mb-14">
         <H2>専用車チャーターを使うメリット</H2>
         <figure className="mb-7">
-          <img src={CHARTER_IMG} alt="SLTCSのタクシーチャーターを利用するお客様とドライバー" className="w-full rounded-xl object-cover max-h-72" />
-          <figcaption className="text-center text-xs text-gray-400 mt-2">SLTCSのタクシーチャーターを利用するお客様とドライバー。日本語でのやり取りで安心の旅を。</figcaption>
+          <img src={CHARTER_IMG} alt="SriNowaのタクシーチャーターを利用するお客様とドライバー" className="w-full rounded-xl object-cover max-h-72" />
+          <figcaption className="text-center text-xs text-gray-400 mt-2">SriNowaのタクシーチャーターを利用するお客様とドライバー。日本語でのやり取りで安心の旅を。</figcaption>
         </figure>
         <H3 index={0}>10日間の移動を一括手配できる</H3>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
@@ -238,7 +238,7 @@ export default function Course10DaysArticle() {
         </p>
         <H3 index={2}>日本語で相談しながら旅ができる</H3>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
-          SLTCSでは、予約から当日の移動まで日本語でのやり取りが可能です。
+          SriNowaでは、予約から当日の移動まで日本語でのやり取りが可能です。
         </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
           「ヤーラのサファリは早朝と夕方どちらがおすすめ？」「紅茶列車の座席はどこが景色がいい？」といった質問にも、経験豊富なスタッフが日本語で丁寧にお答えします。
@@ -292,7 +292,7 @@ export default function Course10DaysArticle() {
           <ul className="space-y-1.5">
             <li className="flex items-start gap-2"><span className="font-bold flex-shrink-0">・</span>ホエールウォッチングは11〜4月がベストシーズン。5〜10月は海が荒れやすく欠航になる場合があります。</li>
             <li className="flex items-start gap-2"><span className="font-bold flex-shrink-0">・</span>ミンネリア国立公園の「象の集会」は6〜9月の乾季がピーク。</li>
-            <li className="flex items-start gap-2"><span className="font-bold flex-shrink-0">・</span>紅茶列車は人気が高く、特に1等・2等は早めの予約が必要です（SLTCSで代行手配可）。</li>
+            <li className="flex items-start gap-2"><span className="font-bold flex-shrink-0">・</span>紅茶列車は人気が高く、特に1等・2等は早めの予約が必要です（SriNowaで代行手配可）。</li>
           </ul>
         </div>
       </section>
@@ -301,7 +301,7 @@ export default function Course10DaysArticle() {
       <div className="bg-[oklch(0.12_0.02_155)] rounded-2xl p-7 sm:p-10 text-center mb-14">
         <p className="text-[oklch(0.75_0.12_75)] text-xs font-semibold tracking-widest uppercase mb-3">Free Consultation</p>
         <h3 className="text-white text-xl sm:text-2xl font-bold mb-3" style={{ fontFamily: "'Shippori Mincho', serif" }}>
-          10日間のスリランカ旅行をSLTCSに相談する
+          10日間のスリランカ旅行をSriNowaに相談する
         </h3>
         <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-md mx-auto">
           日程・人数・行きたい場所をお知らせいただければ、10日間のモデルコースとお見積もりをご提案します。
@@ -330,7 +330,7 @@ export default function Course10DaysArticle() {
           文化三角地帯の世界遺産めぐり、キャンディ〜エッラの紅茶列車、ヤーラのサファリ、ゴールの旧市街、ミリッサのホエールウォッチングと、どれも一生の思い出になる体験ばかりです。
         </p>
         <p className="text-base leading-[1.9] text-gray-700">
-          SLTCSでは、このコースをベースに日程・人数・ご予算に合わせたカスタマイズプランをご提案しています。まずはお気軽に無料相談からご連絡ください。
+          SriNowaでは、このコースをベースに日程・人数・ご予算に合わせたカスタマイズプランをご提案しています。まずはお気軽に無料相談からご連絡ください。
         </p>
       </section>
 
@@ -348,7 +348,7 @@ export default function Course10DaysArticle() {
           <a href="/vehicles" className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group border border-gray-100">
             <div className="flex-1">
               <p className="text-xs text-[oklch(0.35_0.12_155)] font-semibold mb-1">車両</p>
-              <p className="text-sm font-medium text-gray-800 group-hover:text-[oklch(0.35_0.12_155)] transition-colors leading-snug">SLTCSのチャーター車両を見る</p>
+              <p className="text-sm font-medium text-gray-800 group-hover:text-[oklch(0.35_0.12_155)] transition-colors leading-snug">SriNowaのチャーター車両を見る</p>
             </div>
             <ChevronRight size={16} className="text-gray-400 flex-shrink-0" />
           </a>

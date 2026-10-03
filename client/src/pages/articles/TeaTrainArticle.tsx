@@ -48,7 +48,7 @@ export default function TeaTrainArticle() {
       </p>
       <p className="text-base sm:text-lg leading-[1.9] text-gray-700 mb-10">
         この記事では、紅茶列車の歴史的背景から乗り方・座席の選び方・予約方法・失敗しないための注意点まで、
-        <strong className="text-gray-900">SLTCSの専用車チャーターと組み合わせた最適な楽しみ方</strong>を詳しく解説します。
+        <strong className="text-gray-900">SriNowaの専用車チャーターと組み合わせた最適な楽しみ方</strong>を詳しく解説します。
       </p>
 
       {/* ── 運行状況アラート ── */}
@@ -60,8 +60,8 @@ export default function TeaTrainArticle() {
           ただし、Kandy〜Nanu Oya間は引き続き運休中です。
         </p>
         <p className="text-sm text-blue-700 leading-relaxed">
-          SLTCSが現在おすすめする乗車区間は、<strong>Nanu OyaからDemodaraまでの区間</strong>です。
-          詳細は後述の「SLTCSおすすめ区間」セクションをご覧ください。
+          SriNowaが現在おすすめする乗車区間は、<strong>Nanu OyaからDemodaraまでの区間</strong>です。
+          詳細は後述の「SriNowaおすすめ区間」セクションをご覧ください。
         </p>
       </div>
 
@@ -71,11 +71,11 @@ export default function TeaTrainArticle() {
         <ol className="space-y-1.5 text-sm">
           {[
             ["1", "紅茶列車とは？スリランカ高原鉄道の歴史と魅力"],
-            ["2", "現在の運行状況とSLTCSおすすめ区間"],
+            ["2", "現在の運行状況とSriNowaおすすめ区間"],
             ["3", "キャンディ〜デモダラ間の絶景スポット"],
             ["4", "座席の種類と選び方｜1等・2等・3等の違い"],
             ["5", "列車の予約方法と注意点"],
-            ["6", "SLTCSの専用車チャーターとの組み合わせ方"],
+            ["6", "SriNowaの専用車チャーターとの組み合わせ方"],
             ["7", "よくある失敗談と対策"],
             ["8", "紅茶列車 よくある質問（FAQ）"],
             ["9", "まとめ"],
@@ -146,10 +146,10 @@ export default function TeaTrainArticle() {
       </section>
 
       {/* ════════════════════════════════════════════════════
-          H2 ② 現在の運行状況とSLTCSおすすめ区間
+          H2 ② 現在の運行状況とSriNowaおすすめ区間
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section2">
-        <H2 id="section2">現在の運行状況とSLTCSおすすめ区間</H2>
+        <H2 id="section2">現在の運行状況とSriNowaおすすめ区間</H2>
 
         {/* ── 最新情報バナー ── */}
         <div className="bg-blue-50 border-2 border-blue-400 rounded-xl p-5 mb-8">
@@ -157,7 +157,7 @@ export default function TeaTrainArticle() {
           <p className="text-sm text-blue-700 leading-relaxed">
             <strong>2026年6月20日より、Nanu Oya〜Badulla間での運行が再開されました。</strong>
             ヌワラエリヤ観光の玄関口であるNanu Oya駅から、Ella・Demodara方面を経由してBadullaまで向かう紅茶列車の旅を再び楽しめます。
-            SLTCSおすすめ乗車区間も更新しています（下記参照）。
+            SriNowaおすすめ乗車区間も更新しています（下記参照）。
           </p>
         </div>
 
@@ -181,7 +181,7 @@ export default function TeaTrainArticle() {
         </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
           旅行前には必ずスリランカ国鉄の公式情報や現地エージェントを通じて最新の運行状況をご確認ください。
-          SLTCSでもご相談時に最新情報をお伝えしています。
+          SriNowaでもご相談時に最新情報をお伝えしています。
         </p>
 
         {/* 区間別運行状況表 */}
@@ -266,9 +266,9 @@ export default function TeaTrainArticle() {
               </thead>
               <tbody>
                 {[
-                  ["Kandy → Nanu Oya", "SLTCSの専用車チャーターで移動"],
+                  ["Kandy → Nanu Oya", "SriNowaの専用車チャーターで移動"],
                   ["Nanu Oya → Demodara / Ella / Badulla", "紅茶列車を利用"],
-                  ["Ella / Demodara / Badulla到着後", "SLTCSの専用車チャーターでホテル・次の観光地へ"],
+                  ["Ella / Demodara / Badulla到着後", "SriNowaの専用車チャーターでホテル・次の観光地へ"],
                 ].map(([from, to], i) => (
                   <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-red-50"}>
                     <td className="px-3 py-2 text-gray-700 border-b border-red-100">{from}</td>
@@ -280,9 +280,9 @@ export default function TeaTrainArticle() {
           </div>
         </div>
 
-        <H3>SLTCSおすすめ区間：Nanu Oya → Demodara（約3時間）</H3>
+        <H3>SriNowaおすすめ区間：Nanu Oya → Demodara（約3時間）</H3>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
-          Nanu Oya〜Badulla間の運行再開により、SLTCSが現在おすすめする乗車区間は<strong className="text-gray-900">Nanu OyaからDemodaraまでの約3時間の区間</strong>です。
+          Nanu Oya〜Badulla間の運行再開により、SriNowaが現在おすすめする乗車区間は<strong className="text-gray-900">Nanu OyaからDemodaraまでの約3時間の区間</strong>です。
           ヌワラエリヤの茶畝を抑えたNanu Oya駅を出発点に、Ambewela・Ellaを経由して、九連アーチ橋とデモダラループがあるDemodaraまでの全区間を楽しめます。
         </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
@@ -325,7 +325,7 @@ export default function TeaTrainArticle() {
           <p className="text-sm text-[oklch(0.30_0.10_155)] leading-relaxed">
             九連アーチ橋はEllaとDemodaraの間に位置しています。<strong>Ella駅で下車してしまうと、列車の中から九連アーチ橋を渡ることができません。</strong>
             橋を車窓から体験するには、必ずEllaの次の駅であるDemodaraまで乗車してください。
-            SLTCSのドライバーがDemodara駅でお出迎えし、そのままEllaへご案内します。
+            SriNowaのドライバーがDemodara駅でお出迎えし、そのままEllaへご案内します。
           </p>
         </div>
 
@@ -333,7 +333,7 @@ export default function TeaTrainArticle() {
         <div className="bg-green-50 border border-green-300 rounded-2xl p-6 mb-6">
           <p className="text-sm font-bold text-green-800 mb-3">✅ 事前予約が取れなかった方もご安心ください</p>
           <p className="text-sm text-green-700 leading-relaxed mb-3">
-            ハイシーズンや人気列車は指定席が満席になることがありますが、当日、SLTCSのドライバーの補助のもと、自由席の当日券を購入することが可能です。出発の2時間前に駅にいけば、2等指定席を購入できる場合があります。
+            ハイシーズンや人気列車は指定席が満席になることがありますが、当日、SriNowaのドライバーの補助のもと、自由席の当日券を購入することが可能です。出発の2時間前に駅にいけば、2等指定席を購入できる場合があります。
           </p>
           <p className="text-sm text-green-700 leading-relaxed mb-3">
             もし取れたら近くで時間を潰して、2等指定席に乗車しましょう。しかし、仮に取れなかった場合は、ナヌオヤからデモダラまでの3時間半程度が立ち席となる可能性があります。
@@ -344,7 +344,7 @@ export default function TeaTrainArticle() {
           <figure className="mb-4 rounded-xl overflow-hidden border border-green-200 bg-white">
             <img
               src="/manus-storage/tea-train-sltcs-ticket-options_fd6720b9.png"
-              alt="紅茶列車の予約が取れなかった場合のSLTCSおすすめ乗車プラン"
+              alt="紅茶列車の予約が取れなかった場合のSriNowaおすすめ乗車プラン"
               className="w-full h-auto"
               loading="lazy"
             />
@@ -466,7 +466,7 @@ export default function TeaTrainArticle() {
             <tbody>
               {[
                 ["1等（エクスポジャーワゴン）", "約2,000〜3,000円", "展望車・エアコンなし・大きな窓・指定席。ただし窓が開かないため、風を感じながら景色を楽しむなら2等がおすすめ", "○"],
-                ["2等指定席", "約700〜1,500円", "指定席・扇風機あり・窓を開けることができるので風を感じながら景色を楽しめる。コスパ良好でSLTCSが最もおすすめ", "◎"],
+                ["2等指定席", "約700〜1,500円", "指定席・扇風機あり・窓を開けることができるので風を感じながら景色を楽しめる。コスパ良好でSriNowaが最もおすすめ", "◎"],
                 ["3等自由席", "約200〜500円", "自由席・混雑時は立ち乗りも。1時間程度の区間なら許容範囲", "△"],
               ].map(([cls, price, desc, rec], i) => (
                 <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
@@ -538,9 +538,9 @@ export default function TeaTrainArticle() {
         </div>
 
         <div className="bg-red-50 border border-red-200 rounded-xl p-5 mb-6">
-          <p className="text-sm font-bold text-red-800 mb-2">SLTCSは列車チケットの手配を行っていません</p>
+          <p className="text-sm font-bold text-red-800 mb-2">SriNowaは列車チケットの手配を行っていません</p>
           <p className="text-sm text-red-700 leading-relaxed">
-            SLTCSの専用車チャーターサービスは、列車の乗車駅・下車駅への送迎を担当します。
+            SriNowaの専用車チャーターサービスは、列車の乗車駅・下車駅への送迎を担当します。
             列車チケットのご手配はお客様ご自身でお願いいたします。
             ご不明な点はお気軽にご相談ください。
           </p>
@@ -548,16 +548,16 @@ export default function TeaTrainArticle() {
       </section>
 
       {/* ════════════════════════════════════════════════════
-          H2 ⑥ SLTCSの専用車チャーターとの組み合わせ方
+          H2 ⑥ SriNowaの専用車チャーターとの組み合わせ方
       ════════════════════════════════════════════════════ */}
       <section className="mb-14" id="section6">
-        <H2 id="section6">SLTCSの専用車チャーターとの組み合わせ方</H2>
+        <H2 id="section6">SriNowaの専用車チャーターとの組み合わせ方</H2>
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
           紅茶列車の最大の課題は、<strong className="text-gray-900">乗り降りの駅への移動</strong>です。
           Haputale駅・Demodara駅はいずれも観光地から離れており、荷物を持ってのアクセスは大変です。
         </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
-          SLTCSの専用車チャーターを組み合わせることで、列車旅をより快適・安心に楽しめます。
+          SriNowaの専用車チャーターを組み合わせることで、列車旅をより快適・安心に楽しめます。
         </p>
 
         {/* 列車画像 */}
@@ -573,12 +573,12 @@ export default function TeaTrainArticle() {
         </figure>
 
         <div className="bg-[oklch(0.96_0.02_155)] rounded-2xl p-6 mb-8">
-          <p className="text-sm font-bold text-[oklch(0.25_0.08_155)] mb-4">SLTCSおすすめ 6日間プラン例</p>
+          <p className="text-sm font-bold text-[oklch(0.25_0.08_155)] mb-4">SriNowaおすすめ 6日間プラン例</p>
           <div className="space-y-3">
             {[
               { day: "1日目", content: "コロンボ空港 → キャンディ（専用車）。キャンディ市内観光（仏歯寺・キャンディ湖）。キャンディ泊。" },
               { day: "2日目", content: "専用車でヌワラエリヤ方面へ。車の車窓から茶畑の絶景を堪能しながらHaputale方面へ移動。Haputale泊。" },
-              { day: "3日目", content: "ナヌオヤ駅からHaputale駅まで専用車で移動。Haputale駅から列車に乗車し、九連アーチ橋・デモダラループを体験しながらDemodara駅まで約1時間の列車旅。Demodara駅でSLTCSドライバーがお出迎えし、そのままEllaへ。Ella観光（エッラロック・ラワナ滝）。Ella泊。" },
+              { day: "3日目", content: "ナヌオヤ駅からHaputale駅まで専用車で移動。Haputale駅から列車に乗車し、九連アーチ橋・デモダラループを体験しながらDemodara駅まで約1時間の列車旅。Demodara駅でSriNowaドライバーがお出迎えし、そのままEllaへ。Ella観光（エッラロック・ラワナ滝）。Ella泊。" },
               { day: "4日目", content: "Ellaからヤラ国立公園（Yala）へ専用車で移動（約2.5時間）。ヤラ周辺のホテルにチェックイン。Yala泊。" },
               { day: "5日目", content: "早朝からヤラ国立公園でジープサファリツアー（ヒョウ・ゾウ・クジャクなどを観察）。ツアー後、専用車でミリッサ（Mirissa）へ移動（約2時間）。ビーチでリラックス。ミリッサ泊。" },
               { day: "6日目", content: "ミリッサからゴール（Galle）へ専用車で移動（約30分）。ゴール旧市街・ゴール要塞を観光。その後、コロンボ国際空港へ向けて出発（約2.5時間）。帰国の途へ。" },
@@ -631,7 +631,7 @@ export default function TeaTrainArticle() {
             {
               fail: "Ella駅で降りたら九連アーチ橋を渡れなかった",
               cause: "九連アーチ橋はEllaとDemodaraの間にあるため、Ella駅で下車すると橋を列車から体験できない",
-              solution: "Ellaの次の駅・Demodara駅まで乗車する。SLTCSのドライバーがDemodara駅でお出迎えします。",
+              solution: "Ellaの次の駅・Demodara駅まで乗車する。SriNowaのドライバーがDemodara駅でお出迎えします。",
             },
             {
               fail: "指定席が取れず立ち乗りになった",
@@ -668,19 +668,19 @@ export default function TeaTrainArticle() {
           {[
             {
               q: "現在どの区間が運行していますか？",
-              a: "2026年6月現在、2025年11月末のサイクロンの影響でAmbewela〜Badulla間のみ運行しています。キャンディ〜ナヌオヤ間などは運休中です。最新情報はスリランカ国鉄公式サイトまたはSLTCSへお問い合わせください。",
+              a: "2026年6月現在、2025年11月末のサイクロンの影響でAmbewela〜Badulla間のみ運行しています。キャンディ〜ナヌオヤ間などは運休中です。最新情報はスリランカ国鉄公式サイトまたはSriNowaへお問い合わせください。",
             },
             {
               q: "なぜEllaではなくDemodaraで降りるのですか？",
-              a: "九連アーチ橋はEllaとDemodaraの間に位置しています。Ella駅で下車してしまうと、列車の中から橋を渡ることができません。橋を車窓から体験するには、Ellaの次の駅・Demodaraまで乗車する必要があります。SLTCSのドライバーがDemodara駅でお出迎えし、そのままEllaへご案内します。",
+              a: "九連アーチ橋はEllaとDemodaraの間に位置しています。Ella駅で下車してしまうと、列車の中から橋を渡ることができません。橋を車窓から体験するには、Ellaの次の駅・Demodaraまで乗車する必要があります。SriNowaのドライバーがDemodara駅でお出迎えし、そのままEllaへご案内します。",
             },
             {
               q: "紅茶列車はどの列車に乗ればいいですか？",
               a: "現在の運行区間（Ambewela〜Badulla）を走る列車のうち、展望車（エクスポジャーワゴン）が連結されているものを選ぶのがおすすめです。12Go.Asiaで検索すると展望車付きの列車を確認できます。",
             },
             {
-              q: "SLTCSは列車チケットの手配をしてくれますか？",
-              a: "申し訳ありませんが、SLTCSでは列車チケットの手配は行っておりません。チケットのご購入は12Go.Asiaなどのオンラインサービスか、駅窓口でお客様ご自身でお願いいたします。乗降駅への送迎は承っておりますので、お気軽にご相談ください。",
+              q: "SriNowaは列車チケットの手配をしてくれますか？",
+              a: "申し訳ありませんが、SriNowaでは列車チケットの手配は行っておりません。チケットのご購入は12Go.Asiaなどのオンラインサービスか、駅窓口でお客様ご自身でお願いいたします。乗降駅への送迎は承っておりますので、お気軽にご相談ください。",
             },
             {
               q: "列車の遅延はどのくらいありますか？",
@@ -715,17 +715,17 @@ export default function TeaTrainArticle() {
         </p>
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
           2026年6月現在はサイクロンの影響でAmbewela〜Badulla間のみ運行中ですが、
-          SLTCSがおすすめするHaputale〜Demodara間（約1時間）は九連アーチ橋・デモダラループを両方体験できる最高の区間です。
-          SLTCSの専用車チャーターと組み合わせることで、駅への送迎・荷物の心配・途中立ち寄りなど、列車旅の不便な点をすべてカバーし、より快適な旅が実現できます。
+          SriNowaがおすすめするHaputale〜Demodara間（約1時間）は九連アーチ橋・デモダラループを両方体験できる最高の区間です。
+          SriNowaの専用車チャーターと組み合わせることで、駅への送迎・荷物の心配・途中立ち寄りなど、列車旅の不便な点をすべてカバーし、より快適な旅が実現できます。
         </p>
 
         <ul className="space-y-2 text-base text-gray-700 mb-8">
           {[
             "2026年6月現在、Ambewela〜Badulla間のみ運行（サイクロンの影響）",
-            "SLTCSおすすめ区間はHaputale〜Demodara（約1時間）",
+            "SriNowaおすすめ区間はHaputale〜Demodara（約1時間）",
             "九連アーチ橋を列車から体験するには、Ellaではなくその先のDemodara駅まで乗車が必須",
             "1等（展望車）または2等指定席がおすすめ。早めの予約が必須",
-            "SLTCSの専用車チャーターで駅への送迎・荷物運搬・途中立ち寄りをサポート",
+            "SriNowaの専用車チャーターで駅への送迎・荷物運搬・途中立ち寄りをサポート",
           ].map((item, i) => (
             <li key={i} className="flex items-start gap-2">
               <span className="text-[oklch(0.35_0.12_155)] font-bold flex-shrink-0 mt-0.5">✓</span>
@@ -744,7 +744,7 @@ export default function TeaTrainArticle() {
               { href: "/blog/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカでタクシーチャーターがおすすめな理由" },
               { href: "/blog/model-course/course-10days", label: "スリランカ10日間モデルコース｜紅茶列車も組み込んだ完全版" },
               { href: "/blog/theme-travel/honeymoon-sri-lanka", label: "スリランカハネムーン完全ガイド｜新婚旅行に専用車チャーターがおすすめな理由" },
-              { href: "/pricing", label: "SLTCSの料金一覧｜スリランカ専用車チャーターの価格" },
+              { href: "/pricing", label: "SriNowaの料金一覧｜スリランカ専用車チャーターの価格" },
               { href: "/blog/travel-planning/best-season-guide", label: "スリランカ旅行のベストシーズンと気候完全ガイド" },
             ].map((link, i) => (
               <li key={i}>

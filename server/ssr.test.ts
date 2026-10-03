@@ -5,7 +5,7 @@ describe("SSR SEO出力", () => {
   it("URL固有のtitle・canonical・本文H1を初期HTMLに含める", () => {
     const { appHtml, seoHead } = renderSsrPage("/pricing");
 
-    expect(seoHead).toContain("スリランカタクシーチャーターサービスの料金(価格)とは？ | SLTCS");
+    expect(seoHead).toContain("スリノワの料金(価格)とは？ | SriNowa");
     expect(seoHead).toContain('href="https://sltcs.srilanka-charter.com/pricing"');
     expect(appHtml).toContain("<h1");
   });
@@ -13,7 +13,7 @@ describe("SSR SEO出力", () => {
   it("blogDataへ登録された記事は初期HTMLでも記事固有のSEO情報を出力する", () => {
     const { appHtml, seoHead } = renderSsrPage("/taxi-charter-basics/one-day-charter");
 
-    expect(seoHead).toContain("スリランカで1日のタクシーチャーターをご希望の方へ | SLTCS");
+    expect(seoHead).toContain("スリランカで1日のタクシーチャーターをご希望の方へ | SriNowa");
     expect(seoHead).toContain(
       'href="https://sltcs.srilanka-charter.com/taxi-charter-basics/one-day-charter"'
     );

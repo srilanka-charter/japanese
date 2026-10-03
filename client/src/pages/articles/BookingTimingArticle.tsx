@@ -19,7 +19,7 @@ export default function BookingTimingArticle() {
             ["2", "予約が遅れると起きること"],
             ["3", "ベストな予約タイミング：時期別ガイド"],
             ["4", "予約前に決めておくべきこと"],
-            ["5", "SLTCSへの予約の流れ"],
+            ["5", "SriNowaへの予約の流れ"],
             ["6", "まとめ"],
           ].map(([num, label]) => (
             <li key={num} className="flex items-start gap-2 text-gray-600">
@@ -70,7 +70,7 @@ export default function BookingTimingArticle() {
         {[
           {
             title: "希望のドライバーが確保できない",
-            body: "SLTCSでは日本語対応・英語対応など、お客様のニーズに合ったドライバーをご提案しています。人気のドライバーは早期に予約が埋まるため、直前では対応できないことがあります。",
+            body: "SriNowaでは日本語対応・英語対応など、お客様のニーズに合ったドライバーをご提案しています。人気のドライバーは早期に予約が埋まるため、直前では対応できないことがあります。",
           },
           {
             title: "旅程の調整が難しくなる",
@@ -180,10 +180,10 @@ export default function BookingTimingArticle() {
 
       {/* ── H2: 5 ── */}
       <h2 className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-6 mt-4">
-        5. SLTCSへの予約の流れ
+        5. SriNowaへの予約の流れ
       </h2>
       <p className="leading-[1.9] text-gray-700 mb-4">
-        SLTCSでは、お問い合わせから出発当日まで一貫して日本語でサポートします。
+        SriNowaでは、お問い合わせから出発当日まで一貫して日本語でサポートします。
       </p>
       <p className="leading-[1.9] text-gray-700 mb-6">
         予約の流れは以下のとおりです。
@@ -199,7 +199,7 @@ export default function BookingTimingArticle() {
           {
             step: "STEP 2",
             title: "旅程のご提案・お見積もり",
-            body: "SLTCSのスタッフが最適なドライバー・車種・旅程をご提案します。料金の目安もこの段階でお伝えします。",
+            body: "SriNowaのスタッフが最適なドライバー・車種・旅程をご提案します。料金の目安もこの段階でお伝えします。",
           },
           {
             step: "STEP 3",
@@ -238,7 +238,7 @@ export default function BookingTimingArticle() {
         >
           無料で相談する
         </a>
-        <p className="text-sm text-gray-500 mt-3">SLTCSは日本語で丁寧に対応。旅程相談からお気軽にどうぞ。</p>
+        <p className="text-sm text-gray-500 mt-3">SriNowaは日本語で丁寧に対応。旅程相談からお気軽にどうぞ。</p>
       </div>
 
       {/* ── H2: 6 まとめ ── */}
@@ -249,7 +249,7 @@ export default function BookingTimingArticle() {
         スリランカの専用車チャーターは、旅行の快適さと自由度を大きく左右する重要な要素です。予約のベストタイミングは<strong>出発の1〜3ヶ月前</strong>。ハイシーズン（12月〜3月）や年末年始・GWは3ヶ月以上前の予約が安心です。
       </p>
       <p className="leading-[1.9] text-gray-700 mb-6">
-        「まだ旅程が決まっていない」という段階でも、まずは相談だけでも早めにしておくことをおすすめします。SLTCSでは旅程の相談から予約確定まで、日本語で丁寧にサポートします。
+        「まだ旅程が決まっていない」という段階でも、まずは相談だけでも早めにしておくことをおすすめします。SriNowaでは旅程の相談から予約確定まで、日本語で丁寧にサポートします。
       </p>
 
       {/* ── 関連記事リンク ── */}
@@ -260,7 +260,7 @@ export default function BookingTimingArticle() {
             { href: "/blog/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカ旅行でタクシーチャーターがおすすめな理由｜公共交通との違い" },
             { href: "/blog/model-course/course-10days", label: "スリランカを 10日間で周游する大満足モデルコース" },
             { href: "/blog/taxi-charter-basics/price-breakdown-risks", label: "スリランカのタクシーチャーター料金の内訳と安いサービスのリスク" },
-            { href: "/pricing", label: "SLTCSの料金一覧｜スリランカ専用車チャーターの価格" },
+            { href: "/pricing", label: "SriNowaの料金一覧｜スリランカ専用車チャーターの価格" },
             { href: "/blog/travel-planning/best-season-guide", label: "スリランカ旅行のベストシーズンと気候完全ガイド" },
             { href: "/blog/taxi-charter-basics/tip-manner-guide", label: "スリランカのチップ相場・渡し方マナー完全ガイド" },
           ].map((link, i) => (

@@ -24,8 +24,8 @@ export default function AstrologyPage() {
   }, []);
 
   useSEO({
-    title: "スリランカで占星術師に貴方のホロスコープを見てもらおう！｜SLTCS",
-    description: "スリランカの著名な占星術師シャーミラ・ドゥヌシンハ先生によるホロスコープ鑑定。数千年の歴史を持つヴェーダ占星術を、コロンボ国際空港近くで体験。SLTCSが手配します。",
+    title: "スリランカで占星術師に貴方のホロスコープを見てもらおう！｜SriNowa",
+    description: "スリランカの著名な占星術師シャーミラ・ドゥヌシンハ先生によるホロスコープ鑑定。数千年の歴史を持つヴェーダ占星術を、コロンボ国際空港近くで体験。SriNowaが手配します。",
     path: "/astrology",
     ogImage: ASTROLOGY_HERO,
     jsonLdList: [JSON_LD],
@@ -194,20 +194,20 @@ export default function AstrologyPage() {
           </div>
         </section>
 
-        {/* ── Section 3: SLTCSが手配できること ── */}
+        {/* ── Section 3: SriNowaが手配できること ── */}
         <section className="mb-14">
-          <span className="inline-block text-xs tracking-widest text-emerald-600 font-semibold uppercase mb-2">SLTCS Service</span>
+          <span className="inline-block text-xs tracking-widest text-emerald-600 font-semibold uppercase mb-2">SriNowa Service</span>
           <h2
             className="text-2xl md:text-3xl font-bold text-gray-900 border-l-4 border-emerald-500 pl-4 mb-6"
             style={{ fontFamily: "'Noto Serif JP', serif" }}
           >
-            SLTCSはシャーミラ先生の鑑定を手配できます
+            SriNowaはシャーミラ先生の鑑定を手配できます
           </h2>
 
           <div className="space-y-5 text-gray-700 leading-relaxed mb-8">
             <p>
-              SLTCSでは、スリランカ旅行中にシャーミラ先生の占星術鑑定を受けるためのアレンジが可能です。
-              日本語でのやり取りから予約調整まで、すべてSLTCSがサポートします。
+              SriNowaでは、スリランカ旅行中にシャーミラ先生の占星術鑑定を受けるためのアレンジが可能です。
+              日本語でのやり取りから予約調整まで、すべてSriNowaがサポートします。
               旅行の計画段階でお気軽にご相談ください。
             </p>
           </div>
@@ -217,7 +217,7 @@ export default function AstrologyPage() {
               <div className="text-2xl mb-3">📅</div>
               <h3 className="font-bold text-emerald-900 mb-2">予約・日程調整をサポート</h3>
               <p className="text-emerald-800 text-sm leading-relaxed">
-                シャーミラ先生との日程調整から予約確認まで、SLTCSが日本語でサポートします。
+                シャーミラ先生との日程調整から予約確認まで、SriNowaが日本語でサポートします。
                 旅程に合わせた最適なタイミングをご提案します。
               </p>
             </div>
@@ -226,7 +226,7 @@ export default function AstrologyPage() {
               <h3 className="font-bold text-emerald-900 mb-2">鑑定場所への送迎</h3>
               <p className="text-emerald-800 text-sm leading-relaxed">
                 鑑定場所はコロンボ国際空港の近くに位置しています。
-                SLTCSのチャーター車で安心してアクセスできます。
+                SriNowaのチャーター車で安心してアクセスできます。
               </p>
             </div>
             <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-5">
@@ -241,7 +241,7 @@ export default function AstrologyPage() {
               <div className="text-2xl mb-3">✨</div>
               <h3 className="font-bold text-emerald-900 mb-2">プラチナプラン限定</h3>
               <p className="text-emerald-800 text-sm leading-relaxed">
-                占星術鑑定の手配はSLTCSのプラチナプランで対応可能です。
+                占星術鑑定の手配はSriNowaのプラチナプランで対応可能です。
                 詳細はお問い合わせ時にご確認ください。
               </p>
             </div>
@@ -266,7 +266,7 @@ export default function AstrologyPage() {
             <p>
               旅行の<strong>最初に鑑定を受ける</strong>と、旅の間ずっと先生のアドバイスを意識しながら過ごすことができます。
               一方、<strong>帰国前に受ける</strong>と、スリランカ旅行の思い出として特別な締めくくりになります。
-              どちらのタイミングでも、旅程に合わせてSLTCSが最適なアレンジをご提案します。
+              どちらのタイミングでも、旅程に合わせてSriNowaが最適なアレンジをご提案します。
             </p>
           </div>
 
@@ -313,7 +313,7 @@ export default function AstrologyPage() {
             スリランカで本格占星術を体験しよう
           </h3>
           <p className="text-white/80 mb-6 text-sm md:text-base leading-relaxed">
-            シャーミラ先生の鑑定手配はSLTCSにお任せください。<br />
+            シャーミラ先生の鑑定手配はSriNowaにお任せください。<br />
             旅程に合わせた最適なタイミングをご提案します。
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">

@@ -88,12 +88,12 @@ export default function FamilyTravelArticle() {
             {
               num: "03",
               title: "日本語で相談しながら安心して移動できる",
-              body: "SLTCSでは日本語対応のドライバーが同行します。観光地の情報・食事のおすすめ・緊急時の対応まで、日本語でコミュニケーションが取れるため、英語に不安がある方も安心です。",
+              body: "SriNowaでは日本語対応のドライバーが同行します。観光地の情報・食事のおすすめ・緊急時の対応まで、日本語でコミュニケーションが取れるため、英語に不安がある方も安心です。",
             },
             {
               num: "04",
               title: "チャイルドシートの手配も相談できる",
-              body: "小さなお子様連れの場合、チャイルドシートの準備が必要です。SLTCSでは事前にご相談いただければ、チャイルドシートの手配についてもサポートします。",
+              body: "小さなお子様連れの場合、チャイルドシートの準備が必要です。SriNowaでは事前にご相談いただければ、チャイルドシートの手配についてもサポートします。",
             },
             {
               num: "05",
@@ -103,7 +103,7 @@ export default function FamilyTravelArticle() {
             {
               num: "06",
               title: "政府公認ドライバーによる安全な移動",
-              body: "SLTCSのドライバーはスリランカ政府観光局の認定を受けています。道路状況を熟知した安全運転で、お子様を含むご家族全員を安心してお連れします。",
+              body: "SriNowaのドライバーはスリランカ政府観光局の認定を受けています。道路状況を熟知した安全運転で、お子様を含むご家族全員を安心してお連れします。",
             },
           ].map((item) => (
             <div key={item.num} className="flex gap-4 sm:gap-5 p-4 sm:p-5 bg-gray-50 rounded-xl border border-gray-100">
@@ -387,7 +387,7 @@ export default function FamilyTravelArticle() {
           className="text-white text-xl sm:text-2xl font-bold mb-3"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          家族旅行のご相談はSLTCSへ
+          家族旅行のご相談はSriNowaへ
         </h3>
         <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-md mx-auto">
           お子様の年齢・人数・旅行日数をお知らせいただければ、<br className="hidden sm:block" />
@@ -427,7 +427,7 @@ export default function FamilyTravelArticle() {
           荷物の管理・子どものペース対応・日本語サポートという観点から、<strong className="text-gray-900">専用車チャーターは家族旅行に最も適した移動手段</strong>といえます。
         </p>
         <p className="text-base leading-[1.9] text-gray-700">
-          SLTCSでは、政府公認ドライバーによる完全プライベートチャーターを日本語でご提供しています。ご家族の旅行を検討している方は、まず<a href="/#contact" onClick={(e) => { e.preventDefault(); window.location.href = "/#contact"; }} className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">無料相談</a>からお気軽にご連絡ください。
+          SriNowaでは、政府公認ドライバーによる完全プライベートチャーターを日本語でご提供しています。ご家族の旅行を検討している方は、まず<a href="/#contact" onClick={(e) => { e.preventDefault(); window.location.href = "/#contact"; }} className="text-[oklch(0.35_0.12_155)] underline underline-offset-2 hover:opacity-80">無料相談</a>からお気軽にご連絡ください。
         </p>
       </section>
 
@@ -454,7 +454,7 @@ export default function FamilyTravelArticle() {
             <div className="flex-1 min-w-0">
               <p className="text-xs text-[oklch(0.35_0.12_155)] font-semibold mb-1">車両</p>
               <p className="text-sm font-medium text-gray-800 group-hover:text-[oklch(0.35_0.12_155)] transition-colors leading-snug">
-                SLTCSのチャーター車両を見る
+                SriNowaのチャーター車両を見る
               </p>
             </div>
             <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
@@ -466,7 +466,7 @@ export default function FamilyTravelArticle() {
             <div className="flex-1 min-w-0">
               <p className="text-xs text-[oklch(0.35_0.12_155)] font-semibold mb-1">料金</p>
               <p className="text-sm font-medium text-gray-800 group-hover:text-[oklch(0.35_0.12_155)] transition-colors leading-snug">
-                SLTCSの料金一覧｜スリランカ専用車チャーターの価格
+                SriNowaの料金一覧｜スリランカ専用車チャーターの価格
               </p>
             </div>
             <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>

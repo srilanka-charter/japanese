@@ -49,7 +49,7 @@ function StepImage({
 
 export default function WhatsAppArticle() {
   useSEO({
-    title: "WhatsAppのダウンロードと設定方法をわかりやすく説明します | SLTCS",
+    title: "WhatsAppのダウンロードと設定方法をわかりやすく説明します | SriNowa",
     description:
       "スリランカ旅行に必須のWhatsApp（ワッツアップ）のインストール方法・初期設定・ドライバーへの連絡方法をわかりやすく解説。旅行前に準備しておきましょう。",
     path: "/blog/whats-app",
@@ -62,7 +62,7 @@ export default function WhatsAppArticle() {
         headline: "WhatsAppのダウンロードと設定方法をわかりやすく説明します",
         description:
           "スリランカ旅行に必須のWhatsAppのインストール方法・初期設定・ドライバーへの連絡方法をわかりやすく解説。",
-        author: { "@type": "Organization", name: "SLTCS" },
+        author: { "@type": "Organization", name: "SriNowa" },
         datePublished: "2026-04-07",
         inLanguage: "ja",
       },
@@ -276,7 +276,7 @@ export default function WhatsAppArticle() {
           <p className="text-sm font-bold text-gray-600 mb-2">日本語版メッセージ例：</p>
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 text-sm text-gray-800 leading-relaxed font-mono whitespace-pre-line">
 {`こんにちは！私の名前はYuki Tanakiです。
-SLTCSで予約をしました。9/13〜9/17の5日間よろしくお願いします。
+SriNowaで予約をしました。9/13〜9/17の5日間よろしくお願いします。
 今回の旅程は以下です。
 
 9/13 11:00 Flight番号SQ468 バンダラナイケ国際空港に到着。

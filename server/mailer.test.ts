@@ -63,6 +63,6 @@ describe("sendCustomerAutoReply", () => {
     expect(callArgs.to).toBe("customer@example.com");
     expect(callArgs.text).toContain("テスト太郎");
     expect(callArgs.text).toContain("24時間以内");
-    expect(callArgs.text).toContain("SLTCS カスタマーサポート");
+    expect(callArgs.text).toContain("SriNowa カスタマーサポート");
   });
 });

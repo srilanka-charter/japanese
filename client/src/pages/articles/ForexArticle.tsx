@@ -44,9 +44,9 @@ function NoteBox({ children }: { children: React.ReactNode }) {
 
 export default function ForexArticle() {
   useSEO({
-    title: "スリランカ両替ガイド：空港・市内の両替方法と1日の必要現金は？ | SLTCS",
+    title: "スリランカ両替ガイド：空港・市内の両替方法と1日の必要現金は？ | SriNowa",
     description:
-      "スリランカ旅行の両替を徹底解説。バンダラナイケ空港での両替方法、市内の両替所の選び方、1日あたり必要なルピーの目安、観光地入場料の現金相場まで、SLTCSがまとめました。",
+      "スリランカ旅行の両替を徹底解説。バンダラナイケ空港での両替方法、市内の両替所の選び方、1日あたり必要なルピーの目安、観光地入場料の現金相場まで、SriNowaがまとめました。",
     path: "/travel-planning/forex",
     noindex: false,
     jsonLdList: [
@@ -57,7 +57,7 @@ export default function ForexArticle() {
           "スリランカ両替ガイド：空港・市内の両替方法と1日の必要現金は？",
         description:
           "スリランカ旅行の両替を徹底解説。空港での両替方法、市内の両替所の選び方、1日あたり必要なルピーの目安まで解説。",
-        author: { "@type": "Organization", name: "SLTCS" },
+        author: { "@type": "Organization", name: "SriNowa" },
         datePublished: "2026-07-01",
         inLanguage: "ja",
       },
@@ -146,7 +146,7 @@ export default function ForexArticle() {
         <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 mb-4 text-sm">
           <p className="font-bold text-gray-900 mb-3">ドライバーへの支払い額の換算目安</p>
           <p className="text-gray-700 leading-relaxed">
-            SLTCSのドライバーへの支払い額はご案内している金額の2倍のスリランカルピーでお支払いいただければと思います。
+            SriNowaのドライバーへの支払い額はご案内している金額の2倍のスリランカルピーでお支払いいただければと思います。
             たとえば5万円の場合は10万スリランカルピーが目安です。
           </p>
         </div>
@@ -175,7 +175,7 @@ export default function ForexArticle() {
         </p>
 
         <NoteBox>
-          <strong>SLTCSのドライバーに同行してもらうと安心</strong><br />
+          <strong>SriNowaのドライバーに同行してもらうと安心</strong><br />
           ドライバーに両替の際に付き添ってもらうことで、不利なレートを提示される可能性を減らすことができます。遠慮なくお声がけください。
         </NoteBox>
 
@@ -194,7 +194,7 @@ export default function ForexArticle() {
         <H2 id="section4">1日あたりの必要現金の目安</H2>
 
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
-          SLTCSのタクシーチャーターをご利用の場合、大きな移動費は事前決済済みです。
+          SriNowaのタクシーチャーターをご利用の場合、大きな移動費は事前決済済みです。
           現地で必要になる現金は主に<strong className="text-gray-900">ドライバーへのチップ・食事代・観光地の入場料</strong>の3つです。
         </p>
 
@@ -302,7 +302,7 @@ export default function ForexArticle() {
           </table>
         </div>
         <p className="text-xs text-gray-500">
-          ※上記は参考価格です。実際の料金は変更になる場合があります。SLTCSのドライバーが最新情報をご案内します。
+          ※上記は参考価格です。実際の料金は変更になる場合があります。SriNowaのドライバーが最新情報をご案内します。
         </p>
       </section>
 

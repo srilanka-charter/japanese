@@ -1,9 +1,9 @@
 import { createContext, createElement, useContext, useEffect } from "react";
 
 const DEFAULT_TITLE =
-  "スリランカタクシーチャーターならSLTCS｜日本語対応の専用車で自由に周遊";
+  "スリランカタクシーチャーターならSriNowa｜日本語対応の専用車で自由に周遊";
 const DEFAULT_DESC =
-  "スリランカタクシーチャーターならSLTCS。日本語対応の専用車・カーチャーターで、シーギリヤ・キャンディ・ヤラなどスリランカ全土を自由に周遊。政府公認ドライバーによる完全プライベートチャーターをご提供します。";
+  "スリランカタクシーチャーターならSriNowa。日本語対応の専用車・カーチャーターで、シーギリヤ・キャンディ・ヤラなどスリランカ全土を自由に周遊。政府公認ドライバーによる完全プライベートチャーターをご提供します。";
 const SITE_URL = "https://sltcs.srilanka-charter.com";
 const DEFAULT_OG_IMAGE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_rock_hero-WvSdEsM6SGKw7D3K9DXp8D.webp";

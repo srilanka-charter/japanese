@@ -160,10 +160,10 @@ export default function TipMannerArticle() {
           旅行中に特別に良いサービスを受けた日（例：急な体調不良への対応、おすすめスポットへの案内など）は、その日にプラスアルファのチップを渡すと喜ばれます。
         </p>
 
-        <H3 index={1}>SLTCSのドライバーへのチップについて</H3>
+        <H3 index={1}>SriNowaのドライバーへのチップについて</H3>
 
         <p className="text-base leading-[1.9] text-gray-700 mb-4">
-          SLTCSでは、チャーター料金にチップは含まれていません。チップはお客様の任意となっており、サービスへの満足度に応じてお渡しいただく形をとっています。
+          SriNowaでは、チャーター料金にチップは含まれていません。チップはお客様の任意となっており、サービスへの満足度に応じてお渡しいただく形をとっています。
         </p>
 
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
@@ -457,7 +457,7 @@ export default function TipMannerArticle() {
         </p>
 
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
-          特に複数日にわたる専用車チャーターでは、ドライバーへのチップが旅の締めくくりとして重要です。SLTCSでは、チップの相場や渡し方についても事前にご案内しますので、初めてスリランカを訪れる方も安心してご利用いただけます。
+          特に複数日にわたる専用車チャーターでは、ドライバーへのチップが旅の締めくくりとして重要です。SriNowaでは、チップの相場や渡し方についても事前にご案内しますので、初めてスリランカを訪れる方も安心してご利用いただけます。
         </p>
 
         {/* まとめリスト */}
@@ -489,7 +489,7 @@ export default function TipMannerArticle() {
             { href: "/blog/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカ旅行でタクシーチャーターがおすすめな理由｜公共交通との違い" },
             { href: "/blog/taxi-charter-basics/price-breakdown-risks", label: "スリランカのタクシーチャーター料金の内訳とは？安いサービスには気をつけよう！" },
             { href: "/blog/travel-planning/when-to-book-charter", label: "スリランカの専用車チャーターをいつ予約すべき？｜予約タイミング完全ガイド" },
-            { href: "/pricing", label: "SLTCSの料金一覧｜スリランカ専用車チャーターの価格" },
+            { href: "/pricing", label: "SriNowaの料金一覧｜スリランカ専用車チャーターの価格" },
             { href: "/blog/travel-planning/best-season-guide", label: "スリランカ旅行のベストシーズンと気候完全ガイド" },
           ].map((link, i) => (
             <li key={i}>

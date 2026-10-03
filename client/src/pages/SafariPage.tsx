@@ -35,7 +35,7 @@ const PARK_TABS: ParkTab[] = [
       <div className="space-y-4">
         <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
           <p className="text-amber-800 font-semibold text-sm">
-            ✦ SLTCSの特別サービス
+            ✦ SriNowaの特別サービス
           </p>
           <p className="text-amber-700 text-sm mt-1">
             この3か所は距離が近く、その日の象の出没状況によって最も遭遇率の高い公園をご案内します。
@@ -196,15 +196,15 @@ export default function SafariPage() {
   const activepark = PARK_TABS.find((t) => t.id === activeTab)!;
 
   useSEO({
-    title: "スリランカのサファリ完全ガイド｜6つの国立公園と象・ヒョウの見どころ | SLTCS",
-    description: "スリランカのサファリが有名な理由から、ミンネリア・ヤーラ・ウダワラウェなど６つの国立公園の特徴・ベストシーズン・主な動物まで徹底解説。SLTCSのプラチナプラン以上ではジープ手配も可能です。",
+    title: "スリランカのサファリ完全ガイド｜6つの国立公園と象・ヒョウの見どころ | SriNowa",
+    description: "スリランカのサファリが有名な理由から、ミンネリア・ヤーラ・ウダワラウェなど６つの国立公園の特徴・ベストシーズン・主な動物まで徹底解説。SriNowaのプラチナプラン以上ではジープ手配も可能です。",
     path: "/safari",
     ogImage: SAFARI_MINNERIYA,
     jsonLdList: [{
       "@context": "https://schema.org",
       "@type": "TouristAttraction",
       "name": "スリランカサファリ",
-      "description": "スリランカの国立公園で象・ヒョウなど野生動物を観察。SLTCSのタクシーチャーターで送迎付きでご案内。",
+      "description": "スリランカの国立公園で象・ヒョウなど野生動物を観察。SriNowaのタクシーチャーターで送迎付きでご案内。",
       "url": "https://sltcs.srilanka-charter.com/safari",
       "image": SAFARI_MINNERIYA,
       "touristType": "Wildlife Tourism",
@@ -304,20 +304,20 @@ export default function SafariPage() {
               <div>
                 <img
                   src={SAFARI_JEEP}
-                  alt="SLTCSのサファリジープ"
+                  alt="SriNowaのサファリジープ"
                   className="w-full h-auto rounded-xl shadow-md"
                 />
-                <p className="text-xs text-stone-400 mt-2 text-center">SLTCSが手配するプライベートジープ</p>
+                <p className="text-xs text-stone-400 mt-2 text-center">SriNowaが手配するプライベートジープ</p>
               </div>
               <div className="space-y-4 text-stone-700 leading-relaxed">
                 <p>
                   スリランカの国立公園内はすべて<strong>四輪駆動のジープ（サファリビークル）</strong>での移動が義務付けられています。公園の入り口でジープに乗り換えて園内を巡るスタイルが一般的です。
                 </p>
                 <p>
-                  <strong>SLTCSのプラチナプラン以上</strong>では、チャーター車とは別にサファリ用のジープを手配することができます。
+                  <strong>SriNowaのプラチナプラン以上</strong>では、チャーター車とは別にサファリ用のジープを手配することができます。
                 </p>
                 <div className="bg-stone-50 border border-stone-200 rounded-xl p-5 space-y-3">
-                  <h3 className="font-bold text-stone-800">SLTCSでジープを手配するメリット</h3>
+                  <h3 className="font-bold text-stone-800">SriNowaでジープを手配するメリット</h3>
                   {[
                     "合流・解散場所で悩む必要がない。前の観光スポットからスムーズにジープツアーを始められ、終わった後も次の観光地へスムーズに移動できます",
                     "ドライバーが同乗して解説。日本語ドライバーなら日本語でのガイドが受けられます",
@@ -372,7 +372,7 @@ export default function SafariPage() {
                     {activepark.label}
                     {activepark.group && (
                       <span className="ml-2 text-sm bg-amber-500 text-white px-2 py-0.5 rounded-full">
-                        SLTCS最適化
+                        SriNowa最適化
                       </span>
                     )}
                   </h3>
@@ -507,7 +507,7 @@ export default function SafariPage() {
             </h2>
             <p className="text-stone-300 max-w-2xl mx-auto mb-6 leading-relaxed">
               どの国立公園が良いか、ジープの手配方法、最適な訪問時期など、お気軽にご相談ください。
-              もちろん、ご自身でジープを手配されても問題ありません。SLTCSはチャーター車でのスムーズな移動をサポートします。
+              もちろん、ご自身でジープを手配されても問題ありません。SriNowaはチャーター車でのスムーズな移動をサポートします。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

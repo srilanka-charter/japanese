@@ -83,14 +83,14 @@ const vehicles = [
 
 export default function VehiclesPage() {
   useSEO({
-    title: "スリランカタクシーチャーターの車両ラインナップ｜セダン・バン・ミニバン【SLTCS】",
-    description: "スリランカタクシーチャーターサービスSLTCSの車両ラインナップ。セダン（2｜3名）・バン（4｜6名）・ミニバン（6｜9名）をグループ規模に合わせて選択。エアコン・ミネラルウォーター完備。",
+    title: "スリランカタクシーチャーターの車両ラインナップ｜セダン・バン・ミニバン【SriNowa】",
+    description: "スリノワSriNowaの車両ラインナップ。セダン（2｜3名）・バン（4｜6名）・ミニバン（6｜9名）をグループ規模に合わせて選択。エアコン・ミネラルウォーター完備。",
     path: "/vehicles",
     jsonLdList: [
       {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "SLTCS スリランカタクシーチャーター 車両ラインナップ",
+        "name": "SriNowa スリランカタクシーチャーター 車両ラインナップ",
         "url": "https://sltcs.srilanka-charter.com/vehicles",
         "numberOfItems": 3,
         "itemListElement": [
@@ -102,7 +102,7 @@ export default function VehiclesPage() {
               "name": "Sedan （セダン）―スリランカタクシーチャーター",
               "description": "カップル・少人数旅行（2｜3名）に最適。エアコン・ミネラルウォーター完備。大きなスーツケース2個＋小さなスーツケース1個まで積載可能。",
               "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/vehicle_sedan_ee212661.webp",
-              "brand": { "@type": "Brand", "name": "SLTCS" },
+              "brand": { "@type": "Brand", "name": "SriNowa" },
               "offers": {
                 "@type": "Offer",
                 "priceCurrency": "JPY",
@@ -128,7 +128,7 @@ export default function VehiclesPage() {
               "name": "Van （バン）―スリランカタクシーチャーター",
               "description": "ファミリー・グループ旅行（4｜6名）に最適。広々とした室内空間と充実した荷物収納スペース。大きなスーツケース8個まで積載可能。",
               "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/vehicle_van_de904967.webp",
-              "brand": { "@type": "Brand", "name": "SLTCS" },
+              "brand": { "@type": "Brand", "name": "SriNowa" },
               "offers": {
                 "@type": "Offer",
                 "priceCurrency": "JPY",
@@ -154,7 +154,7 @@ export default function VehiclesPage() {
               "name": "Big Van （ビッグバン）―スリランカタクシーチャーター",
               "description": "大型グループ・企業旅行（7｜10名）に最適。独立シート9席、大型荷物スペース完備。大きなスーツケース10個まで積載可能。",
               "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/vehicle_bigvan_7c49b85f.webp",
-              "brand": { "@type": "Brand", "name": "SLTCS" },
+              "brand": { "@type": "Brand", "name": "SriNowa" },
               "offers": {
                 "@type": "Offer",
                 "priceCurrency": "JPY",

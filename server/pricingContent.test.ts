@@ -14,7 +14,7 @@ describe("料金ページの掲載範囲", () => {
     expect(source).toContain('import CharterPricingTable from "@/components/sections/CharterPricingTable"');
     expect(source).toContain("<CharterPricingTable />");
     expect(source).not.toContain("Plan overview cards");
-    expect(source).not.toContain("SLTCSではお客様の趣向に合わせて3つのプランをご用意しております");
+    expect(source).not.toContain("SriNowaではお客様の趣向に合わせて3つのプランをご用意しております");
     expect(source).not.toContain("シルバープラン（2日間／Sedan）");
     expect(source).not.toContain("ゴールドプラン（2日間／Sedan）");
     expect(source).toContain(

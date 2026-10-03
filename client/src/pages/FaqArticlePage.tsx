@@ -6,17 +6,17 @@ import FloatingCTA from "@/components/FloatingCTA";
 import { ChevronDown, ChevronRight, MessageCircle } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 
-const FAQ_TITLE = "スリランカタクシーチャーターサービスのよくある質問（FAQ）";
+const FAQ_TITLE = "スリノワのよくある質問（FAQ）";
 const FAQ_DESC =
-  "SLTCS（スリランカタクシーチャーターサービス）に関するよくある質問をまとめました。料金・支払い・ドライバー・チップ・キャンセルなど、旅行前に気になる疑問にお答えします。";
+  "SriNowa（スリノワ）に関するよくある質問をまとめました。料金・支払い・ドライバー・チップ・キャンセルなど、旅行前に気になる疑問にお答えします。";
 
 const faqs: { q: string; a: React.ReactNode }[] = [
   {
-    q: "SLTCS（スリランカタクシーチャーターサービス）とはどのようなサービスですか？",
+    q: "SriNowa（スリノワ）とはどのようなサービスですか？",
     a: (
       <>
         <p>
-          SLTCS（スリランカタクシーチャーターサービス）は、香港法人{" "}
+          SriNowa（スリノワ）は、香港法人{" "}
           <strong>Sri Lanka Taxi Charter Service International Limited</strong>{" "}
           が運営する、<strong>オンライン地上輸送マッチングサービス</strong>です。
           日本人旅行者と、スリランカ観光開発庁（SLTDA）に登録した観光ドライバーをつなぐ紹介・連絡取次サービスとして機能しています。
@@ -233,8 +233,8 @@ const faqs: { q: string; a: React.ReactNode }[] = [
 ];
 
 const faqAnswers: Record<string, string> = {
-  "SLTCS（スリランカタクシーチャーターサービス）とはどのようなサービスですか？":
-        "SLTCS（スリランカタクシーチャーターサービス）は、香港法人 Sri Lanka Taxi Charter Service International Limited が運営するオンライン地上輸送マッチングサービスです。日本人旅行者と、スリランカ観光開発庁（SLTDA）に登録した観光ドライバーをつなぐ紹介・連絡取次サービスとして機能しています。輸送契約はお客様とドライバーの間で直接成立し、当社は運送を行いません。",
+  "SriNowa（スリノワ）とはどのようなサービスですか？":
+        "SriNowa（スリノワ）は、香港法人 Sri Lanka Taxi Charter Service International Limited が運営するオンライン地上輸送マッチングサービスです。日本人旅行者と、スリランカ観光開発庁（SLTDA）に登録した観光ドライバーをつなぐ紹介・連絡取次サービスとして機能しています。輸送契約はお客様とドライバーの間で直接成立し、当社は運送を行いません。",
       "チップはどのくらい渡せばよいですか？タイミングはいつですか？":
   "チップの目安は1日あたり2,000〜4,000ルピー（約1,000〜2,000円）です。その日の行程が終わったタイミングでお渡しいただくのが一般的です。チップは任意です。",
   "日本語で旅程の相談やルート提案をしてもらえますか？":
@@ -308,7 +308,7 @@ export default function FaqArticlePage() {
           よくあるご質問
         </h1>
         <p className="text-white/60 mt-4 max-w-xl mx-auto text-sm">
-          スリランカタクシーチャーターサービス（SLTCS）に関するよくある疑問にお答えします
+          スリノワ（SriNowa）に関するよくある疑問にお答えします
         </p>
         {/* Breadcrumb */}
         <nav className="mt-6 flex items-center justify-center gap-1 text-xs text-white/40">
@@ -324,7 +324,7 @@ export default function FaqArticlePage() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
         {/* Intro text */}
         <p className="text-sm text-gray-600 leading-relaxed mb-10 border-l-4 border-[oklch(0.35_0.12_155)] pl-4">
-          以下は、SLTCS（スリランカタクシーチャーターサービス）をご検討・ご利用のお客様からよくいただくご質問をまとめたものです。
+          以下は、SriNowa（スリノワ）をご検討・ご利用のお客様からよくいただくご質問をまとめたものです。
           ご不明な点がございましたら、お気軽にお問い合わせください。
         </p>
 

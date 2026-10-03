@@ -458,7 +458,7 @@ export default function HoneymoonArticle() {
               { href: "/blog/theme-travel/solo-women-travel-charter", label: "女子旅にスリランカはおすすめ？一人旅でも安心なタクシーチャーターで個人旅行をしよう！" },
               { href: "/blog/taxi-charter-basics/why-taxi-charter-is-recommended", label: "スリランカでタクシーチャーターがおすすめな理由" },
               { href: "/blog/travel-planning/when-to-book-charter", label: "スリランカの専用車チャーターをいつ予約すべき？" },
-              { href: "/pricing", label: "SLTCSの料金一覧｜スリランカ専用車チャーターの価格" },
+              { href: "/pricing", label: "SriNowaの料金一覧｜スリランカ専用車チャーターの価格" },
               { href: "/blog/travel-planning/best-season-guide", label: "スリランカ旅行のベストシーズンと気候完全ガイド" },
             ].map((link, i) => (
               <li key={i}>

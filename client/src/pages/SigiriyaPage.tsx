@@ -21,7 +21,7 @@ const highlights = [
     title: "シーギリヤレディ（フレスコ画）",
     image: "/manus-storage/sigiriya_fresco_ladies_5fb3a5d5.jpg",
     description:
-      "岩の中腹にある洞窟に描かれた天女（アプサラス）の壁画。5世紀に描かれたとは思えないほど鮮やかな色彩で、約500体が描かれていたとされますが、現在は約20体が残っています。撮影禁止エリアのため、目に焼き付けておきましょう。SLTCSのシルバープラン以上ではドライバーが詳しく解説します。",
+      "岩の中腹にある洞窟に描かれた天女（アプサラス）の壁画。5世紀に描かれたとは思えないほど鮮やかな色彩で、約500体が描かれていたとされますが、現在は約20体が残っています。撮影禁止エリアのため、目に焼き付けておきましょう。SriNowaのシルバープラン以上ではドライバーが詳しく解説します。",
   },
   {
     id: "mirror-wall",
@@ -175,7 +175,7 @@ const faqJsonLd = {
       "name": "シーギリヤロックへの行き方は？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "シーギリヤロックへはタクシーチャーターが最もおすすめです。コロンボから約4〜5時間で到着します。公共交通機関（バス・鉄道）は直通がなく、ダンブッラなどで乗り換えが必要なため不便です。SLTCSの日本語対応タクシーチャーターなら、ホテルから直接シーギリヤロック入口まで送迎します。"
+        "text": "シーギリヤロックへはタクシーチャーターが最もおすすめです。コロンボから約4〜5時間で到着します。公共交通機関（バス・鉄道）は直通がなく、ダンブッラなどで乗り換えが必要なため不便です。SriNowaの日本語対応タクシーチャーターなら、ホテルから直接シーギリヤロック入口まで送迎します。"
       }
     },
     {
@@ -183,7 +183,7 @@ const faqJsonLd = {
       "name": "シーギリヤロックの入場料はいくらですか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "シーギリヤロックの外国人向け入場料は約USD 30（約4,500円）です。SLTCSのシルバープラン以上では、ドライバーが自己負担で同行し各スポットを日本語で解説します。"
+        "text": "シーギリヤロックの外国人向け入場料は約USD 30（約4,500円）です。SriNowaのシルバープラン以上では、ドライバーが自己負担で同行し各スポットを日本語で解説します。"
       }
     },
     {
@@ -209,12 +209,12 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "シーギリヤロックの見所とは？行き方や周辺のホテルやレストランを含めて徹底解説！",
-  "description": "シーギリヤロックへの行き方（タクシーチャーター・バス・鉄道の比較）、見どころ5選、周辺レストラン、観光地、おすすめホテルを徹底解説。日本語対応タクシーチャーターSLTCSのご利用がおすすめです。",
+  "description": "シーギリヤロックへの行き方（タクシーチャーター・バス・鉄道の比較）、見どころ5選、周辺レストラン、観光地、おすすめホテルを徹底解説。日本語対応タクシーチャーターSriNowaのご利用がおすすめです。",
   "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_rock_hero-WvSdEsM6SGKw7D3K9DXp8D.webp",
-  "author": { "@type": "Organization", "name": "SLTCS スリランカタクシーチャーターサービス" },
+  "author": { "@type": "Organization", "name": "SriNowa スリノワ" },
   "publisher": {
     "@type": "Organization",
-    "name": "SLTCS スリランカタクシーチャーターサービス",
+    "name": "SriNowa スリノワ",
     "url": "https://sltcs.srilanka-charter.com"
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sltcs.srilanka-charter.com/sigiriya" },
@@ -223,8 +223,8 @@ const articleJsonLd = {
 
 export default function SigiriyaPage() {
   useSEO({
-    title: "シーギリヤロックの行き方・見どころ完全ガイド｜タクシーチャーターで快適アクセス【SLTCS】",
-    description: "シーギリヤロックへの行き方を徹底解説。コロンボからタクシーチャーター（約4〜5時間）・バス・鉄道を比較。日本語対応SLTCSなら直行でアクセス可能。見どころ・周辺レストラン・ホテルも網羅。",
+    title: "シーギリヤロックの行き方・見どころ完全ガイド｜タクシーチャーターで快適アクセス【SriNowa】",
+    description: "シーギリヤロックへの行き方を徹底解説。コロンボからタクシーチャーター（約4〜5時間）・バス・鉄道を比較。日本語対応SriNowaなら直行でアクセス可能。見どころ・周辺レストラン・ホテルも網羅。",
     path: "/sigiriya",
     ogImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_rock_hero-WvSdEsM6SGKw7D3K9DXp8D.webp",
     jsonLdList: [faqJsonLd, articleJsonLd],
@@ -339,12 +339,12 @@ export default function SigiriyaPage() {
             </p>
           </div>
 
-          <img src={TAXI_IMG} alt="シーギリヤロックへのタクシーチャーター SLTCS" className="w-full rounded-2xl mb-8 shadow-lg" />
+          <img src={TAXI_IMG} alt="シーギリヤロックへのタクシーチャーター SriNowa" className="w-full rounded-2xl mb-8 shadow-lg" />
 
           <div className="bg-gradient-to-r from-green-800 to-green-700 rounded-2xl p-6 text-white mb-6">
-            <p className="font-bold text-xl mb-3">✅ SLTCSのタクシーチャーターがおすすめ！</p>
+            <p className="font-bold text-xl mb-3">✅ SriNowaのタクシーチャーターがおすすめ！</p>
             <p className="text-green-100 leading-relaxed mb-4">
-              SLTCSは日本語対応の政府公認タクシーチャーターサービスです。ホテルまでお迎えに上がり、シーギリヤロックの入口まで直接お連れします。途中でダンブッラ石窟寺院などに立ち寄ることも自由自在。複数人でのご利用なら一人あたりの費用も大幅に抑えられます。
+              SriNowaは日本語対応の政府公認タクシーチャーターサービスです。ホテルまでお迎えに上がり、シーギリヤロックの入口まで直接お連れします。途中でダンブッラ石窟寺院などに立ち寄ることも自由自在。複数人でのご利用なら一人あたりの費用も大幅に抑えられます。
             </p>
             <ul className="text-green-100 text-sm space-y-1 mb-5">
               <li>✓ 日本語対応ドライバー選択可能</li>
@@ -354,7 +354,7 @@ export default function SigiriyaPage() {
             </ul>
             <Link href="/">
               <button className="bg-amber-500 hover:bg-amber-400 text-white font-bold px-6 py-3 rounded-full transition-colors">
-                SLTCSの詳細を見る →
+                SriNowaの詳細を見る →
               </button>
             </Link>
           </div>
@@ -369,12 +369,12 @@ export default function SigiriyaPage() {
           {/* シルバープラン以上の説明 */}
           <div className="bg-gradient-to-r from-slate-700 to-slate-800 rounded-2xl p-6 text-white mb-10">
             <div className="flex items-center gap-3 mb-3">
-              <span className="bg-amber-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full">SLTCS シルバープラン以上</span>
+              <span className="bg-amber-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full">SriNowa シルバープラン以上</span>
               <span className="text-amber-300 font-bold text-sm">特別サービス</span>
             </div>
             <h3 className="text-lg font-bold text-white mb-3">ドライバーがシーギリヤロックに一緒に登り、各スポットを詳しく解説します</h3>
             <p className="text-white/85 text-sm leading-relaxed mb-3">
-              SLTCSのシルバープラン以上をご利用のお客様には、担当ドライバーがシーギリヤロックの登山を含めて同行し、フレスコ画・ライオンゲート・頂上宮殿遺跡など各見どころを詳しく解説するサービスをご提供しています。日本語ドライバーを選択していれば日本語での説明を受けることができます。
+              SriNowaのシルバープラン以上をご利用のお客様には、担当ドライバーがシーギリヤロックの登山を含めて同行し、フレスコ画・ライオンゲート・頂上宮殿遺跡など各見どころを詳しく解説するサービスをご提供しています。日本語ドライバーを選択していれば日本語での説明を受けることができます。
             </p>
             <p className="text-white/85 text-sm leading-relaxed mb-4">
               ガイドブックには載っていない地元ならではのエピソードや、最高の撮影スポットのアドバイスも受けられます。初めてのシーギリヤ訪問をより深く、より楽しく体験していただけます。ブロンズプランはドライバーが麓でお待ちします。
@@ -565,11 +565,11 @@ export default function SigiriyaPage() {
             {[
               {
                 q: "シーギリヤロックへの行き方は？",
-                a: "シーギリヤロックへはタクシーチャーターが最もおすすめです。コロンボから約4〜5時間で到着します。公共交通機関（バス・鉄道）は直通がなく、ダンブッラなどで乗り換えが必要なため不便です。SLTCSの日本語対応タクシーチャーターなら、ホテルから直接シーギリヤロック入口まで送迎します。"
+                a: "シーギリヤロックへはタクシーチャーターが最もおすすめです。コロンボから約4〜5時間で到着します。公共交通機関（バス・鉄道）は直通がなく、ダンブッラなどで乗り換えが必要なため不便です。SriNowaの日本語対応タクシーチャーターなら、ホテルから直接シーギリヤロック入口まで送迎します。"
               },
               {
                 q: "シーギリヤロックの入場料はいくらですか？",
-                a: "シーギリヤロックの外国人向け入場料は約USD 30（約4,500円）です。SLTCSのシルバープラン以上では、ドライバーが自己負担で同行し各スポットを日本語で解説します。"
+                a: "シーギリヤロックの外国人向け入場料は約USD 30（約4,500円）です。SriNowaのシルバープラン以上では、ドライバーが自己負担で同行し各スポットを日本語で解説します。"
               },
               {
                 q: "シーギリヤロックの登山にかかる時間は？",
@@ -595,13 +595,13 @@ export default function SigiriyaPage() {
 
         {/* CTA */}
         <div className="bg-gradient-to-r from-green-900 to-green-700 rounded-2xl p-8 text-center text-white">
-          <h2 className="text-2xl font-bold mb-3">シーギリヤをSLTCSで快適に！</h2>
+          <h2 className="text-2xl font-bold mb-3">シーギリヤをSriNowaで快適に！</h2>
           <p className="text-green-100 leading-relaxed mb-6 max-w-xl mx-auto">
 政府公認ドライバーが、シーギリヤロックへの移動から観光ガイドまでサポートします。シルバープラン以上では一緒に登山し、各スポットを丁寧に解説。まずはお気軽にご相談ください。
           </p>
           <Link href="/">
             <button className="bg-amber-500 hover:bg-amber-400 text-white font-bold px-8 py-4 rounded-full text-lg transition-colors shadow-lg">
-              SLTCSトップページへ →
+              SriNowaトップページへ →
             </button>
           </Link>
         </div>

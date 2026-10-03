@@ -15,7 +15,7 @@ const highlights = [
     title: "城壁（ランパート）散歩",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/galle_fort_walls-f7jYHJFZsjM9k9xGAw2ENK.webp",
     description:
-      "ゴール要塞を囲む全長約1.4kmの城壁は、夕暮れ時の散歩コースとして絶大な人気を誇ります。17世紀にオランダ人が築いた堅牢な石造りの城壁の上を歩きながら、インド洋の絶景と要塞内の赤瓦屋根の街並みを一望できます。随所に設置された大砲が当時の面影を伝えており、フォトスポットとしても最高です。SLTCSのシルバープラン以上では、ドライバーが各バスティオン（稜堡）の歴史を丁寧に解説します。",
+      "ゴール要塞を囲む全長約1.4kmの城壁は、夕暮れ時の散歩コースとして絶大な人気を誇ります。17世紀にオランダ人が築いた堅牢な石造りの城壁の上を歩きながら、インド洋の絶景と要塞内の赤瓦屋根の街並みを一望できます。随所に設置された大砲が当時の面影を伝えており、フォトスポットとしても最高です。SriNowaのシルバープラン以上では、ドライバーが各バスティオン（稜堡）の歴史を丁寧に解説します。",
   },
   {
     id: "lighthouse",
@@ -169,7 +169,7 @@ const faqJsonLd = {
       "name": "ゴール旧市街への行き方は？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ゴール旧市街へはタクシーチャーターが最もおすすめです。コロンボから約2〜3時間で到着します。公共交通機関（バス・鉄道）でもアクセスできますが、荷物が多い場合や複数の観光地を効率よく回りたい場合はタクシーチャーターが便利です。SLTCSの日本語対応タクシーチャーターなら、ホテルからゴール要塞まで直接送迎します。"
+        "text": "ゴール旧市街へはタクシーチャーターが最もおすすめです。コロンボから約2〜3時間で到着します。公共交通機関（バス・鉄道）でもアクセスできますが、荷物が多い場合や複数の観光地を効率よく回りたい場合はタクシーチャーターが便利です。SriNowaの日本語対応タクシーチャーターなら、ホテルからゴール要塞まで直接送迎します。"
       }
     },
     {
@@ -177,7 +177,7 @@ const faqJsonLd = {
       "name": "ゴール要塞の入場料はいくらですか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ゴール要塞（フォート）自体は無料で入場できます。要塞内の観光施設（国立博物館・オランダ改革派教会など）は個別に入場料が必要です。博物館の外国人向け入場料は約USD 5〜10程度です。SLTCSのシルバープラン以上では、ドライバーが各施設の入場料や見どころを丁寧に解説します。"
+        "text": "ゴール要塞（フォート）自体は無料で入場できます。要塞内の観光施設（国立博物館・オランダ改革派教会など）は個別に入場料が必要です。博物館の外国人向け入場料は約USD 5〜10程度です。SriNowaのシルバープラン以上では、ドライバーが各施設の入場料や見どころを丁寧に解説します。"
       }
     },
     {
@@ -185,7 +185,7 @@ const faqJsonLd = {
       "name": "ゴール旧市街の観光に必要な時間はどれくらいですか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ゴール要塞内の主要スポット（城壁散歩・灯台・オランダ改革派教会・博物館・ショッピング）を巡るには最低でも半日（3〜4時間）は必要です。ウナワトゥナビーチやミリッサビーチも組み合わせる場合は1日以上を確保することをおすすめします。SLTCSのタクシーチャーターなら、ご希望に合わせて柔軟に観光プランを組み立てられます。"
+        "text": "ゴール要塞内の主要スポット（城壁散歩・灯台・オランダ改革派教会・博物館・ショッピング）を巡るには最低でも半日（3〜4時間）は必要です。ウナワトゥナビーチやミリッサビーチも組み合わせる場合は1日以上を確保することをおすすめします。SriNowaのタクシーチャーターなら、ご希望に合わせて柔軟に観光プランを組み立てられます。"
       }
     },
     {
@@ -193,7 +193,7 @@ const faqJsonLd = {
       "name": "コロンボからゴールまでの所要時間は？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "コロンボからゴールまでの所要時間は、タクシーチャーターで約2〜3時間（約120km）です。鉄道では約2時間30分〜3時間、バスでは約3〜4時間かかります。SLTCSのタクシーチャーターなら、高速道路（E01）を利用して最短ルートで快適に移動できます。"
+        "text": "コロンボからゴールまでの所要時間は、タクシーチャーターで約2〜3時間（約120km）です。鉄道では約2時間30分〜3時間、バスでは約3〜4時間かかります。SriNowaのタクシーチャーターなら、高速道路（E01）を利用して最短ルートで快適に移動できます。"
       }
     },
     {
@@ -211,12 +211,12 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "ゴール旧市街の見所とは？行き方や周辺のホテルやレストランを含めて徹底解説！",
-  "description": "ゴール旧市街への行き方（タクシーチャーター・バス・鉄道の比較）、見どころ5選、周辺レストラン、観光地、おすすめホテルを徹底解説。日本語対応タクシーチャーターSLTCSのご利用がおすすめです。",
+  "description": "ゴール旧市街への行き方（タクシーチャーター・バス・鉄道の比較）、見どころ5選、周辺レストラン、観光地、おすすめホテルを徹底解説。日本語対応タクシーチャーターSriNowaのご利用がおすすめです。",
   "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/galle_fort_hero-DUKxQjoVyFYYNXeLGiZBub.webp",
-  "author": { "@type": "Organization", "name": "SLTCS スリランカタクシーチャーターサービス" },
+  "author": { "@type": "Organization", "name": "SriNowa スリノワ" },
   "publisher": {
     "@type": "Organization",
-    "name": "SLTCS スリランカタクシーチャーターサービス",
+    "name": "SriNowa スリノワ",
     "url": "https://sltcs.srilanka-charter.com"
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sltcs.srilanka-charter.com/galle" },
@@ -227,8 +227,8 @@ export default function GallePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useSEO({
-    title: "ゴール旧市街の行き方・見どころ完全ガイド｜タクシーチャーターで快適アクセス【SLTCS】",
-    description: "ゴール旧市街への行き方を徹底解説。コロンボからタクシーチャーター（約2〜3時間）・バス・鉄道を比較。日本語対応SLTCSなら直行でアクセス可能。見どころ・周辺レストラン・ホテルも網羅。",
+    title: "ゴール旧市街の行き方・見どころ完全ガイド｜タクシーチャーターで快適アクセス【SriNowa】",
+    description: "ゴール旧市街への行き方を徹底解説。コロンボからタクシーチャーター（約2〜3時間）・バス・鉄道を比較。日本語対応SriNowaなら直行でアクセス可能。見どころ・周辺レストラン・ホテルも網羅。",
     path: "/galle",
     ogImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/galle_fort_hero-DUKxQjoVyFYYNXeLGiZBub.webp",
     jsonLdList: [faqJsonLd, articleJsonLd],
@@ -315,7 +315,7 @@ export default function GallePage() {
               </thead>
               <tbody>
                 <tr className="bg-amber-50 border-b border-amber-100">
-                  <td className="px-4 py-3 font-bold text-amber-700">タクシーチャーター（SLTCS）</td>
+                  <td className="px-4 py-3 font-bold text-amber-700">タクシーチャーター（SriNowa）</td>
                   <td className="px-4 py-3">約2〜3時間</td>
                   <td className="px-4 py-3">¥¥¥</td>
                   <td className="px-4 py-3">ホテル直接送迎・日本語対応・荷物OK・途中立ち寄り自由</td>
@@ -345,7 +345,7 @@ export default function GallePage() {
               <div className="md:w-3/5 p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="bg-amber-500 text-white text-xs font-bold px-2 py-1 rounded">おすすめ</span>
-                  <h3 className="font-bold text-lg text-[oklch(0.15_0.01_60)]">SLTCSタクシーチャーターで行く</h3>
+                  <h3 className="font-bold text-lg text-[oklch(0.15_0.01_60)]">SriNowaタクシーチャーターで行く</h3>
                 </div>
                 <ul className="space-y-2 text-sm text-[oklch(0.35_0.02_60)]">
                   <li className="flex items-start gap-2">
@@ -575,7 +575,7 @@ export default function GallePage() {
             ゴール旧市街をタクシーチャーターで快適に観光しよう
           </h2>
           <p className="text-white/80 text-sm mb-6 max-w-xl mx-auto">
-            SLTCSの日本語対応タクシーチャーターなら、コロンボのホテルからゴール要塞まで直接送迎。ウナワトゥナビーチやミリッサへの途中立ち寄りも自由自在です。まずはお気軽にご相談ください。
+            SriNowaの日本語対応タクシーチャーターなら、コロンボのホテルからゴール要塞まで直接送迎。ウナワトゥナビーチやミリッサへの途中立ち寄りも自由自在です。まずはお気軽にご相談ください。
           </p>
           <a
             href="/#contact"

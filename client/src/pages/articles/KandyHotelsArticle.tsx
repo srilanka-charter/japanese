@@ -21,7 +21,7 @@ export default function KandyHotelsArticle() {
             ["2", "Queen's Hotel Kandy — 1843年創業の歴史的コロニアルホテル"],
             ["3", "Earl's Regency Kandy — 丘の上の絶景リゾートホテル"],
             ["4", "Cinnamon Citadel Kandy — マハウェリ川沿いの洗練されたリゾート"],
-            ["5", "SLTCSのタクシーチャーターでキャンディへ"],
+            ["5", "SriNowaのタクシーチャーターでキャンディへ"],
           ].map(([num, label]) => (
             <li key={num} className="flex items-start gap-2 text-gray-600">
               <span className="text-[oklch(0.35_0.12_155)] font-bold flex-shrink-0">{num}.</span>
@@ -436,19 +436,19 @@ export default function KandyHotelsArticle() {
       </section>
 
       {/* ════════════════════════════════════════════════════
-          H2 ⑤ SLTCSのタクシーチャーターでキャンディへ
+          H2 ⑤ SriNowaのタクシーチャーターでキャンディへ
       ════════════════════════════════════════════════════ */}
       <section className="mb-12" id="section5">
         <h2
           className="text-xl sm:text-2xl font-bold text-gray-900 border-l-4 border-[oklch(0.35_0.12_155)] pl-4 mb-5 mt-4"
           style={{ fontFamily: "'Shippori Mincho', serif" }}
         >
-          SLTCSのタクシーチャーターでキャンディへ
+          SriNowaのタクシーチャーターでキャンディへ
         </h2>
 
         <p className="text-base leading-[1.9] text-gray-700 mb-5">
           キャンディはコロンボ国際空港から車で約2.5〜3時間。
-          <strong className="text-gray-900">SLTCSの専用車チャーター</strong>を利用すれば、
+          <strong className="text-gray-900">SriNowaの専用車チャーター</strong>を利用すれば、
           空港からホテルまで快適に移動できます。
           途中でピンナワラ象の孤児院やスパイスガーデンに立ち寄るなど、
           自分たちのペースで旅程を組めるのが専用車の最大の魅力です。
@@ -456,7 +456,7 @@ export default function KandyHotelsArticle() {
 
         <p className="text-base leading-[1.9] text-gray-700 mb-6">
           また、キャンディからヌワラエリヤやシーギリヤへの移動にも、
-          SLTCSの専用車チャーターが便利です。
+          SriNowaの専用車チャーターが便利です。
           日本語対応のドライバーが同行するため、
           言葉の壁を気にせず安心して旅を楽しめます。
         </p>
@@ -464,7 +464,7 @@ export default function KandyHotelsArticle() {
         {/* CTA */}
         <div className="bg-[oklch(0.97_0.02_155)] border border-[oklch(0.75_0.08_155)] rounded-2xl p-6 text-center">
           <p className="text-base font-semibold text-gray-800 mb-3">
-            キャンディへの移動はSLTCSにお任せください
+            キャンディへの移動はSriNowaにお任せください
           </p>
           <p className="text-sm text-gray-600 mb-5">
             日本語対応・完全貸し切りの専用車チャーターで、快適なスリランカ旅行をサポートします。

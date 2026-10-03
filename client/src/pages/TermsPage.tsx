@@ -5,8 +5,8 @@ import { useSEO } from "@/hooks/useSEO";
 
 export default function TermsPage() {
   useSEO({
-    title: "利用規約・免責事項｜SLTCS スリランカタクシーチャーターサービス",
-    description: "SLTCS（スリランカタクシーチャーターサービス）の利用規約および免責事項。サービスの性質、利用条件、責任の限界について説明しています。",
+    title: "利用規約・免責事項｜SriNowa スリノワ",
+    description: "SriNowa（スリノワ）の利用規約および免責事項。サービスの性質、利用条件、責任の限界について説明しています。",
     path: "/terms",
     noindex: true,
   });
@@ -30,7 +30,7 @@ export default function TermsPage() {
             利用規約および免責事項
           </h1>
           <p className="text-white/50 text-sm mt-3">
-            スリランカタクシーチャーターサービス（SLTCS）<br />
+            スリノワ（SriNowa）<br />
             施行日：2026年2月7日
           </p>
         </div>
@@ -64,12 +64,12 @@ export default function TermsPage() {
                   <dd className="mt-1 pl-4">Sri Lanka Taxi Charter Service International Limited（CR No. 78456401、香港法人）をいいます。</dd>
                 </div>
                 <div>
-                  <dt className="font-semibold text-[oklch(0.15_0.03_155)]">「SLTCS」</dt>
+                  <dt className="font-semibold text-[oklch(0.15_0.03_155)]">「SriNowa」</dt>
                   <dd className="mt-1 pl-4">運営会社が提供する、スリランカ国内のタクシーチャータードライバーとのオンラインマッチングサービスの名称をいいます。</dd>
                 </div>
                 <div>
                   <dt className="font-semibold text-[oklch(0.15_0.03_155)]">「本サービス」</dt>
-                  <dd className="mt-1 pl-4">SLTCSを通じて、スリランカ国内の陸上輸送チャーターを希望するお客様と、観光運転免許を保有するドライバーまたはドライバー管理事業者との間を取り次ぐ、紹介・連絡調整サービスをいいます。</dd>
+                  <dd className="mt-1 pl-4">SriNowaを通じて、スリランカ国内の陸上輸送チャーターを希望するお客様と、観光運転免許を保有するドライバーまたはドライバー管理事業者との間を取り次ぐ、紹介・連絡調整サービスをいいます。</dd>
                 </div>
                 <div>
                   <dt className="font-semibold text-[oklch(0.15_0.03_155)]">「ドライバー」</dt>

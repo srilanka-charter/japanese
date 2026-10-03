@@ -15,7 +15,7 @@ const highlights = [
     title: "仏歯奉安室（ダラダー・マーリガーワ）",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/kandy_tooth_relic_chamber-YvohM8RMYVqb3cUNmPAnc4.webp",
     description:
-      "仏歯寺の中核となる奉安室には、釈迦の歯が黄金の容器に7重に収められています。毎日3回（早朝・昼・夕方）の法要（プージャ）の時間には、多くの信者が白い衣をまとって参拝に訪れます。黄金に輝く装飾と花の供え物が荘厳な雰囲気を醸し出し、スリランカ仏教の中心地として今も篤い信仰を集めています。SLTCSのシルバープラン以上では、ドライバーが法要の時間や参拝作法を丁寧に解説します。",
+      "仏歯寺の中核となる奉安室には、釈迦の歯が黄金の容器に7重に収められています。毎日3回（早朝・昼・夕方）の法要（プージャ）の時間には、多くの信者が白い衣をまとって参拝に訪れます。黄金に輝く装飾と花の供え物が荘厳な雰囲気を醸し出し、スリランカ仏教の中心地として今も篤い信仰を集めています。SriNowaのシルバープラン以上では、ドライバーが法要の時間や参拝作法を丁寧に解説します。",
   },
   {
     id: "esala-perahera",
@@ -169,7 +169,7 @@ const faqJsonLd = {
       "name": "キャンディ仏歯寺への行き方は？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "キャンディ仏歯寺へはタクシーチャーターが最もおすすめです。コロンボから約3〜4時間で到着します。公共交通機関（バス・鉄道）でもアクセスできますが、荷物が多い場合や複数の観光地を効率よく回りたい場合はタクシーチャーターが便利です。SLTCSの日本語対応タクシーチャーターなら、ホテルから仏歯寺まで直接送迎します。"
+        "text": "キャンディ仏歯寺へはタクシーチャーターが最もおすすめです。コロンボから約3〜4時間で到着します。公共交通機関（バス・鉄道）でもアクセスできますが、荷物が多い場合や複数の観光地を効率よく回りたい場合はタクシーチャーターが便利です。SriNowaの日本語対応タクシーチャーターなら、ホテルから仏歯寺まで直接送迎します。"
       }
     },
     {
@@ -177,7 +177,7 @@ const faqJsonLd = {
       "name": "キャンディ仏歯寺の入場料はいくらですか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "キャンディ仏歯寺の外国人向け入場料は約USD 15（約2,200円）です。SLTCSのシルバープラン以上では、ドライバーが自己負担で同行し、法要の時間や参拝作法、各見どころを日本語で解説します。"
+        "text": "キャンディ仏歯寺の外国人向け入場料は約USD 15（約2,200円）です。SriNowaのシルバープラン以上では、ドライバーが自己負担で同行し、法要の時間や参拝作法、各見どころを日本語で解説します。"
       }
     },
     {
@@ -203,12 +203,12 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "キャンディ仏歯寺の見所とは？行き方や周辺のホテルやレストランを含めて徹底解説！",
-  "description": "キャンディ仏歯寺への行き方（タクシーチャーター・バス・鉄道の比較）、見どころ5選、周辺レストラン、観光地、おすすめホテルを徹底解説。日本語対応タクシーチャーターSLTCSのご利用がおすすめです。",
+  "description": "キャンディ仏歯寺への行き方（タクシーチャーター・バス・鉄道の比較）、見どころ5選、周辺レストラン、観光地、おすすめホテルを徹底解説。日本語対応タクシーチャーターSriNowaのご利用がおすすめです。",
   "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/kandy_tooth_relic_temple_hero-H5KPCu2wFYrgvuf3d6Q945.webp",
-  "author": { "@type": "Organization", "name": "SLTCS スリランカタクシーチャーターサービス" },
+  "author": { "@type": "Organization", "name": "SriNowa スリノワ" },
   "publisher": {
     "@type": "Organization",
-    "name": "SLTCS スリランカタクシーチャーターサービス",
+    "name": "SriNowa スリノワ",
     "url": "https://sltcs.srilanka-charter.com"
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sltcs.srilanka-charter.com/kandy" },
@@ -217,8 +217,8 @@ const articleJsonLd = {
 
 export default function KandyPage() {
   useSEO({
-    title: "キャンディ仏歯寺の行き方・見どころ完全ガイド｜タクシーチャーターで快適アクセス【SLTCS】",
-    description: "キャンディ仏歯寺への行き方を徹底解説。コロンボからタクシーチャーター（約3〜4時間）・バス・鉄道を比較。日本語対応SLTCSなら直行でアクセス可能。見どころ・周辺レストラン・ホテルも網羅。",
+    title: "キャンディ仏歯寺の行き方・見どころ完全ガイド｜タクシーチャーターで快適アクセス【SriNowa】",
+    description: "キャンディ仏歯寺への行き方を徹底解説。コロンボからタクシーチャーター（約3〜4時間）・バス・鉄道を比較。日本語対応SriNowaなら直行でアクセス可能。見どころ・周辺レストラン・ホテルも網羅。",
     path: "/kandy",
     ogImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/kandy_tooth_relic_temple_hero-H5KPCu2wFYrgvuf3d6Q945.webp",
     jsonLdList: [faqJsonLd, articleJsonLd],
@@ -337,12 +337,12 @@ export default function KandyPage() {
             </p>
           </div>
 
-          <img src={TAXI_IMG} alt="キャンディへのタクシーチャーター SLTCS スリランカ" className="w-full rounded-2xl mb-8 shadow-lg" />
+          <img src={TAXI_IMG} alt="キャンディへのタクシーチャーター SriNowa スリランカ" className="w-full rounded-2xl mb-8 shadow-lg" />
 
           <div className="bg-gradient-to-r from-green-800 to-green-700 rounded-2xl p-6 text-white mb-6">
-            <p className="font-bold text-xl mb-3">✅ SLTCSのタクシーチャーターがおすすめ！</p>
+            <p className="font-bold text-xl mb-3">✅ SriNowaのタクシーチャーターがおすすめ！</p>
             <p className="text-green-100 leading-relaxed mb-4">
-              SLTCSは日本語対応の政府公認タクシーチャーターサービスです。ホテルまでお迎えに上がり、仏歯寺まで直接お連れします。途中でペラデニヤ植物園やピンナワラ象の孤児院などに立ち寄ることも自由自在。複数人でのご利用なら一人あたりの費用も大幅に抑えられます。
+              SriNowaは日本語対応の政府公認タクシーチャーターサービスです。ホテルまでお迎えに上がり、仏歯寺まで直接お連れします。途中でペラデニヤ植物園やピンナワラ象の孤児院などに立ち寄ることも自由自在。複数人でのご利用なら一人あたりの費用も大幅に抑えられます。
             </p>
             <ul className="text-green-100 text-sm space-y-1 mb-5">
               <li>✓ 日本語対応ドライバー</li>
@@ -352,7 +352,7 @@ export default function KandyPage() {
             </ul>
             <Link href="/">
               <button className="bg-amber-500 hover:bg-amber-400 text-white font-bold px-6 py-3 rounded-full transition-colors">
-                SLTCSの詳細を見る →
+                SriNowaの詳細を見る →
               </button>
             </Link>
           </div>
@@ -367,12 +367,12 @@ export default function KandyPage() {
           {/* シルバープラン以上の説明 */}
           <div className="bg-gradient-to-r from-slate-700 to-slate-800 rounded-2xl p-6 text-white mb-10">
             <div className="flex items-center gap-3 mb-3">
-              <span className="bg-amber-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full">SLTCS シルバープラン以上</span>
+              <span className="bg-amber-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full">SriNowa シルバープラン以上</span>
               <span className="text-amber-300 font-bold text-sm">特別サービス</span>
             </div>
             <h3 className="text-lg font-bold text-white mb-3">ドライバーが仏歯寺に一緒に入場し、各スポットを詳しく解説します</h3>
             <p className="text-white/85 text-sm leading-relaxed mb-3">
-              SLTCSのシルバープラン以上をご利用のお客様には、担当ドライバーが仏歯寺の入場を含めて同行し、奉安室・法要の意味・建築様式・歴史的背景など各見どころを詳しく解説するサービスをご提供しています。日本語ドライバーを選択していれば日本語での説明を受けることができます。
+              SriNowaのシルバープラン以上をご利用のお客様には、担当ドライバーが仏歯寺の入場を含めて同行し、奉安室・法要の意味・建築様式・歴史的背景など各見どころを詳しく解説するサービスをご提供しています。日本語ドライバーを選択していれば日本語での説明を受けることができます。
             </p>
             <p className="text-white/85 text-sm leading-relaxed mb-4">
               法要（プージャ）の時間に合わせた訪問スケジュールの調整や、参拝作法のアドバイスも受けられます。初めてのキャンディ訪問をより深く、より楽しく体験していただけます。ブロンズプランはドライバーが外でお待ちします。
@@ -563,11 +563,11 @@ export default function KandyPage() {
             {[
               {
                 q: "キャンディ仏歯寺への行き方は？",
-                a: "キャンディ仏歯寺へはタクシーチャーターが最もおすすめです。コロンボから約3〜4時間で到着します。公共交通機関（バス・鉄道）でもアクセスできますが、荷物が多い場合や複数の観光地を効率よく回りたい場合はタクシーチャーターが便利です。SLTCSの日本語対応タクシーチャーターなら、ホテルから仏歯寺まで直接送迎します。"
+                a: "キャンディ仏歯寺へはタクシーチャーターが最もおすすめです。コロンボから約3〜4時間で到着します。公共交通機関（バス・鉄道）でもアクセスできますが、荷物が多い場合や複数の観光地を効率よく回りたい場合はタクシーチャーターが便利です。SriNowaの日本語対応タクシーチャーターなら、ホテルから仏歯寺まで直接送迎します。"
               },
               {
                 q: "キャンディ仏歯寺の入場料はいくらですか？",
-                a: "キャンディ仏歯寺の外国人向け入場料は約USD 15（約2,200円）です。SLTCSのシルバープラン以上では、ドライバーが自己負担で同行し、法要の時間や参拝作法、各見どころを日本語で解説します。"
+                a: "キャンディ仏歯寺の外国人向け入場料は約USD 15（約2,200円）です。SriNowaのシルバープラン以上では、ドライバーが自己負担で同行し、法要の時間や参拝作法、各見どころを日本語で解説します。"
               },
               {
                 q: "キャンディ仏歯寺の法要（プージャ）の時間は？",
@@ -593,13 +593,13 @@ export default function KandyPage() {
 
         {/* CTA */}
         <div className="bg-gradient-to-r from-green-900 to-green-700 rounded-2xl p-8 text-center text-white">
-          <h2 className="text-2xl font-bold mb-3">キャンディ仏歯寺をSLTCSで快適に！</h2>
+          <h2 className="text-2xl font-bold mb-3">キャンディ仏歯寺をSriNowaで快適に！</h2>
           <p className="text-green-100 leading-relaxed mb-6 max-w-xl mx-auto">
             日本語対応の政府公認ドライバーが、キャンディへの移動から観光ガイドまでサポートします。シルバープラン以上では一緒に仏歯寺に入場し、各スポットを丁寧に解説します。まずはお気軽にご相談ください。
           </p>
           <Link href="/">
             <button className="bg-amber-500 hover:bg-amber-400 text-white font-bold px-8 py-4 rounded-full text-lg transition-colors shadow-lg">
-              SLTCSトップページへ →
+              SriNowaトップページへ →
             </button>
           </Link>
         </div>
