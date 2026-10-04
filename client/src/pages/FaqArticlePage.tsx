@@ -16,9 +16,7 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     a: (
       <>
         <p>
-          SriNowa（スリノワ）は、香港法人{" "}
-          <strong>Sri Lanka Taxi Charter Service International Limited</strong>{" "}
-          が運営する、<strong>オンライン地上輸送マッチングサービス</strong>です。
+          SriNowa（スリノワ）は、<strong>オンライン地上輸送マッチングサービス</strong>です。
           日本人旅行者と、スリランカ観光開発庁（SLTDA）に登録した観光ドライバーをつなぐ紹介・連絡取次サービスとして機能しています。
         </p>
         <p className="mt-2">
@@ -234,7 +232,7 @@ const faqs: { q: string; a: React.ReactNode }[] = [
 
 const faqAnswers: Record<string, string> = {
   "SriNowa（スリノワ）とはどのようなサービスですか？":
-        "SriNowa（スリノワ）は、香港法人 Sri Lanka Taxi Charter Service International Limited が運営するオンライン地上輸送マッチングサービスです。日本人旅行者と、スリランカ観光開発庁（SLTDA）に登録した観光ドライバーをつなぐ紹介・連絡取次サービスとして機能しています。輸送契約はお客様とドライバーの間で直接成立し、当社は運送を行いません。",
+        "SriNowa（スリノワ）は、オンライン地上輸送マッチングサービスです。日本人旅行者と、スリランカ観光開発庁（SLTDA）に登録した観光ドライバーをつなぐ紹介・連絡取次サービスとして機能しています。輸送契約はお客様とドライバーの間で直接成立し、当社は運送を行いません。",
       "チップはどのくらい渡せばよいですか？タイミングはいつですか？":
   "チップの目安は1日あたり2,000〜4,000ルピー（約1,000〜2,000円）です。その日の行程が終わったタイミングでお渡しいただくのが一般的です。チップは任意です。",
   "日本語で旅程の相談やルート提案をしてもらえますか？":

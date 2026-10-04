@@ -61,7 +61,7 @@ export default function TermsPage() {
               <dl className="space-y-3 text-sm">
                 <div>
                   <dt className="font-semibold text-[oklch(0.15_0.03_155)]">「運営会社」</dt>
-                  <dd className="mt-1 pl-4">Sri Lanka Taxi Charter Service International Limited（CR No. 78456401、香港法人）をいいます。</dd>
+                  <dd className="mt-1 pl-4">本サービスを運営する事業者をいいます。</dd>
                 </div>
                 <div>
                   <dt className="font-semibold text-[oklch(0.15_0.03_155)]">「SriNowa」</dt>
@@ -281,9 +281,7 @@ export default function TermsPage() {
                 第15条　お問い合わせ
               </h2>
               <div className="bg-[oklch(0.97_0.01_155)] rounded-xl p-5 text-sm space-y-1">
-                <p className="font-semibold text-[oklch(0.15_0.03_155)]">Sri Lanka Taxi Charter Service International Limited</p>
-                <p>Unit 2A, 17/F, Glenealy Tower, No. 1 Glenealy, Central, Hong Kong S.A.R.</p>
-                <p>E-mail：<a href="mailto:contact@srilankataxicharterservice.com" className="text-[oklch(0.45_0.15_155)] hover:underline">contact@srilankataxicharterservice.com</a></p>
+                <p>お問い合わせは、本サイトのお問い合わせフォームよりお願いいたします。</p>
                 <p className="mt-2 text-[oklch(0.45_0.02_155)]">
                   ※当社サービス料・予約手続きに関するお問い合わせは当社まで。運賃・輸送内容（遅延・事故・忘れ物等）に関する一次対応はドライバーへ直接お申し出ください。必要に応じ当社が連絡を取り次ぎます。
                 </p>

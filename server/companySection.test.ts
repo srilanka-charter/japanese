@@ -8,11 +8,12 @@ const COMPANY_SECTION_PATH = path.resolve(
 );
 
 describe("トップページの会社概要", () => {
-  it("車両提供会社としてI Tours & Travelを表示する", () => {
+  it("サービス名をスリノワとし、登録番号・車両提供会社を表示しない", () => {
     const source = readFileSync(COMPANY_SECTION_PATH, "utf8");
 
-    expect(source).toContain('label: "車両提供会社"');
-    expect(source).toContain('value: "I Tours & Travel（在スリランカ）"');
+    expect(source).toContain('value: "スリノワ"');
+    expect(source).not.toContain("商標登録第7034996");
+    expect(source).not.toContain("I Tours & Travel");
     expect(source).not.toContain('label: "英語名"');
     expect(source).not.toContain('value: "SriNowa Int Ltd"');
   });

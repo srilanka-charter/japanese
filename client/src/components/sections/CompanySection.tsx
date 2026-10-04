@@ -1,6 +1,5 @@
 const companyInfo = [
-  { label: "サービス名", value: "スリノワ（商標登録第7034996）" },
-  { label: "車両提供会社", value: "I Tours & Travel（在スリランカ）" },
+  { label: "サービス名", value: "スリノワ" },
   { label: "事業内容", value: "オンライン地上輸送の仲介サービス" },
   { label: "対応エリア", value: "スリランカ全土（コロンボ・ネゴンボ・キャンディ・シーギリヤ・ヌワラエリヤ・ゴール・ヤラ 他）" },
   { label: "対応言語", value: "日本語・英語" },

@@ -48,7 +48,7 @@ export default function PrivacyPolicyPage() {
                 第1条　適用範囲・定義・法的根拠
               </h2>
               <p>
-                本プライバシーポリシー（以下「本ポリシー」）は、スリノワ（以下「当社」）が運営する本ウェブサイトおよびお問い合わせフォームを通じて取得する個人情報の取扱いについて定めるものです。当社は、香港法人 Sri Lanka Taxi Charter Service International Limited（CR No. 78456401）として設立されており、Personal Data (Privacy) Ordinance（Cap.486、以下「PDPO」）に定める Data Protection Principles（DPP）第1条から第6条を遵守します。
+                本プライバシーポリシー（以下「本ポリシー」）は、スリノワ（以下「当社」）が運営する本ウェブサイトおよびお問い合わせフォームを通じて取得する個人情報の取扱いについて定めるものです。当社は、適用される個人情報保護法令および関連する規則を遵守します。
               </p>
               <p className="mt-3">
                 「個人情報」とは、特定の個人を識別できる、またはその可能性のある情報であって、当社が実際にアクセス・処理可能な形式で保有するものをいいます。
@@ -254,9 +254,7 @@ export default function PrivacyPolicyPage() {
                 第12条　お問い合わせ窓口
               </h2>
               <div className="bg-[oklch(0.97_0.01_155)] rounded-xl p-5 text-sm space-y-1">
-                <p className="font-semibold text-[oklch(0.15_0.03_155)]">Sri Lanka Taxi Charter Service International Limited</p>
-                <p>Unit 2A, 17/F, Glenealy Tower, No. 1 Glenealy, Central, Hong Kong S.A.R.</p>
-                <p>E-mail：<a href="mailto:contact@srilankataxicharterservice.com" className="text-[oklch(0.45_0.15_155)] hover:underline">contact@srilankataxicharterservice.com</a></p>
+                <p>個人情報の取り扱いに関するお問い合わせは、本サイトのお問い合わせフォームよりお願いいたします。</p>
               </div>
             </div>
 

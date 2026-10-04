@@ -74,11 +74,11 @@ SriNowaは以下のサービスは提供していません。
 
 SriNowaは以下の言語でもサービスを提供しています。
 
-- [English](https://en.srilanka-charter.com/): English version of Sri Lanka taxi charter service
+- [English](https://en.srilanka-charter.com/): English-language site
 - [Français](https://fr.srilanka-charter.com/): Service de taxi charter au Sri Lanka en français
 - [Español](https://es.srilanka-charter.com/): Servicio de taxi charter en Sri Lanka en español
-- [Deutsch](https://de.srilanka-charter.com/): Sri Lanka Taxi Charter Service auf Deutsch
-- [Nederlands](https://nl.srilanka-charter.com/): Sri Lanka taxi charter service in het Nederlands
+- [Deutsch](https://de.srilanka-charter.com/): Deutschsprachige Website
+- [Nederlands](https://nl.srilanka-charter.com/): Nederlandstalige website
 - [Русский](https://ru.srilanka-charter.com/): Сервис аренды такси на Шри-Ланке на русском языке
 - [Bahasa Melayu](https://ms.srilanka-charter.com/): Perkhidmatan sewa teksi di Sri Lanka dalam Bahasa Melayu
 - [Svenska](https://sv.srilanka-charter.com/): Sri Lanka taxicharter på svenska

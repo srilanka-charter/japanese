@@ -32,6 +32,27 @@ describe("SriNowa rebrand", () => {
     expect(legacyMatches).toEqual([]);
   });
 
+  it("removes legacy company details from all customer-facing content", () => {
+    const files = [
+      ...collectTextFiles(join(projectRoot, "client")),
+      join(projectRoot, "server", "mailer.ts"),
+    ];
+    const forbiddenValues = [
+      ["Sri", "Lanka", "Taxi", "Charter", "Service"].join(" "),
+      ["I", "Tours", "&", "Travel"].join(" "),
+      ["商標登録", "第7034996"].join(""),
+      ["contact", "@", "srilankataxicharterservice.com"].join(""),
+      ["Unit 2A", "17/F", "Glenealy Tower"].join(", "),
+    ];
+
+    const legacyMatches = files.flatMap(file => {
+      const content = readFileSync(file, "utf8").toLowerCase();
+      return forbiddenValues.some(value => content.includes(value.toLowerCase())) ? [file] : [];
+    });
+
+    expect(legacyMatches).toEqual([]);
+  });
+
   it("uses SriNowa in shared SEO defaults and homepage structured data", () => {
     const seoHook = readFileSync(join(projectRoot, "client", "src", "hooks", "useSEO.ts"), "utf8");
     const homePage = readFileSync(join(projectRoot, "client", "src", "pages", "Home.tsx"), "utf8");
