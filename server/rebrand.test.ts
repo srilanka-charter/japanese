@@ -53,12 +53,13 @@ describe("SriNowa rebrand", () => {
     expect(legacyMatches).toEqual([]);
   });
 
-  it("uses SriNowa in shared SEO defaults and homepage structured data", () => {
+  it("uses the specified SriNowa title in shared SEO defaults and homepage metadata", () => {
     const seoHook = readFileSync(join(projectRoot, "client", "src", "hooks", "useSEO.ts"), "utf8");
     const homePage = readFileSync(join(projectRoot, "client", "src", "pages", "Home.tsx"), "utf8");
+    const expectedTitle = "スリランカ個人旅行ならSriNowa｜タクシーチャーター車で周遊しよう！";
 
-    expect(seoHook).toContain("スリランカタクシーチャーターならSriNowa");
+    expect(seoHook).toContain(expectedTitle);
     expect(homePage).toContain('"name": "スリノワ（SriNowa）"');
-    expect(homePage).toContain("スリランカタクシーチャーターならSriNowa");
+    expect(homePage).toContain(expectedTitle);
   });
 });
