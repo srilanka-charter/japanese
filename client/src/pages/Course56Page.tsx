@@ -147,7 +147,7 @@ export default function Course56Page() {
       "@type": "TouristTrip",
       "name": "スリランカ 4泊5日 モデルコース",
       "description": "シーギリヤ・キャンディ・エッラ・ウダワラウェ・ゴールなど主要観光地を専用タクシーチャーターで周遊。",
-      "url": "https://sltcs.srilanka-charter.com/course/4-5days",
+      "url": "https://ja.srinowa.com/course/4-5days",
       "touristType": "日本人旅行者",
     }],
     jsonLdIdPrefix: "course-4-5days",

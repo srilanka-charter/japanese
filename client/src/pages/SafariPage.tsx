@@ -205,7 +205,7 @@ export default function SafariPage() {
       "@type": "TouristAttraction",
       "name": "スリランカサファリ",
       "description": "スリランカの国立公園で象・ヒョウなど野生動物を観察。SriNowaのタクシーチャーターで送迎付きでご案内。",
-      "url": "https://sltcs.srilanka-charter.com/safari",
+      "url": "https://ja.srinowa.com/safari",
       "image": SAFARI_MINNERIYA,
       "touristType": "Wildlife Tourism",
     }],

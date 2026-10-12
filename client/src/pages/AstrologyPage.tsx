@@ -13,7 +13,7 @@ const JSON_LD = {
   "@type": "TouristAttraction",
   "name": "スリランカ占星術鑑定（シャーミラ・ドゥヌシンハ先生）",
   "description": "スリランカの著名な占星術師シャーミラ・ドゥヌシンハ先生によるホロスコープ鑑定。コロンボ国際空港近くで受けられる本格ヴェーダ占星術。",
-  "url": "https://sltcs.srilanka-charter.com/astrology",
+  "url": "https://ja.srinowa.com/astrology",
   "touristType": "スピリチュアル体験",
   "availableLanguage": ["Japanese", "Sinhala", "English"],
 };
@@ -318,7 +318,7 @@ export default function AstrologyPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="https://sltcs.srilanka-charter.com/contact"
+              href="https://ja.srinowa.com/contact"
               className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-stone-900 font-bold px-8 py-3 rounded-full transition-colors shadow-md"
             >
               占星術について問い合わせる →

@@ -124,7 +124,7 @@ const structuredData = {
       "publisher": { "@type": "Organization", "name": "SriNowa スリノワ" },
       "datePublished": "2025-01-01",
       "dateModified": "2025-06-01",
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sltcs.srilanka-charter.com/nuwara-eliya" }
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ja.srinowa.com/nuwara-eliya" }
     },
     {
       "@type": "FAQPage",
@@ -137,9 +137,9 @@ const structuredData = {
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://sltcs.srilanka-charter.com/" },
-        { "@type": "ListItem", "position": 2, "name": "観光スポット", "item": "https://sltcs.srilanka-charter.com/#destinations" },
-        { "@type": "ListItem", "position": 3, "name": "ヌワラエリヤ高原", "item": "https://sltcs.srilanka-charter.com/nuwara-eliya" }
+        { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://ja.srinowa.com/" },
+        { "@type": "ListItem", "position": 2, "name": "観光スポット", "item": "https://ja.srinowa.com/#destinations" },
+        { "@type": "ListItem", "position": 3, "name": "ヌワラエリヤ高原", "item": "https://ja.srinowa.com/nuwara-eliya" }
       ]
     }
   ]

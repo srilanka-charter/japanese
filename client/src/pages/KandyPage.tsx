@@ -209,9 +209,9 @@ const articleJsonLd = {
   "publisher": {
     "@type": "Organization",
     "name": "SriNowa スリノワ",
-    "url": "https://sltcs.srilanka-charter.com"
+    "url": "https://ja.srinowa.com"
   },
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sltcs.srilanka-charter.com/kandy" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ja.srinowa.com/kandy" },
   "keywords": "キャンディ 仏歯寺 行き方, キャンディ アクセス, キャンディ タクシー, キャンディ 観光, スリランカ 世界遺産, キャンディ ホテル, キャンディ レストラン, 仏歯寺 入場料"
 };
 

@@ -7,7 +7,7 @@ import App from "./App";
 import { trpc } from "./lib/trpc";
 import type { SEOOptions } from "./hooks/useSEO";
 
-const SITE_URL = "https://sltcs.srilanka-charter.com";
+const SITE_URL = "https://ja.srinowa.com";
 const DEFAULT_OG_IMAGE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_rock_hero-WvSdEsM6SGKw7D3K9DXp8D.webp";
 

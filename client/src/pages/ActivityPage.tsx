@@ -23,9 +23,9 @@ const articleJsonLd = {
   "publisher": {
     "@type": "Organization",
     "name": "SriNowa スリノワ",
-    "url": "https://sltcs.srilanka-charter.com",
+    "url": "https://ja.srinowa.com",
   },
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sltcs.srilanka-charter.com/activity" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ja.srinowa.com/activity" },
   "keywords": "スリランカ アクティビティ, スリランカ サファリ, スリランカ アーユルヴェーダ, シーギリヤ ビレッジツアー, スリランカ ホエールウォッチング, スリランカ 象乗り, スリランカ 占星術, スリランカ 紅茶列車, スリランカ 鉄道",
 };
 
@@ -33,8 +33,8 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "トップ", "item": "https://sltcs.srilanka-charter.com/" },
-    { "@type": "ListItem", "position": 2, "name": "アクティビティ", "item": "https://sltcs.srilanka-charter.com/activity" },
+    { "@type": "ListItem", "position": 1, "name": "トップ", "item": "https://ja.srinowa.com/" },
+    { "@type": "ListItem", "position": 2, "name": "アクティビティ", "item": "https://ja.srinowa.com/activity" },
   ],
 };
 
@@ -166,7 +166,7 @@ export default function ActivityPage() {
               もっと詳しく →
             </a>
             <a
-              href="https://sltcs.srilanka-charter.com/contact"
+              href="https://ja.srinowa.com/contact"
               className="inline-flex items-center justify-center gap-2 border border-emerald-600 text-emerald-700 hover:bg-emerald-50 font-bold px-6 py-2.5 rounded-full transition-colors text-sm"
             >
               サファリについて問い合わせる →
@@ -323,7 +323,7 @@ export default function ActivityPage() {
               もっと詳しく →
             </a>
             <a
-              href="https://sltcs.srilanka-charter.com/contact"
+              href="https://ja.srinowa.com/contact"
               className="inline-flex items-center justify-center gap-2 border border-emerald-600 text-emerald-700 hover:bg-emerald-50 font-bold px-6 py-2.5 rounded-full transition-colors text-sm"
             >
               ホエールウォッチングについて問い合わせる →

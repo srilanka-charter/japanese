@@ -166,7 +166,7 @@ export default function Course67Page() {
       "@type": "TouristTrip",
       "name": "スリランカ 5泊6日 モデルコース",
       "description": "シーギリヤ・キャンディ・ヌワラエリヤ・ヤーラ国立公園・ゴールなど主要観光地を専用タクシーチャーターで周遊。",
-      "url": "https://sltcs.srilanka-charter.com/course/5-6days",
+      "url": "https://ja.srinowa.com/course/5-6days",
       "touristType": "日本人旅行者",
     }],
     jsonLdIdPrefix: "course-5-6days",

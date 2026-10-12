@@ -128,7 +128,7 @@ export default function Course45Page() {
       "@type": "TouristTrip",
       "name": "スリランカ 3泊4日 モデルコース",
       "description": "シーギリヤ・キャンディ・ヌワラエリヤなど主要観光地を専用タクシーチャーターで周遊。",
-      "url": "https://sltcs.srilanka-charter.com/course/3-4days",
+      "url": "https://ja.srinowa.com/course/3-4days",
       "touristType": "日本人旅行者",
     }],
     jsonLdIdPrefix: "course-3-4days",

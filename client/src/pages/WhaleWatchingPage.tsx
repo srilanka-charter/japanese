@@ -12,7 +12,7 @@ const MIRISSA_PORT_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/3105196635299898
 const DOLPHINS_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/whale_dolphins-MPDVLn4pQWcd5YzzQkjCfw.webp";
 const BOAT_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/whale_boat-8zdFbg53CHoob3Pz2UTPFH.webp";
 
-const CONTACT_URL = "https://sltcs.srilanka-charter.com/contact";
+const CONTACT_URL = "https://ja.srinowa.com/contact";
 
 const sltcsMerits = [
   {
@@ -82,7 +82,7 @@ export default function WhaleWatchingPage() {
       "@type": "TouristAttraction",
       "name": "スリランカ ホエールウォッチング（ミリッサ）",
       "description": "スリランカ・ミリッサ発のホエールウォッチング。シロナガスクジラやスピナードルフィンに出会える世界有数のスポット。SriNowaでは送迎付きでご案内します。",
-      "url": "https://sltcs.srilanka-charter.com/whale-watching",
+      "url": "https://ja.srinowa.com/whale-watching",
       "image": HERO_IMG,
       "touristType": "Wildlife Tourism",
       "availableSeason": "November to April",

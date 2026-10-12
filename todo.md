@@ -151,7 +151,7 @@
 - [x] LCP改善：ヒーロー画像（HeroSection）にfetchpriority="high"・loading="eager"を追加（その他スライドにloading="lazy"も設定）
 - [x] JSON-LD拡充：/pricingページにPriceSpecificationスキーマを追加（各プランにminPrice/maxPrice設定）
 - [x] JSON-LD拡充：/vehiclesページにItemList+Productスキーマを追加（各車種にPriceSpecification含む）
-- [x] 言語プルダウンに韓国語（Korean）を追加（https://ko.srilanka-charter.com/）
+- [x] 言語プルダウンに韓国語（Korean）を追加（旧設定・現在は削除済み）
 - [x] useSEOフックにhreflangListオプションを追加
 - [x] Top・Plans・Vehicles・FAQページに韓国語hreflangタグを設定（x-defaultは英語版のまま）
 - [x] お役立ち情報に「ホテル」カテゴリーを新設（blogData.ts・Header.tsxに追加）
@@ -227,3 +227,6 @@
 - [x] サイト全体からSri Lanka Taxi Charter Serviceの表示を網羅的に削除し、検証する
 - [x] トップページのSEOタイトルを指定文言へ変更し、SSRとクライアントの整合を検証する
 - [x] このトークルーム名を指定のSEOタイトルと同一の文言へ変更する
+- [x] ヘッダーの言語切替を指定のEnglish・French・German・SpanishのSriNowaドメインへ更新する
+- [x] 日本語サイトのcanonical・構造化データ・サイトマップ・robots・AI向け案内をja.srinowa.comへ統一する
+- [x] 旧ドメインを含む顧客向け発リンクを全件除去・置換し、検証する

@@ -20,9 +20,9 @@ export default function PricingPage() {
         "@type": "Service",
         "name": "SriNowa スリノワ 料金プラン",
         "description": PRICING_DESCRIPTION,
-        "provider": { "@type": "Organization", "name": "SriNowa", "url": "https://sltcs.srilanka-charter.com" },
+        "provider": { "@type": "Organization", "name": "SriNowa", "url": "https://ja.srinowa.com" },
         "areaServed": { "@type": "Country", "name": "Sri Lanka" },
-        "url": "https://sltcs.srilanka-charter.com/pricing",
+        "url": "https://ja.srinowa.com/pricing",
         "offers": [
           {
             "@type": "Offer",
@@ -39,7 +39,7 @@ export default function PricingPage() {
             },
             "eligibleQuantity": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 3, "unitText": "名" },
             "availability": "https://schema.org/InStock",
-            "url": "https://sltcs.srilanka-charter.com/pricing"
+            "url": "https://ja.srinowa.com/pricing"
           },
         ],
       },

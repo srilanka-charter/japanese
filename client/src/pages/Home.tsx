@@ -19,7 +19,7 @@ const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "スリノワ（SriNowa）",
-  "url": "https://sltcs.srilanka-charter.com/",
+  "url": "https://ja.srinowa.com/",
   "description": "スリランカ全土を日本語対応の専属ドライバーと巡る完全プライベートチャーターサービス。シーギリヤ・キャンディ・ゴール・ヌワラエリヤなど主要観光地への送迎を提供。",
   "areaServed": {
     "@type": "Country",
@@ -31,7 +31,7 @@ const localBusinessJsonLd = {
   ],
   "openingHours": "Mo-Su 00:00-24:00",
   "sameAs": [
-    "https://sltcs.srilanka-charter.com/"
+    "https://ja.srinowa.com/"
   ]
 };
 
@@ -44,9 +44,8 @@ export default function Home() {
     jsonLdList: [localBusinessJsonLd],
     jsonLdIdPrefix: "home",
     hreflangList: [
-      { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/" },
-      { hreflang: "ko", href: "https://ko.srilanka-charter.com/" },
-      { hreflang: "x-default", href: "https://en.srilanka-charter.com/" },
+      { hreflang: "ja", href: "https://ja.srinowa.com/" },
+      { hreflang: "x-default", href: "https://srinowa.com/" },
     ],
   });
 

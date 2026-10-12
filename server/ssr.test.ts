@@ -6,7 +6,7 @@ describe("SSR SEO出力", () => {
     const { appHtml, seoHead } = renderSsrPage("/pricing");
 
     expect(seoHead).toContain("スリノワの料金(価格)とは？ | SriNowa");
-    expect(seoHead).toContain('href="https://sltcs.srilanka-charter.com/pricing"');
+    expect(seoHead).toContain('href="https://ja.srinowa.com/pricing"');
     expect(appHtml).toContain("<h1");
   });
 
@@ -15,7 +15,7 @@ describe("SSR SEO出力", () => {
 
     expect(seoHead).toContain("スリランカで1日のタクシーチャーターをご希望の方へ | SriNowa");
     expect(seoHead).toContain(
-      'href="https://sltcs.srilanka-charter.com/taxi-charter-basics/one-day-charter"'
+      'href="https://ja.srinowa.com/taxi-charter-basics/one-day-charter"'
     );
     expect(appHtml).toContain("スリランカを1日だけ専用車でめぐりたい");
   });

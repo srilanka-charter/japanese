@@ -3,12 +3,12 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { getCanonicalRedirect, isKnownSiteRoute } from "./_core/seoRoutes";
 
-const SITE_ORIGIN = "https://sltcs.srilanka-charter.com";
+const SITE_ORIGIN = "https://ja.srinowa.com";
 const SITEMAP_PATH = path.resolve(process.cwd(), "client/public/sitemap.xml");
 
 function getSitemapPaths() {
   const xml = readFileSync(SITEMAP_PATH, "utf8");
-  return [...xml.matchAll(/<loc>(https:\/\/sltcs\.srilanka-charter\.com[^<]*)<\/loc>/g)].map(
+  return [...xml.matchAll(/<loc>(https:\/\/ja\.srinowa\.com[^<]*)<\/loc>/g)].map(
     ([, url]) => new URL(url).pathname
   );
 }
@@ -46,8 +46,8 @@ describe("sitemap.xml", () => {
 
     expect(lastmodValues).toHaveLength(39);
     expect(lastmodValues.every((date) => !Number.isNaN(Date.parse(`${date}T00:00:00Z`)))).toBe(true);
-    expect(xml).toContain("<loc>https://sltcs.srilanka-charter.com/</loc><lastmod>2026-09-01</lastmod>");
+    expect(xml).toContain("<loc>https://ja.srinowa.com/</loc><lastmod>2026-09-01</lastmod>");
     expect(getCanonicalRedirect("/plan")).toBe("/pricing");
-    expect(xml).toContain("<loc>https://sltcs.srilanka-charter.com/sightseeing-guide/tea-train-guide</loc><lastmod>2026-08-31</lastmod>");
+    expect(xml).toContain("<loc>https://ja.srinowa.com/sightseeing-guide/tea-train-guide</loc><lastmod>2026-08-31</lastmod>");
   });
 });

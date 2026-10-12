@@ -74,7 +74,7 @@ export default function BlogCategoryPage() {
   const category = getCategoryBySlug(categorySlug);
   const articles = getArticlesByCategory(categorySlug);
 
-  const SITE_URL = "https://sltcs.srilanka-charter.com";
+  const SITE_URL = "https://ja.srinowa.com";
 
   // SEO最適化：カテゴリーページのメタデータを動的に設定
   const breadcrumbJsonLd = category ? {

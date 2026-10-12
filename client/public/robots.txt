@@ -9,11 +9,11 @@ Disallow: /terms
 Disallow: /404
 
 # サイトマップ
-Sitemap: https://sltcs.srilanka-charter.com/sitemap.xml
+Sitemap: https://ja.srinowa.com/sitemap.xml
 
 # AI Discovery Files
 # llms.txt: AI systems can find structured business identity information here
-LLMs: https://sltcs.srilanka-charter.com/llms.txt
+LLMs: https://ja.srinowa.com/llms.txt
 
 # AIクローラー向け: llms.txtへのアクセスを明示的に許可
 User-agent: GPTBot

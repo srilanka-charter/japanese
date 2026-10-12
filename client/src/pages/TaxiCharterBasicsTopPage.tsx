@@ -85,7 +85,7 @@ export default function TaxiCharterBasicsTopPage() {
         headline: "タクシーチャーターの基礎知識まとめ｜料金・予約・マナーをわかりやすく解説",
         description:
           "スリランカのタクシーチャーターを初めて利用する方向けに、移動手段の選び方・料金の内訳・予約タイミング・チップマナーなど基礎知識を一気に整理。",
-        url: "https://sltcs.srilanka-charter.com/taxi-charter-basics",
+        url: "https://ja.srinowa.com/taxi-charter-basics",
         inLanguage: "ja",
         author: {
           "@type": "Organization",
@@ -94,7 +94,7 @@ export default function TaxiCharterBasicsTopPage() {
         publisher: {
           "@type": "Organization",
           name: "SriNowa スリノワ",
-          url: "https://sltcs.srilanka-charter.com",
+          url: "https://ja.srinowa.com",
         },
       },
     ],

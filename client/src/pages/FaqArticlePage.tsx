@@ -286,9 +286,8 @@ export default function FaqArticlePage() {
     jsonLdList: [faqJsonLd],
     jsonLdIdPrefix: "faq",
     hreflangList: [
-      { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/faq" },
-      { hreflang: "ko", href: "https://ko.srilanka-charter.com/faq" },
-      { hreflang: "x-default", href: "https://en.srilanka-charter.com/faq" },
+      { hreflang: "ja", href: "https://ja.srinowa.com/faq" },
+      { hreflang: "x-default", href: "https://srinowa.com/faq" },
     ],
   });
 

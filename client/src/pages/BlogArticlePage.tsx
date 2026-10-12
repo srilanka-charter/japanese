@@ -436,7 +436,7 @@ export default function BlogArticlePage() {
   const category = getCategoryBySlug(params.category);
   const isValidArticleRoute = Boolean(article && category && article.categorySlug === params.category);
 
-  const SITE_URL = "https://sltcs.srilanka-charter.com";
+  const SITE_URL = "https://ja.srinowa.com";
 
   // SEO最適化：記事ごとのメタデータを動的に設定
   const articleJsonLd = isValidArticleRoute && article ? {

@@ -87,7 +87,7 @@ export default function TravelPlanningTopPage() {
         headline: "スリランカ旅行の準備完全ガイド｜出発前に確認したい5つのチェックリスト",
         description:
           "ベストシーズン・両替・海外旅行保険・WhatsApp・SIM/eSIMなど、スリランカ旅行の出発前に確認しておきたい準備項目を一気に整理。",
-        url: "https://sltcs.srilanka-charter.com/travel-planning",
+        url: "https://ja.srinowa.com/travel-planning",
         inLanguage: "ja",
         author: {
           "@type": "Organization",
@@ -96,7 +96,7 @@ export default function TravelPlanningTopPage() {
         publisher: {
           "@type": "Organization",
           name: "SriNowa スリノワ",
-          url: "https://sltcs.srilanka-charter.com",
+          url: "https://ja.srinowa.com",
         },
       },
     ],

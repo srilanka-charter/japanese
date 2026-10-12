@@ -215,9 +215,9 @@ const articleJsonLd = {
   "publisher": {
     "@type": "Organization",
     "name": "SriNowa スリノワ",
-    "url": "https://sltcs.srilanka-charter.com"
+    "url": "https://ja.srinowa.com"
   },
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sltcs.srilanka-charter.com/sigiriya" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ja.srinowa.com/sigiriya" },
   "keywords": "シーギリヤロック 行き方, シーギリヤ アクセス, シーギリヤ タクシー, シーギリヤ 観光, スリランカ 世界遺産, シーギリヤ ホテル, シーギリヤ レストラン"
 };
 

@@ -14,15 +14,10 @@ const blogMenuItems = [
 ];
 
 const languages = [
-  { label: "English", href: "https://en.srilanka-charter.com/" },
-  { label: "French", href: "https://fr.srilanka-charter.com/" },
-  { label: "Spanish", href: "https://es.srilanka-charter.com/" },
-  { label: "German", href: "https://de.srilanka-charter.com/" },
-  { label: "Dutch", href: "https://nl.srilanka-charter.com/" },
-  { label: "Korean", href: "https://ko.srilanka-charter.com/" },
-  { label: "Russian", href: "https://ru.srilanka-charter.com/" },
-  { label: "Malay", href: "https://ms.srilanka-charter.com/" },
-  { label: "Swedish", href: "https://sv.srilanka-charter.com/" },
+  { label: "English", href: "https://srinowa.com/" },
+  { label: "French", href: "https://fr.srinowa.com/" },
+  { label: "German", href: "https://de.srinowa.com/" },
+  { label: "Spanish", href: "https://es.srinowa.com/" },
 ];
 
 export default function Header() {

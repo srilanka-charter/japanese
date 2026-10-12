@@ -4,7 +4,7 @@ const DEFAULT_TITLE =
   "スリランカ個人旅行ならSriNowa｜タクシーチャーター車で周遊しよう！";
 const DEFAULT_DESC =
   "スリランカタクシーチャーターならSriNowa。日本語対応の専用車・カーチャーターで、シーギリヤ・キャンディ・ヤラなどスリランカ全土を自由に周遊。政府公認ドライバーによる完全プライベートチャーターをご提供します。";
-const SITE_URL = "https://sltcs.srilanka-charter.com";
+const SITE_URL = "https://ja.srinowa.com";
 const DEFAULT_OG_IMAGE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/U5GFZm3GAbGuGjN2pLu33k/sigiriya_rock_hero-WvSdEsM6SGKw7D3K9DXp8D.webp";
 

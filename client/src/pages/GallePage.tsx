@@ -217,9 +217,9 @@ const articleJsonLd = {
   "publisher": {
     "@type": "Organization",
     "name": "SriNowa スリノワ",
-    "url": "https://sltcs.srilanka-charter.com"
+    "url": "https://ja.srinowa.com"
   },
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sltcs.srilanka-charter.com/galle" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ja.srinowa.com/galle" },
   "keywords": "ゴール 旧市街 行き方, ゴール要塞 アクセス, ゴール タクシー, ゴール 観光, スリランカ 世界遺産, ゴール ホテル, ゴール レストラン, ゴール要塞 入場料"
 };
 

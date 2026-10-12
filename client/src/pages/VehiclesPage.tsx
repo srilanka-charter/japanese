@@ -91,7 +91,7 @@ export default function VehiclesPage() {
         "@context": "https://schema.org",
         "@type": "ItemList",
         "name": "SriNowa スリランカタクシーチャーター 車両ラインナップ",
-        "url": "https://sltcs.srilanka-charter.com/vehicles",
+        "url": "https://ja.srinowa.com/vehicles",
         "numberOfItems": 3,
         "itemListElement": [
           {
@@ -116,7 +116,7 @@ export default function VehiclesPage() {
                   "description": "2日間から8日間まで対応。ブロンズ／シルバー／ゴールドプラン選択可能。"
                 },
                 "availability": "https://schema.org/InStock",
-                "url": "https://sltcs.srilanka-charter.com/pricing"
+                "url": "https://ja.srinowa.com/pricing"
               }
             }
           },
@@ -142,7 +142,7 @@ export default function VehiclesPage() {
                   "description": "2日間から8日間まで対応。ブロンズ／シルバー／ゴールドプラン選択可能。"
                 },
                 "availability": "https://schema.org/InStock",
-                "url": "https://sltcs.srilanka-charter.com/pricing"
+                "url": "https://ja.srinowa.com/pricing"
               }
             }
           },
@@ -168,7 +168,7 @@ export default function VehiclesPage() {
                   "description": "2日間から8日間まで対応。ブロンズ／シルバー／ゴールドプラン選択可能。"
                 },
                 "availability": "https://schema.org/InStock",
-                "url": "https://sltcs.srilanka-charter.com/pricing"
+                "url": "https://ja.srinowa.com/pricing"
               }
             }
           }
@@ -177,9 +177,8 @@ export default function VehiclesPage() {
     ],
     jsonLdIdPrefix: "vehicles",
     hreflangList: [
-      { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/vehicles" },
-      { hreflang: "ko", href: "https://ko.srilanka-charter.com/vehicles" },
-      { hreflang: "x-default", href: "https://en.srilanka-charter.com/vehicles" },
+      { hreflang: "ja", href: "https://ja.srinowa.com/vehicles" },
+      { hreflang: "x-default", href: "https://srinowa.com/vehicles" },
     ],
   });
 
