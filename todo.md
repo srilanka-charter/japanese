@@ -230,3 +230,5 @@
 - [x] ヘッダーの言語切替を指定のEnglish・French・German・SpanishのSriNowaドメインへ更新する
 - [x] 日本語サイトのcanonical・構造化データ・サイトマップ・robots・AI向け案内をja.srinowa.comへ統一する
 - [x] 旧ドメインを含む顧客向け発リンクを全件除去・置換し、検証する
+- [x] SriNowaブランドのfavicon・PWAアイコンを再生成する
+- [x] favicon・PWAアイコンの参照と配信を検証する

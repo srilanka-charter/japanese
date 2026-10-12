@@ -49,10 +49,10 @@
       ]
     },
     {
-      "name": "プランを見る",
-      "short_name": "プラン",
-      "description": "タクシーチャータープランの一覧",
-      "url": "/plan",
+      "name": "料金を見る",
+      "short_name": "料金",
+      "description": "タクシーチャーターの料金一覧",
+      "url": "/pricing",
       "icons": [
         {
           "src": "/icon-192x192.png",

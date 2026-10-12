@@ -1,7 +1,7 @@
 import { createContext, createElement, useContext, useEffect } from "react";
 
 const DEFAULT_TITLE =
-  "スリランカ個人旅行ならSriNowa｜タクシーチャーター車で周遊しよう！";
+  "スリランカ個人旅行ならSriNowa｜チャーター車で周遊しよう！";
 const DEFAULT_DESC =
   "スリランカタクシーチャーターならSriNowa。日本語対応の専用車・カーチャーターで、シーギリヤ・キャンディ・ヤラなどスリランカ全土を自由に周遊。政府公認ドライバーによる完全プライベートチャーターをご提供します。";
 const SITE_URL = "https://ja.srinowa.com";

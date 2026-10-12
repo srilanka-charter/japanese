@@ -56,7 +56,7 @@ describe("SriNowa rebrand", () => {
   it("uses the specified SriNowa title in shared SEO defaults and homepage metadata", () => {
     const seoHook = readFileSync(join(projectRoot, "client", "src", "hooks", "useSEO.ts"), "utf8");
     const homePage = readFileSync(join(projectRoot, "client", "src", "pages", "Home.tsx"), "utf8");
-    const expectedTitle = "スリランカ個人旅行ならSriNowa｜タクシーチャーター車で周遊しよう！";
+    const expectedTitle = "スリランカ個人旅行ならSriNowa｜チャーター車で周遊しよう！";
 
     expect(seoHook).toContain(expectedTitle);
     expect(homePage).toContain('"name": "スリノワ（SriNowa）"');
