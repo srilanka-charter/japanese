@@ -45,6 +45,10 @@ export default function Home() {
     jsonLdIdPrefix: "home",
     hreflangList: [
       { hreflang: "ja", href: "https://ja.srinowa.com/" },
+      { hreflang: "en", href: "https://srinowa.com/" },
+      { hreflang: "de", href: "https://de.srinowa.com/" },
+      { hreflang: "fr", href: "https://fr.srinowa.com/" },
+      { hreflang: "es", href: "https://es.srinowa.com/" },
       { hreflang: "x-default", href: "https://srinowa.com/" },
     ],
   });

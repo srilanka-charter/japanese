@@ -178,6 +178,7 @@ export default function VehiclesPage() {
     jsonLdIdPrefix: "vehicles",
     hreflangList: [
       { hreflang: "ja", href: "https://ja.srinowa.com/vehicles" },
+      { hreflang: "en", href: "https://srinowa.com/vehicles" },
       { hreflang: "x-default", href: "https://srinowa.com/vehicles" },
     ],
   });

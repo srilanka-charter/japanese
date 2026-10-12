@@ -287,6 +287,10 @@ export default function FaqArticlePage() {
     jsonLdIdPrefix: "faq",
     hreflangList: [
       { hreflang: "ja", href: "https://ja.srinowa.com/faq" },
+      { hreflang: "en", href: "https://srinowa.com/faq" },
+      { hreflang: "de", href: "https://de.srinowa.com/faq" },
+      { hreflang: "fr", href: "https://fr.srinowa.com/faq" },
+      { hreflang: "es", href: "https://es.srinowa.com/faq" },
       { hreflang: "x-default", href: "https://srinowa.com/faq" },
     ],
   });

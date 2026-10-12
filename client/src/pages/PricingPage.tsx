@@ -45,6 +45,14 @@ export default function PricingPage() {
       },
     ],
     jsonLdIdPrefix: "pricing",
+    hreflangList: [
+      { hreflang: "ja", href: "https://ja.srinowa.com/pricing" },
+      { hreflang: "en", href: "https://srinowa.com/price" },
+      { hreflang: "de", href: "https://de.srinowa.com/price" },
+      { hreflang: "fr", href: "https://fr.srinowa.com/price" },
+      { hreflang: "es", href: "https://es.srinowa.com/price" },
+      { hreflang: "x-default", href: "https://srinowa.com/price" },
+    ],
   });
 
   const scrollToContact = () => {

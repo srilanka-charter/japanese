@@ -20,6 +20,45 @@ describe("SSR SEO出力", () => {
     expect(appHtml).toContain("スリランカを1日だけ専用車でめぐりたい");
   });
 
+  it("対応が確認済みの日本語ページに相互hreflangを出力する", () => {
+    const expectedByPath = {
+      "/": [
+        'hreflang="ja" href="https://ja.srinowa.com/"',
+        'hreflang="en" href="https://srinowa.com/"',
+        'hreflang="de" href="https://de.srinowa.com/"',
+        'hreflang="fr" href="https://fr.srinowa.com/"',
+        'hreflang="es" href="https://es.srinowa.com/"',
+        'hreflang="x-default" href="https://srinowa.com/"',
+      ],
+      "/pricing": [
+        'hreflang="ja" href="https://ja.srinowa.com/pricing"',
+        'hreflang="en" href="https://srinowa.com/price"',
+        'hreflang="de" href="https://de.srinowa.com/price"',
+        'hreflang="fr" href="https://fr.srinowa.com/price"',
+        'hreflang="es" href="https://es.srinowa.com/price"',
+        'hreflang="x-default" href="https://srinowa.com/price"',
+      ],
+      "/faq": [
+        'hreflang="ja" href="https://ja.srinowa.com/faq"',
+        'hreflang="en" href="https://srinowa.com/faq"',
+        'hreflang="de" href="https://de.srinowa.com/faq"',
+        'hreflang="fr" href="https://fr.srinowa.com/faq"',
+        'hreflang="es" href="https://es.srinowa.com/faq"',
+        'hreflang="x-default" href="https://srinowa.com/faq"',
+      ],
+      "/vehicles": [
+        'hreflang="ja" href="https://ja.srinowa.com/vehicles"',
+        'hreflang="en" href="https://srinowa.com/vehicles"',
+        'hreflang="x-default" href="https://srinowa.com/vehicles"',
+      ],
+    } as const;
+
+    for (const [path, expectedLinks] of Object.entries(expectedByPath)) {
+      const { seoHead } = renderSsrPage(path);
+      expectedLinks.forEach(link => expect(seoHead).toContain(link));
+    }
+  });
+
   it("未知URLはnoindexを含む404用の初期HTMLを返せる", () => {
     const { appHtml, seoHead } = renderSsrPage("/seo-audit-nonexistent-page-9f3c", true);
 
