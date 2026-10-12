@@ -23,4 +23,15 @@ describe("ファーストビュー画像", () => {
     expect(source).toContain("}, 5000);");
     expect(source).toContain("slides.slice(1).forEach");
   });
+
+  it("検索エンジン向けのH1に指定されたブランド表記を使用する", () => {
+    const source = readFileSync(heroSectionPath, "utf8");
+
+    expect(source).toContain(
+      "スリランカのタクシーチャーター｜日本語対応の専用車・政府公認ドライバーならスリノワ(SriNowa)"
+    );
+    expect(source).not.toContain(
+      "スリランカのタクシーチャーター｜日本語対応の専用車・政府公認ドライバーならSriNowa"
+    );
+  });
 });
