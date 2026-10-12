@@ -1,0 +1,37 @@
+{
+  "ja": {
+    "sitemap_url": "https://ja.srinowa.com/sitemap.xml",
+    "live_url_count": 39,
+    "mapped_url_count": 39,
+    "missing_from_table": [],
+    "not_in_live_sitemap": []
+  },
+  "en": {
+    "sitemap_url": "https://srinowa.com/sitemap.xml",
+    "live_url_count": 36,
+    "mapped_url_count": 36,
+    "missing_from_table": [],
+    "not_in_live_sitemap": []
+  },
+  "de": {
+    "sitemap_url": "https://de.srinowa.com/sitemap.xml",
+    "live_url_count": 20,
+    "mapped_url_count": 20,
+    "missing_from_table": [],
+    "not_in_live_sitemap": []
+  },
+  "fr": {
+    "sitemap_url": "https://fr.srinowa.com/sitemap.xml",
+    "live_url_count": 20,
+    "mapped_url_count": 20,
+    "missing_from_table": [],
+    "not_in_live_sitemap": []
+  },
+  "es": {
+    "sitemap_url": "https://es.srinowa.com/sitemap.xml",
+    "live_url_count": 21,
+    "mapped_url_count": 21,
+    "missing_from_table": [],
+    "not_in_live_sitemap": []
+  }
+}
