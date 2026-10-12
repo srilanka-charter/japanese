@@ -1,10 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- サービスの主要ページ -->
-  <url><loc>https://ja.srinowa.com/</loc><lastmod>2026-09-01</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://ja.srinowa.com/vehicles</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ja.srinowa.com/pricing</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ja.srinowa.com/faq</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- 対応確認済みの多言語ページ -->
+  <url>
+    <loc>https://ja.srinowa.com/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ja.srinowa.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://srinowa.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://de.srinowa.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fr.srinowa.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://es.srinowa.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://srinowa.com/" />
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ja.srinowa.com/vehicles</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ja.srinowa.com/vehicles" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://srinowa.com/vehicles" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://srinowa.com/vehicles" />
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ja.srinowa.com/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ja.srinowa.com/pricing" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://srinowa.com/price" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://de.srinowa.com/price" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fr.srinowa.com/price" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://es.srinowa.com/price" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://srinowa.com/price" />
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ja.srinowa.com/faq</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ja.srinowa.com/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://srinowa.com/faq" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://de.srinowa.com/faq" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fr.srinowa.com/faq" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://es.srinowa.com/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://srinowa.com/faq" />
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <!-- モデルコース -->
   <url><loc>https://ja.srinowa.com/course/3-4days</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>

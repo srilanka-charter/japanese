@@ -237,3 +237,6 @@
 - [x] 日本語版トップ・料金・FAQへ5言語の相互hreflangを設定する
 - [x] 日本語版車両ページへ日本語・英語の相互hreflangを設定する
 - [x] SSR初期HTMLとクライアント側のhreflang出力を検証する
+- [x] 日本語サイトの正規公開URLを含む最新sitemap.xmlを再生成する
+- [x] 対応確認済みページの多言語hreflang情報をsitemap.xmlへ反映する
+- [x] sitemap.xmlのXML構文・URL・配信を検証する

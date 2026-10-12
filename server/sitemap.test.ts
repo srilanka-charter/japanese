@@ -18,7 +18,7 @@ describe("sitemap.xml", () => {
     const xml = readFileSync(SITEMAP_PATH, "utf8");
     const paths = getSitemapPaths();
 
-    expect(xml).toMatch(/^<\?xml version="1\.0" encoding="UTF-8"\?>\n<urlset xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">/);
+    expect(xml).toMatch(/^<\?xml version="1\.0" encoding="UTF-8"\?>\n<urlset xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9" xmlns:xhtml="http:\/\/www\.w3\.org\/1999\/xhtml">/);
     expect(xml.trimEnd()).toMatch(/<\/urlset>$/);
     expect(paths).toHaveLength(39);
     expect(new Set(paths).size).toBe(paths.length);
@@ -46,7 +46,14 @@ describe("sitemap.xml", () => {
 
     expect(lastmodValues).toHaveLength(39);
     expect(lastmodValues.every((date) => !Number.isNaN(Date.parse(`${date}T00:00:00Z`)))).toBe(true);
-    expect(xml).toContain("<loc>https://ja.srinowa.com/</loc><lastmod>2026-09-01</lastmod>");
+    expect(xml).toContain("<loc>https://ja.srinowa.com/</loc>");
+    expect(xml).toContain('<xhtml:link rel="alternate" hreflang="ja" href="https://ja.srinowa.com/" />');
+    expect(xml).toContain('<xhtml:link rel="alternate" hreflang="en" href="https://srinowa.com/" />');
+    expect(xml).toContain('<xhtml:link rel="alternate" hreflang="de" href="https://de.srinowa.com/" />');
+    expect(xml).toContain('<xhtml:link rel="alternate" hreflang="fr" href="https://fr.srinowa.com/" />');
+    expect(xml).toContain('<xhtml:link rel="alternate" hreflang="es" href="https://es.srinowa.com/" />');
+    expect(xml).toContain('<xhtml:link rel="alternate" hreflang="x-default" href="https://srinowa.com/" />');
+    expect(xml).toContain("<lastmod>2026-10-12</lastmod>");
     expect(getCanonicalRedirect("/plan")).toBe("/pricing");
     expect(xml).toContain("<loc>https://ja.srinowa.com/sightseeing-guide/tea-train-guide</loc><lastmod>2026-08-31</lastmod>");
   });
