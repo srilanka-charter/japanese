@@ -37,11 +37,12 @@ describe("SriNowa rebrand", () => {
       ...collectTextFiles(join(projectRoot, "client")),
       join(projectRoot, "server", "mailer.ts"),
     ];
+    const legacyContactDomain = ["srilanka", "taxicharterservice"].join("") + ".com";
     const forbiddenValues = [
       ["Sri", "Lanka", "Taxi", "Charter", "Service"].join(" "),
       ["I", "Tours", "&", "Travel"].join(" "),
       ["商標登録", "第7034996"].join(""),
-      ["contact", "@", "srilankataxicharterservice.com"].join(""),
+      ["contact", "@", legacyContactDomain].join(""),
       ["Unit 2A", "17/F", "Glenealy Tower"].join(", "),
     ];
 
